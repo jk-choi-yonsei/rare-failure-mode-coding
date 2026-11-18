@@ -1,0 +1,441 @@
+{
+ "note": "notes/natural-selector-2026-11-09.md (2026-11-11 addendum)",
+ "git_head": "0545091",
+ "training": {
+  "codes": 471,
+  "rare_codes": 46,
+  "reports": 656460,
+  "rare_reports": 132
+ },
+ "qwen38_27b": {
+  "year_reports": 661160,
+  "year_rare_reports": 552,
+  "2026_by_stratum": {
+   "encoder": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 20,
+     "false": 2
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 12,
+     "false": 0
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 1
+    },
+    "year": {
+     "right": 32.0,
+     "false": 166.0
+    }
+   },
+   "selector": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 41,
+     "false": 48
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 46,
+     "false": 37
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 17
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 29
+    },
+    "year": {
+     "right": 87.0,
+     "false": 4899.3
+    }
+   },
+   "selector_prior_corrected": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 14,
+     "false": 3
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 13,
+     "false": 0
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 0
+    },
+    "year": {
+     "right": 27.0,
+     "false": 3.0
+    }
+   },
+   "natural_selector": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 12,
+     "false": 2
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 10,
+     "false": 0
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 0
+    },
+    "year": {
+     "right": 22.0,
+     "false": 2.0
+    }
+   }
+  },
+  "practice_set": {
+   "reports": 3829,
+   "rare_reports": 113,
+   "enc": {
+    "rare_answers": 32,
+    "right": 29
+   },
+   "zs": {
+    "rare_answers": 162,
+    "right": 32
+   },
+   "rag": {
+    "rare_answers": 52,
+    "right": 28
+   }
+  },
+  "validation_reports": {
+   "reports": 10000,
+   "rare_reports": 3,
+   "enc": {
+    "rare_answers": 9,
+    "right": 0
+   },
+   "zs": {
+    "rare_answers": 205,
+    "right": 0
+   },
+   "rag": {
+    "rare_answers": 18,
+    "right": 0
+   }
+  }
+ },
+ "gemma4_31b": {
+  "year_reports": 661160,
+  "year_rare_reports": 552,
+  "2026_by_stratum": {
+   "encoder": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 20,
+     "false": 2
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 12,
+     "false": 0
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 1
+    },
+    "year": {
+     "right": 32.0,
+     "false": 166.0
+    }
+   },
+   "selector": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 53,
+     "false": 55
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 60,
+     "false": 25
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 14
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 30
+    },
+    "year": {
+     "right": 113.0,
+     "false": 5048.1
+    }
+   },
+   "selector_prior_corrected": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 14,
+     "false": 5
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 12,
+     "false": 7
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 1
+    },
+    "year": {
+     "right": 26.0,
+     "false": 176.0
+    }
+   },
+   "natural_selector": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 11,
+     "false": 1
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 8,
+     "false": 0
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 0
+    },
+    "year": {
+     "right": 19.0,
+     "false": 1.0
+    }
+   }
+  },
+  "practice_set": {
+   "reports": 3829,
+   "rare_reports": 113,
+   "enc": {
+    "rare_answers": 32,
+    "right": 29
+   },
+   "zs": {
+    "rare_answers": 126,
+    "right": 29
+   },
+   "rag": {
+    "rare_answers": 60,
+    "right": 32
+   }
+  },
+  "validation_reports": {
+   "reports": 10000,
+   "rare_reports": 3,
+   "enc": {
+    "rare_answers": 9,
+    "right": 0
+   },
+   "zs": {
+    "rare_answers": 140,
+    "right": 0
+   },
+   "rag": {
+    "rare_answers": 19,
+    "right": 0
+   }
+  }
+ },
+ "opus55": {
+  "year_reports": 661160,
+  "year_rare_reports": 552,
+  "2026_by_stratum": {
+   "encoder": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 20,
+     "false": 2
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 12,
+     "false": 0
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 0
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 1
+    },
+    "year": {
+     "right": 32.0,
+     "false": 166.0
+    }
+   },
+   "selector": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 60,
+     "false": 34
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 65,
+     "false": 36
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 4
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 23
+    },
+    "year": {
+     "right": 125.0,
+     "false": 3856.1
+    }
+   },
+   "selector_prior_corrected": {
+    "balanced_test": {
+     "reports": 3956,
+     "weight": 1.0,
+     "right": 33,
+     "false": 19
+    },
+    "rare_1-5_census": {
+     "reports": 291,
+     "weight": 1.0,
+     "right": 25,
+     "false": 28
+    },
+    "rare_6-20_stratum": {
+     "reports": 1500,
+     "weight": 3.39,
+     "right": 0,
+     "false": 1
+    },
+    "uniform_draw": {
+     "reports": 3974,
+     "weight": 164.02,
+     "right": 0,
+     "false": 4
+    },
+    "year": {
+     "right": 58.0,
+     "false": 706.5
+    }
+   }
+  },
+  "practice_set": {
+   "reports": 3829,
+   "rare_reports": 113,
+   "enc": {
+    "rare_answers": 32,
+    "right": 29
+   },
+   "zs": {
+    "rare_answers": 89,
+    "right": 35
+   },
+   "rag": {
+    "rare_answers": 47,
+    "right": 34
+   }
+  },
+  "validation_reports": {
+   "not_run": "2024val opus55 zero-shot output incomplete: {'present': False}"
+  }
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "variant": "cb",
+ "model": "roberta-base",
+ "size": "full",
+ "seed": 42,
+ "lr": 2e-05,
+ "val_macro_f1": 0.172,
+ "n_train": 86106,
+ "classes_present": 259,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.172,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.1003,
+     "minutes": 2.6
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.172,
+     "minutes": 2.6
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  2,
+  1
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": false,
+ "best_at_last_epoch": true,
+ "weights": "C:\\Users\\jkchoi\\models\\sdr_encoders\\cb_full_seed42"
+}

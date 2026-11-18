@@ -1,0 +1,21 @@
+{
+ "phase": "cpu",
+ "corpus": "sdr",
+ "years": {
+  "2025": {
+   "reports": 59416,
+   "shortlist": 2190
+  },
+  "2026": {
+   "reports": 42717,
+   "shortlist": 1324
+  }
+ },
+ "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+ "retrieval_index_seconds": 4.45,
+ "retrieval_seconds_per_report": 0.0026216010349977294,
+ "retrieval_reports_timed": 20000,
+ "selection_fit_seconds": 0.36,
+ "selection_seconds_per_report": 4.425677638216934e-05,
+ "selection_reports_timed": 4132
+}

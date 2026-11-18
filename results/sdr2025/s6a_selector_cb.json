@@ -1,0 +1,25 @@
+{
+ "prereg": "notes/prereg-sdr-2026-10-24.md (S6a, S5 half)",
+ "git_head_at_score": "be52091",
+ "encoder_tag": "cb",
+ "role": "test",
+ "best_single_arm_2024": "rag",
+ "n_leak_free": 831,
+ "codes_present": 185,
+ "macro_f1_leak_free": {
+  "selector": 0.3029,
+  "best_single": 0.2701
+ },
+ "S5_leak_free": {
+  "point": 0.0329,
+  "item_ci95": [
+   0.0135,
+   0.0481
+  ],
+  "code_ci95": [
+   0.0018,
+   0.0637
+  ]
+ },
+ "holds": true
+}

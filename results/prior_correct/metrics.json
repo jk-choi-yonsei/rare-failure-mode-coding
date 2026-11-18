@@ -1,0 +1,145 @@
+{
+ "note": "notes/rare-check-2026-11-09.md, option A",
+ "git_head": "c0379b3",
+ "method": "Saerens et al. 2002 prior correction of each answer's odds; natural prior = training share, practice prior = share of the training-year balanced practice set; add-half smoothing",
+ "2025/opus55": {
+  "encoder": {
+   "right_rare": 60.0,
+   "false_rare": 1.0,
+   "precision": 0.9836,
+   "false_next_to_gold": 1.0,
+   "modes_visible": 16,
+   "accuracy_uniform": 0.7482,
+   "macro_f1_uniform": 0.6175,
+   "macro_f1_balanced": 0.5134,
+   "rare_answer_share_uniform": 0.0
+  },
+  "selector": {
+   "right_rare": 151.0,
+   "false_rare": 2872.1,
+   "precision": 0.0499,
+   "false_next_to_gold": 0.465,
+   "modes_visible": 25,
+   "accuracy_uniform": 0.738,
+   "macro_f1_uniform": 0.6119,
+   "macro_f1_balanced": 0.5581,
+   "rare_answer_share_uniform": 0.0037
+  },
+  "selector_prior_corrected": {
+   "right_rare": 70.0,
+   "false_rare": 768.9,
+   "precision": 0.0834,
+   "false_next_to_gold": 0.498,
+   "modes_visible": 21,
+   "accuracy_uniform": 0.7568,
+   "macro_f1_uniform": 0.6152,
+   "macro_f1_balanced": 0.5109,
+   "rare_answer_share_uniform": 0.001
+  }
+ },
+ "2026/opus55": {
+  "encoder": {
+   "right_rare": 32.0,
+   "false_rare": 166.0,
+   "precision": 0.1616,
+   "false_next_to_gold": 0.006,
+   "modes_visible": 9,
+   "accuracy_uniform": 0.6365,
+   "macro_f1_uniform": 0.4898,
+   "macro_f1_balanced": 0.4459,
+   "rare_answer_share_uniform": 0.0003
+  },
+  "selector": {
+   "right_rare": 125.0,
+   "false_rare": 3856.1,
+   "precision": 0.0314,
+   "false_next_to_gold": 0.526,
+   "modes_visible": 25,
+   "accuracy_uniform": 0.636,
+   "macro_f1_uniform": 0.5311,
+   "macro_f1_balanced": 0.5037,
+   "rare_answer_share_uniform": 0.006
+  },
+  "selector_prior_corrected": {
+   "right_rare": 58.0,
+   "false_rare": 706.5,
+   "precision": 0.0759,
+   "false_next_to_gold": 0.059,
+   "modes_visible": 17,
+   "accuracy_uniform": 0.6508,
+   "macro_f1_uniform": 0.5076,
+   "macro_f1_balanced": 0.4548,
+   "rare_answer_share_uniform": 0.001
+  }
+ },
+ "2025/qwen38_27b": {
+  "encoder": {
+   "right_rare": 60.0,
+   "false_rare": 1.0,
+   "precision": 0.9836,
+   "false_next_to_gold": 1.0,
+   "modes_visible": 16,
+   "accuracy_uniform": 0.7482,
+   "macro_f1_uniform": 0.6175,
+   "macro_f1_balanced": 0.5134,
+   "rare_answer_share_uniform": 0.0
+  },
+  "selector": {
+   "right_rare": 150.0,
+   "false_rare": 3140.9,
+   "precision": 0.0456,
+   "false_next_to_gold": 0.306,
+   "modes_visible": 23,
+   "accuracy_uniform": 0.729,
+   "macro_f1_uniform": 0.5944,
+   "macro_f1_balanced": 0.5386,
+   "rare_answer_share_uniform": 0.004
+  },
+  "selector_prior_corrected": {
+   "right_rare": 37.0,
+   "false_rare": 4.0,
+   "precision": 0.9024,
+   "false_next_to_gold": 0.25,
+   "modes_visible": 12,
+   "accuracy_uniform": 0.749,
+   "macro_f1_uniform": 0.6082,
+   "macro_f1_balanced": 0.4935,
+   "rare_answer_share_uniform": 0.0
+  }
+ },
+ "2025/gemma4_31b": {
+  "encoder": {
+   "right_rare": 60.0,
+   "false_rare": 1.0,
+   "precision": 0.9836,
+   "false_next_to_gold": 1.0,
+   "modes_visible": 16,
+   "accuracy_uniform": 0.7482,
+   "macro_f1_uniform": 0.6175,
+   "macro_f1_balanced": 0.5134,
+   "rare_answer_share_uniform": 0.0
+  },
+  "selector": {
+   "right_rare": 148.0,
+   "false_rare": 3649.0,
+   "precision": 0.039,
+   "false_next_to_gold": 0.158,
+   "modes_visible": 22,
+   "accuracy_uniform": 0.7345,
+   "macro_f1_uniform": 0.6019,
+   "macro_f1_balanced": 0.5478,
+   "rare_answer_share_uniform": 0.0047
+  },
+  "selector_prior_corrected": {
+   "right_rare": 54.0,
+   "false_rare": 198.3,
+   "precision": 0.2141,
+   "false_next_to_gold": 0.005,
+   "modes_visible": 16,
+   "accuracy_uniform": 0.7528,
+   "macro_f1_uniform": 0.6173,
+   "macro_f1_balanced": 0.4997,
+   "rare_answer_share_uniform": 0.0003
+  }
+ }
+}

@@ -1,0 +1,5477 @@
+{
+ "task": "m1_first_object",
+ "n": 1046,
+ "classes": 116,
+ "thresholds": {
+  "head_min": 30,
+  "tail_max": 4
+ },
+ "class_counts": {
+  "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject": 79,
+  "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject": 77,
+  "PhysicalObject/DrivingObject/FluidPoweredDrivingObject": 67,
+  "PhysicalObject/DrivingObject/CombustionEngine": 45,
+  "PhysicalObject/EmittingObject/ElectricCoolingObject": 40,
+  "PhysicalObject/ControllingObject/MechanicalMovementControllingObject": 32,
+  "PhysicalObject/ProtectingObject/WearProtectingObject": 32,
+  "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject": 31,
+  "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject": 29,
+  "PhysicalObject/RestrictingObject/MovementRestrictingObject": 28,
+  "PhysicalObject/HoldingObject/StructuralSupportingObject": 26,
+  "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject": 23,
+  "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject": 23,
+  "PhysicalObject/HoldingObject/EnclosingObject": 20,
+  "PhysicalObject/ControllingObject/SpaceAccessObject": 17,
+  "PhysicalObject/EmittingObject/LightObject": 17,
+  "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject": 16,
+  "PhysicalObject/HoldingObject/JointingObject": 16,
+  "PhysicalObject/HumanInteractionObject/MovementInteractionObject": 16,
+  "PhysicalObject/GeneratingObject/DiscontinuousTransferObject": 15,
+  "PhysicalObject/PresentingObject/AcousticDevice": 15,
+  "PhysicalObject/Organism/Person": 14,
+  "PhysicalObject/StoringObject/MoveableStoringObject": 14,
+  "PhysicalObject/MatterProcessingObject/ForceSeparatingObject": 13,
+  "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject": 13,
+  "PhysicalObject": 12,
+  "PhysicalObject/ProtectingObject/FireProtectingObject": 12,
+  "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject": 11,
+  "PhysicalObject/CoveringObject/InfillingObject": 9,
+  "PhysicalObject/EmittingObject/ThermalCoolingObject": 8,
+  "PhysicalObject/StoringObject/EnclosedStationaryStoringObject": 8,
+  "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject": 8,
+  "PhysicalObject/TransformingObject/SignalConvertingObject": 8,
+  "PhysicalObject/GeneratingObject/ContinuousTransferObject": 7,
+  "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject": 7,
+  "PhysicalObject/HoldingObject/CarryingObject": 7,
+  "PhysicalObject/InterfacingObject/DetachableCoupling": 7,
+  "PhysicalObject/PresentingObject/VisibleStateIndicator": 7,
+  "PhysicalObject/ProtectingObject/PressureProtectingObject": 7,
+  "PhysicalObject/SensingObject/ConcentrationSensingObject": 7,
+  "PhysicalObject/StoringObject/ElectrochemicalStoringObject": 7,
+  "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject": 6,
+  "PhysicalObject/ProtectingObject/TemperatureProtectingObject": 6,
+  "PhysicalObject/RestrictingObject/ElectricityRestrictingObject": 6,
+  "PhysicalObject/SensingObject/LevelSensingObject": 6,
+  "PhysicalObject/SensingObject/PowerSensingObject": 6,
+  "PhysicalObject/CoveringObject/FinishingObject": 5,
+  "PhysicalObject/Substance/Gas": 5,
+  "PhysicalObject/TransformingObject/MatterReshapingObject": 5,
+  "PhysicalObject/ControllingObject/ElectricEarthingObject": 4,
+  "PhysicalObject/ControllingObject/SealedFluidVaryingObject": 4,
+  "PhysicalObject/CoveringObject/ClosureObject": 4,
+  "PhysicalObject/GuidingObject/ThermalEnergyGuidingObject": 4,
+  "PhysicalObject/HoldingObject/FasteningObject": 4,
+  "PhysicalObject/HoldingObject/FramingObject": 4,
+  "PhysicalObject/HoldingObject/ReinforcingObject": 4,
+  "PhysicalObject/HumanInteractionObject/HandInteractionObject": 4,
+  "PhysicalObject/PresentingObject/GraphicalDisplay": 4,
+  "PhysicalObject/PresentingObject/MultipleFormPresentingObject": 4,
+  "PhysicalObject/ProtectingObject/PreventiveProtectingObject": 4,
+  "PhysicalObject/StoringObject/OpenStationaryStoringObject": 4,
+  "PhysicalObject/ControllingObject/ElectricControllingObject": 3,
+  "PhysicalObject/ControllingObject/OpenFlowControllingObject": 3,
+  "PhysicalObject/DrivingObject/MechanicalEnergyDrivingObject": 3,
+  "PhysicalObject/EmittingObject/ThermalEnergyTransferObject": 3,
+  "PhysicalObject/EmittingObject/WirelessPowerObject": 3,
+  "PhysicalObject/GuidingObject/LightGuidingObject": 3,
+  "PhysicalObject/HoldingObject/PositioningObject": 3,
+  "PhysicalObject/InformationProcessingObject/FluidSignallingObject": 3,
+  "PhysicalObject/InterfacingObject/LevelConnectingObject": 3,
+  "PhysicalObject/InterfacingObject/LowVoltageConnectingObject": 3,
+  "PhysicalObject/PresentingObject/ScalarDisplay": 3,
+  "PhysicalObject/ProtectingObject/EnvironmentProtectingObject": 3,
+  "PhysicalObject/SensingObject/ForceSensingObject": 3,
+  "PhysicalObject/SensingObject/PressureSensingObject": 3,
+  "PhysicalObject/Substance/Liquid": 3,
+  "PhysicalObject/TransformingObject/ElectricEnergyConvertingObject": 3,
+  "PhysicalObject/ControllingObject/ElectricSeparatingObject": 2,
+  "PhysicalObject/EmittingObject": 2,
+  "PhysicalObject/EmittingObject/AcousticWaveEmittingObject": 2,
+  "PhysicalObject/EmittingObject/ElectricHeatingObject": 2,
+  "PhysicalObject/GuidingObject/ElectricSignalGuidingObject": 2,
+  "PhysicalObject/InformationProcessingObject/ElectricSignalProcessingObject": 2,
+  "PhysicalObject/InterfacingObject/CollectingInterfacingObject": 2,
+  "PhysicalObject/InterfacingObject/PotentialConnectingObject": 2,
+  "PhysicalObject/MatterProcessingObject/AssemblingObject": 2,
+  "PhysicalObject/MatterProcessingObject/ChemicalSeparatingObject": 2,
+  "PhysicalObject/MatterProcessingObject/SurfaceTreatmentObject": 2,
+  "PhysicalObject/RestrictingObject/ElectricityStabilisingObject": 2,
+  "PhysicalObject/SensingObject/AudioVisualSensingObject": 2,
+  "PhysicalObject/SensingObject/FlowSensingObject": 2,
+  "PhysicalObject/SensingObject/TimeRatingObject": 2,
+  "PhysicalObject/TransformingObject/OrganicPlant": 2,
+  "PhysicalObject/ControllingObject": 1,
+  "PhysicalObject/ControllingObject/SealedFluidSwitchingObject": 1,
+  "PhysicalObject/EmittingObject/CombustionHeatingObject": 1,
+  "PhysicalObject/EmittingObject/ThermalHeatingObject": 1,
+  "PhysicalObject/GeneratingObject/SignalGeneratingObject": 1,
+  "PhysicalObject/GuidingObject/HighVoltageElectricEnergyGuidingObject": 1,
+  "PhysicalObject/GuidingObject/RailObject": 1,
+  "PhysicalObject/GuidingObject/SolidMatterGuidingObject": 1,
+  "PhysicalObject/HoldingObject": 1,
+  "PhysicalObject/HumanInteractionObject/FootInteractionObject": 1,
+  "PhysicalObject/InterfacingObject/HighVoltageConnectingObject": 1,
+  "PhysicalObject/InterfacingObject/SealedFlowConnectingObject": 1,
+  "PhysicalObject/InterfacingObject/SpaceLinkingObject": 1,
+  "PhysicalObject/MatterProcessingObject": 1,
+  "PhysicalObject/MatterProcessingObject/ThermalSeparatingObject": 1,
+  "PhysicalObject/RestrictingObject/AccessRestrictingObject": 1,
+  "PhysicalObject/RestrictingObject/ReturnFlowRestrictingObject": 1,
+  "PhysicalObject/SensingObject/FieldSensingObject": 1,
+  "PhysicalObject/SensingObject/PhysicalDimensionSensingObject": 1,
+  "PhysicalObject/SensingObject/TimeSensingObject": 1,
+  "PhysicalObject/StoringObject/InductiveStoringObject": 1,
+  "PhysicalObject/Substance/Mixture": 1,
+  "PhysicalObject/Substance/Solid": 1
+ },
+ "class_tiers": {
+  "PhysicalObject/EmittingObject/ElectricCoolingObject": "head",
+  "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject": "body",
+  "PhysicalObject": "body",
+  "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject": "head",
+  "PhysicalObject/PresentingObject/AcousticDevice": "body",
+  "PhysicalObject/Substance/Gas": "body",
+  "PhysicalObject/StoringObject/EnclosedStationaryStoringObject": "body",
+  "PhysicalObject/EmittingObject/LightObject": "body",
+  "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject": "body",
+  "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject": "head",
+  "PhysicalObject/ProtectingObject/WearProtectingObject": "head",
+  "PhysicalObject/StoringObject/OpenStationaryStoringObject": "tail",
+  "PhysicalObject/DrivingObject/CombustionEngine": "head",
+  "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject": "body",
+  "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject": "body",
+  "PhysicalObject/HoldingObject/JointingObject": "body",
+  "PhysicalObject/HoldingObject/StructuralSupportingObject": "body",
+  "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject": "head",
+  "PhysicalObject/RestrictingObject/MovementRestrictingObject": "body",
+  "PhysicalObject/DrivingObject/FluidPoweredDrivingObject": "head",
+  "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject": "body",
+  "PhysicalObject/CoveringObject/InfillingObject": "body",
+  "PhysicalObject/EmittingObject/ThermalCoolingObject": "body",
+  "PhysicalObject/ControllingObject/MechanicalMovementControllingObject": "head",
+  "PhysicalObject/ControllingObject/SpaceAccessObject": "body",
+  "PhysicalObject/InterfacingObject/LevelConnectingObject": "tail",
+  "PhysicalObject/Organism/Person": "body",
+  "PhysicalObject/HoldingObject/PositioningObject": "tail",
+  "PhysicalObject/ControllingObject/SealedFluidSwitchingObject": "tail",
+  "PhysicalObject/HumanInteractionObject/MovementInteractionObject": "body",
+  "PhysicalObject/GuidingObject/LightGuidingObject": "tail",
+  "PhysicalObject/StoringObject/MoveableStoringObject": "body",
+  "PhysicalObject/HoldingObject/EnclosingObject": "body",
+  "PhysicalObject/SensingObject/AudioVisualSensingObject": "tail",
+  "PhysicalObject/HoldingObject/FasteningObject": "tail",
+  "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject": "body",
+  "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject": "body",
+  "PhysicalObject/EmittingObject": "tail",
+  "PhysicalObject/ControllingObject": "tail",
+  "PhysicalObject/ControllingObject/ElectricControllingObject": "tail",
+  "PhysicalObject/ControllingObject/SealedFluidVaryingObject": "tail",
+  "PhysicalObject/GeneratingObject/ContinuousTransferObject": "body",
+  "PhysicalObject/ProtectingObject/TemperatureProtectingObject": "body",
+  "PhysicalObject/ProtectingObject/EnvironmentProtectingObject": "tail",
+  "PhysicalObject/HoldingObject/CarryingObject": "body",
+  "PhysicalObject/ProtectingObject/PreventiveProtectingObject": "tail",
+  "PhysicalObject/ProtectingObject/FireProtectingObject": "body",
+  "PhysicalObject/GuidingObject/SolidMatterGuidingObject": "tail",
+  "PhysicalObject/PresentingObject/ScalarDisplay": "tail",
+  "PhysicalObject/InterfacingObject/DetachableCoupling": "body",
+  "PhysicalObject/Substance/Solid": "tail",
+  "PhysicalObject/SensingObject/TimeRatingObject": "tail",
+  "PhysicalObject/GeneratingObject/SignalGeneratingObject": "tail",
+  "PhysicalObject/GeneratingObject/DiscontinuousTransferObject": "body",
+  "PhysicalObject/EmittingObject/ElectricHeatingObject": "tail",
+  "PhysicalObject/DrivingObject/MechanicalEnergyDrivingObject": "tail",
+  "PhysicalObject/CoveringObject/ClosureObject": "tail",
+  "PhysicalObject/HumanInteractionObject/HandInteractionObject": "tail",
+  "PhysicalObject/PresentingObject/GraphicalDisplay": "tail",
+  "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject": "body",
+  "PhysicalObject/InterfacingObject/CollectingInterfacingObject": "tail",
+  "PhysicalObject/SensingObject/PressureSensingObject": "tail",
+  "PhysicalObject/MatterProcessingObject": "tail",
+  "PhysicalObject/InterfacingObject/SealedFlowConnectingObject": "tail",
+  "PhysicalObject/SensingObject/TimeSensingObject": "tail",
+  "PhysicalObject/SensingObject/LevelSensingObject": "body",
+  "PhysicalObject/GuidingObject/RailObject": "tail",
+  "PhysicalObject/HoldingObject": "tail",
+  "PhysicalObject/TransformingObject/SignalConvertingObject": "body",
+  "PhysicalObject/EmittingObject/ThermalEnergyTransferObject": "tail",
+  "PhysicalObject/SensingObject/FlowSensingObject": "tail",
+  "PhysicalObject/Substance/Liquid": "tail",
+  "PhysicalObject/HoldingObject/ReinforcingObject": "tail",
+  "PhysicalObject/MatterProcessingObject/ThermalSeparatingObject": "tail",
+  "PhysicalObject/ControllingObject/OpenFlowControllingObject": "tail",
+  "PhysicalObject/MatterProcessingObject/ChemicalSeparatingObject": "tail",
+  "PhysicalObject/GuidingObject/ThermalEnergyGuidingObject": "tail",
+  "PhysicalObject/CoveringObject/FinishingObject": "body",
+  "PhysicalObject/EmittingObject/CombustionHeatingObject": "tail",
+  "PhysicalObject/GuidingObject/HighVoltageElectricEnergyGuidingObject": "tail",
+  "PhysicalObject/ProtectingObject/PressureProtectingObject": "body",
+  "PhysicalObject/StoringObject/ElectrochemicalStoringObject": "body",
+  "PhysicalObject/SensingObject/FieldSensingObject": "tail",
+  "PhysicalObject/SensingObject/ForceSensingObject": "tail",
+  "PhysicalObject/MatterProcessingObject/ForceSeparatingObject": "body",
+  "PhysicalObject/RestrictingObject/ElectricityRestrictingObject": "body",
+  "PhysicalObject/SensingObject/ConcentrationSensingObject": "body",
+  "PhysicalObject/InterfacingObject/PotentialConnectingObject": "tail",
+  "PhysicalObject/TransformingObject/OrganicPlant": "tail",
+  "PhysicalObject/Substance/Mixture": "tail",
+  "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject": "body",
+  "PhysicalObject/HoldingObject/FramingObject": "tail",
+  "PhysicalObject/InterfacingObject/LowVoltageConnectingObject": "tail",
+  "PhysicalObject/PresentingObject/VisibleStateIndicator": "body",
+  "PhysicalObject/SensingObject/PhysicalDimensionSensingObject": "tail",
+  "PhysicalObject/ControllingObject/ElectricEarthingObject": "tail",
+  "PhysicalObject/EmittingObject/ThermalHeatingObject": "tail",
+  "PhysicalObject/ControllingObject/ElectricSeparatingObject": "tail",
+  "PhysicalObject/TransformingObject/MatterReshapingObject": "body",
+  "PhysicalObject/EmittingObject/WirelessPowerObject": "tail",
+  "PhysicalObject/InformationProcessingObject/ElectricSignalProcessingObject": "tail",
+  "PhysicalObject/SensingObject/PowerSensingObject": "body",
+  "PhysicalObject/PresentingObject/MultipleFormPresentingObject": "tail",
+  "PhysicalObject/TransformingObject/ElectricEnergyConvertingObject": "tail",
+  "PhysicalObject/MatterProcessingObject/SurfaceTreatmentObject": "tail",
+  "PhysicalObject/MatterProcessingObject/AssemblingObject": "tail",
+  "PhysicalObject/InformationProcessingObject/FluidSignallingObject": "tail",
+  "PhysicalObject/EmittingObject/AcousticWaveEmittingObject": "tail",
+  "PhysicalObject/RestrictingObject/AccessRestrictingObject": "tail",
+  "PhysicalObject/GuidingObject/ElectricSignalGuidingObject": "tail",
+  "PhysicalObject/HumanInteractionObject/FootInteractionObject": "tail",
+  "PhysicalObject/InterfacingObject/HighVoltageConnectingObject": "tail",
+  "PhysicalObject/InterfacingObject/SpaceLinkingObject": "tail",
+  "PhysicalObject/StoringObject/InductiveStoringObject": "tail",
+  "PhysicalObject/RestrictingObject/ElectricityStabilisingObject": "tail",
+  "PhysicalObject/RestrictingObject/ReturnFlowRestrictingObject": "tail"
+ },
+ "records": [
+  {
+   "idx": 0,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 2,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 3,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 4,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 5,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 6,
+   "label": "PhysicalObject",
+   "fold": 2
+  },
+  {
+   "idx": 7,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 8,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 0
+  },
+  {
+   "idx": 9,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 3
+  },
+  {
+   "idx": 10,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 1
+  },
+  {
+   "idx": 11,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 3
+  },
+  {
+   "idx": 12,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 1
+  },
+  {
+   "idx": 13,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 0
+  },
+  {
+   "idx": 14,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 1
+  },
+  {
+   "idx": 15,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 4
+  },
+  {
+   "idx": 16,
+   "label": "PhysicalObject/Substance/Gas",
+   "fold": 3
+  },
+  {
+   "idx": 17,
+   "label": "PhysicalObject/Substance/Gas",
+   "fold": 1
+  },
+  {
+   "idx": 18,
+   "label": "PhysicalObject/Substance/Gas",
+   "fold": 4
+  },
+  {
+   "idx": 19,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 20,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 2
+  },
+  {
+   "idx": 21,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 3
+  },
+  {
+   "idx": 22,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 4
+  },
+  {
+   "idx": 23,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 24,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 25,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 26,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 27,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 28,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 29,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 30,
+   "label": "PhysicalObject/StoringObject/OpenStationaryStoringObject",
+   "fold": 0
+  },
+  {
+   "idx": 31,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 32,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 33,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 34,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 35,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 36,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 37,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 38,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 39,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 40,
+   "label": "PhysicalObject/StoringObject/OpenStationaryStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 41,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 2
+  },
+  {
+   "idx": 42,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 0
+  },
+  {
+   "idx": 43,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 3
+  },
+  {
+   "idx": 44,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 2
+  },
+  {
+   "idx": 45,
+   "label": "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 46,
+   "label": "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 47,
+   "label": "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 48,
+   "label": "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 49,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 2
+  },
+  {
+   "idx": 50,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 4
+  },
+  {
+   "idx": 51,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 3
+  },
+  {
+   "idx": 52,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 0
+  },
+  {
+   "idx": 53,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 0
+  },
+  {
+   "idx": 54,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 1
+  },
+  {
+   "idx": 55,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 56,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 57,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 0
+  },
+  {
+   "idx": 58,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 2
+  },
+  {
+   "idx": 59,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 1
+  },
+  {
+   "idx": 60,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 2
+  },
+  {
+   "idx": 61,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 1
+  },
+  {
+   "idx": 62,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 63,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 64,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 65,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 66,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 67,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 68,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 69,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 70,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 71,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 72,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 2
+  },
+  {
+   "idx": 73,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 2
+  },
+  {
+   "idx": 74,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 2
+  },
+  {
+   "idx": 75,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 0
+  },
+  {
+   "idx": 76,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 77,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 78,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 79,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 80,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 81,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 2
+  },
+  {
+   "idx": 82,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 0
+  },
+  {
+   "idx": 83,
+   "label": "PhysicalObject/InterfacingObject/LevelConnectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 84,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 1
+  },
+  {
+   "idx": 85,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 4
+  },
+  {
+   "idx": 86,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 4
+  },
+  {
+   "idx": 87,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 1
+  },
+  {
+   "idx": 88,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 2
+  },
+  {
+   "idx": 89,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 2
+  },
+  {
+   "idx": 91,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 92,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 93,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 0
+  },
+  {
+   "idx": 94,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 0
+  },
+  {
+   "idx": 95,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 96,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 97,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 98,
+   "label": "PhysicalObject/HoldingObject/PositioningObject",
+   "fold": 3
+  },
+  {
+   "idx": 99,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 100,
+   "label": "PhysicalObject/ControllingObject/SealedFluidSwitchingObject",
+   "fold": 4
+  },
+  {
+   "idx": 101,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 0
+  },
+  {
+   "idx": 102,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 3
+  },
+  {
+   "idx": 103,
+   "label": "PhysicalObject/GuidingObject/LightGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 104,
+   "label": "PhysicalObject/GuidingObject/LightGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 105,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 4
+  },
+  {
+   "idx": 106,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 4
+  },
+  {
+   "idx": 107,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 1
+  },
+  {
+   "idx": 108,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 109,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 1
+  },
+  {
+   "idx": 110,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 4
+  },
+  {
+   "idx": 111,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 2
+  },
+  {
+   "idx": 112,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 3
+  },
+  {
+   "idx": 113,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 3
+  },
+  {
+   "idx": 114,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 1
+  },
+  {
+   "idx": 115,
+   "label": "PhysicalObject/SensingObject/AudioVisualSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 116,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 0
+  },
+  {
+   "idx": 117,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 118,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 119,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 0
+  },
+  {
+   "idx": 120,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 121,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 122,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 123,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 2
+  },
+  {
+   "idx": 124,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 125,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 126,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 4
+  },
+  {
+   "idx": 127,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 128,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 129,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 130,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 131,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 3
+  },
+  {
+   "idx": 132,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 133,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 134,
+   "label": "PhysicalObject/HoldingObject/FasteningObject",
+   "fold": 3
+  },
+  {
+   "idx": 135,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 136,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 3
+  },
+  {
+   "idx": 137,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 138,
+   "label": "PhysicalObject/HoldingObject/FasteningObject",
+   "fold": 4
+  },
+  {
+   "idx": 139,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 140,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 141,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 142,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 143,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 144,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 145,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 146,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 0
+  },
+  {
+   "idx": 147,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 148,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 149,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 150,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 151,
+   "label": "PhysicalObject/EmittingObject",
+   "fold": 0
+  },
+  {
+   "idx": 152,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 153,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 154,
+   "label": "PhysicalObject/ControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 155,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 156,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 157,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 158,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 159,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 160,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 161,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 162,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 163,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 164,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 165,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 166,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 167,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 168,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 169,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 170,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 171,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 172,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 173,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 174,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 175,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 176,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 177,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 178,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 179,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 180,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 181,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 182,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 183,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 184,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 185,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 186,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 187,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 188,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 189,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 190,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 191,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 192,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 193,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 194,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 196,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 197,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 198,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 200,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 202,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 1
+  },
+  {
+   "idx": 203,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 1
+  },
+  {
+   "idx": 204,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 205,
+   "label": "PhysicalObject/ControllingObject/ElectricControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 206,
+   "label": "PhysicalObject/ControllingObject/SealedFluidVaryingObject",
+   "fold": 3
+  },
+  {
+   "idx": 207,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 0
+  },
+  {
+   "idx": 208,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 209,
+   "label": "PhysicalObject/ProtectingObject/TemperatureProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 210,
+   "label": "PhysicalObject/ProtectingObject/TemperatureProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 211,
+   "label": "PhysicalObject/ProtectingObject/TemperatureProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 212,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 213,
+   "label": "PhysicalObject/EmittingObject",
+   "fold": 4
+  },
+  {
+   "idx": 214,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 4
+  },
+  {
+   "idx": 215,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 4
+  },
+  {
+   "idx": 216,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 1
+  },
+  {
+   "idx": 217,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 4
+  },
+  {
+   "idx": 218,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 4
+  },
+  {
+   "idx": 219,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 3
+  },
+  {
+   "idx": 220,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 0
+  },
+  {
+   "idx": 221,
+   "label": "PhysicalObject/ProtectingObject/EnvironmentProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 222,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 4
+  },
+  {
+   "idx": 223,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 224,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 225,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 226,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 227,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 1
+  },
+  {
+   "idx": 228,
+   "label": "PhysicalObject/ProtectingObject/PreventiveProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 229,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 3
+  },
+  {
+   "idx": 230,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 1
+  },
+  {
+   "idx": 231,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 232,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 3
+  },
+  {
+   "idx": 233,
+   "label": "PhysicalObject/GuidingObject/SolidMatterGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 234,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 4
+  },
+  {
+   "idx": 235,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 236,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 3
+  },
+  {
+   "idx": 237,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 3
+  },
+  {
+   "idx": 239,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 240,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 241,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 242,
+   "label": "PhysicalObject/PresentingObject/ScalarDisplay",
+   "fold": 3
+  },
+  {
+   "idx": 244,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 245,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 246,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 247,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 248,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 249,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 250,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 251,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 252,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 253,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 254,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 255,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 256,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 257,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 258,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 259,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 2
+  },
+  {
+   "idx": 260,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 261,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 262,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 263,
+   "label": "PhysicalObject",
+   "fold": 3
+  },
+  {
+   "idx": 264,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 265,
+   "label": "PhysicalObject/HoldingObject/FasteningObject",
+   "fold": 4
+  },
+  {
+   "idx": 266,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 1
+  },
+  {
+   "idx": 267,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 3
+  },
+  {
+   "idx": 268,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 0
+  },
+  {
+   "idx": 269,
+   "label": "PhysicalObject/Substance/Solid",
+   "fold": 0
+  },
+  {
+   "idx": 273,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 1
+  },
+  {
+   "idx": 274,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 276,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 2
+  },
+  {
+   "idx": 277,
+   "label": "PhysicalObject",
+   "fold": 4
+  },
+  {
+   "idx": 278,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 279,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 280,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 281,
+   "label": "PhysicalObject/SensingObject/TimeRatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 282,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 4
+  },
+  {
+   "idx": 283,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 284,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 285,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 286,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 1
+  },
+  {
+   "idx": 287,
+   "label": "PhysicalObject/GeneratingObject/SignalGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 288,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 289,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 1
+  },
+  {
+   "idx": 290,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 0
+  },
+  {
+   "idx": 291,
+   "label": "PhysicalObject",
+   "fold": 4
+  },
+  {
+   "idx": 292,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 293,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 2
+  },
+  {
+   "idx": 294,
+   "label": "PhysicalObject/EmittingObject/ElectricHeatingObject",
+   "fold": 3
+  },
+  {
+   "idx": 295,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 0
+  },
+  {
+   "idx": 296,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 4
+  },
+  {
+   "idx": 297,
+   "label": "PhysicalObject/DrivingObject/MechanicalEnergyDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 298,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 3
+  },
+  {
+   "idx": 299,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 300,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 4
+  },
+  {
+   "idx": 301,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 4
+  },
+  {
+   "idx": 302,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 0
+  },
+  {
+   "idx": 303,
+   "label": "PhysicalObject",
+   "fold": 0
+  },
+  {
+   "idx": 304,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 305,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 306,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 307,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 308,
+   "label": "PhysicalObject/CoveringObject/ClosureObject",
+   "fold": 0
+  },
+  {
+   "idx": 309,
+   "label": "PhysicalObject/HumanInteractionObject/HandInteractionObject",
+   "fold": 1
+  },
+  {
+   "idx": 310,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 4
+  },
+  {
+   "idx": 311,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 2
+  },
+  {
+   "idx": 312,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 313,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 314,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 1
+  },
+  {
+   "idx": 315,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 4
+  },
+  {
+   "idx": 316,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 317,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 318,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 4
+  },
+  {
+   "idx": 319,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 320,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 321,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 322,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 323,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 324,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 325,
+   "label": "PhysicalObject/PresentingObject/GraphicalDisplay",
+   "fold": 2
+  },
+  {
+   "idx": 326,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 327,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 328,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 329,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 1
+  },
+  {
+   "idx": 330,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 331,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 332,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 333,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 334,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 335,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 336,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 1
+  },
+  {
+   "idx": 337,
+   "label": "PhysicalObject/ProtectingObject/PreventiveProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 339,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 340,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 342,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 343,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 1
+  },
+  {
+   "idx": 344,
+   "label": "PhysicalObject/ControllingObject/ElectricControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 345,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 346,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 347,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 348,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 349,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 350,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 351,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 352,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 4
+  },
+  {
+   "idx": 353,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 354,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 355,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 356,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 357,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 358,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 359,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 1
+  },
+  {
+   "idx": 360,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 361,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 362,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 2
+  },
+  {
+   "idx": 363,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 364,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 365,
+   "label": "PhysicalObject/ProtectingObject/PreventiveProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 366,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 2
+  },
+  {
+   "idx": 367,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 368,
+   "label": "PhysicalObject/PresentingObject/GraphicalDisplay",
+   "fold": 1
+  },
+  {
+   "idx": 369,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 370,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 371,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 2
+  },
+  {
+   "idx": 372,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 373,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 374,
+   "label": "PhysicalObject/SensingObject/AudioVisualSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 375,
+   "label": "PhysicalObject/InterfacingObject/LevelConnectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 376,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 377,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 4
+  },
+  {
+   "idx": 378,
+   "label": "PhysicalObject/PresentingObject/ScalarDisplay",
+   "fold": 4
+  },
+  {
+   "idx": 379,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 381,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 4
+  },
+  {
+   "idx": 382,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 383,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 384,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 385,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 386,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 387,
+   "label": "PhysicalObject/ProtectingObject/TemperatureProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 388,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 389,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 390,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 391,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 392,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 4
+  },
+  {
+   "idx": 393,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 394,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 395,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 3
+  },
+  {
+   "idx": 396,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 397,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 398,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 399,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 400,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 4
+  },
+  {
+   "idx": 401,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 402,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 403,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 404,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 0
+  },
+  {
+   "idx": 405,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 4
+  },
+  {
+   "idx": 406,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 407,
+   "label": "PhysicalObject/InterfacingObject/CollectingInterfacingObject",
+   "fold": 0
+  },
+  {
+   "idx": 408,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 409,
+   "label": "PhysicalObject/InterfacingObject/CollectingInterfacingObject",
+   "fold": 1
+  },
+  {
+   "idx": 410,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 411,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 412,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 413,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 414,
+   "label": "PhysicalObject/HoldingObject/PositioningObject",
+   "fold": 2
+  },
+  {
+   "idx": 415,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 416,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 3
+  },
+  {
+   "idx": 417,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 418,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 419,
+   "label": "PhysicalObject/CoveringObject/ClosureObject",
+   "fold": 3
+  },
+  {
+   "idx": 420,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 421,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 423,
+   "label": "PhysicalObject/SensingObject/PressureSensingObject",
+   "fold": 4
+  },
+  {
+   "idx": 424,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 425,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 1
+  },
+  {
+   "idx": 426,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 427,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 428,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 3
+  },
+  {
+   "idx": 429,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 430,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 0
+  },
+  {
+   "idx": 431,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 432,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 433,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 434,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 435,
+   "label": "PhysicalObject/MatterProcessingObject",
+   "fold": 0
+  },
+  {
+   "idx": 436,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 0
+  },
+  {
+   "idx": 437,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 438,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 439,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 440,
+   "label": "PhysicalObject/InterfacingObject/SealedFlowConnectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 441,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 0
+  },
+  {
+   "idx": 442,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 444,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 445,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 446,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 0
+  },
+  {
+   "idx": 447,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 448,
+   "label": "PhysicalObject/SensingObject/TimeRatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 449,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 450,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 451,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 452,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 453,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 454,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 1
+  },
+  {
+   "idx": 455,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 3
+  },
+  {
+   "idx": 456,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 457,
+   "label": "PhysicalObject/SensingObject/TimeSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 458,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 4
+  },
+  {
+   "idx": 459,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 460,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 461,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 1
+  },
+  {
+   "idx": 462,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 464,
+   "label": "PhysicalObject",
+   "fold": 2
+  },
+  {
+   "idx": 465,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 4
+  },
+  {
+   "idx": 466,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 467,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 2
+  },
+  {
+   "idx": 468,
+   "label": "PhysicalObject/SensingObject/LevelSensingObject",
+   "fold": 0
+  },
+  {
+   "idx": 469,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 470,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 4
+  },
+  {
+   "idx": 471,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 472,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 1
+  },
+  {
+   "idx": 473,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 474,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 475,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 0
+  },
+  {
+   "idx": 476,
+   "label": "PhysicalObject/GuidingObject/RailObject",
+   "fold": 4
+  },
+  {
+   "idx": 477,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 0
+  },
+  {
+   "idx": 478,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 4
+  },
+  {
+   "idx": 479,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 480,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 2
+  },
+  {
+   "idx": 481,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 2
+  },
+  {
+   "idx": 482,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 483,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 484,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 0
+  },
+  {
+   "idx": 485,
+   "label": "PhysicalObject/HoldingObject/PositioningObject",
+   "fold": 0
+  },
+  {
+   "idx": 486,
+   "label": "PhysicalObject/PresentingObject/GraphicalDisplay",
+   "fold": 1
+  },
+  {
+   "idx": 487,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 488,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 489,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 490,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 491,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 492,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 493,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 0
+  },
+  {
+   "idx": 494,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 495,
+   "label": "PhysicalObject/HoldingObject",
+   "fold": 2
+  },
+  {
+   "idx": 496,
+   "label": "PhysicalObject/ControllingObject/SealedFluidVaryingObject",
+   "fold": 3
+  },
+  {
+   "idx": 497,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 2
+  },
+  {
+   "idx": 498,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 3
+  },
+  {
+   "idx": 499,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 500,
+   "label": "PhysicalObject/EmittingObject/ThermalEnergyTransferObject",
+   "fold": 4
+  },
+  {
+   "idx": 501,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 502,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 2
+  },
+  {
+   "idx": 503,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 504,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 3
+  },
+  {
+   "idx": 505,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 3
+  },
+  {
+   "idx": 506,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 507,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 2
+  },
+  {
+   "idx": 508,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 4
+  },
+  {
+   "idx": 509,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 0
+  },
+  {
+   "idx": 510,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 0
+  },
+  {
+   "idx": 511,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 4
+  },
+  {
+   "idx": 512,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 2
+  },
+  {
+   "idx": 513,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 0
+  },
+  {
+   "idx": 514,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 1
+  },
+  {
+   "idx": 515,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 3
+  },
+  {
+   "idx": 516,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 517,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 518,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 519,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 520,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 521,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 522,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 523,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 524,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 2
+  },
+  {
+   "idx": 525,
+   "label": "PhysicalObject/Substance/Gas",
+   "fold": 2
+  },
+  {
+   "idx": 526,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 3
+  },
+  {
+   "idx": 527,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 528,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 529,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 530,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 531,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 532,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 533,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 534,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 535,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 536,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 537,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 538,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 539,
+   "label": "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 540,
+   "label": "PhysicalObject/GeneratingObject/ChemicalToElectricalEnergyGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 541,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 542,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 543,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 544,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 0
+  },
+  {
+   "idx": 545,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 546,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 547,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 4
+  },
+  {
+   "idx": 548,
+   "label": "PhysicalObject/SensingObject/FlowSensingObject",
+   "fold": 0
+  },
+  {
+   "idx": 549,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 550,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 551,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 552,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 2
+  },
+  {
+   "idx": 553,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 3
+  },
+  {
+   "idx": 554,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 555,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 556,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 557,
+   "label": "PhysicalObject/HumanInteractionObject/HandInteractionObject",
+   "fold": 1
+  },
+  {
+   "idx": 558,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 4
+  },
+  {
+   "idx": 559,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 560,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 561,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 562,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 563,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 564,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 565,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 566,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 567,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 568,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 569,
+   "label": "PhysicalObject/ControllingObject/SealedFluidVaryingObject",
+   "fold": 2
+  },
+  {
+   "idx": 570,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 571,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 572,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 3
+  },
+  {
+   "idx": 573,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 574,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 575,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 576,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 577,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 578,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 579,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 580,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 581,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 582,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 583,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 584,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 585,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 586,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 587,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 588,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 589,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 590,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 2
+  },
+  {
+   "idx": 591,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 592,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 593,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 594,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 595,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 596,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 597,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 0
+  },
+  {
+   "idx": 598,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 599,
+   "label": "PhysicalObject/ProtectingObject/TemperatureProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 600,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 601,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 602,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 603,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 2
+  },
+  {
+   "idx": 604,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 1
+  },
+  {
+   "idx": 605,
+   "label": "PhysicalObject/GeneratingObject/ContinuousTransferObject",
+   "fold": 2
+  },
+  {
+   "idx": 606,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 1
+  },
+  {
+   "idx": 607,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 2
+  },
+  {
+   "idx": 608,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 609,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 610,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 611,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 612,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 613,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 614,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 615,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 616,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 617,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 618,
+   "label": "PhysicalObject/SensingObject/FlowSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 619,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 1
+  },
+  {
+   "idx": 620,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 621,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 2
+  },
+  {
+   "idx": 622,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 623,
+   "label": "PhysicalObject/CoveringObject/ClosureObject",
+   "fold": 4
+  },
+  {
+   "idx": 624,
+   "label": "PhysicalObject/Substance/Liquid",
+   "fold": 0
+  },
+  {
+   "idx": 625,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 626,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 627,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 1
+  },
+  {
+   "idx": 628,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 2
+  },
+  {
+   "idx": 629,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 3
+  },
+  {
+   "idx": 630,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 631,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 632,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 633,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 634,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 635,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 3
+  },
+  {
+   "idx": 636,
+   "label": "PhysicalObject/HoldingObject/JointingObject",
+   "fold": 3
+  },
+  {
+   "idx": 637,
+   "label": "PhysicalObject/HoldingObject/ReinforcingObject",
+   "fold": 1
+  },
+  {
+   "idx": 638,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 639,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 640,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 641,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 642,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 643,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 644,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 645,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 646,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 1
+  },
+  {
+   "idx": 647,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 4
+  },
+  {
+   "idx": 648,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 1
+  },
+  {
+   "idx": 649,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 3
+  },
+  {
+   "idx": 650,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 4
+  },
+  {
+   "idx": 651,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 652,
+   "label": "PhysicalObject/InterfacingObject/LevelConnectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 653,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 654,
+   "label": "PhysicalObject/CoveringObject/ClosureObject",
+   "fold": 3
+  },
+  {
+   "idx": 655,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 0
+  },
+  {
+   "idx": 657,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 0
+  },
+  {
+   "idx": 658,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 659,
+   "label": "PhysicalObject",
+   "fold": 1
+  },
+  {
+   "idx": 660,
+   "label": "PhysicalObject",
+   "fold": 4
+  },
+  {
+   "idx": 661,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 662,
+   "label": "PhysicalObject",
+   "fold": 3
+  },
+  {
+   "idx": 663,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 2
+  },
+  {
+   "idx": 664,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 665,
+   "label": "PhysicalObject/StoringObject/OpenStationaryStoringObject",
+   "fold": 4
+  },
+  {
+   "idx": 666,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 667,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 668,
+   "label": "PhysicalObject/EmittingObject/ThermalEnergyTransferObject",
+   "fold": 0
+  },
+  {
+   "idx": 669,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 670,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 673,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 4
+  },
+  {
+   "idx": 674,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 0
+  },
+  {
+   "idx": 675,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 676,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 677,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 678,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 679,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 680,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 681,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 682,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 683,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 684,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 686,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 3
+  },
+  {
+   "idx": 687,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 689,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 690,
+   "label": "PhysicalObject/SensingObject/LevelSensingObject",
+   "fold": 4
+  },
+  {
+   "idx": 691,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 692,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 693,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 3
+  },
+  {
+   "idx": 694,
+   "label": "PhysicalObject/MatterProcessingObject/ThermalSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 695,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 696,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 0
+  },
+  {
+   "idx": 697,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 698,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 699,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 700,
+   "label": "PhysicalObject/GuidingObject/LightGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 701,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 702,
+   "label": "PhysicalObject/SensingObject/LevelSensingObject",
+   "fold": 1
+  },
+  {
+   "idx": 703,
+   "label": "PhysicalObject/ProtectingObject/TemperatureProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 704,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 2
+  },
+  {
+   "idx": 705,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 706,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 707,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 708,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 709,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 710,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 711,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 712,
+   "label": "PhysicalObject/SensingObject/PressureSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 713,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 4
+  },
+  {
+   "idx": 714,
+   "label": "PhysicalObject/SensingObject/LevelSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 715,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 716,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 717,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 718,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 719,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 720,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 721,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 722,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 723,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 724,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 725,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 3
+  },
+  {
+   "idx": 726,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 727,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 2
+  },
+  {
+   "idx": 728,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 1
+  },
+  {
+   "idx": 729,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 730,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 731,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 1
+  },
+  {
+   "idx": 732,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 733,
+   "label": "PhysicalObject/HoldingObject/FasteningObject",
+   "fold": 4
+  },
+  {
+   "idx": 734,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 735,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 736,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 737,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 738,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 739,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 740,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 742,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 2
+  },
+  {
+   "idx": 743,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 744,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 745,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 746,
+   "label": "PhysicalObject/ProtectingObject/EnvironmentProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 747,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 748,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 749,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 750,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 751,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 752,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 0
+  },
+  {
+   "idx": 753,
+   "label": "PhysicalObject/Substance/Liquid",
+   "fold": 1
+  },
+  {
+   "idx": 754,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 755,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 756,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 758,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 759,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 762,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 763,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 3
+  },
+  {
+   "idx": 764,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 1
+  },
+  {
+   "idx": 768,
+   "label": "PhysicalObject/StoringObject/MoveableStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 769,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 770,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 771,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 772,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 773,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 774,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 775,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 1
+  },
+  {
+   "idx": 776,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 0
+  },
+  {
+   "idx": 777,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 4
+  },
+  {
+   "idx": 778,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 0
+  },
+  {
+   "idx": 779,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 780,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 3
+  },
+  {
+   "idx": 781,
+   "label": "PhysicalObject/StoringObject/EnclosedStationaryStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 782,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 783,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 784,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 3
+  },
+  {
+   "idx": 785,
+   "label": "PhysicalObject/HumanInteractionObject/MovementInteractionObject",
+   "fold": 0
+  },
+  {
+   "idx": 786,
+   "label": "PhysicalObject/PresentingObject/GraphicalDisplay",
+   "fold": 2
+  },
+  {
+   "idx": 787,
+   "label": "PhysicalObject/ControllingObject/SealedFluidVaryingObject",
+   "fold": 3
+  },
+  {
+   "idx": 788,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 789,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 790,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 791,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 792,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 793,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 794,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 795,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 796,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 797,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 798,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 799,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 800,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 801,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 802,
+   "label": "PhysicalObject/ControllingObject/OpenFlowControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 803,
+   "label": "PhysicalObject/MatterProcessingObject/ChemicalSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 804,
+   "label": "PhysicalObject/GuidingObject/ThermalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 805,
+   "label": "PhysicalObject/CoveringObject/FinishingObject",
+   "fold": 4
+  },
+  {
+   "idx": 806,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 2
+  },
+  {
+   "idx": 807,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 4
+  },
+  {
+   "idx": 808,
+   "label": "PhysicalObject/EmittingObject/CombustionHeatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 809,
+   "label": "PhysicalObject/GuidingObject/HighVoltageElectricEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 810,
+   "label": "PhysicalObject/CoveringObject/FinishingObject",
+   "fold": 3
+  },
+  {
+   "idx": 811,
+   "label": "PhysicalObject/ControllingObject/OpenFlowControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 812,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 813,
+   "label": "PhysicalObject",
+   "fold": 3
+  },
+  {
+   "idx": 814,
+   "label": "PhysicalObject/SensingObject/PressureSensingObject",
+   "fold": 0
+  },
+  {
+   "idx": 815,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 816,
+   "label": "PhysicalObject/HumanInteractionObject/HandInteractionObject",
+   "fold": 1
+  },
+  {
+   "idx": 817,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 4
+  },
+  {
+   "idx": 818,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 819,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 1
+  },
+  {
+   "idx": 820,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 1
+  },
+  {
+   "idx": 821,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 0
+  },
+  {
+   "idx": 822,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 823,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 824,
+   "label": "PhysicalObject/StoringObject/OpenStationaryStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 825,
+   "label": "PhysicalObject/SensingObject/FieldSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 826,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 827,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 828,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 2
+  },
+  {
+   "idx": 829,
+   "label": "PhysicalObject/SensingObject/ForceSensingObject",
+   "fold": 4
+  },
+  {
+   "idx": 830,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 0
+  },
+  {
+   "idx": 831,
+   "label": "PhysicalObject/PresentingObject/ScalarDisplay",
+   "fold": 0
+  },
+  {
+   "idx": 832,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 3
+  },
+  {
+   "idx": 833,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 3
+  },
+  {
+   "idx": 834,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 1
+  },
+  {
+   "idx": 836,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 837,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 838,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 839,
+   "label": "PhysicalObject/RestrictingObject/ElectricityRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 840,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 841,
+   "label": "PhysicalObject/CoveringObject/FinishingObject",
+   "fold": 0
+  },
+  {
+   "idx": 842,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 843,
+   "label": "PhysicalObject/InterfacingObject/PotentialConnectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 844,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 845,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 846,
+   "label": "PhysicalObject/TransformingObject/OrganicPlant",
+   "fold": 2
+  },
+  {
+   "idx": 847,
+   "label": "PhysicalObject/TransformingObject/OrganicPlant",
+   "fold": 3
+  },
+  {
+   "idx": 848,
+   "label": "PhysicalObject/Substance/Mixture",
+   "fold": 4
+  },
+  {
+   "idx": 849,
+   "label": "PhysicalObject/ControllingObject/SpaceAccessObject",
+   "fold": 0
+  },
+  {
+   "idx": 850,
+   "label": "PhysicalObject/MatterProcessingObject/GrindingAndCrushingObject",
+   "fold": 0
+  },
+  {
+   "idx": 851,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 852,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 853,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 854,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 4
+  },
+  {
+   "idx": 855,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 856,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 0
+  },
+  {
+   "idx": 857,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 858,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 859,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 860,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 1
+  },
+  {
+   "idx": 861,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 862,
+   "label": "PhysicalObject/HoldingObject/FramingObject",
+   "fold": 0
+  },
+  {
+   "idx": 863,
+   "label": "PhysicalObject/InterfacingObject/LowVoltageConnectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 864,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 1
+  },
+  {
+   "idx": 865,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 866,
+   "label": "PhysicalObject/SensingObject/LevelSensingObject",
+   "fold": 0
+  },
+  {
+   "idx": 867,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 0
+  },
+  {
+   "idx": 868,
+   "label": "PhysicalObject/RestrictingObject/ElectricityRestrictingObject",
+   "fold": 0
+  },
+  {
+   "idx": 869,
+   "label": "PhysicalObject/SensingObject/PhysicalDimensionSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 870,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 871,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 872,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 4
+  },
+  {
+   "idx": 873,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 874,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 875,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 876,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 877,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 2
+  },
+  {
+   "idx": 878,
+   "label": "PhysicalObject/SensingObject/LevelSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 879,
+   "label": "PhysicalObject/ProtectingObject/EnvironmentProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 880,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 4
+  },
+  {
+   "idx": 881,
+   "label": "PhysicalObject/ControllingObject/ElectricEarthingObject",
+   "fold": 4
+  },
+  {
+   "idx": 882,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 1
+  },
+  {
+   "idx": 883,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 884,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 885,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 4
+  },
+  {
+   "idx": 886,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 887,
+   "label": "PhysicalObject/InterfacingObject/LowVoltageConnectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 888,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 3
+  },
+  {
+   "idx": 889,
+   "label": "PhysicalObject/PresentingObject/AcousticDevice",
+   "fold": 4
+  },
+  {
+   "idx": 890,
+   "label": "PhysicalObject/EmittingObject/ThermalHeatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 891,
+   "label": "PhysicalObject/ControllingObject/ElectricSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 892,
+   "label": "PhysicalObject/TransformingObject/MatterReshapingObject",
+   "fold": 2
+  },
+  {
+   "idx": 893,
+   "label": "PhysicalObject/TransformingObject/MatterReshapingObject",
+   "fold": 4
+  },
+  {
+   "idx": 894,
+   "label": "PhysicalObject/GuidingObject/ClosedEnclosureGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 895,
+   "label": "PhysicalObject/EmittingObject/WirelessPowerObject",
+   "fold": 3
+  },
+  {
+   "idx": 896,
+   "label": "PhysicalObject/InformationProcessingObject/ElectricSignalProcessingObject",
+   "fold": 4
+  },
+  {
+   "idx": 897,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 2
+  },
+  {
+   "idx": 898,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 0
+  },
+  {
+   "idx": 899,
+   "label": "PhysicalObject/EmittingObject/LightObject",
+   "fold": 3
+  },
+  {
+   "idx": 900,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 901,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 902,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 903,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 904,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 905,
+   "label": "PhysicalObject/EmittingObject/ElectricHeatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 906,
+   "label": "PhysicalObject/HoldingObject/FramingObject",
+   "fold": 1
+  },
+  {
+   "idx": 907,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 908,
+   "label": "PhysicalObject/SensingObject/PowerSensingObject",
+   "fold": 4
+  },
+  {
+   "idx": 909,
+   "label": "PhysicalObject/SensingObject/PowerSensingObject",
+   "fold": 4
+  },
+  {
+   "idx": 910,
+   "label": "PhysicalObject/PresentingObject/MultipleFormPresentingObject",
+   "fold": 2
+  },
+  {
+   "idx": 911,
+   "label": "PhysicalObject/GeneratingObject/GaseousFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 912,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 0
+  },
+  {
+   "idx": 913,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyConvertingObject",
+   "fold": 3
+  },
+  {
+   "idx": 914,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 915,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 916,
+   "label": "PhysicalObject/MatterProcessingObject/SurfaceTreatmentObject",
+   "fold": 4
+  },
+  {
+   "idx": 917,
+   "label": "PhysicalObject/ProtectingObject/FireProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 918,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 919,
+   "label": "PhysicalObject/HumanInteractionObject/HandInteractionObject",
+   "fold": 0
+  },
+  {
+   "idx": 920,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 921,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 922,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 923,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 0
+  },
+  {
+   "idx": 924,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 925,
+   "label": "PhysicalObject/MatterProcessingObject/AssemblingObject",
+   "fold": 1
+  },
+  {
+   "idx": 926,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 4
+  },
+  {
+   "idx": 927,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 4
+  },
+  {
+   "idx": 928,
+   "label": "PhysicalObject/EmittingObject/WirelessPowerObject",
+   "fold": 2
+  },
+  {
+   "idx": 929,
+   "label": "PhysicalObject/InformationProcessingObject/FluidSignallingObject",
+   "fold": 3
+  },
+  {
+   "idx": 930,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 931,
+   "label": "PhysicalObject/EmittingObject/AcousticWaveEmittingObject",
+   "fold": 4
+  },
+  {
+   "idx": 932,
+   "label": "PhysicalObject/DrivingObject/MechanicalEnergyDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 933,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 934,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 935,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 936,
+   "label": "PhysicalObject/RestrictingObject/AccessRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 937,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 938,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 939,
+   "label": "PhysicalObject/GuidingObject/ThermalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 940,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 2
+  },
+  {
+   "idx": 941,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 943,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 944,
+   "label": "PhysicalObject/InformationProcessingObject/FluidSignallingObject",
+   "fold": 3
+  },
+  {
+   "idx": 945,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 3
+  },
+  {
+   "idx": 946,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 2
+  },
+  {
+   "idx": 947,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 0
+  },
+  {
+   "idx": 948,
+   "label": "PhysicalObject/ProtectingObject/PreventiveProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 949,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 950,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 951,
+   "label": "PhysicalObject/Substance/Liquid",
+   "fold": 0
+  },
+  {
+   "idx": 952,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 953,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 0
+  },
+  {
+   "idx": 954,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 955,
+   "label": "PhysicalObject/GeneratingObject/DiscontinuousTransferObject",
+   "fold": 0
+  },
+  {
+   "idx": 956,
+   "label": "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "fold": 1
+  },
+  {
+   "idx": 957,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 958,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 959,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 960,
+   "label": "PhysicalObject/EmittingObject/ThermalCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 961,
+   "label": "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "fold": 1
+  },
+  {
+   "idx": 962,
+   "label": "PhysicalObject/GuidingObject/ElectricSignalGuidingObject",
+   "fold": 1
+  },
+  {
+   "idx": 963,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 4
+  },
+  {
+   "idx": 964,
+   "label": "PhysicalObject/RestrictingObject/MovementRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 965,
+   "label": "PhysicalObject/HumanInteractionObject/FootInteractionObject",
+   "fold": 2
+  },
+  {
+   "idx": 966,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 3
+  },
+  {
+   "idx": 967,
+   "label": "PhysicalObject/SensingObject/ForceSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 968,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 2
+  },
+  {
+   "idx": 969,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 970,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 3
+  },
+  {
+   "idx": 971,
+   "label": "PhysicalObject/MatterProcessingObject/AssemblingObject",
+   "fold": 4
+  },
+  {
+   "idx": 972,
+   "label": "PhysicalObject/HoldingObject/ReinforcingObject",
+   "fold": 0
+  },
+  {
+   "idx": 973,
+   "label": "PhysicalObject/InterfacingObject/LowVoltageConnectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 974,
+   "label": "PhysicalObject/Substance/Gas",
+   "fold": 0
+  },
+  {
+   "idx": 975,
+   "label": "PhysicalObject/GuidingObject/MechanicalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 976,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 3
+  },
+  {
+   "idx": 977,
+   "label": "PhysicalObject/HoldingObject/StructuralSupportingObject",
+   "fold": 0
+  },
+  {
+   "idx": 978,
+   "label": "PhysicalObject/HoldingObject/ReinforcingObject",
+   "fold": 2
+  },
+  {
+   "idx": 979,
+   "label": "PhysicalObject/GuidingObject/ThermalEnergyGuidingObject",
+   "fold": 3
+  },
+  {
+   "idx": 980,
+   "label": "PhysicalObject/ControllingObject/OpenFlowControllingObject",
+   "fold": 4
+  },
+  {
+   "idx": 981,
+   "label": "PhysicalObject/CoveringObject/FinishingObject",
+   "fold": 2
+  },
+  {
+   "idx": 982,
+   "label": "PhysicalObject/HoldingObject/CarryingObject",
+   "fold": 2
+  },
+  {
+   "idx": 983,
+   "label": "PhysicalObject/HoldingObject/FramingObject",
+   "fold": 0
+  },
+  {
+   "idx": 984,
+   "label": "PhysicalObject/ControllingObject/ElectricEarthingObject",
+   "fold": 1
+  },
+  {
+   "idx": 985,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 986,
+   "label": "PhysicalObject/ProtectingObject/PressureProtectingObject",
+   "fold": 4
+  },
+  {
+   "idx": 987,
+   "label": "PhysicalObject/MatterProcessingObject/ChemicalSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 988,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 3
+  },
+  {
+   "idx": 989,
+   "label": "PhysicalObject/InformationProcessingObject/FluidSignallingObject",
+   "fold": 3
+  },
+  {
+   "idx": 990,
+   "label": "PhysicalObject/PresentingObject/MultipleFormPresentingObject",
+   "fold": 4
+  },
+  {
+   "idx": 991,
+   "label": "PhysicalObject/CoveringObject/FinishingObject",
+   "fold": 1
+  },
+  {
+   "idx": 992,
+   "label": "PhysicalObject/InterfacingObject/HighVoltageConnectingObject",
+   "fold": 0
+  },
+  {
+   "idx": 993,
+   "label": "PhysicalObject/SensingObject/PowerSensingObject",
+   "fold": 0
+  },
+  {
+   "idx": 994,
+   "label": "PhysicalObject/SensingObject/PowerSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 995,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 0
+  },
+  {
+   "idx": 996,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 2
+  },
+  {
+   "idx": 997,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 4
+  },
+  {
+   "idx": 998,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 999,
+   "label": "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1000,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1001,
+   "label": "PhysicalObject/CoveringObject/InfillingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1002,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1003,
+   "label": "PhysicalObject/GeneratingObject/LiquidFlowGeneratingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1004,
+   "label": "PhysicalObject/GeneratingObject/MechanicalToElectricalEnergyGeneratingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1005,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyConvertingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1006,
+   "label": "PhysicalObject/TransformingObject/MatterReshapingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1007,
+   "label": "PhysicalObject/ControllingObject/ElectricEarthingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1008,
+   "label": "PhysicalObject/InterfacingObject/PotentialConnectingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1009,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1010,
+   "label": "PhysicalObject/GuidingObject/ElectricSignalGuidingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1011,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1012,
+   "label": "PhysicalObject/InterfacingObject/SpaceLinkingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1013,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1014,
+   "label": "PhysicalObject/TransformingObject/MatterReshapingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1015,
+   "label": "PhysicalObject/TransformingObject/MatterReshapingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1016,
+   "label": "PhysicalObject/RestrictingObject/ElectricityRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1017,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 3
+  },
+  {
+   "idx": 1018,
+   "label": "PhysicalObject/EmittingObject/ThermalEnergyTransferObject",
+   "fold": 1
+  },
+  {
+   "idx": 1019,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 1020,
+   "label": "PhysicalObject/GuidingObject/ThermalEnergyGuidingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1021,
+   "label": "PhysicalObject/StoringObject/InductiveStoringObject",
+   "fold": 3
+  },
+  {
+   "idx": 1022,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyConvertingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1023,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 2
+  },
+  {
+   "idx": 1024,
+   "label": "PhysicalObject/DrivingObject/MechanicalEnergyDrivingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1025,
+   "label": "PhysicalObject/ControllingObject/ElectricSeparatingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1026,
+   "label": "PhysicalObject/EmittingObject/WirelessPowerObject",
+   "fold": 2
+  },
+  {
+   "idx": 1027,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1028,
+   "label": "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1029,
+   "label": "PhysicalObject/RestrictingObject/ElectricityRestrictingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1030,
+   "label": "PhysicalObject/ControllingObject/MechanicalMovementControllingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1031,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 4
+  },
+  {
+   "idx": 1032,
+   "label": "PhysicalObject/ProtectingObject/WearProtectingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1033,
+   "label": "PhysicalObject/SensingObject/ConcentrationSensingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1034,
+   "label": "PhysicalObject/SensingObject/PowerSensingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1035,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1036,
+   "label": "PhysicalObject/RestrictingObject/ElectricityStabilisingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1037,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1038,
+   "label": "PhysicalObject/HoldingObject/EnclosingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1039,
+   "label": "PhysicalObject/RestrictingObject/ReturnFlowRestrictingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1040,
+   "label": "PhysicalObject/ControllingObject/ElectricControllingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1041,
+   "label": "PhysicalObject/RestrictingObject/ElectricityRestrictingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1042,
+   "label": "PhysicalObject/RestrictingObject/ElectricityRestrictingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1043,
+   "label": "PhysicalObject/DrivingObject/ElectromagneticRotationalDrivingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1044,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1045,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1046,
+   "label": "PhysicalObject/MatterProcessingObject/MechanicalSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1047,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1048,
+   "label": "PhysicalObject/TransformingObject/SignalConvertingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1049,
+   "label": "PhysicalObject/PresentingObject/VisibleStateIndicator",
+   "fold": 1
+  },
+  {
+   "idx": 1050,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 1051,
+   "label": "PhysicalObject/DrivingObject/CombustionEngine",
+   "fold": 2
+  },
+  {
+   "idx": 1052,
+   "label": "PhysicalObject/TransformingObject/MechanicalEnergyTransformingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1053,
+   "label": "PhysicalObject/InformationProcessingObject/ElectricSignalProcessingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1054,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1055,
+   "label": "PhysicalObject/ControllingObject/ElectricEarthingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1056,
+   "label": "PhysicalObject/EmittingObject/AcousticWaveEmittingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1057,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1058,
+   "label": "PhysicalObject",
+   "fold": 1
+  },
+  {
+   "idx": 1059,
+   "label": "PhysicalObject",
+   "fold": 0
+  },
+  {
+   "idx": 1060,
+   "label": "PhysicalObject/SensingObject/PowerSensingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1061,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1062,
+   "label": "PhysicalObject/PresentingObject/MultipleFormPresentingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1063,
+   "label": "PhysicalObject/PresentingObject/MultipleFormPresentingObject",
+   "fold": 0
+  },
+  {
+   "idx": 1064,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 4
+  },
+  {
+   "idx": 1065,
+   "label": "PhysicalObject/Organism/Person",
+   "fold": 3
+  },
+  {
+   "idx": 1066,
+   "label": "PhysicalObject/TransformingObject/ElectricEnergyTransformingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1067,
+   "label": "PhysicalObject/RestrictingObject/ElectricityStabilisingObject",
+   "fold": 1
+  },
+  {
+   "idx": 1068,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1069,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1070,
+   "label": "PhysicalObject/MatterProcessingObject/ForceSeparatingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1071,
+   "label": "PhysicalObject/SensingObject/ForceSensingObject",
+   "fold": 2
+  },
+  {
+   "idx": 1072,
+   "label": "PhysicalObject/HoldingObject/ReinforcingObject",
+   "fold": 3
+  },
+  {
+   "idx": 1073,
+   "label": "PhysicalObject/StoringObject/ElectrochemicalStoringObject",
+   "fold": 2
+  },
+  {
+   "idx": 1074,
+   "label": "PhysicalObject/HoldingObject/FramingObject",
+   "fold": 4
+  },
+  {
+   "idx": 1075,
+   "label": "PhysicalObject/MatterProcessingObject/SurfaceTreatmentObject",
+   "fold": 0
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "phase": "llm",
+ "corpus": "sdr",
+ "llm": "gemma4_31b",
+ "model_file": "gemma-4-31B_q4_0-it.gguf",
+ "llama_build": "b11435",
+ "ctx": 16384,
+ "shortlist_2026_requests": 1047,
+ "timed_reports": 200,
+ "years": {
+  "2025": {
+   "reports": 59416,
+   "shortlist": 2190
+  },
+  "2026": {
+   "reports": 42717,
+   "shortlist": 1324
+  }
+ },
+ "gpu_before": {
+  "time": "2026-11-18 12:07:38",
+  "gpu": "NVIDIA GeForce RTX 3090, 2306 MiB, 1 %, 42, 210 MHz"
+ },
+ "dry": true
+}

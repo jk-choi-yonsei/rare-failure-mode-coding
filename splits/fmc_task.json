@@ -1,0 +1,4430 @@
+{
+ "task": "FMC failure-mode classification (ISO 14224, 22 classes)",
+ "n": 632,
+ "records": [
+  {
+   "gid": 0,
+   "origin": "train",
+   "sha1": "9f720ae48b15",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 1,
+   "origin": "train",
+   "sha1": "936875bd5c6c",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 2,
+   "origin": "train",
+   "sha1": "fe1a8809394a",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 3,
+   "origin": "train",
+   "sha1": "f8a447dfe8b5",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 4,
+   "origin": "train",
+   "sha1": "08a228ef1d36",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 5,
+   "origin": "train",
+   "sha1": "a3b762477927",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 6,
+   "origin": "train",
+   "sha1": "b6423f2e1919",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 7,
+   "origin": "train",
+   "sha1": "bf864e8bb2e3",
+   "label": "Noise",
+   "fold": 1
+  },
+  {
+   "gid": 8,
+   "origin": "train",
+   "sha1": "afe0693b4ea6",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 9,
+   "origin": "train",
+   "sha1": "4ea5b2f4bde6",
+   "label": "Failure to start on demand",
+   "fold": 0
+  },
+  {
+   "gid": 10,
+   "origin": "train",
+   "sha1": "23838f9b1b1c",
+   "label": "Vibration",
+   "fold": 2
+  },
+  {
+   "gid": 11,
+   "origin": "train",
+   "sha1": "fd2f5cfddb32",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 12,
+   "origin": "train",
+   "sha1": "818b357390fb",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 13,
+   "origin": "train",
+   "sha1": "1da451a01b06",
+   "label": "Overheating",
+   "fold": 3
+  },
+  {
+   "gid": 14,
+   "origin": "train",
+   "sha1": "c964fb33e3c0",
+   "label": "Vibration",
+   "fold": 1
+  },
+  {
+   "gid": 15,
+   "origin": "train",
+   "sha1": "a8b02b6317b5",
+   "label": "Vibration",
+   "fold": 1
+  },
+  {
+   "gid": 16,
+   "origin": "train",
+   "sha1": "ba3e6ca1eb18",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 17,
+   "origin": "train",
+   "sha1": "7fbf2b8c9084",
+   "label": "Fail to function",
+   "fold": 1
+  },
+  {
+   "gid": 18,
+   "origin": "train",
+   "sha1": "3cbfa9eae05d",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 19,
+   "origin": "train",
+   "sha1": "acdc24bcd849",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 20,
+   "origin": "train",
+   "sha1": "e9bca6fae98c",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 21,
+   "origin": "train",
+   "sha1": "7caaa4e34f91",
+   "label": "Low output",
+   "fold": 2
+  },
+  {
+   "gid": 22,
+   "origin": "train",
+   "sha1": "5bae79bf952a",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 23,
+   "origin": "train",
+   "sha1": "be09d7b949d4",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 24,
+   "origin": "train",
+   "sha1": "56147210b2cb",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 25,
+   "origin": "train",
+   "sha1": "4fc6c6c5b236",
+   "label": "Failure to start on demand",
+   "fold": 2
+  },
+  {
+   "gid": 26,
+   "origin": "train",
+   "sha1": "a29813ed2d7b",
+   "label": "Overheating",
+   "fold": 3
+  },
+  {
+   "gid": 27,
+   "origin": "train",
+   "sha1": "edb94c8ea085",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 28,
+   "origin": "train",
+   "sha1": "c35f23e5a50f",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 29,
+   "origin": "train",
+   "sha1": "e87e4cfc5de0",
+   "label": "Fail to function",
+   "fold": 1
+  },
+  {
+   "gid": 30,
+   "origin": "train",
+   "sha1": "98d10dc7f085",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 31,
+   "origin": "train",
+   "sha1": "a185117b9fad",
+   "label": "Low output",
+   "fold": 4
+  },
+  {
+   "gid": 32,
+   "origin": "train",
+   "sha1": "f2bb1d822585",
+   "label": "Low output",
+   "fold": 2
+  },
+  {
+   "gid": 33,
+   "origin": "train",
+   "sha1": "0420c49de20a",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 34,
+   "origin": "train",
+   "sha1": "39cc71d5238e",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 35,
+   "origin": "train",
+   "sha1": "291e1cba4c3c",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 36,
+   "origin": "train",
+   "sha1": "614c78cb9fb5",
+   "label": "Failure to stop on demand",
+   "fold": 0
+  },
+  {
+   "gid": 37,
+   "origin": "train",
+   "sha1": "04d366c364fc",
+   "label": "Noise",
+   "fold": 3
+  },
+  {
+   "gid": 38,
+   "origin": "train",
+   "sha1": "7e0efcc55d11",
+   "label": "Fail to function",
+   "fold": 0
+  },
+  {
+   "gid": 39,
+   "origin": "train",
+   "sha1": "9f6269a30018",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 40,
+   "origin": "train",
+   "sha1": "dc633abe7e7d",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 41,
+   "origin": "train",
+   "sha1": "5499f43208a5",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 42,
+   "origin": "train",
+   "sha1": "bac75bca1234",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 43,
+   "origin": "train",
+   "sha1": "0f167d56c6bf",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 44,
+   "origin": "train",
+   "sha1": "9f295dc6c71c",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 45,
+   "origin": "train",
+   "sha1": "74f88a942feb",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 46,
+   "origin": "train",
+   "sha1": "bf4916443f04",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 47,
+   "origin": "train",
+   "sha1": "a03ece2b7791",
+   "label": "Failure to start on demand",
+   "fold": 4
+  },
+  {
+   "gid": 48,
+   "origin": "train",
+   "sha1": "b21bb8bcf8df",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 49,
+   "origin": "train",
+   "sha1": "f8d87b2b22b5",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 50,
+   "origin": "train",
+   "sha1": "65b99abc2921",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 51,
+   "origin": "train",
+   "sha1": "6d95594121c5",
+   "label": "Failure to start on demand",
+   "fold": 3
+  },
+  {
+   "gid": 52,
+   "origin": "train",
+   "sha1": "44eff1b9634b",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 53,
+   "origin": "train",
+   "sha1": "de81ae5661a1",
+   "label": "Noise",
+   "fold": 4
+  },
+  {
+   "gid": 54,
+   "origin": "train",
+   "sha1": "d9ccbc2b0fbf",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 55,
+   "origin": "train",
+   "sha1": "e6c32e8901cc",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 56,
+   "origin": "train",
+   "sha1": "dd5ae110d19a",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 57,
+   "origin": "train",
+   "sha1": "e1d0a4d4c7be",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 58,
+   "origin": "train",
+   "sha1": "5bb27f970007",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 59,
+   "origin": "train",
+   "sha1": "45b3fa3ce62d",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 60,
+   "origin": "train",
+   "sha1": "05a5ec0fe725",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 61,
+   "origin": "train",
+   "sha1": "de3b549dbd8f",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 62,
+   "origin": "train",
+   "sha1": "59f66e501aac",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 63,
+   "origin": "train",
+   "sha1": "24ddf45228c5",
+   "label": "Failure to start on demand",
+   "fold": 1
+  },
+  {
+   "gid": 64,
+   "origin": "train",
+   "sha1": "73380965946e",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 65,
+   "origin": "train",
+   "sha1": "d96ce93025ec",
+   "label": "Failure to stop on demand",
+   "fold": 1
+  },
+  {
+   "gid": 66,
+   "origin": "train",
+   "sha1": "24688ced6d66",
+   "label": "Failure to stop on demand",
+   "fold": 0
+  },
+  {
+   "gid": 67,
+   "origin": "train",
+   "sha1": "183919acad8c",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 68,
+   "origin": "train",
+   "sha1": "9a2c6c2feb43",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 69,
+   "origin": "train",
+   "sha1": "f0811c1b578d",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 70,
+   "origin": "train",
+   "sha1": "605ded76e2f5",
+   "label": "Abnormal instrument reading",
+   "fold": 0
+  },
+  {
+   "gid": 71,
+   "origin": "train",
+   "sha1": "ad817381993c",
+   "label": "Failure to start on demand",
+   "fold": 2
+  },
+  {
+   "gid": 72,
+   "origin": "train",
+   "sha1": "4df50573a7f1",
+   "label": "Overheating",
+   "fold": 0
+  },
+  {
+   "gid": 73,
+   "origin": "train",
+   "sha1": "6a6c8db6bbd0",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 74,
+   "origin": "train",
+   "sha1": "e08dfc21c208",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 75,
+   "origin": "train",
+   "sha1": "ad6d3d32e517",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 76,
+   "origin": "train",
+   "sha1": "8871c4f3596c",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 77,
+   "origin": "train",
+   "sha1": "f808a9ac7d40",
+   "label": "Abnormal instrument reading",
+   "fold": 3
+  },
+  {
+   "gid": 78,
+   "origin": "train",
+   "sha1": "efedc3c17bef",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 79,
+   "origin": "train",
+   "sha1": "8eca6aaf9425",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 80,
+   "origin": "train",
+   "sha1": "cd9a519462de",
+   "label": "Failure to start on demand",
+   "fold": 0
+  },
+  {
+   "gid": 81,
+   "origin": "train",
+   "sha1": "ef3acb2a9d7e",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 82,
+   "origin": "train",
+   "sha1": "96573d0160dd",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 83,
+   "origin": "train",
+   "sha1": "4a56e3596d2f",
+   "label": "Overheating",
+   "fold": 0
+  },
+  {
+   "gid": 84,
+   "origin": "train",
+   "sha1": "017d5b391031",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 85,
+   "origin": "train",
+   "sha1": "a86411ace081",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 86,
+   "origin": "train",
+   "sha1": "4f6f329bd865",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 87,
+   "origin": "train",
+   "sha1": "a2c1d974aa26",
+   "label": "Low output",
+   "fold": 1
+  },
+  {
+   "gid": 88,
+   "origin": "train",
+   "sha1": "93ccafff45c5",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 89,
+   "origin": "train",
+   "sha1": "d78c63534b53",
+   "label": "Failure to start on demand",
+   "fold": 1
+  },
+  {
+   "gid": 90,
+   "origin": "train",
+   "sha1": "73e87d2ad327",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 91,
+   "origin": "train",
+   "sha1": "7e45228bf881",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 92,
+   "origin": "train",
+   "sha1": "5b25b3d057d5",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 93,
+   "origin": "train",
+   "sha1": "2434dfe3a1bf",
+   "label": "Other",
+   "fold": 2
+  },
+  {
+   "gid": 94,
+   "origin": "train",
+   "sha1": "32bdc7c24313",
+   "label": "Failure to start on demand",
+   "fold": 4
+  },
+  {
+   "gid": 95,
+   "origin": "train",
+   "sha1": "47ae419ffac7",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 96,
+   "origin": "train",
+   "sha1": "7fc6a68c9b2f",
+   "label": "Fail to function",
+   "fold": 0
+  },
+  {
+   "gid": 97,
+   "origin": "train",
+   "sha1": "91a07f627853",
+   "label": "Low output",
+   "fold": 3
+  },
+  {
+   "gid": 98,
+   "origin": "train",
+   "sha1": "88d37a75343f",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 99,
+   "origin": "train",
+   "sha1": "91c260c9bee9",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 100,
+   "origin": "train",
+   "sha1": "785e211753a9",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 101,
+   "origin": "train",
+   "sha1": "60313a6a3bb3",
+   "label": "Other",
+   "fold": 0
+  },
+  {
+   "gid": 102,
+   "origin": "train",
+   "sha1": "51690aeca45b",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 103,
+   "origin": "train",
+   "sha1": "983b70bb20e2",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 104,
+   "origin": "train",
+   "sha1": "fff5c7ee46de",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 105,
+   "origin": "train",
+   "sha1": "a147cbd94792",
+   "label": "Failure to start on demand",
+   "fold": 2
+  },
+  {
+   "gid": 106,
+   "origin": "train",
+   "sha1": "04a567b1b764",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 107,
+   "origin": "train",
+   "sha1": "0c342cd5a209",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 108,
+   "origin": "train",
+   "sha1": "33564591ef72",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 109,
+   "origin": "train",
+   "sha1": "9be5a527868f",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 110,
+   "origin": "train",
+   "sha1": "f1d9ffd18d68",
+   "label": "Failure to start on demand",
+   "fold": 1
+  },
+  {
+   "gid": 111,
+   "origin": "train",
+   "sha1": "e98dd097b6bf",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 112,
+   "origin": "train",
+   "sha1": "057698b1c0e9",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 113,
+   "origin": "train",
+   "sha1": "0ecbcaecaae9",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 114,
+   "origin": "train",
+   "sha1": "3b1f499c12e0",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 115,
+   "origin": "train",
+   "sha1": "e925424a141c",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 116,
+   "origin": "train",
+   "sha1": "53591c7b1b2d",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 117,
+   "origin": "train",
+   "sha1": "df0afe996e7a",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 118,
+   "origin": "train",
+   "sha1": "4ea1a26aed04",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 119,
+   "origin": "train",
+   "sha1": "3536880f7f78",
+   "label": "Failure to start on demand",
+   "fold": 0
+  },
+  {
+   "gid": 120,
+   "origin": "train",
+   "sha1": "0de410d4818d",
+   "label": "Failure to start on demand",
+   "fold": 0
+  },
+  {
+   "gid": 121,
+   "origin": "train",
+   "sha1": "e62ee200e602",
+   "label": "Fail to close",
+   "fold": 0
+  },
+  {
+   "gid": 122,
+   "origin": "train",
+   "sha1": "b62f8d60581f",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 123,
+   "origin": "train",
+   "sha1": "8e145047bb99",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 124,
+   "origin": "train",
+   "sha1": "be6e3a7fe520",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 125,
+   "origin": "train",
+   "sha1": "2ea6ed50bec0",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 126,
+   "origin": "train",
+   "sha1": "c6daf810db18",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 127,
+   "origin": "train",
+   "sha1": "0dfb640ff237",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 128,
+   "origin": "train",
+   "sha1": "b050a7698ff0",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 129,
+   "origin": "train",
+   "sha1": "360ab59ecdad",
+   "label": "Other",
+   "fold": 2
+  },
+  {
+   "gid": 130,
+   "origin": "train",
+   "sha1": "fb7015159f72",
+   "label": "Vibration",
+   "fold": 3
+  },
+  {
+   "gid": 131,
+   "origin": "train",
+   "sha1": "ca4795e5d26e",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 132,
+   "origin": "train",
+   "sha1": "4e5b0c10111d",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 133,
+   "origin": "train",
+   "sha1": "15c777008763",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 134,
+   "origin": "train",
+   "sha1": "00e5e5d978b6",
+   "label": "Failure to start on demand",
+   "fold": 1
+  },
+  {
+   "gid": 135,
+   "origin": "train",
+   "sha1": "4ab6cda2228d",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 136,
+   "origin": "train",
+   "sha1": "52ff4bafb645",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 137,
+   "origin": "train",
+   "sha1": "08608210b4c1",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 138,
+   "origin": "train",
+   "sha1": "f92d7d8611e7",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 139,
+   "origin": "train",
+   "sha1": "dfb37c89e592",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 140,
+   "origin": "train",
+   "sha1": "2f09eb616ecf",
+   "label": "Vibration",
+   "fold": 4
+  },
+  {
+   "gid": 141,
+   "origin": "train",
+   "sha1": "54c374be738f",
+   "label": "Overheating",
+   "fold": 4
+  },
+  {
+   "gid": 142,
+   "origin": "train",
+   "sha1": "4430aa3885d9",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 143,
+   "origin": "train",
+   "sha1": "47a740186ff5",
+   "label": "Contamination",
+   "fold": 0
+  },
+  {
+   "gid": 144,
+   "origin": "train",
+   "sha1": "efbe7a72709e",
+   "label": "High output",
+   "fold": 4
+  },
+  {
+   "gid": 145,
+   "origin": "train",
+   "sha1": "da90146ce01d",
+   "label": "Contamination",
+   "fold": 1
+  },
+  {
+   "gid": 146,
+   "origin": "train",
+   "sha1": "69000681b645",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 147,
+   "origin": "train",
+   "sha1": "2ce1dc96de12",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 148,
+   "origin": "train",
+   "sha1": "abc2f3afa425",
+   "label": "Noise",
+   "fold": 1
+  },
+  {
+   "gid": 149,
+   "origin": "train",
+   "sha1": "d9bcbadd2002",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 150,
+   "origin": "train",
+   "sha1": "a165feda9010",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 151,
+   "origin": "train",
+   "sha1": "7ccd8fbcfe98",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 152,
+   "origin": "train",
+   "sha1": "aa57ebc528e4",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 153,
+   "origin": "train",
+   "sha1": "fc08fb678d7e",
+   "label": "Erratic output",
+   "fold": 3
+  },
+  {
+   "gid": 154,
+   "origin": "train",
+   "sha1": "0b9ad8bee643",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 155,
+   "origin": "train",
+   "sha1": "f160c2d008bd",
+   "label": "Overheating",
+   "fold": 1
+  },
+  {
+   "gid": 156,
+   "origin": "train",
+   "sha1": "641f84b07537",
+   "label": "Erratic output",
+   "fold": 4
+  },
+  {
+   "gid": 157,
+   "origin": "train",
+   "sha1": "547631fead51",
+   "label": "Abnormal instrument reading",
+   "fold": 0
+  },
+  {
+   "gid": 158,
+   "origin": "train",
+   "sha1": "52f53191bedf",
+   "label": "Fail to function",
+   "fold": 2
+  },
+  {
+   "gid": 159,
+   "origin": "train",
+   "sha1": "29e1dda52fa0",
+   "label": "Low output",
+   "fold": 1
+  },
+  {
+   "gid": 160,
+   "origin": "train",
+   "sha1": "9f362955eb6f",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 161,
+   "origin": "train",
+   "sha1": "bc042883142f",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 162,
+   "origin": "train",
+   "sha1": "bcd969e0eb09",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 163,
+   "origin": "train",
+   "sha1": "7be4d6c7edd1",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 164,
+   "origin": "train",
+   "sha1": "ea8291da947d",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 165,
+   "origin": "train",
+   "sha1": "fe3391548e20",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 166,
+   "origin": "train",
+   "sha1": "8e2c050bda19",
+   "label": "Abnormal instrument reading",
+   "fold": 2
+  },
+  {
+   "gid": 167,
+   "origin": "train",
+   "sha1": "9a8bac5077e2",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 168,
+   "origin": "train",
+   "sha1": "cc04de128c13",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 169,
+   "origin": "train",
+   "sha1": "abcf8885e637",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 170,
+   "origin": "train",
+   "sha1": "1d5f5862f4c3",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 171,
+   "origin": "train",
+   "sha1": "80debc1e1a8c",
+   "label": "Failure to rotate",
+   "fold": 1
+  },
+  {
+   "gid": 172,
+   "origin": "train",
+   "sha1": "6a829d3746bb",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 173,
+   "origin": "train",
+   "sha1": "aec265077674",
+   "label": "Contamination",
+   "fold": 1
+  },
+  {
+   "gid": 174,
+   "origin": "train",
+   "sha1": "8e25e18271c4",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 175,
+   "origin": "train",
+   "sha1": "5fd175c4f4f2",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 176,
+   "origin": "train",
+   "sha1": "402b0451eb8a",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 177,
+   "origin": "train",
+   "sha1": "896d21a7bfb6",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 178,
+   "origin": "train",
+   "sha1": "ea1eb43d4774",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 179,
+   "origin": "train",
+   "sha1": "f0da03fb231e",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 180,
+   "origin": "train",
+   "sha1": "cf890e9dd9f3",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 181,
+   "origin": "train",
+   "sha1": "bdd8c0d35767",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 182,
+   "origin": "train",
+   "sha1": "496ab53bd6f7",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 183,
+   "origin": "train",
+   "sha1": "4d25bd1241d0",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 184,
+   "origin": "train",
+   "sha1": "218ad025c56a",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 185,
+   "origin": "train",
+   "sha1": "5dee3352ae3f",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 186,
+   "origin": "train",
+   "sha1": "1f8d5cf6039a",
+   "label": "Abnormal instrument reading",
+   "fold": 1
+  },
+  {
+   "gid": 187,
+   "origin": "train",
+   "sha1": "da2dd4af3834",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 188,
+   "origin": "train",
+   "sha1": "a4fa0827d19f",
+   "label": "Abnormal instrument reading",
+   "fold": 1
+  },
+  {
+   "gid": 189,
+   "origin": "train",
+   "sha1": "a75f4ab4baa1",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 190,
+   "origin": "train",
+   "sha1": "b658c840faf9",
+   "label": "Low output",
+   "fold": 4
+  },
+  {
+   "gid": 191,
+   "origin": "train",
+   "sha1": "871e81cbdcdb",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 192,
+   "origin": "train",
+   "sha1": "06f79d94d222",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 193,
+   "origin": "train",
+   "sha1": "3ea63d44ac34",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 194,
+   "origin": "train",
+   "sha1": "4fbaccde1fdc",
+   "label": "Overheating",
+   "fold": 2
+  },
+  {
+   "gid": 195,
+   "origin": "train",
+   "sha1": "370c52b7b24a",
+   "label": "High output",
+   "fold": 0
+  },
+  {
+   "gid": 196,
+   "origin": "train",
+   "sha1": "a7cc12775f96",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 197,
+   "origin": "train",
+   "sha1": "d49cd298d962",
+   "label": "Failure to stop on demand",
+   "fold": 1
+  },
+  {
+   "gid": 198,
+   "origin": "train",
+   "sha1": "7ec23184af5d",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 199,
+   "origin": "train",
+   "sha1": "5262e5271614",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 200,
+   "origin": "train",
+   "sha1": "75602773243d",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 201,
+   "origin": "train",
+   "sha1": "26a317166536",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 202,
+   "origin": "train",
+   "sha1": "609a335a980a",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 203,
+   "origin": "train",
+   "sha1": "862c28943d19",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 204,
+   "origin": "train",
+   "sha1": "2ae7c898ea64",
+   "label": "Contamination",
+   "fold": 3
+  },
+  {
+   "gid": 205,
+   "origin": "train",
+   "sha1": "34a0747a9b43",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 206,
+   "origin": "train",
+   "sha1": "28524661c675",
+   "label": "Overheating",
+   "fold": 3
+  },
+  {
+   "gid": 207,
+   "origin": "train",
+   "sha1": "46ec848a4431",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 208,
+   "origin": "train",
+   "sha1": "0c416a1494a8",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 209,
+   "origin": "train",
+   "sha1": "493da3e4f7d6",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 210,
+   "origin": "train",
+   "sha1": "c39bab29d24c",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 211,
+   "origin": "train",
+   "sha1": "acba76baeda4",
+   "label": "Abnormal instrument reading",
+   "fold": 4
+  },
+  {
+   "gid": 212,
+   "origin": "train",
+   "sha1": "8706194f3ee6",
+   "label": "Contamination",
+   "fold": 0
+  },
+  {
+   "gid": 213,
+   "origin": "train",
+   "sha1": "9ec2356395c4",
+   "label": "Vibration",
+   "fold": 3
+  },
+  {
+   "gid": 214,
+   "origin": "train",
+   "sha1": "bd7cea0dcdbe",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 215,
+   "origin": "train",
+   "sha1": "7ffffd85dd43",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 216,
+   "origin": "train",
+   "sha1": "b770f2c3bb26",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 217,
+   "origin": "train",
+   "sha1": "f3fe1d0fe53b",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 218,
+   "origin": "train",
+   "sha1": "d35c34ac5bab",
+   "label": "Abnormal instrument reading",
+   "fold": 1
+  },
+  {
+   "gid": 219,
+   "origin": "train",
+   "sha1": "f12f83b0f459",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 220,
+   "origin": "train",
+   "sha1": "844876840ceb",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 221,
+   "origin": "train",
+   "sha1": "b6760f38dea2",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 222,
+   "origin": "train",
+   "sha1": "602f928e3fee",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 223,
+   "origin": "train",
+   "sha1": "41e8e8365bf1",
+   "label": "Abnormal instrument reading",
+   "fold": 3
+  },
+  {
+   "gid": 224,
+   "origin": "train",
+   "sha1": "da426d4bc8e8",
+   "label": "Other",
+   "fold": 0
+  },
+  {
+   "gid": 225,
+   "origin": "train",
+   "sha1": "149cb2901c73",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 226,
+   "origin": "train",
+   "sha1": "07790faf414d",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 227,
+   "origin": "train",
+   "sha1": "2071d97a37bd",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 228,
+   "origin": "train",
+   "sha1": "0ba9511815d1",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 229,
+   "origin": "train",
+   "sha1": "ae5362e39dbf",
+   "label": "Abnormal instrument reading",
+   "fold": 3
+  },
+  {
+   "gid": 230,
+   "origin": "train",
+   "sha1": "d2165234783d",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 231,
+   "origin": "train",
+   "sha1": "4e5d16e55223",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 232,
+   "origin": "train",
+   "sha1": "f6d1d0d988c1",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 233,
+   "origin": "train",
+   "sha1": "bf15f1784324",
+   "label": "Abnormal instrument reading",
+   "fold": 4
+  },
+  {
+   "gid": 234,
+   "origin": "train",
+   "sha1": "e029d5f5d1a6",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 235,
+   "origin": "train",
+   "sha1": "8f50a216c114",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 236,
+   "origin": "train",
+   "sha1": "9a2eebfe3767",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 237,
+   "origin": "train",
+   "sha1": "d87941c0ca28",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 238,
+   "origin": "train",
+   "sha1": "26f0257e8e7b",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 239,
+   "origin": "train",
+   "sha1": "ee727eb9d9bb",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 240,
+   "origin": "train",
+   "sha1": "ec14b0a92fb0",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 241,
+   "origin": "train",
+   "sha1": "f773fcfe2457",
+   "label": "Spurious stop",
+   "fold": 1
+  },
+  {
+   "gid": 242,
+   "origin": "train",
+   "sha1": "4f9327d5b87f",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 243,
+   "origin": "train",
+   "sha1": "3d372efff057",
+   "label": "Vibration",
+   "fold": 4
+  },
+  {
+   "gid": 244,
+   "origin": "train",
+   "sha1": "83a917b13508",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 245,
+   "origin": "train",
+   "sha1": "b1def55b4ed3",
+   "label": "Low output",
+   "fold": 1
+  },
+  {
+   "gid": 246,
+   "origin": "train",
+   "sha1": "dadd380f418a",
+   "label": "Vibration",
+   "fold": 4
+  },
+  {
+   "gid": 247,
+   "origin": "train",
+   "sha1": "e8bdfc7392d8",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 248,
+   "origin": "train",
+   "sha1": "8c1d00db71e0",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 249,
+   "origin": "train",
+   "sha1": "469f8d2c6fda",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 250,
+   "origin": "train",
+   "sha1": "d55616997009",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 251,
+   "origin": "train",
+   "sha1": "494fc0337194",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 252,
+   "origin": "train",
+   "sha1": "e127e774e0a2",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 253,
+   "origin": "train",
+   "sha1": "4204443a5115",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 254,
+   "origin": "train",
+   "sha1": "3a20c1eafb84",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 255,
+   "origin": "train",
+   "sha1": "f258136a8af8",
+   "label": "Failure to start on demand",
+   "fold": 1
+  },
+  {
+   "gid": 256,
+   "origin": "train",
+   "sha1": "50a1d85aee66",
+   "label": "Low output",
+   "fold": 0
+  },
+  {
+   "gid": 257,
+   "origin": "train",
+   "sha1": "313a35585f5d",
+   "label": "Failure to start on demand",
+   "fold": 2
+  },
+  {
+   "gid": 258,
+   "origin": "train",
+   "sha1": "6c103efc4b79",
+   "label": "Contamination",
+   "fold": 4
+  },
+  {
+   "gid": 259,
+   "origin": "train",
+   "sha1": "e481ae339861",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 260,
+   "origin": "train",
+   "sha1": "b9063d1bf428",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 261,
+   "origin": "train",
+   "sha1": "a3fd95f9ec29",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 262,
+   "origin": "train",
+   "sha1": "47e1fe593820",
+   "label": "Low output",
+   "fold": 3
+  },
+  {
+   "gid": 263,
+   "origin": "train",
+   "sha1": "13f616f043b4",
+   "label": "Low output",
+   "fold": 0
+  },
+  {
+   "gid": 264,
+   "origin": "train",
+   "sha1": "200024537af8",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 265,
+   "origin": "train",
+   "sha1": "bfe40454be08",
+   "label": "Abnormal instrument reading",
+   "fold": 2
+  },
+  {
+   "gid": 266,
+   "origin": "train",
+   "sha1": "b6a231d1e91f",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 267,
+   "origin": "train",
+   "sha1": "fed4ec2a8569",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 268,
+   "origin": "train",
+   "sha1": "1eba02328b3e",
+   "label": "Erratic output",
+   "fold": 3
+  },
+  {
+   "gid": 269,
+   "origin": "train",
+   "sha1": "3e0b41e13a76",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 270,
+   "origin": "train",
+   "sha1": "518d892e417d",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 271,
+   "origin": "train",
+   "sha1": "41c75f907621",
+   "label": "Contamination",
+   "fold": 2
+  },
+  {
+   "gid": 272,
+   "origin": "train",
+   "sha1": "812c20196941",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 273,
+   "origin": "train",
+   "sha1": "09782abeb4e6",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 274,
+   "origin": "train",
+   "sha1": "a613d756b90c",
+   "label": "Other",
+   "fold": 2
+  },
+  {
+   "gid": 275,
+   "origin": "train",
+   "sha1": "3f44653b3e4c",
+   "label": "Other",
+   "fold": 4
+  },
+  {
+   "gid": 276,
+   "origin": "train",
+   "sha1": "6525eda943e9",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 277,
+   "origin": "train",
+   "sha1": "bbed8cad3ebd",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 278,
+   "origin": "train",
+   "sha1": "c1af8f896ba0",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 279,
+   "origin": "train",
+   "sha1": "a3a1fc6a10df",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 280,
+   "origin": "train",
+   "sha1": "b625f8a0010a",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 281,
+   "origin": "train",
+   "sha1": "1b8e4079cf28",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 282,
+   "origin": "train",
+   "sha1": "b1dd69b4109d",
+   "label": "Overheating",
+   "fold": 4
+  },
+  {
+   "gid": 283,
+   "origin": "train",
+   "sha1": "b79364844981",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 284,
+   "origin": "train",
+   "sha1": "833cd2506c65",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 285,
+   "origin": "train",
+   "sha1": "d40119b85ac3",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 286,
+   "origin": "train",
+   "sha1": "286cf1adad46",
+   "label": "Failure to start on demand",
+   "fold": 2
+  },
+  {
+   "gid": 287,
+   "origin": "train",
+   "sha1": "d2fc8dadac83",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 288,
+   "origin": "train",
+   "sha1": "ee183fb7f428",
+   "label": "Abnormal instrument reading",
+   "fold": 0
+  },
+  {
+   "gid": 289,
+   "origin": "train",
+   "sha1": "7f2d2d11ad94",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 290,
+   "origin": "train",
+   "sha1": "2a3145a1c12e",
+   "label": "Overheating",
+   "fold": 1
+  },
+  {
+   "gid": 291,
+   "origin": "train",
+   "sha1": "33318443649d",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 292,
+   "origin": "train",
+   "sha1": "8e958409ccb2",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 293,
+   "origin": "train",
+   "sha1": "6f6234429267",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 294,
+   "origin": "train",
+   "sha1": "816b3a3906fe",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 295,
+   "origin": "train",
+   "sha1": "b455da76b9dc",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 296,
+   "origin": "train",
+   "sha1": "c28976d4cb27",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 297,
+   "origin": "train",
+   "sha1": "3dad5e91554a",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 298,
+   "origin": "train",
+   "sha1": "131f5352d019",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 299,
+   "origin": "train",
+   "sha1": "00304ce6cd8f",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 300,
+   "origin": "train",
+   "sha1": "c43d2c3b9695",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 301,
+   "origin": "train",
+   "sha1": "3417c3e0227e",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 302,
+   "origin": "train",
+   "sha1": "220c43d6548d",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 303,
+   "origin": "train",
+   "sha1": "7b9ec8e59faa",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 304,
+   "origin": "train",
+   "sha1": "9d6deaff1947",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 305,
+   "origin": "train",
+   "sha1": "1ce78a27bbb8",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 306,
+   "origin": "train",
+   "sha1": "20a27297d6d4",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 307,
+   "origin": "train",
+   "sha1": "29618cc643dc",
+   "label": "Abnormal instrument reading",
+   "fold": 0
+  },
+  {
+   "gid": 308,
+   "origin": "train",
+   "sha1": "1403ef5b3687",
+   "label": "Overheating",
+   "fold": 4
+  },
+  {
+   "gid": 309,
+   "origin": "train",
+   "sha1": "b5735266a167",
+   "label": "Fail to function",
+   "fold": 4
+  },
+  {
+   "gid": 310,
+   "origin": "train",
+   "sha1": "d98d0573b8a0",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 311,
+   "origin": "train",
+   "sha1": "484b8dc72b9f",
+   "label": "Erratic output",
+   "fold": 0
+  },
+  {
+   "gid": 312,
+   "origin": "train",
+   "sha1": "667402e76946",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 313,
+   "origin": "train",
+   "sha1": "9cda66abece6",
+   "label": "Failure to start on demand",
+   "fold": 0
+  },
+  {
+   "gid": 314,
+   "origin": "train",
+   "sha1": "e9cddce7bde0",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 315,
+   "origin": "train",
+   "sha1": "ea834f120e19",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 316,
+   "origin": "train",
+   "sha1": "280927ab0cfc",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 317,
+   "origin": "train",
+   "sha1": "6d673509d12e",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 318,
+   "origin": "train",
+   "sha1": "0b1c39c49a4a",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 319,
+   "origin": "train",
+   "sha1": "00a61bea717c",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 320,
+   "origin": "train",
+   "sha1": "d2a5a1514940",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 321,
+   "origin": "train",
+   "sha1": "8e6982116272",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 322,
+   "origin": "train",
+   "sha1": "cac8ffea9bcf",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 323,
+   "origin": "train",
+   "sha1": "9f5d5dcfbef7",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 324,
+   "origin": "train",
+   "sha1": "70770bca2d88",
+   "label": "Failure to stop on demand",
+   "fold": 2
+  },
+  {
+   "gid": 325,
+   "origin": "train",
+   "sha1": "47dc016d7654",
+   "label": "Low output",
+   "fold": 3
+  },
+  {
+   "gid": 326,
+   "origin": "train",
+   "sha1": "6e3dc96cd597",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 327,
+   "origin": "train",
+   "sha1": "a2a2e954c046",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 328,
+   "origin": "train",
+   "sha1": "525bcb3f6c6b",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 329,
+   "origin": "train",
+   "sha1": "dfa972dc7719",
+   "label": "Abnormal instrument reading",
+   "fold": 4
+  },
+  {
+   "gid": 330,
+   "origin": "train",
+   "sha1": "9fae38bfbf34",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 331,
+   "origin": "train",
+   "sha1": "9fb8fe5557e1",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 332,
+   "origin": "train",
+   "sha1": "22ad1f166161",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 333,
+   "origin": "train",
+   "sha1": "d51cd0d9fcd1",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 334,
+   "origin": "train",
+   "sha1": "d68c18d7b4ed",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 335,
+   "origin": "train",
+   "sha1": "b0541ee03a48",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 336,
+   "origin": "train",
+   "sha1": "66a103cfc8d2",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 337,
+   "origin": "train",
+   "sha1": "5a9388374bd0",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 338,
+   "origin": "train",
+   "sha1": "3ec772427e8f",
+   "label": "Low output",
+   "fold": 2
+  },
+  {
+   "gid": 339,
+   "origin": "train",
+   "sha1": "2f38c5f4b880",
+   "label": "Fail to function",
+   "fold": 3
+  },
+  {
+   "gid": 340,
+   "origin": "train",
+   "sha1": "f69720f6236c",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 341,
+   "origin": "train",
+   "sha1": "4c5cd112e97a",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 342,
+   "origin": "train",
+   "sha1": "7f603fc31379",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 343,
+   "origin": "train",
+   "sha1": "000553133f61",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 344,
+   "origin": "train",
+   "sha1": "cb6ff6423bbf",
+   "label": "Failure to start on demand",
+   "fold": 1
+  },
+  {
+   "gid": 345,
+   "origin": "train",
+   "sha1": "24ba20941ce7",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 346,
+   "origin": "train",
+   "sha1": "d40c64c4164d",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 347,
+   "origin": "train",
+   "sha1": "ed0624fab8c2",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 348,
+   "origin": "train",
+   "sha1": "672f68097fbc",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 349,
+   "origin": "train",
+   "sha1": "e2973eda0265",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 350,
+   "origin": "train",
+   "sha1": "d2a81dd0a4d1",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 351,
+   "origin": "train",
+   "sha1": "82f1ab160104",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 352,
+   "origin": "train",
+   "sha1": "d9382c99542c",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 353,
+   "origin": "train",
+   "sha1": "279099ef6404",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 354,
+   "origin": "train",
+   "sha1": "33838cd15140",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 355,
+   "origin": "train",
+   "sha1": "39d5fd6c6a06",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 356,
+   "origin": "train",
+   "sha1": "79050568aa42",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 357,
+   "origin": "train",
+   "sha1": "e01f06419c7e",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 358,
+   "origin": "train",
+   "sha1": "4f19d4f68a9f",
+   "label": "Spurious stop",
+   "fold": 1
+  },
+  {
+   "gid": 359,
+   "origin": "train",
+   "sha1": "b1cd91495b57",
+   "label": "Fail to function",
+   "fold": 1
+  },
+  {
+   "gid": 360,
+   "origin": "train",
+   "sha1": "a9ca4ae7f2b0",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 361,
+   "origin": "train",
+   "sha1": "5707e6fa77f2",
+   "label": "Vibration",
+   "fold": 0
+  },
+  {
+   "gid": 362,
+   "origin": "train",
+   "sha1": "69d7ec80d9b3",
+   "label": "Failure to start on demand",
+   "fold": 3
+  },
+  {
+   "gid": 363,
+   "origin": "train",
+   "sha1": "121d524c41da",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 364,
+   "origin": "train",
+   "sha1": "cc1f04978a8c",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 365,
+   "origin": "train",
+   "sha1": "969456b39567",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 366,
+   "origin": "train",
+   "sha1": "5a4a6dfe2a6f",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 367,
+   "origin": "train",
+   "sha1": "9728a5b8877c",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 368,
+   "origin": "train",
+   "sha1": "b0998a4beca6",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 369,
+   "origin": "train",
+   "sha1": "f7f3d34d7108",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 370,
+   "origin": "train",
+   "sha1": "14407699577f",
+   "label": "Noise",
+   "fold": 3
+  },
+  {
+   "gid": 371,
+   "origin": "train",
+   "sha1": "e48c0c8eeb80",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 372,
+   "origin": "train",
+   "sha1": "0bc8bb693d9e",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 373,
+   "origin": "train",
+   "sha1": "82148f8dba52",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 374,
+   "origin": "train",
+   "sha1": "37794a31ff3b",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 375,
+   "origin": "train",
+   "sha1": "f76fa4e4d43b",
+   "label": "Spurious stop",
+   "fold": 3
+  },
+  {
+   "gid": 376,
+   "origin": "train",
+   "sha1": "ff98f1266f27",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 377,
+   "origin": "train",
+   "sha1": "0555289e347e",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 378,
+   "origin": "train",
+   "sha1": "1b15fbbfcce5",
+   "label": "Abnormal instrument reading",
+   "fold": 2
+  },
+  {
+   "gid": 379,
+   "origin": "train",
+   "sha1": "462b74f62fb5",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 380,
+   "origin": "train",
+   "sha1": "98f81c3e4340",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 381,
+   "origin": "train",
+   "sha1": "60543c419e1f",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 382,
+   "origin": "train",
+   "sha1": "14ddf485e078",
+   "label": "Abnormal instrument reading",
+   "fold": 4
+  },
+  {
+   "gid": 383,
+   "origin": "train",
+   "sha1": "717eaf0aa88e",
+   "label": "Other",
+   "fold": 3
+  },
+  {
+   "gid": 384,
+   "origin": "train",
+   "sha1": "abb16e0bcc4d",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 385,
+   "origin": "train",
+   "sha1": "7313b69093b9",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 386,
+   "origin": "train",
+   "sha1": "60a7ecc09ceb",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 387,
+   "origin": "train",
+   "sha1": "c588056e378c",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 388,
+   "origin": "train",
+   "sha1": "7dd8ac77dc27",
+   "label": "Failure to start on demand",
+   "fold": 2
+  },
+  {
+   "gid": 389,
+   "origin": "train",
+   "sha1": "87f34cfb42c4",
+   "label": "Abnormal instrument reading",
+   "fold": 3
+  },
+  {
+   "gid": 390,
+   "origin": "train",
+   "sha1": "d00e2c5c54d9",
+   "label": "High output",
+   "fold": 2
+  },
+  {
+   "gid": 391,
+   "origin": "train",
+   "sha1": "82ce6470713d",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 392,
+   "origin": "train",
+   "sha1": "b252fedadbc7",
+   "label": "Low output",
+   "fold": 4
+  },
+  {
+   "gid": 393,
+   "origin": "train",
+   "sha1": "b4c3d3ba9838",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 394,
+   "origin": "train",
+   "sha1": "d236444b3460",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 395,
+   "origin": "train",
+   "sha1": "6f053df6da77",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 396,
+   "origin": "train",
+   "sha1": "55b214bdffd9",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 397,
+   "origin": "train",
+   "sha1": "6239099b1542",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 398,
+   "origin": "train",
+   "sha1": "dfb4ae0f5c2d",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 399,
+   "origin": "train",
+   "sha1": "40042de4bb66",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 400,
+   "origin": "train",
+   "sha1": "bd3ca2d944db",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 401,
+   "origin": "train",
+   "sha1": "ca3f51d19a0e",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 402,
+   "origin": "train",
+   "sha1": "18ab1e0af1f4",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 403,
+   "origin": "train",
+   "sha1": "fcdd4852fb5e",
+   "label": "Fail to function",
+   "fold": 4
+  },
+  {
+   "gid": 404,
+   "origin": "train",
+   "sha1": "7d0c553a8f7f",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 405,
+   "origin": "train",
+   "sha1": "4ff66d3f3ae2",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 406,
+   "origin": "train",
+   "sha1": "cb22dbb35511",
+   "label": "Noise",
+   "fold": 0
+  },
+  {
+   "gid": 407,
+   "origin": "train",
+   "sha1": "156e8e44217c",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 408,
+   "origin": "train",
+   "sha1": "676e343824da",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 409,
+   "origin": "train",
+   "sha1": "098cbd445795",
+   "label": "Fail to open",
+   "fold": 2
+  },
+  {
+   "gid": 410,
+   "origin": "train",
+   "sha1": "247e863ab89a",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 411,
+   "origin": "train",
+   "sha1": "f972b5161994",
+   "label": "High output",
+   "fold": 2
+  },
+  {
+   "gid": 412,
+   "origin": "train",
+   "sha1": "73906ef5905d",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 413,
+   "origin": "train",
+   "sha1": "4e45fc2282eb",
+   "label": "Other",
+   "fold": 1
+  },
+  {
+   "gid": 414,
+   "origin": "train",
+   "sha1": "a5e5d97c624f",
+   "label": "Overheating",
+   "fold": 1
+  },
+  {
+   "gid": 415,
+   "origin": "train",
+   "sha1": "f6d4cc7e373a",
+   "label": "Erratic output",
+   "fold": 2
+  },
+  {
+   "gid": 416,
+   "origin": "train",
+   "sha1": "e79410187be9",
+   "label": "Abnormal instrument reading",
+   "fold": 4
+  },
+  {
+   "gid": 417,
+   "origin": "train",
+   "sha1": "34478eb2b28f",
+   "label": "Overheating",
+   "fold": 0
+  },
+  {
+   "gid": 418,
+   "origin": "train",
+   "sha1": "3dd9ae566c15",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 419,
+   "origin": "train",
+   "sha1": "d2f3c79ec012",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 420,
+   "origin": "train",
+   "sha1": "1e421ae3385e",
+   "label": "Fail to function",
+   "fold": 2
+  },
+  {
+   "gid": 421,
+   "origin": "train",
+   "sha1": "01511390ec0c",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 422,
+   "origin": "train",
+   "sha1": "20064fde4783",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 423,
+   "origin": "train",
+   "sha1": "749ce6c90978",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 424,
+   "origin": "train",
+   "sha1": "20196fcc9be9",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 425,
+   "origin": "train",
+   "sha1": "95e4b044cba3",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 426,
+   "origin": "train",
+   "sha1": "303c10372d36",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 427,
+   "origin": "train",
+   "sha1": "cb340aeaf57a",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 428,
+   "origin": "train",
+   "sha1": "87d4739e08cb",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 429,
+   "origin": "train",
+   "sha1": "b3e07bb9c8ab",
+   "label": "Spurious stop",
+   "fold": 4
+  },
+  {
+   "gid": 430,
+   "origin": "train",
+   "sha1": "0c5ff5ebf6e7",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 431,
+   "origin": "train",
+   "sha1": "95f0090965d2",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 432,
+   "origin": "train",
+   "sha1": "022e56ffef9c",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 433,
+   "origin": "train",
+   "sha1": "ab60936b43cc",
+   "label": "Vibration",
+   "fold": 4
+  },
+  {
+   "gid": 434,
+   "origin": "train",
+   "sha1": "b94ba044adda",
+   "label": "Plugged / choked",
+   "fold": 3
+  },
+  {
+   "gid": 435,
+   "origin": "train",
+   "sha1": "35b08f1d5ccd",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 436,
+   "origin": "train",
+   "sha1": "7371b752c0b4",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 437,
+   "origin": "train",
+   "sha1": "2c208f5f99ea",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 438,
+   "origin": "train",
+   "sha1": "6c8d536cc470",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 439,
+   "origin": "train",
+   "sha1": "e0c945aef506",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 440,
+   "origin": "train",
+   "sha1": "b9b27377004f",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 441,
+   "origin": "train",
+   "sha1": "752548bea32e",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 442,
+   "origin": "train",
+   "sha1": "0d3e4d6c1f62",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 443,
+   "origin": "train",
+   "sha1": "a5714efee90b",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 444,
+   "origin": "train",
+   "sha1": "ee51987ba8b0",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 445,
+   "origin": "train",
+   "sha1": "9af5572ea472",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 446,
+   "origin": "train",
+   "sha1": "b604ddb5e1d0",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 447,
+   "origin": "train",
+   "sha1": "8bb173f79d81",
+   "label": "Failure to stop on demand",
+   "fold": 2
+  },
+  {
+   "gid": 448,
+   "origin": "train",
+   "sha1": "0f028fd82618",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 449,
+   "origin": "train",
+   "sha1": "e4388ea00b45",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 450,
+   "origin": "train",
+   "sha1": "cf407ac3c827",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 451,
+   "origin": "train",
+   "sha1": "6992a0f44e24",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 452,
+   "origin": "train",
+   "sha1": "3833396873bc",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 453,
+   "origin": "train",
+   "sha1": "ce3d3c7d7bd2",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 454,
+   "origin": "train",
+   "sha1": "f1916fbd1c82",
+   "label": "Failure to start on demand",
+   "fold": 4
+  },
+  {
+   "gid": 455,
+   "origin": "train",
+   "sha1": "3b562f186445",
+   "label": "Failure to start on demand",
+   "fold": 3
+  },
+  {
+   "gid": 456,
+   "origin": "train",
+   "sha1": "6c2289cd2292",
+   "label": "Abnormal instrument reading",
+   "fold": 3
+  },
+  {
+   "gid": 457,
+   "origin": "train",
+   "sha1": "e59722c4c37d",
+   "label": "Fail to function",
+   "fold": 2
+  },
+  {
+   "gid": 458,
+   "origin": "train",
+   "sha1": "c8b67e4f1a3a",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 459,
+   "origin": "train",
+   "sha1": "3714b4b95caa",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 460,
+   "origin": "train",
+   "sha1": "8e8df6e90128",
+   "label": "Fail to function",
+   "fold": 3
+  },
+  {
+   "gid": 461,
+   "origin": "train",
+   "sha1": "4efc28fc77e3",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 462,
+   "origin": "train",
+   "sha1": "44d9b669ac61",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 463,
+   "origin": "train",
+   "sha1": "71fc8ab6d4ff",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 464,
+   "origin": "train",
+   "sha1": "ae2a77a2805b",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 465,
+   "origin": "train",
+   "sha1": "2364c28447f7",
+   "label": "Vibration",
+   "fold": 3
+  },
+  {
+   "gid": 466,
+   "origin": "train",
+   "sha1": "f21112139da0",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 467,
+   "origin": "train",
+   "sha1": "845ffe2ae982",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 468,
+   "origin": "train",
+   "sha1": "86dd61c87071",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 469,
+   "origin": "train",
+   "sha1": "c6b7a67cbe41",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 470,
+   "origin": "train",
+   "sha1": "66ffee7b3a88",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 471,
+   "origin": "train",
+   "sha1": "d8a6bec085b1",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 472,
+   "origin": "train",
+   "sha1": "d6f839217a23",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 473,
+   "origin": "train",
+   "sha1": "27517f40dc9c",
+   "label": "Vibration",
+   "fold": 0
+  },
+  {
+   "gid": 474,
+   "origin": "train",
+   "sha1": "bcc9d1466c12",
+   "label": "Vibration",
+   "fold": 3
+  },
+  {
+   "gid": 475,
+   "origin": "train",
+   "sha1": "2751c673396f",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 476,
+   "origin": "train",
+   "sha1": "8e1de78f0f3d",
+   "label": "Erratic output",
+   "fold": 0
+  },
+  {
+   "gid": 477,
+   "origin": "train",
+   "sha1": "5b442f1b718d",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 478,
+   "origin": "train",
+   "sha1": "c6ac5ef52b22",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 479,
+   "origin": "train",
+   "sha1": "2136626f30b0",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 480,
+   "origin": "train",
+   "sha1": "9ff4015f5ff6",
+   "label": "Noise",
+   "fold": 4
+  },
+  {
+   "gid": 481,
+   "origin": "train",
+   "sha1": "4eeb2502d67d",
+   "label": "Breakdown",
+   "fold": 2
+  },
+  {
+   "gid": 482,
+   "origin": "train",
+   "sha1": "5e0713b3d59f",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 483,
+   "origin": "train",
+   "sha1": "aa682a8291c0",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 484,
+   "origin": "train",
+   "sha1": "21905bee4893",
+   "label": "Fail to function",
+   "fold": 0
+  },
+  {
+   "gid": 485,
+   "origin": "train",
+   "sha1": "d5a818682f14",
+   "label": "Noise",
+   "fold": 2
+  },
+  {
+   "gid": 486,
+   "origin": "train",
+   "sha1": "ba255c4bdc79",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 487,
+   "origin": "train",
+   "sha1": "8e0eb7845012",
+   "label": "Electrical",
+   "fold": 0
+  },
+  {
+   "gid": 488,
+   "origin": "train",
+   "sha1": "a4810e83f771",
+   "label": "Spurious stop",
+   "fold": 0
+  },
+  {
+   "gid": 489,
+   "origin": "train",
+   "sha1": "b41e3ddf0ed0",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 490,
+   "origin": "train",
+   "sha1": "e54eb2a94948",
+   "label": "Other",
+   "fold": 3
+  },
+  {
+   "gid": 491,
+   "origin": "train",
+   "sha1": "af4c092836a8",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 492,
+   "origin": "train",
+   "sha1": "fea023046929",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 493,
+   "origin": "train",
+   "sha1": "c87fae33a3d8",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 494,
+   "origin": "train",
+   "sha1": "8398d1f5c651",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 495,
+   "origin": "train",
+   "sha1": "2b493b84cc75",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 496,
+   "origin": "train",
+   "sha1": "134e60da7974",
+   "label": "Fail to function",
+   "fold": 0
+  },
+  {
+   "gid": 497,
+   "origin": "train",
+   "sha1": "c8a85936a1e1",
+   "label": "Failure to start on demand",
+   "fold": 3
+  },
+  {
+   "gid": 498,
+   "origin": "train",
+   "sha1": "fabf9270d0c8",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 499,
+   "origin": "train",
+   "sha1": "0c4e6d8a33f4",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 500,
+   "origin": "train",
+   "sha1": "8708f3ae3dab",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 501,
+   "origin": "train",
+   "sha1": "195d49ffd8ad",
+   "label": "Spurious stop",
+   "fold": 2
+  },
+  {
+   "gid": 502,
+   "origin": "dev",
+   "sha1": "db66ff067074",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 503,
+   "origin": "dev",
+   "sha1": "8331d1e596d5",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 504,
+   "origin": "dev",
+   "sha1": "d4d14c1b303e",
+   "label": "Spurious stop",
+   "fold": 4
+  },
+  {
+   "gid": 505,
+   "origin": "dev",
+   "sha1": "3e8652f857cc",
+   "label": "Fail to open",
+   "fold": 3
+  },
+  {
+   "gid": 506,
+   "origin": "dev",
+   "sha1": "a5165e8357d0",
+   "label": "Spurious stop",
+   "fold": 3
+  },
+  {
+   "gid": 507,
+   "origin": "dev",
+   "sha1": "bc5334916300",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 508,
+   "origin": "dev",
+   "sha1": "f22f29f2d83a",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 509,
+   "origin": "dev",
+   "sha1": "98d3401f5d31",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 510,
+   "origin": "dev",
+   "sha1": "4bc07fb53886",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 511,
+   "origin": "dev",
+   "sha1": "0dc13f6bb035",
+   "label": "Failure to start on demand",
+   "fold": 3
+  },
+  {
+   "gid": 512,
+   "origin": "dev",
+   "sha1": "e24ee9d09a89",
+   "label": "Erratic output",
+   "fold": 4
+  },
+  {
+   "gid": 513,
+   "origin": "dev",
+   "sha1": "7632458b238e",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 514,
+   "origin": "dev",
+   "sha1": "afa013a3b19e",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 515,
+   "origin": "dev",
+   "sha1": "42da7df829b0",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 516,
+   "origin": "dev",
+   "sha1": "708e4d5739c6",
+   "label": "Vibration",
+   "fold": 1
+  },
+  {
+   "gid": 517,
+   "origin": "dev",
+   "sha1": "1549575fc7ad",
+   "label": "Overheating",
+   "fold": 4
+  },
+  {
+   "gid": 518,
+   "origin": "dev",
+   "sha1": "ad6fa0a737f0",
+   "label": "Fail to function",
+   "fold": 4
+  },
+  {
+   "gid": 519,
+   "origin": "dev",
+   "sha1": "ba3f01f75dad",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 520,
+   "origin": "dev",
+   "sha1": "e5cdd5243579",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 521,
+   "origin": "dev",
+   "sha1": "d21d991186dd",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 522,
+   "origin": "dev",
+   "sha1": "f8031c63fca7",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 523,
+   "origin": "dev",
+   "sha1": "dcd6e774eeb8",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 524,
+   "origin": "dev",
+   "sha1": "5cc3da34d404",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 525,
+   "origin": "dev",
+   "sha1": "5a1878a3c2e7",
+   "label": "Overheating",
+   "fold": 3
+  },
+  {
+   "gid": 526,
+   "origin": "dev",
+   "sha1": "267bdc254185",
+   "label": "Overheating",
+   "fold": 2
+  },
+  {
+   "gid": 527,
+   "origin": "dev",
+   "sha1": "3e2d3343be00",
+   "label": "Other",
+   "fold": 1
+  },
+  {
+   "gid": 528,
+   "origin": "dev",
+   "sha1": "9fb295919936",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 529,
+   "origin": "dev",
+   "sha1": "5345d353a6a9",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 530,
+   "origin": "dev",
+   "sha1": "7940efae3ede",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 531,
+   "origin": "dev",
+   "sha1": "fa49ee3866f8",
+   "label": "Leaking",
+   "fold": 0
+  },
+  {
+   "gid": 532,
+   "origin": "dev",
+   "sha1": "f0b7fe3319d5",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 533,
+   "origin": "dev",
+   "sha1": "258aa47aaa10",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 534,
+   "origin": "dev",
+   "sha1": "27657451749d",
+   "label": "Abnormal instrument reading",
+   "fold": 1
+  },
+  {
+   "gid": 535,
+   "origin": "dev",
+   "sha1": "868e944d3f30",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 536,
+   "origin": "dev",
+   "sha1": "7928ad65cf2d",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 537,
+   "origin": "dev",
+   "sha1": "4ac56e3694b5",
+   "label": "Failure to start on demand",
+   "fold": 4
+  },
+  {
+   "gid": 538,
+   "origin": "dev",
+   "sha1": "adc8566b58fc",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 539,
+   "origin": "dev",
+   "sha1": "2287ebf4a623",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 540,
+   "origin": "dev",
+   "sha1": "758e1be931be",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 541,
+   "origin": "dev",
+   "sha1": "0e3c48ac27c2",
+   "label": "Low output",
+   "fold": 0
+  },
+  {
+   "gid": 542,
+   "origin": "dev",
+   "sha1": "7ca0ff7ce17e",
+   "label": "Structural deficiency",
+   "fold": 0
+  },
+  {
+   "gid": 543,
+   "origin": "dev",
+   "sha1": "e0f634c4993f",
+   "label": "Electrical",
+   "fold": 3
+  },
+  {
+   "gid": 544,
+   "origin": "dev",
+   "sha1": "956762dc9331",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 545,
+   "origin": "dev",
+   "sha1": "4c5ac2ccfbbb",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 546,
+   "origin": "dev",
+   "sha1": "3dd79bae56be",
+   "label": "Abnormal instrument reading",
+   "fold": 0
+  },
+  {
+   "gid": 547,
+   "origin": "dev",
+   "sha1": "68587e1a36b7",
+   "label": "Structural deficiency",
+   "fold": 3
+  },
+  {
+   "gid": 548,
+   "origin": "dev",
+   "sha1": "8b1d6701fcf6",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 549,
+   "origin": "dev",
+   "sha1": "b3079f004fd7",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 550,
+   "origin": "dev",
+   "sha1": "3af8619b4797",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 551,
+   "origin": "dev",
+   "sha1": "db169706a983",
+   "label": "Structural deficiency",
+   "fold": 2
+  },
+  {
+   "gid": 552,
+   "origin": "dev",
+   "sha1": "4263cc092fb1",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 553,
+   "origin": "dev",
+   "sha1": "7655969e6e8c",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 554,
+   "origin": "dev",
+   "sha1": "4a73ce9f00c7",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 555,
+   "origin": "dev",
+   "sha1": "be22f829303e",
+   "label": "Vibration",
+   "fold": 2
+  },
+  {
+   "gid": 556,
+   "origin": "dev",
+   "sha1": "9ec1a34b82af",
+   "label": "Spurious stop",
+   "fold": 2
+  },
+  {
+   "gid": 557,
+   "origin": "dev",
+   "sha1": "8914a239aa1f",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 558,
+   "origin": "dev",
+   "sha1": "ffd18feb6551",
+   "label": "Fail to function",
+   "fold": 2
+  },
+  {
+   "gid": 559,
+   "origin": "dev",
+   "sha1": "bada065d1832",
+   "label": "Failure to start on demand",
+   "fold": 0
+  },
+  {
+   "gid": 560,
+   "origin": "dev",
+   "sha1": "6c5234b74fc2",
+   "label": "Leaking",
+   "fold": 3
+  },
+  {
+   "gid": 561,
+   "origin": "dev",
+   "sha1": "ebbcc1a7250e",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 562,
+   "origin": "dev",
+   "sha1": "b40cda152b74",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 563,
+   "origin": "dev",
+   "sha1": "365e5c9fa6ba",
+   "label": "Fail to function",
+   "fold": 3
+  },
+  {
+   "gid": 564,
+   "origin": "dev",
+   "sha1": "daacedf90f34",
+   "label": "Contamination",
+   "fold": 3
+  },
+  {
+   "gid": 565,
+   "origin": "dev",
+   "sha1": "8e433d199e21",
+   "label": "Fail to close",
+   "fold": 4
+  },
+  {
+   "gid": 566,
+   "origin": "dev",
+   "sha1": "5fc22ceba694",
+   "label": "Failure to rotate",
+   "fold": 0
+  },
+  {
+   "gid": 567,
+   "origin": "dev",
+   "sha1": "8a68cf7c3015",
+   "label": "Failure to stop on demand",
+   "fold": 4
+  },
+  {
+   "gid": 568,
+   "origin": "dev",
+   "sha1": "c1412b6a5c81",
+   "label": "High output",
+   "fold": 3
+  },
+  {
+   "gid": 569,
+   "origin": "dev",
+   "sha1": "cd34a342795f",
+   "label": "Noise",
+   "fold": 2
+  },
+  {
+   "gid": 570,
+   "origin": "test",
+   "sha1": "7b6c0e5bf9cd",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 571,
+   "origin": "test",
+   "sha1": "aab71a313d88",
+   "label": "Fail to function",
+   "fold": 1
+  },
+  {
+   "gid": 572,
+   "origin": "test",
+   "sha1": "0362498a20dd",
+   "label": "Plugged / choked",
+   "fold": 0
+  },
+  {
+   "gid": 573,
+   "origin": "test",
+   "sha1": "4d16d0347965",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 574,
+   "origin": "test",
+   "sha1": "262de2a77490",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 575,
+   "origin": "test",
+   "sha1": "9f6d848cf9c3",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 576,
+   "origin": "test",
+   "sha1": "dc9c12bc2095",
+   "label": "Fail to function",
+   "fold": 4
+  },
+  {
+   "gid": 577,
+   "origin": "test",
+   "sha1": "dde22d6ac44d",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 578,
+   "origin": "test",
+   "sha1": "e66fd4d5a32b",
+   "label": "Electrical",
+   "fold": 1
+  },
+  {
+   "gid": 579,
+   "origin": "test",
+   "sha1": "792397dcfdd9",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 580,
+   "origin": "test",
+   "sha1": "22f7ae1adf2d",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 581,
+   "origin": "test",
+   "sha1": "1f0e202e0719",
+   "label": "Failure to stop on demand",
+   "fold": 3
+  },
+  {
+   "gid": 582,
+   "origin": "test",
+   "sha1": "932fddc6c52a",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 583,
+   "origin": "test",
+   "sha1": "0827094ed85d",
+   "label": "Contamination",
+   "fold": 4
+  },
+  {
+   "gid": 584,
+   "origin": "test",
+   "sha1": "3dcfcfac03a0",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 585,
+   "origin": "test",
+   "sha1": "09225dbcff79",
+   "label": "Structural deficiency",
+   "fold": 4
+  },
+  {
+   "gid": 586,
+   "origin": "test",
+   "sha1": "e1cf26963cac",
+   "label": "Breakdown",
+   "fold": 1
+  },
+  {
+   "gid": 587,
+   "origin": "test",
+   "sha1": "9380c8712f14",
+   "label": "Fail to function",
+   "fold": 3
+  },
+  {
+   "gid": 588,
+   "origin": "test",
+   "sha1": "b1219764d679",
+   "label": "Structural deficiency",
+   "fold": 1
+  },
+  {
+   "gid": 589,
+   "origin": "test",
+   "sha1": "954fe892bc6b",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 590,
+   "origin": "test",
+   "sha1": "d11e59ba73f0",
+   "label": "Spurious stop",
+   "fold": 0
+  },
+  {
+   "gid": 591,
+   "origin": "test",
+   "sha1": "ad65a738a41a",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 592,
+   "origin": "test",
+   "sha1": "2f1d15223b17",
+   "label": "High output",
+   "fold": 1
+  },
+  {
+   "gid": 593,
+   "origin": "test",
+   "sha1": "e36d97fa33b1",
+   "label": "Low output",
+   "fold": 0
+  },
+  {
+   "gid": 594,
+   "origin": "test",
+   "sha1": "e91401d67096",
+   "label": "Leaking",
+   "fold": 1
+  },
+  {
+   "gid": 595,
+   "origin": "test",
+   "sha1": "dfe0a03a981b",
+   "label": "Leaking",
+   "fold": 4
+  },
+  {
+   "gid": 596,
+   "origin": "test",
+   "sha1": "cd7ab22f6ba5",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 597,
+   "origin": "test",
+   "sha1": "5432232b4389",
+   "label": "Plugged / choked",
+   "fold": 1
+  },
+  {
+   "gid": 598,
+   "origin": "test",
+   "sha1": "2c964296c5e7",
+   "label": "Plugged / choked",
+   "fold": 2
+  },
+  {
+   "gid": 599,
+   "origin": "test",
+   "sha1": "6169a319b8e4",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 600,
+   "origin": "test",
+   "sha1": "1b2711e36285",
+   "label": "Overheating",
+   "fold": 0
+  },
+  {
+   "gid": 601,
+   "origin": "test",
+   "sha1": "c216d91d73b5",
+   "label": "Overheating",
+   "fold": 2
+  },
+  {
+   "gid": 602,
+   "origin": "test",
+   "sha1": "7a13268e3337",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 603,
+   "origin": "test",
+   "sha1": "f0c22ce76804",
+   "label": "Low output",
+   "fold": 1
+  },
+  {
+   "gid": 604,
+   "origin": "test",
+   "sha1": "7d416e66e4e7",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 605,
+   "origin": "test",
+   "sha1": "77cf66082cbb",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 606,
+   "origin": "test",
+   "sha1": "3a889e0c5c39",
+   "label": "Electrical",
+   "fold": 2
+  },
+  {
+   "gid": 607,
+   "origin": "test",
+   "sha1": "96683c8d8ba7",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 608,
+   "origin": "test",
+   "sha1": "e8de6b5d404f",
+   "label": "Abnormal instrument reading",
+   "fold": 2
+  },
+  {
+   "gid": 609,
+   "origin": "test",
+   "sha1": "99d14fd53358",
+   "label": "Erratic output",
+   "fold": 1
+  },
+  {
+   "gid": 610,
+   "origin": "test",
+   "sha1": "f660a94d4f27",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 611,
+   "origin": "test",
+   "sha1": "80a8c8633d3b",
+   "label": "Minor in-service problems",
+   "fold": 0
+  },
+  {
+   "gid": 612,
+   "origin": "test",
+   "sha1": "31f5daae5a4f",
+   "label": "Minor in-service problems",
+   "fold": 1
+  },
+  {
+   "gid": 613,
+   "origin": "test",
+   "sha1": "247246f599aa",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 614,
+   "origin": "test",
+   "sha1": "3da49be8e1b1",
+   "label": "Failure to start on demand",
+   "fold": 4
+  },
+  {
+   "gid": 615,
+   "origin": "test",
+   "sha1": "8083011d84fd",
+   "label": "Breakdown",
+   "fold": 4
+  },
+  {
+   "gid": 616,
+   "origin": "test",
+   "sha1": "40c5803a3c10",
+   "label": "Electrical",
+   "fold": 4
+  },
+  {
+   "gid": 617,
+   "origin": "test",
+   "sha1": "a55402fc046c",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 618,
+   "origin": "test",
+   "sha1": "4cb64f78cf8a",
+   "label": "Breakdown",
+   "fold": 0
+  },
+  {
+   "gid": 619,
+   "origin": "test",
+   "sha1": "b8624cdf42ef",
+   "label": "Vibration",
+   "fold": 2
+  },
+  {
+   "gid": 620,
+   "origin": "test",
+   "sha1": "79a9d8c4d318",
+   "label": "Plugged / choked",
+   "fold": 4
+  },
+  {
+   "gid": 621,
+   "origin": "test",
+   "sha1": "53ff9defd7d7",
+   "label": "Other",
+   "fold": 4
+  },
+  {
+   "gid": 622,
+   "origin": "test",
+   "sha1": "63637b2b34fe",
+   "label": "Minor in-service problems",
+   "fold": 3
+  },
+  {
+   "gid": 623,
+   "origin": "test",
+   "sha1": "51f5f4ab129c",
+   "label": "Vibration",
+   "fold": 0
+  },
+  {
+   "gid": 624,
+   "origin": "test",
+   "sha1": "56f4c335ee4f",
+   "label": "Breakdown",
+   "fold": 3
+  },
+  {
+   "gid": 625,
+   "origin": "test",
+   "sha1": "e879a21e3655",
+   "label": "Minor in-service problems",
+   "fold": 4
+  },
+  {
+   "gid": 626,
+   "origin": "test",
+   "sha1": "d07499ab51d6",
+   "label": "Leaking",
+   "fold": 2
+  },
+  {
+   "gid": 627,
+   "origin": "test",
+   "sha1": "f9a4842ce837",
+   "label": "Minor in-service problems",
+   "fold": 2
+  },
+  {
+   "gid": 628,
+   "origin": "test",
+   "sha1": "7f3bae892283",
+   "label": "Overheating",
+   "fold": 2
+  },
+  {
+   "gid": 629,
+   "origin": "test",
+   "sha1": "1bd9fb958bc1",
+   "label": "Other",
+   "fold": 1
+  },
+  {
+   "gid": 630,
+   "origin": "test",
+   "sha1": "f724abec755a",
+   "label": "Overheating",
+   "fold": 1
+  },
+  {
+   "gid": 631,
+   "origin": "test",
+   "sha1": "5370847ab74f",
+   "label": "Plugged / choked",
+   "fold": 4
+  }
+ ]
+}

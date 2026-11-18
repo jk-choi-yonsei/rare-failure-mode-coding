@@ -1,0 +1,192 @@
+id,is_novel,gold,pred,msp_novelty,energy_novelty
+372,0,Electrical,Electrical,0.048903,-5.708231
+156,0,Erratic output,Low output,0.683457,-3.448160
+525,0,Overheating,Overheating,0.591371,-3.885290
+511,0,Failure to start on demand,Failure to start on demand,0.324351,-4.355309
+462,0,Structural deficiency,Structural deficiency,0.069480,-5.510628
+107,0,Structural deficiency,Structural deficiency,0.048926,-5.693703
+607,0,Minor in-service problems,Minor in-service problems,0.041840,-5.633290
+21,0,Low output,Vibration,0.688514,-3.470756
+101,0,Other,Spurious stop,0.688233,-3.618716
+529,0,Leaking,Leaking,0.048299,-5.674856
+570,0,Minor in-service problems,Failure to start on demand,0.776872,-3.446299
+629,0,Other,Overheating,0.831649,-3.364390
+247,0,Breakdown,Breakdown,0.042363,-5.908684
+423,0,Electrical,Electrical,0.048749,-5.711376
+94,0,Failure to start on demand,Failure to start on demand,0.270984,-4.487267
+394,0,Electrical,Electrical,0.069540,-5.380910
+450,0,Minor in-service problems,Minor in-service problems,0.038579,-5.836664
+84,0,Minor in-service problems,Breakdown,0.350060,-4.988298
+144,0,High output,Low output,0.424621,-3.840820
+371,0,Minor in-service problems,Minor in-service problems,0.090997,-5.093854
+111,0,Minor in-service problems,Minor in-service problems,0.175791,-4.637581
+588,0,Structural deficiency,Structural deficiency,0.079130,-5.269528
+8,0,Minor in-service problems,Minor in-service problems,0.021584,-6.463043
+3,0,Leaking,Leaking,0.071110,-5.395411
+410,0,Minor in-service problems,Minor in-service problems,0.605288,-3.812849
+472,0,Structural deficiency,Structural deficiency,0.057518,-5.603644
+465,0,Vibration,Spurious stop,0.752232,-3.586862
+559,0,Failure to start on demand,Failure to start on demand,0.392911,-4.101591
+452,0,Breakdown,Low output,0.469718,-3.865758
+524,0,Electrical,Electrical,0.070336,-5.381589
+595,0,Leaking,Leaking,0.071176,-5.395921
+323,0,Breakdown,Breakdown,0.300234,-4.432574
+483,0,Minor in-service problems,Minor in-service problems,0.034615,-6.286372
+446,0,Electrical,Electrical,0.048100,-5.719912
+233,0,Abnormal instrument reading,Electrical,0.655630,-3.533726
+489,0,Structural deficiency,Structural deficiency,0.112013,-5.353474
+611,0,Minor in-service problems,Minor in-service problems,0.043633,-6.238716
+283,0,Structural deficiency,Structural deficiency,0.047099,-5.728878
+520,0,Minor in-service problems,Minor in-service problems,0.103960,-4.855155
+182,0,Structural deficiency,Structural deficiency,0.044352,-5.853640
+580,0,Breakdown,Breakdown,0.400587,-4.690835
+504,0,Spurious stop,Spurious stop,0.366300,-4.010575
+304,0,Electrical,Electrical,0.049633,-5.694473
+161,0,Minor in-service problems,Abnormal instrument reading,0.711988,-3.327539
+528,0,Structural deficiency,Structural deficiency,0.075746,-5.667418
+362,0,Failure to start on demand,Failure to start on demand,0.189546,-4.634880
+256,0,Low output,Breakdown,0.483416,-4.102239
+623,0,Vibration,Electrical,0.623140,-3.758057
+306,0,Electrical,Electrical,0.049357,-5.683109
+173,0,Contamination,Overheating,0.634383,-3.625001
+491,0,Minor in-service problems,Minor in-service problems,0.449516,-5.178324
+123,0,Structural deficiency,Structural deficiency,0.061085,-5.508038
+464,0,Leaking,Vibration,0.813638,-3.419334
+147,0,Minor in-service problems,Minor in-service problems,0.026776,-6.205493
+582,0,Structural deficiency,Structural deficiency,0.077419,-5.329249
+202,0,Electrical,Electrical,0.046180,-5.728982
+11,0,Minor in-service problems,Minor in-service problems,0.034212,-6.009882
+155,0,Overheating,Overheating,0.478195,-4.093777
+245,0,Low output,Minor in-service problems,0.072138,-5.184129
+468,0,Leaking,Leaking,0.069400,-5.387351
+375,0,Spurious stop,Failure to start on demand,0.337314,-4.365129
+343,0,Structural deficiency,Structural deficiency,0.041698,-5.884607
+215,0,Minor in-service problems,Minor in-service problems,0.034611,-6.011446
+174,0,Minor in-service problems,Minor in-service problems,0.024696,-6.193823
+347,0,Minor in-service problems,Minor in-service problems,0.069972,-5.392824
+351,0,Leaking,Low output,0.619198,-3.317629
+142,0,Electrical,Electrical,0.073098,-5.441314
+600,0,Overheating,Overheating,0.185520,-4.404849
+302,0,Electrical,Electrical,0.062359,-5.487230
+427,0,Breakdown,Minor in-service problems,0.199639,-5.624588
+336,0,Breakdown,Breakdown,0.065387,-5.507220
+426,0,Breakdown,Failure to start on demand,0.174000,-4.805112
+617,0,Minor in-service problems,Minor in-service problems,0.025490,-6.390838
+540,0,Minor in-service problems,Minor in-service problems,0.036094,-5.959229
+162,0,Minor in-service problems,Minor in-service problems,0.042495,-5.973507
+120,0,Failure to start on demand,Failure to start on demand,0.255970,-4.401112
+436,0,Breakdown,Breakdown,0.053407,-5.759497
+211,0,Abnormal instrument reading,Electrical,0.377661,-4.200869
+164,0,Structural deficiency,Structural deficiency,0.039945,-5.917959
+281,0,Minor in-service problems,Minor in-service problems,0.040209,-6.019468
+143,0,Contamination,Contamination,0.481848,-3.812069
+544,0,Structural deficiency,Structural deficiency,0.107425,-5.120145
+522,0,Breakdown,Breakdown,0.052577,-5.690163
+28,0,Leaking,Spurious stop,0.832907,-3.445187
+18,0,Breakdown,Breakdown,0.041590,-5.880977
+377,0,Electrical,Electrical,0.046217,-5.759940
+218,0,Abnormal instrument reading,Minor in-service problems,0.035377,-5.991764
+48,0,Minor in-service problems,Minor in-service problems,0.034994,-6.332871
+300,0,Breakdown,Breakdown,0.041367,-5.883119
+268,0,Erratic output,Electrical,0.479469,-3.887695
+47,0,Failure to start on demand,Failure to start on demand,0.159641,-4.780177
+356,0,Minor in-service problems,Minor in-service problems,0.089083,-5.547174
+92,0,Breakdown,Breakdown,0.047602,-5.764422
+290,0,Overheating,Overheating,0.186499,-4.486869
+416,0,Abnormal instrument reading,Abnormal instrument reading,0.229804,-4.264179
+46,0,Leaking,Leaking,0.044841,-5.692271
+536,0,Breakdown,Minor in-service problems,0.090546,-5.599238
+424,0,Breakdown,Breakdown,0.049721,-5.855237
+240,0,Structural deficiency,Structural deficiency,0.049267,-5.722196
+515,0,Minor in-service problems,Minor in-service problems,0.390380,-4.008519
+163,0,Breakdown,Breakdown,0.173964,-5.016343
+249,0,Minor in-service problems,Minor in-service problems,0.055583,-5.613969
+473,0,Vibration,Vibration,0.409913,-3.956630
+90,0,Minor in-service problems,Minor in-service problems,0.027926,-6.371375
+329,0,Abnormal instrument reading,Abnormal instrument reading,0.497659,-3.762023
+66,0,Failure to stop on demand,Low output,0.703431,-3.839694
+65,0,Failure to stop on demand,Spurious stop,0.566133,-3.895941
+284,0,Leaking,Low output,0.823051,-3.534646
+487,0,Electrical,Electrical,0.057436,-5.603781
+397,0,Breakdown,Failure to start on demand,0.173475,-4.796586
+2,1,Plugged / choked,Low output,0.663678,-3.421018
+5,1,Plugged / choked,Vibration,0.723529,-3.703227
+7,1,Noise,Leaking,0.150372,-4.567957
+17,1,Fail to function,Spurious stop,0.538108,-3.761476
+19,1,Plugged / choked,Minor in-service problems,0.823005,-3.167593
+27,1,Plugged / choked,Low output,0.662924,-3.443664
+29,1,Fail to function,Spurious stop,0.560667,-3.771924
+37,1,Noise,Breakdown,0.380409,-4.161882
+38,1,Fail to function,Spurious stop,0.784108,-3.405082
+43,1,Plugged / choked,Low output,0.609680,-3.613704
+50,1,Plugged / choked,Spurious stop,0.785938,-3.241510
+53,1,Noise,Electrical,0.565503,-3.859648
+59,1,Plugged / choked,Low output,0.612302,-3.526699
+64,1,Plugged / choked,Low output,0.481741,-3.821959
+69,1,Plugged / choked,Breakdown,0.257197,-4.430513
+79,1,Plugged / choked,Low output,0.422824,-3.921340
+96,1,Fail to function,Electrical,0.693566,-3.446502
+117,1,Plugged / choked,Low output,0.591279,-3.633821
+126,1,Plugged / choked,Breakdown,0.333651,-4.171669
+148,1,Noise,Abnormal instrument reading,0.739553,-3.240006
+158,1,Fail to function,Failure to stop on demand,0.782707,-3.275859
+167,1,Plugged / choked,Low output,0.464078,-3.826771
+168,1,Plugged / choked,Low output,0.818555,-3.203560
+172,1,Plugged / choked,Low output,0.538468,-3.761720
+176,1,Plugged / choked,Vibration,0.650080,-3.514923
+180,1,Plugged / choked,Breakdown,0.272672,-4.611166
+210,1,Plugged / choked,Failure to start on demand,0.607834,-3.497971
+219,1,Plugged / choked,Low output,0.758648,-3.472529
+242,1,Plugged / choked,Low output,0.465585,-3.915275
+244,1,Plugged / choked,Low output,0.443916,-3.823767
+251,1,Plugged / choked,Minor in-service problems,0.389533,-4.275749
+254,1,Plugged / choked,Low output,0.704618,-3.339394
+266,1,Plugged / choked,Low output,0.579009,-3.872984
+272,1,Plugged / choked,Breakdown,0.093607,-5.297625
+273,1,Plugged / choked,Electrical,0.224678,-4.454288
+309,1,Fail to function,Low output,0.609313,-3.371520
+312,1,Plugged / choked,Vibration,0.792729,-3.563496
+315,1,Plugged / choked,Overheating,0.866862,-3.193356
+339,1,Fail to function,Failure to start on demand,0.320001,-4.080991
+359,1,Fail to function,Spurious stop,0.561038,-3.758044
+365,1,Plugged / choked,Low output,0.785458,-3.124540
+370,1,Noise,Spurious stop,0.744342,-3.233781
+381,1,Plugged / choked,Electrical,0.596967,-3.536850
+387,1,Plugged / choked,Minor in-service problems,0.076568,-5.666910
+403,1,Fail to function,Failure to start on demand,0.215369,-4.701170
+406,1,Noise,Vibration,0.755841,-3.449135
+409,1,Fail to open,Failure to start on demand,0.522551,-3.755248
+418,1,Plugged / choked,Low output,0.520972,-3.635944
+420,1,Fail to function,Spurious stop,0.726174,-3.508180
+421,1,Plugged / choked,Minor in-service problems,0.072976,-5.270690
+425,1,Plugged / choked,Breakdown,0.089575,-5.359040
+434,1,Plugged / choked,Low output,0.622513,-3.506608
+453,1,Plugged / choked,Electrical,0.540328,-3.704558
+457,1,Fail to function,Failure to start on demand,0.409542,-4.433926
+459,1,Plugged / choked,Breakdown,0.493177,-4.178550
+460,1,Fail to function,Spurious stop,0.630094,-3.528883
+466,1,Plugged / choked,Low output,0.540908,-4.025858
+478,1,Plugged / choked,Breakdown,0.405104,-4.288239
+480,1,Noise,Electrical,0.342615,-4.025237
+484,1,Fail to function,Failure to start on demand,0.328325,-4.253645
+485,1,Noise,Structural deficiency,0.264133,-4.377107
+496,1,Fail to function,Electrical,0.291513,-4.238411
+502,1,Plugged / choked,Low output,0.670994,-3.522315
+505,1,Fail to open,Minor in-service problems,0.537502,-3.626699
+518,1,Fail to function,Minor in-service problems,0.462376,-3.668238
+521,1,Plugged / choked,Low output,0.516572,-3.719563
+523,1,Plugged / choked,Abnormal instrument reading,0.372830,-3.844812
+533,1,Plugged / choked,Vibration,0.722182,-3.457743
+553,1,Plugged / choked,Low output,0.757350,-3.500599
+558,1,Fail to function,Failure to start on demand,0.591286,-3.505688
+563,1,Fail to function,Vibration,0.828420,-3.289698
+569,1,Noise,Vibration,0.656740,-3.467987
+571,1,Fail to function,Spurious stop,0.678725,-3.648561
+572,1,Plugged / choked,Failure to start on demand,0.715305,-3.607062
+576,1,Fail to function,Low output,0.787378,-3.276792
+587,1,Fail to function,Minor in-service problems,0.355919,-4.090301
+596,1,Plugged / choked,Low output,0.833916,-3.133115
+597,1,Plugged / choked,Breakdown,0.374556,-4.248629
+598,1,Plugged / choked,Electrical,0.555694,-3.518779
+620,1,Plugged / choked,Spurious stop,0.695688,-3.330891
+631,1,Plugged / choked,Low output,0.729174,-3.344781

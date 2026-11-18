@@ -1,0 +1,633 @@
+id,pred
+0,Minor in-service problems
+1,Breakdown
+2,Plugged / choked
+3,Leaking
+4,Minor in-service problems
+5,Plugged / choked
+6,Plugged / choked
+7,Leaking
+8,Minor in-service problems
+9,Failure to start on demand
+10,Vibration
+11,Minor in-service problems
+12,Minor in-service problems
+13,Electrical
+14,Vibration
+15,Vibration
+16,Minor in-service problems
+17,Fail to function
+18,Breakdown
+19,Structural deficiency
+20,Breakdown
+21,Plugged / choked
+22,Breakdown
+23,Breakdown
+24,Breakdown
+25,Failure to start on demand
+26,Overheating
+27,Minor in-service problems
+28,Leaking
+29,Fail to function
+30,Leaking
+31,Low output
+32,Low output
+33,Leaking
+34,Breakdown
+35,Minor in-service problems
+36,Spurious stop
+37,Noise
+38,Fail to function
+39,Minor in-service problems
+40,Minor in-service problems
+41,Structural deficiency
+42,Minor in-service problems
+43,Plugged / choked
+44,Structural deficiency
+45,Breakdown
+46,Leaking
+47,Failure to start on demand
+48,Minor in-service problems
+49,Leaking
+50,Abnormal instrument reading
+51,Minor in-service problems
+52,Structural deficiency
+53,Noise
+54,Minor in-service problems
+55,Breakdown
+56,Plugged / choked
+57,Leaking
+58,Minor in-service problems
+59,Plugged / choked
+60,Electrical
+61,Minor in-service problems
+62,Breakdown
+63,Failure to start on demand
+64,Plugged / choked
+65,Failure to stop on demand
+66,Failure to start on demand
+67,Breakdown
+68,Breakdown
+69,Plugged / choked
+70,Abnormal instrument reading
+71,Failure to start on demand
+72,Overheating
+73,Minor in-service problems
+74,Leaking
+75,Minor in-service problems
+76,Minor in-service problems
+77,Abnormal instrument reading
+78,Leaking
+79,Plugged / choked
+80,Failure to start on demand
+81,Fail to open
+82,Minor in-service problems
+83,Overheating
+84,Minor in-service problems
+85,Breakdown
+86,Minor in-service problems
+87,Breakdown
+88,Structural deficiency
+89,Failure to stop on demand
+90,Minor in-service problems
+91,Plugged / choked
+92,Breakdown
+93,Failure to start on demand
+94,Failure to start on demand
+95,Minor in-service problems
+96,Fail to function
+97,High output
+98,Breakdown
+99,Structural deficiency
+100,Structural deficiency
+101,Low output
+102,Breakdown
+103,Structural deficiency
+104,Electrical
+105,Failure to start on demand
+106,Minor in-service problems
+107,Structural deficiency
+108,Breakdown
+109,Leaking
+110,Low output
+111,Leaking
+112,Minor in-service problems
+113,Breakdown
+114,Electrical
+115,Minor in-service problems
+116,Minor in-service problems
+117,Plugged / choked
+118,Minor in-service problems
+119,Failure to start on demand
+120,Failure to start on demand
+121,Fail to function
+122,Structural deficiency
+123,Structural deficiency
+124,Leaking
+125,Minor in-service problems
+126,Plugged / choked
+127,Structural deficiency
+128,Leaking
+129,Structural deficiency
+130,Vibration
+131,Electrical
+132,Breakdown
+133,Minor in-service problems
+134,Breakdown
+135,Structural deficiency
+136,Minor in-service problems
+137,Electrical
+138,Structural deficiency
+139,Structural deficiency
+140,Vibration
+141,Overheating
+142,Electrical
+143,Contamination
+144,Low output
+145,Contamination
+146,Minor in-service problems
+147,Minor in-service problems
+148,Abnormal instrument reading
+149,Minor in-service problems
+150,Structural deficiency
+151,Breakdown
+152,Breakdown
+153,Failure to stop on demand
+154,Breakdown
+155,Overheating
+156,Electrical
+157,Abnormal instrument reading
+158,Fail to function
+159,Low output
+160,Minor in-service problems
+161,Minor in-service problems
+162,Minor in-service problems
+163,Breakdown
+164,Structural deficiency
+165,Electrical
+166,Abnormal instrument reading
+167,Plugged / choked
+168,Plugged / choked
+169,Minor in-service problems
+170,Plugged / choked
+171,Minor in-service problems
+172,Breakdown
+173,Leaking
+174,Minor in-service problems
+175,Breakdown
+176,Plugged / choked
+177,Minor in-service problems
+178,Minor in-service problems
+179,Structural deficiency
+180,Plugged / choked
+181,Leaking
+182,Structural deficiency
+183,Breakdown
+184,Low output
+185,Minor in-service problems
+186,Erratic output
+187,Breakdown
+188,Electrical
+189,Breakdown
+190,Failure to stop on demand
+191,Structural deficiency
+192,Minor in-service problems
+193,Breakdown
+194,Overheating
+195,Low output
+196,Minor in-service problems
+197,Failure to stop on demand
+198,Breakdown
+199,Breakdown
+200,Breakdown
+201,Breakdown
+202,Electrical
+203,Minor in-service problems
+204,Contamination
+205,Structural deficiency
+206,Overheating
+207,Electrical
+208,Electrical
+209,Minor in-service problems
+210,Plugged / choked
+211,Abnormal instrument reading
+212,Structural deficiency
+213,Vibration
+214,Minor in-service problems
+215,Minor in-service problems
+216,Structural deficiency
+217,Breakdown
+218,Minor in-service problems
+219,Plugged / choked
+220,Structural deficiency
+221,Minor in-service problems
+222,Electrical
+223,Abnormal instrument reading
+224,Structural deficiency
+225,Minor in-service problems
+226,Plugged / choked
+227,Electrical
+228,Leaking
+229,Abnormal instrument reading
+230,Structural deficiency
+231,Minor in-service problems
+232,Overheating
+233,Electrical
+234,Breakdown
+235,Breakdown
+236,Breakdown
+237,Minor in-service problems
+238,Leaking
+239,Breakdown
+240,Structural deficiency
+241,Spurious stop
+242,Plugged / choked
+243,Vibration
+244,Plugged / choked
+245,Minor in-service problems
+246,Vibration
+247,Breakdown
+248,Minor in-service problems
+249,Minor in-service problems
+250,Leaking
+251,Structural deficiency
+252,Breakdown
+253,Electrical
+254,Low output
+255,Failure to start on demand
+256,Low output
+257,Failure to start on demand
+258,Electrical
+259,Breakdown
+260,Minor in-service problems
+261,Electrical
+262,Fail to function
+263,Low output
+264,Electrical
+265,Abnormal instrument reading
+266,Plugged / choked
+267,Breakdown
+268,Electrical
+269,Leaking
+270,Minor in-service problems
+271,Contamination
+272,Plugged / choked
+273,Plugged / choked
+274,Overheating
+275,Minor in-service problems
+276,Electrical
+277,Structural deficiency
+278,Minor in-service problems
+279,Minor in-service problems
+280,Minor in-service problems
+281,Minor in-service problems
+282,Overheating
+283,Structural deficiency
+284,Low output
+285,Minor in-service problems
+286,Failure to start on demand
+287,Minor in-service problems
+288,Abnormal instrument reading
+289,Leaking
+290,Overheating
+291,Minor in-service problems
+292,Minor in-service problems
+293,Breakdown
+294,Breakdown
+295,Leaking
+296,Electrical
+297,Structural deficiency
+298,Structural deficiency
+299,Structural deficiency
+300,Breakdown
+301,Low output
+302,Electrical
+303,Plugged / choked
+304,Electrical
+305,Minor in-service problems
+306,Electrical
+307,Abnormal instrument reading
+308,Overheating
+309,Minor in-service problems
+310,Electrical
+311,Minor in-service problems
+312,Plugged / choked
+313,Failure to start on demand
+314,Structural deficiency
+315,Fail to function
+316,Structural deficiency
+317,Leaking
+318,Structural deficiency
+319,Minor in-service problems
+320,Minor in-service problems
+321,Electrical
+322,Minor in-service problems
+323,Breakdown
+324,Failure to start on demand
+325,Plugged / choked
+326,Structural deficiency
+327,Abnormal instrument reading
+328,Structural deficiency
+329,Other
+330,Electrical
+331,Breakdown
+332,Minor in-service problems
+333,Leaking
+334,Electrical
+335,Electrical
+336,Breakdown
+337,Structural deficiency
+338,Failure to start on demand
+339,Failure to start on demand
+340,Leaking
+341,Minor in-service problems
+342,Electrical
+343,Structural deficiency
+344,Failure to start on demand
+345,Leaking
+346,Structural deficiency
+347,Minor in-service problems
+348,Minor in-service problems
+349,Failure to start on demand
+350,Structural deficiency
+351,Fail to function
+352,Electrical
+353,Contamination
+354,Structural deficiency
+355,Breakdown
+356,Minor in-service problems
+357,Structural deficiency
+358,Spurious stop
+359,Fail to function
+360,Minor in-service problems
+361,Vibration
+362,Failure to start on demand
+363,Minor in-service problems
+364,Structural deficiency
+365,Plugged / choked
+366,Electrical
+367,Structural deficiency
+368,Minor in-service problems
+369,Minor in-service problems
+370,Structural deficiency
+371,Leaking
+372,Electrical
+373,Fail to function
+374,Electrical
+375,Breakdown
+376,Minor in-service problems
+377,Electrical
+378,Minor in-service problems
+379,Minor in-service problems
+380,Structural deficiency
+381,Contamination
+382,Electrical
+383,Electrical
+384,Leaking
+385,Electrical
+386,Leaking
+387,Minor in-service problems
+388,Failure to start on demand
+389,Electrical
+390,Plugged / choked
+391,Structural deficiency
+392,Plugged / choked
+393,Structural deficiency
+394,Electrical
+395,Minor in-service problems
+396,Breakdown
+397,Failure to start on demand
+398,Minor in-service problems
+399,Minor in-service problems
+400,Minor in-service problems
+401,Minor in-service problems
+402,Breakdown
+403,Breakdown
+404,Structural deficiency
+405,Structural deficiency
+406,Vibration
+407,Minor in-service problems
+408,Breakdown
+409,Failure to start on demand
+410,Minor in-service problems
+411,Abnormal instrument reading
+412,Plugged / choked
+413,Other
+414,Overheating
+415,Plugged / choked
+416,Abnormal instrument reading
+417,Overheating
+418,Low output
+419,Breakdown
+420,Failure to start on demand
+421,Minor in-service problems
+422,Leaking
+423,Electrical
+424,Breakdown
+425,Plugged / choked
+426,Failure to start on demand
+427,Breakdown
+428,Leaking
+429,Spurious stop
+430,Structural deficiency
+431,Minor in-service problems
+432,Structural deficiency
+433,Vibration
+434,Plugged / choked
+435,Breakdown
+436,Breakdown
+437,Breakdown
+438,Abnormal instrument reading
+439,Abnormal instrument reading
+440,Structural deficiency
+441,Minor in-service problems
+442,Structural deficiency
+443,Electrical
+444,Minor in-service problems
+445,Breakdown
+446,Electrical
+447,Failure to start on demand
+448,Minor in-service problems
+449,Electrical
+450,Minor in-service problems
+451,Minor in-service problems
+452,Breakdown
+453,Plugged / choked
+454,Breakdown
+455,Failure to start on demand
+456,Abnormal instrument reading
+457,Minor in-service problems
+458,Minor in-service problems
+459,Plugged / choked
+460,Fail to function
+461,Breakdown
+462,Structural deficiency
+463,Structural deficiency
+464,Leaking
+465,Vibration
+466,Low output
+467,Minor in-service problems
+468,Leaking
+469,Minor in-service problems
+470,Breakdown
+471,Minor in-service problems
+472,Structural deficiency
+473,Vibration
+474,Structural deficiency
+475,Leaking
+476,Minor in-service problems
+477,Breakdown
+478,Plugged / choked
+479,Structural deficiency
+480,Vibration
+481,Breakdown
+482,Electrical
+483,Minor in-service problems
+484,Fail to function
+485,Structural deficiency
+486,Structural deficiency
+487,Electrical
+488,Spurious stop
+489,Minor in-service problems
+490,Leaking
+491,Minor in-service problems
+492,Minor in-service problems
+493,Breakdown
+494,Minor in-service problems
+495,Breakdown
+496,Breakdown
+497,Failure to start on demand
+498,Minor in-service problems
+499,Minor in-service problems
+500,Electrical
+501,Spurious stop
+502,Low output
+503,Structural deficiency
+504,Spurious stop
+505,Fail to function
+506,Spurious stop
+507,Breakdown
+508,Plugged / choked
+509,Breakdown
+510,Leaking
+511,Failure to start on demand
+512,Leaking
+513,Minor in-service problems
+514,Leaking
+515,Minor in-service problems
+516,Vibration
+517,Overheating
+518,Structural deficiency
+519,Electrical
+520,Minor in-service problems
+521,Plugged / choked
+522,Breakdown
+523,Low output
+524,Electrical
+525,Structural deficiency
+526,Overheating
+527,Breakdown
+528,Structural deficiency
+529,Leaking
+530,Minor in-service problems
+531,Leaking
+532,Leaking
+533,Plugged / choked
+534,Abnormal instrument reading
+535,Structural deficiency
+536,Minor in-service problems
+537,Failure to start on demand
+538,Minor in-service problems
+539,Abnormal instrument reading
+540,Minor in-service problems
+541,Failure to start on demand
+542,Structural deficiency
+543,Electrical
+544,Structural deficiency
+545,Minor in-service problems
+546,Abnormal instrument reading
+547,Structural deficiency
+548,Minor in-service problems
+549,Minor in-service problems
+550,Structural deficiency
+551,Minor in-service problems
+552,Electrical
+553,Plugged / choked
+554,Electrical
+555,Plugged / choked
+556,Spurious stop
+557,Minor in-service problems
+558,Failure to start on demand
+559,Failure to start on demand
+560,Leaking
+561,Minor in-service problems
+562,Plugged / choked
+563,Fail to function
+564,Contamination
+565,Fail to function
+566,Electrical
+567,Fail to function
+568,Plugged / choked
+569,Vibration
+570,Structural deficiency
+571,Fail to function
+572,Plugged / choked
+573,Breakdown
+574,Minor in-service problems
+575,Electrical
+576,Vibration
+577,Minor in-service problems
+578,Electrical
+579,Minor in-service problems
+580,Breakdown
+581,Other
+582,Structural deficiency
+583,Contamination
+584,Electrical
+585,Structural deficiency
+586,Breakdown
+587,Minor in-service problems
+588,Structural deficiency
+589,Abnormal instrument reading
+590,Minor in-service problems
+591,Structural deficiency
+592,Structural deficiency
+593,Breakdown
+594,Leaking
+595,Leaking
+596,Plugged / choked
+597,Plugged / choked
+598,Minor in-service problems
+599,Low output
+600,Overheating
+601,Overheating
+602,Structural deficiency
+603,Low output
+604,Plugged / choked
+605,Electrical
+606,Breakdown
+607,Minor in-service problems
+608,Abnormal instrument reading
+609,Vibration
+610,Minor in-service problems
+611,Minor in-service problems
+612,Minor in-service problems
+613,Electrical
+614,Failure to start on demand
+615,Breakdown
+616,Minor in-service problems
+617,Minor in-service problems
+618,Breakdown
+619,Vibration
+620,Structural deficiency
+621,Low output
+622,Structural deficiency
+623,Vibration
+624,Breakdown
+625,Electrical
+626,Leaking
+627,Minor in-service problems
+628,Overheating
+629,Overheating
+630,Overheating
+631,Plugged / choked

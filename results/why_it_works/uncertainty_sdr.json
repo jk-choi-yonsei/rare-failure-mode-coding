@@ -1,0 +1,48 @@
+{
+ "note": "paper v4, Section 5.3",
+ "corpus": "sdr",
+ "years": {
+  "2026": {
+   "reports": 42717,
+   "shortlist": {
+    "reports": 1324,
+    "share": 0.031,
+    "rare_reports": 103
+   },
+   "same_budget_uncertainty": {
+    "rare_reports": 54
+   },
+   "uncertainty_budget_to_match": {
+    "reports": 3250,
+    "share": 0.0761,
+    "times_shortlist": 2.5
+   },
+   "encoder_confidence": {
+    "missed_rare_median": 0.55,
+    "missed_rare_share_ge_0.5": 0.567,
+    "all_reports_median": 0.979
+   }
+  },
+  "2025": {
+   "reports": 59416,
+   "shortlist": {
+    "reports": 2190,
+    "share": 0.0369,
+    "rare_reports": 134
+   },
+   "same_budget_uncertainty": {
+    "rare_reports": 79
+   },
+   "uncertainty_budget_to_match": {
+    "reports": 4580,
+    "share": 0.0771,
+    "times_shortlist": 2.1
+   },
+   "encoder_confidence": {
+    "missed_rare_median": 0.615,
+    "missed_rare_share_ge_0.5": 0.624,
+    "all_reports_median": 0.981
+   }
+  }
+ }
+}

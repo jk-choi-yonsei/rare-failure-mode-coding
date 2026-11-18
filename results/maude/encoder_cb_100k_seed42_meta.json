@@ -1,0 +1,67 @@
+{
+ "variant": "cb",
+ "size": "100k",
+ "seed": 42,
+ "lr": 5e-05,
+ "val_macro_f1": 0.4338,
+ "n_train": 100000,
+ "classes_present": 382,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.3679,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.1347,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.2779,
+     "minutes": 2.6
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.3446,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.3679,
+     "minutes": 2.6
+    }
+   ]
+  },
+  "5e-05": {
+   "val_macro_f1": 0.4338,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.1723,
+     "minutes": 2.6
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.3261,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.3964,
+     "minutes": 2.6
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.4338,
+     "minutes": 2.6
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  4,
+  1
+ ]
+}

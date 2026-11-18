@@ -1,0 +1,132 @@
+{
+ "variant": "cb",
+ "model": "roberta-base",
+ "size": "10k",
+ "seed": 44,
+ "lr": 2e-05,
+ "val_macro_f1": 0.2388,
+ "n_train": 10000,
+ "classes_present": 143,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.2388,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0024,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0156,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0298,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.082,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.1285,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.1891,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.2165,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.2145,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.2307,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.2313,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.2301,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.2308,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.2388,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.2378,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.2377,
+     "minutes": 0.4
+    }
+   ]
+  },
+  "5e-05": {
+   "val_macro_f1": 0.0027,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0024,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0027,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0027,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0027,
+     "minutes": 0.4
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0027,
+     "minutes": 0.4
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  15,
+  3
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": false,
+ "best_at_last_epoch": false,
+ "weights": "C:\\Users\\jkchoi\\models\\sdr_encoders\\cb_10k_seed44"
+}

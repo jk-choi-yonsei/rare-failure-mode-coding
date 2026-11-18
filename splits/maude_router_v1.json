@@ -1,0 +1,393 @@
+{
+ "selected_on": "2024 known test items, original CB models (runs/maude)",
+ "objective": "macro-F1 over known codes, CB seeds averaged",
+ "k_grid": [
+  0,
+  1,
+  2,
+  3,
+  5,
+  10,
+  20,
+  50,
+  100,
+  200,
+  500,
+  1000
+ ],
+ "p_grid": [
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "routers": {
+  "1k/gptoss20b": {
+   "families": {
+    "count": {
+     "param": 100,
+     "dev_macro_f1": 0.1268,
+     "dev_cost": 1.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.1273,
+     "dev_cost": 0.998
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.1
+     ],
+     "dev_macro_f1": 0.1273,
+     "dev_cost": 0.998
+    },
+    "llm_rare": {
+     "param": 10,
+     "dev_macro_f1": 0.1283,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.0545,
+   "dev_llm_only": 0.1265
+  },
+  "1k/qwen38_27b": {
+   "families": {
+    "count": {
+     "param": 100,
+     "dev_macro_f1": 0.2399,
+     "dev_cost": 1.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.241,
+     "dev_cost": 0.998
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.1
+     ],
+     "dev_macro_f1": 0.241,
+     "dev_cost": 0.998
+    },
+    "llm_rare": {
+     "param": 100,
+     "dev_macro_f1": 0.2399,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "conf",
+   "dev_enc_only": 0.0545,
+   "dev_llm_only": 0.2399
+  },
+  "1k/gemma4_31b": {
+   "families": {
+    "count": {
+     "param": 100,
+     "dev_macro_f1": 0.2485,
+     "dev_cost": 1.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.25,
+     "dev_cost": 0.998
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.1
+     ],
+     "dev_macro_f1": 0.25,
+     "dev_cost": 0.998
+    },
+    "llm_rare": {
+     "param": 20,
+     "dev_macro_f1": 0.2486,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "conf",
+   "dev_enc_only": 0.0545,
+   "dev_llm_only": 0.2485
+  },
+  "10k/gptoss20b": {
+   "families": {
+    "count": {
+     "param": 0,
+     "dev_macro_f1": 0.1873,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.217,
+     "dev_cost": 0.579
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.1
+     ],
+     "dev_macro_f1": 0.217,
+     "dev_cost": 0.579
+    },
+    "llm_rare": {
+     "param": 3,
+     "dev_macro_f1": 0.2196,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.1873,
+   "dev_llm_only": 0.1265
+  },
+  "10k/qwen38_27b": {
+   "families": {
+    "count": {
+     "param": 1000,
+     "dev_macro_f1": 0.2399,
+     "dev_cost": 1.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.2813,
+     "dev_cost": 0.579
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.1
+     ],
+     "dev_macro_f1": 0.2813,
+     "dev_cost": 0.579
+    },
+    "llm_rare": {
+     "param": 10,
+     "dev_macro_f1": 0.2883,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.1873,
+   "dev_llm_only": 0.2399
+  },
+  "10k/gemma4_31b": {
+   "families": {
+    "count": {
+     "param": 1000,
+     "dev_macro_f1": 0.2485,
+     "dev_cost": 1.0
+    },
+    "conf": {
+     "param": 0.2,
+     "dev_macro_f1": 0.2842,
+     "dev_cost": 0.798
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.2
+     ],
+     "dev_macro_f1": 0.2842,
+     "dev_cost": 0.798
+    },
+    "llm_rare": {
+     "param": 10,
+     "dev_macro_f1": 0.2864,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.1873,
+   "dev_llm_only": 0.2485
+  },
+  "100k/gptoss20b": {
+   "families": {
+    "count": {
+     "param": 0,
+     "dev_macro_f1": 0.3622,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.367,
+     "dev_cost": 0.115
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.1
+     ],
+     "dev_macro_f1": 0.367,
+     "dev_cost": 0.115
+    },
+    "llm_rare": {
+     "param": 5,
+     "dev_macro_f1": 0.3785,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.3622,
+   "dev_llm_only": 0.1265
+  },
+  "100k/qwen38_27b": {
+   "families": {
+    "count": {
+     "param": 1,
+     "dev_macro_f1": 0.3623,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.2,
+     "dev_macro_f1": 0.3964,
+     "dev_cost": 0.338
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.2
+     ],
+     "dev_macro_f1": 0.3964,
+     "dev_cost": 0.338
+    },
+    "llm_rare": {
+     "param": 10,
+     "dev_macro_f1": 0.4156,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.3622,
+   "dev_llm_only": 0.2399
+  },
+  "100k/gemma4_31b": {
+   "families": {
+    "count": {
+     "param": 1,
+     "dev_macro_f1": 0.3623,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.2,
+     "dev_macro_f1": 0.3969,
+     "dev_cost": 0.338
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.2
+     ],
+     "dev_macro_f1": 0.3969,
+     "dev_cost": 0.338
+    },
+    "llm_rare": {
+     "param": 10,
+     "dev_macro_f1": 0.4142,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.3622,
+   "dev_llm_only": 0.2485
+  },
+  "full/gptoss20b": {
+   "families": {
+    "count": {
+     "param": 0,
+     "dev_macro_f1": 0.5515,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.5487,
+     "dev_cost": 0.02
+    },
+    "count_or_conf": {
+     "param": [
+      3,
+      0.1
+     ],
+     "dev_macro_f1": 0.549,
+     "dev_cost": 0.021
+    },
+    "llm_rare": {
+     "param": 20,
+     "dev_macro_f1": 0.5547,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.5515,
+   "dev_llm_only": 0.1265
+  },
+  "full/qwen38_27b": {
+   "families": {
+    "count": {
+     "param": 0,
+     "dev_macro_f1": 0.5515,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.1,
+     "dev_macro_f1": 0.548,
+     "dev_cost": 0.02
+    },
+    "count_or_conf": {
+     "param": [
+      3,
+      0.1
+     ],
+     "dev_macro_f1": 0.5483,
+     "dev_cost": 0.021
+    },
+    "llm_rare": {
+     "param": 20,
+     "dev_macro_f1": 0.5705,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.5515,
+   "dev_llm_only": 0.2399
+  },
+  "full/gemma4_31b": {
+   "families": {
+    "count": {
+     "param": 0,
+     "dev_macro_f1": 0.5515,
+     "dev_cost": 0.0
+    },
+    "conf": {
+     "param": 0.2,
+     "dev_macro_f1": 0.5529,
+     "dev_cost": 0.096
+    },
+    "count_or_conf": {
+     "param": [
+      0,
+      0.2
+     ],
+     "dev_macro_f1": 0.5529,
+     "dev_cost": 0.096
+    },
+    "llm_rare": {
+     "param": 20,
+     "dev_macro_f1": 0.5685,
+     "dev_cost": 1.0
+    }
+   },
+   "selected": "llm_rare",
+   "dev_enc_only": 0.5515,
+   "dev_llm_only": 0.2485
+  }
+ }
+}

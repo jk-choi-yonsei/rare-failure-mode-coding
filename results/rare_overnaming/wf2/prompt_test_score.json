@@ -1,0 +1,4192 @@
+{
+ "completeness": {
+  "V0": {
+   "lines": 233,
+   "answered_unique": 233,
+   "missing_ids": [],
+   "duplicates": [],
+   "unknown_or_misplaced": [],
+   "exact_legal": 233,
+   "normalised_to_legal": 0,
+   "unparseable": [],
+   "legal_share": 1.0
+  },
+  "V1": {
+   "lines": 233,
+   "answered_unique": 233,
+   "missing_ids": [],
+   "duplicates": [],
+   "unknown_or_misplaced": [],
+   "exact_legal": 233,
+   "normalised_to_legal": 0,
+   "unparseable": [],
+   "legal_share": 1.0
+  },
+  "V2": {
+   "lines": 233,
+   "answered_unique": 233,
+   "missing_ids": [],
+   "duplicates": [],
+   "unknown_or_misplaced": [],
+   "exact_legal": 233,
+   "normalised_to_legal": 0,
+   "unparseable": [],
+   "legal_share": 1.0
+  },
+  "V5": {
+   "lines": 232,
+   "answered_unique": 233,
+   "missing_ids": [
+    "4049"
+   ],
+   "duplicates": [],
+   "unknown_or_misplaced": [],
+   "exact_legal": 232,
+   "normalised_to_legal": 0,
+   "unparseable": [],
+   "legal_share": 0.9957
+  }
+ },
+ "fairness_V0": {
+  "ALL": {
+   "agree_with_stored_zs": {
+    "k": 181,
+    "n": 233,
+    "share": 0.7768,
+    "ci95": [
+     0.7179,
+     0.8286
+    ]
+   },
+   "agree_with_stored_rag": {
+    "k": 120,
+    "n": 233,
+    "share": 0.515,
+    "ci95": [
+     0.4489,
+     0.5808
+    ]
+   },
+   "agree_with_enc": {
+    "k": 75,
+    "n": 233,
+    "share": 0.3219,
+    "ci95": [
+     0.2624,
+     0.386
+    ]
+   }
+  },
+  "F": {
+   "agree_with_stored_zs": {
+    "k": 33,
+    "n": 43,
+    "share": 0.7674,
+    "ci95": [
+     0.6137,
+     0.8824
+    ]
+   },
+   "agree_with_stored_rag": {
+    "k": 18,
+    "n": 43,
+    "share": 0.4186,
+    "ci95": [
+     0.2701,
+     0.5787
+    ]
+   },
+   "agree_with_enc": {
+    "k": 3,
+    "n": 43,
+    "share": 0.0698,
+    "ci95": [
+     0.0146,
+     0.1906
+    ]
+   }
+  },
+  "RR": {
+   "agree_with_stored_zs": {
+    "k": 50,
+    "n": 60,
+    "share": 0.8333,
+    "ci95": [
+     0.7148,
+     0.9171
+    ]
+   },
+   "agree_with_stored_rag": {
+    "k": 36,
+    "n": 60,
+    "share": 0.6,
+    "ci95": [
+     0.4654,
+     0.7244
+    ]
+   },
+   "agree_with_enc": {
+    "k": 15,
+    "n": 60,
+    "share": 0.25,
+    "ci95": [
+     0.1472,
+     0.3786
+    ]
+   }
+  },
+  "RM": {
+   "agree_with_stored_zs": {
+    "k": 16,
+    "n": 30,
+    "share": 0.5333,
+    "ci95": [
+     0.3433,
+     0.7166
+    ]
+   },
+   "agree_with_stored_rag": {
+    "k": 14,
+    "n": 30,
+    "share": 0.4667,
+    "ci95": [
+     0.2834,
+     0.6567
+    ]
+   },
+   "agree_with_enc": {
+    "k": 11,
+    "n": 30,
+    "share": 0.3667,
+    "ci95": [
+     0.1993,
+     0.5614
+    ]
+   }
+  },
+  "U": {
+   "agree_with_stored_zs": {
+    "k": 82,
+    "n": 100,
+    "share": 0.82,
+    "ci95": [
+     0.7305,
+     0.8897
+    ]
+   },
+   "agree_with_stored_rag": {
+    "k": 52,
+    "n": 100,
+    "share": 0.52,
+    "ci95": [
+     0.4178,
+     0.621
+    ]
+   },
+   "agree_with_enc": {
+    "k": 46,
+    "n": 100,
+    "share": 0.46,
+    "ci95": [
+     0.3598,
+     0.5626
+    ]
+   }
+  },
+  "F_detail": {
+   "n_F_with_false_rare_zs": 40,
+   "V0_names_any_rare_on_F": {
+    "k": 33,
+    "n": 43,
+    "share": 0.7674,
+    "ci95": [
+     0.6137,
+     0.8824
+    ]
+   },
+   "V0_names_any_rare_on_F_zs_part": {
+    "k": 32,
+    "n": 40,
+    "share": 0.8,
+    "ci95": [
+     0.6435,
+     0.9095
+    ]
+   },
+   "V0_same_rare_as_stored_zs_on_F_zs_part": {
+    "k": 32,
+    "n": 40,
+    "share": 0.8,
+    "ci95": [
+     0.6435,
+     0.9095
+    ]
+   },
+   "V0_same_rare_as_stored_zs_or_rag_on_F": {
+    "k": 33,
+    "n": 43,
+    "share": 0.7674,
+    "ci95": [
+     0.6137,
+     0.8824
+    ]
+   }
+  },
+  "RR_V0_filed": {
+   "k": 50,
+   "n": 60,
+   "share": 0.8333,
+   "ci95": [
+    0.7148,
+    0.9171
+   ]
+  },
+  "RM_V0_filed": {
+   "k": 2,
+   "n": 30,
+   "share": 0.0667,
+   "ci95": [
+    0.0082,
+    0.2207
+   ]
+  },
+  "U_acc_V0": {
+   "k": 46,
+   "n": 100,
+   "share": 0.46,
+   "ci95": [
+    0.3598,
+    0.5626
+   ]
+  },
+  "U_acc_stored_zs": {
+   "k": 46,
+   "n": 100,
+   "share": 0.46,
+   "ci95": [
+    0.3598,
+    0.5626
+   ]
+  },
+  "U_acc_stored_rag": {
+   "k": 65,
+   "n": 100,
+   "share": 0.65,
+   "ci95": [
+    0.5482,
+    0.7427
+   ]
+  },
+  "U_acc_enc": {
+   "k": 67,
+   "n": 100,
+   "share": 0.67,
+   "ci95": [
+    0.5688,
+    0.7608
+   ]
+  },
+  "U_acc_V0_vs_stored_zs_mcnemar": {
+   "V0_no_variant_yes": 5,
+   "V0_yes_variant_no": 5,
+   "exact_p": 1.0
+  },
+  "U_V0_rare": {
+   "k": 0,
+   "n": 100,
+   "share": 0.0,
+   "ci95": [
+    0.0,
+    0.0362
+   ]
+  },
+  "U_stored_zs_rare": {
+   "k": 0,
+   "n": 100,
+   "share": 0.0,
+   "ci95": [
+    0.0,
+    0.0362
+   ]
+  }
+ },
+ "per_variant": {
+  "V0": {
+   "F_any_rare": {
+    "k": 33,
+    "n": 43,
+    "share": 0.7674,
+    "ci95": [
+     0.6137,
+     0.8824
+    ],
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 1,
+     "V0_yes_variant_no": 8,
+     "exact_p": 0.0391
+    }
+   },
+   "F_zs_any_rare": {
+    "k": 32,
+    "n": 40,
+    "share": 0.8,
+    "ci95": [
+     0.6435,
+     0.9095
+    ],
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 8,
+     "exact_p": 0.0078
+    }
+   },
+   "F_zs_same_rare_as_stored": {
+    "k": 32,
+    "n": 40,
+    "share": 0.8,
+    "ci95": [
+     0.6435,
+     0.9095
+    ]
+   },
+   "F_filed": {
+    "k": 4,
+    "n": 43,
+    "share": 0.093,
+    "ci95": [
+     0.0259,
+     0.2214
+    ]
+   },
+   "F_restored": {
+    "k": 0,
+    "n": 43,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0822
+    ]
+   },
+   "F_toplevel": {
+    "k": 0,
+    "n": 43,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0822
+    ]
+   },
+   "RR_filed": {
+    "k": 50,
+    "n": 60,
+    "share": 0.8333,
+    "ci95": [
+     0.7148,
+     0.9171
+    ],
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 10,
+     "exact_p": 0.002
+    }
+   },
+   "RM_filed": {
+    "k": 2,
+    "n": 30,
+    "share": 0.0667,
+    "ci95": [
+     0.0082,
+     0.2207
+    ],
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 2,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.5
+    }
+   },
+   "RM_any_rare": {
+    "k": 3,
+    "n": 30,
+    "share": 0.1,
+    "ci95": [
+     0.0211,
+     0.2653
+    ]
+   },
+   "U_acc": {
+    "k": 46,
+    "n": 100,
+    "share": 0.46,
+    "ci95": [
+     0.3598,
+     0.5626
+    ],
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 5,
+     "V0_yes_variant_no": 5,
+     "exact_p": 1.0
+    }
+   },
+   "U_rare": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ],
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_restored": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ]
+   },
+   "U_toplevel": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ]
+   },
+   "U_same_as_V0": {
+    "k": 100,
+    "n": 100,
+    "share": 1.0,
+    "ci95": [
+     0.9638,
+     1.0
+    ]
+   },
+   "U_same_as_stored_zs": {
+    "k": 82,
+    "n": 100,
+    "share": 0.82,
+    "ci95": [
+     0.7305,
+     0.8897
+    ]
+   }
+  },
+  "V1": {
+   "F_any_rare": {
+    "k": 25,
+    "n": 43,
+    "share": 0.5814,
+    "ci95": [
+     0.4213,
+     0.7299
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 2,
+     "V0_yes_variant_no": 10,
+     "exact_p": 0.0386
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 15,
+     "exact_p": 0.0001
+    }
+   },
+   "F_zs_any_rare": {
+    "k": 25,
+    "n": 40,
+    "share": 0.625,
+    "ci95": [
+     0.458,
+     0.7727
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 2,
+     "V0_yes_variant_no": 9,
+     "exact_p": 0.0654
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 15,
+     "exact_p": 0.0001
+    }
+   },
+   "F_zs_same_rare_as_stored": {
+    "k": 25,
+    "n": 40,
+    "share": 0.625,
+    "ci95": [
+     0.458,
+     0.7727
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 2,
+     "V0_yes_variant_no": 9,
+     "exact_p": 0.0654
+    }
+   },
+   "F_filed": {
+    "k": 3,
+    "n": 43,
+    "share": 0.0698,
+    "ci95": [
+     0.0146,
+     0.1906
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 1,
+     "V0_yes_variant_no": 2,
+     "exact_p": 1.0
+    }
+   },
+   "F_restored": {
+    "k": 7,
+    "n": 43,
+    "share": 0.1628,
+    "ci95": [
+     0.0681,
+     0.307
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 7,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.0156
+    }
+   },
+   "F_toplevel": {
+    "k": 4,
+    "n": 43,
+    "share": 0.093,
+    "ci95": [
+     0.0259,
+     0.2214
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 4,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.125
+    }
+   },
+   "RR_filed": {
+    "k": 44,
+    "n": 60,
+    "share": 0.7333,
+    "ci95": [
+     0.6034,
+     0.8393
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 3,
+     "V0_yes_variant_no": 9,
+     "exact_p": 0.146
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 16,
+     "exact_p": 0.0
+    }
+   },
+   "RM_filed": {
+    "k": 2,
+    "n": 30,
+    "share": 0.0667,
+    "ci95": [
+     0.0082,
+     0.2207
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 2,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.5
+    }
+   },
+   "RM_any_rare": {
+    "k": 3,
+    "n": 30,
+    "share": 0.1,
+    "ci95": [
+     0.0211,
+     0.2653
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_acc": {
+    "k": 46,
+    "n": 100,
+    "share": 0.46,
+    "ci95": [
+     0.3598,
+     0.5626
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 5,
+     "V0_yes_variant_no": 5,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 4,
+     "V0_yes_variant_no": 4,
+     "exact_p": 1.0
+    }
+   },
+   "U_rare": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_restored": {
+    "k": 13,
+    "n": 100,
+    "share": 0.13,
+    "ci95": [
+     0.0711,
+     0.212
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 13,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.0002
+    }
+   },
+   "U_toplevel": {
+    "k": 8,
+    "n": 100,
+    "share": 0.08,
+    "ci95": [
+     0.0352,
+     0.1516
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 8,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.0078
+    }
+   },
+   "U_same_as_V0": {
+    "k": 77,
+    "n": 100,
+    "share": 0.77,
+    "ci95": [
+     0.6751,
+     0.8483
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 23,
+     "exact_p": 0.0
+    }
+   },
+   "U_same_as_stored_zs": {
+    "k": 75,
+    "n": 100,
+    "share": 0.75,
+    "ci95": [
+     0.6534,
+     0.8312
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 6,
+     "V0_yes_variant_no": 13,
+     "exact_p": 0.1671
+    }
+   }
+  },
+  "V2": {
+   "F_any_rare": {
+    "k": 14,
+    "n": 43,
+    "share": 0.3256,
+    "ci95": [
+     0.1908,
+     0.4854
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 19,
+     "exact_p": 0.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 26,
+     "exact_p": 0.0
+    }
+   },
+   "F_zs_any_rare": {
+    "k": 14,
+    "n": 40,
+    "share": 0.35,
+    "ci95": [
+     0.2063,
+     0.5168
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 18,
+     "exact_p": 0.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 26,
+     "exact_p": 0.0
+    }
+   },
+   "F_zs_same_rare_as_stored": {
+    "k": 14,
+    "n": 40,
+    "share": 0.35,
+    "ci95": [
+     0.2063,
+     0.5168
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 18,
+     "exact_p": 0.0
+    }
+   },
+   "F_filed": {
+    "k": 15,
+    "n": 43,
+    "share": 0.3488,
+    "ci95": [
+     0.2101,
+     0.5093
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 11,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.001
+    }
+   },
+   "F_restored": {
+    "k": 0,
+    "n": 43,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0822
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "F_toplevel": {
+    "k": 0,
+    "n": 43,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0822
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "RR_filed": {
+    "k": 19,
+    "n": 60,
+    "share": 0.3167,
+    "ci95": [
+     0.2026,
+     0.4496
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 31,
+     "exact_p": 0.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 41,
+     "exact_p": 0.0
+    }
+   },
+   "RM_filed": {
+    "k": 1,
+    "n": 30,
+    "share": 0.0333,
+    "ci95": [
+     0.0008,
+     0.1722
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 1,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 1,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "RM_any_rare": {
+    "k": 2,
+    "n": 30,
+    "share": 0.0667,
+    "ci95": [
+     0.0082,
+     0.2207
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 1,
+     "exact_p": 1.0
+    }
+   },
+   "U_acc": {
+    "k": 49,
+    "n": 100,
+    "share": 0.49,
+    "ci95": [
+     0.3886,
+     0.592
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 8,
+     "V0_yes_variant_no": 5,
+     "exact_p": 0.5811
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 8,
+     "V0_yes_variant_no": 5,
+     "exact_p": 0.5811
+    }
+   },
+   "U_rare": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_restored": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_toplevel": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_same_as_V0": {
+    "k": 74,
+    "n": 100,
+    "share": 0.74,
+    "ci95": [
+     0.6427,
+     0.8226
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 26,
+     "exact_p": 0.0
+    }
+   },
+   "U_same_as_stored_zs": {
+    "k": 78,
+    "n": 100,
+    "share": 0.78,
+    "ci95": [
+     0.6861,
+     0.8567
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 9,
+     "V0_yes_variant_no": 13,
+     "exact_p": 0.5235
+    }
+   }
+  },
+  "V5": {
+   "F_any_rare": {
+    "k": 12,
+    "n": 43,
+    "share": 0.2791,
+    "ci95": [
+     0.1533,
+     0.4367
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 3,
+     "V0_yes_variant_no": 24,
+     "exact_p": 0.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 1,
+     "V0_yes_variant_no": 29,
+     "exact_p": 0.0
+    }
+   },
+   "F_zs_any_rare": {
+    "k": 11,
+    "n": 40,
+    "share": 0.275,
+    "ci95": [
+     0.146,
+     0.4389
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 3,
+     "V0_yes_variant_no": 24,
+     "exact_p": 0.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 29,
+     "exact_p": 0.0
+    }
+   },
+   "F_zs_same_rare_as_stored": {
+    "k": 11,
+    "n": 40,
+    "share": 0.275,
+    "ci95": [
+     0.146,
+     0.4389
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 3,
+     "V0_yes_variant_no": 24,
+     "exact_p": 0.0
+    }
+   },
+   "F_filed": {
+    "k": 26,
+    "n": 43,
+    "share": 0.6047,
+    "ci95": [
+     0.4441,
+     0.7502
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 24,
+     "V0_yes_variant_no": 2,
+     "exact_p": 0.0
+    }
+   },
+   "F_restored": {
+    "k": 0,
+    "n": 43,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0822
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "F_toplevel": {
+    "k": 0,
+    "n": 43,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0822
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "RR_filed": {
+    "k": 50,
+    "n": 60,
+    "share": 0.8333,
+    "ci95": [
+     0.7148,
+     0.9171
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 3,
+     "V0_yes_variant_no": 3,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 10,
+     "exact_p": 0.002
+    }
+   },
+   "RM_filed": {
+    "k": 2,
+    "n": 30,
+    "share": 0.0667,
+    "ci95": [
+     0.0082,
+     0.2207
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 2,
+     "V0_yes_variant_no": 0,
+     "exact_p": 0.5
+    }
+   },
+   "RM_any_rare": {
+    "k": 3,
+    "n": 30,
+    "share": 0.1,
+    "ci95": [
+     0.0211,
+     0.2653
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_acc": {
+    "k": 54,
+    "n": 99,
+    "share": 0.5455,
+    "ci95": [
+     0.4423,
+     0.6459
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 9,
+     "V0_yes_variant_no": 1,
+     "exact_p": 0.0215
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 11,
+     "V0_yes_variant_no": 3,
+     "exact_p": 0.0574
+    }
+   },
+   "U_rare": {
+    "k": 0,
+    "n": 99,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0366
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    },
+    "mcnemar_vs_stored_zs": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_restored": {
+    "k": 0,
+    "n": 99,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0366
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_toplevel": {
+    "k": 0,
+    "n": 99,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0366
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 0,
+     "exact_p": 1.0
+    }
+   },
+   "U_same_as_V0": {
+    "k": 83,
+    "n": 99,
+    "share": 0.8384,
+    "ci95": [
+     0.7509,
+     0.9047
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 0,
+     "V0_yes_variant_no": 16,
+     "exact_p": 0.0
+    }
+   },
+   "U_same_as_stored_zs": {
+    "k": 76,
+    "n": 99,
+    "share": 0.7677,
+    "ci95": [
+     0.6721,
+     0.8467
+    ],
+    "mcnemar_vs_V0": {
+     "V0_no_variant_yes": 4,
+     "V0_yes_variant_no": 9,
+     "exact_p": 0.2668
+    }
+   }
+  },
+  "stored_zs": {
+   "F_any_rare": {
+    "k": 40,
+    "n": 43,
+    "share": 0.9302,
+    "ci95": [
+     0.8094,
+     0.9854
+    ]
+   },
+   "F_zs_any_rare": {
+    "k": 40,
+    "n": 40,
+    "share": 1.0,
+    "ci95": [
+     0.9119,
+     1.0
+    ]
+   },
+   "RR_filed": {
+    "k": 60,
+    "n": 60,
+    "share": 1.0,
+    "ci95": [
+     0.9404,
+     1.0
+    ]
+   },
+   "RM_filed": {
+    "k": 0,
+    "n": 30,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.1157
+    ]
+   },
+   "U_acc": {
+    "k": 46,
+    "n": 100,
+    "share": 0.46,
+    "ci95": [
+     0.3598,
+     0.5626
+    ]
+   },
+   "U_rare": {
+    "k": 0,
+    "n": 100,
+    "share": 0.0,
+    "ci95": [
+     0.0,
+     0.0362
+    ]
+   }
+  }
+ },
+ "families": {
+  "pump_reset": {
+   "n": 12,
+   "groups": {
+    "F": 12
+   },
+   "filed": {
+    "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 12
+   },
+   "answers": {
+    "stored_zs": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 12
+    },
+    "stored_rag": {
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 12
+    },
+    "V0": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 11,
+     "Mechanical Problem > Mechanical Jam": 1
+    },
+    "V1": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 8,
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 1,
+     "Protective Measures Problem > Device Alarm System": 1,
+     "Electrical /Electronic Property Problem": 1,
+     "Mechanical Problem > Mechanical Jam": 1
+    },
+    "V2": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 7,
+     "Output Problem > Audible Prompt/Feedback Problem": 1,
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 4
+    },
+    "V5": {
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 11,
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 1
+    }
+   },
+   "rows": [
+    {
+     "id": "1062",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "2235",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Output Problem > Audible Prompt/Feedback Problem",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "2265",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "4091",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "5743",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "6960",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Device Alarm System",
+     "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "7617",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "7656",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Electrical /Electronic Property Problem",
+     "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "7840",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Protective Measures Problem > Reset Problem > Failure to Reset"
+    },
+    {
+     "id": "7920",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Mechanical Problem > Mechanical Jam",
+     "V1": "Mechanical Problem > Mechanical Jam",
+     "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "9360",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    },
+    {
+     "id": "9767",
+     "group": "F",
+     "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+     "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+     "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+    }
+   ]
+  },
+  "pacer_1003": {
+   "n": 10,
+   "groups": {
+    "F": 10
+   },
+   "filed": {
+    "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery": 10
+   },
+   "answers": {
+    "stored_zs": {
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 10
+    },
+    "stored_rag": {
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 10
+    },
+    "V0": {
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 10
+    },
+    "V1": {
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 10
+    },
+    "V2": {
+     "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery": 4,
+     "Electrical /Electronic Property Problem > Impedance Problem > High impedance": 2,
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 4
+    },
+    "V5": {
+     "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery": 10
+    }
+   },
+   "rows": [
+    {
+     "id": "1390",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "3127",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "4082",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "4293",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "4632",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "4678",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "4756",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "6679",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "6889",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    },
+    {
+     "id": "9827",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+     "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+     "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+    }
+   ]
+  },
+  "prophylactic": {
+   "n": 7,
+   "groups": {
+    "F": 4,
+    "RR": 2,
+    "RM": 1
+   },
+   "filed": {
+    "Electrical /Electronic Property Problem > Capturing Problem > High Capture Threshold": 1,
+    "No Apparent Adverse Event > Prophylactic removal due to corrective action": 3,
+    "Manufacturing, Packaging or Shipping Problem > Product Quality Problem > Nonstandard Device": 1,
+    "Patient Device Interaction Problem": 1,
+    "Material Integrity Problem > Material Rupture": 1
+   },
+   "answers": {
+    "stored_zs": {
+     "Electrical /Electronic Property Problem": 1,
+     "No Apparent Adverse Event > Prophylactic removal due to corrective action": 5,
+     "Patient Device Interaction Problem": 1
+    },
+    "stored_rag": {
+     "No Apparent Adverse Event > Prophylactic removal due to corrective action": 3,
+     "Patient Device Interaction Problem": 3,
+     "Material Integrity Problem > Material Rupture": 1
+    },
+    "V0": {
+     "Use of Device Problem": 1,
+     "No Apparent Adverse Event > Prophylactic removal due to corrective action": 4,
+     "Patient Device Interaction Problem": 2
+    },
+    "V1": {
+     "Insufficient Device Problem Information": 3,
+     "No Apparent Adverse Event": 2,
+     "Computer Software Problem > Application Network Problem": 1,
+     "Adverse Event Without Identified Device or Use Problem": 1
+    },
+    "V2": {
+     "Patient Device Interaction Problem": 3,
+     "Use of Device Problem": 1,
+     "Mechanical Problem": 1,
+     "Computer Software Problem > Application Program Problem": 1,
+     "Material Integrity Problem > Material Rupture": 1
+    },
+    "V5": {
+     "Manufacturing, Packaging or Shipping Problem > Defective Device": 1,
+     "No Apparent Adverse Event > Prophylactic removal due to corrective action": 3,
+     "Patient Device Interaction Problem": 2,
+     "Material Integrity Problem > Degraded": 1
+    }
+   },
+   "rows": [
+    {
+     "id": "1917",
+     "group": "F",
+     "filed": "Electrical /Electronic Property Problem > Capturing Problem > High Capture Threshold",
+     "stored_zs": "Electrical /Electronic Property Problem",
+     "stored_rag": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "enc": "Electrical /Electronic Property Problem > Capturing Problem > High Capture Threshold",
+     "V0": "Use of Device Problem",
+     "V1": "Insufficient Device Problem Information",
+     "V2": "Patient Device Interaction Problem",
+     "V5": "Manufacturing, Packaging or Shipping Problem > Defective Device"
+    },
+    {
+     "id": "3741",
+     "group": "RR",
+     "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_rag": "Patient Device Interaction Problem",
+     "enc": "Patient Device Interaction Problem > Patient-Device Incompatibility",
+     "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "V1": "No Apparent Adverse Event",
+     "V2": "Use of Device Problem",
+     "V5": "No Apparent Adverse Event > Prophylactic removal due to corrective action"
+    },
+    {
+     "id": "4970",
+     "group": "RM",
+     "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_zs": "Patient Device Interaction Problem",
+     "stored_rag": "Patient Device Interaction Problem",
+     "enc": "Mechanical Problem > Leak/Splash > Intravalvular regurgitation",
+     "V0": "Patient Device Interaction Problem",
+     "V1": "Insufficient Device Problem Information",
+     "V2": "Patient Device Interaction Problem",
+     "V5": "Patient Device Interaction Problem"
+    },
+    {
+     "id": "5465",
+     "group": "RR",
+     "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_rag": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "enc": "Human-Device Interface Problem > Inadequate User Interface",
+     "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "V1": "Insufficient Device Problem Information",
+     "V2": "Mechanical Problem",
+     "V5": "No Apparent Adverse Event > Prophylactic removal due to corrective action"
+    },
+    {
+     "id": "6001",
+     "group": "F",
+     "filed": "Manufacturing, Packaging or Shipping Problem > Product Quality Problem > Nonstandard Device",
+     "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_rag": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "enc": "Labelling, Instructions for Use or Training Problem",
+     "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "V1": "Computer Software Problem > Application Network Problem",
+     "V2": "Computer Software Problem > Application Program Problem",
+     "V5": "No Apparent Adverse Event > Prophylactic removal due to corrective action"
+    },
+    {
+     "id": "6086",
+     "group": "F",
+     "filed": "Patient Device Interaction Problem",
+     "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_rag": "Patient Device Interaction Problem",
+     "enc": "Patient Device Interaction Problem",
+     "V0": "Patient Device Interaction Problem",
+     "V1": "Adverse Event Without Identified Device or Use Problem",
+     "V2": "Patient Device Interaction Problem",
+     "V5": "Patient Device Interaction Problem"
+    },
+    {
+     "id": "7383",
+     "group": "F",
+     "filed": "Material Integrity Problem > Material Rupture",
+     "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "stored_rag": "Material Integrity Problem > Material Rupture",
+     "enc": "Material Integrity Problem > Material Rupture",
+     "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+     "V1": "No Apparent Adverse Event",
+     "V2": "Material Integrity Problem > Material Rupture",
+     "V5": "Material Integrity Problem > Degraded"
+    }
+   ]
+  }
+ },
+ "year": {
+  "per_U_item_reports": 6452.7,
+  "note": "lo/hi = Clopper-Pearson 95% bounds of each share, summed naively (not a joint interval)",
+  "V0": {
+   "RR_kept": [
+    50,
+    60
+   ],
+   "F_zs_still_rare": [
+    32,
+    40
+   ],
+   "RM_recovered": [
+    2,
+    30
+   ],
+   "U_new_false_rare": [
+    0,
+    100
+   ],
+   "right_per_year_point_lo_hi": [
+    155,
+    113,
+    229
+   ],
+   "false_from_F_zs_point_lo_hi": [
+    5332,
+    4289,
+    6062
+   ],
+   "false_new_from_U_point_lo_hi": [
+    0,
+    0,
+    23359
+   ],
+   "false_per_year_point_lo_hi": [
+    5332,
+    4289,
+    29420
+   ],
+   "sampled_false_equiv": 32.0
+  },
+  "V1": {
+   "RR_kept": [
+    44,
+    60
+   ],
+   "F_zs_still_rare": [
+    25,
+    40
+   ],
+   "RM_recovered": [
+    2,
+    30
+   ],
+   "U_new_false_rare": [
+    0,
+    100
+   ],
+   "right_per_year_point_lo_hi": [
+    139,
+    96,
+    217
+   ],
+   "false_from_F_zs_point_lo_hi": [
+    4165,
+    3052,
+    5150
+   ],
+   "false_new_from_U_point_lo_hi": [
+    0,
+    0,
+    23359
+   ],
+   "false_per_year_point_lo_hi": [
+    4165,
+    3052,
+    28509
+   ],
+   "sampled_false_equiv": 25.0
+  },
+  "V2": {
+   "RR_kept": [
+    19,
+    60
+   ],
+   "F_zs_still_rare": [
+    14,
+    40
+   ],
+   "RM_recovered": [
+    1,
+    30
+   ],
+   "U_new_false_rare": [
+    0,
+    100
+   ],
+   "right_per_year_point_lo_hi": [
+    62,
+    32,
+    138
+   ],
+   "false_from_F_zs_point_lo_hi": [
+    2333,
+    1375,
+    3444
+   ],
+   "false_new_from_U_point_lo_hi": [
+    0,
+    0,
+    23359
+   ],
+   "false_per_year_point_lo_hi": [
+    2333,
+    1375,
+    26803
+   ],
+   "sampled_false_equiv": 14.0
+  },
+  "V5": {
+   "RR_kept": [
+    50,
+    60
+   ],
+   "F_zs_still_rare": [
+    11,
+    40
+   ],
+   "RM_recovered": [
+    2,
+    30
+   ],
+   "U_new_false_rare": [
+    0,
+    99
+   ],
+   "right_per_year_point_lo_hi": [
+    155,
+    113,
+    229
+   ],
+   "false_from_F_zs_point_lo_hi": [
+    1833,
+    973,
+    2925
+   ],
+   "false_new_from_U_point_lo_hi": [
+    0,
+    0,
+    23617
+   ],
+   "false_per_year_point_lo_hi": [
+    1833,
+    973,
+    26542
+   ],
+   "sampled_false_equiv": 11.0
+  },
+  "stored_zs": {
+   "RR_kept": [
+    60,
+    60
+   ],
+   "F_zs_still_rare": [
+    40,
+    40
+   ],
+   "RM_recovered": [
+    0,
+    30
+   ],
+   "U_new_false_rare": [
+    0,
+    100
+   ],
+   "right_per_year_point_lo_hi": [
+    154,
+    145,
+    200
+   ],
+   "false_from_F_zs_point_lo_hi": [
+    6665,
+    6078,
+    6665
+   ],
+   "false_new_from_U_point_lo_hi": [
+    0,
+    0,
+    23359
+   ],
+   "false_per_year_point_lo_hi": [
+    6665,
+    6078,
+    30024
+   ],
+   "sampled_false_equiv": 40.0
+  }
+ },
+ "changes": [
+  {
+   "variant": "V1",
+   "kind": "F_false_rare_to_filed",
+   "id": "4112",
+   "filed": "Temperature Problem > Smoking",
+   "stored_zs": "Environmental Compatibility Problem > Fumes or Vapors",
+   "stored_rag": "Temperature Problem > Smoking",
+   "V0": "Temperature Problem > Smoking",
+   "answer": "Temperature Problem > Smoking",
+   "snippet": "the manufacturer received information alleging a patient states she woke up and saw black fumes coming from unit t and started to go through tubes, the filter is black, and"
+  },
+  {
+   "variant": "V1",
+   "kind": "F_false_rare_to_filed",
+   "id": "5595",
+   "filed": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_zs": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_rag": "Connection Problem > Decoupling",
+   "V0": "Mechanical Problem > Detachment of Device or Device Component",
+   "answer": "Mechanical Problem > Detachment of Device or Device Component",
+   "snippet": "the customer contacted stryker to report that their device kept coming off the back plate during use. in this state the device would not be able to perform automated chest"
+  },
+  {
+   "variant": "V1",
+   "kind": "F_false_rare_to_filed",
+   "id": "5743",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm malf 24 for undertravel stall, and pump could not be reset. there was no adverse impact to the customer¿s blood glucose level."
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "2487",
+   "filed": "Electrical /Electronic Property Problem > Interrogation Problem > Difficult to Interrogate",
+   "V0": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+   "answer": "Communication or Transmission Problem",
+   "snippet": "information was received from a healthcare provider regarding a patient who was receiving baclofen (unknown) via an implantable pump for intractable spasticity. it was reported that the patient requested to"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "2742",
+   "filed": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+   "V0": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "answer": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "snippet": "the customer contacted stryker to report that their device disarmed a shock during use. this issue is patient related; however there was no adverse event reported."
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "3531",
+   "filed": "Environmental Compatibility Problem > Ambient Temperature Problem",
+   "V0": "Environmental Compatibility Problem > Ambient Temperature Problem",
+   "answer": "Manufacturing, Packaging or Shipping Problem",
+   "snippet": "it was reported that during incoming inspection at the distributor: (b)(4), they found the temperature indicator on the outer carton had turned red, and among the six inner boxes, one"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "3741",
+   "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "answer": "No Apparent Adverse Event",
+   "snippet": "a patient implanted with an evoke spinal cord stimulation (scs) system was explanted. the physician elected to explant the evoke scs system to accommodate an unrelated surgical procedure. the evoke"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "4328",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "a third-party reported to abbott diabetes care (adc) of a cybersecurity vulnerability with the freestyle libre 3 application. the cybersecurity vulnerability was identified to affect communication between certain freestyle libre"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "5202",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Clean Adequately",
+   "snippet": "it was reported the gastrointestinal videoscope exhibited presence of biofilm due to possible improper reprocessing. the issue occurred during setup. there were no reports of patient harm."
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "5465",
+   "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "answer": "Insufficient Device Problem Information",
+   "snippet": "it was reported that \"these are the beds we have that are a part of the pendant recall\"."
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "5616",
+   "filed": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Inadequately",
+   "V0": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Inadequately",
+   "answer": "Electrical /Electronic Property Problem > Device Sensing Problem > Failure to Sense",
+   "snippet": "during a follow-up visit on (b)(6) 2026, interrogation of the wise crt system demonstrated appropriate rv pace detection; however, electrode tracking could not be established in any patient posture. device"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "5712",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "a third-party reported to abbott diabetes care (adc) of a cybersecurity vulnerability with the libre application. the cybersecurity vulnerability was identified to affect communication between certain freestyle libre sensors and"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "5942",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Unexpected Mode Switch",
+   "snippet": "it was reported that during a radiofrequency ablation procedure, during radiofrequency (rf) in the left ventricle, the patient¿s biotronik cardiac resynchronization therapy defibrillator (crt-d) initiated asynchronous pacing and displayed ¿recovery"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "6054",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "it was reported that the facility identified a cybersecurity vulnerability related to \\\"microsoft web deploy < 10.0.2001 remote code execution (cve-2025-53727)\\\". \\there was no actual cybersecurity incident reported. no harm"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "6412",
+   "filed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+   "V0": "Protective Measures Problem",
+   "answer": "Protective Measures Problem > Device Alarm System > False Alarm",
+   "snippet": "according to the event description, ventilated patient was connected to wall oxygen supply. ventilator intermittently alarmed low oxygen. icu room 3's medical gas / oxygen supply was tested by cya."
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "6508",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that a ventricular tachycardia ablation procedure was performed using the affera system with radiofrequency and pulsed field ablation in a patient with an implantable cardioverter defibrillator with"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "6749",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, radiofrequency ablation on the cavotricuspid isthmus (cti) triggered another manufacturer's pacemaker to pace asynchronously at 120 bpm and the pacemaker reportedly"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "8624",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "it was reported that when using the bd pyxis¿ es server, version of microsoft web deploy installed on the remote host was prior to 10.0.2001. it was, therefore, affected by"
+  },
+  {
+   "variant": "V1",
+   "kind": "RR_lost",
+   "id": "9099",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, cardiovascular implantable electronic device (cied) interaction occurred in a patient with a biotronik icd lead during cavotricuspid isthmus (cti) ablation. after"
+  },
+  {
+   "variant": "V1",
+   "kind": "RM_recovered",
+   "id": "3278",
+   "filed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "stored_zs": "Manufacturing, Packaging or Shipping Problem > Packaging Problem",
+   "V0": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "answer": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "snippet": "it was reported that entire lot coming with incorrect quantity of gauze. they should be receiving 1 pk of 10 ea but they are receiving 10 pk of 10 ea-"
+  },
+  {
+   "variant": "V1",
+   "kind": "RM_recovered",
+   "id": "5225",
+   "filed": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_zs": "Computer Software Problem > Program or Algorithm Execution Problem > Program or Algorithm Execution Failure",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "snippet": "it was reported that a spectrum iq infusion pump did not auto restart after downstream occlusion alarm during training in the training department. the issue happens more often when initially"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "1067",
+   "filed": "Use of Device Problem",
+   "stored_zs": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "stored_rag": "Computer Software Problem",
+   "V0": "Use of Device Problem",
+   "answer": "Use of Device Problem",
+   "snippet": "it was reported that when using the bd pyxis¿ medflex 1000, the device was unable to issue oxycodone 5 mg tablets. the customer reported that the medication did not appear"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "1390",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this cardiac resynchronization therapy pacemaker (crt-p) recorded a code 1003, which states that the voltage is too low for projected remaining capacity. a request was made"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "3019",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "stored_zs": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "stored_rag": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "snippet": "it was reported that the colonovideoscope was unable to complete the disinfection cycle. the issue was found during reprocessing of the device. there was no patient involvement."
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "3127",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this pacemaker recorded a code 1003, indicating the voltage is too low for the projected remaining capacity. a request was made to have data from this"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "4082",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this device recorded a code 1003, indicating the voltage was too low for the projected remaining capacity. a request was made to have data from this"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "4112",
+   "filed": "Temperature Problem > Smoking",
+   "stored_zs": "Environmental Compatibility Problem > Fumes or Vapors",
+   "stored_rag": "Temperature Problem > Smoking",
+   "V0": "Temperature Problem > Smoking",
+   "answer": "Temperature Problem > Smoking",
+   "snippet": "the manufacturer received information alleging a patient states she woke up and saw black fumes coming from unit t and started to go through tubes, the filter is black, and"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "4115",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump experienced malfunction alarm with non-resettable malfunction code. there was no adverse impact to the customer¿s blood glucose level. customer used multiple daily injections as backup"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "4632",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this pacemaker recorded a code 1003, which states that the voltage is too low for projected remaining capacity. data analysis identified potential high impedance within the"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "5595",
+   "filed": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_zs": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_rag": "Connection Problem > Decoupling",
+   "V0": "Mechanical Problem > Detachment of Device or Device Component",
+   "answer": "Mechanical Problem > Detachment of Device or Device Component",
+   "snippet": "the customer contacted stryker to report that their device kept coming off the back plate during use. in this state the device would not be able to perform automated chest"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "5743",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm malf 24 for undertravel stall, and pump could not be reset. there was no adverse impact to the customer¿s blood glucose level."
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "6086",
+   "filed": "Patient Device Interaction Problem",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "Patient Device Interaction Problem",
+   "V0": "Patient Device Interaction Problem",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "it was reported that 4 months following the implant of a transcatheter aortic valve, a implantable cardioverter defibrillator (icd) was implanted due a low ejection fraction (ef) and dyssynchrony."
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "6960",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction code and could not be reset, with no notable events occurring beforehand. there was no adverse impact to the customer¿s blood glucose level."
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "7383",
+   "filed": "Material Integrity Problem > Material Rupture",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "Material Integrity Problem > Material Rupture",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "answer": "Material Integrity Problem > Material Rupture",
+   "snippet": "patient reported ¿anxiety and distress due to carrying 17-year-old recalled devices without prior hospital notification and \"awaiting medical investigation for potential silent degradation/rupture¿. this record is for the left side."
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "7656",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm code malf 16 and was not resettable. there was no adverse impact to the customer¿s blood glucose level. customer did not have"
+  },
+  {
+   "variant": "V2",
+   "kind": "F_false_rare_to_filed",
+   "id": "7920",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Mechanical Problem > Mechanical Jam",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm for undertravel stall that could not be reset, and there were no notable events before the issue. there was no adverse impact"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "1669",
+   "filed": "Calibration Problem > Overcorrection",
+   "V0": "Calibration Problem > Overcorrection",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "at 12 months post index surgery on (b)(6)2024, it was noted that the participant's x-rays revealed an overcorrection of 23 degrees. after discussion of all options, family and participant agreed"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "1881",
+   "filed": "Patient Device Interaction Problem > Implant subsidence",
+   "V0": "Patient Device Interaction Problem > Implant subsidence",
+   "answer": "Patient Device Interaction Problem > Osseointegration Problem > Failure to Osseointegrate",
+   "snippet": "revision surgery due to tibial tray subsidence at 2 weeks from primary. gmk-sphere successfully implanted."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "1941",
+   "filed": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "V0": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "answer": "Chemical Problem > Device Ingredient or Reagent Problem > Particulates",
+   "snippet": "it was reported that an unspecified access set developed precipitate in the line. the issue was noticed while administering 1 g of calcium gluconate in 50 ml of 0.9% sodium"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "2487",
+   "filed": "Electrical /Electronic Property Problem > Interrogation Problem > Difficult to Interrogate",
+   "V0": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+   "answer": "Communication or Transmission Problem > Wireless Communication Problem",
+   "snippet": "information was received from a healthcare provider regarding a patient who was receiving baclofen (unknown) via an implantable pump for intractable spasticity. it was reported that the patient requested to"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "2742",
+   "filed": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+   "V0": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "answer": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "snippet": "the customer contacted stryker to report that their device disarmed a shock during use. this issue is patient related; however there was no adverse event reported."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "3325",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "V0": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+   "answer": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+   "snippet": "it was reported that the insufflation tube had been repeatedly used without sterilization and it only underwent cleaning during reprocessing. there were no reports of patient involvement."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "3531",
+   "filed": "Environmental Compatibility Problem > Ambient Temperature Problem",
+   "V0": "Environmental Compatibility Problem > Ambient Temperature Problem",
+   "answer": "Manufacturing, Packaging or Shipping Problem",
+   "snippet": "it was reported that during incoming inspection at the distributor: (b)(4), they found the temperature indicator on the outer carton had turned red, and among the six inner boxes, one"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "3741",
+   "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "answer": "Use of Device Problem",
+   "snippet": "a patient implanted with an evoke spinal cord stimulation (scs) system was explanted. the physician elected to explant the evoke scs system to accommodate an unrelated surgical procedure. the evoke"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "3892",
+   "filed": "Output Problem > Radiation Output Problem > Radiation Overexposure",
+   "V0": "Output Problem > Radiation Output Problem > Radiation Overexposure",
+   "answer": "Output Problem > Radiation Output Problem",
+   "snippet": "siemens became aware of a malfunction that occurred while operating the artis icono floor system. the radiation dose applied to the patient during an interventional procedure was reported to be"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "4328",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "a third-party reported to abbott diabetes care (adc) of a cybersecurity vulnerability with the freestyle libre 3 application. the cybersecurity vulnerability was identified to affect communication between certain freestyle libre"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "4725",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+   "snippet": "reportedly, on (b)(6) 2026, a pacemaker replacement was performed. when telemetry was conducted while the eno dr (s/n: (b)(6) was still in its packaging, a battery impedance of approximately 1.8"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "4743",
+   "filed": "Computer Software Problem > Data Back-Up Problem > Failure to Back-Up",
+   "V0": "Computer Software Problem > Data Back-Up Problem > Failure to Back-Up",
+   "answer": "Electrical /Electronic Property Problem > Circuit Failure",
+   "snippet": "it was reported that the pump generated alert codes 57, 59, and 61 and the user performed a quick restart and a full supply change, after which the alerts cleared;"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "4879",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "snippet": "the customer reported sterilization problem during an unspecified procedure involving an olympus autoclavable camera head. there was no patient injury reported."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5202",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Clean Adequately",
+   "snippet": "it was reported the gastrointestinal videoscope exhibited presence of biofilm due to possible improper reprocessing. the issue occurred during setup. there were no reports of patient harm."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5465",
+   "filed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "answer": "Mechanical Problem",
+   "snippet": "it was reported that \"these are the beds we have that are a part of the pendant recall\"."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5527",
+   "filed": "Patient Device Interaction Problem > Implant subsidence",
+   "V0": "Patient Device Interaction Problem > Implant subsidence",
+   "answer": "Patient Device Interaction Problem > Loosening of Implant Not Related to Bone-Ingrowth",
+   "snippet": "at about 2 months from the primary, the patient came in presenting pain and instability due to a subsided stem and the cause is unknown. there were no indications of"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5616",
+   "filed": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Inadequately",
+   "V0": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Inadequately",
+   "answer": "Electrical /Electronic Property Problem > Pacing Problem",
+   "snippet": "during a follow-up visit on (b)(6) 2026, interrogation of the wise crt system demonstrated appropriate rv pace detection; however, electrode tracking could not be established in any patient posture. device"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5673",
+   "filed": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional",
+   "V0": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional",
+   "answer": "Labelling, Instructions for Use or Training Problem",
+   "snippet": "(b)(6) / flange fits pack for outpatient offices / product details: maymom is manufacture and polypropylene product sku a012-fxx, a012-b, lo12w-b, silicone products - m003-m, s005.40-d, e005-d, l005-d need manufacture"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5712",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "a third-party reported to abbott diabetes care (adc) of a cybersecurity vulnerability with the libre application. the cybersecurity vulnerability was identified to affect communication between certain freestyle libre sensors and"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5849",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "per the clinic, the patient experienced slight swelling at the implant site, accompanied by serous discharge and granulation tissue at the wound site. subsequently, the patient was treated with iv"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5942",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Unexpected Mode Switch",
+   "snippet": "it was reported that during a radiofrequency ablation procedure, during radiofrequency (rf) in the left ventricle, the patient¿s biotronik cardiac resynchronization therapy defibrillator (crt-d) initiated asynchronous pacing and displayed ¿recovery"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "5989",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "snippet": "the customer reported that sterilization was not possible in soluscope during reprocessing involving an olympus ureteroreno fiberscope. there was no patient involvement reported."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "6054",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "it was reported that the facility identified a cybersecurity vulnerability related to \\\"microsoft web deploy < 10.0.2001 remote code execution (cve-2025-53727)\\\". \\there was no actual cybersecurity incident reported. no harm"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "6210",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem > Unauthorized Access to Computer System",
+   "snippet": "a third-party reported to abbott diabetes care (adc) of a cybersecurity vulnerability with the lingo application. the cybersecurity vulnerability was identified to affect communication between certain sensors and associated applications."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "6412",
+   "filed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+   "V0": "Protective Measures Problem",
+   "answer": "Protective Measures Problem",
+   "snippet": "according to the event description, ventilated patient was connected to wall oxygen supply. ventilator intermittently alarmed low oxygen. icu room 3's medical gas / oxygen supply was tested by cya."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "6508",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+   "snippet": "it was reported that a ventricular tachycardia ablation procedure was performed using the affera system with radiofrequency and pulsed field ablation in a patient with an implantable cardioverter defibrillator with"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "6749",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Asynchronously",
+   "snippet": "it was reported that during a cardiac ablation procedure, radiofrequency ablation on the cavotricuspid isthmus (cti) triggered another manufacturer's pacemaker to pace asynchronously at 120 bpm and the pacemaker reportedly"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "6987",
+   "filed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+   "V0": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+   "answer": "Output Problem > Display or Visual Feedback Problem > No Display/Image",
+   "snippet": "it was reported that the patient was connected to the device coupled to an o2 cylinder with digital display. the digital display of the o2 cylinder was found to be"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "7157",
+   "filed": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "V0": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "answer": "Chemical Problem > Device Ingredient or Reagent Problem > Particulates",
+   "snippet": "received two unrelated reports of products precipitating when prepared for administration. in one case, an rn attached ceftriaxone vial to a baxter mini-bag plus bag and spiked the reconstituted bag"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "7256",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "snippet": "the customer reported incomplete disinfection in the washer for an olympus gastrointestinal videoscope. there was no patient injury reported."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "7819",
+   "filed": "Computer Software Problem > Data Back-Up Problem > Failure to Back-Up",
+   "V0": "Computer Software Problem > Data Back-Up Problem > Failure to Back-Up",
+   "answer": "Electrical /Electronic Property Problem > Circuit Failure",
+   "snippet": "it was reported that the ilet generated alerts 57, 59, and 69 indicating software runtime error, algorithm state memory corruption, and algorithm data parity check, with the device failing to"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "7823",
+   "filed": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Intermittently",
+   "V0": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Intermittently",
+   "answer": "Electrical /Electronic Property Problem > Pacing Problem",
+   "snippet": "it was reported that during a follow up in clinic, intermittent loss of pacing was noted on the device. abbott technical support was contacted, however, no intervention has been performed"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "7923",
+   "filed": "Mechanical Problem > Leak/Splash > Powder Leak",
+   "V0": "Mechanical Problem > Leak/Splash > Powder Leak",
+   "answer": "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material",
+   "snippet": "it was reported the videoscope had a white powder coming out of the sheath. there were no reports of patient involvement."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "8175",
+   "filed": "Mechanical Problem > Leak/Splash > Powder Leak",
+   "V0": "Mechanical Problem > Leak/Splash > Powder Leak",
+   "answer": "Mechanical Problem > Leak/Splash",
+   "snippet": "it was reported that outside of surgery the unopened unit had white powder leaking from it. there was no patient involvement. due diligence is complete."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "8407",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "snippet": "the customer reported a sterilized equipment without the pressure card during reprocessing involving an olympus bronchofiberscope. there was no patient injury reported."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "8452",
+   "filed": "Environmental Compatibility Problem > Fungus in Device Environment",
+   "V0": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "answer": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "snippet": "the customer reported mold stains on the screen during service maintenance involving an olympus monitor. there was no patient involvement reported."
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "8506",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "per the clinic, the patient developed skin dehiscence associated with edema. infection at the skin flap site with biofilm formation was also reported. despite treatment with oral medication (type and"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "8624",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "it was reported that when using the bd pyxis¿ es server, version of microsoft web deploy installed on the remote host was prior to 10.0.2001. it was, therefore, affected by"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "9099",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, cardiovascular implantable electronic device (cied) interaction occurred in a patient with a biotronik icd lead during cavotricuspid isthmus (cti) ablation. after"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "9431",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "answer": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "snippet": "it was reported the endoscope reprocessor was not working correctly because the self-disinfection and water line disinfection had not been performed. the issue was found during inspection for use. there"
+  },
+  {
+   "variant": "V2",
+   "kind": "RR_lost",
+   "id": "9803",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "snippet": "per the clinic, the patient experienced pain and infection (biofilm) at the implant site (specific date not reported). subsequently, the device was explanted on (b)(6) 2026. there are plans to"
+  },
+  {
+   "variant": "V2",
+   "kind": "RM_recovered",
+   "id": "3278",
+   "filed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "stored_zs": "Manufacturing, Packaging or Shipping Problem > Packaging Problem",
+   "V0": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "answer": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "snippet": "it was reported that entire lot coming with incorrect quantity of gauze. they should be receiving 1 pk of 10 ea but they are receiving 10 pk of 10 ea-"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "1062",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm malf 16 and was not resettable, with no notable events occurring before alarm. there was no adverse impact to the customer¿s blood"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "1390",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this cardiac resynchronization therapy pacemaker (crt-p) recorded a code 1003, which states that the voltage is too low for projected remaining capacity. a request was made"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "2235",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump experienced malfunction alarm identified as speaker issue, and pump could not be reset. there was no adverse impact to the customer¿s blood glucose level. customer"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "2265",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction code 16 and could not be reset, with no notable events occurring prior to the issue and no information provided regarding impact to"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "2756",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump experienced malfunction with non-resettable malfunction code, and customer did not report any events prior to issue. there was no adverse impact to the customer's blood"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "3127",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this pacemaker recorded a code 1003, indicating the voltage is too low for the projected remaining capacity. a request was made to have data from this"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4082",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this device recorded a code 1003, indicating the voltage was too low for the projected remaining capacity. a request was made to have data from this"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4091",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction code and could not be reset, with no notable events occurring beforehand. there was no adverse impact to the customer¿s blood glucose level."
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4115",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump experienced malfunction alarm with non-resettable malfunction code. there was no adverse impact to the customer¿s blood glucose level. customer used multiple daily injections as backup"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4293",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this pacemaker recorded a code 1003, which states that the voltage is too low for projected remaining capacity. a request was made to have data from"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4632",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this pacemaker recorded a code 1003, which states that the voltage is too low for projected remaining capacity. data analysis identified potential high impedance within the"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4678",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this device recorded a code 1003, indicating the voltage is too low for the projected remaining capacity. a request was made to have data from this"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "4756",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this cardiac resynchronization therapy pacemaker (crt-p) recorded a code 1003, which states that the voltage is too low for projected remaining capacity. a request was made"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "5595",
+   "filed": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_zs": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_rag": "Connection Problem > Decoupling",
+   "V0": "Mechanical Problem > Detachment of Device or Device Component",
+   "answer": "Mechanical Problem > Detachment of Device or Device Component",
+   "snippet": "the customer contacted stryker to report that their device kept coming off the back plate during use. in this state the device would not be able to perform automated chest"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "5743",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm malf 24 for undertravel stall, and pump could not be reset. there was no adverse impact to the customer¿s blood glucose level."
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "6086",
+   "filed": "Patient Device Interaction Problem",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "Patient Device Interaction Problem",
+   "V0": "Patient Device Interaction Problem",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "it was reported that 4 months following the implant of a transcatheter aortic valve, a implantable cardioverter defibrillator (icd) was implanted due a low ejection fraction (ef) and dyssynchrony."
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "6679",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this cardiac resynchronization therapy pacemaker (crt-p) recorded a code 1003, which states that the voltage is too low for projected remaining capacity. data analysis identified potential"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "6889",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this implantable pacemaker recorded a code 1003, indicating the voltage was too low for the projected remaining capacity. a request was made to have data from"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "6917",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump experienced malfunction alarm with malf 0 code and was not able to be reset. impact to customer¿s blood glucose level was unknown because caller declined"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "6960",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction code and could not be reset, with no notable events occurring beforehand. there was no adverse impact to the customer¿s blood glucose level."
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "7617",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump experienced malfunction alarm with speaker issue and could not be reset. there was no adverse impact to the customer¿s blood glucose level. customer did not"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "7656",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm code malf 16 and was not resettable. there was no adverse impact to the customer¿s blood glucose level. customer did not have"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "7920",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Mechanical Problem > Mechanical Jam",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm for undertravel stall that could not be reset, and there were no notable events before the issue. there was no adverse impact"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "9360",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction alarm malf 24 with fault id (b)(4)and malfunction code could not be reset. there was no adverse impact to the customer¿s blood glucose"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "9767",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "snippet": "it was reported that pump displayed malfunction code and could not be reset, with no notable events occurring before the issue and no reported instances of blood glucose rising to"
+  },
+  {
+   "variant": "V5",
+   "kind": "F_false_rare_to_filed",
+   "id": "9827",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "answer": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "snippet": "it was reported that this pacemaker recorded a code 1003, indicating that the voltage is too low for the projected remaining capacity. data analysis identified potential high impedance within the"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "2487",
+   "filed": "Electrical /Electronic Property Problem > Interrogation Problem > Difficult to Interrogate",
+   "V0": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+   "answer": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+   "snippet": "information was received from a healthcare provider regarding a patient who was receiving baclofen (unknown) via an implantable pump for intractable spasticity. it was reported that the patient requested to"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "2742",
+   "filed": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+   "V0": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "answer": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "snippet": "the customer contacted stryker to report that their device disarmed a shock during use. this issue is patient related; however there was no adverse event reported."
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "5849",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "per the clinic, the patient experienced slight swelling at the implant site, accompanied by serous discharge and granulation tissue at the wound site. subsequently, the patient was treated with iv"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "5942",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a radiofrequency ablation procedure, during radiofrequency (rf) in the left ventricle, the patient¿s biotronik cardiac resynchronization therapy defibrillator (crt-d) initiated asynchronous pacing and displayed ¿recovery"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "6508",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that a ventricular tachycardia ablation procedure was performed using the affera system with radiofrequency and pulsed field ablation in a patient with an implantable cardioverter defibrillator with"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "6749",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, radiofrequency ablation on the cavotricuspid isthmus (cti) triggered another manufacturer's pacemaker to pace asynchronously at 120 bpm and the pacemaker reportedly"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "8452",
+   "filed": "Environmental Compatibility Problem > Fungus in Device Environment",
+   "V0": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "answer": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "snippet": "the customer reported mold stains on the screen during service maintenance involving an olympus monitor. there was no patient involvement reported."
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "8506",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "per the clinic, the patient developed skin dehiscence associated with edema. infection at the skin flap site with biofilm formation was also reported. despite treatment with oral medication (type and"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "9099",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, cardiovascular implantable electronic device (cied) interaction occurred in a patient with a biotronik icd lead during cavotricuspid isthmus (cti) ablation. after"
+  },
+  {
+   "variant": "V5",
+   "kind": "RR_lost",
+   "id": "9803",
+   "filed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "V0": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "per the clinic, the patient experienced pain and infection (biofilm) at the implant site (specific date not reported). subsequently, the device was explanted on (b)(6) 2026. there are plans to"
+  },
+  {
+   "variant": "V5",
+   "kind": "RM_recovered",
+   "id": "3278",
+   "filed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "stored_zs": "Manufacturing, Packaging or Shipping Problem > Packaging Problem",
+   "V0": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "answer": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "snippet": "it was reported that entire lot coming with incorrect quantity of gauze. they should be receiving 1 pk of 10 ea but they are receiving 10 pk of 10 ea-"
+  },
+  {
+   "variant": "V5",
+   "kind": "RM_recovered",
+   "id": "5225",
+   "filed": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_zs": "Computer Software Problem > Program or Algorithm Execution Problem > Program or Algorithm Execution Failure",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "snippet": "it was reported that a spectrum iq infusion pump did not auto restart after downstream occlusion alarm during training in the training department. the issue happens more often when initially"
+  },
+  {
+   "variant": "V0",
+   "kind": "F_false_rare_to_filed",
+   "id": "1067",
+   "filed": "Use of Device Problem",
+   "stored_zs": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "stored_rag": "Computer Software Problem",
+   "V0": "Use of Device Problem",
+   "answer": "Use of Device Problem",
+   "snippet": "it was reported that when using the bd pyxis¿ medflex 1000, the device was unable to issue oxycodone 5 mg tablets. the customer reported that the medication did not appear"
+  },
+  {
+   "variant": "V0",
+   "kind": "F_false_rare_to_filed",
+   "id": "4112",
+   "filed": "Temperature Problem > Smoking",
+   "stored_zs": "Environmental Compatibility Problem > Fumes or Vapors",
+   "stored_rag": "Temperature Problem > Smoking",
+   "V0": "Temperature Problem > Smoking",
+   "answer": "Temperature Problem > Smoking",
+   "snippet": "the manufacturer received information alleging a patient states she woke up and saw black fumes coming from unit t and started to go through tubes, the filter is black, and"
+  },
+  {
+   "variant": "V0",
+   "kind": "F_false_rare_to_filed",
+   "id": "5595",
+   "filed": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_zs": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_rag": "Connection Problem > Decoupling",
+   "V0": "Mechanical Problem > Detachment of Device or Device Component",
+   "answer": "Mechanical Problem > Detachment of Device or Device Component",
+   "snippet": "the customer contacted stryker to report that their device kept coming off the back plate during use. in this state the device would not be able to perform automated chest"
+  },
+  {
+   "variant": "V0",
+   "kind": "F_false_rare_to_filed",
+   "id": "6086",
+   "filed": "Patient Device Interaction Problem",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "Patient Device Interaction Problem",
+   "V0": "Patient Device Interaction Problem",
+   "answer": "Patient Device Interaction Problem",
+   "snippet": "it was reported that 4 months following the implant of a transcatheter aortic valve, a implantable cardioverter defibrillator (icd) was implanted due a low ejection fraction (ef) and dyssynchrony."
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "2487",
+   "filed": "Electrical /Electronic Property Problem > Interrogation Problem > Difficult to Interrogate",
+   "V0": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+   "answer": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+   "snippet": "information was received from a healthcare provider regarding a patient who was receiving baclofen (unknown) via an implantable pump for intractable spasticity. it was reported that the patient requested to"
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "2742",
+   "filed": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+   "V0": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "answer": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+   "snippet": "the customer contacted stryker to report that their device disarmed a shock during use. this issue is patient related; however there was no adverse event reported."
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "3325",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+   "V0": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+   "answer": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+   "snippet": "it was reported that the insufflation tube had been repeatedly used without sterilization and it only underwent cleaning during reprocessing. there were no reports of patient involvement."
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "5942",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a radiofrequency ablation procedure, during radiofrequency (rf) in the left ventricle, the patient¿s biotronik cardiac resynchronization therapy defibrillator (crt-d) initiated asynchronous pacing and displayed ¿recovery"
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "6210",
+   "filed": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem",
+   "answer": "Computer Software Problem > Computer System Security Problem",
+   "snippet": "a third-party reported to abbott diabetes care (adc) of a cybersecurity vulnerability with the lingo application. the cybersecurity vulnerability was identified to affect communication between certain sensors and associated applications."
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "6412",
+   "filed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+   "V0": "Protective Measures Problem",
+   "answer": "Protective Measures Problem",
+   "snippet": "according to the event description, ventilated patient was connected to wall oxygen supply. ventilator intermittently alarmed low oxygen. icu room 3's medical gas / oxygen supply was tested by cya."
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "6508",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that a ventricular tachycardia ablation procedure was performed using the affera system with radiofrequency and pulsed field ablation in a patient with an implantable cardioverter defibrillator with"
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "6749",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, radiofrequency ablation on the cavotricuspid isthmus (cti) triggered another manufacturer's pacemaker to pace asynchronously at 120 bpm and the pacemaker reportedly"
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "8452",
+   "filed": "Environmental Compatibility Problem > Fungus in Device Environment",
+   "V0": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "answer": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+   "snippet": "the customer reported mold stains on the screen during service maintenance involving an olympus monitor. there was no patient involvement reported."
+  },
+  {
+   "variant": "V0",
+   "kind": "RR_lost",
+   "id": "9099",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+   "V0": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "answer": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+   "snippet": "it was reported that during a cardiac ablation procedure, cardiovascular implantable electronic device (cied) interaction occurred in a patient with a biotronik icd lead during cavotricuspid isthmus (cti) ablation. after"
+  },
+  {
+   "variant": "V0",
+   "kind": "RM_recovered",
+   "id": "3278",
+   "filed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "stored_zs": "Manufacturing, Packaging or Shipping Problem > Packaging Problem",
+   "V0": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "answer": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+   "snippet": "it was reported that entire lot coming with incorrect quantity of gauze. they should be receiving 1 pk of 10 ea but they are receiving 10 pk of 10 ea-"
+  },
+  {
+   "variant": "V0",
+   "kind": "RM_recovered",
+   "id": "5225",
+   "filed": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_zs": "Computer Software Problem > Program or Algorithm Execution Problem > Program or Algorithm Execution Failure",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "answer": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "snippet": "it was reported that a spectrum iq infusion pump did not auto restart after downstream occlusion alarm during training in the training department. the issue happens more often when initially"
+  }
+ ],
+ "F_answers": [
+  {
+   "id": "1062",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "1067",
+   "filed": "Use of Device Problem",
+   "stored_zs": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "stored_rag": "Computer Software Problem",
+   "enc": "Labelling, Instructions for Use or Training Problem",
+   "V0": "Use of Device Problem",
+   "V1": "Use of Device Problem > Use of Incorrect Control/Treatment Settings",
+   "V2": "Use of Device Problem",
+   "V5": "Computer Software Problem > Application Program Problem"
+  },
+  {
+   "id": "1390",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "1917",
+   "filed": "Electrical /Electronic Property Problem > Capturing Problem > High Capture Threshold",
+   "stored_zs": "Electrical /Electronic Property Problem",
+   "stored_rag": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "enc": "Electrical /Electronic Property Problem > Capturing Problem > High Capture Threshold",
+   "V0": "Use of Device Problem",
+   "V1": "Insufficient Device Problem Information",
+   "V2": "Patient Device Interaction Problem",
+   "V5": "Manufacturing, Packaging or Shipping Problem > Defective Device"
+  },
+  {
+   "id": "2165",
+   "filed": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_zs": "Connection Problem > Decoupling",
+   "stored_rag": "Connection Problem > Disconnection",
+   "enc": "Mechanical Problem > Detachment of Device or Device Component",
+   "V0": "Connection Problem > Disconnection",
+   "V1": "Connection Problem > Decoupling",
+   "V2": "Connection Problem > Disconnection",
+   "V5": "Connection Problem > Disconnection"
+  },
+  {
+   "id": "2235",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Output Problem > Audible Prompt/Feedback Problem",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "2265",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "2279",
+   "filed": "Installation-Related Problem",
+   "stored_zs": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "stored_rag": "Computer Software Problem",
+   "enc": "Computer Software Problem",
+   "V0": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "V1": "Computer Software Problem > Application Program Problem",
+   "V2": "Computer Software Problem",
+   "V5": "Computer Software Problem > Computer System Security Problem > Application Security Problem"
+  },
+  {
+   "id": "2756",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "2871",
+   "filed": "Electrical /Electronic Property Problem",
+   "stored_zs": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "stored_rag": "Computer Software Problem",
+   "enc": "Mechanical Problem",
+   "V0": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "V1": "Computer Software Problem",
+   "V2": "Mechanical Problem",
+   "V5": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error"
+  },
+  {
+   "id": "3019",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "stored_zs": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "stored_rag": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "enc": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "V0": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "V1": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+   "V2": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "V5": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect"
+  },
+  {
+   "id": "3127",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "3383",
+   "filed": "Labelling, Instructions for Use or Training Problem",
+   "stored_zs": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "stored_rag": "Computer Software Problem",
+   "enc": "Computer Software Problem",
+   "V0": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+   "V1": "Computer Software Problem > Data Problem > Patient Data Problem",
+   "V2": "Computer Software Problem > Data Problem",
+   "V5": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error"
+  },
+  {
+   "id": "4082",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "4091",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "4112",
+   "filed": "Temperature Problem > Smoking",
+   "stored_zs": "Environmental Compatibility Problem > Fumes or Vapors",
+   "stored_rag": "Temperature Problem > Smoking",
+   "enc": "Temperature Problem > Smoking",
+   "V0": "Temperature Problem > Smoking",
+   "V1": "Temperature Problem > Smoking",
+   "V2": "Temperature Problem > Smoking",
+   "V5": "Environmental Compatibility Problem > Fumes or Vapors"
+  },
+  {
+   "id": "4115",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Device Alarm System",
+   "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "4293",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "4632",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "4678",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "4690",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "stored_zs": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "stored_rag": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "enc": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "V0": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "V1": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "V2": "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material",
+   "V5": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient"
+  },
+  {
+   "id": "4756",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "5595",
+   "filed": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_zs": "Mechanical Problem > Detachment of Device or Device Component",
+   "stored_rag": "Connection Problem > Decoupling",
+   "enc": "Mechanical Problem > Detachment of Device or Device Component",
+   "V0": "Mechanical Problem > Detachment of Device or Device Component",
+   "V1": "Mechanical Problem > Detachment of Device or Device Component",
+   "V2": "Mechanical Problem > Detachment of Device or Device Component",
+   "V5": "Mechanical Problem > Detachment of Device or Device Component"
+  },
+  {
+   "id": "5743",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "6001",
+   "filed": "Manufacturing, Packaging or Shipping Problem > Product Quality Problem > Nonstandard Device",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "enc": "Labelling, Instructions for Use or Training Problem",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "V1": "Computer Software Problem > Application Network Problem",
+   "V2": "Computer Software Problem > Application Program Problem",
+   "V5": "No Apparent Adverse Event > Prophylactic removal due to corrective action"
+  },
+  {
+   "id": "6086",
+   "filed": "Patient Device Interaction Problem",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "Patient Device Interaction Problem",
+   "enc": "Patient Device Interaction Problem",
+   "V0": "Patient Device Interaction Problem",
+   "V1": "Adverse Event Without Identified Device or Use Problem",
+   "V2": "Patient Device Interaction Problem",
+   "V5": "Patient Device Interaction Problem"
+  },
+  {
+   "id": "6679",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "6805",
+   "filed": "Manufacturing, Packaging or Shipping Problem > Defective Component",
+   "stored_zs": "Connection Problem > Decoupling",
+   "stored_rag": "Connection Problem > Decoupling",
+   "enc": "Material Integrity Problem > Break",
+   "V0": "Connection Problem > Disconnection",
+   "V1": "Connection Problem > Decoupling",
+   "V2": "Mechanical Problem > Detachment of Device or Device Component",
+   "V5": "Connection Problem > Decoupling"
+  },
+  {
+   "id": "6889",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "6917",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "6960",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Device Alarm System",
+   "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "7349",
+   "filed": "Patient Device Interaction Problem > Osseointegration Problem",
+   "stored_zs": "Patient Device Interaction Problem > Implant subsidence",
+   "stored_rag": "Patient Device Interaction Problem > Implant subsidence",
+   "enc": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+   "V0": "Patient Device Interaction Problem > Implant subsidence",
+   "V1": "Patient Device Interaction Problem > Implant subsidence",
+   "V2": "Patient Device Interaction Problem > Implant subsidence",
+   "V5": "Patient Device Interaction Problem > Implant subsidence"
+  },
+  {
+   "id": "7383",
+   "filed": "Material Integrity Problem > Material Rupture",
+   "stored_zs": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "stored_rag": "Material Integrity Problem > Material Rupture",
+   "enc": "Material Integrity Problem > Material Rupture",
+   "V0": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+   "V1": "No Apparent Adverse Event",
+   "V2": "Material Integrity Problem > Material Rupture",
+   "V5": "Material Integrity Problem > Degraded"
+  },
+  {
+   "id": "7617",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "7656",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Electrical /Electronic Property Problem",
+   "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "7840",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Protective Measures Problem > Reset Problem > Failure to Reset"
+  },
+  {
+   "id": "7920",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Mechanical Problem > Mechanical Jam",
+   "V1": "Mechanical Problem > Mechanical Jam",
+   "V2": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "8097",
+   "filed": "Activation, Positioning or Separation Problem > Positioning Problem",
+   "stored_zs": "Labelling, Instructions for Use or Training Problem",
+   "stored_rag": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional",
+   "enc": "Use of Device Problem > Use of Incorrect Control/Treatment Settings",
+   "V0": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional",
+   "V1": "No Apparent Adverse Event",
+   "V2": "Labelling, Instructions for Use or Training Problem",
+   "V5": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional"
+  },
+  {
+   "id": "8705",
+   "filed": "Electrical /Electronic Property Problem",
+   "stored_zs": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+   "stored_rag": "Computer Software Problem",
+   "enc": "Computer Software Problem",
+   "V0": "Computer Software Problem > Application Program Problem",
+   "V1": "Computer Software Problem",
+   "V2": "Computer Software Problem",
+   "V5": "Computer Software Problem > Computer System Security Problem > Application Security Problem"
+  },
+  {
+   "id": "9360",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "9767",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "stored_zs": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "stored_rag": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "enc": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V0": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V1": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V2": "Protective Measures Problem > Reset Problem > Failure to Reset",
+   "V5": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped"
+  },
+  {
+   "id": "9827",
+   "filed": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "stored_zs": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "stored_rag": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "enc": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+   "V0": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V1": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V2": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+   "V5": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery"
+  },
+  {
+   "id": "9915",
+   "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Clean Adequately",
+   "stored_zs": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+   "stored_rag": "Material Integrity Problem > Degraded",
+   "enc": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+   "V0": "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material",
+   "V1": "Contamination /Decontamination Problem > Device Reprocessing Problem > Residue After Decontamination",
+   "V2": "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material",
+   "V5": "Contamination /Decontamination Problem > Device Reprocessing Problem > Residue After Decontamination"
+  }
+ ],
+ "U_restored_answers": [
+  {
+   "id": "1724",
+   "filed": "Patient Device Interaction Problem",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  },
+  {
+   "id": "2039",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V1": "Protective Measures Problem > Device Alarm System"
+  },
+  {
+   "id": "2291",
+   "filed": "Patient Device Interaction Problem",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  },
+  {
+   "id": "3649",
+   "filed": "Protective Measures Problem > Device Alarm System > No Audible Alarm",
+   "V1": "Protective Measures Problem > Device Alarm System > False Alarm"
+  },
+  {
+   "id": "4165",
+   "filed": "Communication or Transmission Problem",
+   "V1": "Insufficient Device Problem Information"
+  },
+  {
+   "id": "4340",
+   "filed": "Electrical /Electronic Property Problem > Circuit Failure",
+   "V1": "Protective Measures Problem > Device Alarm System"
+  },
+  {
+   "id": "5956",
+   "filed": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+   "V1": "Protective Measures Problem > Device Alarm System"
+  },
+  {
+   "id": "6538",
+   "filed": "Protective Measures Problem > Device Alarm System > Defective Alarm",
+   "V1": "Output Problem > Tactile Prompts/Feedback > No Tactile Prompts/Feedback"
+  },
+  {
+   "id": "6959",
+   "filed": "Patient Device Interaction Problem",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  },
+  {
+   "id": "7251",
+   "filed": "Patient Device Interaction Problem",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  },
+  {
+   "id": "8615",
+   "filed": "Mechanical Problem > Structural Problem > Incomplete Coaptation",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  },
+  {
+   "id": "9606",
+   "filed": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  },
+  {
+   "id": "9661",
+   "filed": "Patient Device Interaction Problem > Patient-Device Incompatibility > Device Appears to Trigger Rejection",
+   "V1": "Adverse Event Without Identified Device or Use Problem"
+  }
+ ],
+ "F_by_family": {
+  "pump_failure_to_reset": {
+   "n": 15,
+   "stored_zs_rare": 15,
+   "stored_rag_rare": 0,
+   "V0": {
+    "any_rare": {
+     "k": 14,
+     "n": 15,
+     "share": 0.9333,
+     "ci95": [
+      0.6805,
+      0.9983
+     ]
+    },
+    "filed": {
+     "k": 0,
+     "n": 15,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.218
+     ]
+    },
+    "answers": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 14,
+     "Mechanical Problem > Mechanical Jam": 1
+    }
+   },
+   "V1": {
+    "any_rare": {
+     "k": 10,
+     "n": 15,
+     "share": 0.6667,
+     "ci95": [
+      0.3838,
+      0.8818
+     ]
+    },
+    "filed": {
+     "k": 1,
+     "n": 15,
+     "share": 0.0667,
+     "ci95": [
+      0.0017,
+      0.3195
+     ]
+    },
+    "answers": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 10,
+     "Protective Measures Problem > Device Alarm System": 2,
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 1,
+     "Electrical /Electronic Property Problem": 1,
+     "Mechanical Problem > Mechanical Jam": 1
+    }
+   },
+   "V2": {
+    "any_rare": {
+     "k": 9,
+     "n": 15,
+     "share": 0.6,
+     "ci95": [
+      0.3229,
+      0.8366
+     ]
+    },
+    "filed": {
+     "k": 5,
+     "n": 15,
+     "share": 0.3333,
+     "ci95": [
+      0.1182,
+      0.6162
+     ]
+    },
+    "answers": {
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 9,
+     "Output Problem > Audible Prompt/Feedback Problem": 1,
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 5
+    }
+   },
+   "V5": {
+    "any_rare": {
+     "k": 1,
+     "n": 15,
+     "share": 0.0667,
+     "ci95": [
+      0.0017,
+      0.3195
+     ]
+    },
+    "filed": {
+     "k": 14,
+     "n": 15,
+     "share": 0.9333,
+     "ci95": [
+      0.6805,
+      0.9983
+     ]
+    },
+    "answers": {
+     "Infusion or Flow Problem > Pumping Problem > Pumping Stopped": 14,
+     "Protective Measures Problem > Reset Problem > Failure to Reset": 1
+    }
+   }
+  },
+  "pacer_high_impedance": {
+   "n": 10,
+   "stored_zs_rare": 10,
+   "stored_rag_rare": 10,
+   "V0": {
+    "any_rare": {
+     "k": 10,
+     "n": 10,
+     "share": 1.0,
+     "ci95": [
+      0.6915,
+      1.0
+     ]
+    },
+    "filed": {
+     "k": 0,
+     "n": 10,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.3085
+     ]
+    },
+    "answers": {
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 10
+    }
+   },
+   "V1": {
+    "any_rare": {
+     "k": 10,
+     "n": 10,
+     "share": 1.0,
+     "ci95": [
+      0.6915,
+      1.0
+     ]
+    },
+    "filed": {
+     "k": 0,
+     "n": 10,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.3085
+     ]
+    },
+    "answers": {
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 10
+    }
+   },
+   "V2": {
+    "any_rare": {
+     "k": 4,
+     "n": 10,
+     "share": 0.4,
+     "ci95": [
+      0.1216,
+      0.7376
+     ]
+    },
+    "filed": {
+     "k": 4,
+     "n": 10,
+     "share": 0.4,
+     "ci95": [
+      0.1216,
+      0.7376
+     ]
+    },
+    "answers": {
+     "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery": 4,
+     "Electrical /Electronic Property Problem > Impedance Problem > High impedance": 2,
+     "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 4
+    }
+   },
+   "V5": {
+    "any_rare": {
+     "k": 0,
+     "n": 10,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.3085
+     ]
+    },
+    "filed": {
+     "k": 10,
+     "n": 10,
+     "share": 1.0,
+     "ci95": [
+      0.6915,
+      1.0
+     ]
+    },
+    "answers": {
+     "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery": 10
+    }
+   }
+  },
+  "other_F": {
+   "n": 18,
+   "stored_zs_rare": 15,
+   "stored_rag_rare": 8,
+   "V0": {
+    "any_rare": {
+     "k": 9,
+     "n": 18,
+     "share": 0.5,
+     "ci95": [
+      0.2602,
+      0.7398
+     ]
+    },
+    "filed": {
+     "k": 4,
+     "n": 18,
+     "share": 0.2222,
+     "ci95": [
+      0.0641,
+      0.4764
+     ]
+    },
+    "answers": {
+     "Use of Device Problem": 2,
+     "Connection Problem > Disconnection": 2,
+     "Computer Software Problem > Computer System Security Problem > Application Security Problem": 1,
+     "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error": 2,
+     "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect": 1,
+     "Temperature Problem > Smoking": 1,
+     "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient": 1,
+     "Mechanical Problem > Detachment of Device or Device Component": 1,
+     "No Apparent Adverse Event > Prophylactic removal due to corrective action": 2,
+     "Patient Device Interaction Problem": 1,
+     "Patient Device Interaction Problem > Implant subsidence": 1,
+     "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional": 1,
+     "Computer Software Problem > Application Program Problem": 1,
+     "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material": 1
+    }
+   },
+   "V1": {
+    "any_rare": {
+     "k": 5,
+     "n": 18,
+     "share": 0.2778,
+     "ci95": [
+      0.0969,
+      0.5348
+     ]
+    },
+    "filed": {
+     "k": 2,
+     "n": 18,
+     "share": 0.1111,
+     "ci95": [
+      0.0138,
+      0.3471
+     ]
+    },
+    "answers": {
+     "Use of Device Problem > Use of Incorrect Control/Treatment Settings": 1,
+     "Insufficient Device Problem Information": 1,
+     "Connection Problem > Decoupling": 2,
+     "Computer Software Problem > Application Program Problem": 1,
+     "Computer Software Problem": 2,
+     "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect": 1,
+     "Computer Software Problem > Data Problem > Patient Data Problem": 1,
+     "Temperature Problem > Smoking": 1,
+     "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient": 1,
+     "Mechanical Problem > Detachment of Device or Device Component": 1,
+     "Computer Software Problem > Application Network Problem": 1,
+     "Adverse Event Without Identified Device or Use Problem": 1,
+     "Patient Device Interaction Problem > Implant subsidence": 1,
+     "No Apparent Adverse Event": 2,
+     "Contamination /Decontamination Problem > Device Reprocessing Problem > Residue After Decontamination": 1
+    }
+   },
+   "V2": {
+    "any_rare": {
+     "k": 1,
+     "n": 18,
+     "share": 0.0556,
+     "ci95": [
+      0.0014,
+      0.2729
+     ]
+    },
+    "filed": {
+     "k": 6,
+     "n": 18,
+     "share": 0.3333,
+     "ci95": [
+      0.1334,
+      0.5901
+     ]
+    },
+    "answers": {
+     "Use of Device Problem": 1,
+     "Patient Device Interaction Problem": 2,
+     "Connection Problem > Disconnection": 1,
+     "Computer Software Problem": 2,
+     "Mechanical Problem": 1,
+     "Contamination /Decontamination Problem > Device Reprocessing Problem": 1,
+     "Computer Software Problem > Data Problem": 1,
+     "Temperature Problem > Smoking": 1,
+     "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material": 2,
+     "Mechanical Problem > Detachment of Device or Device Component": 2,
+     "Computer Software Problem > Application Program Problem": 1,
+     "Patient Device Interaction Problem > Implant subsidence": 1,
+     "Material Integrity Problem > Material Rupture": 1,
+     "Labelling, Instructions for Use or Training Problem": 1
+    }
+   },
+   "V5": {
+    "any_rare": {
+     "k": 11,
+     "n": 18,
+     "share": 0.6111,
+     "ci95": [
+      0.3575,
+      0.827
+     ]
+    },
+    "filed": {
+     "k": 2,
+     "n": 18,
+     "share": 0.1111,
+     "ci95": [
+      0.0138,
+      0.3471
+     ]
+    },
+    "answers": {
+     "Computer Software Problem > Application Program Problem": 1,
+     "Manufacturing, Packaging or Shipping Problem > Defective Device": 1,
+     "Connection Problem > Disconnection": 1,
+     "Computer Software Problem > Computer System Security Problem > Application Security Problem": 2,
+     "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error": 2,
+     "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect": 1,
+     "Environmental Compatibility Problem > Fumes or Vapors": 1,
+     "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient": 1,
+     "Mechanical Problem > Detachment of Device or Device Component": 1,
+     "No Apparent Adverse Event > Prophylactic removal due to corrective action": 1,
+     "Patient Device Interaction Problem": 1,
+     "Connection Problem > Decoupling": 1,
+     "Patient Device Interaction Problem > Implant subsidence": 1,
+     "Material Integrity Problem > Degraded": 1,
+     "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional": 1,
+     "Contamination /Decontamination Problem > Device Reprocessing Problem > Residue After Decontamination": 1
+    }
+   }
+  }
+ },
+ "rare_status_of_answers": {
+  "Computer Software Problem > Computer System Security Problem > Application Security Problem": 2,
+  "Computer Software Problem > Computer System Security Problem": 4,
+  "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient": 4,
+  "Electrical /Electronic Property Problem > Pacing Problem > Pacing Inadequately": 2,
+  "Protective Measures Problem > Device Alarm System": 0,
+  "Environmental Compatibility Problem > Medical Gas Supply Problem": 5,
+  "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components": 5,
+  "Electrical /Electronic Property Problem > Pacing Problem > Pacing Intermittently": 5,
+  "Output Problem > Radiation Output Problem > Radiation Overexposure": 3,
+  "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional": 1,
+  "Calibration Problem > Overcorrection": 1,
+  "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device": 4,
+  "Computer Software Problem > Data Problem > Patient Data Problem": 0,
+  "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization": 4,
+  "Electrical /Electronic Property Problem > Device Sensing Problem > Failure to Sense": 0,
+  "Adverse Event Without Identified Device or Use Problem": null,
+  "Protective Measures Problem > Reset Problem > Failure to Reset": 3,
+  "Environmental Compatibility Problem > Fungus in Device Environment": 3,
+  "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance": 3,
+  "Protective Measures Problem > Device Alarm System > False Alarm": 0,
+  "Environmental Compatibility Problem > Fumes or Vapors": 5,
+  "No Apparent Adverse Event > Prophylactic removal due to corrective action": 3,
+  "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error": 2,
+  "No Apparent Adverse Event": null,
+  "Environmental Compatibility Problem > Ambient Temperature Problem": 5,
+  "Mechanical Problem > Leak/Splash > Powder Leak": 2,
+  "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect": 4,
+  "Computer Software Problem > Data Back-Up Problem > Failure to Back-Up": 2,
+  "Connection Problem > Decoupling": 5,
+  "Patient Device Interaction Problem > Implant subsidence": 4,
+  "Output Problem > Display or Visual Feedback Problem > Device Displays Incorrect Message": 0,
+  "Insufficient Device Problem Information": null,
+  "Use of Device Problem > Off-Label Use": 0,
+  "Output Problem > Tactile Prompts/Feedback > No Tactile Prompts/Feedback": 0
+ },
+ "prophylactic_counts": {
+  "V0": 4,
+  "V1": 0,
+  "V2": 0,
+  "V5": 3,
+  "stored_zs": 5,
+  "stored_rag": 3
+ },
+ "otherF_mcnemar": {
+  "otherF_rare_V1_vs_V0": {
+   "V0_no_v_yes": 2,
+   "V0_yes_v_no": 6,
+   "p": 0.2891
+  },
+  "otherF_rare_V2_vs_V0": {
+   "V0_no_v_yes": 0,
+   "V0_yes_v_no": 8,
+   "p": 0.0078
+  },
+  "otherF_rare_V5_vs_V0": {
+   "V0_no_v_yes": 3,
+   "V0_yes_v_no": 1,
+   "p": 0.625
+  }
+ }
+}

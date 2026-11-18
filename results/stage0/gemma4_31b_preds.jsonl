@@ -1,0 +1,632 @@
+{"custom_id": "fmc0000", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 0, "seconds": 0.232}}
+{"custom_id": "fmc0001", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 149, "out": 4, "cached": 1, "seconds": 0.261}}
+{"custom_id": "fmc0002", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.259}}
+{"custom_id": "fmc0003", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.231}}
+{"custom_id": "fmc0004", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0005", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0006", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.302}}
+{"custom_id": "fmc0007", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.208}}
+{"custom_id": "fmc0008", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.234}}
+{"custom_id": "fmc0009", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0010", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0011", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.224}}
+{"custom_id": "fmc0012", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 146, "out": 5, "cached": 1, "seconds": 0.282}}
+{"custom_id": "fmc0013", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.235}}
+{"custom_id": "fmc0014", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.234}}
+{"custom_id": "fmc0015", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.235}}
+{"custom_id": "fmc0016", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0017", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.262}}
+{"custom_id": "fmc0018", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0019", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 143, "out": 5, "cached": 1, "seconds": 0.298}}
+{"custom_id": "fmc0020", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.256}}
+{"custom_id": "fmc0021", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.231}}
+{"custom_id": "fmc0022", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0023", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.204}}
+{"custom_id": "fmc0024", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0025", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.305}}
+{"custom_id": "fmc0026", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.23}}
+{"custom_id": "fmc0027", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0028", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.229}}
+{"custom_id": "fmc0029", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0030", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0031", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.229}}
+{"custom_id": "fmc0032", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.256}}
+{"custom_id": "fmc0033", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0034", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.204}}
+{"custom_id": "fmc0035", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.204}}
+{"custom_id": "fmc0036", "type": "succeeded", "text": "Failure to stop on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.306}}
+{"custom_id": "fmc0037", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0038", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.206}}
+{"custom_id": "fmc0039", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.208}}
+{"custom_id": "fmc0040", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.234}}
+{"custom_id": "fmc0041", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0042", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0043", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.202}}
+{"custom_id": "fmc0044", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.305}}
+{"custom_id": "fmc0045", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0046", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0047", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.313}}
+{"custom_id": "fmc0048", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.239}}
+{"custom_id": "fmc0049", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.236}}
+{"custom_id": "fmc0050", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 143, "out": 5, "cached": 1, "seconds": 0.287}}
+{"custom_id": "fmc0051", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0052", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.236}}
+{"custom_id": "fmc0053", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.215}}
+{"custom_id": "fmc0054", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0055", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0056", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0057", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0058", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0059", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0060", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.281}}
+{"custom_id": "fmc0061", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.235}}
+{"custom_id": "fmc0062", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.232}}
+{"custom_id": "fmc0063", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.308}}
+{"custom_id": "fmc0064", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0065", "type": "succeeded", "text": "Failure to stop on demand", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.317}}
+{"custom_id": "fmc0066", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0067", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.265}}
+{"custom_id": "fmc0068", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.21}}
+{"custom_id": "fmc0069", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.315}}
+{"custom_id": "fmc0070", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.301}}
+{"custom_id": "fmc0071", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.317}}
+{"custom_id": "fmc0072", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.237}}
+{"custom_id": "fmc0073", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0074", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0075", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.209}}
+{"custom_id": "fmc0076", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.234}}
+{"custom_id": "fmc0077", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.287}}
+{"custom_id": "fmc0078", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0079", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0080", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0081", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0082", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.236}}
+{"custom_id": "fmc0083", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.239}}
+{"custom_id": "fmc0084", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0085", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0086", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.212}}
+{"custom_id": "fmc0087", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0088", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.235}}
+{"custom_id": "fmc0089", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.309}}
+{"custom_id": "fmc0090", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 148, "out": 5, "cached": 1, "seconds": 0.289}}
+{"custom_id": "fmc0091", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0092", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0093", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.262}}
+{"custom_id": "fmc0094", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0095", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.258}}
+{"custom_id": "fmc0096", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.315}}
+{"custom_id": "fmc0097", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0098", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0099", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.28}}
+{"custom_id": "fmc0100", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.211}}
+{"custom_id": "fmc0101", "type": "succeeded", "text": "Fail to stop on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.334}}
+{"custom_id": "fmc0102", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.217}}
+{"custom_id": "fmc0103", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0104", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0105", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.32}}
+{"custom_id": "fmc0106", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.322}}
+{"custom_id": "fmc0107", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0108", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 143, "out": 4, "cached": 1, "seconds": 0.267}}
+{"custom_id": "fmc0109", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0110", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.28}}
+{"custom_id": "fmc0111", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0112", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0113", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 147, "out": 2, "cached": 1, "seconds": 0.215}}
+{"custom_id": "fmc0114", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.266}}
+{"custom_id": "fmc0115", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.213}}
+{"custom_id": "fmc0116", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.212}}
+{"custom_id": "fmc0117", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0118", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0119", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.326}}
+{"custom_id": "fmc0120", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.265}}
+{"custom_id": "fmc0121", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.365}}
+{"custom_id": "fmc0122", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0123", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.229}}
+{"custom_id": "fmc0124", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.262}}
+{"custom_id": "fmc0125", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.285}}
+{"custom_id": "fmc0126", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.259}}
+{"custom_id": "fmc0127", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.213}}
+{"custom_id": "fmc0128", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0129", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.213}}
+{"custom_id": "fmc0130", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0131", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0132", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.213}}
+{"custom_id": "fmc0133", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0134", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.266}}
+{"custom_id": "fmc0135", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0136", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0137", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0138", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0139", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0140", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0141", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.215}}
+{"custom_id": "fmc0142", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.268}}
+{"custom_id": "fmc0143", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0144", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0145", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0146", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.285}}
+{"custom_id": "fmc0147", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.312}}
+{"custom_id": "fmc0148", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.226}}
+{"custom_id": "fmc0149", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0150", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.245}}
+{"custom_id": "fmc0151", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0152", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.263}}
+{"custom_id": "fmc0153", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.268}}
+{"custom_id": "fmc0154", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.212}}
+{"custom_id": "fmc0155", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0156", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.268}}
+{"custom_id": "fmc0157", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.291}}
+{"custom_id": "fmc0158", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.28}}
+{"custom_id": "fmc0159", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.215}}
+{"custom_id": "fmc0160", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.259}}
+{"custom_id": "fmc0161", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0162", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0163", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0164", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0165", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0166", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.314}}
+{"custom_id": "fmc0167", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0168", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.292}}
+{"custom_id": "fmc0169", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.281}}
+{"custom_id": "fmc0170", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.266}}
+{"custom_id": "fmc0171", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 143, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0172", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.268}}
+{"custom_id": "fmc0173", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0174", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.237}}
+{"custom_id": "fmc0175", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.267}}
+{"custom_id": "fmc0176", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0177", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.225}}
+{"custom_id": "fmc0178", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0179", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0180", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0181", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0182", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0183", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0184", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.291}}
+{"custom_id": "fmc0185", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.235}}
+{"custom_id": "fmc0186", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.282}}
+{"custom_id": "fmc0187", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.282}}
+{"custom_id": "fmc0188", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0189", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.311}}
+{"custom_id": "fmc0190", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0191", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0192", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.224}}
+{"custom_id": "fmc0193", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0194", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0195", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0196", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0197", "type": "succeeded", "text": "Failure to stop on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.319}}
+{"custom_id": "fmc0198", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.267}}
+{"custom_id": "fmc0199", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0200", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.227}}
+{"custom_id": "fmc0201", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0202", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0203", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.318}}
+{"custom_id": "fmc0204", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0205", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0206", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.245}}
+{"custom_id": "fmc0207", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0208", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0209", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.325}}
+{"custom_id": "fmc0210", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0211", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0212", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0213", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0214", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0215", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.245}}
+{"custom_id": "fmc0216", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0217", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0218", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.293}}
+{"custom_id": "fmc0219", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0220", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0221", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0222", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0223", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.296}}
+{"custom_id": "fmc0224", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0225", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0226", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0227", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0228", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0229", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.3}}
+{"custom_id": "fmc0230", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0231", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0232", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.214}}
+{"custom_id": "fmc0233", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.268}}
+{"custom_id": "fmc0234", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0235", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.222}}
+{"custom_id": "fmc0236", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0237", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0238", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0239", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0240", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0241", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0242", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0243", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0244", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0245", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 143, "out": 5, "cached": 1, "seconds": 0.292}}
+{"custom_id": "fmc0246", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0247", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 148, "out": 4, "cached": 1, "seconds": 0.281}}
+{"custom_id": "fmc0248", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0249", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0250", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0251", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.301}}
+{"custom_id": "fmc0252", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0253", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0254", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.217}}
+{"custom_id": "fmc0255", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0256", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0257", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.317}}
+{"custom_id": "fmc0258", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.256}}
+{"custom_id": "fmc0259", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.276}}
+{"custom_id": "fmc0260", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0261", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0262", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0263", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 143, "out": 6, "cached": 1, "seconds": 0.327}}
+{"custom_id": "fmc0264", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0265", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.314}}
+{"custom_id": "fmc0266", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0267", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0268", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0269", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0270", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0271", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.266}}
+{"custom_id": "fmc0272", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0273", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0274", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0275", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0276", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0277", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.263}}
+{"custom_id": "fmc0278", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0279", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0280", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.214}}
+{"custom_id": "fmc0281", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.217}}
+{"custom_id": "fmc0282", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0283", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.245}}
+{"custom_id": "fmc0284", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0285", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.215}}
+{"custom_id": "fmc0286", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.32}}
+{"custom_id": "fmc0287", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0288", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0289", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.258}}
+{"custom_id": "fmc0290", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0291", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0292", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0293", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0294", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0295", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0296", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0297", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0298", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0299", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0300", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.284}}
+{"custom_id": "fmc0301", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.228}}
+{"custom_id": "fmc0302", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0303", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.276}}
+{"custom_id": "fmc0304", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0305", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0306", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0307", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0308", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0309", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0310", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.288}}
+{"custom_id": "fmc0311", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0312", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.261}}
+{"custom_id": "fmc0313", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.329}}
+{"custom_id": "fmc0314", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.245}}
+{"custom_id": "fmc0315", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0316", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.292}}
+{"custom_id": "fmc0317", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.279}}
+{"custom_id": "fmc0318", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0319", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.404}}
+{"custom_id": "fmc0320", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.237}}
+{"custom_id": "fmc0321", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.239}}
+{"custom_id": "fmc0322", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.237}}
+{"custom_id": "fmc0323", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.281}}
+{"custom_id": "fmc0324", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0325", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0326", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.399}}
+{"custom_id": "fmc0327", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0328", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.301}}
+{"custom_id": "fmc0329", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.333}}
+{"custom_id": "fmc0330", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0331", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0332", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.231}}
+{"custom_id": "fmc0333", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0334", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.227}}
+{"custom_id": "fmc0335", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0336", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0337", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0338", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.216}}
+{"custom_id": "fmc0339", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.279}}
+{"custom_id": "fmc0340", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0341", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0342", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0343", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.242}}
+{"custom_id": "fmc0344", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 147, "out": 6, "cached": 1, "seconds": 0.327}}
+{"custom_id": "fmc0345", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0346", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.265}}
+{"custom_id": "fmc0347", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.238}}
+{"custom_id": "fmc0348", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 146, "out": 5, "cached": 1, "seconds": 0.309}}
+{"custom_id": "fmc0349", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0350", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0351", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0352", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0353", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0354", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.342}}
+{"custom_id": "fmc0355", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0356", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 146, "out": 5, "cached": 1, "seconds": 0.297}}
+{"custom_id": "fmc0357", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0358", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0359", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.294}}
+{"custom_id": "fmc0360", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0361", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.256}}
+{"custom_id": "fmc0362", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.323}}
+{"custom_id": "fmc0363", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0364", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0365", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0366", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.282}}
+{"custom_id": "fmc0367", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0368", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.232}}
+{"custom_id": "fmc0369", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0370", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0371", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0372", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0373", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.297}}
+{"custom_id": "fmc0374", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0375", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0376", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0377", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.268}}
+{"custom_id": "fmc0378", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.297}}
+{"custom_id": "fmc0379", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0380", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0381", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.3}}
+{"custom_id": "fmc0382", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 148, "out": 5, "cached": 1, "seconds": 0.302}}
+{"custom_id": "fmc0383", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.224}}
+{"custom_id": "fmc0384", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0385", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0386", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0387", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0388", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.321}}
+{"custom_id": "fmc0389", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0390", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 148, "out": 3, "cached": 1, "seconds": 0.269}}
+{"custom_id": "fmc0391", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0392", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0393", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.231}}
+{"custom_id": "fmc0394", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.228}}
+{"custom_id": "fmc0395", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.224}}
+{"custom_id": "fmc0396", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0397", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.391}}
+{"custom_id": "fmc0398", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0399", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.289}}
+{"custom_id": "fmc0400", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.333}}
+{"custom_id": "fmc0401", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0402", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0403", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.324}}
+{"custom_id": "fmc0404", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0405", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0406", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0407", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.217}}
+{"custom_id": "fmc0408", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 143, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0409", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 147, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0410", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0411", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0412", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0413", "type": "succeeded", "text": "Failure to stop on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.324}}
+{"custom_id": "fmc0414", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0415", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 148, "out": 4, "cached": 1, "seconds": 0.292}}
+{"custom_id": "fmc0416", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.354}}
+{"custom_id": "fmc0417", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.235}}
+{"custom_id": "fmc0418", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 147, "out": 4, "cached": 1, "seconds": 0.296}}
+{"custom_id": "fmc0419", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0420", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.281}}
+{"custom_id": "fmc0421", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0422", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0423", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 148, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0424", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0425", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0426", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.331}}
+{"custom_id": "fmc0427", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0428", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0429", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0430", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0431", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0432", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0433", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0434", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0435", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0436", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 147, "out": 2, "cached": 1, "seconds": 0.218}}
+{"custom_id": "fmc0437", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.228}}
+{"custom_id": "fmc0438", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0439", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.303}}
+{"custom_id": "fmc0440", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0441", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0442", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0443", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.321}}
+{"custom_id": "fmc0444", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0445", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0446", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0447", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0448", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.222}}
+{"custom_id": "fmc0449", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0450", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0451", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.276}}
+{"custom_id": "fmc0452", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0453", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.276}}
+{"custom_id": "fmc0454", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0455", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.325}}
+{"custom_id": "fmc0456", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.301}}
+{"custom_id": "fmc0457", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0458", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0459", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0460", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 147, "out": 4, "cached": 1, "seconds": 0.287}}
+{"custom_id": "fmc0461", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.284}}
+{"custom_id": "fmc0462", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0463", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 146, "out": 5, "cached": 1, "seconds": 0.297}}
+{"custom_id": "fmc0464", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.225}}
+{"custom_id": "fmc0465", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0466", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0467", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 146, "out": 5, "cached": 1, "seconds": 0.304}}
+{"custom_id": "fmc0468", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0469", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.318}}
+{"custom_id": "fmc0470", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 143, "out": 4, "cached": 1, "seconds": 0.296}}
+{"custom_id": "fmc0471", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.287}}
+{"custom_id": "fmc0472", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0473", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.256}}
+{"custom_id": "fmc0474", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.232}}
+{"custom_id": "fmc0475", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0476", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.231}}
+{"custom_id": "fmc0477", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0478", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.287}}
+{"custom_id": "fmc0479", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0480", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.222}}
+{"custom_id": "fmc0481", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0482", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0483", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0484", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0485", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0486", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0487", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.226}}
+{"custom_id": "fmc0488", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0489", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0490", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0491", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0492", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.257}}
+{"custom_id": "fmc0493", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.225}}
+{"custom_id": "fmc0494", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.265}}
+{"custom_id": "fmc0495", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0496", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.286}}
+{"custom_id": "fmc0497", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.326}}
+{"custom_id": "fmc0498", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.225}}
+{"custom_id": "fmc0499", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.262}}
+{"custom_id": "fmc0500", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.277}}
+{"custom_id": "fmc0501", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.292}}
+{"custom_id": "fmc0502", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.253}}
+{"custom_id": "fmc0503", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.258}}
+{"custom_id": "fmc0504", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0505", "type": "succeeded", "text": "Fail to open", "finish_reason": "stop", "usage": {"in": 147, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0506", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.29}}
+{"custom_id": "fmc0507", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0508", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.226}}
+{"custom_id": "fmc0509", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.223}}
+{"custom_id": "fmc0510", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0511", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.328}}
+{"custom_id": "fmc0512", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.27}}
+{"custom_id": "fmc0513", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.309}}
+{"custom_id": "fmc0514", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0515", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0516", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0517", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0518", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.252}}
+{"custom_id": "fmc0519", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 147, "out": 4, "cached": 1, "seconds": 0.279}}
+{"custom_id": "fmc0520", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0521", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0522", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.276}}
+{"custom_id": "fmc0523", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.263}}
+{"custom_id": "fmc0524", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.271}}
+{"custom_id": "fmc0525", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0526", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0527", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.232}}
+{"custom_id": "fmc0528", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0529", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.244}}
+{"custom_id": "fmc0530", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.261}}
+{"custom_id": "fmc0531", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0532", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0533", "type": "succeeded", "text": "Low output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.243}}
+{"custom_id": "fmc0534", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.3}}
+{"custom_id": "fmc0535", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.298}}
+{"custom_id": "fmc0536", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.222}}
+{"custom_id": "fmc0537", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.325}}
+{"custom_id": "fmc0538", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.321}}
+{"custom_id": "fmc0539", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0540", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.323}}
+{"custom_id": "fmc0541", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0542", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0543", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0544", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0545", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0546", "type": "succeeded", "text": "Abnormal instrument reading", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.301}}
+{"custom_id": "fmc0547", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0548", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 145, "out": 5, "cached": 1, "seconds": 0.294}}
+{"custom_id": "fmc0549", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.246}}
+{"custom_id": "fmc0550", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0551", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0552", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0553", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.264}}
+{"custom_id": "fmc0554", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.325}}
+{"custom_id": "fmc0555", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.266}}
+{"custom_id": "fmc0556", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0557", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0558", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.275}}
+{"custom_id": "fmc0559", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.276}}
+{"custom_id": "fmc0560", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0561", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.222}}
+{"custom_id": "fmc0562", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0563", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0564", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0565", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0566", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0567", "type": "succeeded", "text": "Failure to stop on demand", "finish_reason": "stop", "usage": {"in": 147, "out": 6, "cached": 1, "seconds": 0.329}}
+{"custom_id": "fmc0568", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0569", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 149, "out": 2, "cached": 1, "seconds": 0.241}}
+{"custom_id": "fmc0570", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.245}}
+{"custom_id": "fmc0571", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.292}}
+{"custom_id": "fmc0572", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.285}}
+{"custom_id": "fmc0573", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.286}}
+{"custom_id": "fmc0574", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0575", "type": "succeeded", "text": "Spurious stop", "finish_reason": "stop", "usage": {"in": 148, "out": 4, "cached": 1, "seconds": 0.278}}
+{"custom_id": "fmc0576", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.33}}
+{"custom_id": "fmc0577", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0578", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 146, "out": 2, "cached": 1, "seconds": 0.22}}
+{"custom_id": "fmc0579", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 146, "out": 6, "cached": 1, "seconds": 0.327}}
+{"custom_id": "fmc0580", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.272}}
+{"custom_id": "fmc0581", "type": "succeeded", "text": "Failure to stop on demand", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.328}}
+{"custom_id": "fmc0582", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0583", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.259}}
+{"custom_id": "fmc0584", "type": "succeeded", "text": "Failure to start on demand", "finish_reason": "stop", "usage": {"in": 145, "out": 6, "cached": 1, "seconds": 0.331}}
+{"custom_id": "fmc0585", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0586", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 147, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0587", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.277}}
+{"custom_id": "fmc0588", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.249}}
+{"custom_id": "fmc0589", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0590", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0591", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 147, "out": 2, "cached": 1, "seconds": 0.224}}
+{"custom_id": "fmc0592", "type": "succeeded", "text": "High output", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0593", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.283}}
+{"custom_id": "fmc0594", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.247}}
+{"custom_id": "fmc0595", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 146, "out": 3, "cached": 1, "seconds": 0.254}}
+{"custom_id": "fmc0596", "type": "succeeded", "text": "Fail to close", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.296}}
+{"custom_id": "fmc0597", "type": "succeeded", "text": "Breakdown", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.26}}
+{"custom_id": "fmc0598", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.279}}
+{"custom_id": "fmc0599", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.229}}
+{"custom_id": "fmc0600", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.222}}
+{"custom_id": "fmc0601", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0602", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 143, "out": 3, "cached": 1, "seconds": 0.248}}
+{"custom_id": "fmc0603", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0604", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.274}}
+{"custom_id": "fmc0605", "type": "succeeded", "text": "Erratic output", "finish_reason": "stop", "usage": {"in": 148, "out": 4, "cached": 1, "seconds": 0.273}}
+{"custom_id": "fmc0606", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.24}}
+{"custom_id": "fmc0607", "type": "succeeded", "text": "Minor in-service problems", "finish_reason": "stop", "usage": {"in": 144, "out": 6, "cached": 1, "seconds": 0.34}}
+{"custom_id": "fmc0608", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.219}}
+{"custom_id": "fmc0609", "type": "succeeded", "text": "Noise", "finish_reason": "stop", "usage": {"in": 145, "out": 2, "cached": 1, "seconds": 0.226}}
+{"custom_id": "fmc0610", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0611", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.263}}
+{"custom_id": "fmc0612", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.221}}
+{"custom_id": "fmc0613", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.284}}
+{"custom_id": "fmc0614", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.284}}
+{"custom_id": "fmc0615", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 148, "out": 2, "cached": 1, "seconds": 0.237}}
+{"custom_id": "fmc0616", "type": "succeeded", "text": "Electrical", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.233}}
+{"custom_id": "fmc0617", "type": "succeeded", "text": "Contamination", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0618", "type": "succeeded", "text": "Fail to function", "finish_reason": "stop", "usage": {"in": 145, "out": 4, "cached": 1, "seconds": 0.281}}
+{"custom_id": "fmc0619", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 147, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0620", "type": "succeeded", "text": "Plugged / choked", "finish_reason": "stop", "usage": {"in": 144, "out": 5, "cached": 1, "seconds": 0.31}}
+{"custom_id": "fmc0621", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.225}}
+{"custom_id": "fmc0622", "type": "succeeded", "text": "Structural deficiency", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.25}}
+{"custom_id": "fmc0623", "type": "succeeded", "text": "Vibration", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.258}}
+{"custom_id": "fmc0624", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 146, "out": 4, "cached": 1, "seconds": 0.282}}
+{"custom_id": "fmc0625", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 143, "out": 2, "cached": 1, "seconds": 0.226}}
+{"custom_id": "fmc0626", "type": "succeeded", "text": "Leaking", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0627", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.236}}
+{"custom_id": "fmc0628", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 145, "out": 3, "cached": 1, "seconds": 0.255}}
+{"custom_id": "fmc0629", "type": "succeeded", "text": "Other", "finish_reason": "stop", "usage": {"in": 144, "out": 2, "cached": 1, "seconds": 0.231}}
+{"custom_id": "fmc0630", "type": "succeeded", "text": "Overheating", "finish_reason": "stop", "usage": {"in": 144, "out": 3, "cached": 1, "seconds": 0.251}}
+{"custom_id": "fmc0631", "type": "succeeded", "text": "Failure to rotate", "finish_reason": "stop", "usage": {"in": 144, "out": 4, "cached": 1, "seconds": 0.275}}

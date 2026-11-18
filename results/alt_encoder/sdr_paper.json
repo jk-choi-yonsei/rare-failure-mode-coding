@@ -1,0 +1,226 @@
+{
+ "note": "another encoder under the agreement rule (2026-11-18)",
+ "corpus": "sdr",
+ "encoder": "cb-conv_full_seed42",
+ "shortlist_suffix": "",
+ "years": {
+  "2026": {
+   "reports": 42717,
+   "encoder_accuracy": 0.774,
+   "rare_reports": 292,
+   "filed_rare_code_rank1": 38,
+   "filed_rare_code_top5": 68,
+   "other_reports_rank1_share": 0.7785,
+   "other_reports_top5_share": 0.9367,
+   "shortlist": 1324,
+   "shortlist_share": 0.031,
+   "rare_reports_on_shortlist": 103,
+   "encoder_alone": {
+    "right": 38,
+    "false": 84,
+    "visible_modes": 20,
+    "phantom_modes": 27,
+    "precision": 0.3115
+   },
+   "llms": {
+    "qwen38_27b": {
+     "shortlist_answered": {
+      "zs": 1.0,
+      "rag": 1.0
+     },
+     "rules": {
+      "either": {
+       "right": 54,
+       "false": 83,
+       "visible_modes": 22,
+       "phantom_modes": 24,
+       "precision": 0.3942
+      },
+      "zs": {
+       "right": 54,
+       "false": 73,
+       "visible_modes": 22,
+       "phantom_modes": 22,
+       "precision": 0.4252
+      },
+      "rag": {
+       "right": 48,
+       "false": 52,
+       "visible_modes": 18,
+       "phantom_modes": 19,
+       "precision": 0.48
+      },
+      "both": {
+       "right": 48,
+       "false": 42,
+       "visible_modes": 18,
+       "phantom_modes": 15,
+       "precision": 0.5333
+      }
+     },
+     "paired_vs_encoder": {
+      "correct_rule_only": 21,
+      "correct_encoder_only": 5,
+      "correct_p": 0.002494,
+      "false_encoder_only": 52,
+      "false_rule_only": 51,
+      "false_p": 1.0
+     }
+    },
+    "gemma4_31b": {
+     "shortlist_answered": {
+      "zs": 1.0,
+      "rag": 1.0
+     },
+     "rules": {
+      "either": {
+       "right": 52,
+       "false": 80,
+       "visible_modes": 21,
+       "phantom_modes": 22,
+       "precision": 0.3939
+      },
+      "zs": {
+       "right": 51,
+       "false": 68,
+       "visible_modes": 20,
+       "phantom_modes": 17,
+       "precision": 0.4286
+      },
+      "rag": {
+       "right": 49,
+       "false": 53,
+       "visible_modes": 19,
+       "phantom_modes": 20,
+       "precision": 0.4804
+      },
+      "both": {
+       "right": 48,
+       "false": 41,
+       "visible_modes": 18,
+       "phantom_modes": 11,
+       "precision": 0.5393
+      }
+     },
+     "paired_vs_encoder": {
+      "correct_rule_only": 18,
+      "correct_encoder_only": 4,
+      "correct_p": 0.004344,
+      "false_encoder_only": 57,
+      "false_rule_only": 53,
+      "false_p": 0.775003
+     }
+    }
+   }
+  },
+  "2025": {
+   "reports": 59416,
+   "encoder_accuracy": 0.781,
+   "rare_reports": 436,
+   "filed_rare_code_rank1": 58,
+   "filed_rare_code_top5": 105,
+   "other_reports_rank1_share": 0.7858,
+   "other_reports_top5_share": 0.9374,
+   "shortlist": 2190,
+   "shortlist_share": 0.0369,
+   "rare_reports_on_shortlist": 134,
+   "encoder_alone": {
+    "right": 58,
+    "false": 137,
+    "visible_modes": 22,
+    "phantom_modes": 30,
+    "precision": 0.2974
+   },
+   "llms": {
+    "qwen38_27b": {
+     "shortlist_answered": {
+      "zs": 1.0,
+      "rag": 1.0
+     },
+     "rules": {
+      "either": {
+       "right": 91,
+       "false": 108,
+       "visible_modes": 29,
+       "phantom_modes": 18,
+       "precision": 0.4573
+      },
+      "zs": {
+       "right": 86,
+       "false": 91,
+       "visible_modes": 28,
+       "phantom_modes": 18,
+       "precision": 0.4859
+      },
+      "rag": {
+       "right": 81,
+       "false": 67,
+       "visible_modes": 28,
+       "phantom_modes": 16,
+       "precision": 0.5473
+      },
+      "both": {
+       "right": 76,
+       "false": 50,
+       "visible_modes": 27,
+       "phantom_modes": 14,
+       "precision": 0.6032
+      }
+     },
+     "paired_vs_encoder": {
+      "correct_rule_only": 34,
+      "correct_encoder_only": 1,
+      "correct_p": 0.0,
+      "false_encoder_only": 98,
+      "false_rule_only": 69,
+      "false_p": 0.029951
+     }
+    },
+    "gemma4_31b": {
+     "shortlist_answered": {
+      "zs": 1.0,
+      "rag": 1.0
+     },
+     "rules": {
+      "either": {
+       "right": 85,
+       "false": 107,
+       "visible_modes": 29,
+       "phantom_modes": 23,
+       "precision": 0.4427
+      },
+      "zs": {
+       "right": 79,
+       "false": 89,
+       "visible_modes": 28,
+       "phantom_modes": 18,
+       "precision": 0.4702
+      },
+      "rag": {
+       "right": 76,
+       "false": 65,
+       "visible_modes": 28,
+       "phantom_modes": 18,
+       "precision": 0.539
+      },
+      "both": {
+       "right": 70,
+       "false": 47,
+       "visible_modes": 27,
+       "phantom_modes": 12,
+       "precision": 0.5983
+      }
+     },
+     "paired_vs_encoder": {
+      "correct_rule_only": 30,
+      "correct_encoder_only": 3,
+      "correct_p": 1e-06,
+      "false_encoder_only": 98,
+      "false_rule_only": 68,
+      "false_p": 0.024103
+     }
+    }
+   }
+  }
+ }
+}

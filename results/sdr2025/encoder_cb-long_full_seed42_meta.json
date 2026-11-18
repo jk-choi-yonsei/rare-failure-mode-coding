@@ -1,0 +1,102 @@
+{
+ "variant": "cb",
+ "model": "roberta-base",
+ "size": "full",
+ "seed": 42,
+ "lr": 2e-05,
+ "val_macro_f1": 0.4145,
+ "n_train": 86106,
+ "classes_present": 259,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.4145,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0568,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.187,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.2999,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.32,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.3507,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.3643,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.3667,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.3748,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.3797,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.3998,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.4105,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.4107,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.4102,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.4145,
+     "minutes": 2.3
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.4107,
+     "minutes": 2.3
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  15,
+  3
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": false,
+ "best_at_last_epoch": false,
+ "weights": "C:\\Users\\jkchoi\\models\\sdr_encoders\\cb-long_full_seed42"
+}

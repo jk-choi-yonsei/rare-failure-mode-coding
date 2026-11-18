@@ -1,0 +1,70 @@
+{
+ "maude qwen38_27b 2026": {
+  "rare_reports": 552,
+  "encoder_top1": 32,
+  "gold_in_encoder_top5": 115,
+  "llm_either_right": 143,
+  "llm_either_right_in_top5": 78,
+  "llm_either_right_outside_top5": 65,
+  "rule_right": 77,
+  "llm_zs_right": 131,
+  "segments": {
+   "kept_top1": 25,
+   "recovered_rank2_5": 52,
+   "missed_in_top5": 38,
+   "llm_only_outside_top5": 65,
+   "neither": 372
+  }
+ },
+ "maude qwen38_27b 2025": {
+  "rare_reports": 597,
+  "encoder_top1": 60,
+  "gold_in_encoder_top5": 154,
+  "llm_either_right": 219,
+  "llm_either_right_in_top5": 94,
+  "llm_either_right_outside_top5": 125,
+  "rule_right": 94,
+  "llm_zs_right": 201,
+  "segments": {
+   "kept_top1": 39,
+   "recovered_rank2_5": 55,
+   "missed_in_top5": 60,
+   "llm_only_outside_top5": 125,
+   "neither": 318
+  }
+ },
+ "maude gemma4_31b 2026": {
+  "rare_reports": 552,
+  "encoder_top1": 32,
+  "gold_in_encoder_top5": 115,
+  "llm_either_right": 169,
+  "llm_either_right_in_top5": 76,
+  "llm_either_right_outside_top5": 93,
+  "rule_right": 75,
+  "llm_zs_right": 158,
+  "segments": {
+   "kept_top1": 25,
+   "recovered_rank2_5": 50,
+   "missed_in_top5": 40,
+   "llm_only_outside_top5": 93,
+   "neither": 344
+  }
+ },
+ "maude gemma4_31b 2025": {
+  "rare_reports": 597,
+  "encoder_top1": 60,
+  "gold_in_encoder_top5": 154,
+  "llm_either_right": 181,
+  "llm_either_right_in_top5": 100,
+  "llm_either_right_outside_top5": 81,
+  "rule_right": 100,
+  "llm_zs_right": 165,
+  "segments": {
+   "kept_top1": 41,
+   "recovered_rank2_5": 59,
+   "missed_in_top5": 54,
+   "llm_only_outside_top5": 81,
+   "neither": 362
+  }
+ }
+}

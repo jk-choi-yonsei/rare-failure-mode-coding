@@ -1,0 +1,26 @@
+{
+ "deviceproblemcodes.zip": {
+  "url": "https://www.accessdata.fda.gov/MAUDE/ftparea/deviceproblemcodes.zip",
+  "bytes": 12980,
+  "last_modified": "Tue, 28 Apr 2026 19:31:00 GMT",
+  "sha256": "1fcdc270693b60935646cb3532b2d23dacbc134118b3e08e7457f907db7bb00a"
+ },
+ "foidevproblem.zip": {
+  "url": "https://www.accessdata.fda.gov/MAUDE/ftparea/foidevproblem.zip",
+  "bytes": 63872154,
+  "last_modified": "Tue, 06 Oct 2026 03:45:30 GMT",
+  "sha256": "9bed5dccbcebc196d08064e9b9789eb5344b6dcb242933166c4733cbc6b4a3d0"
+ },
+ "foitext2024.zip": {
+  "url": "https://www.accessdata.fda.gov/MAUDE/ftparea/foitext2024.zip",
+  "bytes": 566861769,
+  "last_modified": "Tue, 06 Jan 2026 20:17:19 GMT",
+  "sha256": "036c3959993ab1d761d59e9b0fbd05c92a6c95563e2ff58c461b40a336719f18"
+ },
+ "device2024.zip": {
+  "url": "https://www.accessdata.fda.gov/MAUDE/ftparea/device2024.zip",
+  "bytes": 100046684,
+  "last_modified": "Mon, 29 Dec 2025 16:07:57 GMT",
+  "sha256": "d637c520cb976dbd7fffd7d2da486486001e19b1e7a36a6b76a05cf20982ebec"
+ }
+}

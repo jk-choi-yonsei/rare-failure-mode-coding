@@ -1,0 +1,27 @@
+{
+ "llm": "opus55",
+ "selector_encoder": "cb-large-conv",
+ "cascade": {
+  "arm": "rag",
+  "theta": 0.5,
+  "macro_f1_2024": 0.6692
+ },
+ "git_head": "481af8e",
+ "arms": {
+  "majority_vote": {
+   "accuracy_uniform": 0.645,
+   "placed_rare_1-5": 51,
+   "rare_1-5_n": 291
+  },
+  "confidence_cascade": {
+   "accuracy_uniform": 0.6498,
+   "placed_rare_1-5": 26,
+   "rare_1-5_n": 291
+  },
+  "encoder": {
+   "accuracy_uniform": 0.6365,
+   "placed_rare_1-5": 12,
+   "rare_1-5_n": 291
+  }
+ }
+}

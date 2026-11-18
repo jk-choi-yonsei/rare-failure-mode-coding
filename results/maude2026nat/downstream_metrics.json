@@ -1,0 +1,242 @@
+{
+ "prereg": "notes/prereg-maude-downstream-2026-11-05.md",
+ "git_head_at_score": "8cf8e92",
+ "frozen": {
+  "file": "maude_selector_v1_cb-large-conv.json",
+  "sha256": "b3e9bcead23697f846b7b0b10eae6a9109900f81bbf8c30be9baa66bfff80fc7"
+ },
+ "population": 661160,
+ "true_reports_by_bin": {
+  "1-5": 552,
+  "6-20": 5404,
+  "21-89": 11836,
+  "90+": 643368
+ },
+ "codes_present_by_bin": {
+  "1-5": 43,
+  "6-20": 37,
+  "21-89": 52,
+  "90+": 288
+ },
+ "weights": {
+  "balanced": 1.0,
+  "rare_1-5_census": 1.0,
+  "rare_6-20": 3.386,
+  "C": 164.025
+ },
+ "n_C": 3974,
+ "N_C": 651834,
+ "arms": {
+  "enc": {
+   "D1_visible_rare_modes": 9,
+   "rare_modes_present": 43,
+   "rare_reports_right": 32,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 166.0,
+   "D2_ci95": [
+    2.0,
+    494.1
+   ],
+   "D3_precision_rare": 0.1616,
+   "D3_ci95": [
+    0.0608,
+    0.9412
+   ],
+   "rare_placements_total": 198.0,
+   "D4_ratio_median": 0.0,
+   "D4_share_within_2x": 0.047,
+   "D4_share_zero": 0.767,
+   "D5_spearman_all": 0.8689,
+   "D5_spearman_1-5": 0.2769,
+   "D5_spearman_6-20": 0.5478,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 23,
+    "reports_right_est": 701.4,
+    "reports_total": 5404,
+    "false_placements_est": 2523.9
+   }
+  },
+  "zs": {
+   "D1_visible_rare_modes": 23,
+   "rare_modes_present": 43,
+   "rare_reports_right": 154,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 6664.7,
+   "D2_ci95": [
+    4532.4,
+    8643.1
+   ],
+   "D3_precision_rare": 0.0226,
+   "D3_ci95": [
+    0.0172,
+    0.0328
+   ],
+   "rare_placements_total": 6818.7,
+   "D4_ratio_median": 0.5,
+   "D4_share_within_2x": 0.279,
+   "D4_share_zero": 0.233,
+   "D5_spearman_all": 0.7243,
+   "D5_spearman_1-5": 0.519,
+   "D5_spearman_6-20": 0.5427,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 24,
+    "reports_right_est": 1842.3,
+    "reports_total": 5404,
+    "false_placements_est": 21565.6
+   }
+  },
+  "rag": {
+   "D1_visible_rare_modes": 22,
+   "rare_modes_present": 43,
+   "rare_reports_right": 95,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 3025.6,
+   "D2_ci95": [
+    1870.7,
+    4498.4
+   ],
+   "D3_precision_rare": 0.0304,
+   "D3_ci95": [
+    0.0207,
+    0.0482
+   ],
+   "rare_placements_total": 3120.6,
+   "D4_ratio_median": 0.25,
+   "D4_share_within_2x": 0.14,
+   "D4_share_zero": 0.349,
+   "D5_spearman_all": 0.8616,
+   "D5_spearman_1-5": 0.3964,
+   "D5_spearman_6-20": 0.5148,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 24,
+    "reports_right_est": 355.6,
+    "reports_total": 5404,
+    "false_placements_est": 2049.9
+   }
+  },
+  "selector": {
+   "D1_visible_rare_modes": 25,
+   "rare_modes_present": 43,
+   "rare_reports_right": 125,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 3856.1,
+   "D2_ci95": [
+    2533.8,
+    5486.2
+   ],
+   "D3_precision_rare": 0.0314,
+   "D3_ci95": [
+    0.0223,
+    0.047
+   ],
+   "rare_placements_total": 3981.1,
+   "D4_ratio_median": 0.462,
+   "D4_share_within_2x": 0.233,
+   "D4_share_zero": 0.256,
+   "D5_spearman_all": 0.8481,
+   "D5_spearman_1-5": 0.5681,
+   "D5_spearman_6-20": 0.5137,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 989.4,
+    "reports_total": 5404,
+    "false_placements_est": 7250.6
+   }
+  },
+  "S_cost": {
+   "D1_visible_rare_modes": 22,
+   "rare_modes_present": 43,
+   "rare_reports_right": 98,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 1703.8,
+   "D2_ci95": [
+    873.5,
+    2698.1
+   ],
+   "D3_precision_rare": 0.0544,
+   "D3_ci95": [
+    0.035,
+    0.1009
+   ],
+   "rare_placements_total": 1801.8,
+   "D4_ratio_median": 0.2,
+   "D4_share_within_2x": 0.209,
+   "D4_share_zero": 0.302,
+   "D5_spearman_all": 0.8621,
+   "D5_spearman_1-5": 0.5459,
+   "D5_spearman_6-20": 0.5628,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 928.6,
+    "reports_total": 5404,
+    "false_placements_est": 5740.1
+   }
+  },
+  "llm_rare": {
+   "D1_visible_rare_modes": 24,
+   "rare_modes_present": 43,
+   "rare_reports_right": 160,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 6829.7,
+   "D2_ci95": [
+    4687.2,
+    8965.4
+   ],
+   "D3_precision_rare": 0.0229,
+   "D3_ci95": [
+    0.0175,
+    0.033
+   ],
+   "rare_placements_total": 6989.7,
+   "D4_ratio_median": 0.5,
+   "D4_share_within_2x": 0.279,
+   "D4_share_zero": 0.233,
+   "D5_spearman_all": 0.8071,
+   "D5_spearman_1-5": 0.512,
+   "D5_spearman_6-20": 0.5445,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 2220.5,
+    "reports_total": 5404,
+    "false_placements_est": 23585.5
+   }
+  },
+  "S1": {
+   "D1_visible_rare_modes": 24,
+   "rare_modes_present": 43,
+   "rare_reports_right": 159,
+   "rare_reports_total": 552,
+   "D2_false_rare_placements": 6330.3,
+   "D2_ci95": [
+    4208.1,
+    8462.6
+   ],
+   "D3_precision_rare": 0.0245,
+   "D3_ci95": [
+    0.0184,
+    0.0364
+   ],
+   "rare_placements_total": 6489.3,
+   "D4_ratio_median": 0.5,
+   "D4_share_within_2x": 0.256,
+   "D4_share_zero": 0.233,
+   "D5_spearman_all": 0.8125,
+   "D5_spearman_1-5": 0.5087,
+   "D5_spearman_6-20": 0.5337,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 1436.2,
+    "reports_total": 5404,
+    "false_placements_est": 17159.0
+   }
+  }
+ },
+ "P2_selector_minus_encoder_false_rare": {
+  "point": 3690.1,
+  "ci95": [
+   2377.9,
+   5169.7
+  ],
+  "excludes_zero": true
+ }
+}

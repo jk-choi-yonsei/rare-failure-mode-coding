@@ -1,0 +1,2071 @@
+{
+ "note": "notes/why-it-works-2026-11-16.md",
+ "corpus": "maude",
+ "specific_below": 0.01,
+ "years": {
+  "2026": {
+   "codes_with_term": 46,
+   "rare_codes": 46,
+   "methods": {
+    "encoder": {
+     "right": {
+      "with_term": 10,
+      "n": 32,
+      "share": 0.312
+     },
+     "false": {
+      "with_term": 16,
+      "n": 219,
+      "share": 0.073,
+      "expected_share_at_random": 0.0032
+     },
+     "right_specific": {
+      "with_term": 10,
+      "n": 31,
+      "share": 0.323
+     },
+     "false_specific": {
+      "with_term": 13,
+      "n": 206,
+      "share": 0.063,
+      "expected_share_at_random": 0.0023
+     }
+    },
+    "gate_qwen38_27b": {
+     "right": {
+      "with_term": 51,
+      "n": 77,
+      "share": 0.662
+     },
+     "false": {
+      "with_term": 92,
+      "n": 180,
+      "share": 0.511,
+      "expected_share_at_random": 0.0024
+     },
+     "right_specific": {
+      "with_term": 51,
+      "n": 75,
+      "share": 0.68
+     },
+     "false_specific": {
+      "with_term": 87,
+      "n": 173,
+      "share": 0.503,
+      "expected_share_at_random": 0.0018
+     }
+    },
+    "gate_gemma4_31b": {
+     "right": {
+      "with_term": 52,
+      "n": 75,
+      "share": 0.693
+     },
+     "false": {
+      "with_term": 86,
+      "n": 166,
+      "share": 0.518,
+      "expected_share_at_random": 0.0022
+     },
+     "right_specific": {
+      "with_term": 52,
+      "n": 74,
+      "share": 0.703
+     },
+     "false_specific": {
+      "with_term": 82,
+      "n": 162,
+      "share": 0.506,
+      "expected_share_at_random": 0.002
+     }
+    }
+   },
+   "per_code": {
+    "encoder": [
+     [
+      "Misassembly During Maintenance/Repair",
+      "misass*",
+      0.001,
+      0,
+      2,
+      0,
+      58,
+      0,
+      8
+     ],
+     [
+      "Loss of Threshold",
+      "thresh*",
+      0.572,
+      0,
+      0,
+      0,
+      32,
+      0,
+      1
+     ],
+     [
+      "High Sensing Threshold",
+      "sensin*",
+      0.302,
+      0,
+      0,
+      0,
+      15,
+      0,
+      3
+     ],
+     [
+      "Decoupling",
+      "decoup*",
+      0.004,
+      0,
+      0,
+      0,
+      14,
+      0,
+      27
+     ],
+     [
+      "Pacing Intermittently",
+      "pacing*",
+      0.733,
+      0,
+      0,
+      5,
+      12,
+      2,
+      2
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      "calcul*",
+      0.532,
+      0,
+      0,
+      0,
+      8,
+      0,
+      1
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      "ingred*",
+      0.002,
+      0,
+      6,
+      0,
+      8,
+      0,
+      8
+     ],
+     [
+      "Battery Problem: High Impedance",
+      "impeda*",
+      1.506,
+      0,
+      0,
+      0,
+      8,
+      3,
+      5
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      "incomp*",
+      0.337,
+      0,
+      0,
+      1,
+      7,
+      0,
+      1
+     ],
+     [
+      "Fungus in Device Environment",
+      "fungus*",
+      0.003,
+      0,
+      0,
+      0,
+      6,
+      0,
+      8
+     ],
+     [
+      "Medical Gas Supply Problem",
+      "gas",
+      0.175,
+      0,
+      0,
+      0,
+      5,
+      1,
+      4
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      "prophy*",
+      0.031,
+      0,
+      0,
+      0,
+      5,
+      0,
+      27
+     ],
+     [
+      "Intermittent Shock/Stimulation",
+      "stimul*",
+      0.763,
+      0,
+      0,
+      0,
+      4,
+      0,
+      6
+     ],
+     [
+      "Fumes or Vapors",
+      "fumes",
+      0.001,
+      0,
+      0,
+      0,
+      4,
+      0,
+      1
+     ],
+     [
+      "Ambient Temperature Problem",
+      "ambien*",
+      0.032,
+      0,
+      3,
+      0,
+      4,
+      0,
+      7
+     ],
+     [
+      "Extra Components",
+      "extra",
+      0.147,
+      1,
+      4,
+      0,
+      4,
+      5,
+      28
+     ],
+     [
+      "Biofilm coating in Device",
+      "biofil*",
+      0.007,
+      0,
+      0,
+      0,
+      3,
+      9,
+      18
+     ],
+     [
+      "Flushing Problem",
+      "flushi*",
+      0.184,
+      0,
+      0,
+      1,
+      3,
+      5,
+      17
+     ],
+     [
+      "Problem with Sterilization",
+      "steril*",
+      0.556,
+      0,
+      0,
+      2,
+      3,
+      5,
+      7
+     ],
+     [
+      "Computer System Security Problem",
+      "securi*",
+      0.059,
+      1,
+      1,
+      0,
+      3,
+      16,
+      67
+     ],
+     [
+      "Implant subsidence",
+      "subsid*",
+      0.092,
+      8,
+      8,
+      3,
+      3,
+      49,
+      63
+     ],
+     [
+      "Radiofrequency Interference (RFI)",
+      "radiof*",
+      0.071,
+      0,
+      0,
+      0,
+      2,
+      14,
+      18
+     ],
+     [
+      "Emergency Power Failure",
+      "emerge*",
+      1.585,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+     ],
+     [
+      "Difficult to Interrogate",
+      "interr*",
+      1.279,
+      0,
+      0,
+      1,
+      1,
+      8,
+      8
+     ],
+     [
+      "Power Conditioning Problem",
+      "power",
+      2.918,
+      0,
+      0,
+      0,
+      1,
+      25,
+      34
+     ],
+     [
+      "Aborted Charge",
+      "aborte*",
+      0.308,
+      0,
+      1,
+      0,
+      1,
+      0,
+      9
+     ],
+     [
+      "Data Back-Up Problem",
+      "data",
+      4.331,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      "Application Program Problem: Medication Error",
+      "applic*",
+      1.201,
+      0,
+      0,
+      0,
+      1,
+      5,
+      78
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      "tactil*",
+      0.014,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      "Powder Leak",
+      "powder*",
+      0.049,
+      0,
+      0,
+      1,
+      1,
+      2,
+      8
+     ],
+     [
+      "Failure to Reset",
+      "reset",
+      3.785,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      "Radiation Overexposure",
+      "overex*",
+      0.005,
+      0,
+      6,
+      0,
+      0,
+      1,
+      13
+     ]
+    ],
+    "gate_qwen38_27b": [
+     [
+      "Implant subsidence",
+      "subsid*",
+      0.092,
+      35,
+      36,
+      46,
+      47,
+      49,
+      63
+     ],
+     [
+      "Failure to Disinfect",
+      "disinf*",
+      0.123,
+      5,
+      5,
+      21,
+      24,
+      7,
+      10
+     ],
+     [
+      "Decoupling",
+      "decoup*",
+      0.004,
+      0,
+      1,
+      0,
+      15,
+      0,
+      27
+     ],
+     [
+      "Medical Gas Supply Problem",
+      "gas",
+      0.175,
+      1,
+      2,
+      2,
+      14,
+      1,
+      4
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      "incomp*",
+      0.337,
+      0,
+      0,
+      1,
+      12,
+      0,
+      1
+     ],
+     [
+      "Pacing Intermittently",
+      "pacing*",
+      0.733,
+      1,
+      1,
+      4,
+      9,
+      2,
+      2
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      "ingred*",
+      0.002,
+      0,
+      6,
+      0,
+      9,
+      0,
+      8
+     ],
+     [
+      "Problem with Sterilization",
+      "steril*",
+      0.556,
+      3,
+      3,
+      8,
+      9,
+      5,
+      7
+     ],
+     [
+      "Extra Components",
+      "extra",
+      0.147,
+      3,
+      11,
+      1,
+      8,
+      5,
+      28
+     ],
+     [
+      "Fumes or Vapors",
+      "fumes",
+      0.001,
+      0,
+      0,
+      1,
+      5,
+      0,
+      1
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      "prophy*",
+      0.031,
+      0,
+      0,
+      1,
+      5,
+      0,
+      27
+     ],
+     [
+      "Difficult to Interrogate",
+      "interr*",
+      1.279,
+      0,
+      0,
+      4,
+      4,
+      8,
+      8
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      "calcul*",
+      0.532,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1
+     ],
+     [
+      "Loss of Threshold",
+      "thresh*",
+      0.572,
+      0,
+      0,
+      0,
+      3,
+      0,
+      1
+     ],
+     [
+      "Overcorrection",
+      "overco*",
+      0.039,
+      0,
+      0,
+      0,
+      3,
+      1,
+      3
+     ],
+     [
+      "Battery Problem: High Impedance",
+      "impeda*",
+      1.506,
+      0,
+      0,
+      0,
+      2,
+      3,
+      5
+     ],
+     [
+      "Powder Leak",
+      "powder*",
+      0.049,
+      0,
+      0,
+      2,
+      2,
+      2,
+      8
+     ],
+     [
+      "Flushing Problem",
+      "flushi*",
+      0.184,
+      0,
+      0,
+      0,
+      1,
+      5,
+      17
+     ],
+     [
+      "Pacing Inadequately",
+      "inadeq*",
+      0.71,
+      0,
+      0,
+      0,
+      1,
+      0,
+      6
+     ],
+     [
+      "Aborted Charge",
+      "aborte*",
+      0.308,
+      0,
+      0,
+      0,
+      1,
+      0,
+      9
+     ],
+     [
+      "Application Security Problem",
+      "securi*",
+      0.059,
+      0,
+      0,
+      0,
+      1,
+      0,
+      21
+     ],
+     [
+      "Data Back-Up Problem",
+      "data",
+      4.331,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      "tactil*",
+      0.014,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      "Biofilm coating in Device",
+      "biofil*",
+      0.007,
+      3,
+      3,
+      0,
+      0,
+      9,
+      18
+     ],
+     [
+      "Failure to Reset",
+      "reset",
+      3.785,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      "Ambient Temperature Problem",
+      "ambien*",
+      0.032,
+      0,
+      2,
+      0,
+      0,
+      0,
+      7
+     ],
+     [
+      "Computer System Security Problem",
+      "securi*",
+      0.059,
+      0,
+      1,
+      0,
+      0,
+      16,
+      67
+     ],
+     [
+      "Radiation Overexposure",
+      "overex*",
+      0.005,
+      0,
+      4,
+      0,
+      0,
+      1,
+      13
+     ],
+     [
+      "Application Program Problem: Medication Error",
+      "applic*",
+      1.201,
+      0,
+      1,
+      0,
+      0,
+      5,
+      78
+     ]
+    ],
+    "gate_gemma4_31b": [
+     [
+      "Implant subsidence",
+      "subsid*",
+      0.092,
+      35,
+      35,
+      46,
+      49,
+      49,
+      63
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      "incomp*",
+      0.337,
+      0,
+      0,
+      1,
+      25,
+      0,
+      1
+     ],
+     [
+      "Failure to Disinfect",
+      "disinf*",
+      0.123,
+      5,
+      5,
+      14,
+      15,
+      7,
+      10
+     ],
+     [
+      "Computer System Security Problem",
+      "securi*",
+      0.059,
+      1,
+      2,
+      4,
+      10,
+      16,
+      67
+     ],
+     [
+      "Problem with Sterilization",
+      "steril*",
+      0.556,
+      3,
+      3,
+      9,
+      9,
+      5,
+      7
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      "ingred*",
+      0.002,
+      0,
+      6,
+      0,
+      8,
+      0,
+      8
+     ],
+     [
+      "Extra Components",
+      "extra",
+      0.147,
+      3,
+      12,
+      0,
+      7,
+      5,
+      28
+     ],
+     [
+      "Decoupling",
+      "decoup*",
+      0.004,
+      0,
+      0,
+      0,
+      6,
+      0,
+      27
+     ],
+     [
+      "Pacing Intermittently",
+      "pacing*",
+      0.733,
+      1,
+      1,
+      3,
+      5,
+      2,
+      2
+     ],
+     [
+      "Medical Gas Supply Problem",
+      "gas",
+      0.175,
+      1,
+      1,
+      1,
+      5,
+      1,
+      4
+     ],
+     [
+      "Difficult to Interrogate",
+      "interr*",
+      1.279,
+      0,
+      0,
+      4,
+      4,
+      8,
+      8
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      "calcul*",
+      0.532,
+      0,
+      0,
+      0,
+      4,
+      0,
+      1
+     ],
+     [
+      "Aborted Charge",
+      "aborte*",
+      0.308,
+      0,
+      0,
+      0,
+      3,
+      0,
+      9
+     ],
+     [
+      "Overcorrection",
+      "overco*",
+      0.039,
+      0,
+      0,
+      0,
+      3,
+      1,
+      3
+     ],
+     [
+      "Loss of Threshold",
+      "thresh*",
+      0.572,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      "tactil*",
+      0.014,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+     ],
+     [
+      "Powder Leak",
+      "powder*",
+      0.049,
+      0,
+      0,
+      2,
+      2,
+      2,
+      8
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      "prophy*",
+      0.031,
+      0,
+      0,
+      1,
+      2,
+      0,
+      27
+     ],
+     [
+      "Flushing Problem",
+      "flushi*",
+      0.184,
+      0,
+      0,
+      1,
+      1,
+      5,
+      17
+     ],
+     [
+      "Pacing Inadequately",
+      "inadeq*",
+      0.71,
+      0,
+      0,
+      0,
+      1,
+      0,
+      6
+     ],
+     [
+      "Radiofrequency Interference (RFI)",
+      "radiof*",
+      0.071,
+      0,
+      0,
+      0,
+      1,
+      14,
+      18
+     ],
+     [
+      "Fumes or Vapors",
+      "fumes",
+      0.001,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      "Low Sensing Threshold",
+      "sensin*",
+      0.302,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2
+     ],
+     [
+      "Biofilm coating in Device",
+      "biofil*",
+      0.007,
+      3,
+      3,
+      0,
+      0,
+      9,
+      18
+     ],
+     [
+      "Failure to Reset",
+      "reset",
+      3.785,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      "Ambient Temperature Problem",
+      "ambien*",
+      0.032,
+      0,
+      1,
+      0,
+      0,
+      0,
+      7
+     ],
+     [
+      "Radiation Overexposure",
+      "overex*",
+      0.005,
+      0,
+      4,
+      0,
+      0,
+      1,
+      13
+     ],
+     [
+      "Misassembly During Maintenance/Repair",
+      "misass*",
+      0.001,
+      0,
+      1,
+      0,
+      0,
+      0,
+      8
+     ]
+    ]
+   }
+  },
+  "2025": {
+   "codes_with_term": 46,
+   "rare_codes": 46,
+   "methods": {
+    "encoder": {
+     "right": {
+      "with_term": 32,
+      "n": 60,
+      "share": 0.533
+     },
+     "false": {
+      "with_term": 51,
+      "n": 236,
+      "share": 0.216,
+      "expected_share_at_random": 0.0026
+     },
+     "right_specific": {
+      "with_term": 32,
+      "n": 60,
+      "share": 0.533
+     },
+     "false_specific": {
+      "with_term": 51,
+      "n": 224,
+      "share": 0.228,
+      "expected_share_at_random": 0.0015
+     }
+    },
+    "gate_qwen38_27b": {
+     "right": {
+      "with_term": 74,
+      "n": 94,
+      "share": 0.787
+     },
+     "false": {
+      "with_term": 125,
+      "n": 229,
+      "share": 0.546,
+      "expected_share_at_random": 0.002
+     },
+     "right_specific": {
+      "with_term": 73,
+      "n": 90,
+      "share": 0.811
+     },
+     "false_specific": {
+      "with_term": 125,
+      "n": 227,
+      "share": 0.551,
+      "expected_share_at_random": 0.0019
+     }
+    },
+    "gate_gemma4_31b": {
+     "right": {
+      "with_term": 76,
+      "n": 100,
+      "share": 0.76
+     },
+     "false": {
+      "with_term": 127,
+      "n": 233,
+      "share": 0.545,
+      "expected_share_at_random": 0.002
+     },
+     "right_specific": {
+      "with_term": 75,
+      "n": 96,
+      "share": 0.781
+     },
+     "false_specific": {
+      "with_term": 127,
+      "n": 232,
+      "share": 0.547,
+      "expected_share_at_random": 0.002
+     }
+    }
+   },
+   "per_code": {
+    "encoder": [
+     [
+      "Misassembly During Maintenance/Repair",
+      "misass*",
+      0.001,
+      0,
+      5,
+      0,
+      66,
+      0,
+      17
+     ],
+     [
+      "Implant subsidence",
+      "subsid*",
+      0.104,
+      22,
+      22,
+      19,
+      22,
+      86,
+      109
+     ],
+     [
+      "Decoupling",
+      "decoup*",
+      0.004,
+      0,
+      0,
+      0,
+      17,
+      1,
+      38
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      "tactil*",
+      0.012,
+      0,
+      3,
+      0,
+      12,
+      0,
+      10
+     ],
+     [
+      "Failure to Disinfect",
+      "disinf*",
+      0.1,
+      2,
+      2,
+      8,
+      11,
+      14,
+      23
+     ],
+     [
+      "Flushing Problem",
+      "flushi*",
+      0.254,
+      0,
+      2,
+      3,
+      11,
+      2,
+      13
+     ],
+     [
+      "Pacing Intermittently",
+      "pacing*",
+      0.744,
+      0,
+      0,
+      8,
+      11,
+      7,
+      9
+     ],
+     [
+      "Problem with Sterilization",
+      "steril*",
+      0.747,
+      5,
+      5,
+      9,
+      10,
+      9,
+      13
+     ],
+     [
+      "Fungus in Device Environment",
+      "fungus*",
+      0.004,
+      0,
+      2,
+      0,
+      10,
+      0,
+      7
+     ],
+     [
+      "Biofilm coating in Device",
+      "biofil*",
+      0.003,
+      0,
+      0,
+      0,
+      8,
+      1,
+      2
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      "calcul*",
+      0.43,
+      0,
+      0,
+      1,
+      8,
+      1,
+      3
+     ],
+     [
+      "Low Sensing Threshold",
+      "sensin*",
+      0.384,
+      1,
+      2,
+      0,
+      7,
+      2,
+      6
+     ],
+     [
+      "Battery Problem: High Impedance",
+      "impeda*",
+      1.469,
+      0,
+      0,
+      0,
+      6,
+      0,
+      2
+     ],
+     [
+      "Energy Spectrum Incorrect",
+      "spectr*",
+      0.222,
+      0,
+      0,
+      0,
+      4,
+      0,
+      4
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      "ingred*",
+      0.004,
+      0,
+      4,
+      0,
+      4,
+      0,
+      6
+     ],
+     [
+      "Medical Gas Supply Problem",
+      "gas",
+      0.181,
+      0,
+      0,
+      0,
+      4,
+      1,
+      10
+     ],
+     [
+      "Radiation Overexposure",
+      "overex*",
+      0.002,
+      1,
+      2,
+      0,
+      3,
+      2,
+      6
+     ],
+     [
+      "Extra Components",
+      "extra",
+      0.134,
+      0,
+      1,
+      0,
+      3,
+      1,
+      10
+     ],
+     [
+      "Difficult to Interrogate",
+      "interr*",
+      0.897,
+      0,
+      0,
+      2,
+      2,
+      0,
+      2
+     ],
+     [
+      "Radiation Leak",
+      "radiat*",
+      0.068,
+      0,
+      0,
+      0,
+      2,
+      0,
+      3
+     ],
+     [
+      "Failure to Reset",
+      "reset",
+      2.892,
+      0,
+      0,
+      0,
+      2,
+      0,
+      5
+     ],
+     [
+      "Loss of Threshold",
+      "thresh*",
+      0.677,
+      0,
+      0,
+      0,
+      2,
+      0,
+      1
+     ],
+     [
+      "Ambient Temperature Problem",
+      "ambien*",
+      0.01,
+      0,
+      4,
+      0,
+      2,
+      0,
+      9
+     ],
+     [
+      "Failure to Back-Up",
+      "back",
+      4.052,
+      0,
+      0,
+      0,
+      1,
+      0,
+      3
+     ],
+     [
+      "Inadequate Instructions for Healthcare Professional",
+      "profes*",
+      4.458,
+      0,
+      0,
+      0,
+      1,
+      0,
+      7
+     ],
+     [
+      "Power Conditioning Problem",
+      "condit*",
+      1.977,
+      0,
+      0,
+      0,
+      1,
+      0,
+      5
+     ],
+     [
+      "Fumes or Vapors",
+      "vapors*",
+      0.0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      "High Sensing Threshold",
+      "sensin*",
+      0.384,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4
+     ],
+     [
+      "Computer System Security Problem",
+      "securi*",
+      0.048,
+      0,
+      2,
+      1,
+      1,
+      2,
+      14
+     ],
+     [
+      "Application Program Problem: Medication Error",
+      "applic*",
+      1.131,
+      0,
+      0,
+      0,
+      1,
+      5,
+      156
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      "incomp*",
+      0.2,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      "prophy*",
+      0.046,
+      1,
+      2,
+      0,
+      1,
+      1,
+      24
+     ],
+     [
+      "Pacing Inadequately",
+      "inadeq*",
+      0.619,
+      0,
+      1,
+      0,
+      0,
+      0,
+      8
+     ],
+     [
+      "Aborted Charge",
+      "aborte*",
+      0.201,
+      0,
+      1,
+      0,
+      0,
+      0,
+      15
+     ]
+    ],
+    "gate_qwen38_27b": [
+     [
+      "Implant subsidence",
+      "subsid*",
+      0.104,
+      48,
+      49,
+      66,
+      69,
+      86,
+      109
+     ],
+     [
+      "Failure to Disinfect",
+      "disinf*",
+      0.1,
+      10,
+      11,
+      27,
+      38,
+      14,
+      23
+     ],
+     [
+      "Decoupling",
+      "decoup*",
+      0.004,
+      0,
+      0,
+      0,
+      20,
+      1,
+      38
+     ],
+     [
+      "Extra Components",
+      "extra",
+      0.134,
+      1,
+      5,
+      1,
+      19,
+      1,
+      10
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      "ingred*",
+      0.004,
+      0,
+      4,
+      0,
+      13,
+      0,
+      6
+     ],
+     [
+      "Problem with Sterilization",
+      "steril*",
+      0.747,
+      6,
+      6,
+      13,
+      13,
+      9,
+      13
+     ],
+     [
+      "Pacing Intermittently",
+      "pacing*",
+      0.744,
+      3,
+      4,
+      7,
+      10,
+      7,
+      9
+     ],
+     [
+      "Flushing Problem",
+      "flushi*",
+      0.254,
+      0,
+      0,
+      0,
+      8,
+      2,
+      13
+     ],
+     [
+      "Difficult to Interrogate",
+      "interr*",
+      0.897,
+      0,
+      0,
+      8,
+      8,
+      0,
+      2
+     ],
+     [
+      "Fumes or Vapors",
+      "vapors*",
+      0.0,
+      0,
+      0,
+      0,
+      8,
+      0,
+      1
+     ],
+     [
+      "Medical Gas Supply Problem",
+      "gas",
+      0.181,
+      0,
+      1,
+      1,
+      8,
+      1,
+      10
+     ],
+     [
+      "Radiation Overexposure",
+      "overex*",
+      0.002,
+      1,
+      2,
+      0,
+      3,
+      2,
+      6
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      "prophy*",
+      0.046,
+      1,
+      1,
+      0,
+      3,
+      1,
+      24
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      "calcul*",
+      0.43,
+      0,
+      0,
+      1,
+      2,
+      1,
+      3
+     ],
+     [
+      "Biofilm coating in Device",
+      "biofil*",
+      0.003,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+     ],
+     [
+      "Low Sensing Threshold",
+      "sensin*",
+      0.384,
+      1,
+      2,
+      0,
+      1,
+      2,
+      6
+     ],
+     [
+      "Application Security Problem",
+      "securi*",
+      0.048,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+     ],
+     [
+      "Battery Problem: High Impedance",
+      "impeda*",
+      1.469,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+     ],
+     [
+      "Application Program Problem: Medication Error",
+      "applic*",
+      1.131,
+      1,
+      3,
+      0,
+      1,
+      5,
+      156
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      "tactil*",
+      0.012,
+      0,
+      0,
+      0,
+      1,
+      0,
+      10
+     ],
+     [
+      "Misassembly During Maintenance/Repair",
+      "misass*",
+      0.001,
+      0,
+      0,
+      0,
+      1,
+      0,
+      17
+     ],
+     [
+      "Failure to Reset",
+      "reset",
+      2.892,
+      0,
+      1,
+      0,
+      0,
+      0,
+      5
+     ],
+     [
+      "Aborted Charge",
+      "aborte*",
+      0.201,
+      0,
+      1,
+      0,
+      0,
+      0,
+      15
+     ],
+     [
+      "Computer System Security Problem",
+      "securi*",
+      0.048,
+      1,
+      3,
+      0,
+      0,
+      2,
+      14
+     ]
+    ],
+    "gate_gemma4_31b": [
+     [
+      "Implant subsidence",
+      "subsid*",
+      0.104,
+      48,
+      49,
+      66,
+      72,
+      86,
+      109
+     ],
+     [
+      "Failure to Disinfect",
+      "disinf*",
+      0.1,
+      10,
+      11,
+      23,
+      33,
+      14,
+      23
+     ],
+     [
+      "Extra Components",
+      "extra",
+      0.134,
+      1,
+      5,
+      1,
+      20,
+      1,
+      10
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      "ingred*",
+      0.004,
+      0,
+      4,
+      0,
+      16,
+      0,
+      6
+     ],
+     [
+      "Flushing Problem",
+      "flushi*",
+      0.254,
+      1,
+      1,
+      6,
+      15,
+      2,
+      13
+     ],
+     [
+      "Problem with Sterilization",
+      "steril*",
+      0.747,
+      7,
+      7,
+      14,
+      14,
+      9,
+      13
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      "incomp*",
+      0.2,
+      0,
+      0,
+      0,
+      12,
+      0,
+      2
+     ],
+     [
+      "Pacing Intermittently",
+      "pacing*",
+      0.744,
+      3,
+      3,
+      6,
+      8,
+      7,
+      9
+     ],
+     [
+      "Difficult to Interrogate",
+      "interr*",
+      0.897,
+      0,
+      0,
+      7,
+      7,
+      0,
+      2
+     ],
+     [
+      "Computer System Security Problem",
+      "securi*",
+      0.048,
+      1,
+      4,
+      0,
+      5,
+      2,
+      14
+     ],
+     [
+      "Medical Gas Supply Problem",
+      "gas",
+      0.181,
+      0,
+      2,
+      0,
+      5,
+      1,
+      10
+     ],
+     [
+      "Misassembly During Maintenance/Repair",
+      "misass*",
+      0.001,
+      0,
+      0,
+      0,
+      5,
+      0,
+      17
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      "calcul*",
+      0.43,
+      0,
+      0,
+      1,
+      3,
+      1,
+      3
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      "tactil*",
+      0.012,
+      0,
+      0,
+      0,
+      3,
+      0,
+      10
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      "prophy*",
+      0.046,
+      1,
+      1,
+      0,
+      3,
+      1,
+      24
+     ],
+     [
+      "Biofilm coating in Device",
+      "biofil*",
+      0.003,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2
+     ],
+     [
+      "Decoupling",
+      "decoup*",
+      0.004,
+      0,
+      0,
+      0,
+      2,
+      1,
+      38
+     ],
+     [
+      "Low Sensing Threshold",
+      "sensin*",
+      0.384,
+      1,
+      2,
+      0,
+      2,
+      2,
+      6
+     ],
+     [
+      "Radiation Overexposure",
+      "overex*",
+      0.002,
+      1,
+      2,
+      0,
+      2,
+      2,
+      6
+     ],
+     [
+      "Aborted Charge",
+      "aborte*",
+      0.201,
+      0,
+      4,
+      1,
+      1,
+      0,
+      15
+     ],
+     [
+      "Fumes or Vapors",
+      "vapors*",
+      0.0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      "Battery Problem: High Impedance",
+      "impeda*",
+      1.469,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2
+     ],
+     [
+      "Powder Leak",
+      "powder*",
+      0.05,
+      0,
+      0,
+      1,
+      1,
+      2,
+      11
+     ],
+     [
+      "Failure to Reset",
+      "reset",
+      2.892,
+      0,
+      1,
+      0,
+      0,
+      0,
+      5
+     ],
+     [
+      "Application Program Problem: Medication Error",
+      "applic*",
+      1.131,
+      1,
+      3,
+      0,
+      0,
+      5,
+      156
+     ]
+    ]
+   }
+  }
+ }
+}

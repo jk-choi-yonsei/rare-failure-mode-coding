@@ -1,0 +1,160 @@
+{
+ "version": "maude_selector_v1",
+ "date": "2026-10-27",
+ "git_head_at_fit": "cc95241",
+ "llm": "opus55",
+ "encoder": "cb full seed42 (rerun2024 outputs for 2024)",
+ "encoder_tag": "cb",
+ "n_train": 1475,
+ "features": [
+  "log_count_enc",
+  "enc_msp",
+  "log_count_zs",
+  "zs_invalid",
+  "log_count_rag",
+  "rag_invalid",
+  "nb_vote_share",
+  "nb_vote_is_rag",
+  "nb_top1_cos",
+  "agree_enc_zs",
+  "agree_enc_rag",
+  "agree_zs_rag",
+  "agree_all",
+  "log_text_len"
+ ],
+ "arms": [
+  "enc",
+  "zs",
+  "rag"
+ ],
+ "cv_macro_f1": {
+  "S1": 0.464,
+  "S2": 0.5138,
+  "S3": 0.5124
+ },
+ "cv_macro_f1_by_bin": {
+  "S1": {
+   "1-5": 0.3858,
+   "6-20": 0.5562,
+   "21-89": 0.5206,
+   "90+": 0.5103
+  },
+  "S2": {
+   "1-5": 0.4156,
+   "6-20": 0.6362,
+   "21-89": 0.5887,
+   "90+": 0.5631
+  },
+  "S3": {
+   "1-5": 0.4093,
+   "6-20": 0.617,
+   "21-89": 0.6071,
+   "90+": 0.5691
+  }
+ },
+ "cv_folds_S1": [
+  {
+   "t": 0.8,
+   "k": 1000000000
+  },
+  {
+   "t": 0.8,
+   "k": 1000000000
+  },
+  {
+   "t": 0.8,
+   "k": 1000000000
+  },
+  {
+   "t": 0.8,
+   "k": 1000000000
+  },
+  {
+   "t": 0.3,
+   "k": 1000000000
+  }
+ ],
+ "main_family": "S2",
+ "singles_2024": {
+  "enc": 0.088,
+  "zs": 0.4712,
+  "rag": 0.4728
+ },
+ "best_single_arm_2024": "rag",
+ "oracle_2024": 0.6219,
+ "notes": "folds stratified by the gold code's training-count bin; ties and invalid answers fall to enc; the hand rule's (t, k) on all 2024 items is below",
+ "S1": {
+  "t": 0.8,
+  "k": 1000000000
+ },
+ "S2_coefficients": [
+  {
+   "coef": [
+    -1.503532,
+    0.915956,
+    0.173218,
+    0.0,
+    -0.072767,
+    0.0,
+    0.144578,
+    0.003072,
+    0.279485,
+    0.484022,
+    1.169553,
+    -0.670029,
+    0.381589,
+    0.066599
+   ],
+   "intercept": -3.436989
+  },
+  {
+   "coef": [
+    -0.284147,
+    0.436038,
+    -1.039186,
+    0.0,
+    0.247359,
+    0.0,
+    0.217827,
+    0.06478,
+    0.273685,
+    0.147382,
+    -0.166672,
+    1.090151,
+    -0.080643,
+    -0.161332
+   ],
+   "intercept": 0.064092
+  },
+  {
+   "coef": [
+    -0.390471,
+    0.610182,
+    0.287671,
+    0.0,
+    -1.213677,
+    0.0,
+    0.184528,
+    0.076452,
+    0.568164,
+    -0.105606,
+    -0.078207,
+    0.437323,
+    0.03348,
+    -0.060193
+   ],
+   "intercept": 0.216879
+  }
+ ],
+ "S_cost": null,
+ "llm_rare_k_star": {
+  "k": 1000,
+  "macro_f1_2024": 0.4686
+ },
+ "choice_share_2024_oof": {
+  "enc": 0.12,
+  "zs": 0.4393,
+  "rag": 0.4407
+ },
+ "joblib_sha256": "e4137d13bb7859ec8235c6b0c9f9f3f72f8690f74c0c20af21cd17d0a49fa4a1"
+}

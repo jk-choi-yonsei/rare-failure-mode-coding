@@ -1,0 +1,56 @@
+{
+ "encoder_ce_minus_svm_tail": {
+  "description": "fine-tuning gain on the tail (vs untuned SVM)",
+  "point": 0.0005,
+  "ci95": [
+   -0.0914,
+   0.1096
+  ],
+  "excludes_zero": false
+ },
+ "encoder_ce_minus_svm_head": {
+  "description": "fine-tuning gain on the head (vs untuned SVM)",
+  "point": 0.1466,
+  "ci95": [
+   0.104,
+   0.1935
+  ],
+  "excludes_zero": true
+ },
+ "encoder_cb_minus_encoder_ce_tail": {
+  "description": "class-balancing gain on the tail",
+  "point": 0.1447,
+  "ci95": [
+   0.0447,
+   0.2119
+  ],
+  "excludes_zero": true
+ },
+ "sonnet5_minus_encoder_cb_tail": {
+  "description": "best LLM vs long-tail-optimised encoder, tail",
+  "point": 0.0763,
+  "ci95": [
+   -0.0125,
+   0.1827
+  ],
+  "excludes_zero": false
+ },
+ "haiku45_minus_encoder_cb_tail": {
+  "description": "cheapest LLM vs long-tail-optimised encoder, tail",
+  "point": 0.0588,
+  "ci95": [
+   -0.0204,
+   0.1665
+  ],
+  "excludes_zero": false
+ },
+ "encoder_cb_minus_sonnet5_head": {
+  "description": "encoder advantage on the head",
+  "point": 0.3718,
+  "ci95": [
+   0.3045,
+   0.439
+  ],
+  "excludes_zero": true
+ }
+}

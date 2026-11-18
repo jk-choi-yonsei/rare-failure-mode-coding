@@ -1,0 +1,14 @@
+{
+ "hidden": [
+  "Fail to function",
+  "Fail to open",
+  "Noise",
+  "Plugged / choked"
+ ],
+ "lr": 5e-05,
+ "val_macro_f1": 0.5668,
+ "n_known_classes": 18,
+ "n_train": 397,
+ "n_test_known": 110,
+ "n_novel": 81
+}

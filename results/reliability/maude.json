@@ -1,0 +1,1950 @@
+{
+ "note": "notes/paper-outline-v4-2026-11-16.md",
+ "corpus": "maude",
+ "encoder": "cb-large-conv_full_seed42",
+ "k": 5,
+ "years": {
+  "2026": {
+   "reports": 661160,
+   "dated_reports": 661160,
+   "encoder": {
+    "right": 32,
+    "placed": 251,
+    "modes_filed": 43,
+    "visible_modes": 9,
+    "phantom_modes": 23,
+    "phantom_modes_not_filed": 1,
+    "count_error": 565,
+    "count_error_reviewed": 520,
+    "reports_filed": 552,
+    "false": 219,
+    "review_load": 7.84,
+    "per_mode": [
+     [
+      "Application Program Problem: Medication Error",
+      78,
+      1,
+      0
+     ],
+     [
+      "Computer System Security Problem",
+      67,
+      4,
+      1
+     ],
+     [
+      "Implant subsidence",
+      63,
+      11,
+      8
+     ],
+     [
+      "Power Conditioning Problem",
+      34,
+      1,
+      0
+     ],
+     [
+      "Extra Components",
+      28,
+      8,
+      4
+     ],
+     [
+      "Decoupling",
+      27,
+      14,
+      0
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      27,
+      5,
+      0
+     ],
+     [
+      "Application Security Problem",
+      21,
+      0,
+      0
+     ],
+     [
+      "Biofilm coating in Device",
+      18,
+      3,
+      0
+     ],
+     [
+      "Radiofrequency Interference (RFI)",
+      18,
+      2,
+      0
+     ],
+     [
+      "Flushing Problem",
+      17,
+      3,
+      0
+     ],
+     [
+      "Radiation Overexposure",
+      13,
+      6,
+      6
+     ],
+     [
+      "Failure to Disinfect",
+      10,
+      0,
+      0
+     ],
+     [
+      "Inadequate Instructions for Healthcare Professional",
+      10,
+      0,
+      0
+     ],
+     [
+      "Aborted Charge",
+      9,
+      2,
+      1
+     ],
+     [
+      "Difficult to Interrogate",
+      8,
+      1,
+      0
+     ],
+     [
+      "Failure to Back-Up",
+      8,
+      0,
+      0
+     ],
+     [
+      "Fungus in Device Environment",
+      8,
+      6,
+      0
+     ],
+     [
+      "Misassembly During Maintenance/Repair",
+      8,
+      60,
+      2
+     ],
+     [
+      "Powder Leak",
+      8,
+      1,
+      0
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      8,
+      14,
+      6
+     ],
+     [
+      "Ambient Temperature Problem",
+      7,
+      7,
+      3
+     ],
+     [
+      "Problem with Sterilization",
+      7,
+      3,
+      0
+     ],
+     [
+      "Intermittent Shock/Stimulation",
+      6,
+      4,
+      0
+     ],
+     [
+      "Pacing Inadequately",
+      6,
+      0,
+      0
+     ],
+     [
+      "Battery Problem: High Impedance",
+      5,
+      8,
+      0
+     ],
+     [
+      "Inadequate Filtration Process",
+      5,
+      0,
+      0
+     ],
+     [
+      "Medical Gas Supply Problem",
+      4,
+      5,
+      0
+     ],
+     [
+      "High Sensing Threshold",
+      3,
+      15,
+      0
+     ],
+     [
+      "Overcorrection",
+      3,
+      0,
+      0
+     ],
+     [
+      "Emergency Power Failure",
+      2,
+      1,
+      0
+     ],
+     [
+      "Low Sensing Threshold",
+      2,
+      0,
+      0
+     ],
+     [
+      "Pacing Intermittently",
+      2,
+      12,
+      0
+     ],
+     [
+      "Radiation Underexposure",
+      2,
+      0,
+      0
+     ],
+     [
+      "Ventilation Problem in Device Environment",
+      2,
+      0,
+      0
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      1,
+      8,
+      0
+     ],
+     [
+      "Data Back-Up Problem",
+      1,
+      1,
+      0
+     ],
+     [
+      "Failure to Reset",
+      1,
+      1,
+      1
+     ],
+     [
+      "Fumes or Vapors",
+      1,
+      4,
+      0
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      1,
+      7,
+      0
+     ],
+     [
+      "Loss of Threshold",
+      1,
+      32,
+      0
+     ],
+     [
+      "Premature Indicator Activation",
+      1,
+      0,
+      0
+     ],
+     [
+      "Radiation Leak",
+      1,
+      0,
+      0
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      0,
+      1,
+      0
+     ]
+    ],
+    "detection": {
+     "modes_with_dates": 43,
+     "detected": 9,
+     "median_delay_days": 6.0,
+     "within_30_days": 6,
+     "within_90_days": 8,
+     "same_report_day": 4,
+     "cumulative_seen_by_month": [
+      4,
+      4,
+      7,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9
+     ],
+     "cumulative_filed_by_month": [
+      18,
+      26,
+      34,
+      38,
+      39,
+      40,
+      40,
+      41,
+      42,
+      43,
+      43,
+      43
+     ]
+    }
+   },
+   "gate": {
+    "qwen38_27b": {
+     "right": 77,
+     "placed": 257,
+     "modes_filed": 43,
+     "visible_modes": 14,
+     "phantom_modes": 15,
+     "phantom_modes_not_filed": 1,
+     "count_error": 477,
+     "count_error_reviewed": 475,
+     "reports_filed": 552,
+     "false": 180,
+     "review_load": 3.34,
+     "per_mode": [
+      [
+       "Application Program Problem: Medication Error",
+       78,
+       1,
+       1
+      ],
+      [
+       "Computer System Security Problem",
+       67,
+       1,
+       1
+      ],
+      [
+       "Implant subsidence",
+       63,
+       83,
+       36
+      ],
+      [
+       "Power Conditioning Problem",
+       34,
+       0,
+       0
+      ],
+      [
+       "Extra Components",
+       28,
+       19,
+       11
+      ],
+      [
+       "Decoupling",
+       27,
+       16,
+       1
+      ],
+      [
+       "Prophylactic removal due to corrective action",
+       27,
+       5,
+       0
+      ],
+      [
+       "Application Security Problem",
+       21,
+       1,
+       0
+      ],
+      [
+       "Biofilm coating in Device",
+       18,
+       3,
+       3
+      ],
+      [
+       "Radiofrequency Interference (RFI)",
+       18,
+       0,
+       0
+      ],
+      [
+       "Flushing Problem",
+       17,
+       1,
+       0
+      ],
+      [
+       "Radiation Overexposure",
+       13,
+       4,
+       4
+      ],
+      [
+       "Failure to Disinfect",
+       10,
+       29,
+       5
+      ],
+      [
+       "Inadequate Instructions for Healthcare Professional",
+       10,
+       0,
+       0
+      ],
+      [
+       "Aborted Charge",
+       9,
+       1,
+       0
+      ],
+      [
+       "Difficult to Interrogate",
+       8,
+       4,
+       0
+      ],
+      [
+       "Failure to Back-Up",
+       8,
+       0,
+       0
+      ],
+      [
+       "Fungus in Device Environment",
+       8,
+       0,
+       0
+      ],
+      [
+       "Misassembly During Maintenance/Repair",
+       8,
+       0,
+       0
+      ],
+      [
+       "Powder Leak",
+       8,
+       2,
+       0
+      ],
+      [
+       "Precipitate in Device or Device Ingredient",
+       8,
+       15,
+       6
+      ],
+      [
+       "Ambient Temperature Problem",
+       7,
+       2,
+       2
+      ],
+      [
+       "Problem with Sterilization",
+       7,
+       12,
+       3
+      ],
+      [
+       "Intermittent Shock/Stimulation",
+       6,
+       0,
+       0
+      ],
+      [
+       "Pacing Inadequately",
+       6,
+       1,
+       0
+      ],
+      [
+       "Battery Problem: High Impedance",
+       5,
+       2,
+       0
+      ],
+      [
+       "Inadequate Filtration Process",
+       5,
+       0,
+       0
+      ],
+      [
+       "Medical Gas Supply Problem",
+       4,
+       16,
+       2
+      ],
+      [
+       "High Sensing Threshold",
+       3,
+       0,
+       0
+      ],
+      [
+       "Overcorrection",
+       3,
+       3,
+       0
+      ],
+      [
+       "Emergency Power Failure",
+       2,
+       0,
+       0
+      ],
+      [
+       "Low Sensing Threshold",
+       2,
+       0,
+       0
+      ],
+      [
+       "Pacing Intermittently",
+       2,
+       10,
+       1
+      ],
+      [
+       "Radiation Underexposure",
+       2,
+       0,
+       0
+      ],
+      [
+       "Ventilation Problem in Device Environment",
+       2,
+       0,
+       0
+      ],
+      [
+       "Application Program Problem: Power Calculation Error",
+       1,
+       3,
+       0
+      ],
+      [
+       "Data Back-Up Problem",
+       1,
+       1,
+       0
+      ],
+      [
+       "Failure to Reset",
+       1,
+       1,
+       1
+      ],
+      [
+       "Fumes or Vapors",
+       1,
+       5,
+       0
+      ],
+      [
+       "Incomplete or Inadequate Priming",
+       1,
+       12,
+       0
+      ],
+      [
+       "Loss of Threshold",
+       1,
+       3,
+       0
+      ],
+      [
+       "Premature Indicator Activation",
+       1,
+       0,
+       0
+      ],
+      [
+       "Radiation Leak",
+       1,
+       0,
+       0
+      ],
+      [
+       "Inappropriate Tactile Prompt/Feedback",
+       0,
+       1,
+       0
+      ]
+     ],
+     "detection": {
+      "modes_with_dates": 43,
+      "detected": 14,
+      "median_delay_days": 18.0,
+      "within_30_days": 8,
+      "within_90_days": 11,
+      "same_report_day": 5,
+      "cumulative_seen_by_month": [
+       5,
+       5,
+       9,
+       11,
+       11,
+       12,
+       13,
+       13,
+       13,
+       14,
+       14,
+       14
+      ],
+      "cumulative_filed_by_month": [
+       18,
+       26,
+       34,
+       38,
+       39,
+       40,
+       40,
+       41,
+       42,
+       43,
+       43,
+       43
+      ]
+     },
+     "llm_coverage_of_shortlist": 1.0
+    },
+    "gemma4_31b": {
+     "right": 75,
+     "placed": 241,
+     "modes_filed": 43,
+     "visible_modes": 13,
+     "phantom_modes": 15,
+     "phantom_modes_not_filed": 1,
+     "count_error": 467,
+     "count_error_reviewed": 477,
+     "reports_filed": 552,
+     "false": 166,
+     "review_load": 3.21,
+     "per_mode": [
+      [
+       "Application Program Problem: Medication Error",
+       78,
+       0,
+       0
+      ],
+      [
+       "Computer System Security Problem",
+       67,
+       12,
+       2
+      ],
+      [
+       "Implant subsidence",
+       63,
+       84,
+       35
+      ],
+      [
+       "Power Conditioning Problem",
+       34,
+       0,
+       0
+      ],
+      [
+       "Extra Components",
+       28,
+       19,
+       12
+      ],
+      [
+       "Decoupling",
+       27,
+       6,
+       0
+      ],
+      [
+       "Prophylactic removal due to corrective action",
+       27,
+       2,
+       0
+      ],
+      [
+       "Application Security Problem",
+       21,
+       0,
+       0
+      ],
+      [
+       "Biofilm coating in Device",
+       18,
+       3,
+       3
+      ],
+      [
+       "Radiofrequency Interference (RFI)",
+       18,
+       1,
+       0
+      ],
+      [
+       "Flushing Problem",
+       17,
+       1,
+       0
+      ],
+      [
+       "Radiation Overexposure",
+       13,
+       4,
+       4
+      ],
+      [
+       "Failure to Disinfect",
+       10,
+       20,
+       5
+      ],
+      [
+       "Inadequate Instructions for Healthcare Professional",
+       10,
+       0,
+       0
+      ],
+      [
+       "Aborted Charge",
+       9,
+       3,
+       0
+      ],
+      [
+       "Difficult to Interrogate",
+       8,
+       4,
+       0
+      ],
+      [
+       "Failure to Back-Up",
+       8,
+       0,
+       0
+      ],
+      [
+       "Fungus in Device Environment",
+       8,
+       0,
+       0
+      ],
+      [
+       "Misassembly During Maintenance/Repair",
+       8,
+       1,
+       1
+      ],
+      [
+       "Powder Leak",
+       8,
+       2,
+       0
+      ],
+      [
+       "Precipitate in Device or Device Ingredient",
+       8,
+       14,
+       6
+      ],
+      [
+       "Ambient Temperature Problem",
+       7,
+       1,
+       1
+      ],
+      [
+       "Problem with Sterilization",
+       7,
+       12,
+       3
+      ],
+      [
+       "Intermittent Shock/Stimulation",
+       6,
+       0,
+       0
+      ],
+      [
+       "Pacing Inadequately",
+       6,
+       1,
+       0
+      ],
+      [
+       "Battery Problem: High Impedance",
+       5,
+       0,
+       0
+      ],
+      [
+       "Inadequate Filtration Process",
+       5,
+       0,
+       0
+      ],
+      [
+       "Medical Gas Supply Problem",
+       4,
+       6,
+       1
+      ],
+      [
+       "High Sensing Threshold",
+       3,
+       0,
+       0
+      ],
+      [
+       "Overcorrection",
+       3,
+       3,
+       0
+      ],
+      [
+       "Emergency Power Failure",
+       2,
+       0,
+       0
+      ],
+      [
+       "Low Sensing Threshold",
+       2,
+       1,
+       0
+      ],
+      [
+       "Pacing Intermittently",
+       2,
+       6,
+       1
+      ],
+      [
+       "Radiation Underexposure",
+       2,
+       0,
+       0
+      ],
+      [
+       "Ventilation Problem in Device Environment",
+       2,
+       0,
+       0
+      ],
+      [
+       "Application Program Problem: Power Calculation Error",
+       1,
+       4,
+       0
+      ],
+      [
+       "Data Back-Up Problem",
+       1,
+       0,
+       0
+      ],
+      [
+       "Failure to Reset",
+       1,
+       1,
+       1
+      ],
+      [
+       "Fumes or Vapors",
+       1,
+       1,
+       0
+      ],
+      [
+       "Incomplete or Inadequate Priming",
+       1,
+       25,
+       0
+      ],
+      [
+       "Loss of Threshold",
+       1,
+       2,
+       0
+      ],
+      [
+       "Premature Indicator Activation",
+       1,
+       0,
+       0
+      ],
+      [
+       "Radiation Leak",
+       1,
+       0,
+       0
+      ],
+      [
+       "Inappropriate Tactile Prompt/Feedback",
+       0,
+       2,
+       0
+      ]
+     ],
+     "detection": {
+      "modes_with_dates": 43,
+      "detected": 13,
+      "median_delay_days": 28.0,
+      "within_30_days": 7,
+      "within_90_days": 10,
+      "same_report_day": 4,
+      "cumulative_seen_by_month": [
+       5,
+       5,
+       8,
+       10,
+       10,
+       11,
+       12,
+       12,
+       12,
+       13,
+       13,
+       13
+      ],
+      "cumulative_filed_by_month": [
+       18,
+       26,
+       34,
+       38,
+       39,
+       40,
+       40,
+       41,
+       42,
+       43,
+       43,
+       43
+      ]
+     },
+     "llm_coverage_of_shortlist": 1.0
+    }
+   }
+  },
+  "2025": {
+   "reports": 762360,
+   "dated_reports": 762360,
+   "encoder": {
+    "right": 60,
+    "placed": 296,
+    "modes_filed": 46,
+    "visible_modes": 16,
+    "phantom_modes": 18,
+    "phantom_modes_not_filed": 0,
+    "count_error": 479,
+    "count_error_reviewed": 537,
+    "reports_filed": 597,
+    "false": 236,
+    "review_load": 4.93,
+    "per_mode": [
+     [
+      "Application Program Problem: Medication Error",
+      156,
+      1,
+      0
+     ],
+     [
+      "Implant subsidence",
+      109,
+      44,
+      22
+     ],
+     [
+      "Decoupling",
+      38,
+      17,
+      0
+     ],
+     [
+      "Prophylactic removal due to corrective action",
+      24,
+      3,
+      2
+     ],
+     [
+      "Failure to Disinfect",
+      23,
+      13,
+      2
+     ],
+     [
+      "Misassembly During Maintenance/Repair",
+      17,
+      71,
+      5
+     ],
+     [
+      "Aborted Charge",
+      15,
+      1,
+      1
+     ],
+     [
+      "Computer System Security Problem",
+      14,
+      3,
+      2
+     ],
+     [
+      "Flushing Problem",
+      13,
+      13,
+      2
+     ],
+     [
+      "Problem with Sterilization",
+      13,
+      15,
+      5
+     ],
+     [
+      "Powder Leak",
+      11,
+      0,
+      0
+     ],
+     [
+      "Premature Indicator Activation",
+      11,
+      0,
+      0
+     ],
+     [
+      "Extra Components",
+      10,
+      4,
+      1
+     ],
+     [
+      "Inadequate Filtration Process",
+      10,
+      0,
+      0
+     ],
+     [
+      "Inappropriate Tactile Prompt/Feedback",
+      10,
+      15,
+      3
+     ],
+     [
+      "Medical Gas Supply Problem",
+      10,
+      4,
+      0
+     ],
+     [
+      "Ambient Temperature Problem",
+      9,
+      6,
+      4
+     ],
+     [
+      "Pacing Intermittently",
+      9,
+      11,
+      0
+     ],
+     [
+      "Pacing Inadequately",
+      8,
+      1,
+      1
+     ],
+     [
+      "Fungus in Device Environment",
+      7,
+      12,
+      2
+     ],
+     [
+      "Inadequate Instructions for Healthcare Professional",
+      7,
+      1,
+      0
+     ],
+     [
+      "Low Sensing Threshold",
+      6,
+      9,
+      2
+     ],
+     [
+      "Precipitate in Device or Device Ingredient",
+      6,
+      8,
+      4
+     ],
+     [
+      "Radiation Overexposure",
+      6,
+      5,
+      2
+     ],
+     [
+      "Failure to Reset",
+      5,
+      2,
+      0
+     ],
+     [
+      "Power Conditioning Problem",
+      5,
+      1,
+      0
+     ],
+     [
+      "Energy Spectrum Incorrect",
+      4,
+      4,
+      0
+     ],
+     [
+      "High Sensing Threshold",
+      4,
+      1,
+      0
+     ],
+     [
+      "Application Program Problem: Power Calculation Error",
+      3,
+      8,
+      0
+     ],
+     [
+      "Data Back-Up Problem",
+      3,
+      0,
+      0
+     ],
+     [
+      "Failure to Back-Up",
+      3,
+      1,
+      0
+     ],
+     [
+      "Intermittent Shock/Stimulation",
+      3,
+      0,
+      0
+     ],
+     [
+      "Radiation Leak",
+      3,
+      2,
+      0
+     ],
+     [
+      "Ventilation Problem in Device Environment",
+      3,
+      0,
+      0
+     ],
+     [
+      "Application Security Problem",
+      2,
+      0,
+      0
+     ],
+     [
+      "Battery Problem: High Impedance",
+      2,
+      6,
+      0
+     ],
+     [
+      "Biofilm coating in Device",
+      2,
+      8,
+      0
+     ],
+     [
+      "Difficult to Interrogate",
+      2,
+      2,
+      0
+     ],
+     [
+      "Incomplete or Inadequate Priming",
+      2,
+      1,
+      0
+     ],
+     [
+      "Overcorrection",
+      2,
+      0,
+      0
+     ],
+     [
+      "Radiofrequency Interference (RFI)",
+      2,
+      0,
+      0
+     ],
+     [
+      "Emergency Power Failure",
+      1,
+      0,
+      0
+     ],
+     [
+      "Fumes or Vapors",
+      1,
+      1,
+      0
+     ],
+     [
+      "Loss of Threshold",
+      1,
+      2,
+      0
+     ],
+     [
+      "Problem with Removal of Enzymatic Cleaner",
+      1,
+      0,
+      0
+     ],
+     [
+      "Radiation Underexposure",
+      1,
+      0,
+      0
+     ]
+    ],
+    "detection": {
+     "modes_with_dates": 46,
+     "detected": 16,
+     "median_delay_days": 11.0,
+     "within_30_days": 9,
+     "within_90_days": 9,
+     "same_report_day": 5,
+     "cumulative_seen_by_month": [
+      6,
+      9,
+      9,
+      9,
+      10,
+      11,
+      12,
+      13,
+      13,
+      13,
+      15,
+      16
+     ],
+     "cumulative_filed_by_month": [
+      17,
+      29,
+      30,
+      32,
+      34,
+      36,
+      38,
+      39,
+      40,
+      42,
+      45,
+      46
+     ]
+    }
+   },
+   "gate": {
+    "qwen38_27b": {
+     "right": 94,
+     "placed": 323,
+     "modes_filed": 46,
+     "visible_modes": 15,
+     "phantom_modes": 9,
+     "phantom_modes_not_filed": 0,
+     "count_error": 442,
+     "count_error_reviewed": 503,
+     "reports_filed": 597,
+     "false": 229,
+     "review_load": 3.44,
+     "per_mode": [
+      [
+       "Application Program Problem: Medication Error",
+       156,
+       4,
+       3
+      ],
+      [
+       "Implant subsidence",
+       109,
+       118,
+       49
+      ],
+      [
+       "Decoupling",
+       38,
+       20,
+       0
+      ],
+      [
+       "Prophylactic removal due to corrective action",
+       24,
+       4,
+       1
+      ],
+      [
+       "Failure to Disinfect",
+       23,
+       49,
+       11
+      ],
+      [
+       "Misassembly During Maintenance/Repair",
+       17,
+       1,
+       0
+      ],
+      [
+       "Aborted Charge",
+       15,
+       1,
+       1
+      ],
+      [
+       "Computer System Security Problem",
+       14,
+       3,
+       3
+      ],
+      [
+       "Flushing Problem",
+       13,
+       8,
+       0
+      ],
+      [
+       "Problem with Sterilization",
+       13,
+       19,
+       6
+      ],
+      [
+       "Powder Leak",
+       11,
+       0,
+       0
+      ],
+      [
+       "Premature Indicator Activation",
+       11,
+       0,
+       0
+      ],
+      [
+       "Extra Components",
+       10,
+       24,
+       5
+      ],
+      [
+       "Inadequate Filtration Process",
+       10,
+       0,
+       0
+      ],
+      [
+       "Inappropriate Tactile Prompt/Feedback",
+       10,
+       1,
+       0
+      ],
+      [
+       "Medical Gas Supply Problem",
+       10,
+       9,
+       1
+      ],
+      [
+       "Ambient Temperature Problem",
+       9,
+       0,
+       0
+      ],
+      [
+       "Pacing Intermittently",
+       9,
+       14,
+       4
+      ],
+      [
+       "Pacing Inadequately",
+       8,
+       0,
+       0
+      ],
+      [
+       "Fungus in Device Environment",
+       7,
+       0,
+       0
+      ],
+      [
+       "Inadequate Instructions for Healthcare Professional",
+       7,
+       0,
+       0
+      ],
+      [
+       "Low Sensing Threshold",
+       6,
+       3,
+       2
+      ],
+      [
+       "Precipitate in Device or Device Ingredient",
+       6,
+       17,
+       4
+      ],
+      [
+       "Radiation Overexposure",
+       6,
+       5,
+       2
+      ],
+      [
+       "Failure to Reset",
+       5,
+       1,
+       1
+      ],
+      [
+       "Power Conditioning Problem",
+       5,
+       0,
+       0
+      ],
+      [
+       "Energy Spectrum Incorrect",
+       4,
+       0,
+       0
+      ],
+      [
+       "High Sensing Threshold",
+       4,
+       0,
+       0
+      ],
+      [
+       "Application Program Problem: Power Calculation Error",
+       3,
+       2,
+       0
+      ],
+      [
+       "Data Back-Up Problem",
+       3,
+       0,
+       0
+      ],
+      [
+       "Failure to Back-Up",
+       3,
+       0,
+       0
+      ],
+      [
+       "Intermittent Shock/Stimulation",
+       3,
+       0,
+       0
+      ],
+      [
+       "Radiation Leak",
+       3,
+       0,
+       0
+      ],
+      [
+       "Ventilation Problem in Device Environment",
+       3,
+       0,
+       0
+      ],
+      [
+       "Application Security Problem",
+       2,
+       1,
+       0
+      ],
+      [
+       "Battery Problem: High Impedance",
+       2,
+       1,
+       0
+      ],
+      [
+       "Biofilm coating in Device",
+       2,
+       2,
+       1
+      ],
+      [
+       "Difficult to Interrogate",
+       2,
+       8,
+       0
+      ],
+      [
+       "Incomplete or Inadequate Priming",
+       2,
+       0,
+       0
+      ],
+      [
+       "Overcorrection",
+       2,
+       0,
+       0
+      ],
+      [
+       "Radiofrequency Interference (RFI)",
+       2,
+       0,
+       0
+      ],
+      [
+       "Emergency Power Failure",
+       1,
+       0,
+       0
+      ],
+      [
+       "Fumes or Vapors",
+       1,
+       8,
+       0
+      ],
+      [
+       "Loss of Threshold",
+       1,
+       0,
+       0
+      ],
+      [
+       "Problem with Removal of Enzymatic Cleaner",
+       1,
+       0,
+       0
+      ],
+      [
+       "Radiation Underexposure",
+       1,
+       0,
+       0
+      ]
+     ],
+     "detection": {
+      "modes_with_dates": 46,
+      "detected": 15,
+      "median_delay_days": 52.0,
+      "within_30_days": 6,
+      "within_90_days": 9,
+      "same_report_day": 3,
+      "cumulative_seen_by_month": [
+       5,
+       6,
+       8,
+       8,
+       10,
+       10,
+       10,
+       11,
+       12,
+       12,
+       14,
+       15
+      ],
+      "cumulative_filed_by_month": [
+       17,
+       29,
+       30,
+       32,
+       34,
+       36,
+       38,
+       39,
+       40,
+       42,
+       45,
+       46
+      ]
+     },
+     "llm_coverage_of_shortlist": 1.0
+    },
+    "gemma4_31b": {
+     "right": 100,
+     "placed": 333,
+     "modes_filed": 46,
+     "visible_modes": 16,
+     "phantom_modes": 9,
+     "phantom_modes_not_filed": 0,
+     "count_error": 446,
+     "count_error_reviewed": 497,
+     "reports_filed": 597,
+     "false": 233,
+     "review_load": 3.33,
+     "per_mode": [
+      [
+       "Application Program Problem: Medication Error",
+       156,
+       3,
+       3
+      ],
+      [
+       "Implant subsidence",
+       109,
+       121,
+       49
+      ],
+      [
+       "Decoupling",
+       38,
+       2,
+       0
+      ],
+      [
+       "Prophylactic removal due to corrective action",
+       24,
+       4,
+       1
+      ],
+      [
+       "Failure to Disinfect",
+       23,
+       44,
+       11
+      ],
+      [
+       "Misassembly During Maintenance/Repair",
+       17,
+       5,
+       0
+      ],
+      [
+       "Aborted Charge",
+       15,
+       5,
+       4
+      ],
+      [
+       "Computer System Security Problem",
+       14,
+       9,
+       4
+      ],
+      [
+       "Flushing Problem",
+       13,
+       16,
+       1
+      ],
+      [
+       "Problem with Sterilization",
+       13,
+       21,
+       7
+      ],
+      [
+       "Powder Leak",
+       11,
+       1,
+       0
+      ],
+      [
+       "Premature Indicator Activation",
+       11,
+       0,
+       0
+      ],
+      [
+       "Extra Components",
+       10,
+       25,
+       5
+      ],
+      [
+       "Inadequate Filtration Process",
+       10,
+       0,
+       0
+      ],
+      [
+       "Inappropriate Tactile Prompt/Feedback",
+       10,
+       3,
+       0
+      ],
+      [
+       "Medical Gas Supply Problem",
+       10,
+       7,
+       2
+      ],
+      [
+       "Ambient Temperature Problem",
+       9,
+       0,
+       0
+      ],
+      [
+       "Pacing Intermittently",
+       9,
+       11,
+       3
+      ],
+      [
+       "Pacing Inadequately",
+       8,
+       0,
+       0
+      ],
+      [
+       "Fungus in Device Environment",
+       7,
+       0,
+       0
+      ],
+      [
+       "Inadequate Instructions for Healthcare Professional",
+       7,
+       0,
+       0
+      ],
+      [
+       "Low Sensing Threshold",
+       6,
+       4,
+       2
+      ],
+      [
+       "Precipitate in Device or Device Ingredient",
+       6,
+       20,
+       4
+      ],
+      [
+       "Radiation Overexposure",
+       6,
+       4,
+       2
+      ],
+      [
+       "Failure to Reset",
+       5,
+       1,
+       1
+      ],
+      [
+       "Power Conditioning Problem",
+       5,
+       0,
+       0
+      ],
+      [
+       "Energy Spectrum Incorrect",
+       4,
+       0,
+       0
+      ],
+      [
+       "High Sensing Threshold",
+       4,
+       0,
+       0
+      ],
+      [
+       "Application Program Problem: Power Calculation Error",
+       3,
+       3,
+       0
+      ],
+      [
+       "Data Back-Up Problem",
+       3,
+       0,
+       0
+      ],
+      [
+       "Failure to Back-Up",
+       3,
+       0,
+       0
+      ],
+      [
+       "Intermittent Shock/Stimulation",
+       3,
+       0,
+       0
+      ],
+      [
+       "Radiation Leak",
+       3,
+       0,
+       0
+      ],
+      [
+       "Ventilation Problem in Device Environment",
+       3,
+       0,
+       0
+      ],
+      [
+       "Application Security Problem",
+       2,
+       0,
+       0
+      ],
+      [
+       "Battery Problem: High Impedance",
+       2,
+       1,
+       0
+      ],
+      [
+       "Biofilm coating in Device",
+       2,
+       3,
+       1
+      ],
+      [
+       "Difficult to Interrogate",
+       2,
+       7,
+       0
+      ],
+      [
+       "Incomplete or Inadequate Priming",
+       2,
+       12,
+       0
+      ],
+      [
+       "Overcorrection",
+       2,
+       0,
+       0
+      ],
+      [
+       "Radiofrequency Interference (RFI)",
+       2,
+       0,
+       0
+      ],
+      [
+       "Emergency Power Failure",
+       1,
+       0,
+       0
+      ],
+      [
+       "Fumes or Vapors",
+       1,
+       1,
+       0
+      ],
+      [
+       "Loss of Threshold",
+       1,
+       0,
+       0
+      ],
+      [
+       "Problem with Removal of Enzymatic Cleaner",
+       1,
+       0,
+       0
+      ],
+      [
+       "Radiation Underexposure",
+       1,
+       0,
+       0
+      ]
+     ],
+     "detection": {
+      "modes_with_dates": 46,
+      "detected": 16,
+      "median_delay_days": 33.5,
+      "within_30_days": 8,
+      "within_90_days": 11,
+      "same_report_day": 5,
+      "cumulative_seen_by_month": [
+       6,
+       8,
+       9,
+       10,
+       12,
+       12,
+       12,
+       13,
+       14,
+       14,
+       16,
+       16
+      ],
+      "cumulative_filed_by_month": [
+       17,
+       29,
+       30,
+       32,
+       34,
+       36,
+       38,
+       39,
+       40,
+       42,
+       45,
+       46
+      ]
+     },
+     "llm_coverage_of_shortlist": 1.0
+    }
+   }
+  }
+ }
+}

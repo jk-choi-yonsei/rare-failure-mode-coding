@@ -1,0 +1,14 @@
+{
+ "hidden": [
+  "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+  "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+  "PhysicalObject/GuidingObject/HighVoltageElectricEnergyGuidingObject",
+  "PhysicalObject/InterfacingObject/LevelConnectingObject"
+ ],
+ "lr": 5e-05,
+ "val_macro_f1": 0.7725,
+ "n_known_classes": 112,
+ "n_train": 690,
+ "n_test_known": 189,
+ "n_novel": 78
+}

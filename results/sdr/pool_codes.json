@@ -1,0 +1,2025 @@
+{
+ "1001": {
+  "term": "CORRODED",
+  "imdrf": "",
+  "path": "CORRODED",
+  "depth": 1,
+  "n_train_years": 24775
+ },
+ "1002": {
+  "term": "CRACKED",
+  "imdrf": "",
+  "path": "CRACKED",
+  "depth": 1,
+  "n_train_years": 20853
+ },
+ "1003": {
+  "term": "INOPERATIVE",
+  "imdrf": "",
+  "path": "INOPERATIVE",
+  "depth": 1,
+  "n_train_years": 8277
+ },
+ "1004": {
+  "term": "DAMAGED",
+  "imdrf": "",
+  "path": "DAMAGED",
+  "depth": 1,
+  "n_train_years": 5090
+ },
+ "1005": {
+  "term": "FAILED",
+  "imdrf": "",
+  "path": "FAILED",
+  "depth": 1,
+  "n_train_years": 3202
+ },
+ "1006": {
+  "term": "FAULTED",
+  "imdrf": "",
+  "path": "FAULTED",
+  "depth": 1,
+  "n_train_years": 2314
+ },
+ "1007": {
+  "term": "BROKEN",
+  "imdrf": "",
+  "path": "BROKEN",
+  "depth": 1,
+  "n_train_years": 1971
+ },
+ "1008": {
+  "term": "DELAMINATED",
+  "imdrf": "",
+  "path": "DELAMINATED",
+  "depth": 1,
+  "n_train_years": 1893
+ },
+ "1009": {
+  "term": "LOOSE",
+  "imdrf": "",
+  "path": "LOOSE",
+  "depth": 1,
+  "n_train_years": 1819
+ },
+ "1010": {
+  "term": "DENTED",
+  "imdrf": "",
+  "path": "DENTED",
+  "depth": 1,
+  "n_train_years": 1731
+ },
+ "1011": {
+  "term": "MISSING",
+  "imdrf": "",
+  "path": "MISSING",
+  "depth": 1,
+  "n_train_years": 1724
+ },
+ "1012": {
+  "term": "LOW PRESSURE",
+  "imdrf": "",
+  "path": "LOW PRESSURE",
+  "depth": 1,
+  "n_train_years": 1647
+ },
+ "1013": {
+  "term": "OUT OF ADJUST",
+  "imdrf": "",
+  "path": "OUT OF ADJUST",
+  "depth": 1,
+  "n_train_years": 1632
+ },
+ "1014": {
+  "term": "WORN",
+  "imdrf": "",
+  "path": "WORN",
+  "depth": 1,
+  "n_train_years": 1507
+ },
+ "1015": {
+  "term": "ODOR",
+  "imdrf": "",
+  "path": "ODOR",
+  "depth": 1,
+  "n_train_years": 1499
+ },
+ "1016": {
+  "term": "FAULTY",
+  "imdrf": "",
+  "path": "FAULTY",
+  "depth": 1,
+  "n_train_years": 1423
+ },
+ "1017": {
+  "term": "LEAKING",
+  "imdrf": "",
+  "path": "LEAKING",
+  "depth": 1,
+  "n_train_years": 1271
+ },
+ "1018": {
+  "term": "PULLED",
+  "imdrf": "",
+  "path": "PULLED",
+  "depth": 1,
+  "n_train_years": 1068
+ },
+ "1019": {
+  "term": "GOUGED",
+  "imdrf": "",
+  "path": "GOUGED",
+  "depth": 1,
+  "n_train_years": 1054
+ },
+ "1020": {
+  "term": "DEFECTIVE",
+  "imdrf": "",
+  "path": "DEFECTIVE",
+  "depth": 1,
+  "n_train_years": 813
+ },
+ "1021": {
+  "term": "MALFUNCTIONED",
+  "imdrf": "",
+  "path": "MALFUNCTIONED",
+  "depth": 1,
+  "n_train_years": 754
+ },
+ "1022": {
+  "term": "DISCHARGED",
+  "imdrf": "",
+  "path": "DISCHARGED",
+  "depth": 1,
+  "n_train_years": 698
+ },
+ "1023": {
+  "term": "DETACHED",
+  "imdrf": "",
+  "path": "DETACHED",
+  "depth": 1,
+  "n_train_years": 664
+ },
+ "1024": {
+  "term": "CHAFED",
+  "imdrf": "",
+  "path": "CHAFED",
+  "depth": 1,
+  "n_train_years": 640
+ },
+ "1025": {
+  "term": "LACK OF LUBE",
+  "imdrf": "",
+  "path": "LACK OF LUBE",
+  "depth": 1,
+  "n_train_years": 520
+ },
+ "1026": {
+  "term": "WARNING MESSAGE",
+  "imdrf": "",
+  "path": "WARNING MESSAGE",
+  "depth": 1,
+  "n_train_years": 484
+ },
+ "1027": {
+  "term": "OUT OF POSITION",
+  "imdrf": "",
+  "path": "OUT OF POSITION",
+  "depth": 1,
+  "n_train_years": 456
+ },
+ "1028": {
+  "term": "UNSECURE",
+  "imdrf": "",
+  "path": "UNSECURE",
+  "depth": 1,
+  "n_train_years": 450
+ },
+ "1029": {
+  "term": "EXCESS PLAY",
+  "imdrf": "",
+  "path": "EXCESS PLAY",
+  "depth": 1,
+  "n_train_years": 394
+ },
+ "1030": {
+  "term": "FALSE ACTIVATION",
+  "imdrf": "",
+  "path": "FALSE ACTIVATION",
+  "depth": 1,
+  "n_train_years": 393
+ },
+ "1031": {
+  "term": "ILLUMINATED",
+  "imdrf": "",
+  "path": "ILLUMINATED",
+  "depth": 1,
+  "n_train_years": 382
+ },
+ "1032": {
+  "term": "DETERIORATED",
+  "imdrf": "",
+  "path": "DETERIORATED",
+  "depth": 1,
+  "n_train_years": 348
+ },
+ "1033": {
+  "term": "DEBONDED",
+  "imdrf": "",
+  "path": "DEBONDED",
+  "depth": 1,
+  "n_train_years": 328
+ },
+ "1034": {
+  "term": "UNSERVICEABLE",
+  "imdrf": "",
+  "path": "UNSERVICEABLE",
+  "depth": 1,
+  "n_train_years": 301
+ },
+ "1035": {
+  "term": "CONTAMINATED",
+  "imdrf": "",
+  "path": "CONTAMINATED",
+  "depth": 1,
+  "n_train_years": 298
+ },
+ "1036": {
+  "term": "DISCONNECTED",
+  "imdrf": "",
+  "path": "DISCONNECTED",
+  "depth": 1,
+  "n_train_years": 278
+ },
+ "1037": {
+  "term": "ELONGATED",
+  "imdrf": "",
+  "path": "ELONGATED",
+  "depth": 1,
+  "n_train_years": 264
+ },
+ "1038": {
+  "term": "DIRTY",
+  "imdrf": "",
+  "path": "DIRTY",
+  "depth": 1,
+  "n_train_years": 259
+ },
+ "1039": {
+  "term": "FALSE INDICATION",
+  "imdrf": "",
+  "path": "FALSE INDICATION",
+  "depth": 1,
+  "n_train_years": 259
+ },
+ "1040": {
+  "term": "BINDING",
+  "imdrf": "",
+  "path": "BINDING",
+  "depth": 1,
+  "n_train_years": 243
+ },
+ "1041": {
+  "term": "DISLODGED",
+  "imdrf": "",
+  "path": "DISLODGED",
+  "depth": 1,
+  "n_train_years": 220
+ },
+ "1042": {
+  "term": "STUCK",
+  "imdrf": "",
+  "path": "STUCK",
+  "depth": 1,
+  "n_train_years": 220
+ },
+ "1043": {
+  "term": "FOD",
+  "imdrf": "",
+  "path": "FOD",
+  "depth": 1,
+  "n_train_years": 216
+ },
+ "1044": {
+  "term": "PEELING",
+  "imdrf": "",
+  "path": "PEELING",
+  "depth": 1,
+  "n_train_years": 214
+ },
+ "1045": {
+  "term": "SMOKE",
+  "imdrf": "",
+  "path": "SMOKE",
+  "depth": 1,
+  "n_train_years": 208
+ },
+ "1046": {
+  "term": "INTERMITTENT",
+  "imdrf": "",
+  "path": "INTERMITTENT",
+  "depth": 1,
+  "n_train_years": 202
+ },
+ "1047": {
+  "term": "DEFORMED",
+  "imdrf": "",
+  "path": "DEFORMED",
+  "depth": 1,
+  "n_train_years": 196
+ },
+ "1048": {
+  "term": "ABNORMAL",
+  "imdrf": "",
+  "path": "ABNORMAL",
+  "depth": 1,
+  "n_train_years": 186
+ },
+ "1049": {
+  "term": "BENT",
+  "imdrf": "",
+  "path": "BENT",
+  "depth": 1,
+  "n_train_years": 183
+ },
+ "1050": {
+  "term": "SCRATCHED",
+  "imdrf": "",
+  "path": "SCRATCHED",
+  "depth": 1,
+  "n_train_years": 183
+ },
+ "1051": {
+  "term": "STICKING",
+  "imdrf": "",
+  "path": "STICKING",
+  "depth": 1,
+  "n_train_years": 173
+ },
+ "1052": {
+  "term": "UNWANTED DEPLOY",
+  "imdrf": "",
+  "path": "UNWANTED DEPLOY",
+  "depth": 1,
+  "n_train_years": 169
+ },
+ "1053": {
+  "term": "OUT OF LIMITS",
+  "imdrf": "",
+  "path": "OUT OF LIMITS",
+  "depth": 1,
+  "n_train_years": 156
+ },
+ "1054": {
+  "term": "PUNCTURED",
+  "imdrf": "",
+  "path": "PUNCTURED",
+  "depth": 1,
+  "n_train_years": 156
+ },
+ "1055": {
+  "term": "MISINSTALLED",
+  "imdrf": "",
+  "path": "MISINSTALLED",
+  "depth": 1,
+  "n_train_years": 148
+ },
+ "1056": {
+  "term": "BURNED OUT",
+  "imdrf": "",
+  "path": "BURNED OUT",
+  "depth": 1,
+  "n_train_years": 137
+ },
+ "1057": {
+  "term": "TORN",
+  "imdrf": "",
+  "path": "TORN",
+  "depth": 1,
+  "n_train_years": 130
+ },
+ "1058": {
+  "term": "NOT SEATED",
+  "imdrf": "",
+  "path": "NOT SEATED",
+  "depth": 1,
+  "n_train_years": 108
+ },
+ "1059": {
+  "term": "SHORTED",
+  "imdrf": "",
+  "path": "SHORTED",
+  "depth": 1,
+  "n_train_years": 105
+ },
+ "1060": {
+  "term": "VIBRATION",
+  "imdrf": "",
+  "path": "VIBRATION",
+  "depth": 1,
+  "n_train_years": 105
+ },
+ "1061": {
+  "term": "OUT OF TOLERANCE",
+  "imdrf": "",
+  "path": "OUT OF TOLERANCE",
+  "depth": 1,
+  "n_train_years": 103
+ },
+ "1062": {
+  "term": "SHEARED",
+  "imdrf": "",
+  "path": "SHEARED",
+  "depth": 1,
+  "n_train_years": 103
+ },
+ "1063": {
+  "term": "BURNED",
+  "imdrf": "",
+  "path": "BURNED",
+  "depth": 1,
+  "n_train_years": 98
+ },
+ "1064": {
+  "term": "OPEN",
+  "imdrf": "",
+  "path": "OPEN",
+  "depth": 1,
+  "n_train_years": 98
+ },
+ "1065": {
+  "term": "STALLED",
+  "imdrf": "",
+  "path": "STALLED",
+  "depth": 1,
+  "n_train_years": 97
+ },
+ "1066": {
+  "term": "FAULT MESSAGE",
+  "imdrf": "",
+  "path": "FAULT MESSAGE",
+  "depth": 1,
+  "n_train_years": 94
+ },
+ "1067": {
+  "term": "TRIPPED",
+  "imdrf": "",
+  "path": "TRIPPED",
+  "depth": 1,
+  "n_train_years": 92
+ },
+ "1068": {
+  "term": "NICKED",
+  "imdrf": "",
+  "path": "NICKED",
+  "depth": 1,
+  "n_train_years": 91
+ },
+ "1069": {
+  "term": "FRAYED",
+  "imdrf": "",
+  "path": "FRAYED",
+  "depth": 1,
+  "n_train_years": 89
+ },
+ "1070": {
+  "term": "BLOWN",
+  "imdrf": "",
+  "path": "BLOWN",
+  "depth": 1,
+  "n_train_years": 82
+ },
+ "1071": {
+  "term": "MECHANIC ERROR",
+  "imdrf": "",
+  "path": "MECHANIC ERROR",
+  "depth": 1,
+  "n_train_years": 82
+ },
+ "1072": {
+  "term": "CLOGGED",
+  "imdrf": "",
+  "path": "CLOGGED",
+  "depth": 1,
+  "n_train_years": 79
+ },
+ "1073": {
+  "term": "ARCED",
+  "imdrf": "",
+  "path": "ARCED",
+  "depth": 1,
+  "n_train_years": 72
+ },
+ "1074": {
+  "term": "LOW",
+  "imdrf": "",
+  "path": "LOW",
+  "depth": 1,
+  "n_train_years": 72
+ },
+ "1075": {
+  "term": "FUMES",
+  "imdrf": "",
+  "path": "FUMES",
+  "depth": 1,
+  "n_train_years": 63
+ },
+ "1076": {
+  "term": "OVERTEMP",
+  "imdrf": "",
+  "path": "OVERTEMP",
+  "depth": 1,
+  "n_train_years": 63
+ },
+ "1077": {
+  "term": "OVERHEATED",
+  "imdrf": "",
+  "path": "OVERHEATED",
+  "depth": 1,
+  "n_train_years": 62
+ },
+ "1078": {
+  "term": "WRONG PART",
+  "imdrf": "",
+  "path": "WRONG PART",
+  "depth": 1,
+  "n_train_years": 62
+ },
+ "1079": {
+  "term": "OBSTRUCTED",
+  "imdrf": "",
+  "path": "OBSTRUCTED",
+  "depth": 1,
+  "n_train_years": 61
+ },
+ "1080": {
+  "term": "SEIZED",
+  "imdrf": "",
+  "path": "SEIZED",
+  "depth": 1,
+  "n_train_years": 60
+ },
+ "1081": {
+  "term": "WARNING LIGHT",
+  "imdrf": "",
+  "path": "WARNING LIGHT",
+  "depth": 1,
+  "n_train_years": 60
+ },
+ "1082": {
+  "term": "MIGRATED",
+  "imdrf": "",
+  "path": "MIGRATED",
+  "depth": 1,
+  "n_train_years": 54
+ },
+ "1083": {
+  "term": "INCORRECT",
+  "imdrf": "",
+  "path": "INCORRECT",
+  "depth": 1,
+  "n_train_years": 53
+ },
+ "1084": {
+  "term": "MISALIGNED",
+  "imdrf": "",
+  "path": "MISALIGNED",
+  "depth": 1,
+  "n_train_years": 53
+ },
+ "1085": {
+  "term": "MAKING METAL",
+  "imdrf": "",
+  "path": "MAKING METAL",
+  "depth": 1,
+  "n_train_years": 52
+ },
+ "1086": {
+  "term": "SEPARATED",
+  "imdrf": "",
+  "path": "SEPARATED",
+  "depth": 1,
+  "n_train_years": 51
+ },
+ "1087": {
+  "term": "FIRE",
+  "imdrf": "",
+  "path": "FIRE",
+  "depth": 1,
+  "n_train_years": 49
+ },
+ "1088": {
+  "term": "HANDLER ERROR",
+  "imdrf": "",
+  "path": "HANDLER ERROR",
+  "depth": 1,
+  "n_train_years": 48
+ },
+ "1089": {
+  "term": "FAILED INSP",
+  "imdrf": "",
+  "path": "FAILED INSP",
+  "depth": 1,
+  "n_train_years": 47
+ },
+ "1090": {
+  "term": "GROUND DAMAGE",
+  "imdrf": "",
+  "path": "GROUND DAMAGE",
+  "depth": 1,
+  "n_train_years": 47
+ },
+ "1091": {
+  "term": "LOCKED",
+  "imdrf": "",
+  "path": "LOCKED",
+  "depth": 1,
+  "n_train_years": 47
+ },
+ "1092": {
+  "term": "MISREPAIRED",
+  "imdrf": "",
+  "path": "MISREPAIRED",
+  "depth": 1,
+  "n_train_years": 47
+ },
+ "1093": {
+  "term": "OVERSERVICED",
+  "imdrf": "",
+  "path": "OVERSERVICED",
+  "depth": 1,
+  "n_train_years": 46
+ },
+ "1094": {
+  "term": "OUT OF ALIGNMENT",
+  "imdrf": "",
+  "path": "OUT OF ALIGNMENT",
+  "depth": 1,
+  "n_train_years": 44
+ },
+ "1095": {
+  "term": "OUT OF RIG",
+  "imdrf": "",
+  "path": "OUT OF RIG",
+  "depth": 1,
+  "n_train_years": 41
+ },
+ "1096": {
+  "term": "BULGED",
+  "imdrf": "",
+  "path": "BULGED",
+  "depth": 1,
+  "n_train_years": 40
+ },
+ "1097": {
+  "term": "ERODED",
+  "imdrf": "",
+  "path": "ERODED",
+  "depth": 1,
+  "n_train_years": 39
+ },
+ "1098": {
+  "term": "PARTIAL DEPLOY",
+  "imdrf": "",
+  "path": "PARTIAL DEPLOY",
+  "depth": 1,
+  "n_train_years": 38
+ },
+ "1099": {
+  "term": "ACTIVATED",
+  "imdrf": "",
+  "path": "ACTIVATED",
+  "depth": 1,
+  "n_train_years": 35
+ },
+ "1100": {
+  "term": "FLUCTUATES",
+  "imdrf": "",
+  "path": "FLUCTUATES",
+  "depth": 1,
+  "n_train_years": 35
+ },
+ "1101": {
+  "term": "POWER LOSS",
+  "imdrf": "",
+  "path": "POWER LOSS",
+  "depth": 1,
+  "n_train_years": 34
+ },
+ "1102": {
+  "term": "SPARKS",
+  "imdrf": "",
+  "path": "SPARKS",
+  "depth": 1,
+  "n_train_years": 34
+ },
+ "1103": {
+  "term": "DIM",
+  "imdrf": "",
+  "path": "DIM",
+  "depth": 1,
+  "n_train_years": 31
+ },
+ "1104": {
+  "term": "JAMMED",
+  "imdrf": "",
+  "path": "JAMMED",
+  "depth": 1,
+  "n_train_years": 31
+ },
+ "1105": {
+  "term": "OUT OF BALANCE",
+  "imdrf": "",
+  "path": "OUT OF BALANCE",
+  "depth": 1,
+  "n_train_years": 30
+ },
+ "1106": {
+  "term": "EXPIRED",
+  "imdrf": "",
+  "path": "EXPIRED",
+  "depth": 1,
+  "n_train_years": 27
+ },
+ "1107": {
+  "term": "STIFF",
+  "imdrf": "",
+  "path": "STIFF",
+  "depth": 1,
+  "n_train_years": 27
+ },
+ "1108": {
+  "term": "WEAK",
+  "imdrf": "",
+  "path": "WEAK",
+  "depth": 1,
+  "n_train_years": 27
+ },
+ "1109": {
+  "term": "UNDERSERVICED",
+  "imdrf": "",
+  "path": "UNDERSERVICED",
+  "depth": 1,
+  "n_train_years": 26
+ },
+ "1110": {
+  "term": "CUT",
+  "imdrf": "",
+  "path": "CUT",
+  "depth": 1,
+  "n_train_years": 24
+ },
+ "1111": {
+  "term": "PILOT ERROR",
+  "imdrf": "",
+  "path": "PILOT ERROR",
+  "depth": 1,
+  "n_train_years": 23
+ },
+ "1112": {
+  "term": "DEGRADED",
+  "imdrf": "",
+  "path": "DEGRADED",
+  "depth": 1,
+  "n_train_years": 22
+ },
+ "1113": {
+  "term": "GROOVED",
+  "imdrf": "",
+  "path": "GROOVED",
+  "depth": 1,
+  "n_train_years": 22
+ },
+ "1114": {
+  "term": "FROZEN",
+  "imdrf": "",
+  "path": "FROZEN",
+  "depth": 1,
+  "n_train_years": 21
+ },
+ "1115": {
+  "term": "RUPTURED",
+  "imdrf": "",
+  "path": "RUPTURED",
+  "depth": 1,
+  "n_train_years": 21
+ },
+ "1116": {
+  "term": "SHUTDOWN",
+  "imdrf": "",
+  "path": "SHUTDOWN",
+  "depth": 1,
+  "n_train_years": 20
+ },
+ "1117": {
+  "term": "UNPACKED",
+  "imdrf": "",
+  "path": "UNPACKED",
+  "depth": 1,
+  "n_train_years": 20
+ },
+ "1118": {
+  "term": "DISENGAGED",
+  "imdrf": "",
+  "path": "DISENGAGED",
+  "depth": 1,
+  "n_train_years": 19
+ },
+ "1119": {
+  "term": "EMPTY",
+  "imdrf": "",
+  "path": "EMPTY",
+  "depth": 1,
+  "n_train_years": 19
+ },
+ "1120": {
+  "term": "MISLOCATED",
+  "imdrf": "",
+  "path": "MISLOCATED",
+  "depth": 1,
+  "n_train_years": 19
+ },
+ "1121": {
+  "term": "MISMANUFACTURED",
+  "imdrf": "",
+  "path": "MISMANUFACTURED",
+  "depth": 1,
+  "n_train_years": 19
+ },
+ "1122": {
+  "term": "SPLIT",
+  "imdrf": "",
+  "path": "SPLIT",
+  "depth": 1,
+  "n_train_years": 19
+ },
+ "1123": {
+  "term": "UNRELIABLE",
+  "imdrf": "",
+  "path": "UNRELIABLE",
+  "depth": 1,
+  "n_train_years": 19
+ },
+ "1124": {
+  "term": "DRAGGING",
+  "imdrf": "",
+  "path": "DRAGGING",
+  "depth": 1,
+  "n_train_years": 18
+ },
+ "1125": {
+  "term": "EXPOSED",
+  "imdrf": "",
+  "path": "EXPOSED",
+  "depth": 1,
+  "n_train_years": 18
+ },
+ "1126": {
+  "term": "MISOVERHAULED",
+  "imdrf": "",
+  "path": "MISOVERHAULED",
+  "depth": 1,
+  "n_train_years": 18
+ },
+ "1127": {
+  "term": "OUT OF RANGE",
+  "imdrf": "",
+  "path": "OUT OF RANGE",
+  "depth": 1,
+  "n_train_years": 17
+ },
+ "1128": {
+  "term": "READS LOW",
+  "imdrf": "",
+  "path": "READS LOW",
+  "depth": 1,
+  "n_train_years": 17
+ },
+ "1129": {
+  "term": "DISPLACED",
+  "imdrf": "",
+  "path": "DISPLACED",
+  "depth": 1,
+  "n_train_years": 16
+ },
+ "1130": {
+  "term": "MISROUTED",
+  "imdrf": "",
+  "path": "MISROUTED",
+  "depth": 1,
+  "n_train_years": 16
+ },
+ "1131": {
+  "term": "SLOW",
+  "imdrf": "",
+  "path": "SLOW",
+  "depth": 1,
+  "n_train_years": 16
+ },
+ "1132": {
+  "term": "BIRD INGESTION",
+  "imdrf": "",
+  "path": "BIRD INGESTION",
+  "depth": 1,
+  "n_train_years": 15
+ },
+ "1133": {
+  "term": "NOISE",
+  "imdrf": "",
+  "path": "NOISE",
+  "depth": 1,
+  "n_train_years": 15
+ },
+ "1134": {
+  "term": "STICKS",
+  "imdrf": "",
+  "path": "STICKS",
+  "depth": 1,
+  "n_train_years": 15
+ },
+ "1135": {
+  "term": "BUCKLED",
+  "imdrf": "",
+  "path": "BUCKLED",
+  "depth": 1,
+  "n_train_years": 14
+ },
+ "1136": {
+  "term": "CANNING",
+  "imdrf": "",
+  "path": "CANNING",
+  "depth": 1,
+  "n_train_years": 14
+ },
+ "1137": {
+  "term": "BLOCKED",
+  "imdrf": "",
+  "path": "BLOCKED",
+  "depth": 1,
+  "n_train_years": 13
+ },
+ "1138": {
+  "term": "BACKED OUT",
+  "imdrf": "",
+  "path": "BACKED OUT",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1139": {
+  "term": "BYPASSING",
+  "imdrf": "",
+  "path": "BYPASSING",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1140": {
+  "term": "COKED",
+  "imdrf": "",
+  "path": "COKED",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1141": {
+  "term": "DEPLETED",
+  "imdrf": "",
+  "path": "DEPLETED",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1142": {
+  "term": "ERRATIC",
+  "imdrf": "",
+  "path": "ERRATIC",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1143": {
+  "term": "NOISY",
+  "imdrf": "",
+  "path": "NOISY",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1144": {
+  "term": "SURGES",
+  "imdrf": "",
+  "path": "SURGES",
+  "depth": 1,
+  "n_train_years": 12
+ },
+ "1145": {
+  "term": "DEFLATED",
+  "imdrf": "",
+  "path": "DEFLATED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1146": {
+  "term": "DEPLOYED",
+  "imdrf": "",
+  "path": "DEPLOYED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1147": {
+  "term": "FRACTURED",
+  "imdrf": "",
+  "path": "FRACTURED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1148": {
+  "term": "FULL",
+  "imdrf": "",
+  "path": "FULL",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1149": {
+  "term": "ICED",
+  "imdrf": "",
+  "path": "ICED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1150": {
+  "term": "MELTED",
+  "imdrf": "",
+  "path": "MELTED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1151": {
+  "term": "OFF TRACK",
+  "imdrf": "",
+  "path": "OFF TRACK",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1152": {
+  "term": "SEVERED",
+  "imdrf": "",
+  "path": "SEVERED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1153": {
+  "term": "STRIPPED",
+  "imdrf": "",
+  "path": "STRIPPED",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1154": {
+  "term": "UNCONTROLLABLE",
+  "imdrf": "",
+  "path": "UNCONTROLLABLE",
+  "depth": 1,
+  "n_train_years": 11
+ },
+ "1155": {
+  "term": "DISTORTED",
+  "imdrf": "",
+  "path": "DISTORTED",
+  "depth": 1,
+  "n_train_years": 10
+ },
+ "1156": {
+  "term": "FLAMED OUT",
+  "imdrf": "",
+  "path": "FLAMED OUT",
+  "depth": 1,
+  "n_train_years": 10
+ },
+ "1157": {
+  "term": "GLAZED",
+  "imdrf": "",
+  "path": "GLAZED",
+  "depth": 1,
+  "n_train_years": 10
+ },
+ "1158": {
+  "term": "INDICATION",
+  "imdrf": "",
+  "path": "INDICATION",
+  "depth": 1,
+  "n_train_years": 10
+ },
+ "1159": {
+  "term": "INSTALLED",
+  "imdrf": "",
+  "path": "INSTALLED",
+  "depth": 1,
+  "n_train_years": 10
+ },
+ "1160": {
+  "term": "DEPARTED",
+  "imdrf": "",
+  "path": "DEPARTED",
+  "depth": 1,
+  "n_train_years": 9
+ },
+ "1161": {
+  "term": "FADED",
+  "imdrf": "",
+  "path": "FADED",
+  "depth": 1,
+  "n_train_years": 9
+ },
+ "1162": {
+  "term": "MULTIPLE FAIL",
+  "imdrf": "",
+  "path": "MULTIPLE FAIL",
+  "depth": 1,
+  "n_train_years": 9
+ },
+ "1163": {
+  "term": "WARPED",
+  "imdrf": "",
+  "path": "WARPED",
+  "depth": 1,
+  "n_train_years": 9
+ },
+ "1164": {
+  "term": "CRAZED",
+  "imdrf": "",
+  "path": "CRAZED",
+  "depth": 1,
+  "n_train_years": 8
+ },
+ "1165": {
+  "term": "DID NOT STOW",
+  "imdrf": "",
+  "path": "DID NOT STOW",
+  "depth": 1,
+  "n_train_years": 8
+ },
+ "1166": {
+  "term": "PERFORATED",
+  "imdrf": "",
+  "path": "PERFORATED",
+  "depth": 1,
+  "n_train_years": 8
+ },
+ "1167": {
+  "term": "POPPED",
+  "imdrf": "",
+  "path": "POPPED",
+  "depth": 1,
+  "n_train_years": 8
+ },
+ "1168": {
+  "term": "PRESSURE LOSS",
+  "imdrf": "",
+  "path": "PRESSURE LOSS",
+  "depth": 1,
+  "n_train_years": 8
+ },
+ "1169": {
+  "term": "BLEW OUT",
+  "imdrf": "",
+  "path": "BLEW OUT",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1170": {
+  "term": "BRINELLED",
+  "imdrf": "",
+  "path": "BRINELLED",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1171": {
+  "term": "CHIPPED",
+  "imdrf": "",
+  "path": "CHIPPED",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1172": {
+  "term": "INACCURATE",
+  "imdrf": "",
+  "path": "INACCURATE",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1173": {
+  "term": "NO INDICATION",
+  "imdrf": "",
+  "path": "NO INDICATION",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1174": {
+  "term": "PINCHED",
+  "imdrf": "",
+  "path": "PINCHED",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1175": {
+  "term": "UNLOCKED",
+  "imdrf": "",
+  "path": "UNLOCKED",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1176": {
+  "term": "VIBRATES",
+  "imdrf": "",
+  "path": "VIBRATES",
+  "depth": 1,
+  "n_train_years": 7
+ },
+ "1177": {
+  "term": "BURST",
+  "imdrf": "",
+  "path": "BURST",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1178": {
+  "term": "DESTROYED",
+  "imdrf": "",
+  "path": "DESTROYED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1179": {
+  "term": "DISCOLORED",
+  "imdrf": "",
+  "path": "DISCOLORED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1180": {
+  "term": "GALLED",
+  "imdrf": "",
+  "path": "GALLED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1181": {
+  "term": "HAZE",
+  "imdrf": "",
+  "path": "HAZE",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1182": {
+  "term": "INFLT SEPARATION",
+  "imdrf": "",
+  "path": "INFLT SEPARATION",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1183": {
+  "term": "INTERFERENCE",
+  "imdrf": "",
+  "path": "INTERFERENCE",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1184": {
+  "term": "MISCONFIGURED",
+  "imdrf": "",
+  "path": "MISCONFIGURED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1185": {
+  "term": "MISWIRED",
+  "imdrf": "",
+  "path": "MISWIRED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1186": {
+  "term": "OUT OF SEQUENCE",
+  "imdrf": "",
+  "path": "OUT OF SEQUENCE",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1187": {
+  "term": "SCORED",
+  "imdrf": "",
+  "path": "SCORED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1188": {
+  "term": "UNBALANCED",
+  "imdrf": "",
+  "path": "UNBALANCED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1189": {
+  "term": "UNDERTORQUED",
+  "imdrf": "",
+  "path": "UNDERTORQUED",
+  "depth": 1,
+  "n_train_years": 6
+ },
+ "1190": {
+  "term": "COLLAPSED",
+  "imdrf": "",
+  "path": "COLLAPSED",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1191": {
+  "term": "DISINTEGRATED",
+  "imdrf": "",
+  "path": "DISINTEGRATED",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1192": {
+  "term": "HOT",
+  "imdrf": "",
+  "path": "HOT",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1193": {
+  "term": "IMPROPER PART",
+  "imdrf": "",
+  "path": "IMPROPER PART",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1194": {
+  "term": "LOW QUANTITY",
+  "imdrf": "",
+  "path": "LOW QUANTITY",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1195": {
+  "term": "MISRIGGED",
+  "imdrf": "",
+  "path": "MISRIGGED",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1196": {
+  "term": "UNLATCHED",
+  "imdrf": "",
+  "path": "UNLATCHED",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1197": {
+  "term": "WILL NOT ARM",
+  "imdrf": "",
+  "path": "WILL NOT ARM",
+  "depth": 1,
+  "n_train_years": 5
+ },
+ "1198": {
+  "term": "AUTO SHUTDOWN",
+  "imdrf": "",
+  "path": "AUTO SHUTDOWN",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1199": {
+  "term": "BINDS",
+  "imdrf": "",
+  "path": "BINDS",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1200": {
+  "term": "CRUSHED",
+  "imdrf": "",
+  "path": "CRUSHED",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1201": {
+  "term": "GROUNDED",
+  "imdrf": "",
+  "path": "GROUNDED",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1202": {
+  "term": "OIL CONSUMPTION",
+  "imdrf": "",
+  "path": "OIL CONSUMPTION",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1203": {
+  "term": "OSCILLATES",
+  "imdrf": "",
+  "path": "OSCILLATES",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1204": {
+  "term": "OUT OF ROUND",
+  "imdrf": "",
+  "path": "OUT OF ROUND",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1205": {
+  "term": "OVERSPEED",
+  "imdrf": "",
+  "path": "OVERSPEED",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1206": {
+  "term": "PAX ERROR",
+  "imdrf": "",
+  "path": "PAX ERROR",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1207": {
+  "term": "TEMP REPAIR",
+  "imdrf": "",
+  "path": "TEMP REPAIR",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1208": {
+  "term": "UNLACED",
+  "imdrf": "",
+  "path": "UNLACED",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1209": {
+  "term": "USED",
+  "imdrf": "",
+  "path": "USED",
+  "depth": 1,
+  "n_train_years": 4
+ },
+ "1210": {
+  "term": "ASYMETRIC",
+  "imdrf": "",
+  "path": "ASYMETRIC",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1211": {
+  "term": "CARBONED",
+  "imdrf": "",
+  "path": "CARBONED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1212": {
+  "term": "COCKED",
+  "imdrf": "",
+  "path": "COCKED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1213": {
+  "term": "CREW ERROR",
+  "imdrf": "",
+  "path": "CREW ERROR",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1214": {
+  "term": "DEACTIVATED",
+  "imdrf": "",
+  "path": "DEACTIVATED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1215": {
+  "term": "ENGAGED",
+  "imdrf": "",
+  "path": "ENGAGED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1216": {
+  "term": "FATIGUED",
+  "imdrf": "",
+  "path": "FATIGUED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1217": {
+  "term": "HIGH PRESSURE",
+  "imdrf": "",
+  "path": "HIGH PRESSURE",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1218": {
+  "term": "INADEQUATE",
+  "imdrf": "",
+  "path": "INADEQUATE",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1219": {
+  "term": "LOW TENSION",
+  "imdrf": "",
+  "path": "LOW TENSION",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1220": {
+  "term": "NOT CLOSED",
+  "imdrf": "",
+  "path": "NOT CLOSED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1221": {
+  "term": "OUT OF TRACK",
+  "imdrf": "",
+  "path": "OUT OF TRACK",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1222": {
+  "term": "OUT OF TRIM",
+  "imdrf": "",
+  "path": "OUT OF TRIM",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1223": {
+  "term": "OVERPRESSURED",
+  "imdrf": "",
+  "path": "OVERPRESSURED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1224": {
+  "term": "OVERTORQUED",
+  "imdrf": "",
+  "path": "OVERTORQUED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1225": {
+  "term": "RATCHETING",
+  "imdrf": "",
+  "path": "RATCHETING",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1226": {
+  "term": "SHIFTED",
+  "imdrf": "",
+  "path": "SHIFTED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1227": {
+  "term": "TIGHT",
+  "imdrf": "",
+  "path": "TIGHT",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1228": {
+  "term": "UNSAFETIED",
+  "imdrf": "",
+  "path": "UNSAFETIED",
+  "depth": 1,
+  "n_train_years": 3
+ },
+ "1229": {
+  "term": "ACTIVATION ERROR",
+  "imdrf": "",
+  "path": "ACTIVATION ERROR",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1230": {
+  "term": "BOUND",
+  "imdrf": "",
+  "path": "BOUND",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1231": {
+  "term": "DISTRESSED",
+  "imdrf": "",
+  "path": "DISTRESSED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1232": {
+  "term": "FIRE WARNING",
+  "imdrf": "",
+  "path": "FIRE WARNING",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1233": {
+  "term": "FLAT",
+  "imdrf": "",
+  "path": "FLAT",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1234": {
+  "term": "FOULED",
+  "imdrf": "",
+  "path": "FOULED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1235": {
+  "term": "IMPROPER STOW",
+  "imdrf": "",
+  "path": "IMPROPER STOW",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1236": {
+  "term": "KINKED",
+  "imdrf": "",
+  "path": "KINKED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1237": {
+  "term": "LOW TORQUE",
+  "imdrf": "",
+  "path": "LOW TORQUE",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1238": {
+  "term": "MISMARKED",
+  "imdrf": "",
+  "path": "MISMARKED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1239": {
+  "term": "NON ISSUE",
+  "imdrf": "",
+  "path": "NON ISSUE",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1240": {
+  "term": "NOT EXTENDED",
+  "imdrf": "",
+  "path": "NOT EXTENDED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1241": {
+  "term": "NOT GROUNDED",
+  "imdrf": "",
+  "path": "NOT GROUNDED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1242": {
+  "term": "NOT OPENED",
+  "imdrf": "",
+  "path": "NOT OPENED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1243": {
+  "term": "OVERFLOW",
+  "imdrf": "",
+  "path": "OVERFLOW",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1244": {
+  "term": "READS HIGH",
+  "imdrf": "",
+  "path": "READS HIGH",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1245": {
+  "term": "RESTRICTED",
+  "imdrf": "",
+  "path": "RESTRICTED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1246": {
+  "term": "ROUGH",
+  "imdrf": "",
+  "path": "ROUGH",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1247": {
+  "term": "SHORT",
+  "imdrf": "",
+  "path": "SHORT",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1248": {
+  "term": "SLIPPED",
+  "imdrf": "",
+  "path": "SLIPPED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1249": {
+  "term": "STOPPED",
+  "imdrf": "",
+  "path": "STOPPED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1250": {
+  "term": "TANGLED",
+  "imdrf": "",
+  "path": "TANGLED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1251": {
+  "term": "TWISTED",
+  "imdrf": "",
+  "path": "TWISTED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1252": {
+  "term": "UNRESPONSIVE",
+  "imdrf": "",
+  "path": "UNRESPONSIVE",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1253": {
+  "term": "UNSTAKED",
+  "imdrf": "",
+  "path": "UNSTAKED",
+  "depth": 1,
+  "n_train_years": 2
+ },
+ "1254": {
+  "term": "AERATED",
+  "imdrf": "",
+  "path": "AERATED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1255": {
+  "term": "BURRED",
+  "imdrf": "",
+  "path": "BURRED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1256": {
+  "term": "CHATTERING",
+  "imdrf": "",
+  "path": "CHATTERING",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1257": {
+  "term": "CLOSED",
+  "imdrf": "",
+  "path": "CLOSED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1258": {
+  "term": "CLOUDY",
+  "imdrf": "",
+  "path": "CLOUDY",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1259": {
+  "term": "CORRUPTED",
+  "imdrf": "",
+  "path": "CORRUPTED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1260": {
+  "term": "CROSSED",
+  "imdrf": "",
+  "path": "CROSSED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1261": {
+  "term": "DISCOVERED",
+  "imdrf": "",
+  "path": "DISCOVERED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1262": {
+  "term": "EXPLODED",
+  "imdrf": "",
+  "path": "EXPLODED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1263": {
+  "term": "EXTINGUISHED",
+  "imdrf": "",
+  "path": "EXTINGUISHED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1264": {
+  "term": "FLAKING",
+  "imdrf": "",
+  "path": "FLAKING",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1265": {
+  "term": "FLATTENED",
+  "imdrf": "",
+  "path": "FLATTENED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1266": {
+  "term": "FRAGMENTED",
+  "imdrf": "",
+  "path": "FRAGMENTED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1267": {
+  "term": "HOT START",
+  "imdrf": "",
+  "path": "HOT START",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1268": {
+  "term": "HUNG START",
+  "imdrf": "",
+  "path": "HUNG START",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1269": {
+  "term": "HUNG UP",
+  "imdrf": "",
+  "path": "HUNG UP",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1270": {
+  "term": "MISMATCHED",
+  "imdrf": "",
+  "path": "MISMATCHED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1271": {
+  "term": "MISPINNED",
+  "imdrf": "",
+  "path": "MISPINNED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1272": {
+  "term": "MULTIPLE IND",
+  "imdrf": "",
+  "path": "MULTIPLE IND",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1273": {
+  "term": "OIL STARVATION",
+  "imdrf": "",
+  "path": "OIL STARVATION",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1274": {
+  "term": "OUT OF DATE",
+  "imdrf": "",
+  "path": "OUT OF DATE",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1275": {
+  "term": "OVER VOLTAGE",
+  "imdrf": "",
+  "path": "OVER VOLTAGE",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1276": {
+  "term": "OVERROTATED",
+  "imdrf": "",
+  "path": "OVERROTATED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1277": {
+  "term": "PRECAUTIONARY",
+  "imdrf": "",
+  "path": "PRECAUTIONARY",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1278": {
+  "term": "REVERSED",
+  "imdrf": "",
+  "path": "REVERSED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1279": {
+  "term": "RUSTED",
+  "imdrf": "",
+  "path": "RUSTED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1280": {
+  "term": "SEPARATION",
+  "imdrf": "",
+  "path": "SEPARATION",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1281": {
+  "term": "SOILED",
+  "imdrf": "",
+  "path": "SOILED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1282": {
+  "term": "STAINED",
+  "imdrf": "",
+  "path": "STAINED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1283": {
+  "term": "SWOLLEN",
+  "imdrf": "",
+  "path": "SWOLLEN",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1284": {
+  "term": "TRANSPOSED",
+  "imdrf": "",
+  "path": "TRANSPOSED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1285": {
+  "term": "UNBONDED",
+  "imdrf": "",
+  "path": "UNBONDED",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1286": {
+  "term": "UNSTABLE",
+  "imdrf": "",
+  "path": "UNSTABLE",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1287": {
+  "term": "VAPOR",
+  "imdrf": "",
+  "path": "VAPOR",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1288": {
+  "term": "VENTING",
+  "imdrf": "",
+  "path": "VENTING",
+  "depth": 1,
+  "n_train_years": 1
+ },
+ "1289": {
+  "term": "WITHIN LIMITS",
+  "imdrf": "",
+  "path": "WITHIN LIMITS",
+  "depth": 1,
+  "n_train_years": 1
+ }
+}

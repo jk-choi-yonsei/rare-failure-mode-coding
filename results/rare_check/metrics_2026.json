@@ -1,0 +1,32 @@
+{
+ "note": "notes/rare-check-2026-11-09.md",
+ "threshold": 0.85,
+ "git_head": "3ba84fb",
+ "encoder": {
+  "correct": 32.0,
+  "false": 166.0,
+  "precision": 0.1616,
+  "modes_visible": 9,
+  "accuracy_uniform": 0.6365,
+  "macro_f1_uniform": 0.4898,
+  "macro_f1_balanced": 0.4459
+ },
+ "selector": {
+  "correct": 125.0,
+  "false": 3856.1,
+  "precision": 0.0314,
+  "modes_visible": 25,
+  "accuracy_uniform": 0.636,
+  "macro_f1_uniform": 0.5311,
+  "macro_f1_balanced": 0.5037
+ },
+ "selector_with_check": {
+  "correct": 73.0,
+  "false": 500.5,
+  "precision": 0.1273,
+  "modes_visible": 15,
+  "accuracy_uniform": 0.639,
+  "macro_f1_uniform": 0.5284,
+  "macro_f1_balanced": 0.4938
+ }
+}

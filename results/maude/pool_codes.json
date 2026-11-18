@@ -1,0 +1,3299 @@
+{
+ "1153": {
+  "n": 39597,
+  "term": "Degraded",
+  "imdrf": "A0405",
+  "path": "Material Integrity Problem > Degraded",
+  "depth": 2
+ },
+ "1069": {
+  "n": 39494,
+  "term": "Break",
+  "imdrf": "A0401",
+  "path": "Material Integrity Problem > Break",
+  "depth": 2
+ },
+ "1863": {
+  "n": 28102,
+  "term": "Failure to Osseointegrate",
+  "imdrf": "A010201",
+  "path": "Patient Device Interaction Problem > Osseointegration Problem > Failure to Osseointegrate",
+  "depth": 3
+ },
+ "3283": {
+  "n": 27979,
+  "term": "Wireless Communication Problem",
+  "imdrf": "A1305",
+  "path": "Communication or Transmission Problem > Wireless Communication Problem",
+  "depth": 2
+ },
+ "2423": {
+  "n": 23260,
+  "term": "Obstruction of Flow",
+  "imdrf": "A1409",
+  "path": "Infusion or Flow Problem > Obstruction of Flow",
+  "depth": 2
+ },
+ "2981": {
+  "n": 16645,
+  "term": "Material Twisted/Bent",
+  "imdrf": "A040609",
+  "path": "Material Integrity Problem > Material Deformation > Material Twisted/Bent",
+  "depth": 3
+ },
+ "1535": {
+  "n": 16428,
+  "term": "Incorrect, Inadequate or Imprecise Result or Readings",
+  "imdrf": "A0908",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings",
+  "depth": 2
+ },
+ "1546": {
+  "n": 16408,
+  "term": "Material Rupture",
+  "imdrf": "A0412",
+  "path": "Material Integrity Problem > Material Rupture",
+  "depth": 2
+ },
+ "2907": {
+  "n": 15345,
+  "term": "Detachment of Device or Device Component",
+  "imdrf": "A0501",
+  "path": "Mechanical Problem > Detachment of Device or Device Component",
+  "depth": 2
+ },
+ "2408": {
+  "n": 15090,
+  "term": "Loss of Osseointegration",
+  "imdrf": "A010202",
+  "path": "Patient Device Interaction Problem > Osseointegration Problem > Loss of Osseointegration",
+  "depth": 3
+ },
+ "1250": {
+  "n": 14352,
+  "term": "Fluid/Blood Leak",
+  "imdrf": "A050401",
+  "path": "Mechanical Problem > Leak/Splash > Fluid/Blood Leak",
+  "depth": 3
+ },
+ "3010": {
+  "n": 13406,
+  "term": "Power Problem",
+  "imdrf": "A0708",
+  "path": "Electrical /Electronic Property Problem > Power Problem",
+  "depth": 2
+ },
+ "1384": {
+  "n": 11454,
+  "term": "Mechanical Problem",
+  "imdrf": "A05",
+  "path": "Mechanical Problem",
+  "depth": 1
+ },
+ "1183": {
+  "n": 11239,
+  "term": "No Display/Image",
+  "imdrf": "A090206",
+  "path": "Output Problem > Display or Visual Feedback Problem > No Display/Image",
+  "depth": 3
+ },
+ "1354": {
+  "n": 10442,
+  "term": "Leak/Splash",
+  "imdrf": "A0504",
+  "path": "Mechanical Problem > Leak/Splash",
+  "depth": 2
+ },
+ "1260": {
+  "n": 10246,
+  "term": "Fracture",
+  "imdrf": "A040101",
+  "path": "Material Integrity Problem > Break > Fracture",
+  "depth": 3
+ },
+ "1503": {
+  "n": 9555,
+  "term": "Pumping Stopped",
+  "imdrf": "A141204",
+  "path": "Infusion or Flow Problem > Pumping Problem > Pumping Stopped",
+  "depth": 3
+ },
+ "4048": {
+  "n": 9494,
+  "term": "Failure to Clean Adequately",
+  "imdrf": "A180301",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Clean Adequately",
+  "depth": 3
+ },
+ "4001": {
+  "n": 8073,
+  "term": "Patient Device Interaction Problem",
+  "imdrf": "A01",
+  "path": "Patient Device Interaction Problem",
+  "depth": 1
+ },
+ "2885": {
+  "n": 7795,
+  "term": "Battery Problem",
+  "imdrf": "A0705",
+  "path": "Electrical /Electronic Property Problem > Battery Problem",
+  "depth": 2
+ },
+ "1438": {
+  "n": 7385,
+  "term": "Over-Sensing",
+  "imdrf": "A070909",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Over-Sensing",
+  "depth": 3
+ },
+ "2682": {
+  "n": 6906,
+  "term": "Patient-Device Incompatibility",
+  "imdrf": "A0101",
+  "path": "Patient Device Interaction Problem > Patient-Device Incompatibility",
+  "depth": 2
+ },
+ "2923": {
+  "n": 6645,
+  "term": "Device Dislodged or Dislocated",
+  "imdrf": "A051201",
+  "path": "Mechanical Problem > Unintended Movement > Device Dislodged or Dislocated",
+  "depth": 3
+ },
+ "1291": {
+  "n": 6575,
+  "term": "High impedance",
+  "imdrf": "A072201",
+  "path": "Electrical /Electronic Property Problem > Impedance Problem > High impedance",
+  "depth": 3
+ },
+ "2896": {
+  "n": 6291,
+  "term": "Communication or Transmission Problem",
+  "imdrf": "A13",
+  "path": "Communication or Transmission Problem",
+  "depth": 1
+ },
+ "1408": {
+  "n": 6046,
+  "term": "Poor Quality Image",
+  "imdrf": "A090208",
+  "path": "Output Problem > Display or Visual Feedback Problem > Poor Quality Image",
+  "depth": 3
+ },
+ "2610": {
+  "n": 5954,
+  "term": "Failure to Fire",
+  "imdrf": "A050501",
+  "path": "Mechanical Problem > Firing Problem > Failure to Fire",
+  "depth": 3
+ },
+ "1562": {
+  "n": 5915,
+  "term": "Material Separation",
+  "imdrf": "A0413",
+  "path": "Material Integrity Problem > Material Separation",
+  "depth": 2
+ },
+ "4003": {
+  "n": 5885,
+  "term": "Migration",
+  "imdrf": "A010402",
+  "path": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+  "depth": 3
+ },
+ "1012": {
+  "n": 5786,
+  "term": "Device Alarm System",
+  "imdrf": "A1601",
+  "path": "Protective Measures Problem > Device Alarm System",
+  "depth": 2
+ },
+ "1524": {
+  "n": 5691,
+  "term": "Device Appears to Trigger Rejection",
+  "imdrf": "A010102",
+  "path": "Patient Device Interaction Problem > Patient-Device Incompatibility > Device Appears to Trigger Rejection",
+  "depth": 3
+ },
+ "1068": {
+  "n": 5467,
+  "term": "Loss of or Failure to Bond",
+  "imdrf": "A040102",
+  "path": "Material Integrity Problem > Break > Loss of or Failure to Bond",
+  "depth": 3
+ },
+ "2182": {
+  "n": 5435,
+  "term": "Insufficient Flow or Under Infusion",
+  "imdrf": "A1407",
+  "path": "Infusion or Flow Problem > Insufficient Flow or Under Infusion",
+  "depth": 2
+ },
+ "1142": {
+  "n": 5372,
+  "term": "Failure to Cycle",
+  "imdrf": "A050703",
+  "path": "Mechanical Problem > Mechanics Altered > Failure to Cycle",
+  "depth": 3
+ },
+ "2892": {
+  "n": 5233,
+  "term": "Charging Problem",
+  "imdrf": "A0706",
+  "path": "Electrical /Electronic Property Problem > Charging Problem",
+  "depth": 2
+ },
+ "4063": {
+  "n": 5119,
+  "term": "Key or Button Unresponsive/not Working",
+  "imdrf": "A150105",
+  "path": "Activation, Positioning or Separation Problem > Activation Problem > Key or Button Unresponsive/not Working",
+  "depth": 3
+ },
+ "2964": {
+  "n": 4716,
+  "term": "Infusion or Flow Problem",
+  "imdrf": "A14",
+  "path": "Infusion or Flow Problem",
+  "depth": 1
+ },
+ "2978": {
+  "n": 4715,
+  "term": "Material Integrity Problem",
+  "imdrf": "A04",
+  "path": "Material Integrity Problem",
+  "depth": 1
+ },
+ "1661": {
+  "n": 4703,
+  "term": "Under-Sensing",
+  "imdrf": "A070910",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Under-Sensing",
+  "depth": 3
+ },
+ "2917": {
+  "n": 4444,
+  "term": "Device Sensing Problem",
+  "imdrf": "A0709",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem",
+  "depth": 2
+ },
+ "1670": {
+  "n": 4385,
+  "term": "Use of Device Problem",
+  "imdrf": "A23",
+  "path": "Use of Device Problem",
+  "depth": 1
+ },
+ "1198": {
+  "n": 4262,
+  "term": "Electrical /Electronic Property Problem",
+  "imdrf": "A07",
+  "path": "Electrical /Electronic Property Problem",
+  "depth": 1
+ },
+ "4008": {
+  "n": 4228,
+  "term": "Material Split, Cut or Torn",
+  "imdrf": "A0414",
+  "path": "Material Integrity Problem > Material Split, Cut or Torn",
+  "depth": 2
+ },
+ "1112": {
+  "n": 4222,
+  "term": "Computer Software Problem",
+  "imdrf": "A11",
+  "path": "Computer Software Problem",
+  "depth": 1
+ },
+ "1261": {
+  "n": 4020,
+  "term": "Material Fragmentation",
+  "imdrf": "A040103",
+  "path": "Material Integrity Problem > Break > Material Fragmentation",
+  "depth": 3
+ },
+ "1184": {
+  "n": 3931,
+  "term": "Display or Visual Feedback Problem",
+  "imdrf": "A0902",
+  "path": "Output Problem > Display or Visual Feedback Problem",
+  "depth": 2
+ },
+ "1476": {
+  "n": 3890,
+  "term": "Failure to Power Up",
+  "imdrf": "A070803",
+  "path": "Electrical /Electronic Property Problem > Power Problem > Failure to Power Up",
+  "depth": 3
+ },
+ "3270": {
+  "n": 3822,
+  "term": "Activation Failure",
+  "imdrf": "A150101",
+  "path": "Activation, Positioning or Separation Problem > Activation Problem > Activation Failure",
+  "depth": 3
+ },
+ "1383": {
+  "n": 3422,
+  "term": "Incorrect Measurement",
+  "imdrf": "A090805",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Incorrect Measurement",
+  "depth": 3
+ },
+ "1559": {
+  "n": 3369,
+  "term": "Failure to Sense",
+  "imdrf": "A070908",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Failure to Sense",
+  "depth": 3
+ },
+ "2976": {
+  "n": 3328,
+  "term": "Material Deformation",
+  "imdrf": "A0406",
+  "path": "Material Integrity Problem > Material Deformation",
+  "depth": 2
+ },
+ "2921": {
+  "n": 3093,
+  "term": "Difficult to Open or Close",
+  "imdrf": "A051104",
+  "path": "Mechanical Problem > Structural Problem > Difficult to Open or Close",
+  "depth": 3
+ },
+ "3005": {
+  "n": 2960,
+  "term": "Output Problem",
+  "imdrf": "A09",
+  "path": "Output Problem",
+  "depth": 1
+ },
+ "2588": {
+  "n": 2935,
+  "term": "Defective Device",
+  "imdrf": "A0203",
+  "path": "Manufacturing, Packaging or Shipping Problem > Defective Device",
+  "depth": 2
+ },
+ "3026": {
+  "n": 2934,
+  "term": "Unintended Movement",
+  "imdrf": "A0512",
+  "path": "Mechanical Problem > Unintended Movement",
+  "depth": 2
+ },
+ "1089": {
+  "n": 2909,
+  "term": "Circuit Failure",
+  "imdrf": "A0721",
+  "path": "Electrical /Electronic Property Problem > Circuit Failure",
+  "depth": 2
+ },
+ "2946": {
+  "n": 2904,
+  "term": "Gas/Air Leak",
+  "imdrf": "A050402",
+  "path": "Mechanical Problem > Leak/Splash > Gas/Air Leak",
+  "depth": 3
+ },
+ "2944": {
+  "n": 2866,
+  "term": "Device Contamination with Chemical or Other Material",
+  "imdrf": "A180104",
+  "path": "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material",
+  "depth": 3
+ },
+ "1437": {
+  "n": 2860,
+  "term": "Overheating of Device",
+  "imdrf": "A1005",
+  "path": "Temperature Problem > Overheating of Device",
+  "depth": 2
+ },
+ "1013": {
+  "n": 2818,
+  "term": "False Alarm",
+  "imdrf": "A160105",
+  "path": "Protective Measures Problem > Device Alarm System > False Alarm",
+  "depth": 3
+ },
+ "1311": {
+  "n": 2795,
+  "term": "Excess Flow or Over-Infusion",
+  "imdrf": "A1402",
+  "path": "Infusion or Flow Problem > Excess Flow or Over-Infusion",
+  "depth": 2
+ },
+ "2457": {
+  "n": 2765,
+  "term": "High Test Results",
+  "imdrf": "A090809",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > High Test Results",
+  "depth": 3
+ },
+ "1057": {
+  "n": 2759,
+  "term": "Premature Discharge of Battery",
+  "imdrf": "A070504",
+  "path": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+  "depth": 3
+ },
+ "2988": {
+  "n": 2670,
+  "term": "Naturally Worn",
+  "imdrf": "A040507",
+  "path": "Material Integrity Problem > Degraded > Naturally Worn",
+  "depth": 3
+ },
+ "2292": {
+  "n": 2607,
+  "term": "Defective Component",
+  "imdrf": "A0202",
+  "path": "Manufacturing, Packaging or Shipping Problem > Defective Component",
+  "depth": 2
+ },
+ "1158": {
+  "n": 2555,
+  "term": "Positioning Failure",
+  "imdrf": "A150201",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Positioning Failure",
+  "depth": 3
+ },
+ "2919": {
+  "n": 2437,
+  "term": "Device-Device Incompatibility",
+  "imdrf": "A1702",
+  "path": "Compatibility Problem > Device-Device Incompatibility",
+  "depth": 2
+ },
+ "1135": {
+  "n": 2430,
+  "term": "Crack",
+  "imdrf": "A0404",
+  "path": "Material Integrity Problem > Crack",
+  "depth": 2
+ },
+ "4027": {
+  "n": 2390,
+  "term": "Radiation Output Failure",
+  "imdrf": "A090501",
+  "path": "Output Problem > Radiation Output Problem > Radiation Output Failure",
+  "depth": 3
+ },
+ "4012": {
+  "n": 2328,
+  "term": "Physical Resistance/Sticking",
+  "imdrf": "A0509",
+  "path": "Mechanical Problem > Physical Resistance/Sticking",
+  "depth": 2
+ },
+ "2460": {
+  "n": 2307,
+  "term": "Low Readings",
+  "imdrf": "A090808",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Low Readings",
+  "depth": 3
+ },
+ "4013": {
+  "n": 2237,
+  "term": "Sharp Edges",
+  "imdrf": "A051102",
+  "path": "Mechanical Problem > Structural Problem > Sharp Edges",
+  "depth": 3
+ },
+ "1454": {
+  "n": 2187,
+  "term": "Peeled/Delaminated",
+  "imdrf": "A040506",
+  "path": "Material Integrity Problem > Degraded > Peeled/Delaminated",
+  "depth": 3
+ },
+ "1316": {
+  "n": 2162,
+  "term": "Difficult to Insert",
+  "imdrf": "A150206",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Difficult to Insert",
+  "depth": 3
+ },
+ "2281": {
+  "n": 2137,
+  "term": "Visual Prompts will not Clear",
+  "imdrf": "A090209",
+  "path": "Output Problem > Display or Visual Feedback Problem > Visual Prompts will not Clear",
+  "depth": 3
+ },
+ "1227": {
+  "n": 2112,
+  "term": "False Positive Result",
+  "imdrf": "A090804",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > False Positive Result",
+  "depth": 3
+ },
+ "2459": {
+  "n": 2091,
+  "term": "High Readings",
+  "imdrf": "A090807",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > High Readings",
+  "depth": 3
+ },
+ "2906": {
+  "n": 2029,
+  "term": "Activation, Positioning or Separation Problem",
+  "imdrf": "A15",
+  "path": "Activation, Positioning or Separation Problem",
+  "depth": 1
+ },
+ "1071": {
+  "n": 2017,
+  "term": "Thermal Decomposition of Device",
+  "imdrf": "A1006",
+  "path": "Temperature Problem > Thermal Decomposition of Device",
+  "depth": 2
+ },
+ "2587": {
+  "n": 2010,
+  "term": "Failure to Cut",
+  "imdrf": "A050702",
+  "path": "Mechanical Problem > Mechanics Altered > Failure to Cut",
+  "depth": 3
+ },
+ "4019": {
+  "n": 1949,
+  "term": "Unexpected Shutdown",
+  "imdrf": "A0719",
+  "path": "Electrical /Electronic Property Problem > Unexpected Shutdown",
+  "depth": 2
+ },
+ "3266": {
+  "n": 1900,
+  "term": "High Capture Threshold",
+  "imdrf": "A070102",
+  "path": "Electrical /Electronic Property Problem > Capturing Problem > High Capture Threshold",
+  "depth": 3
+ },
+ "1395": {
+  "n": 1867,
+  "term": "Migration or Expulsion of Device",
+  "imdrf": "A0104",
+  "path": "Patient Device Interaction Problem > Migration or Expulsion of Device",
+  "depth": 2
+ },
+ "1631": {
+  "n": 1844,
+  "term": "Unexpected Therapeutic Results",
+  "imdrf": "A0909",
+  "path": "Output Problem > Unexpected Therapeutic Results",
+  "depth": 2
+ },
+ "1081": {
+  "n": 1823,
+  "term": "Failure to Capture",
+  "imdrf": "A070101",
+  "path": "Electrical /Electronic Property Problem > Capturing Problem > Failure to Capture",
+  "depth": 3
+ },
+ "2017": {
+  "n": 1782,
+  "term": "Improper or Incorrect Procedure or Method",
+  "imdrf": "A2303",
+  "path": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+  "depth": 2
+ },
+ "1504": {
+  "n": 1773,
+  "term": "Material Puncture/Hole",
+  "imdrf": "A041001",
+  "path": "Material Integrity Problem > Material Perforation > Material Puncture/Hole",
+  "depth": 3
+ },
+ "2954": {
+  "n": 1714,
+  "term": "Improper Flow or Infusion",
+  "imdrf": "A1405",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion",
+  "depth": 2
+ },
+ "2458": {
+  "n": 1714,
+  "term": "Low Test Results",
+  "imdrf": "A090810",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Low Test Results",
+  "depth": 3
+ },
+ "2900": {
+  "n": 1672,
+  "term": "Connection Problem",
+  "imdrf": "A12",
+  "path": "Connection Problem",
+  "depth": 1
+ },
+ "1435": {
+  "n": 1599,
+  "term": "No Device Output",
+  "imdrf": "A0907",
+  "path": "Output Problem > No Device Output",
+  "depth": 2
+ },
+ "1583": {
+  "n": 1598,
+  "term": "Inadequacy of Device Shape and/or Size",
+  "imdrf": "A010103",
+  "path": "Patient Device Interaction Problem > Patient-Device Incompatibility > Inadequacy of Device Shape and/or Size",
+  "depth": 3
+ },
+ "2407": {
+  "n": 1592,
+  "term": "Dull, Blunt",
+  "imdrf": "A020101",
+  "path": "Manufacturing, Packaging or Shipping Problem > Product Quality Problem > Dull, Blunt",
+  "depth": 3
+ },
+ "2983": {
+  "n": 1577,
+  "term": "Mechanical Jam",
+  "imdrf": "A0506",
+  "path": "Mechanical Problem > Mechanical Jam",
+  "depth": 2
+ },
+ "1439": {
+  "n": 1571,
+  "term": "Pacing Problem",
+  "imdrf": "A0712",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem",
+  "depth": 2
+ },
+ "1233": {
+  "n": 1550,
+  "term": "Filling Problem",
+  "imdrf": "A1403",
+  "path": "Infusion or Flow Problem > Filling Problem",
+  "depth": 2
+ },
+ "2303": {
+  "n": 1548,
+  "term": "Microbial Contamination of Device",
+  "imdrf": "A180105",
+  "path": "Contamination /Decontamination Problem > Contamination > Microbial Contamination of Device",
+  "depth": 3
+ },
+ "4062": {
+  "n": 1540,
+  "term": "Air/Gas in Device",
+  "imdrf": "A1415",
+  "path": "Infusion or Flow Problem > Air/Gas in Device",
+  "depth": 2
+ },
+ "2579": {
+  "n": 1471,
+  "term": "Failure to Form Staple",
+  "imdrf": "A050704",
+  "path": "Mechanical Problem > Mechanics Altered > Failure to Form Staple",
+  "depth": 3
+ },
+ "2616": {
+  "n": 1465,
+  "term": "Malposition of Device",
+  "imdrf": "A150202",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Malposition of Device",
+  "depth": 3
+ },
+ "4002": {
+  "n": 1457,
+  "term": "Loosening of Implant Not Related to Bone-Ingrowth",
+  "imdrf": "A0103",
+  "path": "Patient Device Interaction Problem > Loosening of Implant Not Related to Bone-Ingrowth",
+  "depth": 2
+ },
+ "1484": {
+  "n": 1433,
+  "term": "Premature Activation",
+  "imdrf": "A150103",
+  "path": "Activation, Positioning or Separation Problem > Activation Problem > Premature Activation",
+  "depth": 3
+ },
+ "1480": {
+  "n": 1431,
+  "term": "Premature End-of-Life Indicator",
+  "imdrf": "A160602",
+  "path": "Protective Measures Problem > Premature Indicator Activation > Premature End-of-Life Indicator",
+  "depth": 3
+ },
+ "2950": {
+  "n": 1428,
+  "term": "Impedance Problem",
+  "imdrf": "A0722",
+  "path": "Electrical /Electronic Property Problem > Impedance Problem",
+  "depth": 2
+ },
+ "1528": {
+  "n": 1418,
+  "term": "Difficult to Remove",
+  "imdrf": "A150207",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Difficult to Remove",
+  "depth": 3
+ },
+ "1019": {
+  "n": 1396,
+  "term": "No Audible Alarm",
+  "imdrf": "A160102",
+  "path": "Protective Measures Problem > Device Alarm System > No Audible Alarm",
+  "depth": 3
+ },
+ "2340": {
+  "n": 1387,
+  "term": "Failure to Infuse",
+  "imdrf": "A140802",
+  "path": "Infusion or Flow Problem > No Flow > Failure to Infuse",
+  "depth": 3
+ },
+ "2524": {
+  "n": 1373,
+  "term": "Failure to Advance",
+  "imdrf": "A150204",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Failure to Advance",
+  "depth": 3
+ },
+ "2880": {
+  "n": 1329,
+  "term": "Application Program Problem",
+  "imdrf": "A1102",
+  "path": "Computer Software Problem > Application Program Problem",
+  "depth": 2
+ },
+ "1036": {
+  "n": 1311,
+  "term": "Signal Artifact/Noise",
+  "imdrf": "A090801",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Signal Artifact/Noise",
+  "depth": 3
+ },
+ "1225": {
+  "n": 1285,
+  "term": "False Negative Result",
+  "imdrf": "A090803",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > False Negative Result",
+  "depth": 3
+ },
+ "1248": {
+  "n": 1275,
+  "term": "Restricted Flow rate",
+  "imdrf": "A140508",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Restricted Flow rate",
+  "depth": 3
+ },
+ "2338": {
+  "n": 1249,
+  "term": "Failure to Deliver",
+  "imdrf": "A140801",
+  "path": "Infusion or Flow Problem > No Flow > Failure to Deliver",
+  "depth": 3
+ },
+ "3009": {
+  "n": 1228,
+  "term": "Positioning Problem",
+  "imdrf": "A1502",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem",
+  "depth": 2
+ },
+ "1120": {
+  "n": 1225,
+  "term": "Contamination",
+  "imdrf": "A1801",
+  "path": "Contamination /Decontamination Problem > Contamination",
+  "depth": 2
+ },
+ "2937": {
+  "n": 1223,
+  "term": "Failure of Device to Self-Test",
+  "imdrf": "A1603",
+  "path": "Protective Measures Problem > Failure of Device to Self-Test",
+  "depth": 2
+ },
+ "1131": {
+  "n": 1221,
+  "term": "Corroded",
+  "imdrf": "A040502",
+  "path": "Material Integrity Problem > Degraded > Corroded",
+  "depth": 3
+ },
+ "3023": {
+  "n": 1214,
+  "term": "Therapeutic or Diagnostic Output Failure",
+  "imdrf": "A090406",
+  "path": "Output Problem > Energy Output Problem > Therapeutic or Diagnostic Output Failure",
+  "depth": 3
+ },
+ "2285": {
+  "n": 1163,
+  "term": "Low impedance",
+  "imdrf": "A072202",
+  "path": "Electrical /Electronic Property Problem > Impedance Problem > Low impedance",
+  "depth": 3
+ },
+ "4066": {
+  "n": 1158,
+  "term": "Device Stenosis",
+  "imdrf": "A0106",
+  "path": "Patient Device Interaction Problem > Device Stenosis",
+  "depth": 2
+ },
+ "1574": {
+  "n": 1136,
+  "term": "Inappropriate/Inadequate Shock/Stimulation",
+  "imdrf": "A071302",
+  "path": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Inappropriate/Inadequate Shock/Stimulation",
+  "depth": 3
+ },
+ "1310": {
+  "n": 1128,
+  "term": "Inflation Problem",
+  "imdrf": "A1406",
+  "path": "Infusion or Flow Problem > Inflation Problem",
+  "depth": 2
+ },
+ "1430": {
+  "n": 1124,
+  "term": "Unintended System Motion",
+  "imdrf": "A051206",
+  "path": "Mechanical Problem > Unintended Movement > Unintended System Motion",
+  "depth": 3
+ },
+ "1094": {
+  "n": 1112,
+  "term": "Complete Blockage",
+  "imdrf": "A140901",
+  "path": "Infusion or Flow Problem > Obstruction of Flow > Complete Blockage",
+  "depth": 3
+ },
+ "1212": {
+  "n": 1109,
+  "term": "Entrapment of Device",
+  "imdrf": "A150208",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Entrapment of Device",
+  "depth": 3
+ },
+ "1431": {
+  "n": 1102,
+  "term": "Energy Output Problem",
+  "imdrf": "A0904",
+  "path": "Output Problem > Energy Output Problem",
+  "depth": 2
+ },
+ "3003": {
+  "n": 1089,
+  "term": "Osseointegration Problem",
+  "imdrf": "A0102",
+  "path": "Patient Device Interaction Problem > Osseointegration Problem",
+  "depth": 2
+ },
+ "1371": {
+  "n": 1081,
+  "term": "Loose or Intermittent Connection",
+  "imdrf": "A1205",
+  "path": "Connection Problem > Loose or Intermittent Connection",
+  "depth": 2
+ },
+ "1091": {
+  "n": 1072,
+  "term": "Device Reprocessing Problem",
+  "imdrf": "A1803",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+  "depth": 2
+ },
+ "1536": {
+  "n": 1068,
+  "term": "Retraction Problem",
+  "imdrf": "A0510",
+  "path": "Mechanical Problem > Retraction Problem",
+  "depth": 2
+ },
+ "2959": {
+  "n": 1046,
+  "term": "Inappropriate or Unexpected Reset",
+  "imdrf": "A160503",
+  "path": "Protective Measures Problem > Reset Problem > Inappropriate or Unexpected Reset",
+  "depth": 3
+ },
+ "1171": {
+  "n": 1034,
+  "term": "Disconnection",
+  "imdrf": "A1203",
+  "path": "Connection Problem > Disconnection",
+  "depth": 2
+ },
+ "1516": {
+  "n": 1011,
+  "term": "Unable to Obtain Readings",
+  "imdrf": "A090811",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Unable to Obtain Readings",
+  "depth": 3
+ },
+ "2911": {
+  "n": 994,
+  "term": "Device Markings/Labelling Problem",
+  "imdrf": "A2101",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem",
+  "depth": 2
+ },
+ "1581": {
+  "n": 981,
+  "term": "Failure to Read Input Signal",
+  "imdrf": "A1301",
+  "path": "Communication or Transmission Problem > Failure to Read Input Signal",
+  "depth": 2
+ },
+ "1543": {
+  "n": 970,
+  "term": "Incorrect Interpretation of Signal",
+  "imdrf": "A070912",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Incorrect Interpretation of Signal",
+  "depth": 3
+ },
+ "2991": {
+  "n": 938,
+  "term": "No Flow",
+  "imdrf": "A1408",
+  "path": "Infusion or Flow Problem > No Flow",
+  "depth": 2
+ },
+ "4015": {
+  "n": 937,
+  "term": "Complete Loss of Power",
+  "imdrf": "A070801",
+  "path": "Electrical /Electronic Property Problem > Power Problem > Complete Loss of Power",
+  "depth": 3
+ },
+ "1211": {
+  "n": 922,
+  "term": "Failure to Deliver Energy",
+  "imdrf": "A090402",
+  "path": "Output Problem > Energy Output Problem > Failure to Deliver Energy",
+  "depth": 3
+ },
+ "2591": {
+  "n": 907,
+  "term": "Device Displays Incorrect Message",
+  "imdrf": "A090201",
+  "path": "Output Problem > Display or Visual Feedback Problem > Device Displays Incorrect Message",
+  "depth": 3
+ },
+ "1332": {
+  "n": 906,
+  "term": "Failure to Interrogate",
+  "imdrf": "A071102",
+  "path": "Electrical /Electronic Property Problem > Interrogation Problem > Failure to Interrogate",
+  "depth": 3
+ },
+ "2891": {
+  "n": 905,
+  "term": "Capturing Problem",
+  "imdrf": "A0701",
+  "path": "Electrical /Electronic Property Problem > Capturing Problem",
+  "depth": 2
+ },
+ "4031": {
+  "n": 905,
+  "term": "Application Program Freezes or Fails to Launch",
+  "imdrf": "A110201",
+  "path": "Computer Software Problem > Application Program Problem > Application Program Freezes or Fails to Launch",
+  "depth": 3
+ },
+ "1074": {
+  "n": 899,
+  "term": "Burst Container or Vessel",
+  "imdrf": "A0402",
+  "path": "Material Integrity Problem > Burst Container or Vessel",
+  "depth": 2
+ },
+ "1182": {
+  "n": 878,
+  "term": "Erratic or Intermittent Display",
+  "imdrf": "A090203",
+  "path": "Output Problem > Display or Visual Feedback Problem > Erratic or Intermittent Display",
+  "depth": 3
+ },
+ "3016": {
+  "n": 864,
+  "term": "Pumping Problem",
+  "imdrf": "A1412",
+  "path": "Infusion or Flow Problem > Pumping Problem",
+  "depth": 2
+ },
+ "3015": {
+  "n": 843,
+  "term": "Protective Measures Problem",
+  "imdrf": "A16",
+  "path": "Protective Measures Problem",
+  "depth": 1
+ },
+ "1065": {
+  "n": 829,
+  "term": "Partial Blockage",
+  "imdrf": "A140902",
+  "path": "Infusion or Flow Problem > Obstruction of Flow > Partial Blockage",
+  "depth": 3
+ },
+ "1506": {
+  "n": 818,
+  "term": "Product Quality Problem",
+  "imdrf": "A0201",
+  "path": "Manufacturing, Packaging or Shipping Problem > Product Quality Problem",
+  "depth": 2
+ },
+ "2984": {
+  "n": 784,
+  "term": "Mechanics Altered",
+  "imdrf": "A0507",
+  "path": "Mechanical Problem > Mechanics Altered",
+  "depth": 2
+ },
+ "1494": {
+  "n": 784,
+  "term": "Off-Label Use",
+  "imdrf": "A2304",
+  "path": "Use of Device Problem > Off-Label Use",
+  "depth": 2
+ },
+ "4045": {
+  "n": 779,
+  "term": "Premature Separation",
+  "imdrf": "A150303",
+  "path": "Activation, Positioning or Separation Problem > Separation Problem > Premature Separation",
+  "depth": 3
+ },
+ "3012": {
+  "n": 772,
+  "term": "Pressure Problem",
+  "imdrf": "A1411",
+  "path": "Infusion or Flow Problem > Pressure Problem",
+  "depth": 2
+ },
+ "2895": {
+  "n": 768,
+  "term": "Contamination /Decontamination Problem",
+  "imdrf": "A18",
+  "path": "Contamination /Decontamination Problem",
+  "depth": 1
+ },
+ "2547": {
+  "n": 764,
+  "term": "Separation Failure",
+  "imdrf": "A150301",
+  "path": "Activation, Positioning or Separation Problem > Separation Problem > Separation Failure",
+  "depth": 3
+ },
+ "4029": {
+  "n": 763,
+  "term": "Non Reproducible Results",
+  "imdrf": "A090806",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Non Reproducible Results",
+  "depth": 3
+ },
+ "3020": {
+  "n": 762,
+  "term": "Scratched Material",
+  "imdrf": "A0415",
+  "path": "Material Integrity Problem > Scratched Material",
+  "depth": 2
+ },
+ "2183": {
+  "n": 759,
+  "term": "Fitting Problem",
+  "imdrf": "A1208",
+  "path": "Connection Problem > Fitting Problem",
+  "depth": 2
+ },
+ "1491": {
+  "n": 756,
+  "term": "Increase in Pressure",
+  "imdrf": "A141102",
+  "path": "Infusion or Flow Problem > Pressure Problem > Increase in Pressure",
+  "depth": 3
+ },
+ "3265": {
+  "n": 748,
+  "term": "Device Handling Problem",
+  "imdrf": "A2301",
+  "path": "Use of Device Problem > Device Handling Problem",
+  "depth": 2
+ },
+ "3001": {
+  "n": 737,
+  "term": "Optical Problem",
+  "imdrf": "A06",
+  "path": "Optical Problem",
+  "depth": 1
+ },
+ "2958": {
+  "n": 729,
+  "term": "Inadequate User Interface",
+  "imdrf": "A2204",
+  "path": "Human-Device Interface Problem > Inadequate User Interface",
+  "depth": 2
+ },
+ "2890": {
+  "n": 713,
+  "term": "Calibration Problem",
+  "imdrf": "A08",
+  "path": "Calibration Problem",
+  "depth": 1
+ },
+ "2339": {
+  "n": 699,
+  "term": "Inaccurate Delivery",
+  "imdrf": "A140504",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Inaccurate Delivery",
+  "depth": 3
+ },
+ "2577": {
+  "n": 696,
+  "term": "Difficult or Delayed Activation",
+  "imdrf": "A150102",
+  "path": "Activation, Positioning or Separation Problem > Activation Problem > Difficult or Delayed Activation",
+  "depth": 3
+ },
+ "1014": {
+  "n": 690,
+  "term": "Defective Alarm",
+  "imdrf": "A160106",
+  "path": "Protective Measures Problem > Device Alarm System > Defective Alarm",
+  "depth": 3
+ },
+ "1149": {
+  "n": 689,
+  "term": "Deflation Problem",
+  "imdrf": "A1401",
+  "path": "Infusion or Flow Problem > Deflation Problem",
+  "depth": 2
+ },
+ "1262": {
+  "n": 689,
+  "term": "Material Frayed",
+  "imdrf": "A040605",
+  "path": "Material Integrity Problem > Material Deformation > Material Frayed",
+  "depth": 3
+ },
+ "4030": {
+  "n": 677,
+  "term": "Excessive Heating",
+  "imdrf": "A1002",
+  "path": "Temperature Problem > Excessive Heating",
+  "depth": 2
+ },
+ "1667": {
+  "n": 676,
+  "term": "Unstable",
+  "imdrf": "A051207",
+  "path": "Mechanical Problem > Unintended Movement > Unstable",
+  "depth": 3
+ },
+ "2306": {
+  "n": 671,
+  "term": "Component Missing",
+  "imdrf": "A020602",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Component Missing",
+  "depth": 3
+ },
+ "3196": {
+  "n": 647,
+  "term": "Data Problem",
+  "imdrf": "A1107",
+  "path": "Computer Software Problem > Data Problem",
+  "depth": 2
+ },
+ "2440": {
+  "n": 635,
+  "term": "Failure to Calibrate",
+  "imdrf": "A0801",
+  "path": "Calibration Problem > Failure to Calibrate",
+  "depth": 2
+ },
+ "1254": {
+  "n": 629,
+  "term": "Difficult to Fold, Unfold or Collapse",
+  "imdrf": "A051103",
+  "path": "Mechanical Problem > Structural Problem > Difficult to Fold, Unfold or Collapse",
+  "depth": 3
+ },
+ "1575": {
+  "n": 626,
+  "term": "Short Fill",
+  "imdrf": "A140303",
+  "path": "Infusion or Flow Problem > Filling Problem > Short Fill",
+  "depth": 3
+ },
+ "2507": {
+  "n": 620,
+  "term": "Incomplete Coaptation",
+  "imdrf": "A051105",
+  "path": "Mechanical Problem > Structural Problem > Incomplete Coaptation",
+  "depth": 3
+ },
+ "4039": {
+  "n": 617,
+  "term": "Suction Failure",
+  "imdrf": "A141303",
+  "path": "Infusion or Flow Problem > Suction Problem > Suction Failure",
+  "depth": 3
+ },
+ "1584": {
+  "n": 613,
+  "term": "Device Slipped",
+  "imdrf": "A051204",
+  "path": "Mechanical Problem > Unintended Movement > Device Slipped",
+  "depth": 3
+ },
+ "2522": {
+  "n": 606,
+  "term": "Failure to Align",
+  "imdrf": "A050701",
+  "path": "Mechanical Problem > Mechanics Altered > Failure to Align",
+  "depth": 3
+ },
+ "1457": {
+  "n": 600,
+  "term": "Perivalvular Leak",
+  "imdrf": "A050405",
+  "path": "Mechanical Problem > Leak/Splash > Perivalvular Leak",
+  "depth": 3
+ },
+ "1085": {
+  "n": 593,
+  "term": "Failure to Charge",
+  "imdrf": "A070603",
+  "path": "Electrical /Electronic Property Problem > Charging Problem > Failure to Charge",
+  "depth": 3
+ },
+ "4042": {
+  "n": 586,
+  "term": "Activation Problem",
+  "imdrf": "A1501",
+  "path": "Activation, Positioning or Separation Problem > Activation Problem",
+  "depth": 2
+ },
+ "1421": {
+  "n": 577,
+  "term": "Delivered as Unsterile Product",
+  "imdrf": "A020701",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Damaged Prior to Receipt by User > Delivered as Unsterile Product",
+  "depth": 3
+ },
+ "2920": {
+  "n": 564,
+  "term": "Difficult to Advance",
+  "imdrf": "A150205",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Difficult to Advance",
+  "depth": 3
+ },
+ "1077": {
+  "n": 560,
+  "term": "Calcified",
+  "imdrf": "A040501",
+  "path": "Material Integrity Problem > Degraded > Calcified",
+  "depth": 3
+ },
+ "2933": {
+  "n": 553,
+  "term": "Expulsion",
+  "imdrf": "A010401",
+  "path": "Patient Device Interaction Problem > Migration or Expulsion of Device > Expulsion",
+  "depth": 3
+ },
+ "2532": {
+  "n": 536,
+  "term": "Misfire",
+  "imdrf": "A050502",
+  "path": "Mechanical Problem > Firing Problem > Misfire",
+  "depth": 3
+ },
+ "2949": {
+  "n": 526,
+  "term": "Human-Device Interface Problem",
+  "imdrf": "A22",
+  "path": "Human-Device Interface Problem",
+  "depth": 1
+ },
+ "4011": {
+  "n": 524,
+  "term": "Firing Problem",
+  "imdrf": "A0505",
+  "path": "Mechanical Problem > Firing Problem",
+  "depth": 2
+ },
+ "2282": {
+  "n": 521,
+  "term": "No Audible Prompt/Feedback",
+  "imdrf": "A090103",
+  "path": "Output Problem > Audible Prompt/Feedback Problem > No Audible Prompt/Feedback",
+  "depth": 3
+ },
+ "1249": {
+  "n": 518,
+  "term": "Inaccurate Flow Rate",
+  "imdrf": "A140505",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Inaccurate Flow Rate",
+  "depth": 3
+ },
+ "4040": {
+  "n": 518,
+  "term": "Priming Problem",
+  "imdrf": "A1414",
+  "path": "Infusion or Flow Problem > Priming Problem",
+  "depth": 2
+ },
+ "2889": {
+  "n": 512,
+  "term": "Deformation Due to Compressive Stress",
+  "imdrf": "A040601",
+  "path": "Material Integrity Problem > Material Deformation > Deformation Due to Compressive Stress",
+  "depth": 3
+ },
+ "3007": {
+  "n": 508,
+  "term": "Packaging Problem",
+  "imdrf": "A0205",
+  "path": "Manufacturing, Packaging or Shipping Problem > Packaging Problem",
+  "depth": 2
+ },
+ "2898": {
+  "n": 508,
+  "term": "Computer Operating System Problem",
+  "imdrf": "A1104",
+  "path": "Computer Software Problem > Computer Operating System Problem",
+  "depth": 2
+ },
+ "1675": {
+  "n": 504,
+  "term": "Volume Accuracy Problem",
+  "imdrf": "A140304",
+  "path": "Infusion or Flow Problem > Filling Problem > Volume Accuracy Problem",
+  "depth": 3
+ },
+ "2915": {
+  "n": 500,
+  "term": "Device Damaged by Another Device",
+  "imdrf": "A0502",
+  "path": "Mechanical Problem > Device Damaged by Another Device",
+  "depth": 2
+ },
+ "2969": {
+  "n": 498,
+  "term": "Device Contaminated During Manufacture or Shipping",
+  "imdrf": "A1802",
+  "path": "Contamination /Decontamination Problem > Device Contaminated During Manufacture or Shipping",
+  "depth": 2
+ },
+ "4068": {
+  "n": 496,
+  "term": "Intravalvular regurgitation",
+  "imdrf": "A050406",
+  "path": "Mechanical Problem > Leak/Splash > Intravalvular regurgitation",
+  "depth": 3
+ },
+ "1336": {
+  "n": 480,
+  "term": "Material Invagination",
+  "imdrf": "A040606",
+  "path": "Material Integrity Problem > Material Deformation > Material Invagination",
+  "depth": 3
+ },
+ "1194": {
+  "n": 467,
+  "term": "Electromagnetic Interference",
+  "imdrf": "A072001",
+  "path": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Electromagnetic Interference",
+  "depth": 3
+ },
+ "4032": {
+  "n": 466,
+  "term": "Unintended Application Program Shut Down",
+  "imdrf": "A110208",
+  "path": "Computer Software Problem > Application Program Problem > Unintended Application Program Shut Down",
+  "depth": 3
+ },
+ "1133": {
+  "n": 445,
+  "term": "Failure to Deliver Shock/Stimulation",
+  "imdrf": "A071301",
+  "path": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+  "depth": 3
+ },
+ "4016": {
+  "n": 443,
+  "term": "Intermittent Loss of Power",
+  "imdrf": "A070802",
+  "path": "Electrical /Electronic Property Problem > Power Problem > Intermittent Loss of Power",
+  "depth": 3
+ },
+ "4010": {
+  "n": 442,
+  "term": "Failure to Eject",
+  "imdrf": "A050301",
+  "path": "Mechanical Problem > Ejection Problem > Failure to Eject",
+  "depth": 3
+ },
+ "2385": {
+  "n": 439,
+  "term": "Tear, Rip or Hole in Device Packaging",
+  "imdrf": "A020504",
+  "path": "Manufacturing, Packaging or Shipping Problem > Packaging Problem > Tear, Rip or Hole in Device Packaging",
+  "depth": 3
+ },
+ "2582": {
+  "n": 435,
+  "term": "Date/Time-Related Software Problem",
+  "imdrf": "A1108",
+  "path": "Computer Software Problem > Date/Time-Related Software Problem",
+  "depth": 2
+ },
+ "2986": {
+  "n": 426,
+  "term": "Moisture or Humidity Problem",
+  "imdrf": "A1905",
+  "path": "Environmental Compatibility Problem > Moisture or Humidity Problem",
+  "depth": 2
+ },
+ "1307": {
+  "n": 423,
+  "term": "Imprecision",
+  "imdrf": "A0803",
+  "path": "Calibration Problem > Imprecision",
+  "depth": 2
+ },
+ "4043": {
+  "n": 407,
+  "term": "Separation Problem",
+  "imdrf": "A1503",
+  "path": "Activation, Positioning or Separation Problem > Separation Problem",
+  "depth": 2
+ },
+ "2170": {
+  "n": 392,
+  "term": "Suction Problem",
+  "imdrf": "A1413",
+  "path": "Infusion or Flow Problem > Suction Problem",
+  "depth": 2
+ },
+ "1304": {
+  "n": 391,
+  "term": "Image Display Error/Artifact",
+  "imdrf": "A090204",
+  "path": "Output Problem > Display or Visual Feedback Problem > Image Display Error/Artifact",
+  "depth": 3
+ },
+ "3273": {
+  "n": 377,
+  "term": "Noise, Audible",
+  "imdrf": "A0508",
+  "path": "Mechanical Problem > Noise, Audible",
+  "depth": 2
+ },
+ "4021": {
+  "n": 374,
+  "term": "No Visual Prompts/Feedback",
+  "imdrf": "A090207",
+  "path": "Output Problem > Display or Visual Feedback Problem > No Visual Prompts/Feedback",
+  "depth": 3
+ },
+ "1483": {
+  "n": 374,
+  "term": "Premature Elective Replacement Indicator",
+  "imdrf": "A160601",
+  "path": "Protective Measures Problem > Premature Indicator Activation > Premature Elective Replacement Indicator",
+  "depth": 3
+ },
+ "2975": {
+  "n": 370,
+  "term": "Manufacturing, Packaging or Shipping Problem",
+  "imdrf": "A02",
+  "path": "Manufacturing, Packaging or Shipping Problem",
+  "depth": 1
+ },
+ "2886": {
+  "n": 367,
+  "term": "Biocompatibility",
+  "imdrf": "A010101",
+  "path": "Patient Device Interaction Problem > Patient-Device Incompatibility > Biocompatibility",
+  "depth": 3
+ },
+ "1044": {
+  "n": 363,
+  "term": "Inability to Auto-Fill",
+  "imdrf": "A140301",
+  "path": "Infusion or Flow Problem > Filling Problem > Inability to Auto-Fill",
+  "depth": 3
+ },
+ "2534": {
+  "n": 362,
+  "term": "Decreased Sensitivity",
+  "imdrf": "A070901",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Decreased Sensitivity",
+  "depth": 3
+ },
+ "1305": {
+  "n": 361,
+  "term": "Image Orientation Incorrect",
+  "imdrf": "A090205",
+  "path": "Output Problem > Display or Visual Feedback Problem > Image Orientation Incorrect",
+  "depth": 3
+ },
+ "1585": {
+  "n": 357,
+  "term": "Smoking",
+  "imdrf": "A1009",
+  "path": "Temperature Problem > Smoking",
+  "depth": 2
+ },
+ "3022": {
+  "n": 351,
+  "term": "Temperature Problem",
+  "imdrf": "A10",
+  "path": "Temperature Problem",
+  "depth": 1
+ },
+ "2903": {
+  "n": 349,
+  "term": "Loss of Data",
+  "imdrf": "A110701",
+  "path": "Computer Software Problem > Data Problem > Loss of Data",
+  "depth": 3
+ },
+ "1544": {
+  "n": 341,
+  "term": "Material Too Rigid or Stiff",
+  "imdrf": "A040607",
+  "path": "Material Integrity Problem > Material Deformation > Material Too Rigid or Stiff",
+  "depth": 3
+ },
+ "1385": {
+  "n": 325,
+  "term": "Melted",
+  "imdrf": "A040610",
+  "path": "Material Integrity Problem > Material Deformation > Melted",
+  "depth": 3
+ },
+ "2317": {
+  "n": 323,
+  "term": "Device Contamination with Body Fluid",
+  "imdrf": "A180103",
+  "path": "Contamination /Decontamination Problem > Contamination > Device Contamination with Body Fluid",
+  "depth": 3
+ },
+ "1181": {
+  "n": 322,
+  "term": "Display Difficult to Read",
+  "imdrf": "A090202",
+  "path": "Output Problem > Display or Visual Feedback Problem > Display Difficult to Read",
+  "depth": 3
+ },
+ "2541": {
+  "n": 320,
+  "term": "Failure to Disconnect",
+  "imdrf": "A1204",
+  "path": "Connection Problem > Failure to Disconnect",
+  "depth": 2
+ },
+ "2925": {
+  "n": 312,
+  "term": "Electrical Power Problem",
+  "imdrf": "A1910",
+  "path": "Environmental Compatibility Problem > Electrical Power Problem",
+  "depth": 2
+ },
+ "1502": {
+  "n": 308,
+  "term": "Failure to Pump",
+  "imdrf": "A141203",
+  "path": "Infusion or Flow Problem > Pumping Problem > Failure to Pump",
+  "depth": 3
+ },
+ "4065": {
+  "n": 308,
+  "term": "Lack of Effect",
+  "imdrf": "A0105",
+  "path": "Patient Device Interaction Problem > Lack of Effect",
+  "depth": 2
+ },
+ "1466": {
+  "n": 305,
+  "term": "Failure to Run on Battery",
+  "imdrf": "A070503",
+  "path": "Electrical /Electronic Property Problem > Battery Problem > Failure to Run on Battery",
+  "depth": 3
+ },
+ "4009": {
+  "n": 302,
+  "term": "Ejection Problem",
+  "imdrf": "A0503",
+  "path": "Mechanical Problem > Ejection Problem",
+  "depth": 2
+ },
+ "3019": {
+  "n": 291,
+  "term": "Reset Problem",
+  "imdrf": "A1605",
+  "path": "Protective Measures Problem > Reset Problem",
+  "depth": 2
+ },
+ "1573": {
+  "n": 288,
+  "term": "Defibrillation/Stimulation Problem",
+  "imdrf": "A0713",
+  "path": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem",
+  "depth": 2
+ },
+ "1490": {
+  "n": 285,
+  "term": "Decrease in Pressure",
+  "imdrf": "A141101",
+  "path": "Infusion or Flow Problem > Pressure Problem > Decrease in Pressure",
+  "depth": 3
+ },
+ "1664": {
+  "n": 285,
+  "term": "Unraveled Material",
+  "imdrf": "A040508",
+  "path": "Material Integrity Problem > Degraded > Unraveled Material",
+  "depth": 3
+ },
+ "1557": {
+  "n": 284,
+  "term": "Self-Activation or Keying",
+  "imdrf": "A150104",
+  "path": "Activation, Positioning or Separation Problem > Activation Problem > Self-Activation or Keying",
+  "depth": 3
+ },
+ "2979": {
+  "n": 274,
+  "term": "Material Protrusion/Extrusion",
+  "imdrf": "A0411",
+  "path": "Material Integrity Problem > Material Protrusion/Extrusion",
+  "depth": 2
+ },
+ "4038": {
+  "n": 269,
+  "term": "Intermittent Communication Failure",
+  "imdrf": "A1303",
+  "path": "Communication or Transmission Problem > Intermittent Communication Failure",
+  "depth": 2
+ },
+ "4061": {
+  "n": 267,
+  "term": "Unintended Deflation",
+  "imdrf": "A140102",
+  "path": "Infusion or Flow Problem > Deflation Problem > Unintended Deflation",
+  "depth": 3
+ },
+ "2877": {
+  "n": 262,
+  "term": "Ambient Noise Problem",
+  "imdrf": "A1901",
+  "path": "Environmental Compatibility Problem > Ambient Noise Problem",
+  "depth": 2
+ },
+ "1521": {
+  "n": 251,
+  "term": "Failure to Transmit Record",
+  "imdrf": "A1302",
+  "path": "Communication or Transmission Problem > Failure to Transmit Record",
+  "depth": 2
+ },
+ "1444": {
+  "n": 247,
+  "term": "Unsealed Device Packaging",
+  "imdrf": "A020503",
+  "path": "Manufacturing, Packaging or Shipping Problem > Packaging Problem > Unsealed Device Packaging",
+  "depth": 3
+ },
+ "1601": {
+  "n": 246,
+  "term": "Stretched",
+  "imdrf": "A040611",
+  "path": "Material Integrity Problem > Material Deformation > Stretched",
+  "depth": 3
+ },
+ "1096": {
+  "n": 244,
+  "term": "Coagulation in Device or Device Ingredient",
+  "imdrf": "A030202",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > Coagulation in Device or Device Ingredient",
+  "depth": 3
+ },
+ "4017": {
+  "n": 244,
+  "term": "Interrogation Problem",
+  "imdrf": "A0711",
+  "path": "Electrical /Electronic Property Problem > Interrogation Problem",
+  "depth": 2
+ },
+ "1157": {
+  "n": 243,
+  "term": "Difficult or Delayed Positioning",
+  "imdrf": "A150203",
+  "path": "Activation, Positioning or Separation Problem > Positioning Problem > Difficult or Delayed Positioning",
+  "depth": 3
+ },
+ "4004": {
+  "n": 241,
+  "term": "Component Misassembled",
+  "imdrf": "A020601",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Component Misassembled",
+  "depth": 3
+ },
+ "2595": {
+  "n": 241,
+  "term": "Sparking",
+  "imdrf": "A0704",
+  "path": "Electrical /Electronic Property Problem > Sparking",
+  "depth": 2
+ },
+ "1170": {
+  "n": 238,
+  "term": "Material Discolored",
+  "imdrf": "A0407",
+  "path": "Material Integrity Problem > Material Discolored",
+  "depth": 2
+ },
+ "1674": {
+  "n": 236,
+  "term": "Vibration",
+  "imdrf": "A051208",
+  "path": "Mechanical Problem > Unintended Movement > Vibration",
+  "depth": 3
+ },
+ "1064": {
+  "n": 234,
+  "term": "Backflow",
+  "imdrf": "A140501",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Backflow",
+  "depth": 3
+ },
+ "1266": {
+  "n": 234,
+  "term": "Gas Output Problem",
+  "imdrf": "A0906",
+  "path": "Output Problem > Gas Output Problem",
+  "depth": 2
+ },
+ "2910": {
+  "n": 232,
+  "term": "Device Ingredient or Reagent Problem",
+  "imdrf": "A0302",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem",
+  "depth": 2
+ },
+ "1130": {
+  "n": 228,
+  "term": "Insufficient Cooling",
+  "imdrf": "A1003",
+  "path": "Temperature Problem > Insufficient Cooling",
+  "depth": 2
+ },
+ "2506": {
+  "n": 228,
+  "term": "Structural Problem",
+  "imdrf": "A0511",
+  "path": "Mechanical Problem > Structural Problem",
+  "depth": 2
+ },
+ "1287": {
+  "n": 224,
+  "term": "Insufficient Heating",
+  "imdrf": "A1004",
+  "path": "Temperature Problem > Insufficient Heating",
+  "depth": 2
+ },
+ "4044": {
+  "n": 218,
+  "term": "Difficult or Delayed Separation",
+  "imdrf": "A150302",
+  "path": "Activation, Positioning or Separation Problem > Separation Problem > Difficult or Delayed Separation",
+  "depth": 3
+ },
+ "1245": {
+  "n": 216,
+  "term": "Fire",
+  "imdrf": "A1007",
+  "path": "Temperature Problem > Fire",
+  "depth": 2
+ },
+ "1508": {
+  "n": 215,
+  "term": "Therapy Delivered to Incorrect Body Area",
+  "imdrf": "A090407",
+  "path": "Output Problem > Energy Output Problem > Therapy Delivered to Incorrect Body Area",
+  "depth": 3
+ },
+ "4060": {
+  "n": 209,
+  "term": "Failure to Deflate",
+  "imdrf": "A140101",
+  "path": "Infusion or Flow Problem > Deflation Problem > Failure to Deflate",
+  "depth": 3
+ },
+ "1337": {
+  "n": 205,
+  "term": "Inability to Irrigate",
+  "imdrf": "A140803",
+  "path": "Infusion or Flow Problem > No Flow > Inability to Irrigate",
+  "depth": 3
+ },
+ "1267": {
+  "n": 200,
+  "term": "Gel Leak",
+  "imdrf": "A050403",
+  "path": "Mechanical Problem > Leak/Splash > Gel Leak",
+  "depth": 3
+ },
+ "2404": {
+  "n": 199,
+  "term": "Overfill",
+  "imdrf": "A140302",
+  "path": "Infusion or Flow Problem > Filling Problem > Overfill",
+  "depth": 3
+ },
+ "2922": {
+  "n": 194,
+  "term": "Difficult to Open or Remove Packaging Material",
+  "imdrf": "A020501",
+  "path": "Manufacturing, Packaging or Shipping Problem > Packaging Problem > Difficult to Open or Remove Packaging Material",
+  "depth": 3
+ },
+ "1146": {
+  "n": 193,
+  "term": "Decrease in Suction",
+  "imdrf": "A141301",
+  "path": "Infusion or Flow Problem > Suction Problem > Decrease in Suction",
+  "depth": 3
+ },
+ "4014": {
+  "n": 193,
+  "term": "Device Fell",
+  "imdrf": "A051203",
+  "path": "Mechanical Problem > Unintended Movement > Device Fell",
+  "depth": 3
+ },
+ "2994": {
+  "n": 190,
+  "term": "No Pressure",
+  "imdrf": "A141103",
+  "path": "Infusion or Flow Problem > Pressure Problem > No Pressure",
+  "depth": 3
+ },
+ "1234": {
+  "n": 182,
+  "term": "Unintended Ejection",
+  "imdrf": "A050302",
+  "path": "Mechanical Problem > Ejection Problem > Unintended Ejection",
+  "depth": 3
+ },
+ "1525": {
+  "n": 182,
+  "term": "Device Remains Activated",
+  "imdrf": "A071801",
+  "path": "Electrical /Electronic Property Problem > Failure to Shut Off > Device Remains Activated",
+  "depth": 3
+ },
+ "2927": {
+  "n": 182,
+  "term": "Electromagnetic Compatibility Problem",
+  "imdrf": "A0720",
+  "path": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem",
+  "depth": 2
+ },
+ "4070": {
+  "n": 181,
+  "term": "Failure to Seal",
+  "imdrf": "A050705",
+  "path": "Mechanical Problem > Mechanics Altered > Failure to Seal",
+  "depth": 3
+ },
+ "4046": {
+  "n": 178,
+  "term": "Fail-Safe Did Not Operate",
+  "imdrf": "A160201",
+  "path": "Protective Measures Problem > Fail-Safe Problem > Fail-Safe Did Not Operate",
+  "depth": 3
+ },
+ "1399": {
+  "n": 178,
+  "term": "Misconnection",
+  "imdrf": "A1206",
+  "path": "Connection Problem > Misconnection",
+  "depth": 2
+ },
+ "1517": {
+  "n": 177,
+  "term": "Failure to Recalibrate",
+  "imdrf": "A0802",
+  "path": "Calibration Problem > Failure to Recalibrate",
+  "depth": 2
+ },
+ "2945": {
+  "n": 176,
+  "term": "Free or Unrestricted Flow",
+  "imdrf": "A140502",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Free or Unrestricted Flow",
+  "depth": 3
+ },
+ "1271": {
+  "n": 175,
+  "term": "Grounding Malfunction",
+  "imdrf": "A0715",
+  "path": "Electrical /Electronic Property Problem > Grounding Malfunction",
+  "depth": 2
+ },
+ "2533": {
+  "n": 171,
+  "term": "Failure to Obtain Sample",
+  "imdrf": "A090802",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Failure to Obtain Sample",
+  "depth": 3
+ },
+ "1080": {
+  "n": 170,
+  "term": "Intermittent Capture",
+  "imdrf": "A070103",
+  "path": "Electrical /Electronic Property Problem > Capturing Problem > Intermittent Capture",
+  "depth": 3
+ },
+ "1246": {
+  "n": 169,
+  "term": "Flaked",
+  "imdrf": "A040505",
+  "path": "Material Integrity Problem > Degraded > Flaked",
+  "depth": 3
+ },
+ "2284": {
+  "n": 168,
+  "term": "Device Damaged Prior to Use",
+  "imdrf": "A0204",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Damaged Prior to Use",
+  "depth": 2
+ },
+ "2583": {
+  "n": 165,
+  "term": "Arcing",
+  "imdrf": "A0703",
+  "path": "Electrical /Electronic Property Problem > Arcing",
+  "depth": 2
+ },
+ "1475": {
+  "n": 163,
+  "term": "Loss of Power",
+  "imdrf": "A191002",
+  "path": "Environmental Compatibility Problem > Electrical Power Problem > Loss of Power",
+  "depth": 3
+ },
+ "4037": {
+  "n": 163,
+  "term": "Incomplete or Inadequate Connection",
+  "imdrf": "A1207",
+  "path": "Connection Problem > Incomplete or Inadequate Connection",
+  "depth": 2
+ },
+ "4059": {
+  "n": 162,
+  "term": "Imprecise or Erratic Results",
+  "imdrf": "A090813",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Imprecise or Erratic Results",
+  "depth": 3
+ },
+ "1634": {
+  "n": 162,
+  "term": "Tidal Volume Fluctuations",
+  "imdrf": "A140509",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Tidal Volume Fluctuations",
+  "depth": 3
+ },
+ "1487": {
+  "n": 160,
+  "term": "Device Difficult to Setup or Prepare",
+  "imdrf": "A2201",
+  "path": "Human-Device Interface Problem > Device Difficult to Setup or Prepare",
+  "depth": 2
+ },
+ "1318": {
+  "n": 152,
+  "term": "Labelling, Instructions for Use or Training Problem",
+  "imdrf": "A21",
+  "path": "Labelling, Instructions for Use or Training Problem",
+  "depth": 1
+ },
+ "1214": {
+  "n": 147,
+  "term": "Material Erosion",
+  "imdrf": "A040503",
+  "path": "Material Integrity Problem > Degraded > Material Erosion",
+  "depth": 3
+ },
+ "4076": {
+  "n": 147,
+  "term": "Unexpected Mode Switch",
+  "imdrf": "A0723",
+  "path": "Electrical /Electronic Property Problem > Unexpected Mode Switch",
+  "depth": 2
+ },
+ "4020": {
+  "n": 146,
+  "term": "Audible Prompt/Feedback Problem",
+  "imdrf": "A0901",
+  "path": "Output Problem > Audible Prompt/Feedback Problem",
+  "depth": 2
+ },
+ "2952": {
+  "n": 145,
+  "term": "Improper Chemical Reaction",
+  "imdrf": "A0303",
+  "path": "Chemical Problem > Improper Chemical Reaction",
+  "depth": 2
+ },
+ "2929": {
+  "n": 145,
+  "term": "Environmental Compatibility Problem",
+  "imdrf": "A19",
+  "path": "Environmental Compatibility Problem",
+  "depth": 1
+ },
+ "1270": {
+  "n": 142,
+  "term": "Gradient Increase",
+  "imdrf": "A140503",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Gradient Increase",
+  "depth": 3
+ },
+ "1420": {
+  "n": 142,
+  "term": "Nonstandard Device",
+  "imdrf": "A020102",
+  "path": "Manufacturing, Packaging or Shipping Problem > Product Quality Problem > Nonstandard Device",
+  "depth": 3
+ },
+ "4018": {
+  "n": 138,
+  "term": "Unintended Electrical Shock",
+  "imdrf": "A0714",
+  "path": "Electrical /Electronic Property Problem > Unintended Electrical Shock",
+  "depth": 2
+ },
+ "1451": {
+  "n": 137,
+  "term": "Particulates",
+  "imdrf": "A030205",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > Particulates",
+  "depth": 3
+ },
+ "1540": {
+  "n": 135,
+  "term": "Failure to Convert Rhythm",
+  "imdrf": "A071201",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Failure to Convert Rhythm",
+  "depth": 3
+ },
+ "4053": {
+  "n": 131,
+  "term": "Missing Information",
+  "imdrf": "A210105",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem > Missing Information",
+  "depth": 3
+ },
+ "1121": {
+  "n": 130,
+  "term": "Intermittent Continuity",
+  "imdrf": "A072103",
+  "path": "Electrical /Electronic Property Problem > Circuit Failure > Intermittent Continuity",
+  "depth": 3
+ },
+ "3013": {
+  "n": 130,
+  "term": "Problem with Software Installation",
+  "imdrf": "A110207",
+  "path": "Computer Software Problem > Application Program Problem > Problem with Software Installation",
+  "depth": 3
+ },
+ "2526": {
+  "n": 128,
+  "term": "Dent in Material",
+  "imdrf": "A040602",
+  "path": "Material Integrity Problem > Material Deformation > Dent in Material",
+  "depth": 3
+ },
+ "1022": {
+  "n": 127,
+  "term": "Alarm Not Visible",
+  "imdrf": "A160101",
+  "path": "Protective Measures Problem > Device Alarm System > Alarm Not Visible",
+  "depth": 3
+ },
+ "2996": {
+  "n": 126,
+  "term": "Operating System Becomes Nonfunctional",
+  "imdrf": "A110401",
+  "path": "Computer Software Problem > Computer Operating System Problem > Operating System Becomes Nonfunctional",
+  "depth": 3
+ },
+ "2205": {
+  "n": 126,
+  "term": "Material Perforation",
+  "imdrf": "A0410",
+  "path": "Material Integrity Problem > Material Perforation",
+  "depth": 2
+ },
+ "4074": {
+  "n": 125,
+  "term": "Device Endoleak",
+  "imdrf": "A050408",
+  "path": "Mechanical Problem > Leak/Splash > Device Endoleak",
+  "depth": 3
+ },
+ "3268": {
+  "n": 124,
+  "term": "No Pacing",
+  "imdrf": "A071204",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > No Pacing",
+  "depth": 3
+ },
+ "2960": {
+  "n": 121,
+  "term": "Compatibility Problem",
+  "imdrf": "A17",
+  "path": "Compatibility Problem",
+  "depth": 1
+ },
+ "2936": {
+  "n": 119,
+  "term": "Fail-Safe Problem",
+  "imdrf": "A1602",
+  "path": "Protective Measures Problem > Fail-Safe Problem",
+  "depth": 2
+ },
+ "1496": {
+  "n": 118,
+  "term": "Device Difficult to Program or Calibrate",
+  "imdrf": "A2202",
+  "path": "Human-Device Interface Problem > Device Difficult to Program or Calibrate",
+  "depth": 2
+ },
+ "1016": {
+  "n": 114,
+  "term": "Low Audible Alarm",
+  "imdrf": "A160103",
+  "path": "Protective Measures Problem > Device Alarm System > Low Audible Alarm",
+  "depth": 3
+ },
+ "1429": {
+  "n": 112,
+  "term": "Unintended Collision",
+  "imdrf": "A051205",
+  "path": "Mechanical Problem > Unintended Movement > Unintended Collision",
+  "depth": 3
+ },
+ "3004": {
+  "n": 111,
+  "term": "Output below Specifications",
+  "imdrf": "A090405",
+  "path": "Output Problem > Energy Output Problem > Output below Specifications",
+  "depth": 3
+ },
+ "2283": {
+  "n": 110,
+  "term": "Inaudible or Unclear Audible Prompt/Feedback",
+  "imdrf": "A090102",
+  "path": "Output Problem > Audible Prompt/Feedback Problem > Inaudible or Unclear Audible Prompt/Feedback",
+  "depth": 3
+ },
+ "1177": {
+  "n": 110,
+  "term": "Material Disintegration",
+  "imdrf": "A0408",
+  "path": "Material Integrity Problem > Material Disintegration",
+  "depth": 2
+ },
+ "2999": {
+  "n": 108,
+  "term": "Optical Discoloration",
+  "imdrf": "A0603",
+  "path": "Optical Problem > Optical Discoloration",
+  "depth": 2
+ },
+ "4051": {
+  "n": 108,
+  "term": "Inaccurate Information",
+  "imdrf": "A210103",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem > Inaccurate Information",
+  "depth": 3
+ },
+ "2586": {
+  "n": 107,
+  "term": "Delayed Charge Time",
+  "imdrf": "A070602",
+  "path": "Electrical /Electronic Property Problem > Charging Problem > Delayed Charge Time",
+  "depth": 3
+ },
+ "1401": {
+  "n": 100,
+  "term": "Misfocusing",
+  "imdrf": "A0601",
+  "path": "Optical Problem > Misfocusing",
+  "depth": 2
+ },
+ "1449": {
+  "n": 100,
+  "term": "Application Program Problem: Parameter Calculation Error",
+  "imdrf": "A110204",
+  "path": "Computer Software Problem > Application Program Problem > Application Program Problem: Parameter Calculation Error",
+  "depth": 3
+ },
+ "1126": {
+  "n": 99,
+  "term": "Use of Incorrect Control/Treatment Settings",
+  "imdrf": "A2302",
+  "path": "Use of Device Problem > Use of Incorrect Control/Treatment Settings",
+  "depth": 2
+ },
+ "1463": {
+  "n": 99,
+  "term": "Extracardiac stimulation",
+  "imdrf": "A071209",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Extracardiac stimulation",
+  "depth": 3
+ },
+ "2926": {
+  "n": 97,
+  "term": "Electrical Shorting",
+  "imdrf": "A072102",
+  "path": "Electrical /Electronic Property Problem > Circuit Failure > Electrical Shorting",
+  "depth": 3
+ },
+ "2280": {
+  "n": 92,
+  "term": "Inappropriate Audible Prompt/Feedback",
+  "imdrf": "A090101",
+  "path": "Output Problem > Audible Prompt/Feedback Problem > Inappropriate Audible Prompt/Feedback",
+  "depth": 3
+ },
+ "4073": {
+  "n": 89,
+  "term": "Wrong Label",
+  "imdrf": "A210106",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem > Wrong Label",
+  "depth": 3
+ },
+ "1398": {
+  "n": 89,
+  "term": "Misassembled",
+  "imdrf": "A2305",
+  "path": "Use of Device Problem > Misassembled",
+  "depth": 2
+ },
+ "1426": {
+  "n": 89,
+  "term": "Material Opacification",
+  "imdrf": "A0409",
+  "path": "Material Integrity Problem > Material Opacification",
+  "depth": 2
+ },
+ "1609": {
+  "n": 89,
+  "term": "Inaccurate Synchronization",
+  "imdrf": "A071202",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Inaccurate Synchronization",
+  "depth": 3
+ },
+ "1425": {
+  "n": 87,
+  "term": "Device Emits Odor",
+  "imdrf": "A0301",
+  "path": "Chemical Problem > Device Emits Odor",
+  "depth": 2
+ },
+ "1669": {
+  "n": 85,
+  "term": "Failure to Unfold or Unwrap",
+  "imdrf": "A040604",
+  "path": "Material Integrity Problem > Material Deformation > Failure to Unfold or Unwrap",
+  "depth": 3
+ },
+ "1162": {
+  "n": 82,
+  "term": "Unintended Power Up",
+  "imdrf": "A070804",
+  "path": "Electrical /Electronic Property Problem > Power Problem > Unintended Power Up",
+  "depth": 3
+ },
+ "2912": {
+  "n": 81,
+  "term": "Device Misassembled During Manufacturing /Shipping",
+  "imdrf": "A0206",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping",
+  "depth": 2
+ },
+ "3267": {
+  "n": 81,
+  "term": "Missing Test Results",
+  "imdrf": "A090812",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Missing Test Results",
+  "depth": 3
+ },
+ "1500": {
+  "n": 80,
+  "term": "Decreased Pump Speed",
+  "imdrf": "A141201",
+  "path": "Infusion or Flow Problem > Pumping Problem > Decreased Pump Speed",
+  "depth": 3
+ },
+ "1114": {
+  "n": 79,
+  "term": "Failure to Conduct",
+  "imdrf": "A0710",
+  "path": "Electrical /Electronic Property Problem > Failure to Conduct",
+  "depth": 2
+ },
+ "2939": {
+  "n": 74,
+  "term": "Failure to Shut Off",
+  "imdrf": "A0718",
+  "path": "Electrical /Electronic Property Problem > Failure to Shut Off",
+  "depth": 2
+ },
+ "1099": {
+  "n": 74,
+  "term": "Collapse",
+  "imdrf": "A051101",
+  "path": "Mechanical Problem > Structural Problem > Collapse",
+  "depth": 3
+ },
+ "1004": {
+  "n": 73,
+  "term": "Accessory Incompatible",
+  "imdrf": "A170101",
+  "path": "Compatibility Problem > Component or Accessory Incompatibility > Accessory Incompatible",
+  "depth": 3
+ },
+ "3269": {
+  "n": 70,
+  "term": "Unstable Capture Threshold",
+  "imdrf": "A070104",
+  "path": "Electrical /Electronic Property Problem > Capturing Problem > Unstable Capture Threshold",
+  "depth": 3
+ },
+ "3197": {
+  "n": 70,
+  "term": "Patient Data Problem",
+  "imdrf": "A110702",
+  "path": "Computer Software Problem > Data Problem > Patient Data Problem",
+  "depth": 3
+ },
+ "1570": {
+  "n": 67,
+  "term": "Device Damaged Prior to Receipt by User",
+  "imdrf": "A0207",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Damaged Prior to Receipt by User",
+  "depth": 2
+ },
+ "2893": {
+  "n": 67,
+  "term": "Chemical Problem",
+  "imdrf": "A03",
+  "path": "Chemical Problem",
+  "depth": 1
+ },
+ "1539": {
+  "n": 66,
+  "term": "Failure to Analyze Signal",
+  "imdrf": "A070903",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Failure to Analyze Signal",
+  "depth": 3
+ },
+ "4075": {
+  "n": 66,
+  "term": "Damaged Thread",
+  "imdrf": "A0514",
+  "path": "Mechanical Problem > Damaged Thread",
+  "depth": 2
+ },
+ "2888": {
+  "n": 65,
+  "term": "Blocked Connection",
+  "imdrf": "A1201",
+  "path": "Connection Problem > Blocked Connection",
+  "depth": 2
+ },
+ "1137": {
+  "n": 65,
+  "term": "Cross Reactivity",
+  "imdrf": "A030204",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > Cross Reactivity",
+  "depth": 3
+ },
+ "1656": {
+  "n": 64,
+  "term": "Inadequate Ultra Filtration",
+  "imdrf": "A140402",
+  "path": "Infusion or Flow Problem > Filtration Problem > Inadequate Ultra Filtration",
+  "depth": 3
+ },
+ "2528": {
+  "n": 63,
+  "term": "Expiration Date Error",
+  "imdrf": "A210101",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem > Expiration Date Error",
+  "depth": 3
+ },
+ "4007": {
+  "n": 62,
+  "term": "Material Too Soft/Flexible",
+  "imdrf": "A040608",
+  "path": "Material Integrity Problem > Material Deformation > Material Too Soft/Flexible",
+  "depth": 3
+ },
+ "1492": {
+  "n": 61,
+  "term": "Failure to Prime",
+  "imdrf": "A141401",
+  "path": "Infusion or Flow Problem > Priming Problem > Failure to Prime",
+  "depth": 3
+ },
+ "4026": {
+  "n": 58,
+  "term": "Radiation Output Problem",
+  "imdrf": "A0905",
+  "path": "Output Problem > Radiation Output Problem",
+  "depth": 2
+ },
+ "1251": {
+  "n": 57,
+  "term": "Difficult to Flush",
+  "imdrf": "A1410",
+  "path": "Infusion or Flow Problem > Difficult to Flush",
+  "depth": 2
+ },
+ "3002": {
+  "n": 57,
+  "term": "Optical Obstruction",
+  "imdrf": "A0605",
+  "path": "Optical Problem > Optical Obstruction",
+  "depth": 2
+ },
+ "1108": {
+  "n": 56,
+  "term": "Component Incompatible",
+  "imdrf": "A170102",
+  "path": "Compatibility Problem > Component or Accessory Incompatibility > Component Incompatible",
+  "depth": 3
+ },
+ "2932": {
+  "n": 56,
+  "term": "Excessive Cooling",
+  "imdrf": "A1001",
+  "path": "Temperature Problem > Excessive Cooling",
+  "depth": 2
+ },
+ "2589": {
+  "n": 52,
+  "term": "Device Tipped Over",
+  "imdrf": "A051202",
+  "path": "Mechanical Problem > Unintended Movement > Device Tipped Over",
+  "depth": 3
+ },
+ "1405": {
+  "n": 50,
+  "term": "Moisture Damage",
+  "imdrf": "A190501",
+  "path": "Environmental Compatibility Problem > Moisture or Humidity Problem > Moisture Damage",
+  "depth": 3
+ },
+ "4025": {
+  "n": 48,
+  "term": "Intermittent Energy Output",
+  "imdrf": "A090403",
+  "path": "Output Problem > Energy Output Problem > Intermittent Energy Output",
+  "depth": 3
+ },
+ "4024": {
+  "n": 47,
+  "term": "No Tactile Prompts/Feedback",
+  "imdrf": "A090302",
+  "path": "Output Problem > Tactile Prompts/Feedback > No Tactile Prompts/Feedback",
+  "depth": 3
+ },
+ "1629": {
+  "n": 45,
+  "term": "Telemetry Discrepancy",
+  "imdrf": "A1304",
+  "path": "Communication or Transmission Problem > Telemetry Discrepancy",
+  "depth": 2
+ },
+ "1440": {
+  "n": 43,
+  "term": "Pacemaker Found in Back-Up Mode",
+  "imdrf": "A071205",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Pacemaker Found in Back-Up Mode",
+  "depth": 3
+ },
+ "2965": {
+  "n": 43,
+  "term": "Installation-Related Problem",
+  "imdrf": "A20",
+  "path": "Installation-Related Problem",
+  "depth": 1
+ },
+ "2901": {
+  "n": 42,
+  "term": "Contamination of Device Ingredient or Reagent",
+  "imdrf": "A180102",
+  "path": "Contamination /Decontamination Problem > Contamination > Contamination of Device Ingredient or Reagent",
+  "depth": 3
+ },
+ "4057": {
+  "n": 41,
+  "term": "Inadequate Lubrication",
+  "imdrf": "A0513",
+  "path": "Mechanical Problem > Inadequate Lubrication",
+  "depth": 2
+ },
+ "1558": {
+  "n": 40,
+  "term": "Sensing Intermittently",
+  "imdrf": "A070911",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Sensing Intermittently",
+  "depth": 3
+ },
+ "2918": {
+  "n": 40,
+  "term": "Device Unsafe to Use in Environment",
+  "imdrf": "A1907",
+  "path": "Environmental Compatibility Problem > Device Unsafe to Use in Environment",
+  "depth": 2
+ },
+ "4006": {
+  "n": 40,
+  "term": "Explosion",
+  "imdrf": "A0403",
+  "path": "Material Integrity Problem > Explosion",
+  "depth": 2
+ },
+ "2997": {
+  "n": 39,
+  "term": "Operating System Version or Upgrade Problem",
+  "imdrf": "A110402",
+  "path": "Computer Software Problem > Computer Operating System Problem > Operating System Version or Upgrade Problem",
+  "depth": 3
+ },
+ "1360": {
+  "n": 39,
+  "term": "Optical Decentration",
+  "imdrf": "A0602",
+  "path": "Optical Problem > Optical Decentration",
+  "depth": 2
+ },
+ "4056": {
+  "n": 38,
+  "term": "Thickening of Material",
+  "imdrf": "A040612",
+  "path": "Material Integrity Problem > Material Deformation > Thickening of Material",
+  "depth": 3
+ },
+ "2942": {
+  "n": 36,
+  "term": "Flare or Flash",
+  "imdrf": "A1008",
+  "path": "Temperature Problem > Flare or Flash",
+  "depth": 2
+ },
+ "2312": {
+  "n": 36,
+  "term": "Incomplete or Missing Packaging",
+  "imdrf": "A020502",
+  "path": "Manufacturing, Packaging or Shipping Problem > Packaging Problem > Incomplete or Missing Packaging",
+  "depth": 3
+ },
+ "2536": {
+  "n": 35,
+  "term": "Inappropriate Waveform",
+  "imdrf": "A071203",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Inappropriate Waveform",
+  "depth": 3
+ },
+ "1011": {
+  "n": 35,
+  "term": "Delayed Alarm",
+  "imdrf": "A160104",
+  "path": "Protective Measures Problem > Device Alarm System > Delayed Alarm",
+  "depth": 3
+ },
+ "3025": {
+  "n": 35,
+  "term": "Unauthorized Access to Computer System",
+  "imdrf": "A110502",
+  "path": "Computer Software Problem > Computer System Security Problem > Unauthorized Access to Computer System",
+  "depth": 3
+ },
+ "1169": {
+  "n": 33,
+  "term": "Failure to Discharge",
+  "imdrf": "A0707",
+  "path": "Electrical /Electronic Property Problem > Failure to Discharge",
+  "depth": 2
+ },
+ "3133": {
+  "n": 31,
+  "term": "Misassembly by Users",
+  "imdrf": "A230501",
+  "path": "Use of Device Problem > Misassembled > Misassembly by Users",
+  "depth": 3
+ },
+ "4055": {
+  "n": 30,
+  "term": "Unexpected Color",
+  "imdrf": "A030208",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > Unexpected Color",
+  "depth": 3
+ },
+ "1189": {
+  "n": 30,
+  "term": "Application Program Problem: Dose Calculation Error",
+  "imdrf": "A110202",
+  "path": "Computer Software Problem > Application Program Problem > Application Program Problem: Dose Calculation Error",
+  "depth": 3
+ },
+ "2879": {
+  "n": 29,
+  "term": "Application Network Problem",
+  "imdrf": "A1101",
+  "path": "Computer Software Problem > Application Network Problem",
+  "depth": 2
+ },
+ "2897": {
+  "n": 29,
+  "term": "Component or Accessory Incompatibility",
+  "imdrf": "A1701",
+  "path": "Compatibility Problem > Component or Accessory Incompatibility",
+  "depth": 2
+ },
+ "4050": {
+  "n": 29,
+  "term": "Illegible Information",
+  "imdrf": "A210102",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem > Illegible Information",
+  "depth": 3
+ },
+ "4052": {
+  "n": 28,
+  "term": "Unclear Information",
+  "imdrf": "A210104",
+  "path": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem > Unclear Information",
+  "depth": 3
+ },
+ "3000": {
+  "n": 27,
+  "term": "Optical Distortion",
+  "imdrf": "A0604",
+  "path": "Optical Problem > Optical Distortion",
+  "depth": 2
+ },
+ "1683": {
+  "n": 26,
+  "term": "Failure to Zero",
+  "imdrf": "A160502",
+  "path": "Protective Measures Problem > Reset Problem > Failure to Zero",
+  "depth": 3
+ },
+ "2930": {
+  "n": 25,
+  "term": "Environmental Particulates",
+  "imdrf": "A1908",
+  "path": "Environmental Compatibility Problem > Environmental Particulates",
+  "depth": 2
+ },
+ "2289": {
+  "n": 24,
+  "term": "Arcing of Electrodes",
+  "imdrf": "A070302",
+  "path": "Electrical /Electronic Property Problem > Arcing > Arcing of Electrodes",
+  "depth": 3
+ },
+ "2938": {
+  "n": 24,
+  "term": "Failure to Auto Stop",
+  "imdrf": "A1604",
+  "path": "Protective Measures Problem > Failure to Auto Stop",
+  "depth": 2
+ },
+ "2535": {
+  "n": 24,
+  "term": "Increased Sensitivity",
+  "imdrf": "A070902",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Increased Sensitivity",
+  "depth": 3
+ },
+ "1255": {
+  "n": 22,
+  "term": "Failure to Fold",
+  "imdrf": "A040603",
+  "path": "Material Integrity Problem > Material Deformation > Failure to Fold",
+  "depth": 3
+ },
+ "4072": {
+  "n": 22,
+  "term": "Poor Visibility",
+  "imdrf": "A090814",
+  "path": "Output Problem > Incorrect, Inadequate or Imprecise Result or Readings > Poor Visibility",
+  "depth": 3
+ },
+ "4028": {
+  "n": 21,
+  "term": "Unexpected/Unintended Radiation Output",
+  "imdrf": "A090504",
+  "path": "Output Problem > Radiation Output Problem > Unexpected/Unintended Radiation Output",
+  "depth": 3
+ },
+ "1123": {
+  "n": 20,
+  "term": "Continuous Firing",
+  "imdrf": "A0702",
+  "path": "Electrical /Electronic Property Problem > Continuous Firing",
+  "depth": 2
+ },
+ "2325": {
+  "n": 20,
+  "term": "Residue After Decontamination",
+  "imdrf": "A180306",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem > Residue After Decontamination",
+  "depth": 3
+ },
+ "4033": {
+  "n": 20,
+  "term": "Program or Algorithm Execution Problem",
+  "imdrf": "A1103",
+  "path": "Computer Software Problem > Program or Algorithm Execution Problem",
+  "depth": 2
+ },
+ "2982": {
+  "n": 18,
+  "term": "Measurement System Incompatibility",
+  "imdrf": "A1703",
+  "path": "Compatibility Problem > Measurement System Incompatibility",
+  "depth": 2
+ },
+ "2941": {
+  "n": 17,
+  "term": "Filtration Problem",
+  "imdrf": "A1404",
+  "path": "Infusion or Flow Problem > Filtration Problem",
+  "depth": 2
+ },
+ "2881": {
+  "n": 17,
+  "term": "Application Program Version or Upgrade Problem",
+  "imdrf": "A110206",
+  "path": "Computer Software Problem > Application Program Problem > Application Program Version or Upgrade Problem",
+  "depth": 3
+ },
+ "4064": {
+  "n": 17,
+  "term": "Device Contaminated at the User Facility",
+  "imdrf": "A1804",
+  "path": "Contamination /Decontamination Problem > Device Contaminated at the User Facility",
+  "depth": 2
+ },
+ "1604": {
+  "n": 17,
+  "term": "Increase in Suction",
+  "imdrf": "A141302",
+  "path": "Infusion or Flow Problem > Suction Problem > Increase in Suction",
+  "depth": 3
+ },
+ "1095": {
+  "n": 17,
+  "term": "Clumping in Device or Device Ingredient",
+  "imdrf": "A030201",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > Clumping in Device or Device Ingredient",
+  "depth": 3
+ },
+ "2149": {
+  "n": 16,
+  "term": "Electrostatic Discharge",
+  "imdrf": "A0717",
+  "path": "Electrical /Electronic Property Problem > Electrostatic Discharge",
+  "depth": 2
+ },
+ "1460": {
+  "n": 16,
+  "term": "Pitted",
+  "imdrf": "A040504",
+  "path": "Material Integrity Problem > Degraded > Pitted",
+  "depth": 3
+ },
+ "1582": {
+  "n": 15,
+  "term": "Failure to Select Signal",
+  "imdrf": "A070904",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Failure to Select Signal",
+  "depth": 3
+ },
+ "4036": {
+  "n": 15,
+  "term": "Program or Algorithm Execution Failure",
+  "imdrf": "A110303",
+  "path": "Computer Software Problem > Program or Algorithm Execution Problem > Program or Algorithm Execution Failure",
+  "depth": 3
+ },
+ "4034": {
+  "n": 15,
+  "term": "Delayed Program or Algorithm Execution",
+  "imdrf": "A110301",
+  "path": "Computer Software Problem > Program or Algorithm Execution Problem > Delayed Program or Algorithm Execution",
+  "depth": 3
+ },
+ "1432": {
+  "n": 14,
+  "term": "Output above Specifications",
+  "imdrf": "A090404",
+  "path": "Output Problem > Energy Output Problem > Output above Specifications",
+  "depth": 3
+ },
+ "1441": {
+  "n": 14,
+  "term": "Pacing Asynchronously",
+  "imdrf": "A071206",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Asynchronously",
+  "depth": 3
+ },
+ "2324": {
+  "n": 14,
+  "term": "Solder Joint Fracture",
+  "imdrf": "A040104",
+  "path": "Material Integrity Problem > Break > Solder Joint Fracture",
+  "depth": 3
+ },
+ "1501": {
+  "n": 14,
+  "term": "Increased Pump Speed",
+  "imdrf": "A141202",
+  "path": "Infusion or Flow Problem > Pumping Problem > Increased Pump Speed",
+  "depth": 3
+ },
+ "4022": {
+  "n": 14,
+  "term": "Tactile Prompts/Feedback",
+  "imdrf": "A0903",
+  "path": "Output Problem > Tactile Prompts/Feedback",
+  "depth": 2
+ },
+ "3134": {
+  "n": 13,
+  "term": "Device Difficult to Maintain",
+  "imdrf": "A2203",
+  "path": "Human-Device Interface Problem > Device Difficult to Maintain",
+  "depth": 2
+ },
+ "4049": {
+  "n": 13,
+  "term": "Misassembled During Installation",
+  "imdrf": "A2001",
+  "path": "Installation-Related Problem > Misassembled During Installation",
+  "depth": 2
+ },
+ "1643": {
+  "n": 12,
+  "term": "Inadequate or Insufficient Training",
+  "imdrf": "A2105",
+  "path": "Labelling, Instructions for Use or Training Problem > Inadequate or Insufficient Training",
+  "depth": 2
+ },
+ "2973": {
+  "n": 12,
+  "term": "Battery Problem: Low Impedance",
+  "imdrf": "A070502",
+  "path": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: Low Impedance",
+  "depth": 3
+ },
+ "1522": {
+  "n": 12,
+  "term": "Reflux within Device",
+  "imdrf": "A140507",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Reflux within Device",
+  "depth": 3
+ },
+ "1253": {
+  "n": 11,
+  "term": "Fogging",
+  "imdrf": "A190601",
+  "path": "Environmental Compatibility Problem > Ventilation Problem in Device Environment > Fogging",
+  "depth": 3
+ },
+ "2924": {
+  "n": 11,
+  "term": "Electrical Overstress",
+  "imdrf": "A0716",
+  "path": "Electrical /Electronic Property Problem > Electrical Overstress",
+  "depth": 2
+ },
+ "2341": {
+  "n": 11,
+  "term": "Intermittent Infusion",
+  "imdrf": "A140506",
+  "path": "Infusion or Flow Problem > Improper Flow or Infusion > Intermittent Infusion",
+  "depth": 3
+ },
+ "2529": {
+  "n": 10,
+  "term": "Fumes or Vapors",
+  "imdrf": "A1903",
+  "path": "Environmental Compatibility Problem > Fumes or Vapors",
+  "depth": 2
+ },
+ "4067": {
+  "n": 10,
+  "term": "Extra Components",
+  "imdrf": "A020603",
+  "path": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+  "depth": 3
+ },
+ "2985": {
+  "n": 10,
+  "term": "Medical Gas Supply Problem",
+  "imdrf": "A1909",
+  "path": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+  "depth": 2
+ },
+ "2878": {
+  "n": 10,
+  "term": "Ambient Temperature Problem",
+  "imdrf": "A1902",
+  "path": "Environmental Compatibility Problem > Ambient Temperature Problem",
+  "depth": 2
+ },
+ "4023": {
+  "n": 10,
+  "term": "Inappropriate Tactile Prompt/Feedback",
+  "imdrf": "A090301",
+  "path": "Output Problem > Tactile Prompts/Feedback > Inappropriate Tactile Prompt/Feedback",
+  "depth": 3
+ },
+ "1443": {
+  "n": 10,
+  "term": "Pacing Intermittently",
+  "imdrf": "A071208",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Intermittently",
+  "depth": 3
+ },
+ "1145": {
+  "n": 9,
+  "term": "Decoupling",
+  "imdrf": "A1202",
+  "path": "Connection Problem > Decoupling",
+  "depth": 2
+ },
+ "1252": {
+  "n": 9,
+  "term": "Flushing Problem",
+  "imdrf": "A180303",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem > Flushing Problem",
+  "depth": 3
+ },
+ "2899": {
+  "n": 9,
+  "term": "Computer System Security Problem",
+  "imdrf": "A1105",
+  "path": "Computer Software Problem > Computer System Security Problem",
+  "depth": 2
+ },
+ "4071": {
+  "n": 9,
+  "term": "Adhesive Too Strong",
+  "imdrf": "A050901",
+  "path": "Mechanical Problem > Physical Resistance/Sticking > Adhesive Too Strong",
+  "depth": 3
+ },
+ "1175": {
+  "n": 8,
+  "term": "Failure to Disinfect",
+  "imdrf": "A180302",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+  "depth": 3
+ },
+ "4041": {
+  "n": 8,
+  "term": "Incomplete or Inadequate Priming",
+  "imdrf": "A141402",
+  "path": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+  "depth": 3
+ },
+ "1478": {
+  "n": 7,
+  "term": "Precipitate in Device or Device Ingredient",
+  "imdrf": "A030203",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+  "depth": 3
+ },
+ "1596": {
+  "n": 7,
+  "term": "Problem with Sterilization",
+  "imdrf": "A180305",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+  "depth": 3
+ },
+ "4054": {
+  "n": 7,
+  "term": "Misassembly During Maintenance/Repair",
+  "imdrf": "A230502",
+  "path": "Use of Device Problem > Misassembled > Misassembly During Maintenance/Repair",
+  "depth": 3
+ },
+ "1062": {
+  "n": 7,
+  "term": "Biofilm coating in Device",
+  "imdrf": "A180101",
+  "path": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+  "depth": 3
+ },
+ "4078": {
+  "n": 7,
+  "term": "Implant subsidence",
+  "imdrf": "A0107",
+  "path": "Patient Device Interaction Problem > Implant subsidence",
+  "depth": 2
+ },
+ "3017": {
+  "n": 6,
+  "term": "Radiation Overexposure",
+  "imdrf": "A090502",
+  "path": "Output Problem > Radiation Output Problem > Radiation Overexposure",
+  "depth": 3
+ },
+ "2990": {
+  "n": 6,
+  "term": "No Fail-Safe Mechanism",
+  "imdrf": "A160202",
+  "path": "Protective Measures Problem > Fail-Safe Problem > No Fail-Safe Mechanism",
+  "depth": 3
+ },
+ "1532": {
+  "n": 6,
+  "term": "Failure to Reset",
+  "imdrf": "A160501",
+  "path": "Protective Measures Problem > Reset Problem > Failure to Reset",
+  "depth": 3
+ },
+ "4077": {
+  "n": 6,
+  "term": "Prophylactic removal due to corrective action",
+  "imdrf": "A2501",
+  "path": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+  "depth": 2
+ },
+ "2288": {
+  "n": 6,
+  "term": "Aborted Charge",
+  "imdrf": "A070601",
+  "path": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+  "depth": 3
+ },
+ "2575": {
+  "n": 5,
+  "term": "Low Sensing Threshold",
+  "imdrf": "A070906",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Low Sensing Threshold",
+  "depth": 3
+ },
+ "2314": {
+  "n": 5,
+  "term": "Radiofrequency Interference (RFI)",
+  "imdrf": "A072002",
+  "path": "Electrical /Electronic Property Problem > Electromagnetic Compatibility Problem > Radiofrequency Interference (RFI)",
+  "depth": 3
+ },
+ "1473": {
+  "n": 5,
+  "term": "Application Program Problem: Power Calculation Error",
+  "imdrf": "A110205",
+  "path": "Computer Software Problem > Application Program Problem > Application Program Problem: Power Calculation Error",
+  "depth": 3
+ },
+ "1474": {
+  "n": 5,
+  "term": "Power Conditioning Problem",
+  "imdrf": "A191003",
+  "path": "Environmental Compatibility Problem > Electrical Power Problem > Power Conditioning Problem",
+  "depth": 3
+ },
+ "2316": {
+  "n": 5,
+  "term": "Fungus in Device Environment",
+  "imdrf": "A1904",
+  "path": "Environmental Compatibility Problem > Fungus in Device Environment",
+  "depth": 2
+ },
+ "1357": {
+  "n": 5,
+  "term": "Radiation Leak",
+  "imdrf": "A050404",
+  "path": "Mechanical Problem > Leak/Splash > Radiation Leak",
+  "depth": 3
+ },
+ "2947": {
+  "n": 5,
+  "term": "Battery Problem: High Impedance",
+  "imdrf": "A070501",
+  "path": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+  "depth": 3
+ },
+ "2956": {
+  "n": 5,
+  "term": "Inadequate Instructions for Non-Healthcare Professional",
+  "imdrf": "A2104",
+  "path": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Non-Healthcare Professional",
+  "depth": 2
+ },
+ "1442": {
+  "n": 4,
+  "term": "Pacing Inadequately",
+  "imdrf": "A071207",
+  "path": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Inadequately",
+  "depth": 3
+ },
+ "1210": {
+  "n": 4,
+  "term": "Energy Spectrum Incorrect",
+  "imdrf": "A090401",
+  "path": "Output Problem > Energy Output Problem > Energy Spectrum Incorrect",
+  "depth": 3
+ },
+ "2902": {
+  "n": 4,
+  "term": "Data Back-Up Problem",
+  "imdrf": "A1106",
+  "path": "Computer Software Problem > Data Back-Up Problem",
+  "depth": 2
+ },
+ "1633": {
+  "n": 4,
+  "term": "Loss of Threshold",
+  "imdrf": "A070907",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > Loss of Threshold",
+  "depth": 3
+ },
+ "3198": {
+  "n": 4,
+  "term": "Application Program Problem: Medication Error",
+  "imdrf": "A110203",
+  "path": "Computer Software Problem > Application Program Problem > Application Program Problem: Medication Error",
+  "depth": 3
+ },
+ "1331": {
+  "n": 3,
+  "term": "Difficult to Interrogate",
+  "imdrf": "A071101",
+  "path": "Electrical /Electronic Property Problem > Interrogation Problem > Difficult to Interrogate",
+  "depth": 3
+ },
+ "1047": {
+  "n": 3,
+  "term": "Failure to Back-Up",
+  "imdrf": "A110601",
+  "path": "Computer Software Problem > Data Back-Up Problem > Failure to Back-Up",
+  "depth": 3
+ },
+ "3018": {
+  "n": 3,
+  "term": "Radiation Underexposure",
+  "imdrf": "A090503",
+  "path": "Output Problem > Radiation Output Problem > Radiation Underexposure",
+  "depth": 3
+ },
+ "4035": {
+  "n": 3,
+  "term": "Intermittent Program or Algorithm Execution",
+  "imdrf": "A110302",
+  "path": "Computer Software Problem > Program or Algorithm Execution Problem > Intermittent Program or Algorithm Execution",
+  "depth": 3
+ },
+ "4069": {
+  "n": 3,
+  "term": "Powder Leak",
+  "imdrf": "A050407",
+  "path": "Mechanical Problem > Leak/Splash > Powder Leak",
+  "depth": 3
+ },
+ "2882": {
+  "n": 3,
+  "term": "Application Security Problem",
+  "imdrf": "A110501",
+  "path": "Computer Software Problem > Computer System Security Problem > Application Security Problem",
+  "depth": 3
+ },
+ "2287": {
+  "n": 2,
+  "term": "Intermittent Shock/Stimulation",
+  "imdrf": "A071303",
+  "path": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Intermittent Shock/Stimulation",
+  "depth": 3
+ },
+ "2574": {
+  "n": 2,
+  "term": "High Sensing Threshold",
+  "imdrf": "A070905",
+  "path": "Electrical /Electronic Property Problem > Device Sensing Problem > High Sensing Threshold",
+  "depth": 3
+ },
+ "1319": {
+  "n": 2,
+  "term": "Inadequate Instructions for Healthcare Professional",
+  "imdrf": "A2103",
+  "path": "Labelling, Instructions for Use or Training Problem > Inadequate Instructions for Healthcare Professional",
+  "depth": 2
+ },
+ "3011": {
+  "n": 2,
+  "term": "Premature Indicator Activation",
+  "imdrf": "A1606",
+  "path": "Protective Measures Problem > Premature Indicator Activation",
+  "depth": 2
+ },
+ "3027": {
+  "n": 2,
+  "term": "Ventilation Problem in Device Environment",
+  "imdrf": "A1906",
+  "path": "Environmental Compatibility Problem > Ventilation Problem in Device Environment",
+  "depth": 2
+ },
+ "2308": {
+  "n": 2,
+  "term": "Inadequate Filtration Process",
+  "imdrf": "A140401",
+  "path": "Infusion or Flow Problem > Filtration Problem > Inadequate Filtration Process",
+  "depth": 3
+ },
+ "1205": {
+  "n": 2,
+  "term": "Emergency Power Failure",
+  "imdrf": "A191001",
+  "path": "Environmental Compatibility Problem > Electrical Power Problem > Emergency Power Failure",
+  "depth": 3
+ },
+ "1213": {
+  "n": 1,
+  "term": "Problem with Removal of Enzymatic Cleaner",
+  "imdrf": "A180304",
+  "path": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Removal of Enzymatic Cleaner",
+  "depth": 3
+ },
+ "2426": {
+  "n": 1,
+  "term": "High pH",
+  "imdrf": "A030206",
+  "path": "Chemical Problem > Device Ingredient or Reagent Problem > High pH",
+  "depth": 3
+ },
+ "3006": {
+  "n": 1,
+  "term": "Overcorrection",
+  "imdrf": "A0804",
+  "path": "Calibration Problem > Overcorrection",
+  "depth": 2
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "sdr qwen38_27b 2026": {
+  "rare_reports": 292,
+  "encoder_top1": 39,
+  "gold_in_encoder_top5": 68,
+  "llm_either_right": 145,
+  "llm_either_right_in_top5": 58,
+  "llm_either_right_outside_top5": 87,
+  "rule_right": 54,
+  "llm_zs_right": 141,
+  "segments": {
+   "kept_top1": 34,
+   "recovered_rank2_5": 20,
+   "missed_in_top5": 14,
+   "llm_only_outside_top5": 87,
+   "neither": 137
+  }
+ },
+ "sdr qwen38_27b 2025": {
+  "rare_reports": 436,
+  "encoder_top1": 58,
+  "gold_in_encoder_top5": 105,
+  "llm_either_right": 214,
+  "llm_either_right_in_top5": 92,
+  "llm_either_right_outside_top5": 122,
+  "rule_right": 91,
+  "llm_zs_right": 201,
+  "segments": {
+   "kept_top1": 57,
+   "recovered_rank2_5": 34,
+   "missed_in_top5": 14,
+   "llm_only_outside_top5": 122,
+   "neither": 209
+  }
+ },
+ "sdr gemma4_31b 2026": {
+  "rare_reports": 292,
+  "encoder_top1": 39,
+  "gold_in_encoder_top5": 68,
+  "llm_either_right": 146,
+  "llm_either_right_in_top5": 56,
+  "llm_either_right_outside_top5": 90,
+  "rule_right": 52,
+  "llm_zs_right": 140,
+  "segments": {
+   "kept_top1": 35,
+   "recovered_rank2_5": 17,
+   "missed_in_top5": 16,
+   "llm_only_outside_top5": 90,
+   "neither": 134
+  }
+ },
+ "sdr gemma4_31b 2025": {
+  "rare_reports": 436,
+  "encoder_top1": 58,
+  "gold_in_encoder_top5": 105,
+  "llm_either_right": 195,
+  "llm_either_right_in_top5": 86,
+  "llm_either_right_outside_top5": 109,
+  "rule_right": 85,
+  "llm_zs_right": 176,
+  "segments": {
+   "kept_top1": 55,
+   "recovered_rank2_5": 30,
+   "missed_in_top5": 20,
+   "llm_only_outside_top5": 109,
+   "neither": 222
+  }
+ }
+}

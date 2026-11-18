@@ -1,0 +1,128 @@
+{
+ "variant": "cb",
+ "size": "10k",
+ "seed": 43,
+ "lr": 2e-05,
+ "val_macro_f1": 0.1923,
+ "n_train": 10000,
+ "classes_present": 307,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.1923,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0027,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0262,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0736,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0967,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.1198,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.1335,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.145,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.1535,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.1675,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.1755,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.1811,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.1875,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.1923,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.1891,
+     "minutes": 0.3
+    }
+   ]
+  },
+  "5e-05": {
+   "val_macro_f1": 0.0003,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0003,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0003,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0003,
+     "minutes": 0.3
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0003,
+     "minutes": 0.3
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  15,
+  3
+ ],
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb_10k_seed43"
+}

@@ -1,0 +1,54 @@
+{
+ "rows_2023": 62691,
+ "rows_2024": 66080,
+ "rows_2025": 67652,
+ "rows_2026": 48392,
+ "dropped_term_or_empty": 30214,
+ "dropped_by_term": {
+  "UNKNOWN": 19597,
+  "NO TEST": 5776,
+  "NONE": 2758,
+  "NO DISCREPANCY": 1117,
+  "NOT REPORTED": 850,
+  "NOT ENTERED": 108,
+  "": 5,
+  "NOT REQUIRED": 3
+ },
+ "dropped_exact_duplicates": 6544,
+ "pool_train_rows": 101401,
+ "pool_2025_rows": 62088,
+ "pool_2026_rows": 44568,
+ "codes": 289,
+ "rows_under_unseen_terms": {
+  "2025": 74,
+  "2026": 154
+ },
+ "train_terms_by_count": {
+  "90+": 68,
+  "21-89": 47,
+  "6-20": 74,
+  "1-5": 100
+ },
+ "top5_terms": [
+  [
+   "CORRODED",
+   24775
+  ],
+  [
+   "CRACKED",
+   20853
+  ],
+  [
+   "INOPERATIVE",
+   8277
+  ],
+  [
+   "DAMAGED",
+   5090
+  ],
+  [
+   "FAILED",
+   3202
+  ]
+ ]
+}

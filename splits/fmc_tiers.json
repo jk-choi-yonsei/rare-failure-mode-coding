@@ -1,0 +1,59 @@
+{
+ "thresholds": {
+  "head_min": 50,
+  "tail_max": 14
+ },
+ "class_counts": {
+  "Minor in-service problems": 137,
+  "Breakdown": 81,
+  "Structural deficiency": 69,
+  "Electrical": 58,
+  "Plugged / choked": 50,
+  "Leaking": 44,
+  "Failure to start on demand": 28,
+  "Abnormal instrument reading": 23,
+  "Fail to function": 20,
+  "Overheating": 20,
+  "Low output": 17,
+  "Vibration": 17,
+  "Other": 12,
+  "Spurious stop": 10,
+  "Contamination": 9,
+  "Noise": 9,
+  "Erratic output": 8,
+  "Failure to stop on demand": 8,
+  "High output": 6,
+  "Fail to close": 2,
+  "Fail to open": 2,
+  "Failure to rotate": 2
+ },
+ "class_tiers": {
+  "Breakdown": "head",
+  "Plugged / choked": "head",
+  "Leaking": "body",
+  "Minor in-service problems": "head",
+  "Structural deficiency": "head",
+  "Noise": "tail",
+  "Failure to start on demand": "body",
+  "Vibration": "body",
+  "Overheating": "body",
+  "Fail to function": "body",
+  "Low output": "body",
+  "Electrical": "head",
+  "Failure to stop on demand": "tail",
+  "Abnormal instrument reading": "body",
+  "Other": "tail",
+  "Fail to close": "tail",
+  "Contamination": "tail",
+  "High output": "tail",
+  "Erratic output": "tail",
+  "Failure to rotate": "tail",
+  "Spurious stop": "tail",
+  "Fail to open": "tail"
+ },
+ "tier_sizes": {
+  "head": 5,
+  "body": 7,
+  "tail": 10
+ }
+}

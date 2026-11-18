@@ -1,0 +1,178 @@
+{
+ "variant": "cb",
+ "size": "1k",
+ "seed": 44,
+ "lr": 5e-05,
+ "val_macro_f1": 0.0957,
+ "n_train": 1000,
+ "classes_present": 189,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.0448,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0001,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0025,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.0061,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.0122,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.024,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.026,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.0291,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.0339,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.0366,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.0419,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.0425,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.0448,
+     "minutes": 0.1
+    }
+   ]
+  },
+  "5e-05": {
+   "val_macro_f1": 0.0957,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0001,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0044,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0211,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.0318,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.0515,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.0648,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.0744,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.0799,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.0892,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.093,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.0924,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.0943,
+     "minutes": 0.1
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.0957,
+     "minutes": 0.1
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  15,
+  3
+ ],
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb_1k_seed44"
+}

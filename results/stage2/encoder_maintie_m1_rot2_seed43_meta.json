@@ -1,0 +1,14 @@
+{
+ "hidden": [
+  "PhysicalObject/EmittingObject/ElectricCoolingObject",
+  "PhysicalObject/GuidingObject/SolidMatterGuidingObject",
+  "PhysicalObject/InterfacingObject/DetachableCoupling",
+  "PhysicalObject/PresentingObject/ScalarDisplay"
+ ],
+ "lr": 5e-05,
+ "val_macro_f1": 0.7358,
+ "n_known_classes": 112,
+ "n_train": 710,
+ "n_test_known": 195,
+ "n_novel": 51
+}

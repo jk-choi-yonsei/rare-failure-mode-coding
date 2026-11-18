@@ -1,0 +1,75 @@
+{
+ "validity": {
+  "haiku45": 1.0,
+  "sonnet5": 1.0
+ },
+ "arms": {
+  "encoder_ce": {
+   "overall_acc": 0.7097,
+   "overall_macro_f1": 0.3406,
+   "head_macro_f1": 0.8568,
+   "body_macro_f1": 0.6357,
+   "tail_macro_f1": 0.0984
+  },
+  "encoder_cb": {
+   "overall_acc": 0.493,
+   "overall_macro_f1": 0.2635,
+   "head_macro_f1": 0.5814,
+   "body_macro_f1": 0.4553,
+   "tail_macro_f1": 0.1081
+  },
+  "haiku45": {
+   "overall_acc": 0.2333,
+   "overall_macro_f1": 0.1897,
+   "head_macro_f1": 0.2938,
+   "body_macro_f1": 0.218,
+   "tail_macro_f1": 0.1599
+  },
+  "sonnet5": {
+   "overall_acc": 0.2686,
+   "overall_macro_f1": 0.2266,
+   "head_macro_f1": 0.2741,
+   "body_macro_f1": 0.2531,
+   "tail_macro_f1": 0.2047
+  }
+ },
+ "contrasts": {
+  "sonnet5_minus_encoder_ce_tail": {
+   "description": "best LLM vs fine-tuned encoder, tail",
+   "point": 0.1063,
+   "ci95": [
+    0.0284,
+    0.135
+   ],
+   "excludes_zero": true
+  },
+  "sonnet5_minus_encoder_cb_tail": {
+   "description": "best LLM vs long-tail-optimised encoder, tail",
+   "point": 0.0966,
+   "ci95": [
+    0.0221,
+    0.1206
+   ],
+   "excludes_zero": true
+  },
+  "encoder_ce_minus_sonnet5_head": {
+   "description": "encoder advantage on the head",
+   "point": 0.5827,
+   "ci95": [
+    0.5316,
+    0.6299
+   ],
+   "excludes_zero": true
+  },
+  "haiku45_minus_sonnet5_tail": {
+   "description": "cheap vs strong LLM, tail",
+   "point": -0.0448,
+   "ci95": [
+    -0.0744,
+    -0.0071
+   ],
+   "excludes_zero": true
+  }
+ },
+ "best_llm": "sonnet5"
+}

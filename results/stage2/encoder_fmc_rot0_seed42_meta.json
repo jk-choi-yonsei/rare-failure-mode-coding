@@ -1,0 +1,14 @@
+{
+ "hidden": [
+  "Failure to start on demand",
+  "High output",
+  "Spurious stop",
+  "Structural deficiency"
+ ],
+ "lr": 5e-05,
+ "val_macro_f1": 0.714,
+ "n_known_classes": 18,
+ "n_train": 373,
+ "n_test_known": 104,
+ "n_novel": 113
+}

@@ -1,0 +1,23 @@
+{
+ "rule": "ranks [3+r, ceil(.3C)+r, ceil(.6C)+r, ceil(.85C)+r], r in 0..2",
+ "rotations": [
+  [
+   "PhysicalObject/DrivingObject/FluidPoweredDrivingObject",
+   "PhysicalObject/GuidingObject/ElectricEnergyGuidingObject",
+   "PhysicalObject/InterfacingObject/LevelConnectingObject",
+   "PhysicalObject/GuidingObject/HighVoltageElectricEnergyGuidingObject"
+  ],
+  [
+   "PhysicalObject/DrivingObject/CombustionEngine",
+   "PhysicalObject/HoldingObject/CarryingObject",
+   "PhysicalObject/InterfacingObject/LowVoltageConnectingObject",
+   "PhysicalObject/GuidingObject/RailObject"
+  ],
+  [
+   "PhysicalObject/EmittingObject/ElectricCoolingObject",
+   "PhysicalObject/InterfacingObject/DetachableCoupling",
+   "PhysicalObject/PresentingObject/ScalarDisplay",
+   "PhysicalObject/GuidingObject/SolidMatterGuidingObject"
+  ]
+ ]
+}

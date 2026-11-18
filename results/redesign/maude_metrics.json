@@ -1,0 +1,2798 @@
+{
+ "prereg": "notes/prereg-redesign-2026-11-06.md",
+ "corpus": "maude",
+ "git_head_at_score": "53d9f4f",
+ "freeze": "splits/redesign_v1_maude.json",
+ "selector_encoder": "cb-large-conv",
+ "years": {
+  "2026": {
+   "selectors": {
+    "opus55": {
+     "n": 3956,
+     "codes": 420,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5037,
+       "1-5": 0.2636,
+       "6-20": 0.3551,
+       "21-89": 0.5657,
+       "90+": 0.5474
+      },
+      "best_single": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "cascade": {
+       "all": 0.4679,
+       "1-5": 0.1451,
+       "6-20": 0.3257,
+       "21-89": 0.5217,
+       "90+": 0.5246
+      },
+      "llm_rare": {
+       "all": 0.4678,
+       "1-5": 0.2398,
+       "6-20": 0.3827,
+       "21-89": 0.4824,
+       "90+": 0.5101
+      },
+      "mv_enc": {
+       "all": 0.4573,
+       "1-5": 0.1909,
+       "6-20": 0.2818,
+       "21-89": 0.5226,
+       "90+": 0.5078
+      },
+      "enc": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "zs": {
+       "all": 0.3027,
+       "1-5": 0.2228,
+       "6-20": 0.2708,
+       "21-89": 0.3888,
+       "90+": 0.3032
+      },
+      "rag": {
+       "all": 0.4416,
+       "1-5": 0.2038,
+       "6-20": 0.2333,
+       "21-89": 0.5015,
+       "90+": 0.4931
+      },
+      "S_cost": {
+       "all": 0.4941,
+       "1-5": 0.2355,
+       "6-20": 0.3447,
+       "21-89": 0.5523,
+       "90+": 0.5414
+      },
+      "S1": {
+       "all": 0.4682,
+       "1-5": 0.2425,
+       "6-20": 0.3679,
+       "21-89": 0.4811,
+       "90+": 0.5124
+      },
+      "oracle": {
+       "all": 0.5863,
+       "1-5": 0.3312,
+       "6-20": 0.4569,
+       "21-89": 0.6507,
+       "90+": 0.6293
+      }
+     },
+     "tests": {
+      "D1_selector_minus_best_single": {
+       "item": {
+        "point": 0.0577,
+        "ci95": [
+         0.0469,
+         0.0653
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0412,
+         0.0739
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D2_selector_minus_cascade": {
+       "item": {
+        "point": 0.0358,
+        "ci95": [
+         0.0262,
+         0.0442
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.021,
+         0.0518
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D3_selector_minus_frequency_rule": {
+       "item": {
+        "point": 0.0359,
+        "ci95": [
+         0.0266,
+         0.0443
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0194,
+         0.0523
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D4_selector_minus_majority_vote": {
+       "item": {
+        "point": 0.0463,
+        "ci95": [
+         0.0368,
+         0.0548
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0293,
+         0.0623
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D7_retrieval_minus_zeroshot": {
+       "item": {
+        "point": 0.1389,
+        "ci95": [
+         0.1209,
+         0.1492
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.1039,
+         0.1678
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      }
+     },
+     "frozen": {
+      "best_single_arm_2024": "enc",
+      "cascade": {
+       "arm": "rag",
+       "theta": 0.5,
+       "macro_f1_2024": 0.6692
+      },
+      "main_family": "S2",
+      "llm_rare_k": 20,
+      "choice_share": {
+       "enc": 0.5586,
+       "zs": 0.2093,
+       "rag": 0.2321
+      }
+     }
+    },
+    "qwen38_27b": {
+     "n": 3956,
+     "codes": 420,
+     "macro_f1": {
+      "selector": {
+       "all": 0.4783,
+       "1-5": 0.1625,
+       "6-20": 0.344,
+       "21-89": 0.5264,
+       "90+": 0.5341
+      },
+      "best_single": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "cascade": {
+       "all": 0.4521,
+       "1-5": 0.1056,
+       "6-20": 0.3043,
+       "21-89": 0.5,
+       "90+": 0.5142
+      },
+      "llm_rare": {
+       "all": 0.4469,
+       "1-5": 0.1096,
+       "6-20": 0.2739,
+       "21-89": 0.491,
+       "90+": 0.5116
+      },
+      "mv_enc": {
+       "all": 0.4394,
+       "1-5": 0.1547,
+       "6-20": 0.2759,
+       "21-89": 0.489,
+       "90+": 0.4939
+      },
+      "enc": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "zs": {
+       "all": 0.2384,
+       "1-5": 0.1764,
+       "6-20": 0.224,
+       "21-89": 0.3167,
+       "90+": 0.2354
+      },
+      "rag": {
+       "all": 0.4042,
+       "1-5": 0.1422,
+       "6-20": 0.2093,
+       "21-89": 0.4512,
+       "90+": 0.4598
+      },
+      "S_cost": {
+       "all": 0.4771,
+       "1-5": 0.1585,
+       "6-20": 0.3373,
+       "21-89": 0.5284,
+       "90+": 0.5334
+      },
+      "S1": {
+       "all": 0.4441,
+       "1-5": 0.1009,
+       "6-20": 0.2705,
+       "21-89": 0.4907,
+       "90+": 0.5093
+      },
+      "oracle": {
+       "all": 0.565,
+       "1-5": 0.2777,
+       "6-20": 0.413,
+       "21-89": 0.6275,
+       "90+": 0.6161
+      }
+     },
+     "tests": {
+      "D1_selector_minus_best_single": {
+       "item": {
+        "point": 0.0324,
+        "ci95": [
+         0.0242,
+         0.0403
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0188,
+         0.0479
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D2_selector_minus_cascade": {
+       "item": {
+        "point": 0.0262,
+        "ci95": [
+         0.0183,
+         0.0339
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0132,
+         0.0414
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D3_selector_minus_frequency_rule": {
+       "item": {
+        "point": 0.0314,
+        "ci95": [
+         0.0233,
+         0.0398
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0173,
+         0.0469
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D4_selector_minus_majority_vote": {
+       "item": {
+        "point": 0.039,
+        "ci95": [
+         0.0299,
+         0.0488
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0225,
+         0.0566
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D7_retrieval_minus_zeroshot": {
+       "item": {
+        "point": 0.1658,
+        "ci95": [
+         0.1496,
+         0.1757
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.1336,
+         0.1948
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      }
+     },
+     "frozen": {
+      "best_single_arm_2024": "enc",
+      "cascade": {
+       "arm": "rag",
+       "theta": 0.3,
+       "macro_f1_2024": 0.6633
+      },
+      "main_family": "S3",
+      "llm_rare_k": 1,
+      "choice_share": {
+       "enc": 0.525,
+       "zs": 0.1714,
+       "rag": 0.3036
+      }
+     }
+    },
+    "gemma4_31b": {
+     "n": 3956,
+     "codes": 420,
+     "macro_f1": {
+      "selector": {
+       "all": 0.486,
+       "1-5": 0.2227,
+       "6-20": 0.3476,
+       "21-89": 0.5308,
+       "90+": 0.535
+      },
+      "best_single": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "cascade": {
+       "all": 0.4587,
+       "1-5": 0.1442,
+       "6-20": 0.3232,
+       "21-89": 0.511,
+       "90+": 0.5137
+      },
+      "llm_rare": {
+       "all": 0.4472,
+       "1-5": 0.115,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5111
+      },
+      "mv_enc": {
+       "all": 0.4407,
+       "1-5": 0.1949,
+       "6-20": 0.3008,
+       "21-89": 0.4911,
+       "90+": 0.4863
+      },
+      "enc": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "zs": {
+       "all": 0.2458,
+       "1-5": 0.1951,
+       "6-20": 0.2282,
+       "21-89": 0.295,
+       "90+": 0.2468
+      },
+      "rag": {
+       "all": 0.4064,
+       "1-5": 0.1855,
+       "6-20": 0.2157,
+       "21-89": 0.432,
+       "90+": 0.4593
+      },
+      "S_cost": {
+       "all": 0.4844,
+       "1-5": 0.2174,
+       "6-20": 0.3443,
+       "21-89": 0.528,
+       "90+": 0.5345
+      },
+      "S1": {
+       "all": 0.459,
+       "1-5": 0.234,
+       "6-20": 0.2681,
+       "21-89": 0.4896,
+       "90+": 0.5116
+      },
+      "oracle": {
+       "all": 0.5621,
+       "1-5": 0.3221,
+       "6-20": 0.4227,
+       "21-89": 0.603,
+       "90+": 0.6085
+      }
+     },
+     "tests": {
+      "D1_selector_minus_best_single": {
+       "item": {
+        "point": 0.0401,
+        "ci95": [
+         0.0318,
+         0.0478
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.025,
+         0.0558
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D2_selector_minus_cascade": {
+       "item": {
+        "point": 0.0273,
+        "ci95": [
+         0.0203,
+         0.035
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0145,
+         0.0431
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D3_selector_minus_frequency_rule": {
+       "item": {
+        "point": 0.0388,
+        "ci95": [
+         0.0306,
+         0.0468
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0234,
+         0.0548
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D4_selector_minus_majority_vote": {
+       "item": {
+        "point": 0.0453,
+        "ci95": [
+         0.0368,
+         0.0561
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0288,
+         0.0635
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "D7_retrieval_minus_zeroshot": {
+       "item": {
+        "point": 0.1606,
+        "ci95": [
+         0.1428,
+         0.1701
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.1259,
+         0.1883
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      }
+     },
+     "frozen": {
+      "best_single_arm_2024": "enc",
+      "cascade": {
+       "arm": "rag",
+       "theta": 0.4,
+       "macro_f1_2024": 0.6663
+      },
+      "main_family": "S2",
+      "llm_rare_k": 1,
+      "choice_share": {
+       "enc": 0.6357,
+       "zs": 0.1729,
+       "rag": 0.1914
+      }
+     }
+    }
+   },
+   "verdicts": {
+    "D1": "holds",
+    "D1_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D2": "holds",
+    "D2_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D3": "holds",
+    "D3_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D4": "holds",
+    "D4_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D7": "holds",
+    "D7_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D5": "holds",
+    "D6": "fails",
+    "D5_by_llm": {
+     "opus55": "holds",
+     "qwen38_27b": "holds",
+     "gemma4_31b": "holds"
+    },
+    "D6_by_llm": {
+     "opus55": "fails",
+     "qwen38_27b": "holds",
+     "gemma4_31b": "holds"
+    }
+   },
+   "boundary": {
+    "missing": [],
+    "D5": {
+     "1k/opus55": {
+      "item": {
+       "point": 0.2068,
+       "ci95": [
+        0.1822,
+        0.2223
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.148,
+        0.2564
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 144,
+      "holds": true
+     },
+     "1k/qwen38_27b": {
+      "item": {
+       "point": 0.1575,
+       "ci95": [
+        0.1363,
+        0.1702
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1006,
+        0.2083
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 144,
+      "holds": true
+     },
+     "1k/gemma4_31b": {
+      "item": {
+       "point": 0.1524,
+       "ci95": [
+        0.1312,
+        0.1676
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1,
+        0.2022
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 144,
+      "holds": true
+     },
+     "10k/opus55": {
+      "item": {
+       "point": 0.2212,
+       "ci95": [
+        0.1902,
+        0.2397
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.149,
+        0.2792
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 114,
+      "holds": true
+     },
+     "10k/qwen38_27b": {
+      "item": {
+       "point": 0.1457,
+       "ci95": [
+        0.1196,
+        0.1635
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0708,
+        0.2096
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 114,
+      "holds": true
+     },
+     "10k/gemma4_31b": {
+      "item": {
+       "point": 0.1516,
+       "ci95": [
+        0.126,
+        0.1703
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0813,
+        0.2124
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 114,
+      "holds": true
+     },
+     "100k/opus55": {
+      "item": {
+       "point": 0.2165,
+       "ci95": [
+        0.1735,
+        0.2486
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.115,
+        0.3139
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 57,
+      "holds": true
+     },
+     "100k/qwen38_27b": {
+      "item": {
+       "point": 0.1656,
+       "ci95": [
+        0.1217,
+        0.197
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0767,
+        0.2548
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 57,
+      "holds": true
+     },
+     "100k/gemma4_31b": {
+      "item": {
+       "point": 0.1868,
+       "ci95": [
+        0.1447,
+        0.222
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0838,
+        0.2765
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 57,
+      "holds": true
+     },
+     "full/opus55": {
+      "item": {
+       "point": 0.1476,
+       "ci95": [
+        0.1044,
+        0.1934
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0446,
+        0.2493
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 43,
+      "holds": true
+     },
+     "full/qwen38_27b": {
+      "item": {
+       "point": 0.1012,
+       "ci95": [
+        0.0586,
+        0.1521
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0048,
+        0.2038
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 43,
+      "holds": true
+     },
+     "full/gemma4_31b": {
+      "item": {
+       "point": 0.1199,
+       "ci95": [
+        0.069,
+        0.17
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0111,
+        0.2238
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 43,
+      "holds": true
+     }
+    },
+    "D6": {
+     "100k/21-89/opus55": {
+      "item": {
+       "point": 0.1066,
+       "ci95": [
+        0.0769,
+        0.132
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0381,
+        0.1743
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 106,
+      "holds": true
+     },
+     "100k/21-89/qwen38_27b": {
+      "item": {
+       "point": 0.1837,
+       "ci95": [
+        0.1565,
+        0.2042
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1178,
+        0.247
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 106,
+      "holds": true
+     },
+     "100k/21-89/gemma4_31b": {
+      "item": {
+       "point": 0.1657,
+       "ci95": [
+        0.1365,
+        0.187
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1037,
+        0.2233
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 106,
+      "holds": true
+     },
+     "100k/90+/opus55": {
+      "item": {
+       "point": 0.1451,
+       "ci95": [
+        0.1238,
+        0.1614
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0973,
+        0.1908
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 161,
+      "holds": true
+     },
+     "100k/90+/qwen38_27b": {
+      "item": {
+       "point": 0.2008,
+       "ci95": [
+        0.1799,
+        0.2138
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1503,
+        0.2415
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 161,
+      "holds": true
+     },
+     "100k/90+/gemma4_31b": {
+      "item": {
+       "point": 0.1942,
+       "ci95": [
+        0.1729,
+        0.2077
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1452,
+        0.2338
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 161,
+      "holds": true
+     },
+     "full/21-89/opus55": {
+      "item": {
+       "point": 0.0955,
+       "ci95": [
+        0.0451,
+        0.1369
+       ]
+      },
+      "code": {
+       "ci95": [
+        -0.0176,
+        0.1999
+       ],
+       "excludes_zero": false
+      },
+      "n_items": 3956,
+      "n_codes": 52,
+      "holds": false
+     },
+     "full/21-89/qwen38_27b": {
+      "item": {
+       "point": 0.1676,
+       "ci95": [
+        0.1176,
+        0.2078
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0551,
+        0.2701
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 52,
+      "holds": true
+     },
+     "full/21-89/gemma4_31b": {
+      "item": {
+       "point": 0.1892,
+       "ci95": [
+        0.1407,
+        0.2234
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0736,
+        0.2952
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 52,
+      "holds": true
+     },
+     "full/90+/opus55": {
+      "item": {
+       "point": 0.1952,
+       "ci95": [
+        0.1747,
+        0.2114
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1538,
+        0.2266
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 288,
+      "holds": true
+     },
+     "full/90+/qwen38_27b": {
+      "item": {
+       "point": 0.2631,
+       "ci95": [
+        0.243,
+        0.2755
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.2192,
+        0.2933
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 288,
+      "holds": true
+     },
+     "full/90+/gemma4_31b": {
+      "item": {
+       "point": 0.2516,
+       "ci95": [
+        0.2318,
+        0.2648
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.2109,
+        0.2796
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 3956,
+      "n_codes": 288,
+      "holds": true
+     }
+    },
+    "macro_f1": {
+     "1k/1-5": {
+      "n_codes": 144,
+      "n_items": 1427,
+      "encoder_base": 0.0793,
+      "opus55": 0.2862,
+      "qwen38_27b": 0.2368,
+      "gemma4_31b": 0.2317
+     },
+     "1k/6-20": {
+      "n_codes": 36,
+      "n_items": 360,
+      "encoder_base": 0.0807,
+      "opus55": 0.2069,
+      "qwen38_27b": 0.149,
+      "gemma4_31b": 0.1431
+     },
+     "1k/21-89": {
+      "n_codes": 9,
+      "n_items": 90,
+      "encoder_base": 0.1434,
+      "opus55": 0.3706,
+      "qwen38_27b": 0.2705,
+      "gemma4_31b": 0.2946
+     },
+     "10k/1-5": {
+      "n_codes": 114,
+      "n_items": 1118,
+      "encoder_base": 0.1088,
+      "opus55": 0.33,
+      "qwen38_27b": 0.2545,
+      "gemma4_31b": 0.2604
+     },
+     "10k/6-20": {
+      "n_codes": 98,
+      "n_items": 980,
+      "encoder_base": 0.17,
+      "opus55": 0.3002,
+      "qwen38_27b": 0.2314,
+      "gemma4_31b": 0.2525
+     },
+     "10k/21-89": {
+      "n_codes": 69,
+      "n_items": 690,
+      "encoder_base": 0.1719,
+      "opus55": 0.2918,
+      "qwen38_27b": 0.2388,
+      "gemma4_31b": 0.2441
+     },
+     "10k/90+": {
+      "n_codes": 25,
+      "n_items": 250,
+      "encoder_base": 0.2126,
+      "opus55": 0.2561,
+      "qwen38_27b": 0.1948,
+      "gemma4_31b": 0.1865
+     },
+     "100k/1-5": {
+      "n_codes": 57,
+      "n_items": 490,
+      "encoder_base": 0.0928,
+      "opus55": 0.3093,
+      "qwen38_27b": 0.2585,
+      "gemma4_31b": 0.2796
+     },
+     "100k/6-20": {
+      "n_codes": 57,
+      "n_items": 548,
+      "encoder_base": 0.3499,
+      "opus55": 0.3752,
+      "qwen38_27b": 0.2777,
+      "gemma4_31b": 0.2698
+     },
+     "100k/21-89": {
+      "n_codes": 106,
+      "n_items": 1060,
+      "encoder_base": 0.4353,
+      "opus55": 0.3287,
+      "qwen38_27b": 0.2516,
+      "gemma4_31b": 0.2696
+     },
+     "100k/90+": {
+      "n_codes": 161,
+      "n_items": 1610,
+      "encoder_base": 0.4249,
+      "opus55": 0.2798,
+      "qwen38_27b": 0.2241,
+      "gemma4_31b": 0.2307
+     },
+     "full/1-5": {
+      "n_codes": 43,
+      "n_items": 261,
+      "encoder_base": 0.0752,
+      "opus55": 0.2228,
+      "qwen38_27b": 0.1764,
+      "gemma4_31b": 0.1951
+     },
+     "full/6-20": {
+      "n_codes": 37,
+      "n_items": 325,
+      "encoder_base": 0.2465,
+      "opus55": 0.2708,
+      "qwen38_27b": 0.224,
+      "gemma4_31b": 0.2282
+     },
+     "full/21-89": {
+      "n_codes": 52,
+      "n_items": 490,
+      "encoder_base": 0.4842,
+      "opus55": 0.3888,
+      "qwen38_27b": 0.3167,
+      "gemma4_31b": 0.295
+     },
+     "full/90+": {
+      "n_codes": 288,
+      "n_items": 2880,
+      "encoder_base": 0.4984,
+      "opus55": 0.3032,
+      "qwen38_27b": 0.2354,
+      "gemma4_31b": 0.2468
+     }
+    },
+    "D5_cells_expected": [
+     "1k/opus55",
+     "1k/qwen38_27b",
+     "1k/gemma4_31b",
+     "10k/opus55",
+     "10k/qwen38_27b",
+     "10k/gemma4_31b",
+     "100k/opus55",
+     "100k/qwen38_27b",
+     "100k/gemma4_31b",
+     "full/opus55",
+     "full/qwen38_27b",
+     "full/gemma4_31b"
+    ],
+    "D6_cells_expected": [
+     "100k/21-89/opus55",
+     "100k/21-89/qwen38_27b",
+     "100k/21-89/gemma4_31b",
+     "100k/90+/opus55",
+     "100k/90+/qwen38_27b",
+     "100k/90+/gemma4_31b",
+     "full/21-89/opus55",
+     "full/21-89/qwen38_27b",
+     "full/21-89/gemma4_31b",
+     "full/90+/opus55",
+     "full/90+/qwen38_27b",
+     "full/90+/gemma4_31b"
+    ]
+   }
+  },
+  "2025": {
+   "selectors": {
+    "opus55": {
+     "n": 4017,
+     "codes": 423,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5581,
+       "1-5": 0.2631,
+       "6-20": 0.3416,
+       "21-89": 0.5936,
+       "90+": 0.6266
+      },
+      "best_single": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "cascade": {
+       "all": 0.5238,
+       "1-5": 0.1663,
+       "6-20": 0.2694,
+       "21-89": 0.5529,
+       "90+": 0.6083
+      },
+      "llm_rare": {
+       "all": 0.5395,
+       "1-5": 0.2863,
+       "6-20": 0.3807,
+       "21-89": 0.5422,
+       "90+": 0.5998
+      },
+      "mv_enc": {
+       "all": 0.5142,
+       "1-5": 0.2011,
+       "6-20": 0.273,
+       "21-89": 0.5448,
+       "90+": 0.5896
+      },
+      "enc": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "zs": {
+       "all": 0.3,
+       "1-5": 0.2319,
+       "6-20": 0.2691,
+       "21-89": 0.3542,
+       "90+": 0.3051
+      },
+      "rag": {
+       "all": 0.483,
+       "1-5": 0.1773,
+       "6-20": 0.2275,
+       "21-89": 0.4859,
+       "90+": 0.5641
+      },
+      "S_cost": {
+       "all": 0.5539,
+       "1-5": 0.2537,
+       "6-20": 0.327,
+       "21-89": 0.5898,
+       "90+": 0.6246
+      },
+      "S1": {
+       "all": 0.5404,
+       "1-5": 0.2855,
+       "6-20": 0.3726,
+       "21-89": 0.5458,
+       "90+": 0.6016
+      },
+      "oracle": {
+       "all": 0.6296,
+       "1-5": 0.326,
+       "6-20": 0.4393,
+       "21-89": 0.6597,
+       "90+": 0.6971
+      }
+     },
+     "tests": {
+      "D1_selector_minus_best_single": {
+       "item": {
+        "point": 0.0446,
+        "ci95": [
+         0.0355,
+         0.052
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0291,
+         0.0613
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D2_selector_minus_cascade": {
+       "item": {
+        "point": 0.0343,
+        "ci95": [
+         0.0257,
+         0.0422
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0197,
+         0.0477
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D3_selector_minus_frequency_rule": {
+       "item": {
+        "point": 0.0186,
+        "ci95": [
+         0.0117,
+         0.0274
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.005,
+         0.0347
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D4_selector_minus_majority_vote": {
+       "item": {
+        "point": 0.0439,
+        "ci95": [
+         0.0353,
+         0.0525
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0285,
+         0.0605
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D7_retrieval_minus_zeroshot": {
+       "item": {
+        "point": 0.183,
+        "ci95": [
+         0.1681,
+         0.1943
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.1503,
+         0.2138
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      }
+     },
+     "frozen": {
+      "best_single_arm_2024": "enc",
+      "cascade": {
+       "arm": "rag",
+       "theta": 0.5,
+       "macro_f1_2024": 0.6692
+      },
+      "main_family": "S2",
+      "llm_rare_k": 20,
+      "choice_share": {
+       "enc": 0.6044,
+       "zs": 0.1474,
+       "rag": 0.2482
+      }
+     }
+    },
+    "qwen38_27b": {
+     "n": 4017,
+     "codes": 423,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5386,
+       "1-5": 0.2009,
+       "6-20": 0.328,
+       "21-89": 0.5685,
+       "90+": 0.6142
+      },
+      "best_single": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "cascade": {
+       "all": 0.518,
+       "1-5": 0.1542,
+       "6-20": 0.2832,
+       "21-89": 0.5443,
+       "90+": 0.6015
+      },
+      "llm_rare": {
+       "all": 0.513,
+       "1-5": 0.1421,
+       "6-20": 0.2614,
+       "21-89": 0.5469,
+       "90+": 0.5984
+      },
+      "mv_enc": {
+       "all": 0.4948,
+       "1-5": 0.1711,
+       "6-20": 0.2815,
+       "21-89": 0.52,
+       "90+": 0.5693
+      },
+      "enc": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "zs": {
+       "all": 0.2319,
+       "1-5": 0.1424,
+       "6-20": 0.2361,
+       "21-89": 0.2696,
+       "90+": 0.2388
+      },
+      "rag": {
+       "all": 0.4476,
+       "1-5": 0.1595,
+       "6-20": 0.2049,
+       "21-89": 0.435,
+       "90+": 0.527
+      },
+      "S_cost": {
+       "all": 0.5368,
+       "1-5": 0.2015,
+       "6-20": 0.3136,
+       "21-89": 0.5655,
+       "90+": 0.6138
+      },
+      "S1": {
+       "all": 0.5125,
+       "1-5": 0.1379,
+       "6-20": 0.271,
+       "21-89": 0.5472,
+       "90+": 0.597
+      },
+      "oracle": {
+       "all": 0.6147,
+       "1-5": 0.2826,
+       "6-20": 0.41,
+       "21-89": 0.6543,
+       "90+": 0.6869
+      }
+     },
+     "tests": {
+      "D1_selector_minus_best_single": {
+       "item": {
+        "point": 0.0251,
+        "ci95": [
+         0.0174,
+         0.0322
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0113,
+         0.0402
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D2_selector_minus_cascade": {
+       "item": {
+        "point": 0.0206,
+        "ci95": [
+         0.0136,
+         0.0271
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0081,
+         0.0343
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D3_selector_minus_frequency_rule": {
+       "item": {
+        "point": 0.0256,
+        "ci95": [
+         0.0178,
+         0.0331
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0117,
+         0.0409
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D4_selector_minus_majority_vote": {
+       "item": {
+        "point": 0.0438,
+        "ci95": [
+         0.0348,
+         0.0533
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0288,
+         0.0603
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D7_retrieval_minus_zeroshot": {
+       "item": {
+        "point": 0.2157,
+        "ci95": [
+         0.1988,
+         0.226
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.1818,
+         0.2437
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      }
+     },
+     "frozen": {
+      "best_single_arm_2024": "enc",
+      "cascade": {
+       "arm": "rag",
+       "theta": 0.3,
+       "macro_f1_2024": 0.6633
+      },
+      "main_family": "S3",
+      "llm_rare_k": 1,
+      "choice_share": {
+       "enc": 0.5703,
+       "zs": 0.1519,
+       "rag": 0.2778
+      }
+     }
+    },
+    "gemma4_31b": {
+     "n": 4017,
+     "codes": 423,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5478,
+       "1-5": 0.235,
+       "6-20": 0.3374,
+       "21-89": 0.5826,
+       "90+": 0.6185
+      },
+      "best_single": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "cascade": {
+       "all": 0.5197,
+       "1-5": 0.1649,
+       "6-20": 0.297,
+       "21-89": 0.5394,
+       "90+": 0.6014
+      },
+      "llm_rare": {
+       "all": 0.5144,
+       "1-5": 0.1547,
+       "6-20": 0.2649,
+       "21-89": 0.5418,
+       "90+": 0.599
+      },
+      "mv_enc": {
+       "all": 0.4986,
+       "1-5": 0.1904,
+       "6-20": 0.2988,
+       "21-89": 0.5297,
+       "90+": 0.5679
+      },
+      "enc": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "zs": {
+       "all": 0.2406,
+       "1-5": 0.1656,
+       "6-20": 0.2256,
+       "21-89": 0.2661,
+       "90+": 0.2499
+      },
+      "rag": {
+       "all": 0.4554,
+       "1-5": 0.1764,
+       "6-20": 0.241,
+       "21-89": 0.4371,
+       "90+": 0.5308
+      },
+      "S_cost": {
+       "all": 0.5447,
+       "1-5": 0.2098,
+       "6-20": 0.3349,
+       "21-89": 0.5818,
+       "90+": 0.6185
+      },
+      "S1": {
+       "all": 0.5182,
+       "1-5": 0.213,
+       "6-20": 0.262,
+       "21-89": 0.5379,
+       "90+": 0.5963
+      },
+      "oracle": {
+       "all": 0.6132,
+       "1-5": 0.2874,
+       "6-20": 0.4238,
+       "21-89": 0.6407,
+       "90+": 0.6847
+      }
+     },
+     "tests": {
+      "D1_selector_minus_best_single": {
+       "item": {
+        "point": 0.0344,
+        "ci95": [
+         0.0273,
+         0.0411
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0205,
+         0.049
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D2_selector_minus_cascade": {
+       "item": {
+        "point": 0.0281,
+        "ci95": [
+         0.021,
+         0.0341
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0156,
+         0.0411
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D3_selector_minus_frequency_rule": {
+       "item": {
+        "point": 0.0334,
+        "ci95": [
+         0.0262,
+         0.0404
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0195,
+         0.0478
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D4_selector_minus_majority_vote": {
+       "item": {
+        "point": 0.0492,
+        "ci95": [
+         0.0403,
+         0.0587
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0337,
+         0.0654
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "D7_retrieval_minus_zeroshot": {
+       "item": {
+        "point": 0.2148,
+        "ci95": [
+         0.1976,
+         0.2257
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.1823,
+         0.2456
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      }
+     },
+     "frozen": {
+      "best_single_arm_2024": "enc",
+      "cascade": {
+       "arm": "rag",
+       "theta": 0.4,
+       "macro_f1_2024": 0.6663
+      },
+      "main_family": "S2",
+      "llm_rare_k": 1,
+      "choice_share": {
+       "enc": 0.6933,
+       "zs": 0.1242,
+       "rag": 0.1825
+      }
+     }
+    }
+   },
+   "verdicts": {
+    "D1": "holds",
+    "D1_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D2": "holds",
+    "D2_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D3": "holds",
+    "D3_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D4": "holds",
+    "D4_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D7": "holds",
+    "D7_by_llm": {
+     "opus55": true,
+     "qwen38_27b": true,
+     "gemma4_31b": true
+    },
+    "D5": "fails",
+    "D6": "holds",
+    "D5_by_llm": {
+     "opus55": "holds",
+     "qwen38_27b": "fails",
+     "gemma4_31b": "fails"
+    },
+    "D6_by_llm": {
+     "opus55": "holds",
+     "qwen38_27b": "holds",
+     "gemma4_31b": "holds"
+    }
+   },
+   "boundary": {
+    "missing": [],
+    "D5": {
+     "1k/opus55": {
+      "item": {
+       "point": 0.1878,
+       "ci95": [
+        0.1646,
+        0.2029
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1313,
+        0.2349
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 144,
+      "holds": true
+     },
+     "1k/qwen38_27b": {
+      "item": {
+       "point": 0.1307,
+       "ci95": [
+        0.1097,
+        0.1453
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0802,
+        0.1744
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 144,
+      "holds": true
+     },
+     "1k/gemma4_31b": {
+      "item": {
+       "point": 0.1387,
+       "ci95": [
+        0.117,
+        0.154
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0861,
+        0.1845
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 144,
+      "holds": true
+     },
+     "10k/opus55": {
+      "item": {
+       "point": 0.1876,
+       "ci95": [
+        0.159,
+        0.2066
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1131,
+        0.2467
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 114,
+      "holds": true
+     },
+     "10k/qwen38_27b": {
+      "item": {
+       "point": 0.1237,
+       "ci95": [
+        0.1002,
+        0.1439
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0559,
+        0.1848
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 114,
+      "holds": true
+     },
+     "10k/gemma4_31b": {
+      "item": {
+       "point": 0.1211,
+       "ci95": [
+        0.0962,
+        0.1413
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0527,
+        0.1835
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 114,
+      "holds": true
+     },
+     "100k/opus55": {
+      "item": {
+       "point": 0.1832,
+       "ci95": [
+        0.144,
+        0.2136
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0786,
+        0.276
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 57,
+      "holds": true
+     },
+     "100k/qwen38_27b": {
+      "item": {
+       "point": 0.1495,
+       "ci95": [
+        0.1144,
+        0.1777
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0547,
+        0.2366
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 57,
+      "holds": true
+     },
+     "100k/gemma4_31b": {
+      "item": {
+       "point": 0.1415,
+       "ci95": [
+        0.1078,
+        0.1691
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0437,
+        0.2319
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 57,
+      "holds": true
+     },
+     "full/opus55": {
+      "item": {
+       "point": 0.125,
+       "ci95": [
+        0.0666,
+        0.1701
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0186,
+        0.2257
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 46,
+      "holds": true
+     },
+     "full/qwen38_27b": {
+      "item": {
+       "point": 0.0356,
+       "ci95": [
+        -0.0028,
+        0.0728
+       ]
+      },
+      "code": {
+       "ci95": [
+        -0.0524,
+        0.1209
+       ],
+       "excludes_zero": false
+      },
+      "n_items": 4017,
+      "n_codes": 46,
+      "holds": false
+     },
+     "full/gemma4_31b": {
+      "item": {
+       "point": 0.0588,
+       "ci95": [
+        0.0126,
+        0.1001
+       ]
+      },
+      "code": {
+       "ci95": [
+        -0.031,
+        0.153
+       ],
+       "excludes_zero": false
+      },
+      "n_items": 4017,
+      "n_codes": 46,
+      "holds": false
+     }
+    },
+    "D6": {
+     "100k/21-89/opus55": {
+      "item": {
+       "point": 0.1692,
+       "ci95": [
+        0.1396,
+        0.194
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1001,
+        0.2292
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 106,
+      "holds": true
+     },
+     "100k/21-89/qwen38_27b": {
+      "item": {
+       "point": 0.2372,
+       "ci95": [
+        0.2055,
+        0.2593
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1692,
+        0.2912
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 106,
+      "holds": true
+     },
+     "100k/21-89/gemma4_31b": {
+      "item": {
+       "point": 0.2381,
+       "ci95": [
+        0.2061,
+        0.2623
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1713,
+        0.2932
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 106,
+      "holds": true
+     },
+     "100k/90+/opus55": {
+      "item": {
+       "point": 0.2389,
+       "ci95": [
+        0.2175,
+        0.256
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.191,
+        0.2841
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 161,
+      "holds": true
+     },
+     "100k/90+/qwen38_27b": {
+      "item": {
+       "point": 0.3,
+       "ci95": [
+        0.276,
+        0.3151
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.2513,
+        0.3412
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 161,
+      "holds": true
+     },
+     "100k/90+/gemma4_31b": {
+      "item": {
+       "point": 0.2816,
+       "ci95": [
+        0.2576,
+        0.2965
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.2319,
+        0.3235
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 161,
+      "holds": true
+     },
+     "full/21-89/opus55": {
+      "item": {
+       "point": 0.1703,
+       "ci95": [
+        0.1274,
+        0.2131
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.0553,
+        0.2843
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 52,
+      "holds": true
+     },
+     "full/21-89/qwen38_27b": {
+      "item": {
+       "point": 0.2549,
+       "ci95": [
+        0.2101,
+        0.2916
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1355,
+        0.3644
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 52,
+      "holds": true
+     },
+     "full/21-89/gemma4_31b": {
+      "item": {
+       "point": 0.2585,
+       "ci95": [
+        0.2155,
+        0.2975
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.1363,
+        0.3729
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 52,
+      "holds": true
+     },
+     "full/90+/opus55": {
+      "item": {
+       "point": 0.2818,
+       "ci95": [
+        0.2607,
+        0.2971
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.2406,
+        0.3171
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 288,
+      "holds": true
+     },
+     "full/90+/qwen38_27b": {
+      "item": {
+       "point": 0.3481,
+       "ci95": [
+        0.327,
+        0.3628
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.3062,
+        0.3804
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 288,
+      "holds": true
+     },
+     "full/90+/gemma4_31b": {
+      "item": {
+       "point": 0.337,
+       "ci95": [
+        0.3157,
+        0.3518
+       ]
+      },
+      "code": {
+       "ci95": [
+        0.2942,
+        0.3695
+       ],
+       "excludes_zero": true
+      },
+      "n_items": 4017,
+      "n_codes": 288,
+      "holds": true
+     }
+    },
+    "macro_f1": {
+     "1k/1-5": {
+      "n_codes": 144,
+      "n_items": 1440,
+      "encoder_base": 0.0939,
+      "opus55": 0.2817,
+      "qwen38_27b": 0.2246,
+      "gemma4_31b": 0.2326
+     },
+     "1k/6-20": {
+      "n_codes": 36,
+      "n_items": 360,
+      "encoder_base": 0.0985,
+      "opus55": 0.1946,
+      "qwen38_27b": 0.1643,
+      "gemma4_31b": 0.184
+     },
+     "1k/21-89": {
+      "n_codes": 9,
+      "n_items": 90,
+      "encoder_base": 0.1619,
+      "opus55": 0.3936,
+      "qwen38_27b": 0.2955,
+      "gemma4_31b": 0.2922
+     },
+     "10k/1-5": {
+      "n_codes": 114,
+      "n_items": 1129,
+      "encoder_base": 0.1312,
+      "opus55": 0.3188,
+      "qwen38_27b": 0.2549,
+      "gemma4_31b": 0.2523
+     },
+     "10k/6-20": {
+      "n_codes": 98,
+      "n_items": 980,
+      "encoder_base": 0.2125,
+      "opus55": 0.3145,
+      "qwen38_27b": 0.2301,
+      "gemma4_31b": 0.2514
+     },
+     "10k/21-89": {
+      "n_codes": 69,
+      "n_items": 690,
+      "encoder_base": 0.2068,
+      "opus55": 0.2864,
+      "qwen38_27b": 0.2291,
+      "gemma4_31b": 0.2585
+     },
+     "10k/90+": {
+      "n_codes": 25,
+      "n_items": 250,
+      "encoder_base": 0.261,
+      "opus55": 0.264,
+      "qwen38_27b": 0.2124,
+      "gemma4_31b": 0.2219
+     },
+     "100k/1-5": {
+      "n_codes": 57,
+      "n_items": 515,
+      "encoder_base": 0.1071,
+      "opus55": 0.2903,
+      "qwen38_27b": 0.2566,
+      "gemma4_31b": 0.2486
+     },
+     "100k/6-20": {
+      "n_codes": 57,
+      "n_items": 570,
+      "encoder_base": 0.4074,
+      "opus55": 0.3511,
+      "qwen38_27b": 0.2462,
+      "gemma4_31b": 0.2544
+     },
+     "100k/21-89": {
+      "n_codes": 106,
+      "n_items": 1060,
+      "encoder_base": 0.4982,
+      "opus55": 0.329,
+      "qwen38_27b": 0.2609,
+      "gemma4_31b": 0.2601
+     },
+     "100k/90+": {
+      "n_codes": 161,
+      "n_items": 1610,
+      "encoder_base": 0.5242,
+      "opus55": 0.2852,
+      "qwen38_27b": 0.2241,
+      "gemma4_31b": 0.2426
+     },
+     "full/1-5": {
+      "n_codes": 46,
+      "n_items": 273,
+      "encoder_base": 0.1068,
+      "opus55": 0.2319,
+      "qwen38_27b": 0.1424,
+      "gemma4_31b": 0.1656
+     },
+     "full/6-20": {
+      "n_codes": 37,
+      "n_items": 344,
+      "encoder_base": 0.2407,
+      "opus55": 0.2691,
+      "qwen38_27b": 0.2361,
+      "gemma4_31b": 0.2256
+     },
+     "full/21-89": {
+      "n_codes": 52,
+      "n_items": 520,
+      "encoder_base": 0.5246,
+      "opus55": 0.3542,
+      "qwen38_27b": 0.2696,
+      "gemma4_31b": 0.2661
+     },
+     "full/90+": {
+      "n_codes": 288,
+      "n_items": 2880,
+      "encoder_base": 0.5869,
+      "opus55": 0.3051,
+      "qwen38_27b": 0.2388,
+      "gemma4_31b": 0.2499
+     }
+    },
+    "D5_cells_expected": [
+     "1k/opus55",
+     "1k/qwen38_27b",
+     "1k/gemma4_31b",
+     "10k/opus55",
+     "10k/qwen38_27b",
+     "10k/gemma4_31b",
+     "100k/opus55",
+     "100k/qwen38_27b",
+     "100k/gemma4_31b",
+     "full/opus55",
+     "full/qwen38_27b",
+     "full/gemma4_31b"
+    ],
+    "D6_cells_expected": [
+     "100k/21-89/opus55",
+     "100k/21-89/qwen38_27b",
+     "100k/21-89/gemma4_31b",
+     "100k/90+/opus55",
+     "100k/90+/qwen38_27b",
+     "100k/90+/gemma4_31b",
+     "full/21-89/opus55",
+     "full/21-89/qwen38_27b",
+     "full/21-89/gemma4_31b",
+     "full/90+/opus55",
+     "full/90+/qwen38_27b",
+     "full/90+/gemma4_31b"
+    ]
+   }
+  }
+ },
+ "E_2026": {
+  "n_novel": 431,
+  "novel_codes": 46,
+  "missing": [],
+  "groups": {
+   "all_known": {
+    "n": 3956,
+    "codes": 420
+   },
+   "known_1-5": {
+    "n": 261,
+    "codes": 43
+   },
+   "known_6-89": {
+    "n": 815,
+    "codes": 89
+   }
+  },
+  "auroc": {
+   "encoder_softmax/all_known": {
+    "auroc": 0.6272,
+    "item_ci95": [
+     0.6041,
+     0.6529
+    ],
+    "code_ci95": [
+     0.5755,
+     0.6702
+    ],
+    "n_pos": 431,
+    "n_neg": 3956,
+    "better_than_chance": true
+   },
+   "encoder_softmax/known_1-5": {
+    "auroc": 0.4609,
+    "item_ci95": [
+     0.4164,
+     0.5057
+    ],
+    "code_ci95": [
+     0.3883,
+     0.5379
+    ],
+    "n_pos": 431,
+    "n_neg": 261,
+    "better_than_chance": false
+   },
+   "encoder_softmax/known_6-89": {
+    "auroc": 0.5405,
+    "item_ci95": [
+     0.5069,
+     0.5729
+    ],
+    "code_ci95": [
+     0.4739,
+     0.6017
+    ],
+    "n_pos": 431,
+    "n_neg": 815,
+    "better_than_chance": false
+   },
+   "encoder_energy/all_known": {
+    "auroc": 0.6326,
+    "item_ci95": [
+     0.61,
+     0.6587
+    ],
+    "code_ci95": [
+     0.5774,
+     0.6805
+    ],
+    "n_pos": 431,
+    "n_neg": 3956,
+    "better_than_chance": true
+   },
+   "encoder_energy/known_1-5": {
+    "auroc": 0.3974,
+    "item_ci95": [
+     0.3548,
+     0.4378
+    ],
+    "code_ci95": [
+     0.3181,
+     0.4746
+    ],
+    "n_pos": 431,
+    "n_neg": 261,
+    "better_than_chance": false
+   },
+   "encoder_energy/known_6-89": {
+    "auroc": 0.5077,
+    "item_ci95": [
+     0.4741,
+     0.5397
+    ],
+    "code_ci95": [
+     0.4409,
+     0.5662
+    ],
+    "n_pos": 431,
+    "n_neg": 815,
+    "better_than_chance": false
+   },
+   "opus55_novelty/all_known": {
+    "auroc": 0.6384,
+    "item_ci95": [
+     0.6127,
+     0.6637
+    ],
+    "code_ci95": [
+     0.5838,
+     0.6889
+    ],
+    "n_pos": 431,
+    "n_neg": 3956,
+    "better_than_chance": true
+   },
+   "opus55_novelty/known_1-5": {
+    "auroc": 0.5791,
+    "item_ci95": [
+     0.53,
+     0.6219
+    ],
+    "code_ci95": [
+     0.4889,
+     0.657
+    ],
+    "n_pos": 431,
+    "n_neg": 261,
+    "better_than_chance": false
+   },
+   "opus55_novelty/known_6-89": {
+    "auroc": 0.6141,
+    "item_ci95": [
+     0.5801,
+     0.6436
+    ],
+    "code_ci95": [
+     0.5489,
+     0.6717
+    ],
+    "n_pos": 431,
+    "n_neg": 815,
+    "better_than_chance": true
+   },
+   "qwen38_27b_novelty/all_known": {
+    "auroc": 0.5905,
+    "item_ci95": [
+     0.5654,
+     0.6164
+    ],
+    "code_ci95": [
+     0.5422,
+     0.6381
+    ],
+    "n_pos": 431,
+    "n_neg": 3956,
+    "better_than_chance": true
+   },
+   "qwen38_27b_novelty/known_1-5": {
+    "auroc": 0.5673,
+    "item_ci95": [
+     0.526,
+     0.6062
+    ],
+    "code_ci95": [
+     0.4921,
+     0.635
+    ],
+    "n_pos": 431,
+    "n_neg": 261,
+    "better_than_chance": false
+   },
+   "qwen38_27b_novelty/known_6-89": {
+    "auroc": 0.6003,
+    "item_ci95": [
+     0.5703,
+     0.6301
+    ],
+    "code_ci95": [
+     0.5409,
+     0.6545
+    ],
+    "n_pos": 431,
+    "n_neg": 815,
+    "better_than_chance": true
+   },
+   "gemma4_31b_novelty/all_known": {
+    "auroc": 0.6168,
+    "item_ci95": [
+     0.5932,
+     0.6393
+    ],
+    "code_ci95": [
+     0.5701,
+     0.6629
+    ],
+    "n_pos": 431,
+    "n_neg": 3956,
+    "better_than_chance": true
+   },
+   "gemma4_31b_novelty/known_1-5": {
+    "auroc": 0.6022,
+    "item_ci95": [
+     0.5555,
+     0.6439
+    ],
+    "code_ci95": [
+     0.5206,
+     0.6789
+    ],
+    "n_pos": 431,
+    "n_neg": 261,
+    "better_than_chance": true
+   },
+   "gemma4_31b_novelty/known_6-89": {
+    "auroc": 0.6112,
+    "item_ci95": [
+     0.5788,
+     0.6423
+    ],
+    "code_ci95": [
+     0.5492,
+     0.6642
+    ],
+    "n_pos": 431,
+    "n_neg": 815,
+    "better_than_chance": true
+   }
+  }
+ },
+ "E_2024_practice": {
+  "n_novel": 420,
+  "novel_codes": 46,
+  "missing": [],
+  "groups": {
+   "all_known": {
+    "n": 3829,
+    "codes": 422
+   },
+   "known_1-5": {
+    "n": 113,
+    "codes": 44
+   },
+   "known_6-89": {
+    "n": 836,
+    "codes": 90
+   }
+  },
+  "auroc": {
+   "encoder_softmax/all_known": {
+    "auroc": 0.6994
+   },
+   "encoder_softmax/known_1-5": {
+    "auroc": 0.4591
+   },
+   "encoder_softmax/known_6-89": {
+    "auroc": 0.6183
+   },
+   "encoder_energy/all_known": {
+    "auroc": 0.6993
+   },
+   "encoder_energy/known_1-5": {
+    "auroc": 0.3591
+   },
+   "encoder_energy/known_6-89": {
+    "auroc": 0.5564
+   },
+   "opus55_novelty/all_known": {
+    "auroc": 0.6209
+   },
+   "opus55_novelty/known_1-5": {
+    "auroc": 0.5473
+   },
+   "opus55_novelty/known_6-89": {
+    "auroc": 0.58
+   },
+   "qwen38_27b_novelty/all_known": {
+    "auroc": 0.5624
+   },
+   "qwen38_27b_novelty/known_1-5": {
+    "auroc": 0.5254
+   },
+   "qwen38_27b_novelty/known_6-89": {
+    "auroc": 0.548
+   },
+   "gemma4_31b_novelty/all_known": {
+    "auroc": 0.6105
+   },
+   "gemma4_31b_novelty/known_1-5": {
+    "auroc": 0.55
+   },
+   "gemma4_31b_novelty/known_6-89": {
+    "auroc": 0.5856
+   }
+  }
+ }
+}

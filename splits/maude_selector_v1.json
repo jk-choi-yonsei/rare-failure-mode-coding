@@ -1,0 +1,164 @@
+{
+ "version": "maude_selector_v1",
+ "date": "2026-10-23",
+ "git_head_at_fit": "8cb7c2a",
+ "llm": "opus55",
+ "encoder": "cb-large full seed42 (rerun2024 outputs for 2024)",
+ "n_train": 3829,
+ "features": [
+  "log_count_enc",
+  "enc_msp",
+  "log_count_zs",
+  "zs_invalid",
+  "log_count_rag",
+  "rag_invalid",
+  "nb_vote_share",
+  "nb_vote_is_rag",
+  "nb_top1_cos",
+  "agree_enc_zs",
+  "agree_enc_rag",
+  "agree_zs_rag",
+  "agree_all",
+  "log_text_len"
+ ],
+ "arms": [
+  "enc",
+  "zs",
+  "rag"
+ ],
+ "cv_macro_f1": {
+  "S1": 0.62,
+  "S2": 0.6647,
+  "S3": 0.6623
+ },
+ "cv_macro_f1_by_bin": {
+  "S1": {
+   "1-5": 0.2762,
+   "6-20": 0.4415,
+   "21-89": 0.6475,
+   "90+": 0.6904
+  },
+  "S2": {
+   "1-5": 0.3348,
+   "6-20": 0.4768,
+   "21-89": 0.7033,
+   "90+": 0.7322
+  },
+  "S3": {
+   "1-5": 0.3016,
+   "6-20": 0.4859,
+   "21-89": 0.6972,
+   "90+": 0.7336
+  }
+ },
+ "cv_folds_S1": [
+  {
+   "t": 1.0,
+   "k": 20
+  },
+  {
+   "t": 1.0,
+   "k": 20
+  },
+  {
+   "t": 1.0,
+   "k": 20
+  },
+  {
+   "t": 1.0,
+   "k": 20
+  },
+  {
+   "t": 0.7,
+   "k": 20
+  }
+ ],
+ "main_family": "S2",
+ "singles_2024": {
+  "enc": 0.5964,
+  "zs": 0.3028,
+  "rag": 0.5981
+ },
+ "best_single_arm_2024": "rag",
+ "oracle_2024": 0.7276,
+ "notes": "folds stratified by the gold code's training-count bin; ties and invalid answers fall to enc; the hand rule's (t, k) on all 2024 items is below",
+ "S1": {
+  "t": 1.0,
+  "k": 20
+ },
+ "S2_coefficients": [
+  {
+   "coef": [
+    -1.262477,
+    1.169569,
+    0.168726,
+    0.084993,
+    0.28095,
+    0.020307,
+    0.266678,
+    -0.021186,
+    0.279378,
+    -0.069963,
+    0.779685,
+    0.070283,
+    -0.017412,
+    0.265284
+   ],
+   "intercept": 1.026261
+  },
+  {
+   "coef": [
+    0.295959,
+    0.26037,
+    -1.342671,
+    -0.656777,
+    0.188909,
+    0.101132,
+    0.352224,
+    0.285991,
+    0.236362,
+    1.234558,
+    -0.865255,
+    1.20827,
+    0.664215,
+    0.135044
+   ],
+   "intercept": -1.802723
+  },
+  {
+   "coef": [
+    0.453024,
+    0.515102,
+    0.204687,
+    0.110591,
+    -1.628986,
+    -0.334877,
+    0.300615,
+    0.363135,
+    0.612808,
+    0.050567,
+    0.65892,
+    -0.229391,
+    0.263803,
+    0.293696
+   ],
+   "intercept": 0.917624
+  }
+ ],
+ "S_cost": {
+  "k": 100,
+  "p": 0.6,
+  "call_rate_2024": 0.4691,
+  "macro_f1_2024_oof": 0.6616
+ },
+ "llm_rare_k_star": {
+  "k": 20,
+  "macro_f1_2024": 0.6214
+ },
+ "choice_share_2024_oof": {
+  "enc": 0.4842,
+  "zs": 0.1115,
+  "rag": 0.4043
+ },
+ "joblib_sha256": "cbd952e1020c0b9d3bd80f92680af5109a92eb579d87ce45d027871147e1871b"
+}

@@ -1,0 +1,68 @@
+{
+ "variant": "cb",
+ "size": "100k",
+ "seed": 42,
+ "lr": 5e-05,
+ "val_macro_f1": 0.4403,
+ "n_train": 100000,
+ "classes_present": 382,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.3677,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.1198,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.2768,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.3366,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.3677,
+     "minutes": 2.5
+    }
+   ]
+  },
+  "5e-05": {
+   "val_macro_f1": 0.4403,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.1963,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.3534,
+     "minutes": 2.5
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.418,
+     "minutes": 2.4
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.4403,
+     "minutes": 2.4
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  4,
+  1
+ ],
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb_100k_seed42"
+}

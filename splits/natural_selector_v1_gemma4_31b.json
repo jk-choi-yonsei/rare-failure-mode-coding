@@ -1,0 +1,72 @@
+{
+ "note": "notes/natural-selector-2026-11-09.md",
+ "llm": "gemma4_31b",
+ "encoder": "cb-large-conv",
+ "rows": {
+  "practice": 3829,
+  "validation": 10000
+ },
+ "weights": "practice: natural prior / practice prior of the gold code; validation: 1",
+ "validation_single_coder_accuracy": {
+  "enc": 0.8723,
+  "zs": 0.3768,
+  "rag": 0.8462
+ },
+ "validation_single_coder_macro_f1": {
+  "enc": 0.7124,
+  "zs": 0.2188,
+  "rag": 0.646
+ },
+ "coef": {
+  "enc": {
+   "log_count_enc": 0.4822,
+   "enc_msp": 1.0446,
+   "log_count_zs": -0.0102,
+   "zs_invalid": 0.1062,
+   "log_count_rag": -0.0896,
+   "rag_invalid": -0.0417,
+   "nb_vote_share": 0.3457,
+   "nb_vote_is_rag": 0.0974,
+   "nb_top1_cos": 0.1753,
+   "agree_enc_zs": 0.0199,
+   "agree_enc_rag": 0.5622,
+   "agree_zs_rag": 0.2002,
+   "agree_all": -0.1914,
+   "log_text_len": 0.0894
+  },
+  "zs": {
+   "log_count_enc": -0.2409,
+   "enc_msp": 0.2984,
+   "log_count_zs": 1.0627,
+   "zs_invalid": 0.0114,
+   "log_count_rag": -0.3454,
+   "rag_invalid": -0.0034,
+   "nb_vote_share": 0.1971,
+   "nb_vote_is_rag": 0.5655,
+   "nb_top1_cos": 0.1921,
+   "agree_enc_zs": 1.662,
+   "agree_enc_rag": -1.0179,
+   "agree_zs_rag": 1.0478,
+   "agree_all": 1.0538,
+   "log_text_len": 0.0736
+  },
+  "rag": {
+   "log_count_enc": -0.2505,
+   "enc_msp": 0.4157,
+   "log_count_zs": 0.0674,
+   "zs_invalid": -0.0355,
+   "log_count_rag": 0.4578,
+   "rag_invalid": -0.0342,
+   "nb_vote_share": 0.2835,
+   "nb_vote_is_rag": 0.4508,
+   "nb_top1_cos": 0.3795,
+   "agree_enc_zs": -0.1305,
+   "agree_enc_rag": 0.8765,
+   "agree_zs_rag": -0.3167,
+   "agree_all": 0.5219,
+   "log_text_len": 0.1593
+  }
+ },
+ "joblib_sha256": "177e053ff001aa421d2c66ab1b8a689c18c2e708fe884e08f6c613f95fe5bf20",
+ "git_head": "a6114a9"
+}

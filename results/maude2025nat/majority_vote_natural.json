@@ -1,0 +1,72 @@
+{
+ "prereg": "notes/prereg-majority-vote-2026-11-06.md",
+ "git_head_at_score": "74b4d47",
+ "natural_2025": {
+  "opus55": {
+   "uniform_n": 4000,
+   "rare_1-5_n": 324,
+   "uniform_accuracy": {
+    "selector": 0.7212,
+    "mv_enc": 0.7157,
+    "mv_best": 0.7268,
+    "encoder": 0.7262
+   },
+   "rare_1-5_recall": {
+    "selector": 0.2346,
+    "mv_enc": 0.2037,
+    "mv_best": 0.2068,
+    "encoder": 0.0617
+   },
+   "rare_1-5_correct": {
+    "selector": 76,
+    "mv_enc": 66,
+    "mv_best": 67,
+    "encoder": 20
+   }
+  },
+  "qwen38_27b": {
+   "uniform_n": 4000,
+   "rare_1-5_n": 324,
+   "uniform_accuracy": {
+    "selector": 0.7085,
+    "mv_enc": 0.7063,
+    "mv_best": 0.7063,
+    "encoder": 0.7262
+   },
+   "rare_1-5_recall": {
+    "selector": 0.3426,
+    "mv_enc": 0.2099,
+    "mv_best": 0.2099,
+    "encoder": 0.0617
+   },
+   "rare_1-5_correct": {
+    "selector": 111,
+    "mv_enc": 68,
+    "mv_best": 68,
+    "encoder": 20
+   }
+  },
+  "gemma4_31b": {
+   "uniform_n": 4000,
+   "rare_1-5_n": 324,
+   "uniform_accuracy": {
+    "selector": 0.7147,
+    "mv_enc": 0.708,
+    "mv_best": 0.708,
+    "encoder": 0.7262
+   },
+   "rare_1-5_recall": {
+    "selector": 0.2438,
+    "mv_enc": 0.216,
+    "mv_best": 0.216,
+    "encoder": 0.0617
+   },
+   "rare_1-5_correct": {
+    "selector": 79,
+    "mv_enc": 70,
+    "mv_best": 70,
+    "encoder": 20
+   }
+  }
+ }
+}

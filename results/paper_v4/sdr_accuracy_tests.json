@@ -1,0 +1,678 @@
+{
+ "note": "McNemar exact tests on the random sample of each test year",
+ "corpus": "sdr",
+ "llms": {
+  "qwen38_27b": {
+   "2026": {
+    "enc": {
+     "accuracy": 77.68,
+     "vs_classifier": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 2.95,
+      "only_first": 193,
+      "only_second": 75,
+      "p": 0.0
+     }
+    },
+    "zs": {
+     "accuracy": 71.73,
+     "vs_classifier": {
+      "diff_points": -5.95,
+      "only_first": 180,
+      "only_second": 418,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 8.9,
+      "only_first": 460,
+      "only_second": 104,
+      "p": 0.0
+     }
+    },
+    "rag": {
+     "accuracy": 77.8,
+     "vs_classifier": {
+      "diff_points": 0.12,
+      "only_first": 230,
+      "only_second": 225,
+      "p": 0.851277
+     },
+     "ours_full_vs": {
+      "diff_points": 2.82,
+      "only_first": 191,
+      "only_second": 78,
+      "p": 0.0
+     }
+    },
+    "cascade": {
+     "accuracy": 78.33,
+     "vs_classifier": {
+      "diff_points": 0.65,
+      "only_first": 72,
+      "only_second": 46,
+      "p": 0.02097
+     },
+     "ours_full_vs": {
+      "diff_points": 2.3,
+      "only_first": 165,
+      "only_second": 73,
+      "p": 0.0
+     }
+    },
+    "energyroute": {
+     "accuracy": 78.47,
+     "vs_classifier": {
+      "diff_points": 0.8,
+      "only_first": 141,
+      "only_second": 109,
+      "p": 0.049707
+     },
+     "ours_full_vs": {
+      "diff_points": 2.15,
+      "only_first": 151,
+      "only_second": 65,
+      "p": 0.0
+     }
+    },
+    "selector_balanced": {
+     "accuracy": 74.02,
+     "vs_classifier": {
+      "diff_points": -3.65,
+      "only_first": 77,
+      "only_second": 223,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.6,
+      "only_first": 331,
+      "only_second": 67,
+      "p": 0.0
+     }
+    },
+    "selector_prior": {
+     "accuracy": 79.33,
+     "vs_classifier": {
+      "diff_points": 1.65,
+      "only_first": 168,
+      "only_second": 102,
+      "p": 7.1e-05
+     },
+     "ours_full_vs": {
+      "diff_points": 1.3,
+      "only_first": 105,
+      "only_second": 53,
+      "p": 4.3e-05
+     }
+    },
+    "ours_rule": {
+     "accuracy": 77.65,
+     "vs_classifier": {
+      "diff_points": -0.03,
+      "only_first": 0,
+      "only_second": 1,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 2.98,
+      "only_first": 193,
+      "only_second": 74,
+      "p": 0.0
+     }
+    },
+    "ours_full": {
+     "accuracy": 80.62,
+     "vs_classifier": {
+      "diff_points": 2.95,
+      "only_first": 193,
+      "only_second": 75,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     }
+    },
+    "ours_nollm": {
+     "accuracy": 79.77,
+     "vs_classifier": {
+      "diff_points": 2.1,
+      "only_first": 141,
+      "only_second": 57,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 0.85,
+      "only_first": 98,
+      "only_second": 64,
+      "p": 0.00931
+     }
+    },
+    "logit_adjusted": {
+     "accuracy": 74.1,
+     "vs_classifier": {
+      "diff_points": -3.58,
+      "only_first": 36,
+      "only_second": 179,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.53,
+      "only_first": 349,
+      "only_second": 88,
+      "p": 0.0
+     }
+    }
+   },
+   "2025": {
+    "enc": {
+     "accuracy": 79.9,
+     "vs_classifier": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 2.85,
+      "only_first": 205,
+      "only_second": 91,
+      "p": 0.0
+     }
+    },
+    "zs": {
+     "accuracy": 72.28,
+     "vs_classifier": {
+      "diff_points": -7.63,
+      "only_first": 153,
+      "only_second": 458,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 10.48,
+      "only_first": 489,
+      "only_second": 70,
+      "p": 0.0
+     }
+    },
+    "rag": {
+     "accuracy": 79.17,
+     "vs_classifier": {
+      "diff_points": -0.73,
+      "only_first": 205,
+      "only_second": 234,
+      "p": 0.181364
+     },
+     "ours_full_vs": {
+      "diff_points": 3.58,
+      "only_first": 207,
+      "only_second": 64,
+      "p": 0.0
+     }
+    },
+    "cascade": {
+     "accuracy": 80.38,
+     "vs_classifier": {
+      "diff_points": 0.47,
+      "only_first": 157,
+      "only_second": 138,
+      "p": 0.294626
+     },
+     "ours_full_vs": {
+      "diff_points": 2.38,
+      "only_first": 161,
+      "only_second": 66,
+      "p": 0.0
+     }
+    },
+    "energyroute": {
+     "accuracy": 80.65,
+     "vs_classifier": {
+      "diff_points": 0.75,
+      "only_first": 139,
+      "only_second": 109,
+      "p": 0.065331
+     },
+     "ours_full_vs": {
+      "diff_points": 2.1,
+      "only_first": 161,
+      "only_second": 77,
+      "p": 0.0
+     }
+    },
+    "selector_balanced": {
+     "accuracy": 76.55,
+     "vs_classifier": {
+      "diff_points": -3.35,
+      "only_first": 72,
+      "only_second": 206,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.2,
+      "only_first": 317,
+      "only_second": 69,
+      "p": 0.0
+     }
+    },
+    "selector_prior": {
+     "accuracy": 81.33,
+     "vs_classifier": {
+      "diff_points": 1.42,
+      "only_first": 163,
+      "only_second": 106,
+      "p": 0.000613
+     },
+     "ours_full_vs": {
+      "diff_points": 1.42,
+      "only_first": 114,
+      "only_second": 57,
+      "p": 1.6e-05
+     }
+    },
+    "ours_rule": {
+     "accuracy": 79.92,
+     "vs_classifier": {
+      "diff_points": 0.02,
+      "only_first": 2,
+      "only_second": 1,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 2.82,
+      "only_first": 203,
+      "only_second": 90,
+      "p": 0.0
+     }
+    },
+    "ours_full": {
+     "accuracy": 82.75,
+     "vs_classifier": {
+      "diff_points": 2.85,
+      "only_first": 205,
+      "only_second": 91,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     }
+    },
+    "ours_nollm": {
+     "accuracy": 81.88,
+     "vs_classifier": {
+      "diff_points": 1.97,
+      "only_first": 135,
+      "only_second": 56,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 0.88,
+      "only_first": 108,
+      "only_second": 73,
+      "p": 0.011292
+     }
+    },
+    "logit_adjusted": {
+     "accuracy": 76.1,
+     "vs_classifier": {
+      "diff_points": -3.8,
+      "only_first": 36,
+      "only_second": 188,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.65,
+      "only_first": 362,
+      "only_second": 96,
+      "p": 0.0
+     }
+    }
+   }
+  },
+  "gemma4_31b": {
+   "2026": {
+    "enc": {
+     "accuracy": 77.68,
+     "vs_classifier": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 3.33,
+      "only_first": 213,
+      "only_second": 80,
+      "p": 0.0
+     }
+    },
+    "zs": {
+     "accuracy": 72.62,
+     "vs_classifier": {
+      "diff_points": -5.05,
+      "only_first": 189,
+      "only_second": 391,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 8.38,
+      "only_first": 442,
+      "only_second": 107,
+      "p": 0.0
+     }
+    },
+    "rag": {
+     "accuracy": 78.03,
+     "vs_classifier": {
+      "diff_points": 0.35,
+      "only_first": 234,
+      "only_second": 220,
+      "p": 0.541829
+     },
+     "ours_full_vs": {
+      "diff_points": 2.98,
+      "only_first": 201,
+      "only_second": 82,
+      "p": 0.0
+     }
+    },
+    "cascade": {
+     "accuracy": 78.27,
+     "vs_classifier": {
+      "diff_points": 0.6,
+      "only_first": 57,
+      "only_second": 33,
+      "p": 0.014867
+     },
+     "ours_full_vs": {
+      "diff_points": 2.73,
+      "only_first": 193,
+      "only_second": 84,
+      "p": 0.0
+     }
+    },
+    "energyroute": {
+     "accuracy": 78.8,
+     "vs_classifier": {
+      "diff_points": 1.12,
+      "only_first": 146,
+      "only_second": 101,
+      "p": 0.005013
+     },
+     "ours_full_vs": {
+      "diff_points": 2.2,
+      "only_first": 164,
+      "only_second": 76,
+      "p": 0.0
+     }
+    },
+    "selector_balanced": {
+     "accuracy": 74.85,
+     "vs_classifier": {
+      "diff_points": -2.82,
+      "only_first": 101,
+      "only_second": 214,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.15,
+      "only_first": 338,
+      "only_second": 92,
+      "p": 0.0
+     }
+    },
+    "selector_prior": {
+     "accuracy": 79.8,
+     "vs_classifier": {
+      "diff_points": 2.12,
+      "only_first": 191,
+      "only_second": 106,
+      "p": 1e-06
+     },
+     "ours_full_vs": {
+      "diff_points": 1.2,
+      "only_first": 111,
+      "only_second": 63,
+      "p": 0.000339
+     }
+    },
+    "ours_rule": {
+     "accuracy": 77.62,
+     "vs_classifier": {
+      "diff_points": -0.05,
+      "only_first": 0,
+      "only_second": 2,
+      "p": 0.5
+     },
+     "ours_full_vs": {
+      "diff_points": 3.38,
+      "only_first": 213,
+      "only_second": 78,
+      "p": 0.0
+     }
+    },
+    "ours_full": {
+     "accuracy": 81.0,
+     "vs_classifier": {
+      "diff_points": 3.33,
+      "only_first": 213,
+      "only_second": 80,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     }
+    },
+    "ours_nollm": {
+     "accuracy": 79.77,
+     "vs_classifier": {
+      "diff_points": 2.1,
+      "only_first": 141,
+      "only_second": 57,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 1.23,
+      "only_first": 114,
+      "only_second": 65,
+      "p": 0.000309
+     }
+    },
+    "logit_adjusted": {
+     "accuracy": 74.1,
+     "vs_classifier": {
+      "diff_points": -3.58,
+      "only_first": 36,
+      "only_second": 179,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.9,
+      "only_first": 371,
+      "only_second": 95,
+      "p": 0.0
+     }
+    }
+   },
+   "2025": {
+    "enc": {
+     "accuracy": 79.9,
+     "vs_classifier": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 3.07,
+      "only_first": 214,
+      "only_second": 91,
+      "p": 0.0
+     }
+    },
+    "zs": {
+     "accuracy": 73.4,
+     "vs_classifier": {
+      "diff_points": -6.5,
+      "only_first": 159,
+      "only_second": 419,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 9.57,
+      "only_first": 444,
+      "only_second": 61,
+      "p": 0.0
+     }
+    },
+    "rag": {
+     "accuracy": 79.17,
+     "vs_classifier": {
+      "diff_points": -0.73,
+      "only_first": 187,
+      "only_second": 216,
+      "p": 0.163
+     },
+     "ours_full_vs": {
+      "diff_points": 3.8,
+      "only_first": 212,
+      "only_second": 60,
+      "p": 0.0
+     }
+    },
+    "cascade": {
+     "accuracy": 80.08,
+     "vs_classifier": {
+      "diff_points": 0.17,
+      "only_first": 141,
+      "only_second": 134,
+      "p": 0.717563
+     },
+     "ours_full_vs": {
+      "diff_points": 2.9,
+      "only_first": 183,
+      "only_second": 67,
+      "p": 0.0
+     }
+    },
+    "energyroute": {
+     "accuracy": 80.53,
+     "vs_classifier": {
+      "diff_points": 0.62,
+      "only_first": 132,
+      "only_second": 107,
+      "p": 0.120377
+     },
+     "ours_full_vs": {
+      "diff_points": 2.45,
+      "only_first": 181,
+      "only_second": 83,
+      "p": 0.0
+     }
+    },
+    "selector_balanced": {
+     "accuracy": 77.0,
+     "vs_classifier": {
+      "diff_points": -2.9,
+      "only_first": 72,
+      "only_second": 188,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 5.97,
+      "only_first": 308,
+      "only_second": 69,
+      "p": 0.0
+     }
+    },
+    "selector_prior": {
+     "accuracy": 80.83,
+     "vs_classifier": {
+      "diff_points": 0.92,
+      "only_first": 147,
+      "only_second": 110,
+      "p": 0.024539
+     },
+     "ours_full_vs": {
+      "diff_points": 2.15,
+      "only_first": 141,
+      "only_second": 55,
+      "p": 0.0
+     }
+    },
+    "ours_rule": {
+     "accuracy": 79.92,
+     "vs_classifier": {
+      "diff_points": 0.02,
+      "only_first": 2,
+      "only_second": 1,
+      "p": 1.0
+     },
+     "ours_full_vs": {
+      "diff_points": 3.05,
+      "only_first": 212,
+      "only_second": 90,
+      "p": 0.0
+     }
+    },
+    "ours_full": {
+     "accuracy": 82.97,
+     "vs_classifier": {
+      "diff_points": 3.07,
+      "only_first": 214,
+      "only_second": 91,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 0.0,
+      "only_first": 0,
+      "only_second": 0,
+      "p": 1.0
+     }
+    },
+    "ours_nollm": {
+     "accuracy": 81.85,
+     "vs_classifier": {
+      "diff_points": 1.95,
+      "only_first": 134,
+      "only_second": 56,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 1.12,
+      "only_first": 119,
+      "only_second": 74,
+      "p": 0.001474
+     }
+    },
+    "logit_adjusted": {
+     "accuracy": 76.1,
+     "vs_classifier": {
+      "diff_points": -3.8,
+      "only_first": 36,
+      "only_second": 188,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 6.87,
+      "only_first": 373,
+      "only_second": 98,
+      "p": 0.0
+     }
+    }
+   }
+  }
+ }
+}

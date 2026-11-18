@@ -1,0 +1,92 @@
+{
+ "variant": "cb",
+ "model": "roberta-large",
+ "size": "10k",
+ "seed": 44,
+ "lr": 3e-05,
+ "val_macro_f1": 0.0203,
+ "n_train": 10000,
+ "classes_present": 307,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.0003,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    }
+   ]
+  },
+  "3e-05": {
+   "val_macro_f1": 0.0203,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0005,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0004,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0203,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.0003,
+     "minutes": 1.1
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  15,
+  3
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": true,
+ "best_at_last_epoch": false,
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb-large_10k_seed44"
+}

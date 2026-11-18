@@ -1,0 +1,89 @@
+{
+ "note": "notes/natural-selector-2026-11-09.md",
+ "llm": "qwen38_27b",
+ "git_head": "343c851",
+ "2025": {
+  "encoder": {
+   "right_rare": 60.0,
+   "false_rare": 1.0,
+   "precision": 0.9836,
+   "false_next_to_gold": 1.0,
+   "modes_visible": 16,
+   "accuracy_uniform": 0.7482,
+   "macro_f1_uniform": 0.6175,
+   "macro_f1_balanced": 0.5134
+  },
+  "selector": {
+   "right_rare": 150.0,
+   "false_rare": 3140.9,
+   "precision": 0.0456,
+   "false_next_to_gold": 0.306,
+   "modes_visible": 23,
+   "accuracy_uniform": 0.729,
+   "macro_f1_uniform": 0.5944,
+   "macro_f1_balanced": 0.5386
+  },
+  "selector_prior_corrected": {
+   "right_rare": 37.0,
+   "false_rare": 4.0,
+   "precision": 0.9024,
+   "false_next_to_gold": 0.25,
+   "modes_visible": 12,
+   "accuracy_uniform": 0.749,
+   "macro_f1_uniform": 0.6082,
+   "macro_f1_balanced": 0.4935
+  },
+  "natural_selector": {
+   "right_rare": 34.0,
+   "false_rare": 1.0,
+   "precision": 0.9714,
+   "false_next_to_gold": 1.0,
+   "modes_visible": 11,
+   "accuracy_uniform": 0.753,
+   "macro_f1_uniform": 0.6131,
+   "macro_f1_balanced": 0.4807
+  }
+ },
+ "2026": {
+  "encoder": {
+   "right_rare": 32.0,
+   "false_rare": 166.0,
+   "precision": 0.1616,
+   "false_next_to_gold": 0.006,
+   "modes_visible": 9,
+   "accuracy_uniform": 0.6365,
+   "macro_f1_uniform": 0.4898,
+   "macro_f1_balanced": 0.4459
+  },
+  "selector": {
+   "right_rare": 87.0,
+   "false_rare": 4899.3,
+   "precision": 0.0174,
+   "false_next_to_gold": 0.113,
+   "modes_visible": 20,
+   "accuracy_uniform": 0.6315,
+   "macro_f1_uniform": 0.5022,
+   "macro_f1_balanced": 0.4783
+  },
+  "selector_prior_corrected": {
+   "right_rare": 27.0,
+   "false_rare": 3.0,
+   "precision": 0.9,
+   "false_next_to_gold": 0.667,
+   "modes_visible": 7,
+   "accuracy_uniform": 0.643,
+   "macro_f1_uniform": 0.5092,
+   "macro_f1_balanced": 0.433
+  },
+  "natural_selector": {
+   "right_rare": 22.0,
+   "false_rare": 2.0,
+   "precision": 0.9167,
+   "false_next_to_gold": 0.5,
+   "modes_visible": 7,
+   "accuracy_uniform": 0.643,
+   "macro_f1_uniform": 0.4858,
+   "macro_f1_balanced": 0.4242
+  }
+ }
+}

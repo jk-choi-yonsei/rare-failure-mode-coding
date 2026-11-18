@@ -1,0 +1,48 @@
+{
+ "note": "paper v4, Section 5.3",
+ "corpus": "maude",
+ "years": {
+  "2026": {
+   "reports": 661160,
+   "shortlist": {
+    "reports": 4296,
+    "share": 0.0065,
+    "rare_reports": 121
+   },
+   "same_budget_uncertainty": {
+    "rare_reports": 20
+   },
+   "uncertainty_budget_to_match": {
+    "reports": 41203,
+    "share": 0.0623,
+    "times_shortlist": 9.6
+   },
+   "encoder_confidence": {
+    "missed_rare_median": 0.567,
+    "missed_rare_share_ge_0.5": 0.575,
+    "all_reports_median": 0.959
+   }
+  },
+  "2025": {
+   "reports": 762360,
+   "shortlist": {
+    "reports": 4985,
+    "share": 0.0065,
+    "rare_reports": 160
+   },
+   "same_budget_uncertainty": {
+    "rare_reports": 22
+   },
+   "uncertainty_budget_to_match": {
+    "reports": 55484,
+    "share": 0.0728,
+    "times_shortlist": 11.1
+   },
+   "encoder_confidence": {
+    "missed_rare_median": 0.666,
+    "missed_rare_share_ge_0.5": 0.657,
+    "all_reports_median": 0.977
+   }
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "fold0": {
+  "lr": 5e-05,
+  "val_macro_f1": 0.5775
+ },
+ "fold1": {
+  "lr": 5e-05,
+  "val_macro_f1": 0.7583
+ },
+ "fold2": {
+  "lr": 5e-05,
+  "val_macro_f1": 0.7507
+ },
+ "fold3": {
+  "lr": 5e-05,
+  "val_macro_f1": 0.6279
+ },
+ "fold4": {
+  "lr": 5e-05,
+  "val_macro_f1": 0.6497
+ }
+}

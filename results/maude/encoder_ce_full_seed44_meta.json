@@ -1,0 +1,32 @@
+{
+ "variant": "ce",
+ "size": "full",
+ "seed": 44,
+ "lr": 5e-05,
+ "val_macro_f1": 0.629,
+ "n_train": 656460,
+ "classes_present": 424,
+ "lr_runs": {
+  "5e-05": {
+   "val_macro_f1": 0.629,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.5392,
+     "minutes": 17.6
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.629,
+     "minutes": 16.9
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  2,
+  1
+ ]
+}

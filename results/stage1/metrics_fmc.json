@@ -1,0 +1,49 @@
+{
+ "svm": {
+  "overall_acc": 0.5632911392405063,
+  "overall_macro_f1": 0.4222916892476933,
+  "head_macro_f1": 0.6001361916419583,
+  "body_macro_f1": 0.5548218998937936,
+  "tail_macro_f1": 0.24059829059829058
+ },
+ "haiku45_zeroshot": {
+  "overall_acc": 0.3829113924050633,
+  "overall_macro_f1": 0.46205467288308005,
+  "head_macro_f1": 0.26735735814747574,
+  "body_macro_f1": 0.6259396156568297,
+  "tail_macro_f1": 0.4446838703092573
+ },
+ "sonnet5_zeroshot": {
+  "overall_acc": 0.41930379746835444,
+  "overall_macro_f1": 0.4707664478857859,
+  "head_macro_f1": 0.29996632269763823,
+  "body_macro_f1": 0.6050171709157137,
+  "tail_macro_f1": 0.4621910043589102
+ },
+ "encoder_ce": {
+  "overall_acc": 0.7104,
+  "overall_acc_sd": 0.0016,
+  "overall_macro_f1": 0.489,
+  "overall_macro_f1_sd": 0.0046,
+  "head_macro_f1": 0.7467,
+  "head_macro_f1_sd": 0.0053,
+  "body_macro_f1": 0.659,
+  "body_macro_f1_sd": 0.0246,
+  "tail_macro_f1": 0.2411,
+  "tail_macro_f1_sd": 0.0054,
+  "n_seeds": 3
+ },
+ "encoder_cb": {
+  "overall_acc": 0.6414,
+  "overall_acc_sd": 0.0166,
+  "overall_macro_f1": 0.525,
+  "overall_macro_f1_sd": 0.0241,
+  "head_macro_f1": 0.6717,
+  "head_macro_f1_sd": 0.0128,
+  "body_macro_f1": 0.6189,
+  "body_macro_f1_sd": 0.0156,
+  "tail_macro_f1": 0.3859,
+  "tail_macro_f1_sd": 0.0358,
+  "n_seeds": 3
+ }
+}

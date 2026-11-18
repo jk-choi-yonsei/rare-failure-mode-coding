@@ -1,0 +1,4190 @@
+{
+ "note": "notes/why-it-works-plan-2026-11-16.md",
+ "corpus": "sdr",
+ "years": {
+  "2026": {
+   "qwen38_27b": {
+    "mechanism": {
+     "rare_reports": 292,
+     "other_reports": 42425,
+     "prior_odds": 0.006882734236888627,
+     "confirmers": {
+      "zs": {
+       "llm_right": 141,
+       "llm_right_check_natural": 141.0,
+       "llm_false_estimated": 2399.8,
+       "llm_false_ci95": [
+        2112.8,
+        2717.2
+       ],
+       "right_passing": 54,
+       "false_passing": 73,
+       "keep_right": 0.383,
+       "keep_false": 0.03042,
+       "filter_factor": 12.6,
+       "shortlisted_candidate_right": 63,
+       "shortlisted_candidate_false": 1261,
+       "confirm_right": 0.8571,
+       "confirm_false": 0.05789,
+       "confirm_ratio": 14.8
+      },
+      "rag": {
+       "llm_right": 103,
+       "llm_right_check_natural": 103.0,
+       "llm_false_estimated": 677.7,
+       "llm_false_ci95": [
+        533.8,
+        852.6
+       ],
+       "right_passing": 48,
+       "false_passing": 52,
+       "keep_right": 0.466,
+       "keep_false": 0.07673,
+       "filter_factor": 6.1,
+       "shortlisted_candidate_right": 63,
+       "shortlisted_candidate_false": 1261,
+       "confirm_right": 0.7619,
+       "confirm_false": 0.04124,
+       "confirm_ratio": 18.5
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 38,
+       "false": 84,
+       "LR": 65.7
+      },
+      "gate": {
+       "right": 54,
+       "false": 83,
+       "LR": 94.5
+      },
+      "llm_zs_alone": {
+       "right": 141,
+       "false": 2399.8,
+       "LR": 8.5
+      },
+      "llm_rag_alone": {
+       "right": 103,
+       "false": 677.7,
+       "LR": 22.1
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 38,
+      "false": 84,
+      "visible_modes": 20,
+      "phantom_modes": 27,
+      "precision": 0.3115
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 33,
+       "false": 31,
+       "visible_modes": 16,
+       "phantom_modes": 14,
+       "precision": 0.5156
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 30,
+       "false": 21,
+       "visible_modes": 14,
+       "phantom_modes": 11,
+       "precision": 0.5882
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 33,
+       "false": 32,
+       "visible_modes": 16,
+       "phantom_modes": 14,
+       "precision": 0.5077
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 30,
+       "false": 20,
+       "visible_modes": 14,
+       "phantom_modes": 11,
+       "precision": 0.6
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 47,
+       "false": 58,
+       "visible_modes": 19,
+       "phantom_modes": 20,
+       "precision": 0.4476
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 52,
+       "false": 111,
+       "visible_modes": 21,
+       "phantom_modes": 32,
+       "precision": 0.319
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 42,
+       "false": 41,
+       "visible_modes": 16,
+       "phantom_modes": 17,
+       "precision": 0.506
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 104,
+       "visible_modes": 21,
+       "phantom_modes": 29,
+       "precision": 0.3247
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 47,
+       "false": 66,
+       "visible_modes": 19,
+       "phantom_modes": 21,
+       "precision": 0.4159
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 52,
+       "false": 118,
+       "visible_modes": 21,
+       "phantom_modes": 33,
+       "precision": 0.3059
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 42,
+       "false": 33,
+       "visible_modes": 16,
+       "phantom_modes": 13,
+       "precision": 0.56
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 97,
+       "visible_modes": 21,
+       "phantom_modes": 28,
+       "precision": 0.3401
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 73,
+       "visible_modes": 22,
+       "phantom_modes": 22,
+       "precision": 0.4252
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 59,
+       "false": 126,
+       "visible_modes": 24,
+       "phantom_modes": 32,
+       "precision": 0.3189
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 48,
+       "false": 52,
+       "visible_modes": 18,
+       "phantom_modes": 19,
+       "precision": 0.48
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 56,
+       "false": 115,
+       "visible_modes": 23,
+       "phantom_modes": 30,
+       "precision": 0.3275
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 83,
+       "visible_modes": 22,
+       "phantom_modes": 24,
+       "precision": 0.3942
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 59,
+       "false": 135,
+       "visible_modes": 24,
+       "phantom_modes": 34,
+       "precision": 0.3041
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 48,
+       "false": 42,
+       "visible_modes": 18,
+       "phantom_modes": 15,
+       "precision": 0.5333
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 56,
+       "false": 106,
+       "visible_modes": 23,
+       "phantom_modes": 28,
+       "precision": 0.3457
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 112,
+       "visible_modes": 23,
+       "phantom_modes": 23,
+       "precision": 0.3412
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 63,
+       "false": 165,
+       "visible_modes": 25,
+       "phantom_modes": 32,
+       "precision": 0.2763
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 67,
+       "visible_modes": 18,
+       "phantom_modes": 24,
+       "precision": 0.4274
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 130,
+       "visible_modes": 23,
+       "phantom_modes": 33,
+       "precision": 0.3085
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 124,
+       "visible_modes": 23,
+       "phantom_modes": 26,
+       "precision": 0.3187
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 63,
+       "false": 176,
+       "visible_modes": 25,
+       "phantom_modes": 35,
+       "precision": 0.2636
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 55,
+       "visible_modes": 18,
+       "phantom_modes": 18,
+       "precision": 0.4762
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 119,
+       "visible_modes": 23,
+       "phantom_modes": 30,
+       "precision": 0.3277
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 4461,
+       "encoder": [
+        5,
+        13
+       ],
+       "gate": [
+        5,
+        8
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 4311,
+       "encoder": [
+        4,
+        6
+       ],
+       "gate": [
+        7,
+        4
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 4780,
+       "encoder": [
+        1,
+        11
+       ],
+       "gate": [
+        4,
+        10
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 4748,
+       "encoder": [
+        3,
+        6
+       ],
+       "gate": [
+        6,
+        15
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 4625,
+       "encoder": [
+        5,
+        4
+       ],
+       "gate": [
+        4,
+        6
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 4477,
+       "encoder": [
+        4,
+        7
+       ],
+       "gate": [
+        7,
+        11
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 4860,
+       "encoder": [
+        2,
+        12
+       ],
+       "gate": [
+        4,
+        4
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 4256,
+       "encoder": [
+        6,
+        11
+       ],
+       "gate": [
+        7,
+        9
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 4161,
+       "encoder": [
+        5,
+        2
+       ],
+       "gate": [
+        7,
+        7
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 2038,
+       "encoder": [
+        3,
+        12
+       ],
+       "gate": [
+        3,
+        9
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 29,
+      "right_gain_total": 16,
+      "groups_gaining": 10,
+      "groups_losing": 1,
+      "top3_share_of_positive_gain": 0.529,
+      "groups_false_down": 9,
+      "groups_false_up": 11,
+      "rows": [
+       [
+        "53",
+        16726,
+        2,
+        4,
+        6,
+        5
+       ],
+       [
+        "33",
+        5519,
+        7,
+        5,
+        10,
+        5
+       ],
+       [
+        "25",
+        3012,
+        2,
+        18,
+        4,
+        23
+       ],
+       [
+        "72",
+        582,
+        3,
+        2,
+        5,
+        5
+       ],
+       [
+        "21",
+        1540,
+        1,
+        1,
+        2,
+        1
+       ],
+       [
+        "26",
+        317,
+        0,
+        0,
+        1,
+        1
+       ],
+       [
+        "35",
+        202,
+        1,
+        0,
+        2,
+        0
+       ],
+       [
+        "51",
+        60,
+        0,
+        1,
+        1,
+        0
+       ],
+       [
+        "73",
+        179,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "76",
+        22,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "23",
+        105,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "27",
+        654,
+        2,
+        5,
+        2,
+        4
+       ],
+       [
+        "28",
+        392,
+        0,
+        2,
+        0,
+        4
+       ],
+       [
+        "29",
+        368,
+        0,
+        1,
+        0,
+        3
+       ],
+       [
+        "30",
+        124,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "32",
+        932,
+        3,
+        16,
+        3,
+        3
+       ],
+       [
+        "38",
+        113,
+        1,
+        2,
+        1,
+        1
+       ],
+       [
+        "49",
+        320,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "52",
+        3971,
+        4,
+        4,
+        4,
+        4
+       ],
+       [
+        "54",
+        799,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "55",
+        1321,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "56",
+        259,
+        10,
+        2,
+        10,
+        3
+       ],
+       [
+        "57",
+        3412,
+        0,
+        9,
+        0,
+        6
+       ],
+       [
+        "71",
+        58,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "74",
+        52,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "78",
+        353,
+        1,
+        1,
+        1,
+        3
+       ],
+       [
+        "79",
+        61,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "85",
+        55,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "34",
+        322,
+        1,
+        2,
+        0,
+        3
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 10,
+      "gate_right_ge": 9,
+      "gate_false_le": 6,
+      "both": 6
+     }
+    },
+    "errors": {
+     "encoder": {
+      "false": 84,
+      "placed_term_in_narrative": 29
+     },
+     "gate": {
+      "false": 83,
+      "placed_term_in_narrative": 54
+     },
+     "sample": [
+      {
+       "key": 190345,
+       "placed": "BLOCKED",
+       "filed": "FAULTED",
+       "encoder_top1": "BLOCKED",
+       "text": "right side pitot line became blocked inflight after extended operation in an area of visible moisture at below-freezing temperature. all probe heats were on and functional at the time and for the entire duration of flight prior to the line blockage. airspeed on the right-side pfd and standby instrument slowly decreased, which caused an ias miscompare annunciator. i started a descent for weather and the airspeed on the right-side pitot line (right pfd and standby) rapidly decreased to zero before an ias red annunciator appeared. prior to this, i switched the right-side pfd to adahrs 1, which ke"
+      },
+      {
+       "key": 206872,
+       "placed": "NON ISSUE",
+       "filed": "BIRD INGESTION",
+       "encoder_top1": "BIRD INGESTION",
+       "text": "multiple bird strikes on takeoff airframe  confirmed eng inlet s uspected gear was down numerous bird strikes on all leading edges, radome, flt deck windows, landing gear, several feathers in nr 2 eng inlet.  encoutered birds at 100' agl on take off: no eng parameter shifts, no foul odor in cabin, pitot system operated normal performed bird strike ckeaning iaw mm 12-40-04 and performed bird strike conditional inspection ref mm 05-51-18. no damage noted."
+      },
+      {
+       "key": 173175,
+       "placed": "INFLT SEPARATION",
+       "filed": "MISSING",
+       "encoder_top1": "INFLT SEPARATION",
+       "text": "number 2 engine thrust reverser lower cascade vane deflector box nr 9 position departed the aircraft. reference engine ipc 78-31-05-02, item 260c.  this resulted in damage to rear cascade support ring engine ipc iaw 78-31-28-02 item 300."
+      },
+      {
+       "key": 205078,
+       "placed": "LOW QUANTITY",
+       "filed": "LOW",
+       "encoder_top1": "LOW",
+       "text": "eng 1 low oil, after rotationind 4.5 qt after level off 6-8 qt engine 1 fan cowls and thrust reversers opened to perform visual insp of engine. no leaks noted. serviced engine with 9 quarts of oil and performed dry motor of engine 1 iaw amm task 71-00-00-710-045-a. no leaks noted at this time. reference update for work performed."
+      },
+      {
+       "key": 203112,
+       "placed": "MISCONFIGURED",
+       "filed": "OUT OF ADJUST",
+       "encoder_top1": "OUT OF ADJUST",
+       "text": "passenger seat 9d reclines into an exit row adjusted recline per cmm 25-21-42 cw c/w inspection"
+      },
+      {
+       "key": 197312,
+       "placed": "INFLT SEPARATION",
+       "filed": "DETACHED",
+       "encoder_top1": "INFLT SEPARATION",
+       "text": "the flight originated on august 2, 2026, departing from kism (velocity fbo). both pilots performed external pre-flight inspections of the aircraft at separate times, and no abnormalities were noted during either inspection.\r\nafter landing at kryy, the pilot in command (pic), while performing a post-flight external walk-around inspection, revealed that the lower engine cowling on the right engine had separated from the aircraft and was missing. it could not be determined at what point during the flight the separation occurred. a more detailed external inspection was subsequently performed, incl"
+      },
+      {
+       "key": 171764,
+       "placed": "IMPROPER PART",
+       "filed": "WRONG PART",
+       "encoder_top1": "WRONG PART",
+       "text": "found incorrect safety wire on l1 door slide.   amm: 25-66-01-4  replaced safety wire with cad copper."
+      },
+      {
+       "key": 165738,
+       "placed": "UNCONTROLLABLE",
+       "filed": "FAULTED",
+       "encoder_top1": "UNCONTROLLABLE",
+       "text": "stab trim runaway nose down just after takeoff. preformed qrc, then qrh. landed flaps 20.   (flight 6262)  b1-007955 this discrepancy was transferred to camp item 31555299 with the following corrective action: refer to cp 31556697 for corrective action of first officer pitch trim switch replacement & ops checks of the stab trim system. refer to cp 31556708 for troubleshooting.\""
+      },
+      {
+       "key": 187439,
+       "placed": "IMPROPER STOW",
+       "filed": "MISINSTALLED",
+       "encoder_top1": "IMPROPER STOW",
+       "text": "r-1 door slide, girt bar skirt improperly stowed.   performed adjustement r1 door slide, girt bar skirt iaw amm 25-66-01."
+      },
+      {
+       "key": 187109,
+       "placed": "IMPROPER STOW",
+       "filed": "UNPACKED",
+       "encoder_top1": "IMPROPER STOW",
+       "text": "l1 door slide girt bar skirt improperly stowed.  resecured l1 door slide girt bar skirt iaw amm 25-66-01-400-803."
+      },
+      {
+       "key": 202960,
+       "placed": "MISCONFIGURED",
+       "filed": "OUT OF ADJUST",
+       "encoder_top1": "OUT OF ADJUST",
+       "text": "passenger cabin emergency exit seat recline at 14b not supposed to recline. adjusted hydro-lock to the lock out position per amm 25-22-00 inspection verified corrective action taken in step 1."
+      },
+      {
+       "key": 166197,
+       "placed": "VIBRATES",
+       "filed": "WORN",
+       "encoder_top1": "DEFORMED",
+       "text": "aircraft was grounded: airplane has vibrations during climb out. seemed to stop around fl23,000 and speed 330. not active during cruise or descent. **supplemental report for aala202601260827 submittted 1/26/2026 by tul: maintenance replaced the left-hand elevator hinge bearing end fittings and associated hardware at positions 1(aala202601260827), 2 (aala202601306265), 3 (aala202601305490), 4 (aala202601302286), 5 (aala202601303571), and 6 (aala202601302510) per amm 5516-42-400-001-a. ** (closed)"
+      },
+      {
+       "key": 183664,
+       "placed": "MISWIRED",
+       "filed": "DISCONNECTED",
+       "encoder_top1": "MISINSTALLED",
+       "text": "aircraft was not grounded: seat emergency lights inoperative on row 17abc. found epl(emergnecy pathway lighting) harness connector wired incorrectly between seats 15abc &amp; 16abc. installed new harness, per dbf-2134 in between seats 15abc and 16abc. performed ops check of epl, per amm 33-51-00, ops check good."
+      },
+      {
+       "key": 198425,
+       "placed": "INFLT SEPARATION",
+       "filed": "SEPARATED",
+       "encoder_top1": "MISSING",
+       "text": "after landing, crew was informed that a piece of rt trailing edge flap departed the acft on rotation, visual inspection after parking confirmed part of flap was missing. flap 25 takeoff.  r & r otbd flap assy iaw amm 27-51. (8592099) aircraft was grounded."
+      },
+      {
+       "key": 204799,
+       "placed": "CHATTERING",
+       "filed": "FAULTED",
+       "encoder_top1": "NOISE",
+       "text": "during taxi out for departure, we experience some brief brake chatter during our last turn prior to the runway. while awaiting takeoff clearance, we set the parking brake and received an amber brk fail caution. we called ops and mcc, then shut the aircraft down and called the fbo for a tow back to the ramp. a ground reset procedure was not accomplished because the issue occurred well after start up and taxi out.   reset brakes. ops check good. iaw phenom 300 amm 31-31-00"
+      },
+      {
+       "key": 193641,
+       "placed": "OUT OF TRIM",
+       "filed": "FAULTED",
+       "encoder_top1": "OUT OF TRIM",
+       "text": "stab out of trim light illuminated.   r & r stab trim motor iaw amm 27-41-71 ops chkd ok."
+      },
+      {
+       "key": 200427,
+       "placed": "IMPROPER STOW",
+       "filed": "OUT OF POSITION",
+       "encoder_top1": "MISINSTALLED",
+       "text": "found r1 serviced door slide girt bar not properly stowed. found r1 service door slide girt bar not properly stowed. resecured girt bar in disarmed position per amm 52-41-00.  4620921"
+      },
+      {
+       "key": 180567,
+       "placed": "TIGHT",
+       "filed": "OUT OF ADJUST",
+       "encoder_top1": "TIGHT",
+       "text": "r1 girt bar bracket is too tight.   adjusted girt bar tension on r1 door re. amm 25-66-00."
+      },
+      {
+       "key": 190050,
+       "placed": "BLOCKED",
+       "filed": "OBSTRUCTED",
+       "encoder_top1": "BLOCKED",
+       "text": "the rt side pitot system becomes blocked, with the symptom being the right pfd (and standby) airspeed slowly drops to 0. maintenance has checked the probe heat repeatedly and found no defects. this has happened to me on at least two different pc12s. my theory is that water enters the pitot system and freezes before it can drain out, as the system recovers when descending through the freezing level."
+      },
+      {
+       "key": 184237,
+       "placed": "CHIPPED",
+       "filed": "GOUGED",
+       "encoder_top1": "DAMAGED",
+       "text": "nr 2 eng aft mount has chipped material on upper surface, fll-0035, ata 71. accomplished repair per eo-97541-req1 and vt-saa ea 757-7121-01-b0744 rev i/r."
+      }
+     ]
+    },
+    "shown": {
+     "answers": 1324,
+     "shortlisted": 1324,
+     "coverage": 1.0,
+     "none_of_these": 65,
+     "unparsed": 0,
+     "picks_rare_candidate": 0.1276,
+     "shown": {
+      "right": 56,
+      "false": 113,
+      "visible_modes": 24,
+      "phantom_modes": 25,
+      "precision": 0.3314
+     },
+     "gate_zs": {
+      "right": 54,
+      "false": 73,
+      "visible_modes": 22,
+      "phantom_modes": 22,
+      "precision": 0.4252
+     },
+     "gate_either": {
+      "right": 54,
+      "false": 83,
+      "visible_modes": 22,
+      "phantom_modes": 24,
+      "precision": 0.3942
+     },
+     "free_answer_equals_rare_candidate": 0.0959
+    }
+   },
+   "gemma4_31b": {
+    "mechanism": {
+     "rare_reports": 292,
+     "other_reports": 42425,
+     "prior_odds": 0.006882734236888627,
+     "confirmers": {
+      "zs": {
+       "llm_right": 140,
+       "llm_right_check_natural": 140.0,
+       "llm_false_estimated": 1675.4,
+       "llm_false_ci95": [
+        1438.8,
+        1942.7
+       ],
+       "right_passing": 51,
+       "false_passing": 68,
+       "keep_right": 0.3643,
+       "keep_false": 0.04059,
+       "filter_factor": 9.0,
+       "shortlisted_candidate_right": 63,
+       "shortlisted_candidate_false": 1261,
+       "confirm_right": 0.8095,
+       "confirm_false": 0.05393,
+       "confirm_ratio": 15.0
+      },
+      "rag": {
+       "llm_right": 111,
+       "llm_right_check_natural": 111.0,
+       "llm_false_estimated": 657.1,
+       "llm_false_ci95": [
+        515.9,
+        829.4
+       ],
+       "right_passing": 49,
+       "false_passing": 53,
+       "keep_right": 0.4414,
+       "keep_false": 0.08066,
+       "filter_factor": 5.5,
+       "shortlisted_candidate_right": 63,
+       "shortlisted_candidate_false": 1261,
+       "confirm_right": 0.7778,
+       "confirm_false": 0.04203,
+       "confirm_ratio": 18.5
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 38,
+       "false": 84,
+       "LR": 65.7
+      },
+      "gate": {
+       "right": 52,
+       "false": 80,
+       "LR": 94.4
+      },
+      "llm_zs_alone": {
+       "right": 140,
+       "false": 1675.4,
+       "LR": 12.1
+      },
+      "llm_rag_alone": {
+       "right": 111,
+       "false": 657.1,
+       "LR": 24.5
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 38,
+      "false": 84,
+      "visible_modes": 20,
+      "phantom_modes": 27,
+      "precision": 0.3115
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 33,
+       "false": 24,
+       "visible_modes": 16,
+       "phantom_modes": 9,
+       "precision": 0.5789
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 21,
+       "visible_modes": 15,
+       "phantom_modes": 9,
+       "precision": 0.6038
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 34,
+       "false": 27,
+       "visible_modes": 17,
+       "phantom_modes": 12,
+       "precision": 0.5574
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 31,
+       "false": 18,
+       "visible_modes": 14,
+       "phantom_modes": 6,
+       "precision": 0.6327
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 84,
+       "visible_modes": 20,
+       "phantom_modes": 27,
+       "precision": 0.3115
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 46,
+       "false": 55,
+       "visible_modes": 18,
+       "phantom_modes": 15,
+       "precision": 0.4554
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 51,
+       "false": 115,
+       "visible_modes": 21,
+       "phantom_modes": 32,
+       "precision": 0.3072
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 44,
+       "false": 40,
+       "visible_modes": 17,
+       "phantom_modes": 15,
+       "precision": 0.5238
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 103,
+       "visible_modes": 21,
+       "phantom_modes": 31,
+       "precision": 0.3268
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 47,
+       "false": 61,
+       "visible_modes": 19,
+       "phantom_modes": 19,
+       "precision": 0.4352
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 51,
+       "false": 118,
+       "visible_modes": 21,
+       "phantom_modes": 32,
+       "precision": 0.3018
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 43,
+       "false": 34,
+       "visible_modes": 16,
+       "phantom_modes": 10,
+       "precision": 0.5584
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 100,
+       "visible_modes": 21,
+       "phantom_modes": 31,
+       "precision": 0.3333
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 51,
+       "false": 68,
+       "visible_modes": 20,
+       "phantom_modes": 17,
+       "precision": 0.4286
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 56,
+       "false": 128,
+       "visible_modes": 23,
+       "phantom_modes": 32,
+       "precision": 0.3043
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 49,
+       "false": 53,
+       "visible_modes": 19,
+       "phantom_modes": 20,
+       "precision": 0.4804
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 55,
+       "false": 116,
+       "visible_modes": 23,
+       "phantom_modes": 32,
+       "precision": 0.3216
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 52,
+       "false": 80,
+       "visible_modes": 21,
+       "phantom_modes": 22,
+       "precision": 0.3939
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 56,
+       "false": 137,
+       "visible_modes": 23,
+       "phantom_modes": 32,
+       "precision": 0.2902
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 48,
+       "false": 41,
+       "visible_modes": 18,
+       "phantom_modes": 11,
+       "precision": 0.5393
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 55,
+       "false": 107,
+       "visible_modes": 23,
+       "phantom_modes": 31,
+       "precision": 0.3395
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 124,
+       "visible_modes": 21,
+       "phantom_modes": 21,
+       "precision": 0.3034
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 59,
+       "false": 184,
+       "visible_modes": 24,
+       "phantom_modes": 31,
+       "precision": 0.2428
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 51,
+       "false": 64,
+       "visible_modes": 20,
+       "phantom_modes": 23,
+       "precision": 0.4435
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 57,
+       "false": 127,
+       "visible_modes": 24,
+       "phantom_modes": 31,
+       "precision": 0.3098
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 57,
+       "false": 138,
+       "visible_modes": 23,
+       "phantom_modes": 24,
+       "precision": 0.2923
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 61,
+       "false": 195,
+       "visible_modes": 25,
+       "phantom_modes": 30,
+       "precision": 0.2383
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 48,
+       "false": 50,
+       "visible_modes": 18,
+       "phantom_modes": 16,
+       "precision": 0.4898
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 55,
+       "false": 116,
+       "visible_modes": 23,
+       "phantom_modes": 32,
+       "precision": 0.3216
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 4461,
+       "encoder": [
+        5,
+        13
+       ],
+       "gate": [
+        5,
+        8
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 4311,
+       "encoder": [
+        4,
+        6
+       ],
+       "gate": [
+        5,
+        3
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 4780,
+       "encoder": [
+        1,
+        11
+       ],
+       "gate": [
+        4,
+        5
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 4748,
+       "encoder": [
+        3,
+        6
+       ],
+       "gate": [
+        5,
+        14
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 4625,
+       "encoder": [
+        5,
+        4
+       ],
+       "gate": [
+        5,
+        8
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 4477,
+       "encoder": [
+        4,
+        7
+       ],
+       "gate": [
+        7,
+        11
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 4860,
+       "encoder": [
+        2,
+        12
+       ],
+       "gate": [
+        4,
+        5
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 4256,
+       "encoder": [
+        6,
+        11
+       ],
+       "gate": [
+        7,
+        8
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 4161,
+       "encoder": [
+        5,
+        2
+       ],
+       "gate": [
+        7,
+        9
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 2038,
+       "encoder": [
+        3,
+        12
+       ],
+       "gate": [
+        3,
+        9
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 29,
+      "right_gain_total": 14,
+      "groups_gaining": 9,
+      "groups_losing": 0,
+      "top3_share_of_positive_gain": 0.571,
+      "groups_false_down": 11,
+      "groups_false_up": 10,
+      "rows": [
+       [
+        "53",
+        16726,
+        2,
+        4,
+        6,
+        2
+       ],
+       [
+        "33",
+        5519,
+        7,
+        5,
+        10,
+        9
+       ],
+       [
+        "25",
+        3012,
+        2,
+        18,
+        3,
+        23
+       ],
+       [
+        "26",
+        317,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "35",
+        202,
+        1,
+        0,
+        2,
+        0
+       ],
+       [
+        "51",
+        60,
+        0,
+        1,
+        1,
+        0
+       ],
+       [
+        "72",
+        582,
+        3,
+        2,
+        4,
+        5
+       ],
+       [
+        "73",
+        179,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "76",
+        22,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "21",
+        1540,
+        1,
+        1,
+        1,
+        2
+       ],
+       [
+        "23",
+        105,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "27",
+        654,
+        2,
+        5,
+        2,
+        4
+       ],
+       [
+        "28",
+        392,
+        0,
+        2,
+        0,
+        4
+       ],
+       [
+        "29",
+        368,
+        0,
+        1,
+        0,
+        7
+       ],
+       [
+        "30",
+        124,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "32",
+        932,
+        3,
+        16,
+        3,
+        3
+       ],
+       [
+        "34",
+        322,
+        1,
+        2,
+        1,
+        3
+       ],
+       [
+        "38",
+        113,
+        1,
+        2,
+        1,
+        0
+       ],
+       [
+        "49",
+        320,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "52",
+        3971,
+        4,
+        4,
+        4,
+        0
+       ],
+       [
+        "54",
+        799,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "55",
+        1321,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "56",
+        259,
+        10,
+        2,
+        10,
+        2
+       ],
+       [
+        "57",
+        3412,
+        0,
+        9,
+        0,
+        6
+       ],
+       [
+        "71",
+        58,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "74",
+        52,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "78",
+        353,
+        1,
+        1,
+        1,
+        2
+       ],
+       [
+        "79",
+        61,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "85",
+        55,
+        0,
+        1,
+        0,
+        1
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 10,
+      "gate_right_ge": 10,
+      "gate_false_le": 6,
+      "both": 6
+     }
+    },
+    "errors": {
+     "encoder": {
+      "false": 84,
+      "placed_term_in_narrative": 29
+     },
+     "gate": {
+      "false": 80,
+      "placed_term_in_narrative": 48
+     },
+     "sample": [
+      {
+       "key": 191730,
+       "placed": "LOW QUANTITY",
+       "filed": "UNDERSERVICED",
+       "encoder_top1": "UNDERSERVICED",
+       "text": "aircraft was grounded: an emergency was declared into dfw due to the flight crew reporting at 31000 they had flap lock flashing until the flaps were moved to flaps 2. they also reported recieving a wing tip locked ecam. the flight crew accomplished a go around and accomplished the ecam procedures. at flaps 3 the indication cleared itself. the aircraft landed safely at dfw without further incident. maintenance found the blue and green hydraulic systems were low and the yellow sytem was overserviced. maintenance serviced all 3 hydraulic systems per amm 12-12-29. a satisfactory operational check "
+      },
+      {
+       "key": 206871,
+       "placed": "BLOCKED",
+       "filed": "CONTAMINATED",
+       "encoder_top1": "OBSTRUCTED",
+       "text": "burning plastic odor in  aft galley. de-powered  galley and went away. inspected and ops checked aft galley iaw amm 05-51-58-800-801-c3.  found plastic wrapper blocking the oven r53 vent.  removed blockage and ops checked. ops check good.  odor did not come back. ok to svc add emp:u375622"
+      },
+      {
+       "key": 174692,
+       "placed": "LOW QUANTITY",
+       "filed": "FALSE INDICATION",
+       "encoder_top1": "LOW",
+       "text": "hyd 1 low qty. emergency declared. not overweight. performed leak check of hyd 1. no leaks found. serviced sys 1 hyd iaw amm 12-12-01"
+      },
+      {
+       "key": 205118,
+       "placed": "UNBALANCED",
+       "filed": "OUT OF BALANCE",
+       "encoder_top1": "OUT OF BALANCE",
+       "text": "twice in a four hour flight we had over 1000lbs imbalance which we corrected via x-feed deferred fuel imbalance evaluation per amm 28-21-00-702-001"
+      },
+      {
+       "key": 207901,
+       "placed": "UNLOCKED",
+       "filed": "UNSECURE",
+       "encoder_top1": "UNLOCKED",
+       "text": "coffeemaker 420 unlocked and sliding off rail.  secured the coffeemaker iaw amm 25-32-01. ops chkd good."
+      },
+      {
+       "key": 206696,
+       "placed": "IMPROPER STOW",
+       "filed": "OUT OF POSITION",
+       "encoder_top1": "IMPROPER STOW",
+       "text": "passenger cabin left overwing emergency hatch escape lanyard improperly stowed. stowed lh overwing exit life line ref amm 25-61-10"
+      },
+      {
+       "key": 170209,
+       "placed": "SEVERED",
+       "filed": "UNSAFETIED",
+       "encoder_top1": "BROKEN",
+       "text": "aircraft in base maintenance: l1 door escape slide cover release cable lockwire is cut. replaced slide assembly per task card 26c83152008."
+      },
+      {
+       "key": 166197,
+       "placed": "VIBRATES",
+       "filed": "WORN",
+       "encoder_top1": "DEFORMED",
+       "text": "aircraft was grounded: airplane has vibrations during climb out. seemed to stop around fl23,000 and speed 330. not active during cruise or descent. **supplemental report for aala202601260827 submittted 1/26/2026 by tul: maintenance replaced the left-hand elevator hinge bearing end fittings and associated hardware at positions 1(aala202601260827), 2 (aala202601306265), 3 (aala202601305490), 4 (aala202601302286), 5 (aala202601303571), and 6 (aala202601302510) per amm 5516-42-400-001-a. ** (closed)"
+      },
+      {
+       "key": 189125,
+       "placed": "NON ISSUE",
+       "filed": "BIRD INGESTION",
+       "encoder_top1": "BIRD INGESTION",
+       "text": "eng nr 2 shows sign of bird strike. completed bird strike insp iaw amm ref  05-51-14-200-803-a and 72-00-00-210-807-a. no bird strike damage. no pilot reports of smell or stalls. debris cleaned. ready for services."
+      },
+      {
+       "key": 188071,
+       "placed": "IMPROPER STOW",
+       "filed": "MISINSTALLED",
+       "encoder_top1": "IMPROPER STOW",
+       "text": "r-1 door slide, gilt bar skirt improperly stowed.\tperformed adjusment r-1 door slide, gilt bar skirt iaw amm 25-66-01"
+      },
+      {
+       "key": 204001,
+       "placed": "INTERFERENCE",
+       "filed": "FAULTED",
+       "encoder_top1": "ABNORMAL",
+       "text": "comm 1 extremely giving interference when in flight,   reset c/b ref amm 23-12. (9488892) (aircraft grounded)."
+      },
+      {
+       "key": 204108,
+       "placed": "IMPROPER PART",
+       "filed": "WRONG PART",
+       "encoder_top1": "WRONG PART",
+       "text": "mlg wheel assy p/n c20195162 s/n 42248 was received from customer air serbia as fail-on-fit.  during the shop inspection it was found that inappropriate bearing cone p/n np542842-20629 was installed instead of p/n 48290-20629 (ref. cmm 32-47-46 r15).  wheel was visually checked for damages and new bearing cone was ordered. registration: yu-aps"
+      },
+      {
+       "key": 187156,
+       "placed": "PINCHED",
+       "filed": "UNSECURE",
+       "encoder_top1": "PINCHED",
+       "text": "aircraft was grounded: audible squeal heard coming from door 4l. sd screen shows 4l slide is not armed but flight attendants confirm it is armed. this changed status sometime after takeoff. cabin psi dif: 7.9, cabin alt.: 6,450'. cruise altitude: 34,000'. maintenance found strap of door slide (4l) bustle pinched between door and frame, secured strap and performed pressurization test per amm 05-53-00 with no leaks or audible squeal noted, maintenance also performed a satisfactory operational check of the door arming system per amm 52-73-00 with no issues noted."
+      },
+      {
+       "key": 199328,
+       "placed": "SEVERED",
+       "filed": "DAMAGED",
+       "encoder_top1": "DAMAGED",
+       "text": "cut on galley 1 emergency exit light cable.  replaced the connector on wire w4142 d03658 iaw  swpm 20-30-12, and performed emergency light ops test iaw amm 33-51-00-710-801."
+      },
+      {
+       "key": 167075,
+       "placed": "MISWIRED",
+       "filed": "FAULTED",
+       "encoder_top1": "MISINSTALLED",
+       "text": "51 abc emergency light inoperative. slaved in known good light at row 51abc. no help. requires additional t/s. iaw amm 33-51. defer to mel 33-50-07a. placard installed no m procedures.  found pins in incorrect slots. repined connector j12 per a350 awm 33-51 and light now functions normal. this clears mel, removed placards. (lp 8574119)"
+      },
+      {
+       "key": 194790,
+       "placed": "LOW QUANTITY",
+       "filed": "LOW",
+       "encoder_top1": "LOW",
+       "text": "during approach, the flight crew reported that the landing gear handle was selected down but emergency extension procedures were followed to allow the landing gear to be extended safely. maintenance reported that upon inspection it was noted that the hydraulic fluid level was below the minimum cold acceptable level and serviced the system. they inspected for any other abnormalities and all else was good. landing gear extension and retraction checks were successfully performed, and the aircraft was returned to service."
+      },
+      {
+       "key": 200916,
+       "placed": "MISWIRED",
+       "filed": "MISINSTALLED",
+       "encoder_top1": "MISWIRED",
+       "text": "aircraft was grounded: exit sign over door 4l does not illuminate - maintenance identified incorrect wire connections and corrected wiring at 7222vt modular terminal blocks. swapped wire h with wire d on modular terminal block 7 and transferred wire from modular terminal block 7 to modular terminal block 2 per espm 20-44-51 - a satisfactory operational check was accomplished with no issues noted"
+      },
+      {
+       "key": 181468,
+       "placed": "CHIPPED",
+       "filed": "DAMAGED",
+       "encoder_top1": "DAMAGED",
+       "text": "right wing nr 21 l/e v/c flap exterior surface lsa several areas found chipped.  rt wing  #21 l/e v/c flap lsa damaged areas repaired iaw cmm 57-55-42 repair 17-1. no further defects noted."
+      },
+      {
+       "key": 204504,
+       "placed": "MISWIRED",
+       "filed": "MISINSTALLED",
+       "encoder_top1": "WRONG PART",
+       "text": "emergency sign on aft divider is inop.  swapped incorrect connectors. ops check good iaw 35-50-00."
+      },
+      {
+       "key": 187249,
+       "placed": "LOW QUANTITY",
+       "filed": "FAILED",
+       "encoder_top1": "LOW",
+       "text": "flt # 1620, bos-bos. (etops) \"upon 1st engine start got a hyd blue reservoir low level - blue pump off per ecam; r+r hyd sys accumulator blue sys ops chk good, no leaks at this time iaw amm 29-12-42.\""
+      }
+     ]
+    },
+    "shown": {
+     "answers": 1324,
+     "shortlisted": 1324,
+     "coverage": 1.0,
+     "none_of_these": 47,
+     "unparsed": 0,
+     "picks_rare_candidate": 0.1284,
+     "shown": {
+      "right": 56,
+      "false": 114,
+      "visible_modes": 24,
+      "phantom_modes": 24,
+      "precision": 0.3294
+     },
+     "gate_zs": {
+      "right": 51,
+      "false": 68,
+      "visible_modes": 20,
+      "phantom_modes": 17,
+      "precision": 0.4286
+     },
+     "gate_either": {
+      "right": 52,
+      "false": 80,
+      "visible_modes": 21,
+      "phantom_modes": 22,
+      "precision": 0.3939
+     },
+     "free_answer_equals_rare_candidate": 0.0899
+    }
+   }
+  },
+  "2025": {
+   "qwen38_27b": {
+    "mechanism": {
+     "rare_reports": 436,
+     "other_reports": 58980,
+     "prior_odds": 0.007392336385215327,
+     "confirmers": {
+      "zs": {
+       "llm_right": 201,
+       "llm_right_check_natural": 201.0,
+       "llm_false_estimated": 3083.0,
+       "llm_false_ci95": [
+        2700.5,
+        3508.3
+       ],
+       "right_passing": 86,
+       "false_passing": 91,
+       "keep_right": 0.4279,
+       "keep_false": 0.02952,
+       "filter_factor": 14.5,
+       "shortlisted_candidate_right": 99,
+       "shortlisted_candidate_false": 2091,
+       "confirm_right": 0.8687,
+       "confirm_false": 0.04352,
+       "confirm_ratio": 20.0
+      },
+      "rag": {
+       "llm_right": 158,
+       "llm_right_check_natural": 158.0,
+       "llm_false_estimated": 718.1,
+       "llm_false_ci95": [
+        546.5,
+        933.6
+       ],
+       "right_passing": 81,
+       "false_passing": 67,
+       "keep_right": 0.5127,
+       "keep_false": 0.0933,
+       "filter_factor": 5.5,
+       "shortlisted_candidate_right": 99,
+       "shortlisted_candidate_false": 2091,
+       "confirm_right": 0.8182,
+       "confirm_false": 0.03204,
+       "confirm_ratio": 25.5
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 58,
+       "false": 137,
+       "LR": 57.3
+      },
+      "gate": {
+       "right": 91,
+       "false": 108,
+       "LR": 114.0
+      },
+      "llm_zs_alone": {
+       "right": 201,
+       "false": 3083.0,
+       "LR": 8.8
+      },
+      "llm_rag_alone": {
+       "right": 158,
+       "false": 718.1,
+       "LR": 29.8
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 58,
+      "false": 137,
+      "visible_modes": 22,
+      "phantom_modes": 30,
+      "precision": 0.2974
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 55,
+       "false": 33,
+       "visible_modes": 20,
+       "phantom_modes": 10,
+       "precision": 0.625
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 56,
+       "false": 30,
+       "visible_modes": 21,
+       "phantom_modes": 9,
+       "precision": 0.6512
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 57,
+       "false": 39,
+       "visible_modes": 21,
+       "phantom_modes": 11,
+       "precision": 0.5938
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 24,
+       "visible_modes": 20,
+       "phantom_modes": 7,
+       "precision": 0.6923
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 77,
+       "false": 66,
+       "visible_modes": 24,
+       "phantom_modes": 18,
+       "precision": 0.5385
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 80,
+       "false": 170,
+       "visible_modes": 25,
+       "phantom_modes": 33,
+       "precision": 0.32
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 73,
+       "false": 52,
+       "visible_modes": 25,
+       "phantom_modes": 16,
+       "precision": 0.584
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 75,
+       "false": 159,
+       "visible_modes": 25,
+       "phantom_modes": 33,
+       "precision": 0.3205
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 81,
+       "false": 79,
+       "visible_modes": 26,
+       "phantom_modes": 18,
+       "precision": 0.5062
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 82,
+       "false": 177,
+       "visible_modes": 26,
+       "phantom_modes": 32,
+       "precision": 0.3166
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 69,
+       "false": 39,
+       "visible_modes": 23,
+       "phantom_modes": 13,
+       "precision": 0.6389
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 73,
+       "false": 152,
+       "visible_modes": 24,
+       "phantom_modes": 34,
+       "precision": 0.3244
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 86,
+       "false": 91,
+       "visible_modes": 28,
+       "phantom_modes": 18,
+       "precision": 0.4859
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 89,
+       "false": 195,
+       "visible_modes": 28,
+       "phantom_modes": 33,
+       "precision": 0.3134
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 81,
+       "false": 67,
+       "visible_modes": 28,
+       "phantom_modes": 16,
+       "precision": 0.5473
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 83,
+       "false": 174,
+       "visible_modes": 28,
+       "phantom_modes": 31,
+       "precision": 0.323
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 91,
+       "false": 108,
+       "visible_modes": 29,
+       "phantom_modes": 18,
+       "precision": 0.4573
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 92,
+       "false": 206,
+       "visible_modes": 29,
+       "phantom_modes": 32,
+       "precision": 0.3087
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 76,
+       "false": 50,
+       "visible_modes": 27,
+       "phantom_modes": 14,
+       "precision": 0.6032
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 80,
+       "false": 163,
+       "visible_modes": 27,
+       "phantom_modes": 32,
+       "precision": 0.3292
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 91,
+       "false": 149,
+       "visible_modes": 28,
+       "phantom_modes": 21,
+       "precision": 0.3792
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 94,
+       "false": 253,
+       "visible_modes": 28,
+       "phantom_modes": 36,
+       "precision": 0.2709
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 86,
+       "false": 90,
+       "visible_modes": 29,
+       "phantom_modes": 19,
+       "precision": 0.4886
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 88,
+       "false": 197,
+       "visible_modes": 29,
+       "phantom_modes": 33,
+       "precision": 0.3088
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 97,
+       "false": 169,
+       "visible_modes": 30,
+       "phantom_modes": 21,
+       "precision": 0.3647
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 98,
+       "false": 267,
+       "visible_modes": 30,
+       "phantom_modes": 35,
+       "precision": 0.2685
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 80,
+       "false": 70,
+       "visible_modes": 27,
+       "phantom_modes": 17,
+       "precision": 0.5333
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 84,
+       "false": 183,
+       "visible_modes": 27,
+       "phantom_modes": 34,
+       "precision": 0.3146
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 5213,
+       "encoder": [
+        10,
+        9
+       ],
+       "gate": [
+        12,
+        9
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 4372,
+       "encoder": [
+        1,
+        8
+       ],
+       "gate": [
+        1,
+        3
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 5640,
+       "encoder": [
+        4,
+        9
+       ],
+       "gate": [
+        8,
+        9
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 5380,
+       "encoder": [
+        5,
+        5
+       ],
+       "gate": [
+        9,
+        3
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 4954,
+       "encoder": [
+        6,
+        17
+       ],
+       "gate": [
+        10,
+        11
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 4746,
+       "encoder": [
+        1,
+        16
+       ],
+       "gate": [
+        4,
+        12
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 5156,
+       "encoder": [
+        3,
+        14
+       ],
+       "gate": [
+        8,
+        11
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 5305,
+       "encoder": [
+        4,
+        17
+       ],
+       "gate": [
+        4,
+        16
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 4943,
+       "encoder": [
+        4,
+        11
+       ],
+       "gate": [
+        5,
+        13
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 5303,
+       "encoder": [
+        8,
+        11
+       ],
+       "gate": [
+        17,
+        3
+       ]
+      },
+      {
+       "month": 11,
+       "reports": 4275,
+       "encoder": [
+        8,
+        14
+       ],
+       "gate": [
+        9,
+        14
+       ]
+      },
+      {
+       "month": 12,
+       "reports": 4129,
+       "encoder": [
+        4,
+        6
+       ],
+       "gate": [
+        4,
+        4
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 32,
+      "right_gain_total": 33,
+      "groups_gaining": 12,
+      "groups_losing": 0,
+      "top3_share_of_positive_gain": 0.455,
+      "groups_false_down": 11,
+      "groups_false_up": 11,
+      "rows": [
+       [
+        "25",
+        4518,
+        5,
+        25,
+        10,
+        14
+       ],
+       [
+        "32",
+        1212,
+        4,
+        24,
+        9,
+        7
+       ],
+       [
+        "51",
+        88,
+        4,
+        2,
+        9,
+        2
+       ],
+       [
+        "72",
+        808,
+        3,
+        8,
+        8,
+        6
+       ],
+       [
+        "53",
+        24332,
+        3,
+        8,
+        6,
+        12
+       ],
+       [
+        "21",
+        2119,
+        1,
+        7,
+        3,
+        6
+       ],
+       [
+        "52",
+        5485,
+        8,
+        12,
+        10,
+        12
+       ],
+       [
+        "56",
+        361,
+        10,
+        3,
+        12,
+        2
+       ],
+       [
+        "33",
+        7143,
+        13,
+        6,
+        14,
+        12
+       ],
+       [
+        "34",
+        341,
+        1,
+        3,
+        2,
+        1
+       ],
+       [
+        "38",
+        129,
+        1,
+        5,
+        2,
+        5
+       ],
+       [
+        "78",
+        323,
+        0,
+        1,
+        1,
+        1
+       ],
+       [
+        "23",
+        132,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "24",
+        308,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "26",
+        336,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "27",
+        918,
+        0,
+        6,
+        0,
+        7
+       ],
+       [
+        "28",
+        631,
+        0,
+        6,
+        0,
+        0
+       ],
+       [
+        "29",
+        476,
+        0,
+        1,
+        0,
+        4
+       ],
+       [
+        "31",
+        171,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "35",
+        287,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "36",
+        161,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "54",
+        696,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "55",
+        1938,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "57",
+        4623,
+        0,
+        11,
+        0,
+        3
+       ],
+       [
+        "61",
+        21,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "62",
+        32,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "67",
+        19,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "71",
+        57,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "73",
+        257,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "77",
+        104,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "79",
+        91,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "80",
+        50,
+        0,
+        1,
+        0,
+        0
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 12,
+      "gate_right_ge": 12,
+      "gate_false_le": 11,
+      "both": 11
+     }
+    },
+    "errors": {
+     "encoder": {
+      "false": 137,
+      "placed_term_in_narrative": 38
+     },
+     "gate": {
+      "false": 108,
+      "placed_term_in_narrative": 65
+     },
+     "sample": [
+      {
+       "key": 141548,
+       "placed": "NOISY",
+       "filed": "LEAKING",
+       "encoder_top1": "NOISY",
+       "text": "pax reported louder air noise at 31d. confirmed by f/a and pilot compare d to 31a. both emergency exit no pressurization issue reported, gvi of all 4 emergency exits satis, flushness of all 4 emergency exits also checked satis"
+      },
+      {
+       "key": 144035,
+       "placed": "NOISY",
+       "filed": "LEAKING",
+       "encoder_top1": "LEAKING",
+       "text": "passing 10000ft, r1 door became very loud to the point the fa's could not hear each other speak. also received loud humming in cockpit. both noises stopped when passing back through 10000 ft on the descent. r1 door insp rar speed tape aft of the door iaw srm 51-22-01 no defects noted see aml: 111501093 for discrepency replaced fwd galley sink drain reference 072-ord-03871. ops check good. reference work scope and nrwc numbers 072-ord 03870,03872,03873,03874, and 072-ord-03875 for work preformed. refernce aml # 111501097 item #1 for fcf. r1 door insp rar speed tape aft of the door iaw srm 51-22"
+      },
+      {
+       "key": 116230,
+       "placed": "WILL NOT ARM",
+       "filed": "OUT OF ADJUST",
+       "encoder_top1": "WILL NOT ARM",
+       "text": "the r1 main entrance door slide will not arm.    released for service per mel : 52-xx-xx   cat : c exp : 04apr25  \"mel 52-xx-xx4: ecam slide indication system for r1 door - inop. door escape slide   arming system is to be verified as fully armed prior to each departure.\"  verified r1   door slide does physically arm.      -  placed on mel 52-30-04. aircraft okay to continue"
+      },
+      {
+       "key": 157249,
+       "placed": "BLOCKED",
+       "filed": "FAULTED",
+       "encoder_top1": "CLOGGED",
+       "text": "all a/c left lavs  including 3l center lavs stopped working found all lavs on left side, including 3l center lavs to be operating normally. found lav h clogged with large amounts of paper towels and toliet paper jammed in toliet bowl. removed and cleared clog. lav h operates normally. ref amm 38-32-00. flushed add emp:u092712 all lavs with crushed ice and vinegar. waiting on lav service for precharge and final ops checks of tank inds.  accomplished aa auto zero - adjustment task 38-33-00-710-801. also accomplished the lcm bite ops test, task 38-33-00-740-801. both test passed on all 3 tanks. a"
+      },
+      {
+       "key": 153648,
+       "placed": "DEPLETED",
+       "filed": "DISCHARGED",
+       "encoder_top1": "DISCHARGED",
+       "text": "cabin cleaners turned on emergency exit lights, for unknown length of time, verify battery status.   verified emergency lights are turned off and  not completely drained.  ops chkd lights.   recharged  before departure. iaw amm-33-51-00-715-039, 33-51-07-732-003-002."
+      },
+      {
+       "key": 146356,
+       "placed": "DEPLETED",
+       "filed": "INOPERATIVE",
+       "encoder_top1": "DISCHARGED",
+       "text": "fo flashlight is dead - placed on mel"
+      },
+      {
+       "key": 113983,
+       "placed": "IMPROPER STOW",
+       "filed": "INCORRECT",
+       "encoder_top1": "MISINSTALLED",
+       "text": "1r service door will not arm due to location of door lever. girtbar was stowed improperly. resecured girtbar. ok to continue. add emp: u155568"
+      },
+      {
+       "key": 105505,
+       "placed": "PERFORATED",
+       "filed": "CRACKED",
+       "encoder_top1": "PERFORATED",
+       "text": "wing rh access panel 666 mt, perforated wing rh access panel 666 mt was repaired iaw b767 srm 57-53-01-2r repair 1 fig 201   sheet 3 and b767 srm 51-70-10-2r repair 4 fig 201 sheet 1 rev 90 aug 15,2024"
+      },
+      {
+       "key": 138915,
+       "placed": "SCORED",
+       "filed": "DAMAGED",
+       "encoder_top1": "SCORED",
+       "text": "rh body gear wheel well trunnion fwd mounting bolt hole inner bore has scoring(<p>removed scoring on the inner hole per ea 747 5340-28-b0538 &amp; srm 53-40-90 repair 2. no further defects noted.</p>)"
+      },
+      {
+       "key": 135032,
+       "placed": "NOISY",
+       "filed": "NOISE",
+       "encoder_top1": "NOISE",
+       "text": "loud noise  shortly after lift off started at a low frequency then slowly increased in pitch, sounded like an engine slowly reving to redline. noise ended at 5000â€™. suspect crew entry door seal pressurized aircraft per mm 21-30-00, no leaks or kooky noises noted."
+      },
+      {
+       "key": 155012,
+       "placed": "INFLT SEPARATION",
+       "filed": "DAMAGED",
+       "encoder_top1": "MISSING",
+       "text": "pda 1 right mlg door and attatching hardware departed aircraft after mlg no1 blow out ref logpage 6831361 for event images added to logpage sdr added to logpage sdr corrected correction to discrepancy: \"left mlg door\".  no defects identified on right mlg door at this time"
+      },
+      {
+       "key": 106692,
+       "placed": "LOW QUANTITY",
+       "filed": "LEAKING",
+       "encoder_top1": "LOW",
+       "text": "during cruse eng 2 show low oil qty (790 045 53)"
+      },
+      {
+       "key": 133750,
+       "placed": "LOW TENSION",
+       "filed": "FAILED",
+       "encoder_top1": "LOW TENSION",
+       "text": "aircraft was grounded: an emergency was declared due to: during climb the aircraft pitched up and down with the leading edge flaps transit light illuminated; aircraft air interrupted back to and landed safely at phl. found pin 34 of connector dm22 to have low tension resistance. replaced dm22. per swpm 20-60-06 and per wdm 27-81-21 and 28-23-11. system checks good. flaps and slats operate and indicate normal originally."
+      },
+      {
+       "key": 147194,
+       "placed": "PERFORATED",
+       "filed": "CRACKED",
+       "encoder_top1": "DAMAGED",
+       "text": "perforated floor panel 251qff in mdc floor panel 251qff in mdc was repaired iaw srm 53-00-50-2r par4.b fig 201 sheet 2 rev   92 apr 15,2025"
+      },
+      {
+       "key": 108111,
+       "placed": "FLAMED OUT",
+       "filed": "STALLED",
+       "encoder_top1": "STALLED",
+       "text": "#1 eng compressor stall on takeoff roll; pax report flames out of back of engine smell noted in cabin uneventful landing (smooth rollout) <[01].  performed compressor stall borescope inspection after engine stall event.  iaw amm 71-00-00-210-801-foo-ng. ref (ttgq00ymgsn); [02] edit corrective action to read ' engine change was completed on wp ttg8q00ylsvg and task card ttg8q0064qfg'."
+      },
+      {
+       "key": 144677,
+       "placed": "IMPROPER PART",
+       "filed": "WORN",
+       "encoder_top1": "MISREPAIRED",
+       "text": "rib assy p/n: 116a5502-5 and p/n: 116a5502-6 must be fabricated per the applicable dwg 116a5502 instructions and bcs coo-coo-25-0019-01b smal requested. however, coopesa do not have the capabilities to comply with the conversion coating application by immersion to the new parts as per f-17.31 requirements. due to it, was contacted to boeing to request authorization to apply conversion coating as per bac5019 guidelines, except performing brush application in lieu of immersion procedure. boeing accepted the coopesa proposal documented under coo-nac-25-0006-07b (repair and deviation record) and b"
+      },
+      {
+       "key": 147988,
+       "placed": "IMPROPER PART",
+       "filed": "MISREPAIRED",
+       "encoder_top1": "MISREPAIRED",
+       "text": "upon evaluation found existing doubler repair on fuselage skin station 999 to 1009  between right hand longeron 31 to longeron 33 does not comply to   current srm 53-00-15-2r repair 8 figure 202. fuselage skin at station 999 to station 1009 between right hand longeron 31 to   longeron 33 existing repair doubler removed as per md-11 srm 51-33-01-0g. repair   carried out as per md-11 srm 53-00-15-2r repair 8 figure 202. repetitive inspection   required- initial inspection at 4000 flight cycles and repetitive inspection at every   4000 flight cycles by external visual method as per md-11 srm 53-0"
+      },
+      {
+       "key": 130132,
+       "placed": "BLOCKED",
+       "filed": "WORN",
+       "encoder_top1": "OBSTRUCTED",
+       "text": "began take-off roll and within the first 500 ft sic noted an invalid airspeed indication. crew aborted take-off @ about 70 kts and returnrd to ramp.upon investigation it was found that some debris was causing the blockage that was from the worn pitot covers.to correct issue new covers were installed."
+      },
+      {
+       "key": 140949,
+       "placed": "IMPROPER PART",
+       "filed": "INCORRECT",
+       "encoder_top1": "DAMAGED",
+       "text": "lh elevator access panel 335hb cutout internal repair coubler has no repair information. accomplished permanent reinforcing repair on lh elevator access panel 335hb cutout iaw etd2025-145-925992 rev-a  and piedmonteo1-55-25-0271."
+      },
+      {
+       "key": 135031,
+       "placed": "NOISY",
+       "filed": "NOISE",
+       "encoder_top1": "NOISE",
+       "text": "loud noise  shortly after lift off started at a low frequency then slowly increased in pitch, sounded like an engine slowly reving to redline. noise ended @ 5000â€™. suspect crew entry door seal pressurized aircraft per mm 21-30-00, no leaks or kooky noises noted."
+      }
+     ]
+    },
+    "shown": {
+     "answers": 2190,
+     "shortlisted": 2190,
+     "coverage": 1.0,
+     "none_of_these": 132,
+     "unparsed": 0,
+     "picks_rare_candidate": 0.1068,
+     "shown": {
+      "right": 86,
+      "false": 148,
+      "visible_modes": 29,
+      "phantom_modes": 26,
+      "precision": 0.3675
+     },
+     "gate_zs": {
+      "right": 86,
+      "false": 91,
+      "visible_modes": 28,
+      "phantom_modes": 18,
+      "precision": 0.4859
+     },
+     "gate_either": {
+      "right": 91,
+      "false": 108,
+      "visible_modes": 29,
+      "phantom_modes": 18,
+      "precision": 0.4573
+     },
+     "free_answer_equals_rare_candidate": 0.0808
+    }
+   },
+   "gemma4_31b": {
+    "mechanism": {
+     "rare_reports": 436,
+     "other_reports": 58980,
+     "prior_odds": 0.007392336385215327,
+     "confirmers": {
+      "zs": {
+       "llm_right": 176,
+       "llm_right_check_natural": 176.0,
+       "llm_false_estimated": 1924.4,
+       "llm_false_ci95": [
+        1630.8,
+        2261.1
+       ],
+       "right_passing": 79,
+       "false_passing": 89,
+       "keep_right": 0.4489,
+       "keep_false": 0.04625,
+       "filter_factor": 9.7,
+       "shortlisted_candidate_right": 99,
+       "shortlisted_candidate_false": 2091,
+       "confirm_right": 0.798,
+       "confirm_false": 0.04256,
+       "confirm_ratio": 18.8
+      },
+      "rag": {
+       "llm_right": 155,
+       "llm_right_check_natural": 155.0,
+       "llm_false_estimated": 697.2,
+       "llm_false_ci95": [
+        530.0,
+        908.4
+       ],
+       "right_passing": 76,
+       "false_passing": 65,
+       "keep_right": 0.4903,
+       "keep_false": 0.09323,
+       "filter_factor": 5.3,
+       "shortlisted_candidate_right": 99,
+       "shortlisted_candidate_false": 2091,
+       "confirm_right": 0.7677,
+       "confirm_false": 0.03109,
+       "confirm_ratio": 24.7
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 58,
+       "false": 137,
+       "LR": 57.3
+      },
+      "gate": {
+       "right": 85,
+       "false": 107,
+       "LR": 107.5
+      },
+      "llm_zs_alone": {
+       "right": 176,
+       "false": 1924.4,
+       "LR": 12.4
+      },
+      "llm_rag_alone": {
+       "right": 155,
+       "false": 697.2,
+       "LR": 30.1
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 58,
+      "false": 137,
+      "visible_modes": 22,
+      "phantom_modes": 30,
+      "precision": 0.2974
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 53,
+       "false": 31,
+       "visible_modes": 20,
+       "phantom_modes": 9,
+       "precision": 0.631
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 30,
+       "visible_modes": 21,
+       "phantom_modes": 9,
+       "precision": 0.6429
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 55,
+       "false": 39,
+       "visible_modes": 21,
+       "phantom_modes": 10,
+       "precision": 0.5851
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 52,
+       "false": 22,
+       "visible_modes": 20,
+       "phantom_modes": 6,
+       "precision": 0.7027
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 137,
+       "visible_modes": 22,
+       "phantom_modes": 30,
+       "precision": 0.2974
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 70,
+       "false": 60,
+       "visible_modes": 24,
+       "phantom_modes": 17,
+       "precision": 0.5385
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 75,
+       "false": 166,
+       "visible_modes": 26,
+       "phantom_modes": 33,
+       "precision": 0.3112
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 69,
+       "false": 50,
+       "visible_modes": 25,
+       "phantom_modes": 18,
+       "precision": 0.5798
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 73,
+       "false": 157,
+       "visible_modes": 25,
+       "phantom_modes": 34,
+       "precision": 0.3174
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 76,
+       "false": 75,
+       "visible_modes": 26,
+       "phantom_modes": 21,
+       "precision": 0.5033
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 79,
+       "false": 173,
+       "visible_modes": 26,
+       "phantom_modes": 34,
+       "precision": 0.3135
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 63,
+       "false": 35,
+       "visible_modes": 23,
+       "phantom_modes": 12,
+       "precision": 0.6429
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 69,
+       "false": 150,
+       "visible_modes": 25,
+       "phantom_modes": 33,
+       "precision": 0.3151
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 79,
+       "false": 89,
+       "visible_modes": 28,
+       "phantom_modes": 18,
+       "precision": 0.4702
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 84,
+       "false": 195,
+       "visible_modes": 29,
+       "phantom_modes": 33,
+       "precision": 0.3011
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 76,
+       "false": 65,
+       "visible_modes": 28,
+       "phantom_modes": 18,
+       "precision": 0.539
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 80,
+       "false": 172,
+       "visible_modes": 28,
+       "phantom_modes": 33,
+       "precision": 0.3175
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 85,
+       "false": 107,
+       "visible_modes": 29,
+       "phantom_modes": 23,
+       "precision": 0.4427
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 88,
+       "false": 205,
+       "visible_modes": 29,
+       "phantom_modes": 35,
+       "precision": 0.3003
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 70,
+       "false": 47,
+       "visible_modes": 27,
+       "phantom_modes": 12,
+       "precision": 0.5983
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 76,
+       "false": 162,
+       "visible_modes": 28,
+       "phantom_modes": 31,
+       "precision": 0.3193
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 82,
+       "false": 180,
+       "visible_modes": 28,
+       "phantom_modes": 21,
+       "precision": 0.313
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 87,
+       "false": 286,
+       "visible_modes": 29,
+       "phantom_modes": 35,
+       "precision": 0.2332
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 81,
+       "false": 85,
+       "visible_modes": 29,
+       "phantom_modes": 19,
+       "precision": 0.488
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 85,
+       "false": 192,
+       "visible_modes": 29,
+       "phantom_modes": 33,
+       "precision": 0.3069
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 91,
+       "false": 201,
+       "visible_modes": 30,
+       "phantom_modes": 25,
+       "precision": 0.3116
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 94,
+       "false": 299,
+       "visible_modes": 30,
+       "phantom_modes": 36,
+       "precision": 0.2392
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 72,
+       "false": 64,
+       "visible_modes": 27,
+       "phantom_modes": 15,
+       "precision": 0.5294
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 78,
+       "false": 179,
+       "visible_modes": 28,
+       "phantom_modes": 32,
+       "precision": 0.3035
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 5213,
+       "encoder": [
+        10,
+        9
+       ],
+       "gate": [
+        12,
+        8
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 4372,
+       "encoder": [
+        1,
+        8
+       ],
+       "gate": [
+        0,
+        5
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 5640,
+       "encoder": [
+        4,
+        9
+       ],
+       "gate": [
+        8,
+        10
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 5380,
+       "encoder": [
+        5,
+        5
+       ],
+       "gate": [
+        9,
+        3
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 4954,
+       "encoder": [
+        6,
+        17
+       ],
+       "gate": [
+        10,
+        5
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 4746,
+       "encoder": [
+        1,
+        16
+       ],
+       "gate": [
+        3,
+        13
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 5156,
+       "encoder": [
+        3,
+        14
+       ],
+       "gate": [
+        8,
+        11
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 5305,
+       "encoder": [
+        4,
+        17
+       ],
+       "gate": [
+        4,
+        17
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 4943,
+       "encoder": [
+        4,
+        11
+       ],
+       "gate": [
+        4,
+        9
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 5303,
+       "encoder": [
+        8,
+        11
+       ],
+       "gate": [
+        16,
+        9
+       ]
+      },
+      {
+       "month": 11,
+       "reports": 4275,
+       "encoder": [
+        8,
+        14
+       ],
+       "gate": [
+        7,
+        12
+       ]
+      },
+      {
+       "month": 12,
+       "reports": 4129,
+       "encoder": [
+        4,
+        6
+       ],
+       "gate": [
+        4,
+        5
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 33,
+      "right_gain_total": 27,
+      "groups_gaining": 10,
+      "groups_losing": 1,
+      "top3_share_of_positive_gain": 0.5,
+      "groups_false_down": 12,
+      "groups_false_up": 10,
+      "rows": [
+       [
+        "25",
+        4518,
+        5,
+        25,
+        10,
+        19
+       ],
+       [
+        "72",
+        808,
+        3,
+        8,
+        8,
+        7
+       ],
+       [
+        "32",
+        1212,
+        4,
+        24,
+        8,
+        6
+       ],
+       [
+        "51",
+        88,
+        4,
+        2,
+        8,
+        2
+       ],
+       [
+        "21",
+        2119,
+        1,
+        7,
+        3,
+        4
+       ],
+       [
+        "52",
+        5485,
+        8,
+        12,
+        10,
+        5
+       ],
+       [
+        "53",
+        24332,
+        3,
+        8,
+        5,
+        11
+       ],
+       [
+        "56",
+        361,
+        10,
+        3,
+        12,
+        2
+       ],
+       [
+        "34",
+        341,
+        1,
+        3,
+        2,
+        1
+       ],
+       [
+        "38",
+        129,
+        1,
+        5,
+        2,
+        3
+       ],
+       [
+        "24",
+        308,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "26",
+        336,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "27",
+        918,
+        0,
+        6,
+        0,
+        5
+       ],
+       [
+        "28",
+        631,
+        0,
+        6,
+        0,
+        7
+       ],
+       [
+        "29",
+        476,
+        0,
+        1,
+        0,
+        7
+       ],
+       [
+        "31",
+        171,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "33",
+        7143,
+        13,
+        6,
+        13,
+        11
+       ],
+       [
+        "35",
+        287,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "36",
+        161,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "49",
+        484,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "54",
+        696,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "55",
+        1938,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "57",
+        4623,
+        0,
+        11,
+        0,
+        3
+       ],
+       [
+        "61",
+        21,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "62",
+        32,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "67",
+        19,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "71",
+        57,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "73",
+        257,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "77",
+        104,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "78",
+        323,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "79",
+        91,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "80",
+        50,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "23",
+        132,
+        1,
+        0,
+        0,
+        0
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 12,
+      "gate_right_ge": 10,
+      "gate_false_le": 11,
+      "both": 9
+     }
+    },
+    "errors": {
+     "encoder": {
+      "false": 137,
+      "placed_term_in_narrative": 38
+     },
+     "gate": {
+      "false": 107,
+      "placed_term_in_narrative": 60
+     },
+     "sample": [
+      {
+       "key": 143223,
+       "placed": "CHIPPED",
+       "filed": "TORN",
+       "encoder_top1": "DAMAGED",
+       "text": "aging aircraft - existing repair at fuselage skin forward cargo door cutout aft   jamb station 1002.3 between longeron 40 right to longeron 42 right. existing repair at fuselage skin forward cargo door cutout aft jamb station 1002.3   between longeron 40 right to longeron 42 right evaluated and found -3 repair   doubler top forward corner edge chipped off.ea #1.5330-t0302104e pt6 title:   fuselage -plates & skins - lower forward cargo door aft jamb repair -srm 53-00-15,   repair 8, fig 202 with deviations. accomplished.eo # 1-5100-7-5001b7 pt1 title:   structures - repair catalog- md-11-repair"
+      },
+      {
+       "key": 159041,
+       "placed": "SEVERED",
+       "filed": "SHORT",
+       "encoder_top1": "SEVERED",
+       "text": "alerting duct pressure low for nr 1 eng. on descent.  pressure consistent at 8 psi vs 35 psi.    during inspection of sense lines and fittings, found short elbow sense line on the supply pressure sense line of the bleed air regulator broken & severed.  checked & ensured smooth travel of prsov butterfly valve and pccv.   installed a new  elbow sense line on the supply pressure sense line of bleed air regulator iaw amm 36-11-03. leak checked good.  performed high power run to confirm proper duct pressure. ops checks passed iaw amm 36-11-00-710-801."
+      },
+      {
+       "key": 116149,
+       "placed": "LOW QUANTITY",
+       "filed": "LEAKING",
+       "encoder_top1": "LOW",
+       "text": "eng 2 oil low level"
+      },
+      {
+       "key": 157370,
+       "placed": "UNBONDED",
+       "filed": "DEBONDED",
+       "encoder_top1": "DEBONDED",
+       "text": "the elevator torque tubes had unbonded creating movement between elevator torque tube & collar.  we have noted this condition on at least 10 different serial numbers of acft.  note, the rudder has same method of attachment & failures have been noted at that location. the anodizing method used does not promote adhesion between parts & seems to be the failure point. in addition, instructions in repair document (fsi-189) states to apply alodine chemical conversion coating to the bonded surfaces which is not recommended iaw the loctite hysol preparation guide.  resulting condition due to this defe"
+      },
+      {
+       "key": 154305,
+       "placed": "LOW QUANTITY",
+       "filed": "LOW",
+       "encoder_top1": "LOW",
+       "text": "hyd y rsvr lo level ecam.-follow tsm 29-13-00-810-801-a. found ylw rsvr low. service as req no leaks noted as per amm 29-00-00. ops ck ggod, a/c ok to cont serv."
+      },
+      {
+       "key": 147193,
+       "placed": "PERFORATED",
+       "filed": "CRACKED",
+       "encoder_top1": "DAMAGED",
+       "text": "perforated floor panel 251kff in mdc floor panel 251kff in mdc was repaired iaw srm 53.00.50.2r par 4.b fig 201 sheet 2 rev.   92   apr 15,2025"
+      },
+      {
+       "key": 113983,
+       "placed": "IMPROPER STOW",
+       "filed": "INCORRECT",
+       "encoder_top1": "MISINSTALLED",
+       "text": "1r service door will not arm due to location of door lever. girtbar was stowed improperly. resecured girtbar. ok to continue. add emp: u155568"
+      },
+      {
+       "key": 106692,
+       "placed": "LOW QUANTITY",
+       "filed": "LEAKING",
+       "encoder_top1": "LOW",
+       "text": "during cruse eng 2 show low oil qty (790 045 53)"
+      },
+      {
+       "key": 139604,
+       "placed": "IMPROPER PART",
+       "filed": "FAULTED",
+       "encoder_top1": "WRONG PART",
+       "text": "on august 4, 2025, nordic aircraft systems received the off-wing slide, removed from aircraft registration 9h-sld, for overhaul.  the following day, august 5, 2025, maintenance personnel commenced maintenance procedures on the component. during initial inspection process, several non-conformities were identified,  the manufacturing date of the assembly does not correspond with the expected production date for the specified serial number. on the label of the inflatable part, there are two different manufacturing dates — one of which matches the expected date of manufacture, while the other does"
+      },
+      {
+       "key": 137087,
+       "placed": "UNBALANCED",
+       "filed": "OUT OF BALANCE",
+       "encoder_top1": "OUT OF BALANCE",
+       "text": "aircraft was not grounded: fuel imbalance the center tank has more than 1000 lbs and wings tanks are not full.  tank quantity wiring checks are all good. left and right wing quantities are within limits. per amm 28-41-00-720-801 +/- 350 lbs and per non routine 3798165."
+      },
+      {
+       "key": 154967,
+       "placed": "DEPLETED",
+       "filed": "DISCHARGED",
+       "encoder_top1": "DISCHARGED",
+       "text": "aircraft was not grounded: f/a flashlight at door 1l flashes red. maintenance replaced battery in f/a flashlight at door 1l iaw amm 25-64-00."
+      },
+      {
+       "key": 108307,
+       "placed": "SEVERED",
+       "filed": "BROKEN",
+       "encoder_top1": "BROKEN",
+       "text": "aircraft was grounded: flight crew reported a wire severed at seat 2a. maintenance found broken wire in row 2 was to seat 1a floor mounted emergency light and repaired floor mounted emergency light wiring per espm 20-43-11. a satisfactory operational test of the floor mounted emergency lights was accomplished."
+      },
+      {
+       "key": 134653,
+       "placed": "PERFORATED",
+       "filed": "DAMAGED",
+       "encoder_top1": "PERFORATED",
+       "text": "lh air conditioning compartment plenum found perforation. removed and replaced lh air conditioning compartment plenum as per 767-300 amm 21-51-01"
+      },
+      {
+       "key": 149008,
+       "placed": "INTERFERENCE",
+       "filed": "OUT OF POSITION",
+       "encoder_top1": "UNSERVICEABLE",
+       "text": "muffler flange going to nr 4 cylinder exhaust pipe does not mate all the way due to interference of tubes going to the air intake box.  this causes an exhaust leak that can lead to damage of air intake tube."
+      },
+      {
+       "key": 109011,
+       "placed": "INACCURATE",
+       "filed": "MALFUNCTIONED",
+       "encoder_top1": "FAULTED",
+       "text": "right main tank fuel quantity indication appears to be erroneous. just prior to center fuel emptying right main qty jumped to 9140 lbs, where it stabilized for a few minutes. it then begun counting down normally. however; there is approximately a 1000 lb split between left and right tanks. all fuel flows/fuel used indications are normal. grounded - yes. per ifim task 28-41-00-810-803 cw sump drain over right wing no water found iaw amm 12-11-00-680-801. verified r/h wing fuel quantity using 737 max alternate fuel manual stick reading matched indicated qt performed fqis bite test pass iaw amm 2"
+      },
+      {
+       "key": 145667,
+       "placed": "NOISY",
+       "filed": "ODOR",
+       "encoder_top1": "NOISY",
+       "text": "lav d air vent making loud noise and odor,  unable to confirm fault on ground, check vent connection ops good. ok to continue."
+      },
+      {
+       "key": 149011,
+       "placed": "FLAMED OUT",
+       "filed": "STALLED",
+       "encoder_top1": "STALLED",
+       "text": "while in cruise flight at fl370 (37,000 ft) the left engine suffered a suspected compressor stall which subsequently lead to the complete failure/flameout of the left engine.  all required qrh procedures were accomplish along with an attempted relight/restart of the left engine with negative results on the relight/restart. a diversion was accomplished and a single engine landing was successfully accomplish at kbwd under emergency authority without any further incident."
+      },
+      {
+       "key": 131351,
+       "placed": "USED",
+       "filed": "OUT OF LIMITS",
+       "encoder_top1": "OUT OF LIMITS",
+       "text": "comply with scheduled maintenance code: track roller slat 1-2 700 lh - discard the lh slat track sealed roller located at top forward 1-2 (p/n cc670-12272-1. remove and replace iaw task card 27-530-809 (mrb 27-81-43-717),  complied with scheduled maintenance code: track roller slat 1-2 700 lh - discarded the lt slat track sealed roller located at top forward 1-2 (p/n cc670-12272-1. removed and replaced iaw task card 27-530-809 (mrb 27-81-43-717), part number:   - , serial number: 10093, position: see continuation card for details. ops test good"
+      },
+      {
+       "key": 141164,
+       "placed": "LOW QUANTITY",
+       "filed": "INOPERATIVE",
+       "encoder_top1": "LOW",
+       "text": "hyd 2 low qty on eicas in flight. removed and replaced edp. performed ops check. ran eng 2. ops check good. no leaks noted at this time. serviced #2 hyd."
+      },
+      {
+       "key": 136478,
+       "placed": "LOW QUANTITY",
+       "filed": "LOW",
+       "encoder_top1": "LOW",
+       "text": "after eng start right hyd qty dropped to 0.73 with rf.ac then returned to the gate (btb) and maintenance grounded ac . mtx then serviced r hyd sys to 1.00 iaw amm 12-12-01. performed engine run on right engine run on right engine iaw amm 71-00-00. ops check good no leaks detected. a/c remains no etops.and returned ac to service ."
+      }
+     ]
+    },
+    "shown": {
+     "answers": 2190,
+     "shortlisted": 2190,
+     "coverage": 1.0,
+     "none_of_these": 75,
+     "unparsed": 0,
+     "picks_rare_candidate": 0.1142,
+     "shown": {
+      "right": 87,
+      "false": 163,
+      "visible_modes": 29,
+      "phantom_modes": 28,
+      "precision": 0.348
+     },
+     "gate_zs": {
+      "right": 79,
+      "false": 89,
+      "visible_modes": 28,
+      "phantom_modes": 18,
+      "precision": 0.4702
+     },
+     "gate_either": {
+      "right": 85,
+      "false": 107,
+      "visible_modes": 29,
+      "phantom_modes": 23,
+      "precision": 0.4427
+     },
+     "free_answer_equals_rare_candidate": 0.0767
+    }
+   }
+  }
+ }
+}

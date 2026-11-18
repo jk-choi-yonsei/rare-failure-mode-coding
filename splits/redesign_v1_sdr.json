@@ -1,0 +1,176 @@
+{
+ "prereg": "notes/prereg-redesign-2026-11-06.md",
+ "corpus": "sdr",
+ "selector_encoder": "cb-conv",
+ "encoder_choice": {
+  "rule": "higher validation macro-F1 of cb-conv and cb-large-conv (tie: cb-conv)",
+  "cb-conv": {
+   "lr": 2e-05,
+   "val_macro_f1": 0.4206,
+   "schedule": [
+    40,
+    5
+   ],
+   "epochs_run": 27,
+   "best_epoch": 22,
+   "best_at_last_epoch": false,
+   "val_by_epoch": [
+    0.0138,
+    0.1053,
+    0.2027,
+    0.2689,
+    0.3164,
+    0.3381,
+    0.3378,
+    0.328,
+    0.3546,
+    0.372,
+    0.3346,
+    0.384,
+    0.3679,
+    0.3673,
+    0.3847,
+    0.3791,
+    0.3483,
+    0.3748,
+    0.3789,
+    0.4061,
+    0.4028,
+    0.4206,
+    0.4018,
+    0.4011,
+    0.4018,
+    0.393,
+    0.3896
+   ]
+  },
+  "cb-large-conv": {
+   "lr": 3e-05,
+   "val_macro_f1": 0.3192,
+   "schedule": [
+    40,
+    5
+   ],
+   "epochs_run": 8,
+   "best_epoch": 3,
+   "best_at_last_epoch": false,
+   "val_by_epoch": [
+    0.1087,
+    0.264,
+    0.3192,
+    0.3106,
+    0.0027,
+    0.0025,
+    0.0027,
+    0.0027
+   ]
+  }
+ },
+ "git_head_at_freeze": "b779a38",
+ "selectors": {
+  "opus55": {
+   "file": "sdr_selector_v1_cb-conv.json",
+   "sha256": "fc5680bb3becac20162989585b4f7d714c85a0902f71839f4e74cab4c6373936",
+   "joblib": "sdr_selector_v1_cb-conv.joblib",
+   "joblib_sha256": "4af06e9d2d98919c80db81e91f92fc0eaac50a56647cd998c2017d7b88a782de",
+   "main_family": "S2",
+   "cv_macro_f1": {
+    "S1": 0.4961,
+    "S2": 0.5372,
+    "S3": 0.5198
+   },
+   "best_single_arm_2024": "rag",
+   "singles_2024": {
+    "enc": 0.3588,
+    "zs": 0.4712,
+    "rag": 0.4728
+   },
+   "llm_rare_k_star": {
+    "k": 100,
+    "macro_f1_2024": 0.5019
+   },
+   "S_cost": {
+    "k": 0,
+    "p": 0.9,
+    "call_rate_2024": 0.4854,
+    "macro_f1_2024_oof": 0.5256
+   },
+   "oracle_2024": 0.6375
+  },
+  "qwen38_27b": {
+   "file": "sdr_selector_v1_qwen38_27b_cb-conv.json",
+   "sha256": "f9fa5cacba454410726b1ca95f1a32315a7242363178a8c9022d922b1fff0986",
+   "joblib": "sdr_selector_v1_qwen38_27b_cb-conv.joblib",
+   "joblib_sha256": "23eba399e20958bbc6276b3877d1bcf702ea297fc1b2483aef1997cf4c037596",
+   "main_family": "S2",
+   "cv_macro_f1": {
+    "S1": 0.4675,
+    "S2": 0.5066,
+    "S3": 0.4923
+   },
+   "best_single_arm_2024": "rag",
+   "singles_2024": {
+    "enc": 0.3588,
+    "zs": 0.4294,
+    "rag": 0.4496
+   },
+   "llm_rare_k_star": {
+    "k": 10,
+    "macro_f1_2024": 0.4638
+   },
+   "S_cost": {
+    "k": 0,
+    "p": 0.9,
+    "call_rate_2024": 0.4854,
+    "macro_f1_2024_oof": 0.4953
+   },
+   "oracle_2024": 0.6023
+  },
+  "gemma4_31b": {
+   "file": "sdr_selector_v1_gemma4_31b_cb-conv.json",
+   "sha256": "3cc2fe65fb6a475971238f0246bc5a08c7369a71c22423c247291a5dd560ea03",
+   "joblib": "sdr_selector_v1_gemma4_31b_cb-conv.joblib",
+   "joblib_sha256": "e18a951bd7ec864a625a71c7fc5b89c88fb371c128e63e4c4fab839f028454d9",
+   "main_family": "S2",
+   "cv_macro_f1": {
+    "S1": 0.4735,
+    "S2": 0.5111,
+    "S3": 0.496
+   },
+   "best_single_arm_2024": "rag",
+   "singles_2024": {
+    "enc": 0.3588,
+    "zs": 0.4245,
+    "rag": 0.4548
+   },
+   "llm_rare_k_star": {
+    "k": 10,
+    "macro_f1_2024": 0.4747
+   },
+   "S_cost": {
+    "k": 0,
+    "p": 0.9,
+    "call_rate_2024": 0.4854,
+    "macro_f1_2024_oof": 0.4967
+   },
+   "oracle_2024": 0.5986
+  }
+ },
+ "cascade": {
+  "opus55": {
+   "arm": "zs",
+   "theta": 0.9,
+   "macro_f1_2024": 0.5046
+  },
+  "qwen38_27b": {
+   "arm": "zs",
+   "theta": 0.9,
+   "macro_f1_2024": 0.4791
+  },
+  "gemma4_31b": {
+   "arm": "zs",
+   "theta": 0.9,
+   "macro_f1_2024": 0.4696
+  }
+ }
+}

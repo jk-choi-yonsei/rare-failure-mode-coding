@@ -1,0 +1,374 @@
+{
+ "frozen": {
+  "file": "maude_selector_v1_gemma4_31b.json",
+  "sha256": "e9bd1289b7e44cb961d76b1e91652bb6ffb581d6c0adf8838a5586319722344d",
+  "main_family": "S2",
+  "git_head_at_score": "dbacc42"
+ },
+ "llm": "gemma4_31b",
+ "n_union": 5814,
+ "strata_n": {
+  "uniform": 4000,
+  "rare_1-5": 324,
+  "rare_6-20": 1500
+ },
+ "weights": {
+  "uniform": 189.58575,
+  "rare_1-5": 1.0,
+  "rare_6-20": 1.8746666666666667
+ },
+ "near_dup_share": {
+  "uniform": 0.0643,
+  "rare_1-5": 0.0154,
+  "rare_6-20": 0.0207
+ },
+ "uniform": {
+  "enc": {
+   "micro_f1": 0.7262,
+   "macro_f1": 0.5772,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.4103,
+   "macro_f1_21-89": 0.1902,
+   "macro_f1_90+": 0.6064
+  },
+  "zs": {
+   "micro_f1": 0.3412,
+   "macro_f1": 0.2363,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.4127,
+   "macro_f1_21-89": 0.1238,
+   "macro_f1_90+": 0.2397
+  },
+  "rag": {
+   "micro_f1": 0.7117,
+   "macro_f1": 0.5375,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.5,
+   "macro_f1_21-89": 0.1667,
+   "macro_f1_90+": 0.5625
+  },
+  "selector": {
+   "micro_f1": 0.7147,
+   "macro_f1": 0.5602,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.5159,
+   "macro_f1_21-89": 0.179,
+   "macro_f1_90+": 0.5861
+  },
+  "S_cost": {
+   "micro_f1": 0.7198,
+   "macro_f1": 0.5649,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.3492,
+   "macro_f1_21-89": 0.179,
+   "macro_f1_90+": 0.5952
+  },
+  "llm_rare_k_star": {
+   "micro_f1": 0.6953,
+   "macro_f1": 0.5674,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.4841,
+   "macro_f1_21-89": 0.1711,
+   "macro_f1_90+": 0.5951
+  },
+  "S1": {
+   "micro_f1": 0.707,
+   "macro_f1": 0.5726,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.5159,
+   "macro_f1_21-89": 0.1711,
+   "macro_f1_90+": 0.6
+  },
+  "oracle": {
+   "micro_f1": 0.8047,
+   "macro_f1": 0.6815,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.6576,
+   "macro_f1_21-89": 0.2167,
+   "macro_f1_90+": 0.7123
+  },
+  "enc_base": {
+   "micro_f1": 0.7135,
+   "macro_f1": 0.5562,
+   "macro_f1_1-5": 0.0,
+   "macro_f1_6-20": 0.3333,
+   "macro_f1_21-89": 0.2222,
+   "macro_f1_90+": 0.5835
+  },
+  "items_by_bin": {
+   "1-5": 2,
+   "6-20": 13,
+   "21-89": 19,
+   "90+": 3966
+  },
+  "S_cost_call_rate": 0.2983,
+  "choice_share": {
+   "enc": 0.6597,
+   "zs": 0.0983,
+   "rag": 0.242
+  },
+  "frequency_agreement": {
+   "enc": {
+    "spearman": 0.8688,
+    "top20_overlap": 18,
+    "mean_abs_count_error": 3.36
+   },
+   "zs": {
+    "spearman": 0.4395,
+    "top20_overlap": 11,
+    "mean_abs_count_error": 11.396
+   },
+   "rag": {
+    "spearman": 0.856,
+    "top20_overlap": 19,
+    "mean_abs_count_error": 3.48
+   },
+   "selector": {
+    "spearman": 0.8624,
+    "top20_overlap": 18,
+    "mean_abs_count_error": 3.458
+   },
+   "S_cost": {
+    "spearman": 0.8615,
+    "top20_overlap": 18,
+    "mean_abs_count_error": 3.44
+   },
+   "llm_rare_k_star": {
+    "spearman": 0.858,
+    "top20_overlap": 18,
+    "mean_abs_count_error": 3.52
+   },
+   "S1": {
+    "spearman": 0.8601,
+    "top20_overlap": 19,
+    "mean_abs_count_error": 3.389
+   },
+   "oracle": {
+    "spearman": 0.9108,
+    "top20_overlap": 18,
+    "mean_abs_count_error": 2.644
+   },
+   "enc_base": {
+    "spearman": 0.8641,
+    "top20_overlap": 18,
+    "mean_abs_count_error": 3.535
+   }
+  }
+ },
+ "contrasts": {
+  "N1_selector_minus_rag_macro": {
+   "item": {
+    "point": 0.0227,
+    "ci95": [
+     0.0085,
+     0.0447
+    ],
+    "p05": 0.0112,
+    "excludes_zero": true
+   },
+   "code": {
+    "ci95": [
+     -0.006,
+     0.0617
+    ],
+    "p05": -0.0017,
+    "excludes_zero": false
+   }
+  },
+  "N2_selector_minus_enc_micro": {
+   "item": {
+    "point": -0.0115,
+    "ci95": [
+     -0.0187,
+     -0.005
+    ],
+    "p05": -0.017,
+    "excludes_zero": true
+   }
+  },
+  "desc_selector_minus_enc_macro": {
+   "item": {
+    "point": -0.017,
+    "ci95": [
+     -0.0253,
+     -0.0015
+    ],
+    "p05": -0.0228,
+    "excludes_zero": true
+   },
+   "code": {
+    "ci95": [
+     -0.0336,
+     0.0055
+    ],
+    "p05": -0.0297,
+    "excludes_zero": false
+   }
+  },
+  "desc_selector_minus_rag_micro": {
+   "item": {
+    "point": 0.003,
+    "ci95": [
+     -0.0052,
+     0.0118
+    ],
+    "p05": -0.0042,
+    "excludes_zero": false
+   }
+  },
+  "N3_selector_minus_enc_recall": {
+   "1-5": {
+    "item": {
+     "point": 0.1821,
+     "ci95": [
+      0.142,
+      0.2253
+     ],
+     "p05": 0.1451,
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.0408,
+      0.3275
+     ],
+     "p05": 0.0572,
+     "excludes_zero": true
+    }
+   },
+   "6-20": {
+    "item": {
+     "point": 0.0487,
+     "ci95": [
+      0.0373,
+      0.06
+     ],
+     "p05": 0.0393,
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.0453,
+      0.1382
+     ],
+     "p05": -0.0266,
+     "excludes_zero": false
+    }
+   }
+  }
+ },
+ "rare": {
+  "rare_1-5": {
+   "n": 324,
+   "codes": 12,
+   "weight": 1.0,
+   "recall": {
+    "enc": 0.0617,
+    "zs": 0.3333,
+    "rag": 0.1975,
+    "selector": 0.2438,
+    "S_cost": 0.2222,
+    "llm_rare_k_star": 0.3333,
+    "S1": 0.3148,
+    "oracle": 0.3488,
+    "enc_base": 0.1173
+   },
+   "surfaced_weighted_whole_year": {
+    "enc": 20.0,
+    "zs": 108.0,
+    "rag": 64.0,
+    "selector": 79.0,
+    "S_cost": 72.0,
+    "llm_rare_k_star": 108.0,
+    "S1": 102.0,
+    "oracle": 113.0,
+    "enc_base": 38.0
+   },
+   "population_whole_year": 324,
+   "choice_share": {
+    "enc": 0.4043,
+    "zs": 0.1204,
+    "rag": 0.4753
+   },
+   "S_cost_call_rate": 0.8056
+  },
+  "rare_6-20": {
+   "n": 1500,
+   "codes": 28,
+   "weight": 1.8746666666666667,
+   "recall": {
+    "enc": 0.1087,
+    "zs": 0.1667,
+    "rag": 0.0813,
+    "selector": 0.1573,
+    "S_cost": 0.156,
+    "llm_rare_k_star": 0.2413,
+    "S1": 0.1913,
+    "oracle": 0.2693,
+    "enc_base": 0.0347
+   },
+   "surfaced_weighted_whole_year": {
+    "enc": 305.6,
+    "zs": 468.7,
+    "rag": 228.7,
+    "selector": 442.4,
+    "S_cost": 438.7,
+    "llm_rare_k_star": 678.6,
+    "S1": 538.0,
+    "oracle": 757.4,
+    "enc_base": 97.5
+   },
+   "population_whole_year": 2812,
+   "choice_share": {
+    "enc": 0.6193,
+    "zs": 0.0907,
+    "rag": 0.29
+   },
+   "S_cost_call_rate": 0.5807
+  }
+ },
+ "verdicts": {
+  "N1": "fails",
+  "N2": "fails",
+  "N3": "fails"
+ },
+ "uniform_without_near_dups": {
+  "n": 3743,
+  "enc": {
+   "micro_f1": 0.7131,
+   "macro_f1": 0.5697
+  },
+  "zs": {
+   "micro_f1": 0.3353,
+   "macro_f1": 0.2363
+  },
+  "rag": {
+   "micro_f1": 0.6973,
+   "macro_f1": 0.5273
+  },
+  "selector": {
+   "micro_f1": 0.7008,
+   "macro_f1": 0.5536
+  },
+  "S_cost": {
+   "micro_f1": 0.7061,
+   "macro_f1": 0.5582
+  },
+  "llm_rare_k_star": {
+   "micro_f1": 0.681,
+   "macro_f1": 0.5606
+  },
+  "S1": {
+   "micro_f1": 0.6928,
+   "macro_f1": 0.5654
+  },
+  "oracle": {
+   "micro_f1": 0.7956,
+   "macro_f1": 0.6759
+  },
+  "enc_base": {
+   "micro_f1": 0.6994,
+   "macro_f1": 0.5497
+  }
+ }
+}

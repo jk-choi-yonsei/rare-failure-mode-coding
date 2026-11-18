@@ -1,0 +1,14 @@
+{
+ "hidden": [
+  "PhysicalObject/DrivingObject/CombustionEngine",
+  "PhysicalObject/GuidingObject/RailObject",
+  "PhysicalObject/HoldingObject/CarryingObject",
+  "PhysicalObject/InterfacingObject/LowVoltageConnectingObject"
+ ],
+ "lr": 5e-05,
+ "val_macro_f1": 0.6508,
+ "n_known_classes": 112,
+ "n_train": 706,
+ "n_test_known": 194,
+ "n_novel": 56
+}

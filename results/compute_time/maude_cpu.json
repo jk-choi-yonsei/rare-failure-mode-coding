@@ -1,0 +1,21 @@
+{
+ "phase": "cpu",
+ "corpus": "maude",
+ "years": {
+  "2025": {
+   "reports": 762360,
+   "shortlist": 4985
+  },
+  "2026": {
+   "reports": 661160,
+   "shortlist": 4296
+  }
+ },
+ "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+ "retrieval_index_seconds": 35.09,
+ "retrieval_seconds_per_report": 0.022167592629999854,
+ "retrieval_reports_timed": 20000,
+ "selection_fit_seconds": 0.54,
+ "selection_seconds_per_report": 6.428008642314886e-05,
+ "selection_reports_timed": 5785
+}

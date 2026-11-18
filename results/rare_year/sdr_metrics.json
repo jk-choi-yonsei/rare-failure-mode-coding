@@ -1,0 +1,2094 @@
+{
+ "note": "notes/selector-vs-rules-2026-11-11.md",
+ "encoder": "cb-conv_full_seed42",
+ "years": {
+  "2026": {
+   "reports": 42717,
+   "rare_reports": 292,
+   "rare_modes_with_reports": 85,
+   "encoder_alone": {
+    "right": 38,
+    "false": 84,
+    "precision": 0.3115,
+    "modes": 20,
+    "accuracy": 0.77405
+   },
+   "best_rare_code_inside_top_k": {
+    "1": 124,
+    "3": 607,
+    "5": 1324,
+    "10": 5347
+   },
+   "agreement_with_saved_encoder_csv": {
+    "maude2026": {
+     "n": 1469,
+     "same": 0.998
+    },
+    "maude2026nat": {
+     "n": 4132,
+     "same": 1.0
+    }
+   },
+   "llms": {
+    "qwen38_27b": {
+     "answers_on_file": {
+      "zs": 9892,
+      "rag": 9892
+     },
+     "rules": {
+      "k1/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 33,
+        "false": 31,
+        "precision": 0.5156,
+        "modes": 16,
+        "accuracy": 0.77419
+       }
+      },
+      "k1/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 30,
+        "false": 21,
+        "precision": 0.5882,
+        "modes": 14,
+        "accuracy": 0.77419
+       }
+      },
+      "k1/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 33,
+        "false": 32,
+        "precision": 0.5077,
+        "modes": 16,
+        "accuracy": 0.77419
+       }
+      },
+      "k1/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 30,
+        "false": 20,
+        "precision": 0.6,
+        "modes": 14,
+        "accuracy": 0.77419
+       }
+      },
+      "k3/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 52,
+        "false": 111,
+        "precision": 0.319,
+        "modes": 21,
+        "accuracy": 0.77398
+       },
+       "confirmed_only": {
+        "right": 47,
+        "false": 58,
+        "precision": 0.4476,
+        "modes": 19,
+        "accuracy": 0.77412
+       }
+      },
+      "k3/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 50,
+        "false": 104,
+        "precision": 0.3247,
+        "modes": 21,
+        "accuracy": 0.77402
+       },
+       "confirmed_only": {
+        "right": 42,
+        "false": 41,
+        "precision": 0.506,
+        "modes": 16,
+        "accuracy": 0.77416
+       }
+      },
+      "k3/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 52,
+        "false": 118,
+        "precision": 0.3059,
+        "modes": 21,
+        "accuracy": 0.77391
+       },
+       "confirmed_only": {
+        "right": 47,
+        "false": 66,
+        "precision": 0.4159,
+        "modes": 19,
+        "accuracy": 0.77405
+       }
+      },
+      "k3/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 50,
+        "false": 97,
+        "precision": 0.3401,
+        "modes": 21,
+        "accuracy": 0.77409
+       },
+       "confirmed_only": {
+        "right": 42,
+        "false": 33,
+        "precision": 0.56,
+        "modes": 16,
+        "accuracy": 0.77424
+       }
+      },
+      "k5/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 59,
+        "false": 126,
+        "precision": 0.3189,
+        "modes": 24,
+        "accuracy": 0.77395
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 73,
+        "precision": 0.4252,
+        "modes": 22,
+        "accuracy": 0.77409
+       },
+       "false_by_code": [
+        [
+         "DEFLATED",
+         12
+        ],
+        [
+         "CHIPPED",
+         7
+        ],
+        [
+         "MISWIRED",
+         7
+        ],
+        [
+         "IMPROPER STOW",
+         7
+        ],
+        [
+         "FLATTENED",
+         7
+        ],
+        [
+         "BLOCKED",
+         6
+        ],
+        [
+         "NO INDICATION",
+         5
+        ],
+        [
+         "NOISY",
+         4
+        ],
+        [
+         "PINCHED",
+         4
+        ],
+        [
+         "UNLOCKED",
+         4
+        ]
+       ]
+      },
+      "k5/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 56,
+        "false": 115,
+        "precision": 0.3275,
+        "modes": 23,
+        "accuracy": 0.77402
+       },
+       "confirmed_only": {
+        "right": 48,
+        "false": 52,
+        "precision": 0.48,
+        "modes": 18,
+        "accuracy": 0.77416
+       }
+      },
+      "k5/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 59,
+        "false": 135,
+        "precision": 0.3041,
+        "modes": 24,
+        "accuracy": 0.77386
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 83,
+        "precision": 0.3942,
+        "modes": 22,
+        "accuracy": 0.774
+       }
+      },
+      "k5/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 56,
+        "false": 106,
+        "precision": 0.3457,
+        "modes": 23,
+        "accuracy": 0.77412
+       },
+       "confirmed_only": {
+        "right": 48,
+        "false": 42,
+        "precision": 0.5333,
+        "modes": 18,
+        "accuracy": 0.77426
+       }
+      },
+      "k10/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 63,
+        "false": 165,
+        "precision": 0.2763,
+        "modes": 25,
+        "accuracy": 0.77372
+       },
+       "confirmed_only": {
+        "right": 58,
+        "false": 112,
+        "precision": 0.3412,
+        "modes": 23,
+        "accuracy": 0.77386
+       }
+      },
+      "k10/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 130,
+        "precision": 0.3085,
+        "modes": 23,
+        "accuracy": 0.77391
+       },
+       "confirmed_only": {
+        "right": 50,
+        "false": 67,
+        "precision": 0.4274,
+        "modes": 18,
+        "accuracy": 0.77405
+       }
+      },
+      "k10/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 63,
+        "false": 176,
+        "precision": 0.2636,
+        "modes": 25,
+        "accuracy": 0.7736
+       },
+       "confirmed_only": {
+        "right": 58,
+        "false": 124,
+        "precision": 0.3187,
+        "modes": 23,
+        "accuracy": 0.77374
+       }
+      },
+      "k10/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 119,
+        "precision": 0.3277,
+        "modes": 23,
+        "accuracy": 0.77402
+       },
+       "confirmed_only": {
+        "right": 50,
+        "false": 55,
+        "precision": 0.4762,
+        "modes": 18,
+        "accuracy": 0.77416
+       }
+      }
+     }
+    },
+    "gemma4_31b": {
+     "answers_on_file": {
+      "zs": 9892,
+      "rag": 9892
+     },
+     "rules": {
+      "k1/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 33,
+        "false": 24,
+        "precision": 0.5789,
+        "modes": 16,
+        "accuracy": 0.77426
+       }
+      },
+      "k1/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 32,
+        "false": 21,
+        "precision": 0.6038,
+        "modes": 15,
+        "accuracy": 0.77421
+       }
+      },
+      "k1/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 34,
+        "false": 27,
+        "precision": 0.5574,
+        "modes": 17,
+        "accuracy": 0.77424
+       }
+      },
+      "k1/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 31,
+        "false": 18,
+        "precision": 0.6327,
+        "modes": 14,
+        "accuracy": 0.77424
+       }
+      },
+      "k3/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 51,
+        "false": 115,
+        "precision": 0.3072,
+        "modes": 21,
+        "accuracy": 0.77388
+       },
+       "confirmed_only": {
+        "right": 46,
+        "false": 55,
+        "precision": 0.4554,
+        "modes": 18,
+        "accuracy": 0.77409
+       }
+      },
+      "k3/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 50,
+        "false": 103,
+        "precision": 0.3268,
+        "modes": 21,
+        "accuracy": 0.77402
+       },
+       "confirmed_only": {
+        "right": 44,
+        "false": 40,
+        "precision": 0.5238,
+        "modes": 17,
+        "accuracy": 0.77419
+       }
+      },
+      "k3/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 51,
+        "false": 118,
+        "precision": 0.3018,
+        "modes": 21,
+        "accuracy": 0.77384
+       },
+       "confirmed_only": {
+        "right": 47,
+        "false": 61,
+        "precision": 0.4352,
+        "modes": 19,
+        "accuracy": 0.77402
+       }
+      },
+      "k3/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 50,
+        "false": 100,
+        "precision": 0.3333,
+        "modes": 21,
+        "accuracy": 0.77407
+       },
+       "confirmed_only": {
+        "right": 43,
+        "false": 34,
+        "precision": 0.5584,
+        "modes": 16,
+        "accuracy": 0.77426
+       }
+      },
+      "k5/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 56,
+        "false": 128,
+        "precision": 0.3043,
+        "modes": 23,
+        "accuracy": 0.77386
+       },
+       "confirmed_only": {
+        "right": 51,
+        "false": 68,
+        "precision": 0.4286,
+        "modes": 20,
+        "accuracy": 0.77407
+       },
+       "false_by_code": [
+        [
+         "DEFLATED",
+         12
+        ],
+        [
+         "MISWIRED",
+         9
+        ],
+        [
+         "LOW QUANTITY",
+         9
+        ],
+        [
+         "CHIPPED",
+         7
+        ],
+        [
+         "IMPROPER STOW",
+         7
+        ],
+        [
+         "FLATTENED",
+         7
+        ],
+        [
+         "BLOCKED",
+         6
+        ],
+        [
+         "NO INDICATION",
+         5
+        ],
+        [
+         "NOISY",
+         4
+        ],
+        [
+         "PINCHED",
+         4
+        ]
+       ]
+      },
+      "k5/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 55,
+        "false": 116,
+        "precision": 0.3216,
+        "modes": 23,
+        "accuracy": 0.77398
+       },
+       "confirmed_only": {
+        "right": 49,
+        "false": 53,
+        "precision": 0.4804,
+        "modes": 19,
+        "accuracy": 0.77414
+       }
+      },
+      "k5/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 56,
+        "false": 137,
+        "precision": 0.2902,
+        "modes": 23,
+        "accuracy": 0.77374
+       },
+       "confirmed_only": {
+        "right": 52,
+        "false": 80,
+        "precision": 0.3939,
+        "modes": 21,
+        "accuracy": 0.77393
+       }
+      },
+      "k5/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 55,
+        "false": 107,
+        "precision": 0.3395,
+        "modes": 23,
+        "accuracy": 0.77409
+       },
+       "confirmed_only": {
+        "right": 48,
+        "false": 41,
+        "precision": 0.5393,
+        "modes": 18,
+        "accuracy": 0.77428
+       }
+      },
+      "k10/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 59,
+        "false": 184,
+        "precision": 0.2428,
+        "modes": 24,
+        "accuracy": 0.77346
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 124,
+        "precision": 0.3034,
+        "modes": 21,
+        "accuracy": 0.77367
+       }
+      },
+      "k10/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 57,
+        "false": 127,
+        "precision": 0.3098,
+        "modes": 24,
+        "accuracy": 0.77388
+       },
+       "confirmed_only": {
+        "right": 51,
+        "false": 64,
+        "precision": 0.4435,
+        "modes": 20,
+        "accuracy": 0.77405
+       }
+      },
+      "k10/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 61,
+        "false": 195,
+        "precision": 0.2383,
+        "modes": 25,
+        "accuracy": 0.77339
+       },
+       "confirmed_only": {
+        "right": 57,
+        "false": 138,
+        "precision": 0.2923,
+        "modes": 23,
+        "accuracy": 0.77358
+       }
+      },
+      "k10/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 55,
+        "false": 116,
+        "precision": 0.3216,
+        "modes": 23,
+        "accuracy": 0.77395
+       },
+       "confirmed_only": {
+        "right": 48,
+        "false": 50,
+        "precision": 0.4898,
+        "modes": 18,
+        "accuracy": 0.77414
+       }
+      }
+     }
+    },
+    "opus55": {
+     "answers_on_file": {
+      "zs": 1469,
+      "rag": 1469
+     },
+     "rules": {
+      "k1/zs": {
+       "coverage": 0.4677,
+       "complete": false,
+       "keep_encoder": {
+        "right": 38,
+        "false": 85,
+        "precision": 0.3089,
+        "modes": 20,
+        "accuracy": 0.77402
+       },
+       "confirmed_only": {
+        "right": 30,
+        "false": 3,
+        "precision": 0.9091,
+        "modes": 16,
+        "accuracy": 0.77431
+       }
+      },
+      "k1/rag": {
+       "coverage": 0.4677,
+       "complete": false,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 31,
+        "false": 1,
+        "precision": 0.9688,
+        "modes": 17,
+        "accuracy": 0.77435
+       }
+      },
+      "k1/either": {
+       "coverage": 0.4677,
+       "complete": false,
+       "keep_encoder": {
+        "right": 38,
+        "false": 85,
+        "precision": 0.3089,
+        "modes": 20,
+        "accuracy": 0.77402
+       },
+       "confirmed_only": {
+        "right": 31,
+        "false": 3,
+        "precision": 0.9118,
+        "modes": 17,
+        "accuracy": 0.77433
+       }
+      },
+      "k1/both": {
+       "coverage": 0.4677,
+       "complete": false,
+       "keep_encoder": {
+        "right": 38,
+        "false": 84,
+        "precision": 0.3115,
+        "modes": 20,
+        "accuracy": 0.77405
+       },
+       "confirmed_only": {
+        "right": 30,
+        "false": 1,
+        "precision": 0.9677,
+        "modes": 16,
+        "accuracy": 0.77433
+       }
+      },
+      "k3/zs": {
+       "coverage": 0.285,
+       "complete": false,
+       "keep_encoder": {
+        "right": 51,
+        "false": 95,
+        "precision": 0.3493,
+        "modes": 21,
+        "accuracy": 0.77416
+       },
+       "confirmed_only": {
+        "right": 43,
+        "false": 13,
+        "precision": 0.7679,
+        "modes": 18,
+        "accuracy": 0.77445
+       }
+      },
+      "k3/rag": {
+       "coverage": 0.285,
+       "complete": false,
+       "keep_encoder": {
+        "right": 51,
+        "false": 92,
+        "precision": 0.3566,
+        "modes": 21,
+        "accuracy": 0.77424
+       },
+       "confirmed_only": {
+        "right": 44,
+        "false": 9,
+        "precision": 0.8302,
+        "modes": 19,
+        "accuracy": 0.77454
+       }
+      },
+      "k3/either": {
+       "coverage": 0.285,
+       "complete": false,
+       "keep_encoder": {
+        "right": 51,
+        "false": 96,
+        "precision": 0.3469,
+        "modes": 21,
+        "accuracy": 0.77414
+       },
+       "confirmed_only": {
+        "right": 44,
+        "false": 14,
+        "precision": 0.7586,
+        "modes": 19,
+        "accuracy": 0.77445
+       }
+      },
+      "k3/both": {
+       "coverage": 0.285,
+       "complete": false,
+       "keep_encoder": {
+        "right": 51,
+        "false": 91,
+        "precision": 0.3592,
+        "modes": 21,
+        "accuracy": 0.77426
+       },
+       "confirmed_only": {
+        "right": 43,
+        "false": 8,
+        "precision": 0.8431,
+        "modes": 18,
+        "accuracy": 0.77454
+       }
+      },
+      "k5/zs": {
+       "coverage": 0.2092,
+       "complete": false,
+       "keep_encoder": {
+        "right": 57,
+        "false": 98,
+        "precision": 0.3677,
+        "modes": 23,
+        "accuracy": 0.77428
+       },
+       "confirmed_only": {
+        "right": 49,
+        "false": 16,
+        "precision": 0.7538,
+        "modes": 20,
+        "accuracy": 0.77456
+       },
+       "false_by_code": [
+        [
+         "DEFLATED",
+         12
+        ],
+        [
+         "FLATTENED",
+         7
+        ],
+        [
+         "MISWIRED",
+         6
+        ],
+        [
+         "NO INDICATION",
+         5
+        ],
+        [
+         "LOW QUANTITY",
+         5
+        ],
+        [
+         "IMPROPER STOW",
+         5
+        ],
+        [
+         "NOISY",
+         4
+        ],
+        [
+         "SEVERED",
+         4
+        ],
+        [
+         "PINCHED",
+         4
+        ],
+        [
+         "INFLT SEPARATION",
+         4
+        ]
+       ]
+      },
+      "k5/rag": {
+       "coverage": 0.2092,
+       "complete": false,
+       "keep_encoder": {
+        "right": 55,
+        "false": 95,
+        "precision": 0.3667,
+        "modes": 22,
+        "accuracy": 0.77431
+       },
+       "confirmed_only": {
+        "right": 48,
+        "false": 12,
+        "precision": 0.8,
+        "modes": 20,
+        "accuracy": 0.77461
+       }
+      },
+      "k5/either": {
+       "coverage": 0.2092,
+       "complete": false,
+       "keep_encoder": {
+        "right": 57,
+        "false": 99,
+        "precision": 0.3654,
+        "modes": 23,
+        "accuracy": 0.77426
+       },
+       "confirmed_only": {
+        "right": 50,
+        "false": 17,
+        "precision": 0.7463,
+        "modes": 21,
+        "accuracy": 0.77456
+       }
+      },
+      "k5/both": {
+       "coverage": 0.2092,
+       "complete": false,
+       "keep_encoder": {
+        "right": 55,
+        "false": 94,
+        "precision": 0.3691,
+        "modes": 22,
+        "accuracy": 0.77433
+       },
+       "confirmed_only": {
+        "right": 47,
+        "false": 11,
+        "precision": 0.8103,
+        "modes": 19,
+        "accuracy": 0.77461
+       }
+      },
+      "k10/zs": {
+       "coverage": 0.1002,
+       "complete": false,
+       "keep_encoder": {
+        "right": 62,
+        "false": 103,
+        "precision": 0.3758,
+        "modes": 26,
+        "accuracy": 0.77431
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 21,
+        "precision": 0.72,
+        "modes": 24,
+        "accuracy": 0.77459
+       }
+      },
+      "k10/rag": {
+       "coverage": 0.1002,
+       "complete": false,
+       "keep_encoder": {
+        "right": 56,
+        "false": 97,
+        "precision": 0.366,
+        "modes": 23,
+        "accuracy": 0.77428
+       },
+       "confirmed_only": {
+        "right": 49,
+        "false": 14,
+        "precision": 0.7778,
+        "modes": 21,
+        "accuracy": 0.77459
+       }
+      },
+      "k10/either": {
+       "coverage": 0.1002,
+       "complete": false,
+       "keep_encoder": {
+        "right": 62,
+        "false": 104,
+        "precision": 0.3735,
+        "modes": 26,
+        "accuracy": 0.77428
+       },
+       "confirmed_only": {
+        "right": 55,
+        "false": 22,
+        "precision": 0.7143,
+        "modes": 25,
+        "accuracy": 0.77459
+       }
+      },
+      "k10/both": {
+       "coverage": 0.1002,
+       "complete": false,
+       "keep_encoder": {
+        "right": 56,
+        "false": 96,
+        "precision": 0.3684,
+        "modes": 23,
+        "accuracy": 0.77431
+       },
+       "confirmed_only": {
+        "right": 48,
+        "false": 13,
+        "precision": 0.7869,
+        "modes": 20,
+        "accuracy": 0.77459
+       }
+      }
+     }
+    }
+   }
+  },
+  "2025": {
+   "reports": 59416,
+   "rare_reports": 436,
+   "rare_modes_with_reports": 99,
+   "encoder_alone": {
+    "right": 58,
+    "false": 137,
+    "precision": 0.2974,
+    "modes": 22,
+    "accuracy": 0.78098
+   },
+   "best_rare_code_inside_top_k": {
+    "1": 195,
+    "3": 1048,
+    "5": 2190,
+    "10": 8112
+   },
+   "agreement_with_saved_encoder_csv": {
+    "maude2025": {
+     "n": 1612,
+     "same": 0.995
+    },
+    "maude2025nat": {
+     "n": 4351,
+     "same": 0.9995
+    }
+   },
+   "llms": {
+    "qwen38_27b": {
+     "answers_on_file": {
+      "zs": 12799,
+      "rag": 12799
+     },
+     "rules": {
+      "k1/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 55,
+        "false": 33,
+        "precision": 0.625,
+        "modes": 20,
+        "accuracy": 0.78139
+       }
+      },
+      "k1/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 56,
+        "false": 30,
+        "precision": 0.6512,
+        "modes": 21,
+        "accuracy": 0.78139
+       }
+      },
+      "k1/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 57,
+        "false": 39,
+        "precision": 0.5938,
+        "modes": 21,
+        "accuracy": 0.78137
+       }
+      },
+      "k1/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 24,
+        "precision": 0.6923,
+        "modes": 20,
+        "accuracy": 0.78141
+       }
+      },
+      "k3/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 80,
+        "false": 170,
+        "precision": 0.32,
+        "modes": 25,
+        "accuracy": 0.78112
+       },
+       "confirmed_only": {
+        "right": 77,
+        "false": 66,
+        "precision": 0.5385,
+        "modes": 24,
+        "accuracy": 0.78152
+       }
+      },
+      "k3/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 75,
+        "false": 159,
+        "precision": 0.3205,
+        "modes": 25,
+        "accuracy": 0.78117
+       },
+       "confirmed_only": {
+        "right": 73,
+        "false": 52,
+        "precision": 0.584,
+        "modes": 25,
+        "accuracy": 0.78157
+       }
+      },
+      "k3/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 82,
+        "false": 177,
+        "precision": 0.3166,
+        "modes": 26,
+        "accuracy": 0.7811
+       },
+       "confirmed_only": {
+        "right": 81,
+        "false": 79,
+        "precision": 0.5062,
+        "modes": 26,
+        "accuracy": 0.78149
+       }
+      },
+      "k3/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 73,
+        "false": 152,
+        "precision": 0.3244,
+        "modes": 24,
+        "accuracy": 0.78119
+       },
+       "confirmed_only": {
+        "right": 69,
+        "false": 39,
+        "precision": 0.6389,
+        "modes": 23,
+        "accuracy": 0.78161
+       }
+      },
+      "k5/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 89,
+        "false": 195,
+        "precision": 0.3134,
+        "modes": 28,
+        "accuracy": 0.78114
+       },
+       "confirmed_only": {
+        "right": 86,
+        "false": 91,
+        "precision": 0.4859,
+        "modes": 28,
+        "accuracy": 0.78154
+       },
+       "false_by_code": [
+        [
+         "DEFLATED",
+         14
+        ],
+        [
+         "NOISY",
+         10
+        ],
+        [
+         "FLAMED OUT",
+         9
+        ],
+        [
+         "MISWIRED",
+         9
+        ],
+        [
+         "MISRIGGED",
+         9
+        ],
+        [
+         "FLATTENED",
+         9
+        ],
+        [
+         "PERFORATED",
+         8
+        ],
+        [
+         "IMPROPER PART",
+         7
+        ],
+        [
+         "LOW QUANTITY",
+         7
+        ],
+        [
+         "BLOCKED",
+         6
+        ]
+       ]
+      },
+      "k5/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 83,
+        "false": 174,
+        "precision": 0.323,
+        "modes": 28,
+        "accuracy": 0.78125
+       },
+       "confirmed_only": {
+        "right": 81,
+        "false": 67,
+        "precision": 0.5473,
+        "modes": 28,
+        "accuracy": 0.78166
+       }
+      },
+      "k5/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 92,
+        "false": 206,
+        "precision": 0.3087,
+        "modes": 29,
+        "accuracy": 0.7811
+       },
+       "confirmed_only": {
+        "right": 91,
+        "false": 108,
+        "precision": 0.4573,
+        "modes": 29,
+        "accuracy": 0.78149
+       }
+      },
+      "k5/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 80,
+        "false": 163,
+        "precision": 0.3292,
+        "modes": 27,
+        "accuracy": 0.78129
+       },
+       "confirmed_only": {
+        "right": 76,
+        "false": 50,
+        "precision": 0.6032,
+        "modes": 27,
+        "accuracy": 0.78171
+       }
+      },
+      "k10/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 94,
+        "false": 253,
+        "precision": 0.2709,
+        "modes": 28,
+        "accuracy": 0.78082
+       },
+       "confirmed_only": {
+        "right": 91,
+        "false": 149,
+        "precision": 0.3792,
+        "modes": 28,
+        "accuracy": 0.78122
+       }
+      },
+      "k10/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 88,
+        "false": 197,
+        "precision": 0.3088,
+        "modes": 29,
+        "accuracy": 0.78119
+       },
+       "confirmed_only": {
+        "right": 86,
+        "false": 90,
+        "precision": 0.4886,
+        "modes": 29,
+        "accuracy": 0.78159
+       }
+      },
+      "k10/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 98,
+        "false": 267,
+        "precision": 0.2685,
+        "modes": 30,
+        "accuracy": 0.78077
+       },
+       "confirmed_only": {
+        "right": 97,
+        "false": 169,
+        "precision": 0.3647,
+        "modes": 30,
+        "accuracy": 0.78115
+       }
+      },
+      "k10/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 84,
+        "false": 183,
+        "precision": 0.3146,
+        "modes": 27,
+        "accuracy": 0.78124
+       },
+       "confirmed_only": {
+        "right": 80,
+        "false": 70,
+        "precision": 0.5333,
+        "modes": 27,
+        "accuracy": 0.78166
+       }
+      }
+     }
+    },
+    "gemma4_31b": {
+     "answers_on_file": {
+      "zs": 12799,
+      "rag": 12799
+     },
+     "rules": {
+      "k1/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 53,
+        "false": 31,
+        "precision": 0.631,
+        "modes": 20,
+        "accuracy": 0.7813
+       }
+      },
+      "k1/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 30,
+        "precision": 0.6429,
+        "modes": 21,
+        "accuracy": 0.78136
+       }
+      },
+      "k1/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 55,
+        "false": 39,
+        "precision": 0.5851,
+        "modes": 21,
+        "accuracy": 0.78129
+       }
+      },
+      "k1/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 52,
+        "false": 22,
+        "precision": 0.7027,
+        "modes": 20,
+        "accuracy": 0.78137
+       }
+      },
+      "k3/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 75,
+        "false": 166,
+        "precision": 0.3112,
+        "modes": 26,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 70,
+        "false": 60,
+        "precision": 0.5385,
+        "modes": 24,
+        "accuracy": 0.7813
+       }
+      },
+      "k3/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 73,
+        "false": 157,
+        "precision": 0.3174,
+        "modes": 25,
+        "accuracy": 0.7811
+       },
+       "confirmed_only": {
+        "right": 69,
+        "false": 50,
+        "precision": 0.5798,
+        "modes": 25,
+        "accuracy": 0.78147
+       }
+      },
+      "k3/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 79,
+        "false": 173,
+        "precision": 0.3135,
+        "modes": 26,
+        "accuracy": 0.781
+       },
+       "confirmed_only": {
+        "right": 76,
+        "false": 75,
+        "precision": 0.5033,
+        "modes": 26,
+        "accuracy": 0.7813
+       }
+      },
+      "k3/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 69,
+        "false": 150,
+        "precision": 0.3151,
+        "modes": 25,
+        "accuracy": 0.78109
+       },
+       "confirmed_only": {
+        "right": 63,
+        "false": 35,
+        "precision": 0.6429,
+        "modes": 23,
+        "accuracy": 0.78147
+       }
+      },
+      "k5/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 84,
+        "false": 195,
+        "precision": 0.3011,
+        "modes": 29,
+        "accuracy": 0.781
+       },
+       "confirmed_only": {
+        "right": 79,
+        "false": 89,
+        "precision": 0.4702,
+        "modes": 28,
+        "accuracy": 0.78132
+       },
+       "false_by_code": [
+        [
+         "DEFLATED",
+         14
+        ],
+        [
+         "LOW QUANTITY",
+         14
+        ],
+        [
+         "MISRIGGED",
+         10
+        ],
+        [
+         "NOISY",
+         9
+        ],
+        [
+         "UNBALANCED",
+         9
+        ],
+        [
+         "FLATTENED",
+         9
+        ],
+        [
+         "DEPLETED",
+         8
+        ],
+        [
+         "PERFORATED",
+         8
+        ],
+        [
+         "FLAMED OUT",
+         7
+        ],
+        [
+         "MISWIRED",
+         7
+        ]
+       ]
+      },
+      "k5/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 80,
+        "false": 172,
+        "precision": 0.3175,
+        "modes": 28,
+        "accuracy": 0.78119
+       },
+       "confirmed_only": {
+        "right": 76,
+        "false": 65,
+        "precision": 0.539,
+        "modes": 28,
+        "accuracy": 0.78156
+       }
+      },
+      "k5/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 88,
+        "false": 205,
+        "precision": 0.3003,
+        "modes": 29,
+        "accuracy": 0.781
+       },
+       "confirmed_only": {
+        "right": 85,
+        "false": 107,
+        "precision": 0.4427,
+        "modes": 29,
+        "accuracy": 0.7813
+       }
+      },
+      "k5/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 76,
+        "false": 162,
+        "precision": 0.3193,
+        "modes": 28,
+        "accuracy": 0.78119
+       },
+       "confirmed_only": {
+        "right": 70,
+        "false": 47,
+        "precision": 0.5983,
+        "modes": 27,
+        "accuracy": 0.78157
+       }
+      },
+      "k10/zs": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 87,
+        "false": 286,
+        "precision": 0.2332,
+        "modes": 29,
+        "accuracy": 0.78041
+       },
+       "confirmed_only": {
+        "right": 82,
+        "false": 180,
+        "precision": 0.313,
+        "modes": 28,
+        "accuracy": 0.78073
+       }
+      },
+      "k10/rag": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 85,
+        "false": 192,
+        "precision": 0.3069,
+        "modes": 29,
+        "accuracy": 0.78115
+       },
+       "confirmed_only": {
+        "right": 81,
+        "false": 85,
+        "precision": 0.488,
+        "modes": 29,
+        "accuracy": 0.78152
+       }
+      },
+      "k10/either": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 94,
+        "false": 299,
+        "precision": 0.2392,
+        "modes": 30,
+        "accuracy": 0.78043
+       },
+       "confirmed_only": {
+        "right": 91,
+        "false": 201,
+        "precision": 0.3116,
+        "modes": 30,
+        "accuracy": 0.78073
+       }
+      },
+      "k10/both": {
+       "coverage": 1.0,
+       "complete": true,
+       "keep_encoder": {
+        "right": 78,
+        "false": 179,
+        "precision": 0.3035,
+        "modes": 28,
+        "accuracy": 0.78114
+       },
+       "confirmed_only": {
+        "right": 72,
+        "false": 64,
+        "precision": 0.5294,
+        "modes": 27,
+        "accuracy": 0.78152
+       }
+      }
+     }
+    },
+    "opus55": {
+     "answers_on_file": {
+      "zs": 1612,
+      "rag": 1612
+     },
+     "rules": {
+      "k1/zs": {
+       "coverage": 0.3795,
+       "complete": false,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 55,
+        "false": 5,
+        "precision": 0.9167,
+        "modes": 22,
+        "accuracy": 0.78142
+       }
+      },
+      "k1/rag": {
+       "coverage": 0.3795,
+       "complete": false,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 4,
+        "precision": 0.931,
+        "modes": 21,
+        "accuracy": 0.78141
+       }
+      },
+      "k1/either": {
+       "coverage": 0.3795,
+       "complete": false,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 55,
+        "false": 5,
+        "precision": 0.9167,
+        "modes": 22,
+        "accuracy": 0.78142
+       }
+      },
+      "k1/both": {
+       "coverage": 0.3795,
+       "complete": false,
+       "keep_encoder": {
+        "right": 58,
+        "false": 137,
+        "precision": 0.2974,
+        "modes": 22,
+        "accuracy": 0.78098
+       },
+       "confirmed_only": {
+        "right": 54,
+        "false": 4,
+        "precision": 0.931,
+        "modes": 21,
+        "accuracy": 0.78141
+       }
+      },
+      "k3/zs": {
+       "coverage": 0.2032,
+       "complete": false,
+       "keep_encoder": {
+        "right": 73,
+        "false": 146,
+        "precision": 0.3333,
+        "modes": 26,
+        "accuracy": 0.78119
+       },
+       "confirmed_only": {
+        "right": 70,
+        "false": 14,
+        "precision": 0.8333,
+        "modes": 26,
+        "accuracy": 0.78162
+       }
+      },
+      "k3/rag": {
+       "coverage": 0.2032,
+       "complete": false,
+       "keep_encoder": {
+        "right": 69,
+        "false": 148,
+        "precision": 0.318,
+        "modes": 25,
+        "accuracy": 0.78109
+       },
+       "confirmed_only": {
+        "right": 65,
+        "false": 15,
+        "precision": 0.8125,
+        "modes": 24,
+        "accuracy": 0.78151
+       }
+      },
+      "k3/either": {
+       "coverage": 0.2032,
+       "complete": false,
+       "keep_encoder": {
+        "right": 74,
+        "false": 149,
+        "precision": 0.3318,
+        "modes": 26,
+        "accuracy": 0.78117
+       },
+       "confirmed_only": {
+        "right": 71,
+        "false": 17,
+        "precision": 0.8068,
+        "modes": 26,
+        "accuracy": 0.78161
+       }
+      },
+      "k3/both": {
+       "coverage": 0.2032,
+       "complete": false,
+       "keep_encoder": {
+        "right": 68,
+        "false": 145,
+        "precision": 0.3192,
+        "modes": 25,
+        "accuracy": 0.7811
+       },
+       "confirmed_only": {
+        "right": 64,
+        "false": 12,
+        "precision": 0.8421,
+        "modes": 24,
+        "accuracy": 0.78152
+       }
+      },
+      "k5/zs": {
+       "coverage": 0.1484,
+       "complete": false,
+       "keep_encoder": {
+        "right": 81,
+        "false": 147,
+        "precision": 0.3553,
+        "modes": 29,
+        "accuracy": 0.78132
+       },
+       "confirmed_only": {
+        "right": 78,
+        "false": 15,
+        "precision": 0.8387,
+        "modes": 29,
+        "accuracy": 0.78176
+       },
+       "false_by_code": [
+        [
+         "DEFLATED",
+         15
+        ],
+        [
+         "NOISY",
+         9
+        ],
+        [
+         "MISRIGGED",
+         9
+        ],
+        [
+         "FLATTENED",
+         9
+        ],
+        [
+         "FLAMED OUT",
+         6
+        ],
+        [
+         "UNLOCKED",
+         6
+        ],
+        [
+         "UNBALANCED",
+         6
+        ],
+        [
+         "LOW TENSION",
+         5
+        ],
+        [
+         "FULL",
+         4
+        ],
+        [
+         "PERFORATED",
+         4
+        ]
+       ]
+      },
+      "k5/rag": {
+       "coverage": 0.1484,
+       "complete": false,
+       "keep_encoder": {
+        "right": 76,
+        "false": 148,
+        "precision": 0.3393,
+        "modes": 28,
+        "accuracy": 0.7812
+       },
+       "confirmed_only": {
+        "right": 72,
+        "false": 15,
+        "precision": 0.8276,
+        "modes": 28,
+        "accuracy": 0.78162
+       }
+      },
+      "k5/either": {
+       "coverage": 0.1484,
+       "complete": false,
+       "keep_encoder": {
+        "right": 82,
+        "false": 150,
+        "precision": 0.3534,
+        "modes": 29,
+        "accuracy": 0.7813
+       },
+       "confirmed_only": {
+        "right": 79,
+        "false": 18,
+        "precision": 0.8144,
+        "modes": 29,
+        "accuracy": 0.78174
+       }
+      },
+      "k5/both": {
+       "coverage": 0.1484,
+       "complete": false,
+       "keep_encoder": {
+        "right": 75,
+        "false": 145,
+        "precision": 0.3409,
+        "modes": 28,
+        "accuracy": 0.78122
+       },
+       "confirmed_only": {
+        "right": 71,
+        "false": 12,
+        "precision": 0.8554,
+        "modes": 28,
+        "accuracy": 0.78164
+       }
+      },
+      "k10/zs": {
+       "coverage": 0.0725,
+       "complete": false,
+       "keep_encoder": {
+        "right": 83,
+        "false": 153,
+        "precision": 0.3517,
+        "modes": 29,
+        "accuracy": 0.7813
+       },
+       "confirmed_only": {
+        "right": 80,
+        "false": 21,
+        "precision": 0.7921,
+        "modes": 29,
+        "accuracy": 0.78174
+       }
+      },
+      "k10/rag": {
+       "coverage": 0.0725,
+       "complete": false,
+       "keep_encoder": {
+        "right": 79,
+        "false": 152,
+        "precision": 0.342,
+        "modes": 28,
+        "accuracy": 0.78124
+       },
+       "confirmed_only": {
+        "right": 75,
+        "false": 19,
+        "precision": 0.7979,
+        "modes": 28,
+        "accuracy": 0.78166
+       }
+      },
+      "k10/either": {
+       "coverage": 0.0725,
+       "complete": false,
+       "keep_encoder": {
+        "right": 86,
+        "false": 157,
+        "precision": 0.3539,
+        "modes": 29,
+        "accuracy": 0.78132
+       },
+       "confirmed_only": {
+        "right": 83,
+        "false": 25,
+        "precision": 0.7685,
+        "modes": 29,
+        "accuracy": 0.78176
+       }
+      },
+      "k10/both": {
+       "coverage": 0.0725,
+       "complete": false,
+       "keep_encoder": {
+        "right": 76,
+        "false": 148,
+        "precision": 0.3393,
+        "modes": 28,
+        "accuracy": 0.78122
+       },
+       "confirmed_only": {
+        "right": 72,
+        "false": 15,
+        "precision": 0.8276,
+        "modes": 28,
+        "accuracy": 0.78164
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

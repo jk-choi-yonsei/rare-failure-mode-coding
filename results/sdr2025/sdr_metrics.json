@@ -1,0 +1,526 @@
+{
+ "n_2025": 1612,
+ "codes_present": 229,
+ "leak_free_items": 831,
+ "arms_2025_macro_f1_bins_by_full_counts": {
+  "cb_base_1k": {
+   "all": 0.0228,
+   "1-5": 0.0,
+   "6-20": 0.0,
+   "21-89": 0.0169,
+   "90+": 0.0877
+  },
+  "cb_base_10k": {
+   "all": 0.1301,
+   "1-5": 0.003,
+   "6-20": 0.0925,
+   "21-89": 0.235,
+   "90+": 0.3231
+  },
+  "cb_base_full": {
+   "all": 0.0753,
+   "1-5": 0.0025,
+   "6-20": 0.03,
+   "21-89": 0.0995,
+   "90+": 0.2304
+  },
+  "zs_qwen38_27b": {
+   "all": 0.476,
+   "1-5": 0.44,
+   "6-20": 0.5926,
+   "21-89": 0.4475,
+   "90+": 0.4706
+  },
+  "rag_qwen38_27b": {
+   "all": 0.4601,
+   "1-5": 0.3975,
+   "6-20": 0.5471,
+   "21-89": 0.4779,
+   "90+": 0.4944
+  },
+  "zs_gemma4_31b": {
+   "all": 0.4532,
+   "1-5": 0.4165,
+   "6-20": 0.5573,
+   "21-89": 0.4524,
+   "90+": 0.4395
+  },
+  "rag_gemma4_31b": {
+   "all": 0.4624,
+   "1-5": 0.3996,
+   "6-20": 0.5538,
+   "21-89": 0.466,
+   "90+": 0.506
+  },
+  "zs_opus55": {
+   "all": 0.5041,
+   "1-5": 0.4592,
+   "6-20": 0.6237,
+   "21-89": 0.4999,
+   "90+": 0.4983
+  },
+  "rag_opus55": {
+   "all": 0.487,
+   "1-5": 0.4345,
+   "6-20": 0.5618,
+   "21-89": 0.5157,
+   "90+": 0.5164
+  },
+  "keyword": {
+   "all": 0.255,
+   "1-5": 0.2236,
+   "6-20": 0.3276,
+   "21-89": 0.2124,
+   "90+": 0.2816
+  },
+  "cb_large_10k": {
+   "all": 0.1718,
+   "1-5": 0.0083,
+   "6-20": 0.1435,
+   "21-89": 0.3375,
+   "90+": 0.3829
+  },
+  "cb_large_full": {
+   "all": 0.265,
+   "1-5": 0.0736,
+   "6-20": 0.3779,
+   "21-89": 0.4076,
+   "90+": 0.4449
+  },
+  "cb_long_full": {
+   "all": 0.3344,
+   "1-5": 0.1332,
+   "6-20": 0.4495,
+   "21-89": 0.5147,
+   "90+": 0.5048
+  },
+  "cb_large_long_full": {
+   "all": 0.359,
+   "1-5": 0.1569,
+   "6-20": 0.5501,
+   "21-89": 0.495,
+   "90+": 0.509
+  }
+ },
+ "contrasts": {
+  "S1": {
+   "qwen38_27b_1k": {
+    "item": {
+     "point": 0.4121,
+     "ci95": [
+      0.3645,
+      0.4424
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2946,
+      0.5165
+     ],
+     "excludes_zero": true
+    }
+   },
+   "qwen38_27b_10k": {
+    "item": {
+     "point": 0.3558,
+     "ci95": [
+      0.2897,
+      0.3753
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2382,
+      0.4339
+     ],
+     "excludes_zero": true
+    }
+   },
+   "qwen38_27b_full": {
+    "item": {
+     "point": 0.4375,
+     "ci95": [
+      0.3358,
+      0.4291
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2998,
+      0.479
+     ],
+     "excludes_zero": true
+    }
+   },
+   "gemma4_31b_1k": {
+    "item": {
+     "point": 0.4028,
+     "ci95": [
+      0.3562,
+      0.4323
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2803,
+      0.5122
+     ],
+     "excludes_zero": true
+    }
+   },
+   "gemma4_31b_10k": {
+    "item": {
+     "point": 0.3488,
+     "ci95": [
+      0.2827,
+      0.37
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2319,
+      0.4317
+     ],
+     "excludes_zero": true
+    }
+   },
+   "gemma4_31b_full": {
+    "item": {
+     "point": 0.414,
+     "ci95": [
+      0.3182,
+      0.41
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2804,
+      0.4593
+     ],
+     "excludes_zero": true
+    }
+   }
+  },
+  "S2": {
+   "qwen38_27b_21-89": {
+    "item": {
+     "point": -0.3481,
+     "ci95": [
+      -0.386,
+      -0.2998
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.4531,
+      -0.2419
+     ],
+     "excludes_zero": true
+    }
+   },
+   "qwen38_27b_90+": {
+    "item": {
+     "point": -0.2401,
+     "ci95": [
+      -0.2672,
+      -0.2055
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.314,
+      -0.1585
+     ],
+     "excludes_zero": true
+    }
+   },
+   "gemma4_31b_21-89": {
+    "item": {
+     "point": -0.3529,
+     "ci95": [
+      -0.3911,
+      -0.3011
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.4541,
+      -0.2489
+     ],
+     "excludes_zero": true
+    }
+   },
+   "gemma4_31b_90+": {
+    "item": {
+     "point": -0.2091,
+     "ci95": [
+      -0.2367,
+      -0.1756
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.2851,
+      -0.1286
+     ],
+     "excludes_zero": true
+    }
+   }
+  },
+  "S3": {
+   "opus_minus_cb_1-5": {
+    "item": {
+     "point": 0.4567,
+     "ci95": [
+      0.3542,
+      0.4481
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.3181,
+      0.4892
+     ],
+     "excludes_zero": true
+    }
+   },
+   "opus_minus_qwen_all": {
+    "item": {
+     "point": 0.0281,
+     "ci95": [
+      0.0084,
+      0.0453
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.0079,
+      0.0617
+     ],
+     "excludes_zero": false
+    }
+   }
+  },
+  "S4": {
+   "qwen38_27b": {
+    "item": {
+     "point": -0.0159,
+     "ci95": [
+      -0.0355,
+      0.0038
+     ],
+     "excludes_zero": false
+    },
+    "code": {
+     "ci95": [
+      -0.0537,
+      0.0217
+     ],
+     "excludes_zero": false
+    }
+   },
+   "gemma4_31b": {
+    "item": {
+     "point": 0.0092,
+     "ci95": [
+      -0.0151,
+      0.0233
+     ],
+     "excludes_zero": false
+    },
+    "code": {
+     "ci95": [
+      -0.0309,
+      0.0415
+     ],
+     "excludes_zero": false
+    }
+   },
+   "opus55": {
+    "item": {
+     "point": -0.0171,
+     "ci95": [
+      -0.0353,
+      0.0018
+     ],
+     "excludes_zero": false
+    },
+    "code": {
+     "ci95": [
+      -0.0497,
+      0.0184
+     ],
+     "excludes_zero": false
+    }
+   }
+  },
+  "desc_opus_rag_minus_cb_all": {
+   "item": {
+    "point": 0.4117,
+    "ci95": [
+     0.3596,
+     0.4081
+    ],
+    "excludes_zero": true
+   },
+   "code": {
+    "ci95": [
+     0.3309,
+     0.4372
+    ],
+    "excludes_zero": true
+   }
+  },
+  "S6b_keyword_minus_best": {
+   "best": "zs_opus55",
+   "item": {
+    "point": -0.2491,
+    "ci95": [
+     -0.2602,
+     -0.2119
+    ],
+    "excludes_zero": true
+   },
+   "code": {
+    "ci95": [
+     -0.2831,
+     -0.1918
+    ],
+    "excludes_zero": true
+   }
+  },
+  "S6a": {
+   "S1_qwen38_27b_full_leakfree": {
+    "point": 0.189,
+    "ci95": [
+     0.1137,
+     0.1951
+    ],
+    "n_items": 831,
+    "n_codes_1-5_present": 75
+   },
+   "S1_gemma4_31b_full_leakfree": {
+    "point": 0.157,
+    "ci95": [
+     0.0908,
+     0.1634
+    ],
+    "n_items": 831,
+    "n_codes_1-5_present": 75
+   }
+  },
+  "S2_amended": {
+   "qwen38_27b_21-89": {
+    "item": {
+     "point": 0.0671,
+     "ci95": [
+      0.0241,
+      0.1034
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.0214,
+      0.1543
+     ],
+     "excludes_zero": false
+    }
+   },
+   "qwen38_27b_90+": {
+    "item": {
+     "point": 0.0343,
+     "ci95": [
+      0.0033,
+      0.0646
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.0364,
+      0.106
+     ],
+     "excludes_zero": false
+    }
+   },
+   "gemma4_31b_21-89": {
+    "item": {
+     "point": 0.0623,
+     "ci95": [
+      0.0192,
+      0.105
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.0291,
+      0.1539
+     ],
+     "excludes_zero": false
+    }
+   },
+   "gemma4_31b_90+": {
+    "item": {
+     "point": 0.0653,
+     "ci95": [
+      0.0364,
+      0.094
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      -0.0028,
+      0.1376
+     ],
+     "excludes_zero": false
+    }
+   }
+  },
+  "S3_amended": {
+   "opus_minus_cb_long_1-5": {
+    "item": {
+     "point": 0.326,
+     "ci95": [
+      0.2379,
+      0.3351
+     ],
+     "excludes_zero": true
+    },
+    "code": {
+     "ci95": [
+      0.2018,
+      0.3669
+     ],
+     "excludes_zero": true
+    }
+   }
+  }
+ },
+ "verdicts": {
+  "S1": "holds",
+  "S2": "fails",
+  "S3": "fails",
+  "S4": "fails",
+  "S6b": "holds",
+  "S6a": "holds",
+  "S2_amended": "fails",
+  "S3_amended": "holds"
+ },
+ "missing": [],
+ "leaked_share_2025": 0.4845
+}

@@ -1,0 +1,2872 @@
+{
+ "note": "notes/why-it-works-2026-11-16.md",
+ "corpus": "maude",
+ "years": {
+  "2026": {
+   "per_code": [
+    {
+     "code": "Application Program Problem: Medication Error",
+     "filed": 78,
+     "first_filed": "2026-03-09",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-10-26",
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 78,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 78,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 78,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 78
+    },
+    {
+     "code": "Computer System Security Problem",
+     "filed": 67,
+     "first_filed": "2026-03-18",
+     "encoder": [
+      1,
+      3
+     ],
+     "encoder_first": "2026-10-23",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-07-14",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 67,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 67,
+     "gate_gemma4_31b": [
+      2,
+      10
+     ],
+     "gate_gemma4_31b_first": "2026-07-14",
+     "zs_gemma4_31b_right": 36,
+     "zs_gemma4_31b_answered": 67,
+     "rag_gemma4_31b_right": 18,
+     "rag_gemma4_31b_answered": 67
+    },
+    {
+     "code": "Implant subsidence",
+     "filed": 63,
+     "first_filed": "2026-01-08",
+     "encoder": [
+      8,
+      3
+     ],
+     "encoder_first": "2026-01-19",
+     "gate_qwen38_27b": [
+      36,
+      47
+     ],
+     "gate_qwen38_27b_first": "2026-01-08",
+     "zs_qwen38_27b_right": 52,
+     "zs_qwen38_27b_answered": 63,
+     "rag_qwen38_27b_right": 28,
+     "rag_qwen38_27b_answered": 63,
+     "gate_gemma4_31b": [
+      35,
+      49
+     ],
+     "gate_gemma4_31b_first": "2026-01-08",
+     "zs_gemma4_31b_right": 52,
+     "zs_gemma4_31b_answered": 63,
+     "rag_gemma4_31b_right": 24,
+     "rag_gemma4_31b_answered": 63
+    },
+    {
+     "code": "Power Conditioning Problem",
+     "filed": 34,
+     "first_filed": "2026-03-03",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 34,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 34,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 34,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 34
+    },
+    {
+     "code": "Extra Components",
+     "filed": 28,
+     "first_filed": "2026-01-14",
+     "encoder": [
+      4,
+      4
+     ],
+     "encoder_first": "2026-03-26",
+     "gate_qwen38_27b": [
+      11,
+      8
+     ],
+     "gate_qwen38_27b_first": "2026-03-16",
+     "zs_qwen38_27b_right": 23,
+     "zs_qwen38_27b_answered": 28,
+     "rag_qwen38_27b_right": 14,
+     "rag_qwen38_27b_answered": 28,
+     "gate_gemma4_31b": [
+      12,
+      7
+     ],
+     "gate_gemma4_31b_first": "2026-03-16",
+     "zs_gemma4_31b_right": 20,
+     "zs_gemma4_31b_answered": 28,
+     "rag_gemma4_31b_right": 17,
+     "rag_gemma4_31b_answered": 28
+    },
+    {
+     "code": "Decoupling",
+     "filed": 27,
+     "first_filed": "2026-01-12",
+     "encoder": [
+      0,
+      14
+     ],
+     "gate_qwen38_27b": [
+      1,
+      15
+     ],
+     "gate_qwen38_27b_first": "2026-06-04",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 27,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 27,
+     "gate_gemma4_31b": [
+      0,
+      6
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 27,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 27
+    },
+    {
+     "code": "Prophylactic removal due to corrective action",
+     "filed": 27,
+     "first_filed": "2026-01-09",
+     "encoder": [
+      0,
+      5
+     ],
+     "gate_qwen38_27b": [
+      0,
+      5
+     ],
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 27,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 27,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 6,
+     "zs_gemma4_31b_answered": 27,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 27
+    },
+    {
+     "code": "Application Security Problem",
+     "filed": 21,
+     "first_filed": "2026-01-21",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 21,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 21,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 21,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 21
+    },
+    {
+     "code": "Biofilm coating in Device",
+     "filed": 18,
+     "first_filed": "2026-01-05",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      3,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-01-13",
+     "zs_qwen38_27b_right": 8,
+     "zs_qwen38_27b_answered": 18,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 18,
+     "gate_gemma4_31b": [
+      3,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-01-13",
+     "zs_gemma4_31b_right": 8,
+     "zs_gemma4_31b_answered": 18,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 18
+    },
+    {
+     "code": "Radiofrequency Interference (RFI)",
+     "filed": 18,
+     "first_filed": "2026-02-11",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 18,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 18,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 18,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 18
+    },
+    {
+     "code": "Flushing Problem",
+     "filed": 17,
+     "first_filed": "2026-01-05",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 17,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 17,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 17,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 17
+    },
+    {
+     "code": "Radiation Overexposure",
+     "filed": 13,
+     "first_filed": "2026-01-12",
+     "encoder": [
+      6,
+      0
+     ],
+     "encoder_first": "2026-01-12",
+     "gate_qwen38_27b": [
+      4,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-01-12",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 13,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 13,
+     "gate_gemma4_31b": [
+      4,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-01-12",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 13,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 13
+    },
+    {
+     "code": "Failure to Disinfect",
+     "filed": 10,
+     "first_filed": "2026-02-25",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      5,
+      24
+     ],
+     "gate_qwen38_27b_first": "2026-04-13",
+     "zs_qwen38_27b_right": 5,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      5,
+      15
+     ],
+     "gate_gemma4_31b_first": "2026-04-13",
+     "zs_gemma4_31b_right": 5,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "Inadequate Instructions for Healthcare Professional",
+     "filed": 10,
+     "first_filed": "2026-02-24",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "Aborted Charge",
+     "filed": 9,
+     "first_filed": "2026-03-12",
+     "encoder": [
+      1,
+      1
+     ],
+     "encoder_first": "2026-03-18",
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 9,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 9,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 9,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 9
+    },
+    {
+     "code": "Failure to Back-Up",
+     "filed": 8,
+     "first_filed": "2026-03-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Difficult to Interrogate",
+     "filed": 8,
+     "first_filed": "2026-01-06",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      4
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      4
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Precipitate in Device or Device Ingredient",
+     "filed": 8,
+     "first_filed": "2026-01-14",
+     "encoder": [
+      6,
+      8
+     ],
+     "encoder_first": "2026-01-14",
+     "gate_qwen38_27b": [
+      6,
+      9
+     ],
+     "gate_qwen38_27b_first": "2026-01-14",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 6,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      6,
+      8
+     ],
+     "gate_gemma4_31b_first": "2026-01-14",
+     "zs_gemma4_31b_right": 6,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Fungus in Device Environment",
+     "filed": 8,
+     "first_filed": "2026-01-16",
+     "encoder": [
+      0,
+      6
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Misassembly During Maintenance/Repair",
+     "filed": 8,
+     "first_filed": "2026-01-29",
+     "encoder": [
+      2,
+      58
+     ],
+     "encoder_first": "2026-01-29",
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-06-10",
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Powder Leak",
+     "filed": 8,
+     "first_filed": "2026-02-25",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Problem with Sterilization",
+     "filed": 7,
+     "first_filed": "2026-01-05",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      3,
+      9
+     ],
+     "gate_qwen38_27b_first": "2026-01-09",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      3,
+      9
+     ],
+     "gate_gemma4_31b_first": "2026-01-09",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "Ambient Temperature Problem",
+     "filed": 7,
+     "first_filed": "2026-02-12",
+     "encoder": [
+      3,
+      4
+     ],
+     "encoder_first": "2026-04-03",
+     "gate_qwen38_27b": [
+      2,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-04-03",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-04-03",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "Pacing Inadequately",
+     "filed": 6,
+     "first_filed": "2026-01-26",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "Intermittent Shock/Stimulation",
+     "filed": 6,
+     "first_filed": "2026-01-28",
+     "encoder": [
+      0,
+      4
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "Inadequate Filtration Process",
+     "filed": 5,
+     "first_filed": "2026-04-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "Battery Problem: High Impedance",
+     "filed": 5,
+     "first_filed": "2026-03-30",
+     "encoder": [
+      0,
+      8
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "Medical Gas Supply Problem",
+     "filed": 4,
+     "first_filed": "2026-03-30",
+     "encoder": [
+      0,
+      5
+     ],
+     "gate_qwen38_27b": [
+      2,
+      14
+     ],
+     "gate_qwen38_27b_first": "2026-03-30",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      1,
+      5
+     ],
+     "gate_gemma4_31b_first": "2026-10-09",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "High Sensing Threshold",
+     "filed": 3,
+     "first_filed": "2026-09-30",
+     "encoder": [
+      0,
+      15
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Overcorrection",
+     "filed": 3,
+     "first_filed": "2026-04-29",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Emergency Power Failure",
+     "filed": 2,
+     "first_filed": "2026-01-09",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Pacing Intermittently",
+     "filed": 2,
+     "first_filed": "2026-02-23",
+     "encoder": [
+      0,
+      12
+     ],
+     "gate_qwen38_27b": [
+      1,
+      9
+     ],
+     "gate_qwen38_27b_first": "2026-03-23",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      5
+     ],
+     "gate_gemma4_31b_first": "2026-03-23",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Low Sensing Threshold",
+     "filed": 2,
+     "first_filed": "2026-02-04",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Radiation Underexposure",
+     "filed": 2,
+     "first_filed": "2026-05-14",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Ventilation Problem in Device Environment",
+     "filed": 2,
+     "first_filed": "2026-01-14",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Radiation Leak",
+     "filed": 1,
+     "first_filed": "2026-04-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Application Program Problem: Power Calculation Error",
+     "filed": 1,
+     "first_filed": "2026-01-12",
+     "encoder": [
+      0,
+      8
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      4
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Failure to Reset",
+     "filed": 1,
+     "first_filed": "2026-03-17",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-03-17",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-03-17",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-03-17",
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Loss of Threshold",
+     "filed": 1,
+     "first_filed": "2026-08-03",
+     "encoder": [
+      0,
+      32
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Fumes or Vapors",
+     "filed": 1,
+     "first_filed": "2026-04-01",
+     "encoder": [
+      0,
+      4
+     ],
+     "gate_qwen38_27b": [
+      0,
+      5
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Data Back-Up Problem",
+     "filed": 1,
+     "first_filed": "2026-02-05",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Premature Indicator Activation",
+     "filed": 1,
+     "first_filed": "2026-06-15",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Incomplete or Inadequate Priming",
+     "filed": 1,
+     "first_filed": "2026-10-23",
+     "encoder": [
+      0,
+      7
+     ],
+     "gate_qwen38_27b": [
+      0,
+      12
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      25
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    }
+   ],
+   "spread": {
+    "qwen38_27b": {
+     "encoder_right": 32,
+     "gate_right": 77,
+     "codes_gaining": 9,
+     "codes_losing": 4,
+     "top_code": "Implant subsidence",
+     "top_code_gain": 28,
+     "top_code_share_of_positive_gain": 0.549,
+     "without_top_code": {
+      "encoder_right": 24,
+      "gate_right": 41,
+      "encoder_false": 215,
+      "gate_false": 132
+     }
+    },
+    "gemma4_31b": {
+     "encoder_right": 32,
+     "gate_right": 75,
+     "codes_gaining": 8,
+     "codes_losing": 4,
+     "top_code": "Implant subsidence",
+     "top_code_gain": 27,
+     "top_code_share_of_positive_gain": 0.551,
+     "without_top_code": {
+      "encoder_right": 24,
+      "gate_right": 40,
+      "encoder_false": 215,
+      "gate_false": 115
+     }
+    }
+   },
+   "case": {
+    "code": "Patient Device Interaction Problem > Implant subsidence",
+    "filed": 63,
+    "by_month": [
+     {
+      "month": 1,
+      "filed": 3,
+      "encoder": 1,
+      "gate_qwen38_27b": 3,
+      "gate_gemma4_31b": 3
+     },
+     {
+      "month": 2,
+      "filed": 7,
+      "encoder": 2,
+      "gate_qwen38_27b": 4,
+      "gate_gemma4_31b": 4
+     },
+     {
+      "month": 3,
+      "filed": 5,
+      "encoder": 1,
+      "gate_qwen38_27b": 5,
+      "gate_gemma4_31b": 5
+     },
+     {
+      "month": 4,
+      "filed": 6,
+      "encoder": 2,
+      "gate_qwen38_27b": 4,
+      "gate_gemma4_31b": 4
+     },
+     {
+      "month": 5,
+      "filed": 6,
+      "encoder": 0,
+      "gate_qwen38_27b": 2,
+      "gate_gemma4_31b": 1
+     },
+     {
+      "month": 6,
+      "filed": 6,
+      "encoder": 0,
+      "gate_qwen38_27b": 3,
+      "gate_gemma4_31b": 3
+     },
+     {
+      "month": 7,
+      "filed": 10,
+      "encoder": 2,
+      "gate_qwen38_27b": 3,
+      "gate_gemma4_31b": 3
+     },
+     {
+      "month": 8,
+      "filed": 4,
+      "encoder": 0,
+      "gate_qwen38_27b": 3,
+      "gate_gemma4_31b": 3
+     },
+     {
+      "month": 9,
+      "filed": 5,
+      "encoder": 0,
+      "gate_qwen38_27b": 2,
+      "gate_gemma4_31b": 2
+     },
+     {
+      "month": 10,
+      "filed": 11,
+      "encoder": 0,
+      "gate_qwen38_27b": 7,
+      "gate_gemma4_31b": 7
+     }
+    ],
+    "encoder_rank_on_filed": {
+     "top1": 8,
+     "rank2_5": 28,
+     "rank6_20": 10,
+     "beyond20": 17
+    },
+    "encoder_answers_instead": [
+     [
+      "Migration",
+      42
+     ],
+     [
+      "Device Dislodged or Dislocated",
+      4
+     ],
+     [
+      "Osseointegration Problem",
+      3
+     ],
+     [
+      "Mechanical Jam",
+      1
+     ],
+     [
+      "Use of Device Problem",
+      1
+     ]
+    ],
+    "keyword": {
+     "stem": "subsid",
+     "reports_with_keyword": 607,
+     "filed_as": [
+      [
+       "Break",
+       105
+      ],
+      [
+       "Migration",
+       94
+      ],
+      [
+       "Implant subsidence",
+       49
+      ],
+      [
+       "Patient Device Interaction Problem",
+       38
+      ],
+      [
+       "Device Dislodged or Dislocated",
+       30
+      ],
+      [
+       "Osseointegration Problem",
+       28
+      ]
+     ],
+     "filed_reports_with_keyword": 49,
+     "encoder_places_code_on_keyword_reports": 11
+    },
+    "gate_qwen38_27b": {
+     "right": 36,
+     "false": 47,
+     "false_filed_as": [
+      [
+       "Migration",
+       32
+      ],
+      [
+       "Osseointegration Problem",
+       4
+      ],
+      [
+       "Patient Device Interaction Problem",
+       4
+      ],
+      [
+       "Device Appears to Trigger Rejection",
+       2
+      ],
+      [
+       "Fracture",
+       2
+      ],
+      [
+       "Loosening of Implant Not Related to Bone-Ingrowth",
+       2
+      ]
+     ],
+     "false_with_keyword": 46,
+     "places_code_on_keyword_reports": 81,
+     "zs_alone_right": 52,
+     "rag_alone_right": 28
+    },
+    "gate_gemma4_31b": {
+     "right": 35,
+     "false": 49,
+     "false_filed_as": [
+      [
+       "Migration",
+       32
+      ],
+      [
+       "Osseointegration Problem",
+       6
+      ],
+      [
+       "Patient Device Interaction Problem",
+       4
+      ],
+      [
+       "Device Appears to Trigger Rejection",
+       2
+      ],
+      [
+       "Fracture",
+       2
+      ],
+      [
+       "Loosening of Implant Not Related to Bone-Ingrowth",
+       2
+      ]
+     ],
+     "false_with_keyword": 46,
+     "places_code_on_keyword_reports": 81,
+     "zs_alone_right": 52,
+     "rag_alone_right": 24
+    },
+    "encoder": {
+     "right": 8,
+     "false": 3,
+     "false_with_keyword": 3
+    },
+    "device_groups_of_filed": [
+     [
+      "LZO",
+      12
+     ],
+     [
+      "JWH",
+      9
+     ],
+     [
+      "MBH",
+      5
+     ],
+     [
+      "NRA",
+      5
+     ],
+     [
+      "MJO",
+      5
+     ],
+     [
+      "LPH",
+      4
+     ]
+    ],
+    "device_groups_count": 19
+   }
+  },
+  "2025": {
+   "per_code": [
+    {
+     "code": "Application Program Problem: Medication Error",
+     "filed": 156,
+     "first_filed": "2025-01-15",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      3,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-03-21",
+     "zs_qwen38_27b_right": 52,
+     "zs_qwen38_27b_answered": 156,
+     "rag_qwen38_27b_right": 7,
+     "rag_qwen38_27b_answered": 156,
+     "gate_gemma4_31b": [
+      3,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-03-21",
+     "zs_gemma4_31b_right": 11,
+     "zs_gemma4_31b_answered": 156,
+     "rag_gemma4_31b_right": 7,
+     "rag_gemma4_31b_answered": 156
+    },
+    {
+     "code": "Implant subsidence",
+     "filed": 109,
+     "first_filed": "2025-01-06",
+     "encoder": [
+      22,
+      22
+     ],
+     "encoder_first": "2025-01-06",
+     "gate_qwen38_27b": [
+      49,
+      69
+     ],
+     "gate_qwen38_27b_first": "2025-01-06",
+     "zs_qwen38_27b_right": 91,
+     "zs_qwen38_27b_answered": 109,
+     "rag_qwen38_27b_right": 56,
+     "rag_qwen38_27b_answered": 109,
+     "gate_gemma4_31b": [
+      49,
+      72
+     ],
+     "gate_gemma4_31b_first": "2025-01-06",
+     "zs_gemma4_31b_right": 89,
+     "zs_gemma4_31b_answered": 109,
+     "rag_gemma4_31b_right": 52,
+     "rag_gemma4_31b_answered": 109
+    },
+    {
+     "code": "Decoupling",
+     "filed": 38,
+     "first_filed": "2025-05-12",
+     "encoder": [
+      0,
+      17
+     ],
+     "gate_qwen38_27b": [
+      0,
+      20
+     ],
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 38,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 38,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 38,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 38
+    },
+    {
+     "code": "Prophylactic removal due to corrective action",
+     "filed": 24,
+     "first_filed": "2025-01-06",
+     "encoder": [
+      2,
+      1
+     ],
+     "encoder_first": "2025-01-13",
+     "gate_qwen38_27b": [
+      1,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-02-19",
+     "zs_qwen38_27b_right": 11,
+     "zs_qwen38_27b_answered": 24,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 24,
+     "gate_gemma4_31b": [
+      1,
+      3
+     ],
+     "gate_gemma4_31b_first": "2025-02-19",
+     "zs_gemma4_31b_right": 12,
+     "zs_gemma4_31b_answered": 24,
+     "rag_gemma4_31b_right": 9,
+     "rag_gemma4_31b_answered": 24
+    },
+    {
+     "code": "Failure to Disinfect",
+     "filed": 23,
+     "first_filed": "2025-01-10",
+     "encoder": [
+      2,
+      11
+     ],
+     "encoder_first": "2025-01-10",
+     "gate_qwen38_27b": [
+      11,
+      38
+     ],
+     "gate_qwen38_27b_first": "2025-01-10",
+     "zs_qwen38_27b_right": 12,
+     "zs_qwen38_27b_answered": 23,
+     "rag_qwen38_27b_right": 7,
+     "rag_qwen38_27b_answered": 23,
+     "gate_gemma4_31b": [
+      11,
+      33
+     ],
+     "gate_gemma4_31b_first": "2025-01-10",
+     "zs_gemma4_31b_right": 9,
+     "zs_gemma4_31b_answered": 23,
+     "rag_gemma4_31b_right": 7,
+     "rag_gemma4_31b_answered": 23
+    },
+    {
+     "code": "Misassembly During Maintenance/Repair",
+     "filed": 17,
+     "first_filed": "2025-02-05",
+     "encoder": [
+      5,
+      66
+     ],
+     "encoder_first": "2025-02-20",
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 17,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 17,
+     "gate_gemma4_31b": [
+      0,
+      5
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 17,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 17
+    },
+    {
+     "code": "Aborted Charge",
+     "filed": 15,
+     "first_filed": "2025-02-18",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-05-22",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-12-03",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 15,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 15,
+     "gate_gemma4_31b": [
+      4,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-04-28",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 15,
+     "rag_gemma4_31b_right": 5,
+     "rag_gemma4_31b_answered": 15
+    },
+    {
+     "code": "Computer System Security Problem",
+     "filed": 14,
+     "first_filed": "2025-01-02",
+     "encoder": [
+      2,
+      1
+     ],
+     "encoder_first": "2025-01-07",
+     "gate_qwen38_27b": [
+      3,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-01-07",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 14,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 14,
+     "gate_gemma4_31b": [
+      4,
+      5
+     ],
+     "gate_gemma4_31b_first": "2025-01-07",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 14,
+     "rag_gemma4_31b_right": 5,
+     "rag_gemma4_31b_answered": 14
+    },
+    {
+     "code": "Flushing Problem",
+     "filed": 13,
+     "first_filed": "2025-01-22",
+     "encoder": [
+      2,
+      11
+     ],
+     "encoder_first": "2025-07-03",
+     "gate_qwen38_27b": [
+      0,
+      8
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 13,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 13,
+     "gate_gemma4_31b": [
+      1,
+      15
+     ],
+     "gate_gemma4_31b_first": "2025-01-22",
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 13,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 13
+    },
+    {
+     "code": "Problem with Sterilization",
+     "filed": 13,
+     "first_filed": "2025-02-07",
+     "encoder": [
+      5,
+      10
+     ],
+     "encoder_first": "2025-02-07",
+     "gate_qwen38_27b": [
+      6,
+      13
+     ],
+     "gate_qwen38_27b_first": "2025-03-31",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 13,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 13,
+     "gate_gemma4_31b": [
+      7,
+      14
+     ],
+     "gate_gemma4_31b_first": "2025-02-07",
+     "zs_gemma4_31b_right": 7,
+     "zs_gemma4_31b_answered": 13,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 13
+    },
+    {
+     "code": "Premature Indicator Activation",
+     "filed": 11,
+     "first_filed": "2025-01-14",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 11,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 11,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 11,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 11
+    },
+    {
+     "code": "Powder Leak",
+     "filed": 11,
+     "first_filed": "2025-01-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 11,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 11,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 11,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 11
+    },
+    {
+     "code": "Inadequate Filtration Process",
+     "filed": 10,
+     "first_filed": "2025-02-24",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "Medical Gas Supply Problem",
+     "filed": 10,
+     "first_filed": "2025-01-09",
+     "encoder": [
+      0,
+      4
+     ],
+     "gate_qwen38_27b": [
+      1,
+      8
+     ],
+     "gate_qwen38_27b_first": "2025-05-26",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      2,
+      5
+     ],
+     "gate_gemma4_31b_first": "2025-05-20",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "Inappropriate Tactile Prompt/Feedback",
+     "filed": 10,
+     "first_filed": "2025-01-09",
+     "encoder": [
+      3,
+      12
+     ],
+     "encoder_first": "2025-01-10",
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "Extra Components",
+     "filed": 10,
+     "first_filed": "2025-01-28",
+     "encoder": [
+      1,
+      3
+     ],
+     "encoder_first": "2025-11-18",
+     "gate_qwen38_27b": [
+      5,
+      19
+     ],
+     "gate_qwen38_27b_first": "2025-05-08",
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 7,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      5,
+      20
+     ],
+     "gate_gemma4_31b_first": "2025-05-08",
+     "zs_gemma4_31b_right": 8,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 7,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "Pacing Intermittently",
+     "filed": 9,
+     "first_filed": "2025-01-08",
+     "encoder": [
+      0,
+      11
+     ],
+     "gate_qwen38_27b": [
+      4,
+      10
+     ],
+     "gate_qwen38_27b_first": "2025-01-31",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 9,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 9,
+     "gate_gemma4_31b": [
+      3,
+      8
+     ],
+     "gate_gemma4_31b_first": "2025-01-31",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 9,
+     "rag_gemma4_31b_right": 5,
+     "rag_gemma4_31b_answered": 9
+    },
+    {
+     "code": "Ambient Temperature Problem",
+     "filed": 9,
+     "first_filed": "2025-02-06",
+     "encoder": [
+      4,
+      2
+     ],
+     "encoder_first": "2025-02-06",
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 9,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 9,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 9,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 9
+    },
+    {
+     "code": "Pacing Inadequately",
+     "filed": 8,
+     "first_filed": "2025-02-19",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-12-17",
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "Inadequate Instructions for Healthcare Professional",
+     "filed": 7,
+     "first_filed": "2025-11-03",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "Fungus in Device Environment",
+     "filed": 7,
+     "first_filed": "2025-03-14",
+     "encoder": [
+      2,
+      10
+     ],
+     "encoder_first": "2025-06-17",
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "Precipitate in Device or Device Ingredient",
+     "filed": 6,
+     "first_filed": "2025-01-03",
+     "encoder": [
+      4,
+      4
+     ],
+     "encoder_first": "2025-01-03",
+     "gate_qwen38_27b": [
+      4,
+      13
+     ],
+     "gate_qwen38_27b_first": "2025-01-03",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      4,
+      16
+     ],
+     "gate_gemma4_31b_first": "2025-01-03",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "Low Sensing Threshold",
+     "filed": 6,
+     "first_filed": "2025-01-02",
+     "encoder": [
+      2,
+      7
+     ],
+     "encoder_first": "2025-11-24",
+     "gate_qwen38_27b": [
+      2,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-11-24",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      2,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-11-24",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "Radiation Overexposure",
+     "filed": 6,
+     "first_filed": "2025-01-23",
+     "encoder": [
+      2,
+      3
+     ],
+     "encoder_first": "2025-08-07",
+     "gate_qwen38_27b": [
+      2,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-08-07",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      2,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-08-07",
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "Power Conditioning Problem",
+     "filed": 5,
+     "first_filed": "2025-01-03",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "Failure to Reset",
+     "filed": 5,
+     "first_filed": "2025-04-28",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-09-03",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-09-03",
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "Energy Spectrum Incorrect",
+     "filed": 4,
+     "first_filed": "2025-02-28",
+     "encoder": [
+      0,
+      4
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "High Sensing Threshold",
+     "filed": 4,
+     "first_filed": "2025-06-03",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "Failure to Back-Up",
+     "filed": 3,
+     "first_filed": "2025-02-21",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Radiation Leak",
+     "filed": 3,
+     "first_filed": "2025-04-30",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Application Program Problem: Power Calculation Error",
+     "filed": 3,
+     "first_filed": "2025-01-10",
+     "encoder": [
+      0,
+      8
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Intermittent Shock/Stimulation",
+     "filed": 3,
+     "first_filed": "2025-02-18",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Data Back-Up Problem",
+     "filed": 3,
+     "first_filed": "2025-02-07",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Ventilation Problem in Device Environment",
+     "filed": 3,
+     "first_filed": "2025-02-18",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "Biofilm coating in Device",
+     "filed": 2,
+     "first_filed": "2025-11-18",
+     "encoder": [
+      0,
+      8
+     ],
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-11-21",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-11-21",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Difficult to Interrogate",
+     "filed": 2,
+     "first_filed": "2025-02-06",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      8
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      7
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Radiofrequency Interference (RFI)",
+     "filed": 2,
+     "first_filed": "2025-06-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Application Security Problem",
+     "filed": 2,
+     "first_filed": "2025-10-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Battery Problem: High Impedance",
+     "filed": 2,
+     "first_filed": "2025-09-09",
+     "encoder": [
+      0,
+      6
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Overcorrection",
+     "filed": 2,
+     "first_filed": "2025-08-19",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Incomplete or Inadequate Priming",
+     "filed": 2,
+     "first_filed": "2025-05-08",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      12
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "Emergency Power Failure",
+     "filed": 1,
+     "first_filed": "2025-11-18",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Problem with Removal of Enzymatic Cleaner",
+     "filed": 1,
+     "first_filed": "2025-07-14",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Loss of Threshold",
+     "filed": 1,
+     "first_filed": "2025-12-29",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Fumes or Vapors",
+     "filed": 1,
+     "first_filed": "2025-07-03",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      8
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "Radiation Underexposure",
+     "filed": 1,
+     "first_filed": "2025-10-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    }
+   ],
+   "spread": {
+    "qwen38_27b": {
+     "encoder_right": 60,
+     "gate_right": 94,
+     "codes_gaining": 10,
+     "codes_losing": 7,
+     "top_code": "Implant subsidence",
+     "top_code_gain": 27,
+     "top_code_share_of_positive_gain": 0.519,
+     "without_top_code": {
+      "encoder_right": 38,
+      "gate_right": 45,
+      "encoder_false": 214,
+      "gate_false": 160
+     }
+    },
+    "gemma4_31b": {
+     "encoder_right": 60,
+     "gate_right": 100,
+     "codes_gaining": 11,
+     "codes_losing": 7,
+     "top_code": "Implant subsidence",
+     "top_code_gain": 27,
+     "top_code_share_of_positive_gain": 0.474,
+     "without_top_code": {
+      "encoder_right": 38,
+      "gate_right": 51,
+      "encoder_false": 214,
+      "gate_false": 161
+     }
+    }
+   },
+   "case": {
+    "code": "Patient Device Interaction Problem > Implant subsidence",
+    "filed": 109,
+    "by_month": [
+     {
+      "month": 1,
+      "filed": 13,
+      "encoder": 8,
+      "gate_qwen38_27b": 8,
+      "gate_gemma4_31b": 8
+     },
+     {
+      "month": 2,
+      "filed": 1,
+      "encoder": 0,
+      "gate_qwen38_27b": 0,
+      "gate_gemma4_31b": 0
+     },
+     {
+      "month": 3,
+      "filed": 3,
+      "encoder": 0,
+      "gate_qwen38_27b": 1,
+      "gate_gemma4_31b": 1
+     },
+     {
+      "month": 4,
+      "filed": 7,
+      "encoder": 0,
+      "gate_qwen38_27b": 2,
+      "gate_gemma4_31b": 2
+     },
+     {
+      "month": 5,
+      "filed": 6,
+      "encoder": 1,
+      "gate_qwen38_27b": 1,
+      "gate_gemma4_31b": 1
+     },
+     {
+      "month": 6,
+      "filed": 14,
+      "encoder": 4,
+      "gate_qwen38_27b": 6,
+      "gate_gemma4_31b": 6
+     },
+     {
+      "month": 7,
+      "filed": 13,
+      "encoder": 0,
+      "gate_qwen38_27b": 6,
+      "gate_gemma4_31b": 6
+     },
+     {
+      "month": 8,
+      "filed": 9,
+      "encoder": 0,
+      "gate_qwen38_27b": 4,
+      "gate_gemma4_31b": 4
+     },
+     {
+      "month": 9,
+      "filed": 13,
+      "encoder": 4,
+      "gate_qwen38_27b": 7,
+      "gate_gemma4_31b": 7
+     },
+     {
+      "month": 10,
+      "filed": 12,
+      "encoder": 2,
+      "gate_qwen38_27b": 9,
+      "gate_gemma4_31b": 9
+     },
+     {
+      "month": 11,
+      "filed": 5,
+      "encoder": 1,
+      "gate_qwen38_27b": 1,
+      "gate_gemma4_31b": 1
+     },
+     {
+      "month": 12,
+      "filed": 13,
+      "encoder": 2,
+      "gate_qwen38_27b": 4,
+      "gate_gemma4_31b": 4
+     }
+    ],
+    "encoder_rank_on_filed": {
+     "top1": 22,
+     "rank2_5": 30,
+     "rank6_20": 33,
+     "beyond20": 24
+    },
+    "encoder_answers_instead": [
+     [
+      "Migration",
+      52
+     ],
+     [
+      "Osseointegration Problem",
+      16
+     ],
+     [
+      "Loosening of Implant Not Related to Bone-Ingrowth",
+      5
+     ],
+     [
+      "Device Dislodged or Dislocated",
+      5
+     ],
+     [
+      "Inadequacy of Device Shape and/or Size",
+      2
+     ]
+    ],
+    "keyword": {
+     "stem": "subsid",
+     "reports_with_keyword": 794,
+     "filed_as": [
+      [
+       "Break",
+       160
+      ],
+      [
+       "Migration",
+       124
+      ],
+      [
+       "Implant subsidence",
+       86
+      ],
+      [
+       "Device Dislodged or Dislocated",
+       47
+      ],
+      [
+       "Osseointegration Problem",
+       31
+      ],
+      [
+       "Patient Device Interaction Problem",
+       29
+      ]
+     ],
+     "filed_reports_with_keyword": 86,
+     "encoder_places_code_on_keyword_reports": 41
+    },
+    "gate_qwen38_27b": {
+     "right": 49,
+     "false": 69,
+     "false_filed_as": [
+      [
+       "Migration",
+       43
+      ],
+      [
+       "Osseointegration Problem",
+       17
+      ],
+      [
+       "Migration or Expulsion of Device",
+       2
+      ],
+      [
+       "Unintended Movement",
+       2
+      ],
+      [
+       "Patient Device Interaction Problem",
+       1
+      ],
+      [
+       "Collapse",
+       1
+      ]
+     ],
+     "false_with_keyword": 66,
+     "places_code_on_keyword_reports": 114,
+     "zs_alone_right": 91,
+     "rag_alone_right": 56
+    },
+    "gate_gemma4_31b": {
+     "right": 49,
+     "false": 72,
+     "false_filed_as": [
+      [
+       "Migration",
+       43
+      ],
+      [
+       "Osseointegration Problem",
+       19
+      ],
+      [
+       "Migration or Expulsion of Device",
+       2
+      ],
+      [
+       "Collapse",
+       2
+      ],
+      [
+       "Unintended Movement",
+       2
+      ],
+      [
+       "Patient Device Interaction Problem",
+       1
+      ]
+     ],
+     "false_with_keyword": 66,
+     "places_code_on_keyword_reports": 114,
+     "zs_alone_right": 89,
+     "rag_alone_right": 52
+    },
+    "encoder": {
+     "right": 22,
+     "false": 22,
+     "false_with_keyword": 19
+    },
+    "device_groups_of_filed": [
+     [
+      "PNW",
+      18
+     ],
+     [
+      "JWH",
+      18
+     ],
+     [
+      "LZO",
+      18
+     ],
+     [
+      "HSN",
+      13
+     ],
+     [
+      "NRA",
+      9
+     ],
+     [
+      "LPH",
+      7
+     ]
+    ],
+    "device_groups_count": 16
+   }
+  }
+ }
+}

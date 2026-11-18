@@ -1,0 +1,4821 @@
+{
+ "note": "notes/why-it-works-2026-11-16.md",
+ "corpus": "sdr",
+ "years": {
+  "2026": {
+   "per_code": [
+    {
+     "code": "INFLT SEPARATION",
+     "filed": 13,
+     "first_filed": "2026-01-11",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      1,
+      3
+     ],
+     "gate_qwen38_27b_first": "2026-02-26",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 13,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 13,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 13,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 13
+    },
+    {
+     "code": "INSTALLED",
+     "filed": 12,
+     "first_filed": "2026-02-10",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-02-10",
+     "gate_qwen38_27b": [
+      1,
+      2
+     ],
+     "gate_qwen38_27b_first": "2026-04-16",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 12,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 12,
+     "gate_gemma4_31b": [
+      1,
+      1
+     ],
+     "gate_gemma4_31b_first": "2026-04-16",
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 12,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 12
+    },
+    {
+     "code": "MISWIRED",
+     "filed": 12,
+     "first_filed": "2026-01-09",
+     "encoder": [
+      3,
+      6
+     ],
+     "encoder_first": "2026-02-25",
+     "gate_qwen38_27b": [
+      7,
+      3
+     ],
+     "gate_qwen38_27b_first": "2026-02-13",
+     "zs_qwen38_27b_right": 8,
+     "zs_qwen38_27b_answered": 12,
+     "rag_qwen38_27b_right": 7,
+     "rag_qwen38_27b_answered": 12,
+     "gate_gemma4_31b": [
+      6,
+      5
+     ],
+     "gate_gemma4_31b_first": "2026-02-25",
+     "zs_gemma4_31b_right": 7,
+     "zs_gemma4_31b_answered": 12,
+     "rag_gemma4_31b_right": 7,
+     "rag_gemma4_31b_answered": 12
+    },
+    {
+     "code": "CRAZED",
+     "filed": 11,
+     "first_filed": "2026-01-02",
+     "encoder": [
+      10,
+      1
+     ],
+     "encoder_first": "2026-01-02",
+     "gate_qwen38_27b": [
+      10,
+      1
+     ],
+     "gate_qwen38_27b_first": "2026-01-02",
+     "zs_qwen38_27b_right": 10,
+     "zs_qwen38_27b_answered": 11,
+     "rag_qwen38_27b_right": 10,
+     "rag_qwen38_27b_answered": 11,
+     "gate_gemma4_31b": [
+      10,
+      1
+     ],
+     "gate_gemma4_31b_first": "2026-01-02",
+     "zs_gemma4_31b_right": 10,
+     "zs_gemma4_31b_answered": 11,
+     "rag_gemma4_31b_right": 10,
+     "rag_gemma4_31b_answered": 11
+    },
+    {
+     "code": "INDICATION",
+     "filed": 10,
+     "first_filed": "2026-03-16",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "UNLOCKED",
+     "filed": 8,
+     "first_filed": "2026-01-18",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      4
+     ],
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      5
+     ],
+     "zs_gemma4_31b_right": 8,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "INTERFERENCE",
+     "filed": 8,
+     "first_filed": "2026-02-16",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-09-17",
+     "gate_qwen38_27b": [
+      5,
+      1
+     ],
+     "gate_qwen38_27b_first": "2026-02-16",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 5,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      5,
+      1
+     ],
+     "gate_gemma4_31b_first": "2026-02-16",
+     "zs_gemma4_31b_right": 7,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 6,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "TEMP REPAIR",
+     "filed": 8,
+     "first_filed": "2026-04-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 5,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "NOISY",
+     "filed": 7,
+     "first_filed": "2026-01-08",
+     "encoder": [
+      0,
+      4
+     ],
+     "gate_qwen38_27b": [
+      0,
+      5
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "NO INDICATION",
+     "filed": 7,
+     "first_filed": "2026-01-15",
+     "encoder": [
+      0,
+      5
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 5,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 5,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "BURST",
+     "filed": 7,
+     "first_filed": "2026-01-19",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-04-25",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-04-25",
+     "zs_qwen38_27b_right": 5,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-04-25",
+     "zs_gemma4_31b_right": 5,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "BLOCKED",
+     "filed": 6,
+     "first_filed": "2026-01-29",
+     "encoder": [
+      1,
+      3
+     ],
+     "encoder_first": "2026-05-18",
+     "gate_qwen38_27b": [
+      2,
+      6
+     ],
+     "gate_qwen38_27b_first": "2026-01-29",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      3,
+      5
+     ],
+     "gate_gemma4_31b_first": "2026-01-29",
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "SEVERED",
+     "filed": 6,
+     "first_filed": "2026-04-21",
+     "encoder": [
+      5,
+      2
+     ],
+     "encoder_first": "2026-08-06",
+     "gate_qwen38_27b": [
+      6,
+      2
+     ],
+     "gate_qwen38_27b_first": "2026-04-21",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 6,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      6,
+      3
+     ],
+     "gate_gemma4_31b_first": "2026-04-21",
+     "zs_gemma4_31b_right": 6,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 6,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "UNCONTROLLABLE",
+     "filed": 6,
+     "first_filed": "2026-01-10",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "FADED",
+     "filed": 6,
+     "first_filed": "2026-02-13",
+     "encoder": [
+      2,
+      0
+     ],
+     "encoder_first": "2026-04-03",
+     "gate_qwen38_27b": [
+      4,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-04-03",
+     "zs_qwen38_27b_right": 5,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 5,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      4,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-04-03",
+     "zs_gemma4_31b_right": 5,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 5,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "INACCURATE",
+     "filed": 6,
+     "first_filed": "2026-04-15",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "DESTROYED",
+     "filed": 6,
+     "first_filed": "2026-01-23",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "UNLATCHED",
+     "filed": 6,
+     "first_filed": "2026-01-26",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "NOT OPENED",
+     "filed": 6,
+     "first_filed": "2026-01-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "MULTIPLE FAIL",
+     "filed": 5,
+     "first_filed": "2026-01-20",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "PINCHED",
+     "filed": 5,
+     "first_filed": "2026-01-25",
+     "encoder": [
+      1,
+      4
+     ],
+     "encoder_first": "2026-10-17",
+     "gate_qwen38_27b": [
+      2,
+      3
+     ],
+     "gate_qwen38_27b_first": "2026-03-14",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      2,
+      3
+     ],
+     "gate_gemma4_31b_first": "2026-03-14",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "OUT OF SEQUENCE",
+     "filed": 5,
+     "first_filed": "2026-02-08",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-02-08",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-02-08",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-02-08",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "AUTO SHUTDOWN",
+     "filed": 5,
+     "first_filed": "2026-01-21",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "ACTIVATION ERROR",
+     "filed": 5,
+     "first_filed": "2026-01-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "DEPLETED",
+     "filed": 4,
+     "first_filed": "2026-03-18",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      4
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "MISCONFIGURED",
+     "filed": 4,
+     "first_filed": "2026-01-05",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "OVERSPEED",
+     "filed": 4,
+     "first_filed": "2026-02-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "OVERPRESSURED",
+     "filed": 4,
+     "first_filed": "2026-02-07",
+     "encoder": [
+      1,
+      1
+     ],
+     "encoder_first": "2026-02-08",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-02-08",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-02-08",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "KINKED",
+     "filed": 4,
+     "first_filed": "2026-05-20",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2026-08-18",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      1,
+      1
+     ],
+     "gate_gemma4_31b_first": "2026-08-18",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "FULL",
+     "filed": 3,
+     "first_filed": "2026-05-12",
+     "encoder": [
+      1,
+      3
+     ],
+     "encoder_first": "2026-05-12",
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2026-05-12",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-05-12",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "FLAMED OUT",
+     "filed": 3,
+     "first_filed": "2026-04-04",
+     "encoder": [
+      2,
+      0
+     ],
+     "encoder_first": "2026-05-26",
+     "gate_qwen38_27b": [
+      3,
+      2
+     ],
+     "gate_qwen38_27b_first": "2026-04-04",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      2,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-05-26",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "PRESSURE LOSS",
+     "filed": 3,
+     "first_filed": "2026-07-03",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "BLEW OUT",
+     "filed": 3,
+     "first_filed": "2026-02-01",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "CHIPPED",
+     "filed": 3,
+     "first_filed": "2026-01-27",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      1,
+      7
+     ],
+     "gate_qwen38_27b_first": "2026-01-27",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      1,
+      7
+     ],
+     "gate_gemma4_31b_first": "2026-01-27",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "SCORED",
+     "filed": 3,
+     "first_filed": "2026-02-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "OIL CONSUMPTION",
+     "filed": 3,
+     "first_filed": "2026-03-26",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "FLAT",
+     "filed": 3,
+     "first_filed": "2026-03-15",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "FOULED",
+     "filed": 3,
+     "first_filed": "2026-05-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "HUNG START",
+     "filed": 3,
+     "first_filed": "2026-02-28",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "BYPASSING",
+     "filed": 2,
+     "first_filed": "2026-07-08",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "DEFLATED",
+     "filed": 2,
+     "first_filed": "2026-01-31",
+     "encoder": [
+      2,
+      12
+     ],
+     "encoder_first": "2026-01-31",
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "OFF TRACK",
+     "filed": 2,
+     "first_filed": "2026-02-10",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "GLAZED",
+     "filed": 2,
+     "first_filed": "2026-06-18",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-08-06",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-08-06",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-08-06",
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "PERFORATED",
+     "filed": 2,
+     "first_filed": "2026-03-13",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-03-13",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-03-13",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "HAZE",
+     "filed": 2,
+     "first_filed": "2026-01-23",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-03-15",
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2026-03-15",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      1
+     ],
+     "gate_gemma4_31b_first": "2026-03-15",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "LOW QUANTITY",
+     "filed": 2,
+     "first_filed": "2026-03-12",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      9
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "OSCILLATES",
+     "filed": 2,
+     "first_filed": "2026-04-04",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "PAX ERROR",
+     "filed": 2,
+     "first_filed": "2026-10-08",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "INADEQUATE",
+     "filed": 2,
+     "first_filed": "2026-03-12",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "TIGHT",
+     "filed": 2,
+     "first_filed": "2026-06-08",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "UNSAFETIED",
+     "filed": 2,
+     "first_filed": "2026-02-13",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "TWISTED",
+     "filed": 2,
+     "first_filed": "2026-04-13",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "CHATTERING",
+     "filed": 2,
+     "first_filed": "2026-05-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "CLOSED",
+     "filed": 2,
+     "first_filed": "2026-03-20",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "CORRUPTED",
+     "filed": 2,
+     "first_filed": "2026-04-09",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "HOT START",
+     "filed": 2,
+     "first_filed": "2026-06-18",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-07-22",
+     "gate_qwen38_27b": [
+      2,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-06-18",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      2,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-06-18",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "REVERSED",
+     "filed": 2,
+     "first_filed": "2026-02-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "RUSTED",
+     "filed": 2,
+     "first_filed": "2026-09-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "SWOLLEN",
+     "filed": 2,
+     "first_filed": "2026-06-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "ICED",
+     "filed": 1,
+     "first_filed": "2026-01-30",
+     "encoder": [
+      1,
+      2
+     ],
+     "encoder_first": "2026-01-30",
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "DISTORTED",
+     "filed": 1,
+     "first_filed": "2026-10-15",
+     "encoder": [
+      1,
+      1
+     ],
+     "encoder_first": "2026-10-15",
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2026-10-15",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      1,
+      1
+     ],
+     "gate_gemma4_31b_first": "2026-10-15",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "POPPED",
+     "filed": 1,
+     "first_filed": "2026-06-08",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNBALANCED",
+     "filed": 1,
+     "first_filed": "2026-07-29",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNDERTORQUED",
+     "filed": 1,
+     "first_filed": "2026-04-30",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "HOT",
+     "filed": 1,
+     "first_filed": "2026-10-11",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "IMPROPER PART",
+     "filed": 1,
+     "first_filed": "2026-06-13",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "MISRIGGED",
+     "filed": 1,
+     "first_filed": "2026-09-15",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OUT OF ROUND",
+     "filed": 1,
+     "first_filed": "2026-07-22",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "CREW ERROR",
+     "filed": 1,
+     "first_filed": "2026-06-08",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "DEACTIVATED",
+     "filed": 1,
+     "first_filed": "2026-07-21",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "HIGH PRESSURE",
+     "filed": 1,
+     "first_filed": "2026-01-20",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "LOW TENSION",
+     "filed": 1,
+     "first_filed": "2026-06-04",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2026-06-04",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2026-06-04",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2026-06-04",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OUT OF TRIM",
+     "filed": 1,
+     "first_filed": "2026-04-23",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OVERTORQUED",
+     "filed": 1,
+     "first_filed": "2026-04-20",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "NOT GROUNDED",
+     "filed": 1,
+     "first_filed": "2026-09-15",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OVERFLOW",
+     "filed": 1,
+     "first_filed": "2026-08-13",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "SLIPPED",
+     "filed": 1,
+     "first_filed": "2026-02-05",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNRESPONSIVE",
+     "filed": 1,
+     "first_filed": "2026-02-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "EXPLODED",
+     "filed": 1,
+     "first_filed": "2026-03-24",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "FLAKING",
+     "filed": 1,
+     "first_filed": "2026-06-18",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "HUNG UP",
+     "filed": 1,
+     "first_filed": "2026-07-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "MULTIPLE IND",
+     "filed": 1,
+     "first_filed": "2026-08-10",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OUT OF DATE",
+     "filed": 1,
+     "first_filed": "2026-07-21",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNBONDED",
+     "filed": 1,
+     "first_filed": "2026-03-04",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNSTABLE",
+     "filed": 1,
+     "first_filed": "2026-05-08",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    }
+   ],
+   "spread": {
+    "qwen38_27b": {
+     "encoder_right": 38,
+     "gate_right": 54,
+     "codes_gaining": 12,
+     "codes_losing": 2,
+     "top_code": "MISWIRED",
+     "top_code_gain": 4,
+     "top_code_share_of_positive_gain": 0.211,
+     "without_top_code": {
+      "encoder_right": 35,
+      "gate_right": 47,
+      "encoder_false": 62,
+      "gate_false": 63
+     }
+    },
+    "gemma4_31b": {
+     "encoder_right": 38,
+     "gate_right": 52,
+     "codes_gaining": 10,
+     "codes_losing": 2,
+     "top_code": "INTERFERENCE",
+     "top_code_gain": 4,
+     "top_code_share_of_positive_gain": 0.235,
+     "without_top_code": {
+      "encoder_right": 37,
+      "gate_right": 47,
+      "encoder_false": 68,
+      "gate_false": 65
+     }
+    }
+   }
+  },
+  "2025": {
+   "per_code": [
+    {
+     "code": "INSTALLED",
+     "filed": 33,
+     "first_filed": "2025-01-05",
+     "encoder": [
+      4,
+      0
+     ],
+     "encoder_first": "2025-08-23",
+     "gate_qwen38_27b": [
+      13,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-01-05",
+     "zs_qwen38_27b_right": 23,
+     "zs_qwen38_27b_answered": 33,
+     "rag_qwen38_27b_right": 16,
+     "rag_qwen38_27b_answered": 33,
+     "gate_gemma4_31b": [
+      11,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-03-23",
+     "zs_gemma4_31b_right": 10,
+     "zs_gemma4_31b_answered": 33,
+     "rag_gemma4_31b_right": 16,
+     "rag_gemma4_31b_answered": 33
+    },
+    {
+     "code": "INFLT SEPARATION",
+     "filed": 24,
+     "first_filed": "2025-01-21",
+     "encoder": [
+      1,
+      1
+     ],
+     "encoder_first": "2025-08-29",
+     "gate_qwen38_27b": [
+      3,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-04-15",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 24,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 24,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-04-15",
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 24,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 24
+    },
+    {
+     "code": "OUT OF DATE",
+     "filed": 15,
+     "first_filed": "2025-01-02",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 15,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 15,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 15,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 15
+    },
+    {
+     "code": "ICED",
+     "filed": 13,
+     "first_filed": "2025-01-06",
+     "encoder": [
+      8,
+      2
+     ],
+     "encoder_first": "2025-01-06",
+     "gate_qwen38_27b": [
+      11,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-01-06",
+     "zs_qwen38_27b_right": 11,
+     "zs_qwen38_27b_answered": 13,
+     "rag_qwen38_27b_right": 8,
+     "rag_qwen38_27b_answered": 13,
+     "gate_gemma4_31b": [
+      11,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-01-06",
+     "zs_gemma4_31b_right": 11,
+     "zs_gemma4_31b_answered": 13,
+     "rag_gemma4_31b_right": 8,
+     "rag_gemma4_31b_answered": 13
+    },
+    {
+     "code": "UNLACED",
+     "filed": 13,
+     "first_filed": "2025-02-15",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 13,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 13,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 13,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 13
+    },
+    {
+     "code": "BYPASSING",
+     "filed": 12,
+     "first_filed": "2025-01-20",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 12,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 12,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 5,
+     "zs_gemma4_31b_answered": 12,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 12
+    },
+    {
+     "code": "MULTIPLE FAIL",
+     "filed": 12,
+     "first_filed": "2025-03-18",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 12,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 12,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 12,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 12
+    },
+    {
+     "code": "UNDERTORQUED",
+     "filed": 12,
+     "first_filed": "2025-03-07",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 12,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 12,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 12,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 12
+    },
+    {
+     "code": "FLAMED OUT",
+     "filed": 10,
+     "first_filed": "2025-01-06",
+     "encoder": [
+      2,
+      6
+     ],
+     "encoder_first": "2025-01-06",
+     "gate_qwen38_27b": [
+      5,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-01-06",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 5,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      5,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-01-06",
+     "zs_gemma4_31b_right": 6,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 5,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "CHIPPED",
+     "filed": 10,
+     "first_filed": "2025-01-02",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-04-18",
+     "zs_qwen38_27b_right": 9,
+     "zs_qwen38_27b_answered": 10,
+     "rag_qwen38_27b_right": 5,
+     "rag_qwen38_27b_answered": 10,
+     "gate_gemma4_31b": [
+      1,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-04-18",
+     "zs_gemma4_31b_right": 9,
+     "zs_gemma4_31b_answered": 10,
+     "rag_gemma4_31b_right": 5,
+     "rag_gemma4_31b_answered": 10
+    },
+    {
+     "code": "CRAZED",
+     "filed": 9,
+     "first_filed": "2025-01-14",
+     "encoder": [
+      7,
+      0
+     ],
+     "encoder_first": "2025-01-14",
+     "gate_qwen38_27b": [
+      7,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-01-14",
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 9,
+     "rag_qwen38_27b_right": 7,
+     "rag_qwen38_27b_answered": 9,
+     "gate_gemma4_31b": [
+      7,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-01-14",
+     "zs_gemma4_31b_right": 7,
+     "zs_gemma4_31b_answered": 9,
+     "rag_gemma4_31b_right": 7,
+     "rag_gemma4_31b_answered": 9
+    },
+    {
+     "code": "MISWIRED",
+     "filed": 8,
+     "first_filed": "2025-01-23",
+     "encoder": [
+      3,
+      3
+     ],
+     "encoder_first": "2025-09-02",
+     "gate_qwen38_27b": [
+      4,
+      7
+     ],
+     "gate_qwen38_27b_first": "2025-09-02",
+     "zs_qwen38_27b_right": 6,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 5,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      3,
+      4
+     ],
+     "gate_gemma4_31b_first": "2025-09-02",
+     "zs_gemma4_31b_right": 5,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "UNLATCHED",
+     "filed": 8,
+     "first_filed": "2025-03-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "OIL CONSUMPTION",
+     "filed": 8,
+     "first_filed": "2025-02-11",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 8,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 8,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 6,
+     "zs_gemma4_31b_answered": 8,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 8
+    },
+    {
+     "code": "BLOCKED",
+     "filed": 7,
+     "first_filed": "2025-01-07",
+     "encoder": [
+      1,
+      2
+     ],
+     "encoder_first": "2025-01-07",
+     "gate_qwen38_27b": [
+      2,
+      8
+     ],
+     "gate_qwen38_27b_first": "2025-01-07",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      2,
+      6
+     ],
+     "gate_gemma4_31b_first": "2025-01-07",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "FADED",
+     "filed": 7,
+     "first_filed": "2025-01-05",
+     "encoder": [
+      7,
+      2
+     ],
+     "encoder_first": "2025-01-05",
+     "gate_qwen38_27b": [
+      7,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-01-05",
+     "zs_qwen38_27b_right": 7,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 6,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      7,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-01-05",
+     "zs_gemma4_31b_right": 7,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 6,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "INACCURATE",
+     "filed": 7,
+     "first_filed": "2025-04-04",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 7,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 7,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 7,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 7
+    },
+    {
+     "code": "OFF TRACK",
+     "filed": 6,
+     "first_filed": "2025-04-06",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-04-06",
+     "gate_qwen38_27b": [
+      2,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-04-06",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      2,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-04-06",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "NO INDICATION",
+     "filed": 6,
+     "first_filed": "2025-01-24",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "PINCHED",
+     "filed": 6,
+     "first_filed": "2025-01-17",
+     "encoder": [
+      4,
+      3
+     ],
+     "encoder_first": "2025-01-17",
+     "gate_qwen38_27b": [
+      4,
+      2
+     ],
+     "gate_qwen38_27b_first": "2025-01-17",
+     "zs_qwen38_27b_right": 5,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 5,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      3,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-01-17",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "UNLOCKED",
+     "filed": 6,
+     "first_filed": "2025-02-19",
+     "encoder": [
+      0,
+      6
+     ],
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-10-09",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-10-09",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "MISCONFIGURED",
+     "filed": 6,
+     "first_filed": "2025-01-03",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "PAX ERROR",
+     "filed": 6,
+     "first_filed": "2025-03-09",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "OVERPRESSURED",
+     "filed": 6,
+     "first_filed": "2025-03-01",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      1,
+      4
+     ],
+     "gate_qwen38_27b_first": "2025-03-14",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 6,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 6,
+     "gate_gemma4_31b": [
+      1,
+      4
+     ],
+     "gate_gemma4_31b_first": "2025-03-14",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 6,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 6
+    },
+    {
+     "code": "NOISY",
+     "filed": 5,
+     "first_filed": "2025-04-20",
+     "encoder": [
+      0,
+      9
+     ],
+     "gate_qwen38_27b": [
+      0,
+      9
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      5
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "SCORED",
+     "filed": 5,
+     "first_filed": "2025-04-17",
+     "encoder": [
+      1,
+      3
+     ],
+     "encoder_first": "2025-04-17",
+     "gate_qwen38_27b": [
+      1,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-04-17",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      1,
+      3
+     ],
+     "gate_gemma4_31b_first": "2025-04-17",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "DEACTIVATED",
+     "filed": 5,
+     "first_filed": "2025-01-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "NOT OPENED",
+     "filed": 5,
+     "first_filed": "2025-05-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 5,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 5,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 5,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 5
+    },
+    {
+     "code": "DEFLATED",
+     "filed": 4,
+     "first_filed": "2025-01-01",
+     "encoder": [
+      0,
+      14
+     ],
+     "gate_qwen38_27b": [
+      1,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-07-31",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      1,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-07-31",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "SEVERED",
+     "filed": 4,
+     "first_filed": "2025-03-27",
+     "encoder": [
+      4,
+      2
+     ],
+     "encoder_first": "2025-03-27",
+     "gate_qwen38_27b": [
+      4,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-03-27",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      4,
+      3
+     ],
+     "gate_gemma4_31b_first": "2025-03-27",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "GLAZED",
+     "filed": 4,
+     "first_filed": "2025-10-23",
+     "encoder": [
+      4,
+      1
+     ],
+     "encoder_first": "2025-10-23",
+     "gate_qwen38_27b": [
+      4,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-10-23",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      4,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-10-23",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "PERFORATED",
+     "filed": 4,
+     "first_filed": "2025-07-04",
+     "encoder": [
+      3,
+      4
+     ],
+     "encoder_first": "2025-07-04",
+     "gate_qwen38_27b": [
+      4,
+      8
+     ],
+     "gate_qwen38_27b_first": "2025-07-04",
+     "zs_qwen38_27b_right": 4,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 4,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      4,
+      8
+     ],
+     "gate_gemma4_31b_first": "2025-07-04",
+     "zs_gemma4_31b_right": 4,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 4,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "DESTROYED",
+     "filed": 4,
+     "first_filed": "2025-01-13",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "HOT",
+     "filed": 4,
+     "first_filed": "2025-03-24",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "ACTIVATION ERROR",
+     "filed": 4,
+     "first_filed": "2025-03-08",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "IMPROPER STOW",
+     "filed": 4,
+     "first_filed": "2025-07-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "KINKED",
+     "filed": 4,
+     "first_filed": "2025-03-12",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-03-12",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-03-12",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-03-12",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "TWISTED",
+     "filed": 4,
+     "first_filed": "2025-10-20",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      2,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-10-20",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      2,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-10-20",
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "HUNG START",
+     "filed": 4,
+     "first_filed": "2025-06-10",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "STAINED",
+     "filed": 4,
+     "first_filed": "2025-03-24",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-05-16",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-05-16",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-05-16",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "WITHIN LIMITS",
+     "filed": 4,
+     "first_filed": "2025-03-31",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 4,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 4,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 4,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 4
+    },
+    {
+     "code": "FULL",
+     "filed": 3,
+     "first_filed": "2025-05-28",
+     "encoder": [
+      1,
+      4
+     ],
+     "encoder_first": "2025-05-28",
+     "gate_qwen38_27b": [
+      2,
+      3
+     ],
+     "gate_qwen38_27b_first": "2025-05-28",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      2,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-05-28",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "UNCONTROLLABLE",
+     "filed": 3,
+     "first_filed": "2025-01-25",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "DISTORTED",
+     "filed": 3,
+     "first_filed": "2025-04-28",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-04-28",
+     "gate_qwen38_27b": [
+      2,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-04-28",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      2,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-04-28",
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "PRESSURE LOSS",
+     "filed": 3,
+     "first_filed": "2025-04-11",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-04-11",
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      1,
+      2
+     ],
+     "gate_gemma4_31b_first": "2025-04-11",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "HAZE",
+     "filed": 3,
+     "first_filed": "2025-01-23",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "AUTO SHUTDOWN",
+     "filed": 3,
+     "first_filed": "2025-04-01",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "TEMP REPAIR",
+     "filed": 3,
+     "first_filed": "2025-06-24",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "USED",
+     "filed": 3,
+     "first_filed": "2025-01-12",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "COCKED",
+     "filed": 3,
+     "first_filed": "2025-06-30",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "INADEQUATE",
+     "filed": 3,
+     "first_filed": "2025-02-07",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "OUT OF TRACK",
+     "filed": 3,
+     "first_filed": "2025-04-19",
+     "encoder": [
+      1,
+      3
+     ],
+     "encoder_first": "2025-11-12",
+     "gate_qwen38_27b": [
+      2,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-08-07",
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      2,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-08-07",
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "FLAT",
+     "filed": 3,
+     "first_filed": "2025-04-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "READS HIGH",
+     "filed": 3,
+     "first_filed": "2025-03-25",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "EXPLODED",
+     "filed": 3,
+     "first_filed": "2025-06-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-07-26",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-07-26",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "HOT START",
+     "filed": 3,
+     "first_filed": "2025-05-08",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-06-06",
+     "gate_qwen38_27b": [
+      2,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-05-08",
+     "zs_qwen38_27b_right": 3,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 3,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      2,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-05-08",
+     "zs_gemma4_31b_right": 3,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 3,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "MISPINNED",
+     "filed": 3,
+     "first_filed": "2025-05-09",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "VAPOR",
+     "filed": 3,
+     "first_filed": "2025-10-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 3,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 3,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 3,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 3
+    },
+    {
+     "code": "POPPED",
+     "filed": 2,
+     "first_filed": "2025-03-13",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      6
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      2
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "BLEW OUT",
+     "filed": 2,
+     "first_filed": "2025-07-19",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "BURST",
+     "filed": 2,
+     "first_filed": "2025-02-12",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "DISCOLORED",
+     "filed": 2,
+     "first_filed": "2025-09-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "OUT OF SEQUENCE",
+     "filed": 2,
+     "first_filed": "2025-11-10",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-11-12",
+     "gate_qwen38_27b": [
+      1,
+      1
+     ],
+     "gate_qwen38_27b_first": "2025-11-12",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      1
+     ],
+     "gate_gemma4_31b_first": "2025-11-12",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "DISINTEGRATED",
+     "filed": 2,
+     "first_filed": "2025-01-23",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "LOW QUANTITY",
+     "filed": 2,
+     "first_filed": "2025-01-14",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      7
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      13
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "MISRIGGED",
+     "filed": 2,
+     "first_filed": "2025-06-10",
+     "encoder": [
+      0,
+      9
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "WILL NOT ARM",
+     "filed": 2,
+     "first_filed": "2025-05-18",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      5
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      5
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "OUT OF ROUND",
+     "filed": 2,
+     "first_filed": "2025-03-05",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      1
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 2,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "HIGH PRESSURE",
+     "filed": 2,
+     "first_filed": "2025-06-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "LOW TENSION",
+     "filed": 2,
+     "first_filed": "2025-08-26",
+     "encoder": [
+      0,
+      5
+     ],
+     "gate_qwen38_27b": [
+      0,
+      3
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "RATCHETING",
+     "filed": 2,
+     "first_filed": "2025-05-13",
+     "encoder": [
+      1,
+      0
+     ],
+     "encoder_first": "2025-05-13",
+     "gate_qwen38_27b": [
+      1,
+      0
+     ],
+     "gate_qwen38_27b_first": "2025-05-13",
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      1,
+      0
+     ],
+     "gate_gemma4_31b_first": "2025-05-13",
+     "zs_gemma4_31b_right": 2,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 2,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "TIGHT",
+     "filed": 2,
+     "first_filed": "2025-01-30",
+     "encoder": [
+      0,
+      3
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "FIRE WARNING",
+     "filed": 2,
+     "first_filed": "2025-04-16",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 2,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "FOULED",
+     "filed": 2,
+     "first_filed": "2025-02-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "SHORT",
+     "filed": 2,
+     "first_filed": "2025-03-19",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "CHATTERING",
+     "filed": 2,
+     "first_filed": "2025-02-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "CLOUDY",
+     "filed": 2,
+     "first_filed": "2025-04-01",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "OVER VOLTAGE",
+     "filed": 2,
+     "first_filed": "2025-07-28",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "OVERROTATED",
+     "filed": 2,
+     "first_filed": "2025-05-10",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "SOILED",
+     "filed": 2,
+     "first_filed": "2025-03-30",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 2,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 2,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 2,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 2
+    },
+    {
+     "code": "VIBRATES",
+     "filed": 1,
+     "first_filed": "2025-03-24",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "INTERFERENCE",
+     "filed": 1,
+     "first_filed": "2025-05-19",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      2
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      3
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OSCILLATES",
+     "filed": 1,
+     "first_filed": "2025-03-27",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "OVERSPEED",
+     "filed": 1,
+     "first_filed": "2025-10-14",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "CREW ERROR",
+     "filed": 1,
+     "first_filed": "2025-07-31",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "ENGAGED",
+     "filed": 1,
+     "first_filed": "2025-10-31",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNSAFETIED",
+     "filed": 1,
+     "first_filed": "2025-06-24",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "MISMARKED",
+     "filed": 1,
+     "first_filed": "2025-06-07",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "NON ISSUE",
+     "filed": 1,
+     "first_filed": "2025-11-04",
+     "encoder": [
+      0,
+      2
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      1
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "ROUGH",
+     "filed": 1,
+     "first_filed": "2025-05-05",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "SLIPPED",
+     "filed": 1,
+     "first_filed": "2025-08-03",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "STOPPED",
+     "filed": 1,
+     "first_filed": "2025-05-11",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "CLOSED",
+     "filed": 1,
+     "first_filed": "2025-08-06",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "CORRUPTED",
+     "filed": 1,
+     "first_filed": "2025-09-17",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "FLAKING",
+     "filed": 1,
+     "first_filed": "2025-07-26",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "MULTIPLE IND",
+     "filed": 1,
+     "first_filed": "2025-03-14",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "RUSTED",
+     "filed": 1,
+     "first_filed": "2025-05-21",
+     "encoder": [
+      0,
+      1
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 1,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 1,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 1,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 1,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "UNSTABLE",
+     "filed": 1,
+     "first_filed": "2025-11-26",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    },
+    {
+     "code": "VENTING",
+     "filed": 1,
+     "first_filed": "2025-12-04",
+     "encoder": [
+      0,
+      0
+     ],
+     "gate_qwen38_27b": [
+      0,
+      0
+     ],
+     "zs_qwen38_27b_right": 0,
+     "zs_qwen38_27b_answered": 1,
+     "rag_qwen38_27b_right": 0,
+     "rag_qwen38_27b_answered": 1,
+     "gate_gemma4_31b": [
+      0,
+      0
+     ],
+     "zs_gemma4_31b_right": 0,
+     "zs_gemma4_31b_answered": 1,
+     "rag_gemma4_31b_right": 0,
+     "rag_gemma4_31b_answered": 1
+    }
+   ],
+   "spread": {
+    "qwen38_27b": {
+     "encoder_right": 58,
+     "gate_right": 91,
+     "codes_gaining": 19,
+     "codes_losing": 0,
+     "top_code": "INSTALLED",
+     "top_code_gain": 9,
+     "top_code_share_of_positive_gain": 0.273,
+     "without_top_code": {
+      "encoder_right": 54,
+      "gate_right": 78,
+      "encoder_false": 111,
+      "gate_false": 97
+     }
+    },
+    "gemma4_31b": {
+     "encoder_right": 58,
+     "gate_right": 85,
+     "codes_gaining": 17,
+     "codes_losing": 1,
+     "top_code": "INSTALLED",
+     "top_code_gain": 7,
+     "top_code_share_of_positive_gain": 0.25,
+     "without_top_code": {
+      "encoder_right": 54,
+      "gate_right": 74,
+      "encoder_false": 111,
+      "gate_false": 87
+     }
+    }
+   }
+  }
+ }
+}

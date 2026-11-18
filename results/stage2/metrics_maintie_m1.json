@@ -1,0 +1,108 @@
+{
+ "rotations": {
+  "rot0": {
+   "n_known": 189,
+   "n_novel": 78,
+   "validity": {
+    "haiku45": 0.9925,
+    "sonnet5": 1.0
+   },
+   "auroc": {
+    "msp": 0.697,
+    "energy": 0.7042,
+    "haiku45": 0.6162,
+    "sonnet5": 0.6534
+   },
+   "aupr_novel": {
+    "msp": 0.4231,
+    "energy": 0.4636,
+    "haiku45": 0.367,
+    "sonnet5": 0.3817
+   }
+  },
+  "rot1": {
+   "n_known": 194,
+   "n_novel": 56,
+   "validity": {
+    "haiku45": 0.964,
+    "sonnet5": 1.0
+   },
+   "auroc": {
+    "msp": 0.783,
+    "energy": 0.7907,
+    "haiku45": 0.6148,
+    "sonnet5": 0.622
+   },
+   "aupr_novel": {
+    "msp": 0.3912,
+    "energy": 0.4099,
+    "haiku45": 0.3148,
+    "sonnet5": 0.2997
+   }
+  },
+  "rot2": {
+   "n_known": 195,
+   "n_novel": 51,
+   "validity": {
+    "haiku45": 0.9919,
+    "sonnet5": 1.0
+   },
+   "auroc": {
+    "msp": 0.8396,
+    "energy": 0.8501,
+    "haiku45": 0.3678,
+    "sonnet5": 0.4456
+   },
+   "aupr_novel": {
+    "msp": 0.4383,
+    "energy": 0.4612,
+    "haiku45": 0.1813,
+    "sonnet5": 0.1951
+   }
+  }
+ },
+ "pooled": {
+  "n": 763,
+  "n_novel": 185,
+  "auroc": {
+   "msp": 0.7655,
+   "energy": 0.773,
+   "haiku45": 0.5425,
+   "sonnet5": 0.5829
+  },
+  "contrasts": {
+   "sonnet5_minus_msp": {
+    "point": -0.1826,
+    "ci95": [
+     -0.2495,
+     -0.1252
+    ],
+    "excludes_zero": true
+   },
+   "sonnet5_minus_energy": {
+    "point": -0.1901,
+    "ci95": [
+     -0.2562,
+     -0.1325
+    ],
+    "excludes_zero": true
+   },
+   "msp_minus_energy": {
+    "point": -0.0075,
+    "ci95": [
+     -0.0178,
+     0.0021
+    ],
+    "excludes_zero": false
+   },
+   "haiku45_minus_sonnet5": {
+    "point": -0.0404,
+    "ci95": [
+     -0.0844,
+     0.0032
+    ],
+    "excludes_zero": false
+   }
+  }
+ }
+}

@@ -1,0 +1,291 @@
+{
+ "prereg": "notes/prereg-maude-downstream-2026-11-05.md",
+ "git_head_at_score": "5a3f4a4",
+ "frozen": {
+  "file": "maude_selector_v1.json",
+  "sha256": "e4d84629790c4486eaf746aa353110e5a4f53a01e3fd6c0432da8c48f3ea9a3b"
+ },
+ "population": 762360,
+ "true_reports_by_bin": {
+  "1-5": 597,
+  "6-20": 3156,
+  "21-89": 4700,
+  "90+": 753907
+ },
+ "codes_present_by_bin": {
+  "1-5": 46,
+  "6-20": 37,
+  "21-89": 52,
+  "90+": 288
+ },
+ "weights": {
+  "balanced": 1.0,
+  "rare_1-5_census": 1.0,
+  "rare_6-20": 1.8747,
+  "C": 189.512
+ },
+ "n_C": 3985,
+ "N_C": 755207,
+ "arms": {
+  "enc": {
+   "D1_visible_rare_modes": 7,
+   "rare_reports_right": 36,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 3.9,
+   "D2_ci95": [
+    2.0,
+    7.6
+   ],
+   "D3_precision_rare": 0.9028,
+   "D3_ci95": [
+    0.8252,
+    0.9474
+   ],
+   "rare_placements_total": 39.9,
+   "D4_ratio_median": 0.0,
+   "D4_share_within_2x": 0.065,
+   "D4_share_zero": 0.826,
+   "D5_spearman_all": 0.8936,
+   "D5_spearman_1-5": 0.159,
+   "D5_spearman_6-20": 0.3137,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 19,
+    "reports_right_est": 367.6,
+    "reports_total": 3156,
+    "false_placements_est": 1751.0
+   }
+  },
+  "zs": {
+   "D1_visible_rare_modes": 24,
+   "rare_reports_right": 175,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 6697.9,
+   "D2_ci95": [
+    4418.2,
+    8981.5
+   ],
+   "D3_precision_rare": 0.0255,
+   "D3_ci95": [
+    0.0188,
+    0.0381
+   ],
+   "rare_placements_total": 6872.9,
+   "D4_ratio_median": 0.437,
+   "D4_share_within_2x": 0.152,
+   "D4_share_zero": 0.348,
+   "D5_spearman_all": 0.7057,
+   "D5_spearman_1-5": 0.4053,
+   "D5_spearman_6-20": 0.3297,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 24,
+    "reports_right_est": 807.0,
+    "reports_total": 3156,
+    "false_placements_est": 20687.3
+   }
+  },
+  "rag": {
+   "D1_visible_rare_modes": 17,
+   "rare_reports_right": 103,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 2103.4,
+   "D2_ci95": [
+    966.3,
+    3433.7
+   ],
+   "D3_precision_rare": 0.0467,
+   "D3_ci95": [
+    0.0291,
+    0.0963
+   ],
+   "rare_placements_total": 2206.4,
+   "D4_ratio_median": 0.054,
+   "D4_share_within_2x": 0.152,
+   "D4_share_zero": 0.457,
+   "D5_spearman_all": 0.8832,
+   "D5_spearman_1-5": 0.4613,
+   "D5_spearman_6-20": 0.3706,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 332.2,
+    "reports_total": 3156,
+    "false_placements_est": 2134.8
+   }
+  },
+  "selector": {
+   "D1_visible_rare_modes": 23,
+   "rare_reports_right": 142,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 3060.7,
+   "D2_ci95": [
+    1726.6,
+    4764.4
+   ],
+   "D3_precision_rare": 0.0443,
+   "D3_ci95": [
+    0.0289,
+    0.0759
+   ],
+   "rare_placements_total": 3202.7,
+   "D4_ratio_median": 0.31,
+   "D4_share_within_2x": 0.196,
+   "D4_share_zero": 0.304,
+   "D5_spearman_all": 0.8624,
+   "D5_spearman_1-5": 0.4823,
+   "D5_spearman_6-20": 0.2859,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 28,
+    "reports_right_est": 633.5,
+    "reports_total": 3156,
+    "false_placements_est": 6175.1
+   }
+  },
+  "S_cost": {
+   "D1_visible_rare_modes": 23,
+   "rare_reports_right": 125,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 1354.1,
+   "D2_ci95": [
+    412.1,
+    2491.2
+   ],
+   "D3_precision_rare": 0.0845,
+   "D3_ci95": [
+    0.0478,
+    0.2311
+   ],
+   "rare_placements_total": 1479.1,
+   "D4_ratio_median": 0.244,
+   "D4_share_within_2x": 0.239,
+   "D4_share_zero": 0.326,
+   "D5_spearman_all": 0.8738,
+   "D5_spearman_1-5": 0.5489,
+   "D5_spearman_6-20": 0.2516,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 579.4,
+    "reports_total": 3156,
+    "false_placements_est": 5022.4
+   }
+  },
+  "llm_rare": {
+   "D1_visible_rare_modes": 25,
+   "rare_reports_right": 183,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 6698.9,
+   "D2_ci95": [
+    4419.2,
+    8982.5
+   ],
+   "D3_precision_rare": 0.0266,
+   "D3_ci95": [
+    0.0196,
+    0.0397
+   ],
+   "rare_placements_total": 6881.9,
+   "D4_ratio_median": 0.569,
+   "D4_share_within_2x": 0.196,
+   "D4_share_zero": 0.348,
+   "D5_spearman_all": 0.8394,
+   "D5_spearman_1-5": 0.4098,
+   "D5_spearman_6-20": 0.2802,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 25,
+    "reports_right_est": 1044.3,
+    "reports_total": 3156,
+    "false_placements_est": 22037.9
+   }
+  },
+  "S1": {
+   "D1_visible_rare_modes": 25,
+   "rare_reports_right": 178,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 4800.8,
+   "D2_ci95": [
+    2900.1,
+    6707.2
+   ],
+   "D3_precision_rare": 0.0358,
+   "D3_ci95": [
+    0.0259,
+    0.0578
+   ],
+   "rare_placements_total": 4978.8,
+   "D4_ratio_median": 0.513,
+   "D4_share_within_2x": 0.217,
+   "D4_share_zero": 0.348,
+   "D5_spearman_all": 0.8463,
+   "D5_spearman_1-5": 0.3878,
+   "D5_spearman_6-20": 0.2795,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 25,
+    "reports_right_est": 904.4,
+    "reports_total": 3156,
+    "false_placements_est": 18989.1
+   }
+  },
+  "selector_qwen38_27b": {
+   "D1_visible_rare_modes": 20,
+   "rare_reports_right": 169,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 2597.1,
+   "D2_ci95": [
+    1443.2,
+    4122.6
+   ],
+   "D3_precision_rare": 0.0611,
+   "D3_ci95": [
+    0.0394,
+    0.1047
+   ],
+   "rare_placements_total": 2766.1,
+   "D4_ratio_median": 0.2,
+   "D4_share_within_2x": 0.196,
+   "D4_share_zero": 0.391,
+   "D5_spearman_all": 0.8814,
+   "D5_spearman_1-5": 0.4755,
+   "D5_spearman_6-20": 0.4516,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 26,
+    "reports_right_est": 651.7,
+    "reports_total": 3156,
+    "false_placements_est": 5239.7
+   }
+  },
+  "selector_gemma4_31b": {
+   "D1_visible_rare_modes": 20,
+   "rare_reports_right": 141,
+   "rare_reports_total": 597,
+   "D2_false_rare_placements": 3851.2,
+   "D2_ci95": [
+    2325.8,
+    5737.0
+   ],
+   "D3_precision_rare": 0.0353,
+   "D3_ci95": [
+    0.024,
+    0.0571
+   ],
+   "rare_placements_total": 3992.2,
+   "D4_ratio_median": 0.207,
+   "D4_share_within_2x": 0.152,
+   "D4_share_zero": 0.37,
+   "D5_spearman_all": 0.8695,
+   "D5_spearman_1-5": 0.5481,
+   "D5_spearman_6-20": 0.2758,
+   "mid_6-20": {
+    "visible_modes_lower_bound": 27,
+    "reports_right_est": 538.4,
+    "reports_total": 3156,
+    "false_placements_est": 5434.6
+   }
+  }
+ },
+ "P2_selector_minus_encoder_false_rare": {
+  "point": 3056.7999999999997,
+  "ci95": [
+   1724.6,
+   4762.4
+  ],
+  "excludes_zero": true
+ }
+}

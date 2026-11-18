@@ -1,0 +1,23 @@
+{
+ "rule": "ranks [3+r, ceil(.3C)+r, ceil(.6C)+r, ceil(.85C)+r], r in 0..2",
+ "rotations": [
+  [
+   "Structural deficiency",
+   "Failure to start on demand",
+   "Spurious stop",
+   "High output"
+  ],
+  [
+   "Electrical",
+   "Abnormal instrument reading",
+   "Contamination",
+   "Fail to close"
+  ],
+  [
+   "Plugged / choked",
+   "Fail to function",
+   "Noise",
+   "Fail to open"
+  ]
+ ]
+}

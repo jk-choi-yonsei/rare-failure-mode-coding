@@ -1,0 +1,38 @@
+{
+ "validity": {
+  "haiku45": 0.995253164556962,
+  "sonnet5": 0.995253164556962
+ },
+ "arms": {
+  "svm": {
+   "overall_acc": 0.5632911392405063,
+   "overall_macro_f1": 0.4222916892476933,
+   "head_macro_f1": 0.6001361916419583,
+   "body_macro_f1": 0.5548218998937936,
+   "tail_macro_f1": 0.24059829059829058
+  },
+  "haiku45": {
+   "overall_acc": 0.3829113924050633,
+   "overall_macro_f1": 0.4620546728830801,
+   "head_macro_f1": 0.26735735814747574,
+   "body_macro_f1": 0.6259396156568297,
+   "tail_macro_f1": 0.4446838703092573
+  },
+  "sonnet5": {
+   "overall_acc": 0.41930379746835444,
+   "overall_macro_f1": 0.4707664478857858,
+   "head_macro_f1": 0.29996632269763823,
+   "body_macro_f1": 0.6050171709157137,
+   "tail_macro_f1": 0.4621910043589102
+  }
+ },
+ "gates": {
+  "G0_integrity": true,
+  "G0_signal": true,
+  "best_llm": "sonnet5",
+  "tail_diff_ci95": [
+   0.10287462537462538,
+   0.34419973781928226
+  ]
+ }
+}

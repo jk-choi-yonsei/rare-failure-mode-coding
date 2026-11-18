@@ -1,0 +1,608 @@
+{"custom_id": "r0i000581", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 0, "seconds": 0.947}}
+{"custom_id": "r0i000464", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.555}}
+{"custom_id": "r0i000045", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 185, "seconds": 0.507}}
+{"custom_id": "r0i000436", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 185, "seconds": 0.514}}
+{"custom_id": "r0i000423", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 185, "seconds": 0.501}}
+{"custom_id": "r0i000315", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.524}}
+{"custom_id": "r0i000008", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.531}}
+{"custom_id": "r0i000372", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.469}}
+{"custom_id": "r0i000394", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.516}}
+{"custom_id": "r0i000304", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.536}}
+{"custom_id": "r0i000273", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.517}}
+{"custom_id": "r0i000611", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.557}}
+{"custom_id": "r0i000491", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 12, "cached": 185, "seconds": 0.464}}
+{"custom_id": "r0i000527", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 198, "out": 12, "cached": 185, "seconds": 0.457}}
+{"custom_id": "r0i000450", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.51}}
+{"custom_id": "r0i000403", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.503}}
+{"custom_id": "r0i000446", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000306", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.507}}
+{"custom_id": "r0i000347", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 198, "out": 16, "cached": 185, "seconds": 0.558}}
+{"custom_id": "r0i000587", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.505}}
+{"custom_id": "r0i000142", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.5}}
+{"custom_id": "r0i000202", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.505}}
+{"custom_id": "r0i000459", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.525}}
+{"custom_id": "r0i000623", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.49}}
+{"custom_id": "r0i000427", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.488}}
+{"custom_id": "r0i000540", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.513}}
+{"custom_id": "r0i000333", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 185, "seconds": 0.467}}
+{"custom_id": "r0i000628", "type": "succeeded", "text": "LABEL: Overheating\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.512}}
+{"custom_id": "r0i000250", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 185, "seconds": 0.451}}
+{"custom_id": "r0i000162", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.562}}
+{"custom_id": "r0i000595", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 185, "seconds": 0.484}}
+{"custom_id": "r0i000410", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.476}}
+{"custom_id": "r0i000580", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.467}}
+{"custom_id": "r0i000433", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 185, "seconds": 0.46}}
+{"custom_id": "r0i000174", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.549}}
+{"custom_id": "r0i000092", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.501}}
+{"custom_id": "r0i000141", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 198, "out": 16, "cached": 185, "seconds": 0.555}}
+{"custom_id": "r0i000520", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.626}}
+{"custom_id": "r0i000617", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.464}}
+{"custom_id": "r0i000147", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.515}}
+{"custom_id": "r0i000254", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.518}}
+{"custom_id": "r0i000037", "type": "succeeded", "text": "LABEL: Noise\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 200, "out": 11, "cached": 185, "seconds": 0.455}}
+{"custom_id": "r0i000021", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.488}}
+{"custom_id": "r0i000416", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.483}}
+{"custom_id": "r0i000011", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.554}}
+{"custom_id": "r0i000570", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.495}}
+{"custom_id": "r0i000143", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 185, "seconds": 0.468}}
+{"custom_id": "r0i000090", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 185, "seconds": 0.512}}
+{"custom_id": "r0i000452", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.503}}
+{"custom_id": "r0i000607", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.544}}
+{"custom_id": "r0i000219", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.517}}
+{"custom_id": "r0i000275", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 198, "out": 15, "cached": 185, "seconds": 0.535}}
+{"custom_id": "r0i000197", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.537}}
+{"custom_id": "r0i000573", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.503}}
+{"custom_id": "r0i000569", "type": "succeeded", "text": "LABEL: Noise\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 205, "out": 11, "cached": 185, "seconds": 0.44}}
+{"custom_id": "r0i000397", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000268", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 185, "seconds": 0.521}}
+{"custom_id": "r0i000038", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.541}}
+{"custom_id": "r0i000300", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.467}}
+{"custom_id": "r0i000111", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.525}}
+{"custom_id": "r0i000233", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000529", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 185, "seconds": 0.457}}
+{"custom_id": "r0i000336", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 198, "out": 12, "cached": 185, "seconds": 0.46}}
+{"custom_id": "r0i000386", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.485}}
+{"custom_id": "r0i000426", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.529}}
+{"custom_id": "r0i000247", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 185, "seconds": 0.522}}
+{"custom_id": "r0i000084", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.502}}
+{"custom_id": "r0i000218", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.621}}
+{"custom_id": "r0i000003", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.515}}
+{"custom_id": "r0i000468", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 185, "seconds": 0.57}}
+{"custom_id": "r0i000215", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 185, "seconds": 0.514}}
+{"custom_id": "r0i000487", "type": "succeeded", "text": "LABEL: Electrical\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 185, "seconds": 0.487}}
+{"custom_id": "r0i000522", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.493}}
+{"custom_id": "r0i000281", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.585}}
+{"custom_id": "r0i000483", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 185, "seconds": 0.544}}
+{"custom_id": "r0i000206", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.488}}
+{"custom_id": "r0i000028", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.472}}
+{"custom_id": "r0i000515", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.544}}
+{"custom_id": "r0i000069", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.495}}
+{"custom_id": "r0i000126", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.514}}
+{"custom_id": "r0i000249", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.497}}
+{"custom_id": "r0i000154", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 185, "seconds": 0.563}}
+{"custom_id": "r0i000414", "type": "succeeded", "text": "LABEL: Overheating\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 198, "out": 14, "cached": 185, "seconds": 0.512}}
+{"custom_id": "r0i000156", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.513}}
+{"custom_id": "r0i000484", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.488}}
+{"custom_id": "r0i000524", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.516}}
+{"custom_id": "r0i000211", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.519}}
+{"custom_id": "r0i000018", "type": "succeeded", "text": "LABEL: Fail to open\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.523}}
+{"custom_id": "r0i000256", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 40", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000302", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 198, "out": 13, "cached": 185, "seconds": 0.491}}
+{"custom_id": "r0i000002", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.521}}
+{"custom_id": "r0i000356", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.523}}
+{"custom_id": "r0i000048", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.551}}
+{"custom_id": "r0i000534", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.541}}
+{"custom_id": "r0i000597", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.504}}
+{"custom_id": "r0i000015", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000323", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.475}}
+{"custom_id": "r0i000173", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.511}}
+{"custom_id": "r0i000245", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 198, "out": 16, "cached": 185, "seconds": 0.575}}
+{"custom_id": "r0i000377", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000180", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.477}}
+{"custom_id": "r0i000371", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.619}}
+{"custom_id": "r0i000161", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.499}}
+{"custom_id": "r0i000391", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.494}}
+{"custom_id": "r0i000006", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.536}}
+{"custom_id": "r0i000009", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.495}}
+{"custom_id": "r0i000023", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 12, "cached": 185, "seconds": 0.486}}
+{"custom_id": "r0i000025", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.527}}
+{"custom_id": "r0i000041", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.502}}
+{"custom_id": "r0i000044", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.542}}
+{"custom_id": "r0i000047", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.544}}
+{"custom_id": "r0i000051", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.52}}
+{"custom_id": "r0i000052", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.561}}
+{"custom_id": "r0i000063", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.499}}
+{"custom_id": "r0i000071", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.532}}
+{"custom_id": "r0i000080", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.496}}
+{"custom_id": "r0i000088", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 185, "seconds": 0.519}}
+{"custom_id": "r0i000089", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.517}}
+{"custom_id": "r0i000094", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.501}}
+{"custom_id": "r0i000099", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.515}}
+{"custom_id": "r0i000103", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.496}}
+{"custom_id": "r0i000105", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.497}}
+{"custom_id": "r0i000107", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.51}}
+{"custom_id": "r0i000110", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.493}}
+{"custom_id": "r0i000118", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 198, "out": 16, "cached": 185, "seconds": 0.573}}
+{"custom_id": "r0i000119", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.539}}
+{"custom_id": "r0i000120", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.507}}
+{"custom_id": "r0i000122", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.48}}
+{"custom_id": "r0i000123", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.486}}
+{"custom_id": "r0i000127", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 198, "out": 12, "cached": 185, "seconds": 0.508}}
+{"custom_id": "r0i000134", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.511}}
+{"custom_id": "r0i000135", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.47}}
+{"custom_id": "r0i000139", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.627}}
+{"custom_id": "r0i000144", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.57}}
+{"custom_id": "r0i000150", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.554}}
+{"custom_id": "r0i000164", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.536}}
+{"custom_id": "r0i000179", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.515}}
+{"custom_id": "r0i000182", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.473}}
+{"custom_id": "r0i000191", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.528}}
+{"custom_id": "r0i000195", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.562}}
+{"custom_id": "r0i000216", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 185, "seconds": 0.546}}
+{"custom_id": "r0i000230", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.519}}
+{"custom_id": "r0i000240", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.504}}
+{"custom_id": "r0i000241", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.478}}
+{"custom_id": "r0i000255", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.518}}
+{"custom_id": "r0i000257", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.512}}
+{"custom_id": "r0i000267", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.549}}
+{"custom_id": "r0i000277", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 185, "seconds": 0.601}}
+{"custom_id": "r0i000283", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.566}}
+{"custom_id": "r0i000286", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.503}}
+{"custom_id": "r0i000294", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.512}}
+{"custom_id": "r0i000297", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.528}}
+{"custom_id": "r0i000298", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 185, "seconds": 0.544}}
+{"custom_id": "r0i000313", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.517}}
+{"custom_id": "r0i000314", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.499}}
+{"custom_id": "r0i000316", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.519}}
+{"custom_id": "r0i000318", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.545}}
+{"custom_id": "r0i000320", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 185, "seconds": 0.58}}
+{"custom_id": "r0i000326", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.504}}
+{"custom_id": "r0i000328", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.556}}
+{"custom_id": "r0i000337", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.557}}
+{"custom_id": "r0i000343", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.556}}
+{"custom_id": "r0i000344", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 185, "seconds": 0.535}}
+{"custom_id": "r0i000346", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.554}}
+{"custom_id": "r0i000349", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.506}}
+{"custom_id": "r0i000350", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.501}}
+{"custom_id": "r0i000354", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.571}}
+{"custom_id": "r0i000357", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.531}}
+{"custom_id": "r0i000358", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.497}}
+{"custom_id": "r0i000362", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.501}}
+{"custom_id": "r0i000364", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.472}}
+{"custom_id": "r0i000367", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.533}}
+{"custom_id": "r0i000374", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 185, "seconds": 0.482}}
+{"custom_id": "r0i000375", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.526}}
+{"custom_id": "r0i000380", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.52}}
+{"custom_id": "r0i000388", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.523}}
+{"custom_id": "r0i000390", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 203, "out": 12, "cached": 185, "seconds": 0.473}}
+{"custom_id": "r0i000404", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.524}}
+{"custom_id": "r0i000405", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.505}}
+{"custom_id": "r0i000411", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.564}}
+{"custom_id": "r0i000429", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.548}}
+{"custom_id": "r0i000430", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.546}}
+{"custom_id": "r0i000432", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.537}}
+{"custom_id": "r0i000440", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.502}}
+{"custom_id": "r0i000442", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.504}}
+{"custom_id": "r0i000454", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.527}}
+{"custom_id": "r0i000455", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.552}}
+{"custom_id": "r0i000462", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.507}}
+{"custom_id": "r0i000463", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.572}}
+{"custom_id": "r0i000472", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.519}}
+{"custom_id": "r0i000479", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.57}}
+{"custom_id": "r0i000486", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.559}}
+{"custom_id": "r0i000488", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 16, "cached": 185, "seconds": 0.561}}
+{"custom_id": "r0i000489", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 185, "seconds": 0.525}}
+{"custom_id": "r0i000497", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.501}}
+{"custom_id": "r0i000501", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 185, "seconds": 0.546}}
+{"custom_id": "r0i000503", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 198, "out": 16, "cached": 185, "seconds": 0.561}}
+{"custom_id": "r0i000504", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 90", "finish_reason": "stop", "usage": {"in": 198, "out": 16, "cached": 185, "seconds": 0.539}}
+{"custom_id": "r0i000506", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.513}}
+{"custom_id": "r0i000511", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.509}}
+{"custom_id": "r0i000528", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.546}}
+{"custom_id": "r0i000535", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.534}}
+{"custom_id": "r0i000537", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 185, "seconds": 0.514}}
+{"custom_id": "r0i000542", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 12, "cached": 185, "seconds": 0.468}}
+{"custom_id": "r0i000544", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 185, "seconds": 0.557}}
+{"custom_id": "r0i000547", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 185, "seconds": 0.492}}
+{"custom_id": "r0i000550", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.522}}
+{"custom_id": "r0i000551", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.541}}
+{"custom_id": "r0i000556", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 185, "seconds": 0.569}}
+{"custom_id": "r0i000559", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.51}}
+{"custom_id": "r0i000568", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.535}}
+{"custom_id": "r0i000582", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 185, "seconds": 0.53}}
+{"custom_id": "r0i000585", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 13, "cached": 185, "seconds": 0.499}}
+{"custom_id": "r0i000588", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 199, "out": 15, "cached": 185, "seconds": 0.516}}
+{"custom_id": "r0i000590", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.514}}
+{"custom_id": "r0i000592", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 185, "seconds": 0.494}}
+{"custom_id": "r0i000614", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 199, "out": 14, "cached": 185, "seconds": 0.513}}
+{"custom_id": "r1i000080", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 0, "seconds": 0.841}}
+{"custom_id": "r1i000371", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.552}}
+{"custom_id": "r1i000607", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.537}}
+{"custom_id": "r1i000315", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.494}}
+{"custom_id": "r1i000540", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.491}}
+{"custom_id": "r1i000348", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 15, "cached": 187, "seconds": 0.536}}
+{"custom_id": "r1i000005", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.499}}
+{"custom_id": "r1i000111", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.523}}
+{"custom_id": "r1i000092", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.528}}
+{"custom_id": "r1i000130", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.564}}
+{"custom_id": "r1i000058", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.52}}
+{"custom_id": "r1i000433", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 203, "out": 12, "cached": 187, "seconds": 0.487}}
+{"custom_id": "r1i000501", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.518}}
+{"custom_id": "r1i000094", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r1i000144", "type": "succeeded", "text": "LABEL: High output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.486}}
+{"custom_id": "r1i000444", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.501}}
+{"custom_id": "r1i000216", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.501}}
+{"custom_id": "r1i000243", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.489}}
+{"custom_id": "r1i000337", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r1i000272", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.519}}
+{"custom_id": "r1i000385", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.491}}
+{"custom_id": "r1i000406", "type": "succeeded", "text": "LABEL: Noise\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 204, "out": 11, "cached": 187, "seconds": 0.456}}
+{"custom_id": "r1i000072", "type": "succeeded", "text": "LABEL: Overheating\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r1i000448", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.563}}
+{"custom_id": "r1i000076", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.58}}
+{"custom_id": "r1i000194", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.538}}
+{"custom_id": "r1i000254", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.524}}
+{"custom_id": "r1i000515", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.462}}
+{"custom_id": "r1i000591", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 15, "cached": 187, "seconds": 0.555}}
+{"custom_id": "r1i000251", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.551}}
+{"custom_id": "r1i000533", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.497}}
+{"custom_id": "r1i000603", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.544}}
+{"custom_id": "r1i000514", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.511}}
+{"custom_id": "r1i000361", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.478}}
+{"custom_id": "r1i000298", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.497}}
+{"custom_id": "r1i000349", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.5}}
+{"custom_id": "r1i000317", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.5}}
+{"custom_id": "r1i000572", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.503}}
+{"custom_id": "r1i000532", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.477}}
+{"custom_id": "r1i000037", "type": "succeeded", "text": "LABEL: Noise\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 11, "cached": 187, "seconds": 0.42}}
+{"custom_id": "r1i000542", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.556}}
+{"custom_id": "r1i000311", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.52}}
+{"custom_id": "r1i000011", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.54}}
+{"custom_id": "r1i000262", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.51}}
+{"custom_id": "r1i000090", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 15, "cached": 187, "seconds": 0.55}}
+{"custom_id": "r1i000089", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.554}}
+{"custom_id": "r1i000234", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.447}}
+{"custom_id": "r1i000614", "type": "succeeded", "text": "LABEL: Fail to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.579}}
+{"custom_id": "r1i000395", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.558}}
+{"custom_id": "r1i000403", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.544}}
+{"custom_id": "r1i000343", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.482}}
+{"custom_id": "r1i000332", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.516}}
+{"custom_id": "r1i000017", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 45", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.508}}
+{"custom_id": "r1i000610", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.552}}
+{"custom_id": "r1i000065", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.532}}
+{"custom_id": "r1i000404", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r1i000283", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.486}}
+{"custom_id": "r1i000087", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.494}}
+{"custom_id": "r1i000547", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.479}}
+{"custom_id": "r1i000163", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.468}}
+{"custom_id": "r1i000581", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.572}}
+{"custom_id": "r1i000249", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.481}}
+{"custom_id": "r1i000484", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.517}}
+{"custom_id": "r1i000418", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.538}}
+{"custom_id": "r1i000486", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.501}}
+{"custom_id": "r1i000383", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 204, "out": 15, "cached": 187, "seconds": 0.546}}
+{"custom_id": "r1i000464", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.576}}
+{"custom_id": "r1i000050", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 14, "cached": 187, "seconds": 0.528}}
+{"custom_id": "r1i000320", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.509}}
+{"custom_id": "r1i000327", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.499}}
+{"custom_id": "r1i000174", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.477}}
+{"custom_id": "r1i000398", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 40", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.47}}
+{"custom_id": "r1i000579", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 15, "cached": 187, "seconds": 0.543}}
+{"custom_id": "r1i000128", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.571}}
+{"custom_id": "r1i000150", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r1i000119", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.562}}
+{"custom_id": "r1i000522", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.512}}
+{"custom_id": "r1i000417", "type": "succeeded", "text": "LABEL: Overheating\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.512}}
+{"custom_id": "r1i000018", "type": "succeeded", "text": "LABEL: Fail to open\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.525}}
+{"custom_id": "r1i000609", "type": "succeeded", "text": "LABEL: Noise\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.461}}
+{"custom_id": "r1i000101", "type": "succeeded", "text": "LABEL: Fail to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 16, "cached": 187, "seconds": 0.562}}
+{"custom_id": "r1i000577", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.505}}
+{"custom_id": "r1i000248", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.563}}
+{"custom_id": "r1i000425", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.58}}
+{"custom_id": "r1i000333", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.496}}
+{"custom_id": "r1i000154", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.553}}
+{"custom_id": "r1i000452", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.557}}
+{"custom_id": "r1i000548", "type": "succeeded", "text": "LABEL: Plugged / choked\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.565}}
+{"custom_id": "r1i000314", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.512}}
+{"custom_id": "r1i000025", "type": "succeeded", "text": "LABEL: Fail to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.58}}
+{"custom_id": "r1i000193", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.553}}
+{"custom_id": "r1i000175", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.507}}
+{"custom_id": "r1i000280", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.532}}
+{"custom_id": "r1i000001", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 206, "out": 14, "cached": 187, "seconds": 0.511}}
+{"custom_id": "r1i000049", "type": "succeeded", "text": "LABEL: High output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.497}}
+{"custom_id": "r1i000509", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.512}}
+{"custom_id": "r1i000290", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.517}}
+{"custom_id": "r1i000586", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.532}}
+{"custom_id": "r1i000407", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.552}}
+{"custom_id": "r1i000181", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.452}}
+{"custom_id": "r1i000322", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.474}}
+{"custom_id": "r1i000435", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r1i000488", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.563}}
+{"custom_id": "r1i000427", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.476}}
+{"custom_id": "r1i000431", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.47}}
+{"custom_id": "r1i000573", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.503}}
+{"custom_id": "r1i000339", "type": "succeeded", "text": "LABEL: Fail to open\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.486}}
+{"custom_id": "r1i000405", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.474}}
+{"custom_id": "r1i000022", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.549}}
+{"custom_id": "r1i000070", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.488}}
+{"custom_id": "r1i000077", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.513}}
+{"custom_id": "r1i000100", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.516}}
+{"custom_id": "r1i000102", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.572}}
+{"custom_id": "r1i000104", "type": "succeeded", "text": "LABEL: Fail to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.56}}
+{"custom_id": "r1i000114", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.515}}
+{"custom_id": "r1i000121", "type": "succeeded", "text": "LABEL: Fail to open\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.515}}
+{"custom_id": "r1i000131", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.522}}
+{"custom_id": "r1i000137", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.509}}
+{"custom_id": "r1i000142", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.519}}
+{"custom_id": "r1i000143", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 204, "out": 15, "cached": 187, "seconds": 0.549}}
+{"custom_id": "r1i000145", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.56}}
+{"custom_id": "r1i000157", "type": "succeeded", "text": "LABEL: High output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.487}}
+{"custom_id": "r1i000165", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.515}}
+{"custom_id": "r1i000166", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.498}}
+{"custom_id": "r1i000170", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.496}}
+{"custom_id": "r1i000173", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.553}}
+{"custom_id": "r1i000186", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.51}}
+{"custom_id": "r1i000188", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.546}}
+{"custom_id": "r1i000201", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.565}}
+{"custom_id": "r1i000202", "type": "succeeded", "text": "LABEL: Fail to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.584}}
+{"custom_id": "r1i000204", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.547}}
+{"custom_id": "r1i000211", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.516}}
+{"custom_id": "r1i000212", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.567}}
+{"custom_id": "r1i000218", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.545}}
+{"custom_id": "r1i000222", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.538}}
+{"custom_id": "r1i000223", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.489}}
+{"custom_id": "r1i000226", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.489}}
+{"custom_id": "r1i000227", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.487}}
+{"custom_id": "r1i000228", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.488}}
+{"custom_id": "r1i000229", "type": "succeeded", "text": "LABEL: High output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.489}}
+{"custom_id": "r1i000233", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.526}}
+{"custom_id": "r1i000253", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.518}}
+{"custom_id": "r1i000258", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.491}}
+{"custom_id": "r1i000261", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.514}}
+{"custom_id": "r1i000264", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.53}}
+{"custom_id": "r1i000265", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.515}}
+{"custom_id": "r1i000271", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.553}}
+{"custom_id": "r1i000276", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 205, "out": 16, "cached": 187, "seconds": 0.565}}
+{"custom_id": "r1i000288", "type": "succeeded", "text": "LABEL: High output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.481}}
+{"custom_id": "r1i000296", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.547}}
+{"custom_id": "r1i000302", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 187, "seconds": 0.485}}
+{"custom_id": "r1i000304", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.552}}
+{"custom_id": "r1i000306", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.516}}
+{"custom_id": "r1i000307", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.531}}
+{"custom_id": "r1i000310", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.525}}
+{"custom_id": "r1i000321", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.562}}
+{"custom_id": "r1i000329", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 45", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r1i000330", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.514}}
+{"custom_id": "r1i000334", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.538}}
+{"custom_id": "r1i000335", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.514}}
+{"custom_id": "r1i000342", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.57}}
+{"custom_id": "r1i000352", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.519}}
+{"custom_id": "r1i000366", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.521}}
+{"custom_id": "r1i000372", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.501}}
+{"custom_id": "r1i000377", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.511}}
+{"custom_id": "r1i000378", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 45", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.525}}
+{"custom_id": "r1i000382", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 205, "out": 14, "cached": 187, "seconds": 0.52}}
+{"custom_id": "r1i000389", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.54}}
+{"custom_id": "r1i000394", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.535}}
+{"custom_id": "r1i000399", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 15", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.504}}
+{"custom_id": "r1i000416", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.522}}
+{"custom_id": "r1i000423", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 205, "out": 14, "cached": 187, "seconds": 0.515}}
+{"custom_id": "r1i000438", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.568}}
+{"custom_id": "r1i000443", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.517}}
+{"custom_id": "r1i000446", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.512}}
+{"custom_id": "r1i000449", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r1i000456", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 45", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.515}}
+{"custom_id": "r1i000471", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.518}}
+{"custom_id": "r1i000482", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.527}}
+{"custom_id": "r1i000487", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.512}}
+{"custom_id": "r1i000500", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.572}}
+{"custom_id": "r1i000508", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 203, "out": 15, "cached": 187, "seconds": 0.561}}
+{"custom_id": "r1i000519", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 206, "out": 16, "cached": 187, "seconds": 0.595}}
+{"custom_id": "r1i000524", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.527}}
+{"custom_id": "r1i000534", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.52}}
+{"custom_id": "r1i000539", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.577}}
+{"custom_id": "r1i000543", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.53}}
+{"custom_id": "r1i000546", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.541}}
+{"custom_id": "r1i000552", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.49}}
+{"custom_id": "r1i000562", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.552}}
+{"custom_id": "r1i000564", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.544}}
+{"custom_id": "r1i000565", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.531}}
+{"custom_id": "r1i000575", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 205, "out": 14, "cached": 187, "seconds": 0.504}}
+{"custom_id": "r1i000578", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.471}}
+{"custom_id": "r1i000583", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.516}}
+{"custom_id": "r1i000584", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r1i000605", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 205, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r1i000606", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.511}}
+{"custom_id": "r1i000608", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.526}}
+{"custom_id": "r1i000616", "type": "succeeded", "text": "LABEL: Fail to function\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.514}}
+{"custom_id": "r2i000372", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 0, "seconds": 0.793}}
+{"custom_id": "r2i000156", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.469}}
+{"custom_id": "r2i000525", "type": "succeeded", "text": "LABEL: Electrical\nNOVELTY: 40", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 187, "seconds": 0.458}}
+{"custom_id": "r2i000511", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 203, "out": 15, "cached": 187, "seconds": 0.524}}
+{"custom_id": "r2i000462", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.48}}
+{"custom_id": "r2i000107", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.461}}
+{"custom_id": "r2i000607", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.52}}
+{"custom_id": "r2i000021", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.532}}
+{"custom_id": "r2i000101", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 16, "cached": 187, "seconds": 0.56}}
+{"custom_id": "r2i000529", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.455}}
+{"custom_id": "r2i000570", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.565}}
+{"custom_id": "r2i000629", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.457}}
+{"custom_id": "r2i000247", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 205, "out": 15, "cached": 187, "seconds": 0.534}}
+{"custom_id": "r2i000423", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 205, "out": 14, "cached": 187, "seconds": 0.503}}
+{"custom_id": "r2i000094", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.557}}
+{"custom_id": "r2i000394", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.458}}
+{"custom_id": "r2i000450", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.479}}
+{"custom_id": "r2i000084", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.494}}
+{"custom_id": "r2i000144", "type": "succeeded", "text": "LABEL: High output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.467}}
+{"custom_id": "r2i000371", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.474}}
+{"custom_id": "r2i000111", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.471}}
+{"custom_id": "r2i000588", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.537}}
+{"custom_id": "r2i000008", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.535}}
+{"custom_id": "r2i000003", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.488}}
+{"custom_id": "r2i000410", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.469}}
+{"custom_id": "r2i000472", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.508}}
+{"custom_id": "r2i000465", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 203, "out": 12, "cached": 187, "seconds": 0.472}}
+{"custom_id": "r2i000559", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.54}}
+{"custom_id": "r2i000452", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.563}}
+{"custom_id": "r2i000524", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r2i000595", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.473}}
+{"custom_id": "r2i000323", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.558}}
+{"custom_id": "r2i000483", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 15, "cached": 187, "seconds": 0.532}}
+{"custom_id": "r2i000446", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.509}}
+{"custom_id": "r2i000233", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.579}}
+{"custom_id": "r2i000489", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.493}}
+{"custom_id": "r2i000611", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.544}}
+{"custom_id": "r2i000283", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.482}}
+{"custom_id": "r2i000520", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.491}}
+{"custom_id": "r2i000182", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.47}}
+{"custom_id": "r2i000580", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.482}}
+{"custom_id": "r2i000504", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.545}}
+{"custom_id": "r2i000304", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.504}}
+{"custom_id": "r2i000161", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.531}}
+{"custom_id": "r2i000528", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.481}}
+{"custom_id": "r2i000362", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.582}}
+{"custom_id": "r2i000256", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 40", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.535}}
+{"custom_id": "r2i000623", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.483}}
+{"custom_id": "r2i000306", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.531}}
+{"custom_id": "r2i000173", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.471}}
+{"custom_id": "r2i000491", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.435}}
+{"custom_id": "r2i000123", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.479}}
+{"custom_id": "r2i000464", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.554}}
+{"custom_id": "r2i000147", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.503}}
+{"custom_id": "r2i000582", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.485}}
+{"custom_id": "r2i000202", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.541}}
+{"custom_id": "r2i000011", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.567}}
+{"custom_id": "r2i000155", "type": "succeeded", "text": "LABEL: Overheating\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.517}}
+{"custom_id": "r2i000245", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.556}}
+{"custom_id": "r2i000468", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.553}}
+{"custom_id": "r2i000375", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.558}}
+{"custom_id": "r2i000343", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.482}}
+{"custom_id": "r2i000215", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.476}}
+{"custom_id": "r2i000174", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r2i000347", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 200, "out": 16, "cached": 187, "seconds": 0.551}}
+{"custom_id": "r2i000351", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.477}}
+{"custom_id": "r2i000142", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.485}}
+{"custom_id": "r2i000600", "type": "succeeded", "text": "LABEL: Electrical\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.446}}
+{"custom_id": "r2i000302", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 187, "seconds": 0.485}}
+{"custom_id": "r2i000427", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.484}}
+{"custom_id": "r2i000336", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 200, "out": 12, "cached": 187, "seconds": 0.466}}
+{"custom_id": "r2i000426", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.556}}
+{"custom_id": "r2i000617", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r2i000540", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.467}}
+{"custom_id": "r2i000162", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.507}}
+{"custom_id": "r2i000120", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.551}}
+{"custom_id": "r2i000436", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.487}}
+{"custom_id": "r2i000211", "type": "succeeded", "text": "LABEL: Electrical\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.452}}
+{"custom_id": "r2i000164", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.479}}
+{"custom_id": "r2i000281", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.568}}
+{"custom_id": "r2i000143", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 204, "out": 12, "cached": 187, "seconds": 0.448}}
+{"custom_id": "r2i000544", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.478}}
+{"custom_id": "r2i000522", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.509}}
+{"custom_id": "r2i000028", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.477}}
+{"custom_id": "r2i000018", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.499}}
+{"custom_id": "r2i000377", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.487}}
+{"custom_id": "r2i000218", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.538}}
+{"custom_id": "r2i000048", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.526}}
+{"custom_id": "r2i000300", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.478}}
+{"custom_id": "r2i000268", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r2i000047", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.547}}
+{"custom_id": "r2i000356", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.476}}
+{"custom_id": "r2i000092", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.488}}
+{"custom_id": "r2i000290", "type": "succeeded", "text": "LABEL: Electrical\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.468}}
+{"custom_id": "r2i000416", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.501}}
+{"custom_id": "r2i000046", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.457}}
+{"custom_id": "r2i000536", "type": "succeeded", "text": "LABEL: Other\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.473}}
+{"custom_id": "r2i000424", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.571}}
+{"custom_id": "r2i000240", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r2i000515", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.468}}
+{"custom_id": "r2i000163", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.566}}
+{"custom_id": "r2i000249", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.484}}
+{"custom_id": "r2i000473", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.472}}
+{"custom_id": "r2i000090", "type": "succeeded", "text": "LABEL: Contamination\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.486}}
+{"custom_id": "r2i000329", "type": "succeeded", "text": "LABEL: Abnormal instrument reading\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.526}}
+{"custom_id": "r2i000066", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.553}}
+{"custom_id": "r2i000065", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.533}}
+{"custom_id": "r2i000284", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.561}}
+{"custom_id": "r2i000487", "type": "succeeded", "text": "LABEL: Spurious stop\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.49}}
+{"custom_id": "r2i000397", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.528}}
+{"custom_id": "r2i000002", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.506}}
+{"custom_id": "r2i000005", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.482}}
+{"custom_id": "r2i000007", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.467}}
+{"custom_id": "r2i000017", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.527}}
+{"custom_id": "r2i000019", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 187, "seconds": 0.53}}
+{"custom_id": "r2i000027", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.475}}
+{"custom_id": "r2i000029", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.517}}
+{"custom_id": "r2i000037", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.468}}
+{"custom_id": "r2i000038", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 40", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.478}}
+{"custom_id": "r2i000043", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.523}}
+{"custom_id": "r2i000050", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 200, "out": 15, "cached": 187, "seconds": 0.537}}
+{"custom_id": "r2i000053", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 187, "seconds": 0.464}}
+{"custom_id": "r2i000059", "type": "succeeded", "text": "LABEL: Leaking\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.485}}
+{"custom_id": "r2i000064", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.479}}
+{"custom_id": "r2i000069", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.529}}
+{"custom_id": "r2i000079", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 12, "cached": 187, "seconds": 0.435}}
+{"custom_id": "r2i000096", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.526}}
+{"custom_id": "r2i000117", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.442}}
+{"custom_id": "r2i000126", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r2i000148", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 40", "finish_reason": "stop", "usage": {"in": 200, "out": 13, "cached": 187, "seconds": 0.564}}
+{"custom_id": "r2i000158", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.57}}
+{"custom_id": "r2i000167", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 204, "out": 12, "cached": 187, "seconds": 0.476}}
+{"custom_id": "r2i000168", "type": "succeeded", "text": "LABEL: Failure to stop on demand\nNOVELTY: 45", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.563}}
+{"custom_id": "r2i000172", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.49}}
+{"custom_id": "r2i000176", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.47}}
+{"custom_id": "r2i000180", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.574}}
+{"custom_id": "r2i000210", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.51}}
+{"custom_id": "r2i000219", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.571}}
+{"custom_id": "r2i000242", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.486}}
+{"custom_id": "r2i000244", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.509}}
+{"custom_id": "r2i000251", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.546}}
+{"custom_id": "r2i000254", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.531}}
+{"custom_id": "r2i000266", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.545}}
+{"custom_id": "r2i000272", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.571}}
+{"custom_id": "r2i000273", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.514}}
+{"custom_id": "r2i000309", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.566}}
+{"custom_id": "r2i000312", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.489}}
+{"custom_id": "r2i000315", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.545}}
+{"custom_id": "r2i000339", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.49}}
+{"custom_id": "r2i000359", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.508}}
+{"custom_id": "r2i000365", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.504}}
+{"custom_id": "r2i000370", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.486}}
+{"custom_id": "r2i000381", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.555}}
+{"custom_id": "r2i000387", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.506}}
+{"custom_id": "r2i000403", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.548}}
+{"custom_id": "r2i000406", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 204, "out": 12, "cached": 187, "seconds": 0.478}}
+{"custom_id": "r2i000409", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 15", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.508}}
+{"custom_id": "r2i000418", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r2i000420", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.522}}
+{"custom_id": "r2i000421", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.502}}
+{"custom_id": "r2i000425", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.565}}
+{"custom_id": "r2i000434", "type": "succeeded", "text": "LABEL: Erratic output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.541}}
+{"custom_id": "r2i000453", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 14, "cached": 187, "seconds": 0.511}}
+{"custom_id": "r2i000457", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.478}}
+{"custom_id": "r2i000459", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.566}}
+{"custom_id": "r2i000460", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 204, "out": 13, "cached": 187, "seconds": 0.496}}
+{"custom_id": "r2i000466", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.568}}
+{"custom_id": "r2i000478", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 16, "cached": 187, "seconds": 0.544}}
+{"custom_id": "r2i000480", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.514}}
+{"custom_id": "r2i000484", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.47}}
+{"custom_id": "r2i000485", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 100", "finish_reason": "stop", "usage": {"in": 201, "out": 16, "cached": 187, "seconds": 0.561}}
+{"custom_id": "r2i000496", "type": "succeeded", "text": "LABEL: Electrical\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 12, "cached": 187, "seconds": 0.447}}
+{"custom_id": "r2i000502", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 95", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.548}}
+{"custom_id": "r2i000505", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 204, "out": 14, "cached": 187, "seconds": 0.532}}
+{"custom_id": "r2i000518", "type": "succeeded", "text": "LABEL: Structural deficiency\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.483}}
+{"custom_id": "r2i000521", "type": "succeeded", "text": "LABEL: Failure to start on demand\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 16, "cached": 187, "seconds": 0.577}}
+{"custom_id": "r2i000523", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r2i000533", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.473}}
+{"custom_id": "r2i000553", "type": "succeeded", "text": "LABEL: Low output\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.504}}
+{"custom_id": "r2i000558", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 0", "finish_reason": "stop", "usage": {"in": 203, "out": 13, "cached": 187, "seconds": 0.501}}
+{"custom_id": "r2i000563", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 14, "cached": 187, "seconds": 0.495}}
+{"custom_id": "r2i000569", "type": "succeeded", "text": "LABEL: Vibration\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 207, "out": 13, "cached": 187, "seconds": 0.509}}
+{"custom_id": "r2i000571", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 15, "cached": 187, "seconds": 0.541}}
+{"custom_id": "r2i000572", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.499}}
+{"custom_id": "r2i000576", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 203, "out": 15, "cached": 187, "seconds": 0.545}}
+{"custom_id": "r2i000587", "type": "succeeded", "text": "LABEL: Minor in-service problems\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 202, "out": 15, "cached": 187, "seconds": 0.541}}
+{"custom_id": "r2i000596", "type": "succeeded", "text": "LABEL: Fail to close\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.476}}
+{"custom_id": "r2i000597", "type": "succeeded", "text": "LABEL: Breakdown\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 13, "cached": 187, "seconds": 0.503}}
+{"custom_id": "r2i000598", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 5", "finish_reason": "stop", "usage": {"in": 202, "out": 13, "cached": 187, "seconds": 0.496}}
+{"custom_id": "r2i000620", "type": "succeeded", "text": "LABEL: NONE_OF_THESE\nNOVELTY: 85", "finish_reason": "stop", "usage": {"in": 201, "out": 15, "cached": 187, "seconds": 0.555}}
+{"custom_id": "r2i000631", "type": "succeeded", "text": "LABEL: Failure to rotate\nNOVELTY: 10", "finish_reason": "stop", "usage": {"in": 201, "out": 14, "cached": 187, "seconds": 0.501}}

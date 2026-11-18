@@ -1,0 +1,14 @@
+{
+ "hidden": [
+  "Abnormal instrument reading",
+  "Contamination",
+  "Electrical",
+  "Fail to close"
+ ],
+ "lr": 5e-05,
+ "val_macro_f1": 0.546,
+ "n_known_classes": 18,
+ "n_train": 389,
+ "n_test_known": 108,
+ "n_novel": 92
+}

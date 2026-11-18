@@ -1,0 +1,182 @@
+{
+ "variant": "cb",
+ "model": "roberta-large",
+ "size": "10k",
+ "seed": 42,
+ "lr": 3e-05,
+ "val_macro_f1": 0.2469,
+ "n_train": 10000,
+ "classes_present": 143,
+ "lr_runs": {
+  "2e-05": {
+   "val_macro_f1": 0.2273,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0026,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0036,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.015,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0504,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.1223,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.1691,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.2025,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.1961,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.2114,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.2131,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.2156,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.2245,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.225,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.2269,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.2273,
+     "minutes": 1.3
+    }
+   ]
+  },
+  "3e-05": {
+   "val_macro_f1": 0.2469,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0027,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0034,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.0063,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.0135,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.0448,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.0992,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.1664,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.1734,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.1967,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.2103,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 11,
+     "val_macro_f1": 0.2294,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 12,
+     "val_macro_f1": 0.2309,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 13,
+     "val_macro_f1": 0.239,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 14,
+     "val_macro_f1": 0.2447,
+     "minutes": 1.3
+    },
+    {
+     "epoch": 15,
+     "val_macro_f1": 0.2469,
+     "minutes": 1.3
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  15,
+  3
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": true,
+ "best_at_last_epoch": true,
+ "weights": "C:\\Users\\jkchoi\\models\\sdr_encoders\\cb-large_10k_seed42"
+}

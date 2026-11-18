@@ -1,0 +1,1119 @@
+{
+ "found": [
+  {
+   "key": "selector",
+   "title": "Is the selector already published under another name?",
+   "answer": "I found no paper that does claim 1. Nothing I opened runs a per-report selector that judges each coder by how many training reports the code it proposed has, after all coders have answered, with the selector frozen on one year and tested on later years. The main gaps remain the ones the first round named: hundreds of codes, per-code base-rate measurement, and the frozen later-year test. That is still not proof that nobody has done it. OpenAlex was blocked for the whole session, Semantic Scholar search mostly failed, and arXiv rate-limited often.\n\nEnergyRoute (full text read) is still the closest paper. Here is precisely what it does:\n- **Routing signal:** the Helmholtz free energy of the encoder's logits, computed before any LLM call.\n- **Thresholds:** the 40th and 80th percentiles of energy, computed on the incoming test batch itself.\n- **Combining:** it fuses rather than selects. Tier 2 mixes in a retrieved-neighbour (kNN) distribution in log space, and Tier 3 averages encoder and LLM probabilities 50/50 over the top 5.\n- **Proposed-label features:** none. No property of the proposed label, such as its frequency or per-class accuracy, enters the routing.\n- **Split:** temporal, which corrects the first-round critic (it had found no split statement). Training is 2018-2020 (82,316 projects); the test is only 500 stratified projects from 2021, under 2 per class across 301 classes.\n- **Frequency groups:** head (top 20% by training frequency), mid (middle 60%) and tail (bottom 20%). Tail micro-F1 rises from 0.333 to 0.583; head gains 0.9 points and mid 2.9 points. Macro-F1 goes from 0.738 to 0.778, against 0.701 for a FrugalGPT cascade. On Web of Science it goes from 0.770 to 0.804 (cascade 0.758).\n- **Zero-shot LLM:** essentially useless on its task (micro-F1 0.002 with GPT-OSS-20B).\n- **Citations:** Europe PMC lists no citing works. It cites FrugalGPT, RouteLLM, Hybrid LLM and energy-based out-of-distribution detection, and none of the newer LLM-vs-encoder deferral papers. The draft's references.bib and manuscript.tex do not cite it.\n\nNew partial precedents:\n- **STREAQ (EMNLP Industry 2025):** routes to the large model when the small model's answer is the rare 'answer of interest'. That is a routing rule keyed on the rarity of the proposed label, which our selector also uses, but each question it routes has only two possible answers.\n- **Arora et al. (EMNLP Industry 2024):** routes from SetFit to an LLM on Monte Carlo dropout variance, over 8-59 intents.\n- **AspectBench (Front AI 2026):** learning-to-defer with several fine-tuned experts, stackers and confidence-gated LLM deferral, on 3-class sentiment.\n- **Amazon Dual-Expert (2024):** the encoder proposes the top K candidates and the LLM picks one.\n- **MILD (Cortes, Mao, Mohri, Zhong 2026):** theory for deferral when one expert is right far more often than the others; it is about the experts, not about rare classes.\n\nEvery published router I opened decides from the encoder's uncertainty or the input text, usually before the LLM answers. Several report results by frequency group, so that part is no longer new.\n\nWhat remains new in claim 1, and narrowly:\n1. The decision uses a property of each proposed answer, the training support of the code each coder named, and is made after all three coders have answered.\n2. It selects one coder's answer instead of fusing, among three coders that include two LLM variants.\n3. It is frozen on the training year and evaluated over a whole later year at natural proportions, on two datasets and with three LLMs.\n4. It is compared head to head with confidence and energy routing.\n\nTwo caveats. The classic Local Class Accuracy and behaviour-knowledge-space methods already judge a classifier by the class it outputs. STREAQ already routes on proposed-label rarity in a binary setting. So the contribution should be stated as an increment, and the paper should show that training support adds something beyond a per-code precision table and beyond energy routing.",
+   "works": [
+    {
+     "citation": "Jang G, Kim MW, Nam Y, Yong Y, Lee KH, Lim C. EnergyRoute: energy-based uncertainty routing for selective retrieval and LLM assistance in hierarchical classification of biotechnology R&D projects. Sci Rep 16:19697 (2026). doi 10.1038/s41598-026-49886-1",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13315699/fullTextXML",
+     "what_they_did": "Routing method:\n- KLUE-RoBERTa-large encoder; the Helmholtz free energy of its logits is the routing signal, computed before any LLM call.\n- Thresholds are the 40th and 80th energy percentiles of the test batch.\n- Tier 1 accepts the encoder's answer. Tier 2 fuses a 20-neighbour hybrid BM25/E5 kNN distribution in log space (lambda 0.7). Tier 3 sends 20% of items to GPT-OSS-20B with retrieved evidence, backfilled from the parent category for tail classes, then averages encoder and LLM 50/50 over the top 5.\n\nData and split:\n- 301 leaf classes with a 964x imbalance.\n- Train 2018-2020 (82,316); test 500 stratified items from 2021; WoS (142 classes, random benchmark split) as a second dataset.\n\nResults:\n- Macro-F1 0.738 to 0.778; FrugalGPT cascade 0.701.\n- Head/mid/tail = top 20/middle 60/bottom 20% by training frequency: tail micro-F1 0.333 to 0.583, head +0.9 points, mid +2.9 points.\n- Zero-shot GPT-OSS-20B micro-F1 0.002.",
+     "bearing": "Takes:\n- 'encoder + retrieval + LLM routing beats the encoder and a confidence cascade on hundreds of imbalanced classes, with gains largest in the tail'\n- 'temporal test year' as a novelty point. It is temporal, but the test is only 500 stratified items, not a natural-proportion year.\n\nLeaves open:\n- choosing after the answers\n- any feature of the proposed label (none used)\n- selection rather than fusion\n- a selector frozen on training data (its thresholds come from the test batch)\n- natural-proportion evaluation and multiple LLMs.\n\nMust be the main head-to-head baseline and must be cited; it is not in references.bib.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Sood P, Agrawal R, Sati M, George C, Ingle D. STREAQ: Selective Tiered Routing for Effective and Affordable Contact Center Quality Assurance. EMNLP 2025 Industry Track, pp. 1711-1726",
+     "url": "https://aclanthology.org/anthology-files/pdf/emnlp/2025.emnlp-industry.121.pdf",
+     "what_they_did": "Two-tier routing:\n- A fine-tuned phi-3-mini answers QA questionnaire items about call transcripts.\n- Items whose small-model answer is the rare 'answer of interest' (minority label) are routed to a large LLM; a fine-tuned RoBERTa router, trained on whether the small model was right, is also used.\n- Reports a 48% cost cut while keeping 88.9% of full-model precision on the rare answer.",
+     "bearing": "Takes:\n- the narrow idea that the rarity of the proposed label is a routing trigger.\n\nLeaves open:\n- the multi-class setting (each question it routes has only two possible answers)\n- training-support counts over hundreds of codes\n- selection among three coders after all have answered\n- frozen later-year test.\n\nShould be cited as the closest instance of label-dependent routing.",
+     "read": "full_text"
+    },
+    {
+     "citation": "L2D-Clinical: Learning to Defer for Adaptive Model Selection in Clinical Text Classification. arXiv 2604.13285 (2026)",
+     "url": "https://arxiv.org/html/2604.13285v1",
+     "what_they_did": "Deferral model:\n- Logistic regression (balanced weights) over BERT confidence, entropy and margin plus text length and keyword features; decides before the LLM is queried.\n\nTasks and split:\n- ADE (binary) and MIMIC-IV treatment outcomes (3 classes).\n- Random 70/15/15 and 80/10/10 splits.\n\nComparisons:\n- Fixed confidence-threshold, random and oracle deferral.\n- MIMIC F1: 0.980 vs 0.887 for BERT.\n\nNo per-frequency analysis.",
+     "bearing": "Takes:\n- 'a logistic model decides per item between encoder and LLM'.\n\nLeaves open:\n- proposed-label features (none)\n- post-answer decision\n- many classes\n- temporal test.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Arora G, Jain S, Merugu S. Intent Detection in the Age of LLMs. EMNLP 2024 Industry Track. arXiv 2410.01627",
+     "url": "https://arxiv.org/html/2410.01627v1",
+     "what_they_did": "Hybrid routing:\n- SetFit runs first; Monte Carlo dropout variance (M samples) flags uncertain queries, which go to an LLM (Claude 3 Haiku, Mistral Large).\n\nData:\n- 8-59 intents.\n\nResult:\n- Hybrid within about 2% of LLM accuracy at about half the latency.",
+     "bearing": "Industry precedent for uncertainty routing from a small model to an LLM; no per-intent frequency features, no post-answer selection, no temporal split. Does not take claim 1.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Evaluating fine-tuned, embedding-based, and zero-shot models for aspect-based sentiment analysis in South Slavic news (AspectBench). Front Artif Intell 2026, doi 10.3389/frai.2026.1844418",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13630737/fullTextXML",
+     "what_they_did": "Learning-to-defer experiments for 3-class entity sentiment:\n- Several fine-tuned PLM experts combined by majority vote, probability averaging, confidence pick and linear/random-forest stackers.\n- Complete LLM deferral (the LLM sees the expert's label and probabilities and keeps or revises it).\n- Confidence-gated selective LLM deferral.\n\nResult:\n- Supervised experts remain best.",
+     "bearing": "Takes:\n- 'stacking / multi-expert deferral over fine-tuned models plus an LLM' in general.\n\nLeaves open:\n- 3 classes only\n- no label-frequency feature\n- no frequency bins.\n\nCites Montreuil 2026 and Kondadadi and Ortega 2026.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Cheng et al. E-Commerce Product Categorization with LLM-based Dual-Expert Classification Paradigm. CustomNLP4U workshop 2024 (Amazon)",
+     "url": "https://aclanthology.org/2024.customnlp4u-1.22/",
+     "what_they_did": "A fine-tuned domain expert proposes the top-K categories; an LLM chooses among them.",
+     "bearing": "Filter-then-rerank family, already covered in the draft; no per-item choice between coders' final answers, no frequency feature. Does not take claim 1.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Cortes C, Mao A, Mohri M, Zhong Y. Optimized Deferral for Imbalanced Settings (MILD). arXiv 2604.27723 (2026)",
+     "url": "https://arxiv.org/abs/2604.27723",
+     "what_they_did": "Two-stage learning-to-defer theory and algorithms for 'expert imbalance', where the router favours the expert that is most often right. Tested on image classification and LLM routing.",
+     "bearing": "Theory reference for why a router can fall back on the majority expert. The imbalance is across experts, not classes; it uses no class-support features. Does not take claim 1.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Montreuil Y et al. Learning-to-Defer with Expert-Conditioned Advice. arXiv 2603.14324 (2026)",
+     "url": "https://arxiv.org/abs/2603.14324",
+     "what_they_did": "Learning-to-defer that jointly picks an expert and the advice it receives, with consistency guarantees.",
+     "bearing": "Not close; no classification-coding setting, no label-frequency features.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Schlee M et al. LabelFusion: Fusing LLMs with Transformer Encoders for Robust Financial News Classification. arXiv 2512.10793",
+     "url": "https://arxiv.org/abs/2512.10793",
+     "what_they_did": "An MLP fuses the output of a prompted LLM with RoBERTa embeddings on a 10-class multi-label Reuters subset. Macro-F1: fusion 96.0, RoBERTa 94.6, LLM 93.9.",
+     "bearing": "A fusion stacker, not a selector; only 10 classes; no frequency features. Already in the first round.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Agarwal R et al. MADE: A Living Benchmark for Multi-Label Text Classification with UQ of Medical Device Adverse Events. ACL 2026 (arXiv 2604.15203)",
+     "url": "https://arxiv.org/abs/2604.15203",
+     "what_they_did": "Builds a temporally split, long-tailed hierarchical multi-label benchmark from device adverse-event reports and benchmarks over 20 encoder and decoder models. Small fine-tuned decoders are best from head to tail; reasoning LLMs help rare labels.",
+     "bearing": "No selector, so it does not take claim 1. It is already cited in the project's notes as made2026. Relevant to claim 2's direction.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Martin, Feng & Peng. Comparing LLM and Fine-Tuned Model Performance on NVDRS Circumstance Extraction. IEEE ICHI 2026, arXiv 2605.21845",
+     "url": "https://arxiv.org/pdf/2605.21845",
+     "what_they_did": "A hybrid approach beats RoBERTa on all 15 circumstances with fewer than 5,000 positive training instances; the largest gains are on the rarest labels.",
+     "bearing": "Claim 2, not claim 1. Its hybrid is assigned per label (static), not per report from the coders' answers.",
+     "read": "snippet"
+    }
+   ],
+   "now_taken": [
+    "Routing between a fine-tuned encoder, kNN/retrieval and an LLM over about 300 imbalanced classes, reported by head/mid/tail frequency groups, beating a confidence cascade by a similar macro-F1 margin (+0.04): EnergyRoute, full text read.",
+    "'Tested on a later year' alone is not new for this design: EnergyRoute trains on 2018-2020 and tests on 2021 (500 stratified items), as does Emer (patents). What remains is a whole later year at natural proportions, with the selector frozen.",
+    "Using the rarity of the label a model proposed as a routing trigger: STREAQ (EMNLP Industry 2025) routes the small model's minority-label answers to a large LLM, in a setting where each question has only two possible answers.",
+    "Learning-to-defer / stacking over several fine-tuned experts plus an LLM, including majority vote, confidence pick and stacker baselines: AspectBench (Front AI 2026), L2D-Clinical, Arora et al. EMNLP Industry 2024.",
+    "Judging a classifier by the class it outputs: Local Class Accuracy and behaviour-knowledge-space methods (first round). So 'training support has no counterpart' must be softened."
+   ],
+   "still_open": [
+    "A selector that chooses among three coders' final answers (encoder, zero-shot LLM, retrieval LLM) per report, after all have answered, using the training support of each proposed code. No paper I opened does this. Every published router I opened (EnergyRoute, L2D-Clinical, Arora, CMBS, TRACER, Emer) decides from the encoder's uncertainty or the input text before the LLM answers, or fuses the outputs. Searched with about 45 distinct queries over WebSearch (10), arXiv (about 25), Europe PMC (10), Crossref (9) and Semantic Scholar (1 of about 9 succeeded); OpenAlex was blocked for the whole session, so citation chasing was limited.",
+    "A selector frozen on one training year and evaluated over a whole later year at natural proportions, on two datasets and with three LLMs. Not found. EnergyRoute's thresholds are computed from the test batch, and its test is stratified (500 items).",
+    "Whether training support adds anything over a per-code precision (LCA/BKS) table and over EnergyRoute-style energy gating. This is an experiment, not a search; no paper runs this comparison.",
+    "Industry venues: one KDD ADS / SIGIR eCom / CIKM applied paper surfaced (CIKM 2026 web-page classification, which is not a selector). The ACL Anthology and KDD proceedings were not searched directly beyond WebSearch, so this was a shallow search.",
+    "Korean-language sources: not searched."
+   ],
+   "channels": "Worked:\n- **Europe PMC:** search, core abstracts and full-text XML all worked. EnergyRoute full text came from here. Its citations endpoint returned 0 citing works for EnergyRoute.\n- **Crossref:** worked but gave noisy relevance. It resolved the titles of the three EAAI 2026 papers by DOI; it carries no abstracts.\n- **WebSearch:** all 10 allowed calls were used, and all returned results.\n- **WebFetch:** arXiv abs/html pages and one ACL Anthology PDF worked; the PDF needed pdftotext. ScienceDirect returned 403.\n\nFailed or partly failed:\n- **OpenAlex:** HTTP 429 on every call, with Retry-After of about 56,000 seconds (about 15.6 hours) and a zero daily budget. So no OpenAlex search and no cites: filter, which cost all citation chasing through OpenAlex.\n- **arXiv API:** returned 429 after about 5 rapid queries. It recovered at 7-second spacing; about 11 of roughly 36 queries were lost.\n- **Semantic Scholar:** search returned 429 on 8 of 9 queries. Single-paper lookups by DOI worked (2 EAAI papers, 1 CIKM), but the EAAI abstracts are null because the papers are closed access.",
+   "queries": [
+    "WS: route each prediction between fine-tuned classifier and LLM using training frequency of the predicted label, long-tail text classification",
+    "WS: learning to defer OR deferral LLM and fine-tuned BERT experts rare classes class frequency feature router",
+    "WS: dynamic classifier selection local class accuracy OR class-conditional competence LLM and fine-tuned transformer",
+    "WS: industry hybrid fine-tuned classifier for head categories and LLM for long-tail categories product taxonomy KDD/EMNLP Industry/SIGIR eCom",
+    "WS: Montreuil 2026 learning to defer expert-conditional advice",
+    "WS: select final label from LLM or fine-tuned model using per-class validation precision",
+    "WS: meta-learner chooses among zero-shot LLM, retrieval LLM and fine-tuned encoder answers, feature number of training examples of predicted class",
+    "WS: label support / class support / training support feature router trust LLM vs classifier",
+    "WS: post-hoc selector picks one of several classifiers' labels using features of predicted label",
+    "WS: hybrid LLM for labels with few training examples, fine-tuned for frequent labels, threshold per label",
+    "arXiv: learning to defer + language model + classifier; defer + imbalanced + experts; multiple experts + defer + language model; dynamic ensemble/classifier selection + LLM; stacking + LLM + BERT; long-tail + LLM + small model; head/tail classes + LLM + route; class frequency + router; label frequency + classifier; ICD + rare codes; occupation coding; rare intents; instance-level model selection; long-tailed + LLM + text classification; rare labels + zero-shot + fine-tuned; class imbalance + routing; extreme multi-label + tail + rerank; intent detection + hybrid; model routing + fine-tuned encoder; SuperICL; learning to defer + class imbalance; defer + rare classes; behavior knowledge space; selective prediction + long-tail; label prior + LLM + rare; mixture of experts + BERT + gate; arbitration + LLM + classifier; cascade + BERT + LLM + imbalanced; router + encoder + LLM + text classification",
+    "Europe PMC: learning to defer + LLM; LLM + fine-tuned + rare/long-tail + routing/defer/selector/cascade; dynamic classifier/ensemble selection + transformer; stacking/meta-learner + LLM + BERT + imbalanced; label/class/training frequency + LLM + ensemble/routing; ICD + LLM + rare codes + hybrid; LLM + BERT + select/route + per-class/number of training examples; narrative coding + LLM + BERT + ensemble + rare; adverse event/incident report + LLM + BERT + ensemble/routing; EnergyRoute/uncertainty routing; EnergyRoute citations",
+    "Crossref: learning to defer LLM fine-tuned; dynamic ensemble selection LLM text; hybrid LLM fine-tuned long-tail rare classes; selecting between LLM and BERT meta-learner; LLM long-tail intent hybrid; e-commerce product categorization LLM long tail; selective ensemble LLM imbalanced maintenance text; dynamic selection LLM BERT per-sample; combining zero-shot LLM and supervised classifier rare categories; DOI lookups of EAAI 115750/114403/114798",
+    "Semantic Scholar: LLM tail labels fine-tuned model head labels hybrid classification (the only search that succeeded); DOI lookups for the EAAI and CIKM papers"
+   ],
+   "unverified": [
+    "Hou, Wang, Xiong, Liu. 'Highly imbalanced intelligent identification of civil aviation maintenance hazards based on text mining and selective ensemble modeling', EAAI 2026, doi 10.1016/j.engappai.2026.114403. The title is confirmed via Crossref and Semantic Scholar; the abstract was not available (closed access, ScienceDirect 403). It uses a selective ensemble on aviation maintenance text, so it could hold a dynamic-selection precedent in our domain. Read it before submission.",
+    "Ding, Zhu, Li, Xie. 'A large language model-augmented hierarchical text classification approach for intelligent failure data management', EAAI 2026, doi 10.1016/j.engappai.2026.115750. Title only; abstract unavailable.",
+    "EAAI 2026 114798 is 'Improving large language model assisted categorization and classification of highway construction accidents' (title only).",
+    "LAVA (Chen, McCormick, Liu, Datta, arXiv 2509.09602): meta-learner ensembles of GPT-5 plus classifiers for verbal-autopsy cause of death. How the meta-learner chooses, and whether it uses training prevalence, was not read.",
+    "Kondadadi and Ortega 2026 (cited in AspectBench as adaptive model selection) is presumably L2D-Clinical; not confirmed.",
+    "Hemmer-style multi-expert learning-to-defer that feeds expert predictions as inputs was not found or read; a gap left by the outage of the citation-chasing APIs."
+   ]
+  },
+  {
+   "key": "tail",
+   "title": "LLMs for tail labels and rare categories",
+   "answer": "Claim 2 is more fully taken than the first round thought, and on our own data source. MADE (Agarwal et al., ACL 2026 Main, arXiv 2604.15203; full text read) is a benchmark built from FDA medical-device adverse event reports via openFDA. Its labels are FDA problem terms mapped to IMDRF codes: 1,154 labels, multi-label, with ancestors added. It uses a strict temporal split (train 2015-2023, validation Jan-Jun 2024, test Jul 2024-Jun 2025) and reports macro-F1 by training-frequency bin (head >1%, medium, tail, extreme tail <0.01%). More than 20 models are compared: discriminatively and generatively fine-tuned Llama 1B-70B (LoRA and full), Ettin encoders, and prompted LLMs given 10 kNN-retrieved training examples, which is our retrieval coder. GPT-5 roughly doubles the best fine-tuned model on the extreme tail (0.34 vs 0.16), ties it on the tail (0.53) and loses on the head (0.68 vs 0.74). Even the fine-tuned 70B model stays at 0.16 on the extreme tail. That backs our 'a tuned LLM does not close the gap' result but means it is no longer new. Emer et al. (patents) and Martin/Feng/Peng (NVDRS) repeat the same split in other domains.\nTwo parts of claim 2 still look open. First, I found no study that sweeps the training size of a fine-tuned model against a fixed LLM and reports the result by class-frequency bin. Generic sweeps exist only in aggregate (Bucher & Martini: RoBERTa-large passes zero-shot BART above about 200 examples; few classes; no per-class bins). Second, our 1-5 training-report bin falls outside MADE's 5-occurrence minimum. The 'LoRA does not close the gap' point is also contested elsewhere: LoRA-tuned generators beat fine-tuned baselines on rare tags in FLAN-FinXC and on long-tailed events in Al Monsur et al. (EACL-F 2026), so it should be stated as a finding for our data, not a general rule.\nOn precision of LLM tail predictions on an unbalanced stream: I found nobody who reports it. MADE reports only macro-F1, Jaccard and uncertainty measures, with no precision/recall split and no false-positive analysis. It also scores on a 'truncated, stratified' 10,288-report test subset after HDBSCAN downsampling that keeps rare labels, so its rare-label scores are not at natural prevalence. This makes MADE a ready, citable example for our 'stratified tests overstate rare-code precision' point; I could not confirm exactly how its stratification was done. MADE has no routing, selection or ensemble across models. The XMC-with-LLM literature (ICXML, Infer-Retrieve-Rank, LLM-as-teacher tagging, ViXML) reports ranking metrics on public benchmarks, and in the abstracts and snippets I saw there were no per-frequency LLM-vs-fine-tuned results and no precision at natural prevalence. The rare-category-discovery search turned up only pre-LLM stream work and LLM false-positive filters.\nNet effect: the draft must cite and position against MADE as the closest prior work for claim 2 and for the MAUDE setting (it is also a public CC0 temporal benchmark that reviewers may ask us to run on). Claim 3's natural-prevalence measurement and the selector of claim 1 are not touched by anything I found in this literature.",
+   "works": [
+    {
+     "citation": "Agarwal R, Wenzel M, Baur S, Zimmer J, Harvey G, Ma J. MADE: A Living Benchmark for Multi-Label Text Classification with Uncertainty Quantification of Medical Device Adverse Events. ACL 2026 (Main); arXiv 2604.15203 (Apr 2026)",
+     "url": "https://arxiv.org/html/2604.15203",
+     "what_they_did": "openFDA device adverse event reports, FDA problem terms mapped to IMDRF codes (1,154 labels over 3 levels, about 8.8 per report, at least 5 occurrences each). Train 2015-2023, validation H1 2024, test Jul 2024-Jun 2025; evaluated on a truncated stratified test subset of 10,288. Discriminative and generative fine-tuning of Llama 1B-70B and Ettin (LoRA vs full), prompting of many open and API LLMs with 10 kNN-retrieved examples. Macro-F1 by frequency bin. GPT-5: 0.54 overall / head 0.68 / tail 0.53 / extreme tail 0.34. Best discriminative Llama-8B: 0.54 / 0.74 / 0.53 / 0.12. Generative Llama-70B: extreme tail 0.16. Also uncertainty quantification. No precision/recall split, no training-size sweep, no model combination. Data CC0 with splits on Hugging Face and code on GitHub.",
+     "bearing": "Takes the core of claim 2 on the same data source: temporal split, frequency bins, retrieval-prompted LLM beating fine-tuned models only in the extreme tail, and fine-tuned LLMs (including 70B) not closing that gap. It leaves open our 1-5 bin, a training-size sweep, single-label leaf codes, natural-prevalence precision (its test is stratified and its rare labels are preserved by downsampling) and any per-report selector. It must be cited, and it supports our point that stratified tests overstate rare-code precision.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Emer, Lippi, Mina, Vandin. Large Language Models for Patent Classification: Strengths, Trade-offs, and the Long Tail Effect. arXiv 2601.23200 (2026)",
+     "url": "https://arxiv.org/abs/2601.23200",
+     "what_they_did": "USPTO-70k: encoders vs open LLMs (zero-shot, few-shot, RAG, LoRA on the best model). Encoders win overall because of frequent CPC subclasses; LLMs do better on rare ones; the authors propose hybrids.",
+     "bearing": "Confirms claim 2 is a replication in a further domain (the first round read the full text). This round saw only search-result summaries.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Martin G, Zhong Feng X, Peng Y. Comparing LLM and Fine-Tuned Model Performance on NVDRS Circumstance Extraction with Varying Prompt Complexity. IEEE ICHI 2026, doi 10.1109/ichi69079.2026.00020",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42626544%20AND%20SRC:MED&format=json&resultType=core",
+     "what_they_did": "LLMs vs fine-tuned RoBERTa on 25 NVDRS circumstances; LLMs much better on low-prevalence ones; a per-circumstance hybrid.",
+     "bearing": "Re-confirmed as prior art for claim 2 (balanced tests, per the first round).",
+     "read": "abstract"
+    },
+    {
+     "citation": "Bucher MJJ, Martini M. Fine-Tuned 'Small' LLMs (Still) Significantly Outperform Zero-Shot Generative AI Models in Text Classification. arXiv 2406.08660",
+     "url": "https://arxiv.org/html/2406.08660v2",
+     "what_they_did": "Training-size sweep N=50-1,000 for RoBERTa-large against zero-shot BART; RoBERTa wins on all datasets above N=200. Tasks are binary or 3-class; aggregate metrics only.",
+     "bearing": "A sweep of fine-tuned vs zero-shot exists, but not by class frequency and not on hundreds of classes. Our per-bin sweep stays open.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Vajjala S, Shimangaud S. Text Classification in the LLM Era - Where do we stand? arXiv 2502.11830",
+     "url": "https://arxiv.org/abs/2502.11830",
+     "what_they_did": "32 datasets, 8 languages: zero-shot vs few-shot fine-tuning vs synthetic-data classifiers. Zero-shot wins only on sentiment.",
+     "bearing": "General background; no frequency bins in the abstract. A search summary says custom classifiers gain as the number of classes grows (not verified in the text).",
+     "read": "abstract"
+    },
+    {
+     "citation": "Buckmann M, Hill E. Logistic Regression makes small LLMs strong and explainable 'tens-of-shot' classifiers. arXiv 2408.03414",
+     "url": "https://arxiv.org/abs/2408.03414",
+     "what_they_did": "17 tasks with 2-4 classes; penalised logistic regression on small-LLM embeddings matches or beats a large LLM in the tens-of-shot regime.",
+     "bearing": "Background on crossover size. The '60-75 samples per class beats GPT-4' figure came only from a search snippet.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Milios A, Reddy S, Bahdanau D. In-Context Learning for Text Classification with Many Labels. arXiv 2309.10954 (GenBench 2023)",
+     "url": "https://export.arxiv.org/api/query?id_list=2309.10954",
+     "what_they_did": "A retrieval model picks the in-context examples for an LLM on intent tasks with many labels; state of the art in the few-shot setting without fine-tuning.",
+     "bearing": "Precedent for our retrieval coder (nearest labelled examples in the prompt); should be cited. No tail-bin analysis.",
+     "read": "abstract"
+    },
+    {
+     "citation": "LLM-codex: Surpassing GPT-4 Medical Coding with a Two-Stage Approach. arXiv 2311.13735",
+     "url": "https://export.arxiv.org/api/query?id_list=2311.13735",
+     "what_they_did": "GPT-4 predicts too many ICD codes (high recall, low precision); an LSTM verifier restores precision, including on rare codes.",
+     "bearing": "Already in the first round's map; over-naming by LLMs is known qualitatively, not measured per code at natural prevalence.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Boyle JS et al. Automated clinical coding using off-the-shelf large language models. arXiv 2310.06552",
+     "url": "https://export.arxiv.org/api/query?id_list=2310.06552",
+     "what_they_did": "Zero- and few-shot ICD coding by tree search over the ontology, motivated by rare codes.",
+     "bearing": "Background for using LLMs on rare codes; no frequency-bin comparison in the abstract.",
+     "read": "abstract"
+    },
+    {
+     "citation": "FLAN-FinXC: Parameter-Efficient Instruction Tuning of LLMs for Extreme Financial Numeral Labelling. arXiv 2405.06671",
+     "url": "https://export.arxiv.org/api/query?id_list=2405.06671",
+     "what_they_did": "LoRA-tuned FLAN-T5 generative XBRL tagging; state of the art, attributed to zero-shot and least-frequent tags.",
+     "bearing": "Counter-evidence to a general 'LoRA-tuned LLM does not close the tail gap' claim (its baseline is AttentionXML, not a prompted frontier LLM). The '35.3% macro-F1 gain on tags with fewer than 10 occurrences' is snippet-only.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Al Monsur A, Bommisetty NV, Kim GL. Event Detection with a Context-Aware Encoder and LoRA for Improved Performance on Long-Tailed Classes. EACL Findings 2026, arXiv 2601.11932",
+     "url": "https://arxiv.org/abs/2601.11932",
+     "what_they_did": "LoRA gives a large macro-F1 boost on long-tailed event types, especially for decoder-only models.",
+     "bearing": "Further evidence that LoRA-tuned decoders can help the tail. Frame our LoRA result as data-specific.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Categorical Prior Lock-in: Why In-Context Learning Fails for Structured Data. arXiv 2606.11961",
+     "url": "https://export.arxiv.org/api/query?id_list=2606.11961",
+     "what_they_did": "ICL with 7B models fails to reproduce rare categories in high-cardinality tabular generation; LoRA fixes it.",
+     "bearing": "Tangential (generation, not classification); no bearing on our claims.",
+     "read": "abstract"
+    },
+    {
+     "citation": "SemEval-2025 Task 9: The Food Hazard Detection Challenge. arXiv 2503.19800",
+     "url": "https://arxiv.org/abs/2503.19800",
+     "what_they_did": "6,644 labelled food-incident reports, long-tailed hazard and product labels; fine-tuned encoder, encoder-decoder and decoder systems tie; LLM synthetic data helps oversampling.",
+     "bearing": "LLM augmentation (rather than LLM inference) for the tail in a safety-report domain; does not take our claims. A possible small extra dataset (CC BY-NC-SA).",
+     "read": "abstract"
+    },
+    {
+     "citation": "Arzideh K et al. Comparison of proprietary and fine-tuned LLMs for multi-label classification of billing codes from radiology reports. Eur Radiol 2026, doi 10.1007/s00330-026-12445-3",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41831028%20AND%20SRC:MED&format=json&resultType=core",
+     "what_they_did": "Fine-tuned 4B model vs GPT-5 and others on GOÄ codes; fine-tuned model better on real reports, GPT-5 better on cleaned ones.",
+     "bearing": "No frequency bins; does not touch our claims.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Overos HD et al. Coding with the machines: machine-assisted coding of rare event data. PNAS Nexus 2024",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:38765715%20AND%20SRC:MED&format=json&resultType=core",
+     "what_they_did": "Compares supervised, semi-supervised and GPT-4 coding of political event data against expert coders.",
+     "bearing": "Despite the title, the abstract reports no precision at rare-event prevalence; leaves claim 3 alone.",
+     "read": "abstract"
+    },
+    {
+     "citation": "How to Estimate Whether You Have Found Several Needles in a Haystack: Measuring Calibration in Multi-Label Text Classification. arXiv 2609.26468",
+     "url": "https://export.arxiv.org/api/query?id_list=2609.26468",
+     "what_they_did": "Label-wise calibration binning that weights positives and negatives equally; LLM calibration in multi-label tasks is an open problem.",
+     "bearing": "Related to evaluation when negatives dominate; does not measure rare-label precision at natural prevalence.",
+     "read": "abstract"
+    },
+    {
+     "citation": "D'Oosterlinck K et al. In-Context Learning for Extreme Multi-Label Classification (Infer-Retrieve-Rank). arXiv 2401.12178",
+     "url": "https://arxiv.org/abs/2401.12178",
+     "what_they_did": "An LLM-retriever program for thousands of classes, tuned with DSPy on tens of examples; state of the art on HOUSE, TECH and TECHWOLF.",
+     "bearing": "XMC-with-LLM line; the abstract has no tail-bin or natural-prevalence precision analysis.",
+     "read": "abstract"
+    }
+   ],
+   "now_taken": [
+    "LLM beats fine-tuned models only on the rarest labels, fine-tuned wins the head, on FDA device adverse event reports with a temporal split and frequency bins, including a retrieval-prompted LLM with 10 kNN examples: MADE (ACL 2026). Claim 2 on MAUDE is a replication, not a discovery.",
+    "Fine-tuned LLMs (LoRA and full, up to 70B) staying far below a frontier prompted LLM on the extreme tail: shown in MADE (0.16 vs 0.34 macro-F1). Our 'LoRA-tuned small LLM does not close the gap' is consistent but not new on this data; other domains show LoRA helping the tail (FLAN-FinXC, Al Monsur EACL-F 2026), so it is not a general rule.",
+    "Retrieval-selected in-context examples for many-label classification (Milios et al. 2023): the retrieval coder needs this citation.",
+    "An example of a benchmark whose rare-label scores come from a stratified test with rare labels preserved by downsampling: MADE. Our 'stratified tests overstate rare precision' argument can use it directly."
+   ],
+   "still_open": [
+    "A training-size sweep of a fine-tuned coder against a fixed LLM reported by code-frequency bin. Not found in MADE, Bucher & Martini (aggregate only), Vajjala, Emer (per the first round), or any of about 30 queries. Moderately hard search, with OpenAlex and Semantic Scholar search unavailable.",
+    "Precision of LLM rare-label answers on an unbalanced, natural-prevalence stream of hundreds of codes. MADE (macro-F1 only, stratified test), the XMC-with-LLM papers and the rare-category searches give none. Searched through 3 WebSearch queries, about 8 arXiv queries and 2 Europe PMC queries.",
+    "Any selector or router across encoder and LLM coders on MAUDE-type data: MADE combines nothing. Not re-searched beyond this literature; see the first round for EnergyRoute and others.",
+    "A bin of codes with 1-5 training reports: MADE drops labels with fewer than 5 occurrences.",
+    "Single-label leaf-code setting on MAUDE (MADE is multi-label with ancestors)."
+   ],
+   "channels": "WebSearch: all 10 allowed calls used, all returned results. The most productive was a query on natural-prevalence precision, which surfaced MADE (ACL 2026), the key find. WebFetch on arXiv abs and html pages worked. MADE's html was read in two passes covering the whole text, but the stratified-test construction was not found in either pass. arXiv export API: about 16 queries succeeded; one burst of about 10 queries got HTTP 429 and was lost, then recovered after spacing. Phrase-AND queries return few hits. OpenAlex: HTTP 429 on every call (about 7 queries lost; no citation chasing possible there). Semantic Scholar: search returned 429 on all 5 attempts. Two citation calls succeeded (MADE: 1 citing work, an uncertainty-quantification paper, irrelevant; Emer: 3 citing works, all irrelevant). One more citation call (Martin et al.) hit 429. Crossref: 1 query worked but was too noisy to use. Europe PMC REST: 7 searches plus abstract fetches all worked; good for clinical and journal items, poor for CS preprints.",
+   "datasets": [
+    "MADE (Fraunhofer HHI): openFDA device adverse event reports. Labels are FDA problem terms filed by reporters (mostly manufacturers), mapped to IMDRF codes. Public (CC0 per the paper; splits on Hugging Face, code on GitHub; download not checked). 488,273 reports after downsampling; 1,154 multi-label codes in 4 frequency bins, with 181 extreme-tail codes at <0.01% of training. Prior work: the paper itself, with more than 20 models. Verdict: not a new source (same as our MAUDE), but a public, temporally split, citable benchmark that reviewers may ask us to report on. Its labels differ from ours (multi-label plus ancestors, with patient problems)."
+   ],
+   "queries": [
+    "WebSearch: LLM zero-shot vs fine-tuned classifier performance by class frequency bins tail classes few training examples long-tail text classification",
+    "WebSearch: how many labeled examples per class until fine-tuned model beats GPT-4 zero-shot crossover learning curve text classification rare classes",
+    "WebSearch: LLM classification hundreds of categories rare categories precision false positives imbalanced real-world distribution long tail evaluation natural prevalence 2025 2026",
+    "WebSearch: LLM reranker or generative extreme multi-label classification tail labels PSP@k comparison with fine-tuned XMC",
+    "WebSearch: LoRA fine-tuned LLM versus encoder BERT rare labels few training examples per label long-tail macro F1 zero-shot LLM better on rare classes",
+    "WebSearch: USPTO-70k patent classification encoder frequent CPC subclasses rare LLM few-shot retrieval",
+    "WebSearch: rare category detection OR rare class discovery with large language models text stream low prevalence precision false positives",
+    "WebSearch: subsampled training data sizes fine-tuned classifier versus fixed LLM zero-shot rare codes gap by code frequency learning curve ICD/occupation/adverse event",
+    "WebSearch: LLM zero-shot classifier over-predicts rare classes false positive rate many-class realistic class distribution",
+    "WebSearch: LLM zero-shot or in-context EUR-Lex MIMIC multi-label frequent vs few-shot vs zero-shot labels by frequency group",
+    "arXiv: all:\"extreme multi-label\" AND all:\"large language model\"",
+    "arXiv: all:\"long-tail\" AND all:LLM AND all:\"text classification\"",
+    "arXiv: all:\"tail labels\" AND all:\"language model\"",
+    "arXiv: all:\"in-context learning\" AND all:extreme AND all:multi-label",
+    "arXiv: all:\"rare classes\" AND all:zero-shot AND all:fine-tuned AND all:classification",
+    "arXiv: all:\"rare category\" AND all:\"large language model\"",
+    "arXiv: all:\"label frequency\" AND all:LLM AND all:fine-tuned",
+    "arXiv: all:\"few-shot classes\" AND all:LLM",
+    "arXiv: long-tailed + LLM + classification + fine-tuning",
+    "arXiv: training set size + zero-shot + LLM + fine-tuned",
+    "arXiv: occupation coding + LLM",
+    "arXiv: rare labels + LLM",
+    "arXiv: abs:\"tail labels\" AND abs:LLM",
+    "arXiv: abs:\"rare classes\" AND abs:LLM AND abs:fine-tuned",
+    "arXiv: abs:\"extreme classification\" AND abs:LLM",
+    "arXiv: abs:\"medical device\" AND abs:\"adverse event\" AND abs:LLM",
+    "arXiv: ti:\"in-context learning\" AND ti:\"many labels\"",
+    "arXiv: abs:\"ICD coding\" AND abs:\"rare codes\" AND abs:LLM",
+    "arXiv: calibration + in-context learning + label bias",
+    "arXiv: synthetic data + long-tail + classification + LLM",
+    "arXiv: data augmentation + LLM + minority classes (0 hits)",
+    "Europe PMC: LLM AND (rare labels/tail labels/rare classes/rare codes) AND (fine-tuned OR BERT) 2024-2026",
+    "Europe PMC: (LLM OR GPT) AND long-tail AND classification AND frequency",
+    "Europe PMC: (medical device OR MAUDE) AND LLM AND (classification OR coding)",
+    "Europe PMC: MedDRA/adverse event AND LLM AND rare AND coding",
+    "Europe PMC: occupation/industry coding AND LLM",
+    "Europe PMC: LLM AND rare event/low prevalence AND coding AND precision/PPV",
+    "OpenAlex (all 429): long-tail LLM; rare classes label frequency; XMC LLM reranking; LLM augmentation long-tail; fine-tuned vs zero-shot training size",
+    "Semantic Scholar (search 429): four queries; citations of MADE and Emer succeeded",
+    "Crossref: LLM long-tailed text classification tail classes fine-tuned"
+   ],
+   "unverified": [
+    "How MADE built its 'truncated, stratified' 10,288-report test set, and whether it oversamples rare labels. The read passes did not find the description. The HDBSCAN downsampling that keeps rare labels is stated.",
+    "MADE's 0.01% extreme-tail threshold corresponds to roughly 30 or fewer training occurrences (my arithmetic from 298,825 training reports, ignoring that labels are multi-label). Not stated in the paper.",
+    "Whether MADE's labels include device-problem codes at the same leaf level as our 471 MAUDE codes. The paper says FDA product and patient problem terms mapped to IMDRF; the overlap with our code list was not checked.",
+    "Buckmann & Hill: 'about 60-75 training samples per class beat GPT-4' (search snippet only).",
+    "FLAN-FinXC: '35.3% macro-F1 gain on tags appearing fewer than 10 times' (search snippet only).",
+    "Vajjala & Shimangaud: 'custom classifiers gain as the number of classes grows' (search summary, not in the abstract I opened).",
+    "ICXML and XLGen tail-label results (search snippets only).",
+    "Whether anything citing MADE after Apr 2026 adds natural-prevalence or selector results. Semantic Scholar listed only 1 citing paper, and OpenAlex was unavailable."
+   ]
+  },
+  {
+   "key": "prevalence",
+   "title": "Has anyone measured LLM coders at natural prevalence?",
+   "answer": "Yes, people have measured LLM coders on natural, unbalanced streams. None that I found does what claim 3 does: count false rare-code answers per code, or pooled, for a zero-shot or retrieval-prompted LLM over hundreds of codes at about 1 in 1,000, and then show that a set of fixes fails.\n\nThe natural-stream studies I found split into three kinds:\n(a) Random natural samples that are too small to say anything about rare codes. Rossow et al. 2025 coded 1,000 Zambian labour-force responses into 436 ISCO and 419 ISIC codes and state themselves that the sample cannot characterise rare categories. Feer et al. 2026 used 200 test narratives over 574 injury labels and report F1 only.\n(b) Natural-frequency and later-period tests with fine-tuned, not zero-shot, generative models. Coutinho et al. 2026 coded Portuguese death certificates: 84k natural test items, 3,644 codes, plus a test on a later six months. Macro precision is about 21% at full-code level, against 80% accuracy. They tried conformal sets and probabilistic quantification but give no rare-code false-positive count.\n(c) Binary or few-label tasks at real base rates. Liao et al. 2026 (ADR, 28 of 7,950, LLM after a rule trigger) count false positives, and a fix worked there: LoRA fine-tuning cut false positives from 16 to 7. Zhou et al. 2023 (NVDRS, 9 circumstances at 1.6-5%) report F1 only.\n\nThe second half of claim 3, that balanced or enriched tests overstate rare-class precision, is taken in principle by work outside LLM coding. Caswell et al. COLING 2020 is a many-class precedent: language ID over up to 1,629 languages, held-out balanced sets look fine, but human-judged web-crawl precision was about 5% for many low-resource languages. They say to report the false positive rate, and tunable wordlist filters plus semi-supervised models raised median precision from 5.5% to 71.2%. That result cuts against a general claim that \"no fix works\". A reviewer may ask why per-code keyword or wordlist filters with a precision knob were not tried. For LLMs specifically, the same point is made by a commentary using simulation (Chen 2026, rare-disease diagnosis) and by Norén et al. Drug Saf 2026; the first round already had Norén.\n\nWhat stays open after this search:\n- the measured per-code false-naming rate of zero-shot and retrieval LLMs across hundreds of codes at about 0.08% prevalence;\n- scoring the same LLM systems under natural, stratified and balanced protocols on one coding task;\n- the failure of a whole set of fixes at that prevalence (prior correction, prompt changes, memory filter, LLM agreement, encoder veto);\n- the coverage ceiling (219 of 552 rare reports reached by any coder).\n\nConfidence is medium, not high, because OpenAlex and Semantic Scholar were unusable and Google Scholar and the statistical-office grey literature were not searched.",
+   "works": [
+    {
+     "citation": "Caswell I, Breiner T, van Esch D, Bapna A. Language ID in the Wild: Unexpected Challenges on the Path to a Thousand-Language Web Text Corpus. COLING 2020; arXiv 2010.14571",
+     "url": "https://arxiv.org/abs/2010.14571",
+     "what_they_did": "Language ID over up to 1,629 languages. Models that score well on held-out sets reach only about 5% human-judged precision on web crawl for many low-resource languages. Section 3.1 ('99% Accuracy Is Not Enough') gives the base-rate formula and says to report the false positive rate as well as precision measured on balanced data. Two fixes, tunable-precision wordlist filters and semi-supervised transformer LangID, raised median dataset precision from 5.5% to 71.2%.",
+     "bearing": "Takes, in principle, 'balanced held-out tests overstate rare-class precision across hundreds of classes', in a non-LLM, non-coding task. It narrows claim 3's 'no fix works': there, per-class lexical filters with a precision knob did work. Our negative result has to be stated for zero-shot and retrieval LLM coders on report codes. A per-code keyword or wordlist filter is an untried fix that a reviewer could ask for.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Coutinho I, Correia GM, Martins B, Moreira A, Peralta-Santos A. ICD coding of death certificates with generative language models. PLOS Digital Health 2026;5(2):e0001245",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12931742/fullTextXML",
+     "what_they_did": "843,103 Portuguese death certificates with 3,644 ICD-10 full codes and a long tail. Train/validation/test split 80/10/10 per code, so the test set has natural frequencies (84,292 items), plus a test on a later period (the last six months of 2021, 57,089 items). Models: fine-tuned BERTimbau and LLaMA-3.2 (fine-tuned or constrained decoding). Full-code accuracy about 80.6-81.1%, but macro precision only about 20-22%. On the later period, accuracy is 74.7% and macro precision 16.8%. They also tried conformal prediction sets and probabilistic classify-and-count quantification. False positives are plotted only for four specific causes. The 64 codes not seen in training were almost all missed.",
+     "bearing": "The closest natural-stream, later-period, many-code study found. It takes 'evaluate code assignment at natural frequency on a later period, with quantification'. It leaves claim 3 alone: the models are fine-tuned, not zero-shot or retrieval-prompted; there is no per-code count of false rare-code answers; there is no fix-failure analysis. Its macro-vs-accuracy gap is consistent with our finding.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Rossow T, Edison T, Hardie R, Mayne H. Transforming Zambia's Labour Force Survey using artificial intelligence. IGC Working Paper ZMB-25058, Oct 2025",
+     "url": "https://www.theigc.org/sites/default/files/2025-10/Rossow-et-al-Working-Paper-October-2025.pdf",
+     "what_they_did": "A RAG plus few-shot LLM pipeline assigns 4-digit ISCO (436 choices) and ISIC (419 choices) codes to 1,000 Labour Force Survey responses. The responses are a random sample from the 2023 survey, labelled by experts at the Zambia Statistics Agency. Exact-match accuracy is 60-63% for ISCO and 57-66% for ISIC, 10-17 points above enumerators. The limitations section says the sample is too small to characterise accuracy on rare occupation and industry categories.",
+     "bearing": "An LLM coding study on a natural random sample in official statistics, with a code list of several hundred. It does not count false rare-code answers and says it cannot. Leaves claim 3 open.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Liao C, Lai X, Chen W, He J, Yu X. Trigger-first large language model-assisted adverse drug reaction surveillance: a pharmacist-supervised retrospective cohort study. Explor Res Clin Soc Pharm 2026; doi 10.1016/j.rcsop.2026.100866",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42959829%20AND%20SRC:MED&format=json&resultType=core",
+     "what_they_did": "7,950 inpatient exposure episodes, 28 of them ADR-positive (about 0.35%). A rule trigger selected 167 candidates (2.1%) with 100% sensitivity. Qwen3-4B, base versus LoRA-fine-tuned, on the candidates: PPV 59% vs 79%. Fine-tuning cut false positives from 16 to 7.",
+     "bearing": "An LLM at real pharmacovigilance base rates with false positives counted and a fix that worked. Binary, enriched by a trigger first, and with 28 positives. Narrows the general framing ('fixes fail at low prevalence') but not our many-code setting.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Zhou W, Prater LC, Goldstein EV, Mooney SJ. Identifying Rare Circumstances Preceding Female Firearm Suicides: Validating a Large Language Model Approach. JMIR Ment Health 2023;10:e49359",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10618876/fullTextXML",
+     "what_they_did": "1,462 NVDRS narratives split 50/50 at natural frequencies. Nine circumstances, all under 5% prevalence (e.g. sleep problem 3.4%, sexual violence 2.6%, bullying 1.6%). Zero-shot FLAN-UL2 yes/no questions against SVMs. The LLM's F1 is above 0.6 for 4 circumstances and above 0.8 for 2. Bullying is near 0 for both.",
+     "bearing": "An early precedent for 'zero-shot LLM beats a trained classifier on rare labels at natural prevalence' (claim 2 territory). Per-label binary questions at 1.6-5%, F1 only, no false-positive analysis. Leaves claim 3 alone.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Feer et al. AI powered patient records analysis for injury surveillance in children and adolescents: a feasibility study from Switzerland. Int J Public Health 2026;71:1609472",
+     "url": "https://www.ssph-journal.org/journals/international-journal-of-public-health/articles/10.3389/ijph.2026.1609472/full",
+     "what_they_did": "30,876 paediatric ED injury narratives. An adapted EU-IDB coding scheme cut from 1,187 to 574 labels. Mistral-7B fine-tuned with LoRA. Random 1,800/200 split. F1 only; level-3 macro F1 is 0.08-0.23. Bayesian classify-and-count for prevalence, with large prevalence gaps between predictions and annotations left unresolved.",
+     "bearing": "A natural random test set with a large injury code list, but tiny and fine-tuned. No false rare-code counts. Leaves claim 3 open.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Kähler M, Konermann K, Kluge L, Schumacher M. Does generative AI supersede supervised XMLC? A Benchmark Study on Automated Subject Indexing with German Scientific Literature. arXiv 2607.14882 (KONVENS 2026 submission)",
+     "url": "https://arxiv.org/html/2607.14882v2",
+     "what_they_did": "German National Library subject indexing. The label space has 204,056 entities, and 8,978 distinct labels appear in a test set of 4,651 documents. Supervised XMLC is compared with three LLM methods. The test set is balanced across 20 subject groups, not natural. LLMs do better on propensity-weighted (tail-emphasising) scores and on graded relevance; XMLC does better on frequent labels. No false-positive rates for rare labels.",
+     "bearing": "Another claim-2-type result (LLMs better on the tail), from extreme multi-label classification. Uses a balanced test design, so it never measures rare-label false naming at natural frequencies. Leaves claim 3 open.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Chen I. Epidemiological spectrum bias limits the clinical validity of LLM-based rare disease diagnostics. Research Square preprint 2026, doi 10.21203/rs.3.rs-10042099/v1",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:PPR1253755%20AND%20SRC:PPR&format=json&resultType=core",
+     "what_they_did": "A commentary arguing that LLM rare-disease benchmarks are artificially enriched and overstate real-world value. Monte Carlo simulations show PPV collapsing at realistic low prevalence.",
+     "bearing": "Takes the argument that enriched or stratified benchmarks overstate LLM rare-class precision, for LLMs, by simulation only. The empirical comparison of the same coders under natural, stratified and balanced protocols stays open.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Perron BE, Stoll D, Victor BG, Qia Z, Jud A, Ryan JP. Validation of a Small Language Model for DSM-5 Substance Category Classification in Child Welfare Records. arXiv 2603.06836 (2026)",
+     "url": "https://arxiv.org/abs/2603.06836",
+     "what_they_did": "A local 20B LLM sorts substance mentions in child-maltreatment narratives into 7 DSM-5 categories. Validated on 900 stratified cases. Five common categories reach kappa 0.94-1.00 and precision 92-100%. The two low-prevalence categories (hallucinogen, inhalant) performed poorly.",
+     "bearing": "A small, stratified example of LLM weakness on rare categories. Not natural prevalence, no per-code false-positive rate. Leaves claim 3 alone.",
+     "read": "abstract"
+    },
+    {
+     "citation": "INSEE SSP Hub project: Recoding NACE 2.0 to NACE 2.1 with LLMs (2026)",
+     "url": "https://ssphub.fr/en/project/2026_recodification_nace/",
+     "what_they_did": "About 1.4M multivocal business-activity records recoded into NACE 2.1 (732 categories). The LLM chooses only among the correspondence-table candidates (RBAG), with a 3-model majority vote. Accuracy is 78% on about 30,000 expert-annotated records, and about 10 points better than plain RAG. A classifier retrained on the LLM labels reaches about 80%.",
+     "bearing": "Large-scale LLM coding in official statistics with candidate restriction. Restricting candidates is a known way to stop free naming of codes. No per-code or rare-code false positives are reported. Leaves claim 3 open.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Gershon A, Soffer S, Nadkarni GN, Klang E. Automatic ICD coding using LLMs: a systematic review. medRxiv 2025, doi 10.1101/2025.07.30.25330916",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:PPR1057986%20AND%20SRC:PPR&format=json&resultType=core",
+     "what_they_did": "A PROSPERO-registered review of 35 studies. Median micro-F1 on frequent codes is 0.79; median macro-F1 on infrequent codes is 0.42. Only 3 studies did external validation.",
+     "bearing": "No reviewed study is described as measuring rare-code false positives at natural prevalence. Supports the view that this gap exists in clinical ICD coding, though from the abstract only.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Gan Y, Rybinski M, Hachey B, Kummerfeld JK. Aligning AI Research with the Needs of Clinical Coding Workflows: Eight Recommendations Based on US Data Analysis and Critical Review. ACL 2025, doi 10.18653/v1/2025.acl-long.45",
+     "url": "https://aclanthology.org/2025.acl-long.45/",
+     "what_they_did": "Criticises evaluation on the MIMIC top-50 code set as an oversimplification when thousands of codes are used in practice, and gives eight recommendations for evaluation.",
+     "bearing": "Part of the evaluation-critique literature that Eng 2026 cites for stratified sampling. The abstract does not mention natural-prevalence false positives, so it does not take claim 3. The eight recommendations were not read.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Achananuparp P, Lim E-P, Lu Y. A Multi-Stage Framework with Taxonomy-Guided Reasoning for Occupation Classification Using Large Language Models. arXiv 2503.12989 (ICWSM 2026)",
+     "url": "https://arxiv.org/abs/2503.12989",
+     "what_they_did": "Inference, retrieval and reranking stages for occupation (and skill) classification against a taxonomy, compared with GPT-4o.",
+     "bearing": "The abstract gives no rare-occupation or natural-prevalence analysis. Leaves claim 3 alone.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Muaz, Janjua, Loughran, St John Lynch. A Framework for LLM-Guided and ISO 5338-Aligned Data Engineering in Medical Device Adverse Event Reporting. IFIP AIAI 2026, doi 10.1007/978-3-032-30805-4_1",
+     "url": "https://api.crossref.org/works/10.1007/978-3-032-30805-4_1",
+     "what_they_did": "According to a search snippet, GPT-OSS-120B coding MAUDE reports into IMDRF device-problem codes reaches 59.49% 'consensus' at level 1 and 23.04% at a deeper level. The authors argue that zero-shot prompting is not enough.",
+     "bearing": "An LLM coding MAUDE with IMDRF codes, on the same dataset as ours, and it should be cited. Its numbers are unverified (the publisher and university pages refused access), and nothing suggests a natural-prevalence rare-code analysis.",
+     "read": "snippet"
+    }
+   ],
+   "now_taken": [
+    "Balanced or held-out test sets overstate rare-class precision over hundreds of classes, with the base-rate formula and advice to report the false positive rate: Caswell et al. COLING 2020 (language ID, up to 1,629 classes, about 5% crawl precision for many low-resource languages; full text read). Also, for LLMs, by simulation: Chen 2026 commentary. The general argument cannot be claimed; only an empirical same-system comparison under natural, stratified and balanced protocols on a coding task can.",
+    "Per-class fixes can rescue rare-class precision at web scale (Caswell 2020: 5.5% to 71.2% median precision with tunable wordlist filters and semi-supervised models). At real pharmacovigilance base rates, a trigger plus LoRA fine-tuning cut LLM false positives (Liao 2026). The negative result 'no fix works' must be stated narrowly: zero-shot and retrieval-prompted LLM coders over a code list, and the specific fixes we tried.",
+    "Evaluating a generative coder on a natural-frequency test set plus a test on a later period, over thousands of codes, with conformal sets and classify-and-count quantification: Coutinho et al. PLOS Digit Health 2026 (fine-tuned LLaMA on death certificates; macro precision about 21% against 80% accuracy).",
+    "LLM coding into several hundred official-statistics codes on a natural random sample: Rossow et al. IGC 2025 (436 ISCO and 419 ISIC codes, n=1,000), INSEE NACE 2.1 recoding (732 codes; candidate-restricted LLM vote).",
+    "Zero-shot LLM beats a trained classifier on rare labels at natural prevalence: Zhou et al. JMIR Ment Health 2023 (NVDRS, 1.6-5%). This is another precedent for claim 2."
+   ],
+   "still_open": [
+    "A measured per-code (and pooled) false-naming rate of zero-shot and retrieval-prompted LLM coders across hundreds of codes in a natural stream at about 1 in 1,000 (our 1 in 45 to 1 in 100 ordinary reports, 97% of rare answers false). Searched in occupation/industry coding (ISCO, SOC, NACE), OIICS and NEISS injury coding, cause-of-death ICD-10, MedDRA and pharmacovigilance, cancer registries and ICD-O, clinical ICD coding, XMLC subject indexing, incident reports and content moderation: about 32 API queries plus 10 web searches and citation chasing from Norén, Martin and Zhou. Every LLM study found is small and random (n=200-1,000), stratified or balanced, binary at 0.35% or more, or fine-tuned rather than zero-shot.",
+    "A set of fixes tested on held-out years and failing at that prevalence: prior correction, prompt changes, memory filter, LLM agreement and encoder veto. The only fixes found in natural-prevalence studies (Caswell wordlists, Liao LoRA, Coutinho conformal and quantification) are either successes in other settings or are not scored on rare-code precision. Not contradicted, but per-code wordlist or keyword filters with a precision knob are untried and a reviewer may ask for them.",
+    "An empirical, same-system comparison of natural, stratified and balanced test protocols on an LLM coding task, showing by how much the latter overstate rare-code precision. Only arguments and simulations were found (Caswell 2020, Chen 2026, Norén 2026).",
+    "The coverage ceiling: the share of rare-code reports that any of several coders reaches (219 of 552). Nothing comparable was found, though I did not search for it specifically.",
+    "How hard I looked: medium. OpenAlex (including cites: citation chasing) was entirely unavailable, Semantic Scholar was mostly unavailable, and Google Scholar, ACL Anthology full-text search and the statistical-office grey literature (AIML4OS WP10, UNECE HLG-MOS, ONS ClassifAI) were not searched or read."
+   ],
+   "channels": "Worked:\n- Europe PMC REST: about 15 searches, 4 abstract lookups, 3 citation lookups and 3 full-text XML reads. The best channel for public health and pharmacovigilance.\n- Crossref: 9 searches, noisy, plus 2 DOI lookups.\n- arXiv API: about 14 queries ran. The first 6 calls (over http and https) returned 429, and it worked after a pause.\n- WebSearch: all 10 allowed calls used.\n- WebFetch: worked for arXiv abstract and HTML pages, ACL Anthology, the SSPH journal page and ssphub.fr. The IGC and arXiv PDFs came back binary and I extracted the text locally with pypdf.\n\nFailed:\n- OpenAlex: HTTP 429 on the first call. The free daily budget for this IP is exhausted until midnight UTC, and getting a key would need an email, which the rules forbid. OpenAlex search and cites: citation chasing were lost entirely.\n- Semantic Scholar: 429 on 3 of 4 calls. The one call that answered returned an empty citation list for Eng 2026, so S2 citation chasing was lost.\n- WebFetch: the Springer chapter redirected to a login page, the DkIT publication page returned 403, and the arXiv PDF of Caswell came back binary (text extracted locally).\n\nThe lost OpenAlex and Semantic Scholar channels are the main reason the confidence of the 'open' items is medium.",
+   "queries": [
+    "WebSearch: large language model occupation coding ISCO SOC statistical office evaluation 2025 accuracy rare occupations",
+    "WebSearch: LLM ICD coding evaluation full test set natural distribution precision by code frequency false positives rare codes over-prediction 2026",
+    "WebSearch: large language model MedDRA lowest level term coding adverse event verbatim accuracy evaluation 2025 2026",
+    "WebSearch: BLS OR NIOSH OR Census Bureau large language model autocoder industry occupation injury coding evaluation production 2025 2026",
+    "WebSearch: LLM text classification balanced test set overestimates precision real-world prevalence deployment rare categories evaluation critique",
+    "WebSearch: national statistical office large language model classification coding NACE ISCO COICOP evaluation production rare codes",
+    "WebSearch: LLM adverse event extraction spontaneous reports MedDRA preferred terms per-term precision rare terms false positives real-world distribution",
+    "WebSearch: large language model injury narrative coding OIICS NEISS product code autocoding GPT rare categories",
+    "WebSearch: LLM zero-shot content moderation production traffic low prevalence precision rare policy categories",
+    "WebSearch: large language model underlying cause of death ICD-10 coding death certificates national mortality rare causes",
+    "EPMC: occupation/occupational AND coding AND (LLM/GPT) 2023-26",
+    "EPMC: (LLM/GPT/ChatGPT) AND MedDRA",
+    "EPMC: LLM AND (injury narrative OR OIICS OR NEISS)",
+    "EPMC: LLM AND cause of death AND (ICD-10 OR coding)",
+    "EPMC: LLM AND positive predictive value AND prevalence AND (rare OR low prevalence)",
+    "EPMC: LLM AND (cancer registry OR tumor registry OR ICD-O)",
+    "EPMC: LLM AND adverse event AND (medical device OR MAUDE)",
+    "EPMC: LLM AND ICD AND (rare codes OR long-tail OR code frequency OR infrequent codes)",
+    "EPMC: LLM AND pharmacovigilance AND (prevalence OR false positive OR real-world)",
+    "EPMC: LLM AND (enriched OR spectrum bias OR balanced test set) AND prevalence",
+    "EPMC: (NVDRS) AND (language model OR GPT OR LLM)",
+    "EPMC: LLM AND (incident report OR safety event) AND (classification OR taxonomy)",
+    "EPMC: (MAUDE) AND (language model OR NLP OR machine learning) 2024-26",
+    "EPMC full text: LLM AND (natural/real-world/true prevalence) AND (false positive OR PPV) AND rare AND (classification OR coding)",
+    "EPMC full text: LLM AND (ICD-O OR morphology code) AND rare AND registry",
+    "EPMC: occupational coding / job title / SOCcer / ISCO-08 AND automated",
+    "EPMC: LLM AND rare AND (false positive rate OR overcoding) AND (coding OR classification)",
+    "EPMC citations of Norén Drug Saf 2026 (MED:41811678), Martin ICHI 2026 (MED:42626544), Zhou 2023 (MED:37847549)",
+    "Crossref: large language model automatic occupation coding ISCO SOC",
+    "Crossref: LLM cause of death coding ICD-10 verbal autopsy death certificate",
+    "Crossref: LLM OIICS injury narrative coding workers compensation",
+    "Crossref: LLM-Guided ISO 5338 medical device adverse event reporting",
+    "Crossref: LLM MAUDE IMDRF adverse event code device problem classification",
+    "Crossref: aligning AI research clinical coding workflows recommendations",
+    "Crossref: LLM medical coders rare codes precision MIMIC-IV full label space zero-shot",
+    "Crossref: label shift prior adjustment LLM zero-shot classification class prior",
+    "arXiv: abs:occupation AND abs:coding AND abs:\"language model\"",
+    "arXiv: abs:\"label shift\" AND abs:\"language model\"",
+    "arXiv: abs:\"low prevalence\" AND (LLM OR language model) AND classification",
+    "arXiv: rare codes/rare labels/tail labels AND false positives AND LLM",
+    "arXiv: occupation AND (ISCO OR SOC) AND (LLM OR GPT)",
+    "arXiv: natural/real-world distribution AND long-tail AND LLM AND classification",
+    "arXiv: base rate/prevalence AND precision AND LLM AND (rare OR imbalanced)",
+    "arXiv: class/label prior OR prior shift AND LLM AND imbalanced",
+    "arXiv: stratified/balanced/enriched sample AND prevalence AND LLM AND precision",
+    "arXiv: abs:prevalence AND abs:LLM AND abs:\"false positive\"",
+    "arXiv: abs:\"incident reports\" AND LLM AND classification",
+    "arXiv: spectrum bias OR enriched test",
+    "arXiv: extreme multi-label AND LLM AND tail",
+    "arXiv: product categorization AND LLM AND long-tail",
+    "arXiv: quantification AND LLM AND prevalence",
+    "arXiv: open-ended AND survey AND coding AND LLM",
+    "arXiv: ICD coding AND zero-shot AND precision",
+    "arXiv: pharmacovigilance AND LLM AND false positives",
+    "Semantic Scholar (failed/empty): label shift prevalence rare class false positives; LLM occupation coding ISCO; citations of arXiv 2510.04341 and 2609.13806",
+    "OpenAlex (failed): LLM occupation coding ISCO; LLM SOC occupation classification"
+   ],
+   "unverified": [
+    "Muaz et al. IFIP AIAI 2026 (MAUDE to IMDRF codes with GPT-OSS-120B, 59.49% level-1 and 23.04% deeper-level 'consensus'): the numbers come only from a WebSearch snippet. The publisher and DkIT pages refused access, and Crossref has no abstract. Because it uses MAUDE, it should be read before submission.",
+    "'Graph-Constrained Policy Learning for Extreme Clinical Code Prediction', arXiv 2607.11954 (0.709 micro-F1 on 50 codes vs 0.527 on 15,761): known only from a secondary news page (hccbuddy.com); the arXiv original was not opened.",
+    "TNO-Auto occupation coder (Ge, Pinho, Shahmohammadi; Occup Environ Med 2025 EPICOH abstract, doi 10.1136/oemed-2025-epicohabstracts.61): title and authors only.",
+    "AIML4OS WP10 automation and top-5 figures (COICOP, ISCO, NACE) and the Norway COICOP LLM paper (doi 10.1177/18747655251393372): search snippets only.",
+    "Coutinho 2026: I found no per-code count of false rare-code answers by grepping the text. Figures were not inspected.",
+    "Kähler 2026: the last 8% of the HTML page was not read. The frequency results are in spline plots that I did not see.",
+    "Gan et al. ACL 2025: the eight recommendations were not read (abstract only).",
+    "Caswell 2020: the exact per-language precision table was not checked; the 5.5% to 71.2% figure is from the abstract and introduction, and the about 5% crawl precision is from the abstract."
+   ]
+  },
+  {
+   "key": "venue",
+   "title": "The unread 2026 venue papers and the citing neighbourhood",
+   "answer": "This round adds a little to the first one and takes none of our three claims outright. Search tools were the main limit. OpenAlex hit its daily limit for this network after about 6 calls, and the error said it resets at midnight UTC. Semantic Scholar returned 429 errors on most calls. The arXiv API returned empty or wrong results. ScienceDirect, PolyU and CityU pages refused access (403). So the planned OpenAlex citation chase did not happen.\n\n1. The five venue papers. ESWA 131366 (Villanueva-García et al.) is not relevant: it tests 4,109 pipelines on one binary task, retirement detection in Spanish social-security records, with 2.34% positives. EAAI 114798 (Smetana, Salles de Salles & Khazanovich) uses GPT-3.5 with zero- and few-shot prompts plus ML clustering on OSHA highway work-zone narratives. Its abstract shows no fine-tuned coder alongside the LLM, no rare-class analysis and no temporal split.\n   - For Ding EAAI 115750, Hou EAAI 114403 and Chhetri AEI 105391, no abstract could be reached in OpenAlex, Crossref, Semantic Scholar, ScienceDirect or 3 web searches. For Ding, the nearest evidence is Yi Ding's 2025 CityU thesis (supervisor Min Xie). There an LLM writes synthetic descriptions for minority failure modes, and a BERT prompt-tuning hierarchical classifier is trained on them. So the LLM adds training data; it is not a second coder. This is inferred and not confirmed for the EAAI article.\n   - Hou's title points to a classic selective ensemble on imbalanced civil-aviation maintenance hazard text. Chhetri's title points to a small-language-model benchmark on incident narratives. Neither is confirmed.\n2. Citation chase. Semantic Scholar and Europe PMC both give EnergyRoute 0 citing works. Semantic Scholar gives Martin et al. 0. Stewart, Hodkiewicz & Li has 20 citers, and none routes or selects between coders. Citers of Emer and MADE could not be fetched.\n3. The most useful new find is Li, Tang, Xia et al. (arXiv 2512.21041, LAK26). In their human-AI workflow, an item goes to human experts when MacBERT's confidence is below 0.6 or when the code it proposed is rare (under 5% of the data). That is the frequency of the proposed code, used after the answer, to route an item. It is a fixed rule that sends items to people over 12 codes, not a learned selector among three coders. Still, the paper must not say that idea is unused.\n   - The same paper partly cuts against claim 2. With 12 dialogue codes, zero-shot GPT-4o did not beat fine-tuned BERT on rare codes: kappa was near zero for both on most of them.\n4. Li H, He, …, Feng (npj Digit Med 2026, full text) had an LLM assign MAUDE device-problem codes from the 487 IMDRF codes. Human judges preferred the LLM's code to the filer's in 60.8 of 90 reports and the filer's in 21.7, with ties in the rest. This settles the critic's open evidence question. It also supports our label-noise caveat for claim 3: some 'false' rare-code answers may be correct.\n5. Soria's CatLLM (SocArXiv 2026, abstract only) finds that every one of 21 LLMs over-labels open survey answers, with precision 40 to 50 points below sensitivity. It reports unanimous multi-model ensembles and an 'Other' category as fixes. This narrows claim 3: the over-naming is published in a general form. Our result that agreement does not fix it at 1 in 1,000 is now set against a report that unanimity helps at much higher prevalence.\n6. No 2026 work on coding FAA service difficulty report (SDR) PartCondition fields, or on assigning MAUDE device-problem codes over hundreds of leaf codes with a fine-tuned coder alongside an LLM, turned up beyond Li H and MADE, both already known.",
+   "works": [
+    {
+     "citation": "Ding Y, Zhu F, Li H, Xie M (2026). A large language model-augmented hierarchical text classification approach for intelligent failure data management. Eng Appl Artif Intell 115750 (Oct 2026).",
+     "url": "https://api.openalex.org/works/doi:10.1016/j.engappai.2026.115750",
+     "what_they_did": "Metadata only (OpenAlex, Crossref, Semantic Scholar: no abstract; ScienceDirect 403). Inferred from Yi Ding's CityU thesis abstract (https://scholars.cityu.edu.hk/en/studentTheses/unlocking-maintenance-knowledge-an-industrial-knowledge-graph-ena/, read): wind-farm failure records from mainland China; a BERT-based hierarchy-aware prompt-tuning classifier for few-shot settings; an LLM prompt module generates synthetic failure descriptions for minority failure modes in the label hierarchy. Label source, number of classes and split not stated.",
+     "bearing": "Probably leaves all three claims alone: the LLM is a data augmenter, not a coder whose answers are routed or selected, and there is no sign of a temporal split or natural-prevalence test. Cite as a venue neighbour on LLM help for rare failure modes. Unconfirmed until the article is read.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Hou Z, Wang H, Xiong M, Liu W (2026). Highly imbalanced intelligent identification of civil aviation maintenance hazards based on text mining and selective ensemble modeling. Eng Appl Artif Intell 114403.",
+     "url": "https://api.openalex.org/works/doi:10.1016/j.engappai.2026.114403",
+     "what_they_did": "Title and metadata only; no abstract from OpenAlex, Crossref, Semantic Scholar or one web search. The title says text mining plus a selective ensemble on highly imbalanced maintenance hazard text.",
+     "bearing": "Unknown. A 'selective ensemble' could mean choosing ensemble members (classic ML) rather than selecting a coder per report; nothing indicates an LLM. Not shown to touch claim 1.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Chhetri G, Das S (2026/2027). Can small language models be trusted for aviation safety analysis? A benchmark study across model sizes using real-world incident narratives. Adv Eng Inform 105391.",
+     "url": "https://api.openalex.org/works/doi:10.1016/j.aei.2026.105391",
+     "what_they_did": "Title only; no abstract in any channel, and two web searches did not find it. The title suggests a benchmark of language models of different sizes on incident narratives.",
+     "bearing": "Unknown; probably a benchmark of models by size, not of selection or rare codes. Not shown to touch any claim.",
+     "read": "snippet"
+    },
+    {
+     "citation": "Villanueva-García J, Moral-Arce I, García Villalba LJ (2026). A cumulative, pipeline-oriented framework for extreme imbalanced classification: large-scale benchmarking of 4,100 rare-event models. Expert Syst Appl 131366.",
+     "url": "https://api.openalex.org/works/doi:10.1016/j.eswa.2026.131366",
+     "what_they_did": "Tabular binary task: monthly retirement detection in Spanish Social Security microdata with 2.34% positives; 4,109 pipeline configurations (resampling, loss shaping, thresholds, ensembles).",
+     "bearing": "Leaves all three claims alone (binary, tabular, no text, no LLM). Ruled out.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Smetana M, Salles de Salles L, Khazanovich L (2026). Improving large language model assisted categorization and classification of highway construction accidents. Eng Appl Artif Intell 114798.",
+     "url": "https://api.openalex.org/works/doi:10.1016/j.engappai.2026.114798",
+     "what_they_did": "OSHA work-zone accident narratives; ML clustering and classification with GPT-3.5 zero- and few-shot prompting. The abstract mentions no fine-tuned encoder working with the LLM, no rare-class analysis and no temporal split.",
+     "bearing": "Leaves the claims alone; a venue example of LLM coding of safety narratives.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Li Z, Tang L, Xia M, Li X, Chen N, Gasevic D, Fan Y (2025). When LLMs fall short in deductive coding: model comparison and human-AI collaboration workflow design. arXiv 2512.21041 (LAK26).",
+     "url": "https://arxiv.org/html/2512.21041",
+     "what_they_did": "Medical-dialogue coding (77,420 turns, 12 codes, coded by two medical experts; tail = codes under 5%) and a 14-code English set. Fine-tuned BERT/RoBERTa/MacBERT against zero-shot Qwen3, DeepSeek-V3.1 and GPT-4o. Rare-code kappa was near zero for both families; the optimised MacBERT reached 0.18-0.36 on some rare codes. In the workflow, an item goes to human experts if MacBERT's confidence is under 0.6 or the predicted code is rare (under 5%); this flagged 44 of 500 items and raised kappa from 0.62 to 0.66.",
+     "bearing": "Narrows claim 1: it routes on the frequency of the code the classifier proposed, after the answer, as a fixed rule that sends items to people. Our learned selector across three coders with a frozen later year is still different, but the signal must not be called unused. Weakly against claim 2 at a very different scale (12 codes): LLMs did not beat BERT on rare codes. Does not touch claim 3 (no natural-proportion precision).",
+     "read": "full_text"
+    },
+    {
+     "citation": "Li H, He X, Subbaswamy A, Vossler P, Gossmann A, Singh K, Feng J (2026). Scaling medical device regulatory science using large language models. NPJ Digit Med 9:221.",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12992660/fullTextXML",
+     "what_they_did": "An LLM pipeline over 1,841 MAUDE reports for AI/ML devices assigns the event type and device product problem code (the most detailed of 487 IMDRF codes). Against the filer's code, human judges preferred the LLM's problem code in 60.8 of 90 reports and the filer's in 21.7, with 7.5 ties (Table 2); GPT-4.1 and Claude Sonnet 4.5 as judges gave about 80% LLM wins.",
+     "bearing": "Already known to the project. It now gives a sourced figure that MAUDE filer problem codes are often judged worse than an LLM's, which supports our label-noise caveat for claim 3 (some 'false' rare answers may be right). There is no fine-tuned encoder, no rare-code analysis and no temporal split, so claims 1 and 2 are untouched.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Soria C (2026). Scaling open-ended survey coding: an LLM pipeline where definitions do the heavy lifting (CatLLM). SocArXiv gjvcf_v1.",
+     "url": "https://ideas.repec.org/p/osf/socarx/gjvcf_v1.html",
+     "what_they_did": "21 LLMs from six providers coding open survey answers against sociologists' codes; every model over-labelled, with precision 40-50 points below sensitivity. Fixes adopted: verbose definitions with include/exclude rules, unanimous multi-model ensembles, an automatic 'Other' category.",
+     "bearing": "Narrows claim 3: LLM over-naming that inflates category prevalence is published in a general form. It reports unanimity and definitions as fixes, so our statement that LLM agreement and prompt changes do not fix it must be scoped to rare codes at about 1 in 1,000 over hundreds of codes. Category counts and prevalences are not in the abstract.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Agarwal R, Wenzel M, Baur S, Zimmer J, Harvey G, Ma J (2026). MADE: a living benchmark for multi-label text classification with uncertainty quantification of medical device adverse events. arXiv 2604.15203 (ACL 2026).",
+     "url": "https://arxiv.org/abs/2604.15203",
+     "what_they_did": "Long-tailed, hierarchical multi-label medical device adverse-event benchmark with strict time-based splits; more than 20 encoder and decoder models, fine-tuned and few-shot. Small decoders fine-tuned discriminatively are best from head to tail; large reasoning models do better on rare labels; self-reported confidence is unreliable.",
+     "bearing": "Already known. Supports the frequency split (claim 2) in a temporal setting and backs our point that self-reported confidence is a weak signal. It compares models but does not select per report; its citers could not be fetched in this round.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Emer L, Lippi M, Mina A, Vandin A (2026). Large language models, encoder architectures and hybrid approaches for patent classification. arXiv 2601.23200 v2.",
+     "url": "https://arxiv.org/abs/2601.23200",
+     "what_they_did": "Hierarchical multi-label CPC patent classification; BERT-for-Patents beats a fine-tuned Qwen3.5-9B; a hybrid sends the encoder's least-certain patents to the LLM, with gains on that subset; external EPO validation.",
+     "bearing": "Already known (uncertainty routing before the LLM answers). Its citers could not be fetched (Semantic Scholar 429, OpenAlex budget gone).",
+     "read": "abstract"
+    },
+    {
+     "citation": "Malyi M, Shek J, McDonald A, Biscaya A (2026). Wind turbine maintenance log labelling framework: LLM-driven data correction and enrichment via semantic extraction of reliability intelligence. arXiv 2605.31281 v3.",
+     "url": "https://arxiv.org/abs/2605.31281",
+     "what_they_did": "An LLM workflow corrects system codes and assigns failure modes on 16,316 maintenance records (280 turbines, 31 farms, 9.2 years). A label is accepted only on High self-reported confidence with no review flag. 800 records were reviewed by balanced probability sampling, with 86.3% approval.",
+     "bearing": "Leaves the claims alone. Its acceptance gate uses self-reported confidence, and its review used balanced sampling, an example of the protocol our claim 3 warns about. Found as a citer of Stewart et al. 2309.08181.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Tan YW, Carroll J (2026). Retrieval-augmented large language model for wind turbine maintenance work-order classification. Wind Energ Sci Discuss wes-2026-203.",
+     "url": "https://wes.copernicus.org/preprints/wes-2026-203/",
+     "what_they_did": "Adds a short label-definition corpus by retrieval; Qwen3.5-9B with it reaches macro-F1 0.72 against 0.66 for a larger proprietary baseline without it. No fine-tuned encoder, no routing; label source and split not stated.",
+     "bearing": "Leaves the claims alone; at most a neighbour for our retrieval coder.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Chen H (2026). Free-text MAUDE narratives provide a source-robust representation layer for biomaterial-device surveillance. medRxiv 2026.05.03.26352339.",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.64898/2026.05.03.26352339%22&format=json&resultType=core",
+     "what_they_did": "1,500 MAUDE reports from three device classes; narrative TF-IDF features beat code-only features (macro-F1 0.925 vs 0.827) under manufacturer-held-out evaluation.",
+     "bearing": "Leaves the claims alone (three device classes, not code assignment).",
+     "read": "abstract"
+    },
+    {
+     "citation": "Kesharwani R, Cvijic L, Denecke K (2026). Automating safety surveillance for software-based medical devices: insights from FDA MAUDE data. Stud Health Technol Inform (shti260244).",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.3233/shti260244%22&format=json&resultType=core",
+     "what_they_did": "BERTopic plus LLM classification of software-device MAUDE narratives into event types and contributing factors; many topics reflected regulatory boilerplate.",
+     "bearing": "Leaves the claims alone (not device-problem code assignment).",
+     "read": "abstract"
+    }
+   ],
+   "now_taken": [
+    "Using the training frequency of the code a classifier proposed, after it answers, as a routing signal is used in published work as a fixed rule: Li Z et al., arXiv 2512.21041 (LAK26), send a turn to humans when the predicted code is under 5% of the data or confidence is under 0.6. Claim 1 must be framed as a learned per-coder selector over three coders, frozen on one year and tested on later years, not as the first use of support of the proposed code.",
+    "LLM over-labelling that inflates category prevalence, with precision 40-50 points below sensitivity across 21 LLMs, is published for open survey coding (Soria 2026, CatLLM), with unanimous ensembles, definitions and an 'Other' category reported as fixes. Claim 3's 'agreement does not fix it' must be scoped to hundreds of codes at about 1 in 1,000.",
+    "MAUDE filer device-problem codes are often judged worse than an LLM's: human judges preferred the LLM's code in 60.8 of 90 reports and the filer's in 21.7 (Li H et al., npj Digit Med 2026, Table 2). This is now sourced; the first round had flagged it as unsupported."
+   ],
+   "still_open": [
+    "A learned per-coder selector judging three coders (encoder, zero-shot LLM, retrieval LLM) by the training support of each proposed code, frozen on one year and tested on a later year. Not found in 10 web searches, 16 Crossref queries, 4 Europe PMC queries, Semantic Scholar citers of Stewart, EnergyRoute and Martin, or the five venue papers' metadata. Moderate effort: the arXiv API and OpenAlex failed, so concept searches leaned on Crossref and the web.",
+    "A per-code false-naming rate of zero-shot and retrieval LLMs over hundreds of codes in a natural stream at about 1 in 1,000, with fixes failing on held-out years. Neighbours (CatLLM, Li Z 2512.21041, Li H npj) use few codes, higher prevalence or no natural-stream precision. Moderate effort.",
+    "Showing how balanced or stratified evaluation overstates rare-code precision by scoring the same systems under several protocols. Nothing found; the wind-turbine labelling paper (2605.31281) itself evaluates by balanced probability sampling. Light to moderate effort (one web search, two Crossref queries).",
+    "Ranked read-first lists pooled over hundreds of rare codes at about 0.08% prevalence. Not re-searched in this round beyond one Crossref query (light effort).",
+    "LLM-vs-encoder study, or encoder-plus-LLM selection, on FAA SDR PartCondition or on MAUDE device-problem leaf codes. None beyond MADE and Li H. One web search for SDR, two Crossref queries, two Europe PMC queries."
+   ],
+   "channels": "Crossref worked throughout: 16 queries plus 9 DOI lookups. It has no abstracts for Elsevier, but it served abstracts for preprints and some journals. OpenAlex worked for 6 DOI lookups and was then cut off for the day ('Insufficient budget', reset at midnight UTC; WebFetch to OpenAlex also returned 429). As a result, the OpenAlex cites: chase for EnergyRoute, Emer, Stewart, MADE and Martin could not be run, and Semantic Scholar was used instead. Semantic Scholar answered 6 of about 14 calls; the rest returned 429. Citers were obtained for Stewart (20), EnergyRoute (0) and Martin (0), but not for Emer or MADE. Europe PMC worked: 6 queries, 1 full text, 5 DOI abstract lookups; the first two queries failed on unescaped brackets and were re-run. The arXiv API failed: it rate-limited ('Rate exceeded', a 503), then returned empty feeds or irrelevant single hits for about 15 queries, so arXiv was effectively lost as a search channel; arXiv abs and html pages still opened through WebFetch. WebSearch: all 10 allowed calls used; 3 gave something useful (2512.21041, CatLLM, the Ding thesis), and 4 found nothing for the venue papers or Emer. ScienceDirect, PolyU Pure and CityU search pages returned 403, and the TRID search returned 503. So no full text of the three closed venue papers (Ding, Hou, Chhetri) could be reached.",
+   "queries": [
+    "OpenAlex DOI lookups: 10.1016/j.engappai.2026.115750, .114403, 10.1016/j.aei.2026.105391, 10.1016/j.eswa.2026.131366, 10.1016/j.engappai.2026.114798",
+    "Crossref DOI lookups for the same five, plus SEGE70974.2026.11738943, sdufenbed.1963184, 9780784486269.109, math14214032, preprints202610.1992",
+    "Semantic Scholar paper/citations: DOI:10.1038/s41598-026-49886-1, ARXIV:2601.23200 (429 x4), ARXIV:2309.08181, ARXIV:2604.15203 (429 x4), ARXIV:2605.21845, venue DOIs x4",
+    "Europe PMC: DOI EnergyRoute; MAUDE AND (language model OR LLM OR BERT OR GPT) 2025-26; (device problem OR product problem) AND (classif* OR coding) AND (NLP OR language model) 2025-26; (rare codes OR rare labels OR long-tail) AND LLM AND (fine-tuned OR BERT) AND (routing OR hybrid OR cascade) 2026; adverse event AND narrative AND LLM AND prevalence AND false positive 2026; DOI abstracts for shti260244, shti250076, shti250680, 26352339, 26364455",
+    "Crossref (2025-06 onward): service difficulty reports FAA language model; MAUDE device problem code classification language model; medical device adverse event reports LLM classification; aviation maintenance text classification imbalanced rare LLM; maintenance work order classification LLM fine-tuned; routing between fine-tuned classifier and LLM long-tail; JASC code service difficulty report classification; aircraft maintenance records ATA chapter classification language model; selective ensemble civil aviation maintenance hazard text; incident narratives small language models aviation safety benchmark ASRS; fine-tuned encoder LLM hybrid rare classes frequency tail; medical device problem codes IMDRF automatic coding narrative; selecting between classifier and LLM per instance using training frequency of predicted label; LLM over-predicts rare classes false positives natural distribution; stratified sampling evaluation overestimates precision rare categories; prioritising reports for manual review rare categories ranking recall effort",
+    "arXiv API (mostly failed): Chhetri AND aviation; ti aviation AND language models AND incident; failure data AND hierarchical AND LLM; highway construction AND language model; label frequency AND defer AND language model; learning to defer AND long-tail(ed); router AND fine-tuned AND LLM AND tail classes; class frequency AND model selection AND LLM; natural prevalence AND LLM AND precision; rare classes AND false positives AND zero-shot; balanced test AND overestimate AND precision; incident reports AND LLM AND fine-tuned AND taxonomy; service difficulty; adverse event AND medical device AND language model; technology-assisted review AND rare AND LLM",
+    "WebSearch (10): exact Ding EAAI title; Hou civil aviation maintenance hazards selective ensemble; exact Chhetri title; Ding Zhu Li Xie EAAI LLM hierarchical failure texts; 2601.23200 Emer citations; service difficulty reports 2026 LLM JASC/part condition; per-instance selection fine-tuned vs LLM by training frequency of predicted class; zero-shot LLM hundreds of categories natural distribution rare false positives vs stratified; EnergyRoute; Chhetri Das small language models aviation ASRS NTSB",
+    "WebFetch: ScienceDirect S0952197626020348 and S0952197626006846 (403); PolyU and CityU search (403); CityU Ding thesis page; TRID (503); arxiv abs 2601.23200, 2604.15203, 2605.31281, 2603.16818, 2512.21041 (+html); WES wes-2026-203; LREC 2026 main-476; ideas.repec gjvcf_v1; ICML 2026 poster 74505; Semantic Scholar and OpenAlex via WebFetch (429)"
+   ],
+   "unverified": [
+    "Content of Ding et al. EAAI 115750: the description (LLM augmentation for minority failure modes plus a BERT prompt-tuning classifier) is inferred from the author's 2025 thesis abstract, not from the article.",
+    "Content of Hou et al. EAAI 114403 and Chhetri & Das AEI 105391: title only.",
+    "Works citing Emer et al. (2601.23200) and MADE (2604.15203): not fetched this round (Semantic Scholar 429, OpenAlex budget exhausted). The first round's OpenAlex chase of MADE stands.",
+    "Whether CatLLM's 'unanimous ensemble' fix was tested on rare categories, and how many categories and what prevalences it used: abstract only.",
+    "Rare-code results of 2512.21041 come from WebFetch's summary of the HTML full text (first 100,000 of 117,677 characters); the last part was not read.",
+    "ICML 2026 'Flexible Routing via Uncertainty Decomposition' (poster page only): routes weak model / oracle / abstain on reducible versus irreducible uncertainty; datasets, authors and any long-tail analysis unknown.",
+    "Anwar et al., IEEE SEGE 2026, 'Automated classification of nuclear power plant condition records using LLMs' (a citer of Stewart 2023): no abstract reachable."
+   ]
+  },
+  {
+   "key": "regulators",
+   "title": "Regulator-coded report streams outside the US, and the candidates left unchecked",
+   "answer": "None of the non-US regulator streams I could check meets our needs. Each fails on public text, on who chooses the code, or on access:\n- Korea's MFDS publishes on data.go.kr only its adverse-event code list, a table of follow-up actions (flags and dates, no text) and recall reports.\n- Korea's consumer-injury file (KCA CISS) has 23,192 rows, all coded fields, with no narrative column.\n- Korean rail data (978 rows for 2021-2025) and aviation data (statistics and taxonomies only) have no report text.\n- Health Canada's medical device incident data carry per-incident IMDRF codes but have no narrative field.\n- Australia's TGA DAEN has public event descriptions, but a 2026 paper says these are not coded in standard terminology, and nearly all reports come from industry.\n- Japan's PMDA publishes line lists; detailed records come only on disclosure request.\n- EUDAMED's vigilance module is not mandatory before 2027 or 2028, and whether the public will see it is not settled.\n\nOf the candidates the first round dropped, VAERS is real but weak for us: the narrative is up to 32,000 characters and MedDRA terms are derived from it, but the terms are listed alphabetically with no principal term, the guide does not say who the coders are, and the bulk download asks for a verification code. LLM-based MedDRA coding of VAERS text is already published (He et al. 2025, abstract read). The NIOSH OIICS competition set has only 48 codes and no dates. MSHA has a 384-character narrative and several coded fields, but I could not confirm who assigns the codes or how many each field has. The full ATSB occurrence export is restricted, and dashboard exports stop at 200 rows. NEISS stays the best new candidate. CPSC's NEISS query page now lists archived annual data for 2025, so a 2023/2024/2025 split is possible. No terms of use appear anywhere.\n\nTwo corrections to the first round:\n- The first round's critic was wrong: a 27 May 2025 blog post (Circo, full text read) did have gpt-4o-mini with retrieval pick NEISS product codes for 500 narratives from 2024, at 66.40% accuracy, counting a match to any of Product_1-3. So LLM product-code assignment on NEISS is no longer untouched, though only informally.\n- Two works narrow our selector and ranked-list claims without taking them. Marucci-Wellman et al. 2017 (abstract read) send narratives to manual review either by prediction strength or by agreement between classifiers, and pass rare or ambiguous cases to people. The BLS autocoder (page read) assigns survey injury codes only above a confidence threshold, about 81-92% of codes in 2021-2023.\n\nI found no study of NEISS, VAERS, MSHA or any non-US device stream that does what we do: a training-support selector, rare-versus-frequent results by frequency band, or rare-code precision at natural proportions.",
+   "works": [
+    {
+     "citation": "Signal detection of adverse events in medical devices using natural language processing: a case study in pelvic mesh. Sci Rep 2026, doi 10.1038/s41598-026-50950-z (PMC13319759)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13319759/fullTextXML",
+     "what_they_did": "Topic modelling of free-text TGA DAEN device reports from 2012-2017 (14,170 reports), followed by disproportionality signal detection. Two clinicians reviewed reports to measure misclassification.",
+     "bearing": "Establishes DAEN facts: event descriptions are public, and device reports are 'not coded using standard medical terminology'. That rules DAEN out as a code-labelled stream. It takes none of our claims.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Failure modes of robotic-assisted arthroplasty platforms in Australia: a descriptive analysis of TGA adverse event reports. J Robot Surg 2026, doi 10.1007/s11701-026-03890-9 (PMC13541923)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13541923/fullTextXML",
+     "what_they_did": "Searched DAEN for July 2012 to December 2025 and used the 'Event Type' failure-mode field plus the 'Event Description' narrative. Of 140 reports, 97.9% were submitted by industry, and the authors note that failure-mode coding may vary between sponsors.",
+     "bearing": "Confirms that the DAEN code is chosen by the sponsor, the same weakness as MAUDE. It does not touch our claims.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Signal Detection Using Change Point Analysis to Identify Safety Signals from Spontaneous Reports in Aortic Stent Grafts in Japan. J Med Syst 2026, doi 10.1007/s10916-026-02388-z (PMC13106239)",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13106239/fullTextXML",
+     "what_they_did": "Analysed 20,678 PMDA malfunction and adverse-event reports on aortic stent grafts (2008-2022). The researchers mapped them to the JFMDA problem terminology themselves. The data came through an AMED project and are not public; PMDA disclosure requests are the only route.",
+     "bearing": "Shows that detailed PMDA records are not openly downloadable, which rules out PMDA as a public dataset. It does not touch our claims.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Circo G. Fine Tuning Your LLM for Fun and Profit, Part I (blog), 27 May 2025",
+     "url": "https://gmcirco.github.io/blog/posts/uv-testing/fine-tuning.html",
+     "what_they_did": "Had gpt-4o-mini pick NEISS product codes for 500 narratives from 2024. An all-mpnet retriever first narrowed the list of more than 800 products. Accuracy was 66.40%, counting a match to any of Product_1-3, and the post also reports accuracy for the products the LLM named most often.",
+     "bearing": "Takes 'nobody has had an LLM assign NEISS product codes'. This is informal, not peer-reviewed, a single coder on a small sample, with no frequency bins, selector, temporal test or natural-prevalence analysis. It corrects the first-round critic, who said the post was about injury or body part.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Marucci-Wellman HR, Corns HL, Lehto MR. Classifying injury narratives of large administrative databases for surveillance: a practical approach combining machine learning ensembles and human review. Accid Anal Prev 2017, doi 10.1016/j.aap.2016.10.014",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1016/j.aap.2016.10.014%22&format=json&resultType=core",
+     "what_they_did": "Coded workers' compensation narratives into BLS OIICS event codes with NB, SVM and LR. They compared filtering to manual review by prediction strength against filtering by agreement between algorithms. Sending the weakest 30% of LR predictions to people gave 0.89 sensitivity/PPV; a triple ensemble reached 0.93 with 41% left for manual review. Rare, emerging or ambiguous narratives were explicitly routed to people.",
+     "bearing": "Narrows Claim 1 and Claim 3. Per-report routing between machine and people, by confidence or by classifier agreement, and a manual queue for rare cases are established practice in injury coding. It does not take a selector that uses each proposed code's training support, an LLM-versus-encoder split, or natural-prevalence precision.",
+     "read": "abstract"
+    },
+    {
+     "citation": "US Bureau of Labor Statistics, Automated coding of SOII case narratives (web page)",
+     "url": "https://www.bls.gov/iif/automated-coding.htm",
+     "what_they_did": "BLS codes SOII narratives into SOC and OIICS fields with a model trained on past human codes. It moved from logistic regression (2014-17) to neural networks and then a transformer from 2021. A code is assigned only above a confidence threshold: about 85% of codes in 2019, 92% in 2021-22, and 81% in 2023.",
+     "bearing": "Shows that a confidence cascade to human coders is the operational standard at a statistical agency. That supports comparing against a confidence cascade (Claim 1) without taking the selector. Narratives are not public.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Bertke SJ et al. Comparison of methods for auto-coding causation of injury narratives. Accid Anal Prev 2016, doi 10.1016/j.aap.2015.12.006",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC4915551&format=json&resultType=core",
+     "what_they_did": "Compared naive Bayes with logistic models for OIICS event coding of workers' compensation narratives, and tested on BLS narratives.",
+     "bearing": "Background on autocoding injury narratives. It leaves our claims alone.",
+     "read": "abstract"
+    },
+    {
+     "citation": "He C, Zhang W, Chen VX, Ning Y, Wang P. Task as Context Prompting for Accurate Medical Symptom Coding Using Large Language Models. arXiv 2504.03051 (CHASE 2025)",
+     "url": "https://arxiv.org/abs/2504.03051",
+     "what_they_did": "Built SYMPCODER, a human-annotated set from VAERS reports, and tested LLMs (Llama2-chat, GPT-3.5/4/4o) on linking symptom mentions to MedDRA.",
+     "bearing": "LLM MedDRA coding of VAERS text is already published, so VAERS would not be fresh ground for an LLM-coding study. The abstract shows no frequency bins, selector or natural-prevalence analysis.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Martin GL et al. Validation of Artificial Intelligence to Support the Automatic Coding of Patient Adverse Drug Reaction Reports, Using Nationwide Pharmacovigilance Data. Drug Saf 2022, doi 10.1007/s40264-022-01153-8",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC9112264&format=json&resultType=core",
+     "what_they_did": "Trained models to predict expert MedDRA PT encodings and seriousness for 11,633 French patient reports (2017-2020), coded by 27 regional centres. One centre was held out for external validation.",
+     "bearing": "Regulator-coded MedDRA autocoding exists outside the US, but the data are not public. It narrows nothing central.",
+     "read": "abstract"
+    },
+    {
+     "citation": "VAERS Data Use Guide (March 2025)",
+     "url": "https://vaers.hhs.gov/docs/VAERSDataUseGuide_en_March2025.pdf",
+     "what_they_did": "Documents the files: SYMPTOM_TEXT of up to 32,000 characters; MedDRA PTs 'derived from this text' and placed in SYMPTOM1-5, listed alphabetically, with more rows for more than five terms; MedDRA since 17 January 2007; more than 17,000 PTs.",
+     "bearing": "Establishes that VAERS is multi-label with no principal term, which makes it weak for one code per report. It does not name the coders.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Vichare S, Nanda G, Sundararajan R. Probabilistic Ensemble Framework for Injury Narrative Classification. AI 2024, doi 10.3390/ai5030082",
+     "url": "https://api.crossref.org/works/10.3390/ai5030082",
+     "what_they_did": "Ensembles of RF, LR and KNN on NEISS narratives predicting the 'top two injury codes': 90.47% top-1 and 99.50% top-2 accuracy.",
+     "bearing": "Which code this is (product or diagnosis) is still unverified, because MDPI returned 403 and other mirrors had no detail. If it is the product code, it is non-LLM work on NEISS product codes with no frequency bins.",
+     "read": "abstract"
+    }
+   ],
+   "now_taken": [
+    "An LLM assigning NEISS product codes from the narrative: done informally (Circo blog, May 2025, gpt-4o-mini with a retrieval-narrowed code list, 500 cases, 66.40%). A paper on NEISS can no longer say that nobody has tried LLMs on product codes; it can still say nobody has published a frequency-binned, routed or natural-prevalence study.",
+    "LLM coding of VAERS narratives to MedDRA: published (He et al. 2025, SYMPCODER).",
+    "Per-report routing between an automatic coder and human review by confidence or by agreement between classifiers, with rare or ambiguous narratives sent to people, is established in injury-narrative coding (Marucci-Wellman et al. 2017) and runs at BLS. That narrows the novelty of our confidence-cascade and agreement baselines and of the human-review framing, but not of the training-support selector."
+   ],
+   "still_open": [
+    "No non-US regulator stream with public narratives and a regulator- or third-party-assigned code from a list of hundreds was found. I checked Korea MFDS, KCA CISS, KOSHA, KOTSA rail, Korean aviation, PMDA, TGA DAEN, Health Canada MDI and EUDAMED. MHRA and Swissmedic were not checked.",
+    "NEISS product code: still no peer-reviewed study comparing LLMs with fine-tuned models by frequency band, routing between coders, or measuring precision at natural proportions. I searched Europe PMC (4 queries), Crossref (1), Semantic Scholar (1 search, rate-limited; Vichare citations listed only 2 unrelated works), arXiv (all:NEISS) and 2 WebSearches. OpenAlex failed entirely, and Google Scholar and the HFES proceedings were not searched, so a conference paper could still exist.",
+    "A training-support selector, and natural-prevalence false rare-code naming, on any of these streams: nothing found, but the citation-chasing channels (OpenAlex, Semantic Scholar) were rate-limited and the search there was thin.",
+    "MSHA: who assigns the injury-source, activity and equipment codes, and how long each code list's tail is. The definition file was read; the 52 MB data file was not downloaded."
+   ],
+   "channels": "Worked:\n- Europe PMC REST: about 23 queries plus 3 full-text XMLs and 2 batches of abstracts.\n- data.go.kr pages, scraped with curl: 9 keyword searches and 6 dataset detail pages.\n- Health Canada's REST API (rest.hres.ca), which gave live records and the extract size.\n- The MSHA open-data definition file.\n- The Hugging Face API.\n- Crossref: 8 searches plus DOI lookups.\n- WebFetch on the CPSC NEISS query page, the VAERS datasets page and guide PDF (text extracted locally), the BLS page, arXiv abstract pages, the PMDA page and Health Canada's landing page.\n- WebSearch: 8 of the 10 allowed.\n\nFailed:\n- OpenAlex returned HTTP 429 on all 9 queries in two attempts, so no citation chasing through OpenAlex.\n- Semantic Scholar returned 429 on its search call; one citation call worked.\n- arXiv API: first batch of 8 queries, 3 timed out or returned 503; a retry of 3 queries worked.\n- The TGA DAEN page and the ATSB site timed out on WebFetch and curl. I used papers and one WebSearch instead.\n- MDPI returned 403, so the Vichare full text could not be read.\n- Nature redirected to a login.\n- The PMDA line-list viewer is behind JavaScript.\n- VAERS bulk download needs a human-entered verification code; I did not attempt it.\n\nThe losses cost most of the citation-chasing step and the Vichare check.",
+   "datasets": [
+    "CPSC NEISS Product_1 (single-product cases). Who labels: a CPSC-trained hospital or contract coder, who also writes the narrative. Access: public yearly files, archived annual data 2006-2025 listed on the NEISS query page (2025 verified via WebFetch); no terms of use on the pages opened; curl gets 403, so download by browser. Size: about 300k cases a year (first round, HF mirror). Codes: about 800-1,100 (conflicting counts). Tail: unverified. Prior work: Circo 2025 blog, LLM with retrieval, 500 cases, 66.4%; Vichare 2024 'injury codes' (product or diagnosis unverified); other studies target helmet, falls or diagnosis. Verdict: still the best new candidate, medium; a train-2023 / develop-2024 / test-2025 split is now possible.",
+    "VAERS MedDRA PTs. Who labels: VAERS program staff ('all reports are coded and entered'; coder identity not stated). Access: public yearly CSVs 1990-2026 (2026 partial, processed to 30 Oct 2026), behind a download verification code; non-domestic files lack narratives. Size: large, not counted here. Codes: more than 17,000 PTs available; multi-label, alphabetical, no principal term. Tail: certainly long, not measured. Prior work: He et al. 2025 LLM MedDRA coding of VAERS; older NLP. Verdict: low-medium, because one code per report would be artificial.",
+    "MSHA Accident/Injury/Illness (Part 50). Who labels: unverified (operators file Form 7000-1; MSHA's role in coding is not stated in the definition file). Access: public zip, 52 MB, last modified 10 Nov 2026; fields include a 384-character NARRATIVE plus codes for MINING_EQUIP, INJURY_SOURCE, NATURE_INJURY, ACTIVITY, OCCUPATION, CLASSIFICATION and ACCIDENT_TYPE. Size and per-code counts: not checked. Prior work: an Iowa State thesis on MSHA narrative mining (title only) and injury-autocoding work in general. Verdict: low-medium until coder and tail are known.",
+    "Health Canada Medical Device Incidents. Who labels: IMDRF Annex A/E/F/B codes per incident; 'Pending Assessment' entries hint that Health Canada assesses them (unverified). Access: public REST API and a 21 MB extract (last modified 1 Oct 2026). Text: none; record fields are trade name, device, company, problem codes, health effects, severity and incident type. Verdict: fails, no narrative.",
+    "TGA DAEN medical devices. Who labels: the sponsor (about 98% industry-submitted in one subset); event descriptions are public, but per Sci Rep 2026 reports are not coded in standard terminology; there is a coarse 'Event Type' field. Size: 14,170 reports 2012-2017. Prior work: topic modelling (Sci Rep 2026). Verdict: fails on labels.",
+    "Korea MFDS device adverse events. data.go.kr has only the code list (15073879/15073880), follow-up actions without text (15073894) and recall reports (15073881); no public narratives found. Volume 5,315 (2016) and 35,917 (2017) per a Korean paper (search snippet). Verdict: fails, no public text.",
+    "Korea KCA CISS (data.go.kr 3040719 / API 15142643). Who labels: KCA. 23,192 rows in the 20260630 file, updated quarterly; columns are item major/middle/minor class, hazard cause, body part, symptom and place; no narrative column. Verdict: fails, no text.",
+    "KOSHA domestic accident-case board (API 15121001) and manufacturing accident cases (15163146). Narrative case posts, small, with no evidence of a long code list. Verdict: low (not examined in depth).",
+    "KOTSA rail accidents and service disruptions (15079935). 978 rows for 2021-2025, entered by operators, coded root-cause groups, no narrative. Verdict: fails.",
+    "Korean aviation. Only statistics and taxonomies (MOLIT 15049020, KOTSA 15150774); voluntary reports are not public. Verdict: fails.",
+    "Japan PMDA device malfunction line lists. Domestic cases April 2004 to June 2026 in line-list form; the manufacturer reports using the JFMDA/IMDRF terminology; detailed data only by disclosure request; columns unverified. Verdict: fails on access and labels.",
+    "EUDAMED vigilance. Mandatory use not before 2027 or 2028; public visibility of vigilance data not settled (secondary sources). Verdict: fails for now.",
+    "NIOSH OIICS competition set (HF mayerantoine/injury-narrative-coding). 229,820 narratives, 48 event codes, no dates, Apache-2.0 tag on HF. Verdict: fails, no tail and not dated.",
+    "ATSB National Aviation Occurrence Database. ATSB codes occurrence types with a primary type, but full export is not allowed and dashboards stop at 200 rows. Prior work: Nanyonga & Wild, flight-phase classification on ATSB reports (AIAA 2026, title only). Verdict: fails on access.",
+    "NVD CVE to CWE. Not re-opened; arXiv shows a crowded LLM field (e.g. 2508.01451, 2601.01320). Verdict: unchanged, low."
+   ],
+   "queries": [
+    "EPMC: \"medical device\" adverse event Korea MFDS",
+    "EPMC: \"medical device\" adverse event reports Korea NLP OR machine learning",
+    "EPMC: \"Database of Adverse Event Notifications\" device",
+    "EPMC: PMDA \"medical device\" malfunction reports",
+    "EPMC: \"Health Canada\" \"medical device incident\"",
+    "EPMC: VAERS MedDRA coding NLP automated (x2)",
+    "EPMC: VAERS symptom text MedDRA \"large language model\"",
+    "EPMC: NEISS product code machine learning OR LLM",
+    "EPMC: NEISS \"product code\" classification narrative machine learning",
+    "EPMC: NEISS narrative \"large language model\"",
+    "EPMC: \"pelvic mesh\" NLP adverse event signal",
+    "EPMC: MedDRA coding automation verbatim LLM",
+    "EPMC: MSHA accident narratives classification machine learning",
+    "EPMC: OIICS autocoding narrative NIOSH",
+    "EPMC: VAERS MedDRA preferred term deep learning",
+    "EPMC: (MedDRA AND automatic coding) AND (BERT OR transformer OR language model)",
+    "EPMC: \"NEISS\" \"product code\" \"natural language\"",
+    "EPMC: \"Consumer Product Safety Commission\" narrative classification machine learning",
+    "EPMC: MSHA narrative text mining",
+    "EPMC: OIICS machine learning narratives coding",
+    "EPMC: autocoding injury narratives Bayesian OR machine learning occupational",
+    "data.go.kr: 의료기기 이상사례 / 의료기기 회수 / 재해사례 / 위해정보 / 철도사고 / 항공안전 / 의료기기 부작용 / 한국소비자원 소비자 위해 정보",
+    "arXiv: VAERS AND MedDRA; NEISS AND narrative; \"injury narratives\" AND coding; MAUDE AND LLM; CWE AND long-tail AND CVE; medical device adverse event classification reports; occupational injury autocoding; aviation occurrence classification taxonomy; CWE AND LLM AND classification; all:NEISS",
+    "Crossref: MSHA accident narratives machine learning; VAERS symptom text MedDRA PT prediction; ATSB occurrence reports text classification; KOSHA accident cases text classification Korean; KCA CISS text mining; MAUDE report classification transformer device problem code; BLS autocoder SOII; NEISS product code classification LLM",
+    "OpenAlex (all 429): MFDS device AE text mining; Korea device AE ML; TGA DAEN; Health Canada device incident classification; PMDA malfunction NLP; MHRA device incident text; EUDAMED vigilance; device AE narrative classification LM; injury narrative product code",
+    "Semantic Scholar: NEISS narrative product classification (429); citations of 10.3390/ai5030082",
+    "WebSearch (8): Health Canada MDI extract fields; PMDA 不具合報告 公表 CSV; EUDAMED vigilance public access 2026; NEISS 2025 data available; ATSB occurrence database download taxonomy; NEISS product code LLM 2025/2026 Nanda HFES; Vichare ensemble paper classes; 의료기기 이상사례 데이터 공개 의료기기안전정보원 NLP"
+   ],
+   "unverified": [
+    "Which 'injury codes' Vichare, Nanda & Sundararajan (AI 2024) predict: product code or diagnosis. Full text blocked (MDPI 403).",
+    "Nanda et al. HFES 2025 (100-case ChatGPT pilot): not re-found in this round.",
+    "Who assigns MedDRA terms in VAERS (staff or contractor) and any quality-control figures: the guide says only that 'all reports are coded and entered'.",
+    "Whether Health Canada staff, rather than the submitter, assign the IMDRF codes in MDI ('Pending Assessment' is only a hint).",
+    "PMDA line-list columns, and whether any narrative text is public.",
+    "Korean device adverse-event volumes of 5,315 (2016) and 35,917 (2017): from a WebSearch summary of a koreascience paper, not opened.",
+    "MHRA and Swissmedic: not checked at all.",
+    "MSHA coder identity and per-field code counts or tail; KOSHA case-board size and coding.",
+    "NEISS per-code tail and code count (carried over from the first round); whether the 2025 annual file actually downloads (listed on the page, not downloaded).",
+    "EUDAMED public-visibility dates: secondary sources disagree on 2027 versus 2028."
+   ]
+  },
+  {
+   "key": "ranking",
+   "title": "Ranked read-first lists at very low prevalence over many categories",
+   "answer": "After a second, fuller search, the ranked read-first list still cannot be claimed as a method. It is a two-phase TAR workflow: a ranker trained once, frozen, and then read in order. Every piece of it has a precedent somewhere. What is still unpublished is the operating point, and the paper should make that its claim. The operating point is hundreds of rare codes pooled into one queue, positives at about 0.08%, a ranker frozen on one year and checked on later years, LLM proposals and encoder scores as the ranking features, and a reader who must also name the code.\n\nKnown since the first round (in result.json): TAR's measures and stopping rules, LLM plus ranker (Bron 2024), a frozen classifier used on a live stream (Cochrane RCT Classifier), and regulator triage of safety reports.\n\nNew this round:\n- TAR experiments do go down to rare single categories, but they stop above us. In the full text of Yang, Lewis & Frieder's heuristic stopping-rules paper (DocEng 2021), the 'Rare' bin includes an RCV1 category at prevalence 0.002133, and the lowest prevalence bin was not used.\n- The same paper says a sample-based recall check needs about 385 positives, which is about 38,500 documents at 1% prevalence. By my own arithmetic (not from any source), that is roughly 480,000 reads at 0.08%. So recall cannot be certified by random sampling at our prevalence. A reviewer will ask what the paper does instead.\n- Real e-discovery does handle many categories with a reader who assigns the category. In the Irish case reported at CEUR Vol-3832 (Harbison, Grossman, Cormack et al.; full text), 70 requests for production were grouped into 10 composite categories. Each category got its own active-learning review (CAL), followed by a sub-review to assign the specific request. The authors report that sorting documents into categories was of very limited value, but the details are in a 2024 paper I could not open.\n- Rare-class search over many classes at once also exists: multiclass active search with diversity (Nguyen & Garnett, full text: images, a citation network and drug discovery, with hit rates around 2-36%), and exemplar-guided active learning with a stopping rule per rare class (Hartford et al., NeurIPS 2020: word senses, using language-model embeddings).\n- On removing the human: the full text of Available Guardrails (arXiv 2609.22048) gives the cost of certifying precision per unit. At target precision 0.90 and true error 0.05, one group needs 179 served calibration examples for 80% availability, fifty groups need 450 each, and the floor is 29 selected examples. Codes with 1-5 reports cannot meet that.\n- Other routes to automatic acceptance guarantee only an average over all labels or cover something else. Conformal Labeling (Huang et al., NeurIPS 2026) controls the overall false-labelling rate. Long-tail conformal prediction (Ding, Fermanian & Salmon) is about prediction-set coverage, not precision. Conformal selection (Jin & Candès, JMLR) controls the false-discovery rate of a shortlist.\n- The nearest low-prevalence LLM triage I found is binary: Liao et al. 2026, 28 positives in 7,950 (0.35%), trigger first and then an LLM. The authors say the LLM must not be used as an autonomous exclusion rule.\n\nI found no published case of automatic acceptance working at about 1 in 1,000 across many rare classes.\n\nWhat a TAR or IR reviewer would accept as new: the pooled multi-code operating point at 0.08%, the year-to-year freeze on safety and failure report streams, and the measured failure of automatic acceptance there. They would not accept the ranked list itself as new.\n\nBaselines and measures they would ask for:\n- Baselines: random order; encoder-only ranking; LLM-only ranking; a per-code TF-IDF logistic two-phase TAR baseline; simulated CAL/AutoTAR (BMI), per code and pooled; Bron-style LLM-then-CAL.\n- Measures: gain curves, recall at k reads, reads needed to reach recall r, WSS@r, the spread of recall across codes, and how many distinct codes are found (diversity, as in multiclass active search).\n- Stopping and certification: a stopping rule with a recall estimate (QuantCI, Chao's estimator, Delayed Countdown), or an explicit statement that certification is infeasible at this prevalence; and a test of pooled conformal selection or Conformal Labeling as the published automation route.\n- Code naming: a separate measure of how accurately the reader names the code, ideally with agreement between readers.",
+   "works": [
+    {
+     "citation": "Yang E, Lewis DD, Frieder O. Heuristic Stopping Rules for Technology-Assisted Review. DocEng 2021. arXiv 2106.09871",
+     "url": "https://arxiv.org/pdf/2106.09871",
+     "what_they_did": "Compared target-aware heuristic stopping rules (Quant, QuantCI, BatchPos, Knee) with sample-based rules on RCV1-v2 (804,414 docs, 658 categories), choosing 5 categories from each of 9 prevalence-by-difficulty bins. The lowest and highest prevalence bins were not used. Their worked example is the Rare-Medium category I24000 at prevalence 0.002133. They note that a recall estimate within 0.05 at 95% confidence needs about 385 relevant documents in a random sample, about 38,500 documents at 1% prevalence.",
+     "bearing": "Narrows the TAR-at-low-prevalence item. Single-category TAR has been run down to about 0.2%, but the rarest band is left out on purpose, so the 0.08% pooled band is still unstudied. It also implies that sample-based certification of our list is infeasible: by my own arithmetic, about 480,000 reads at 0.08%.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Harbison A, Grossman MR, Cormack GV, McManus B, O'Halloran T. Factors Affecting the Performance of Reviewers in a Large-Scale Technology-Assisted Review Project. CEUR-WS Vol-3832 (2024), paper 1",
+     "url": "https://ceur-ws.org/Vol-3832/paper1.pdf",
+     "what_they_did": "A real Irish litigation review of more than 300 million documents. The 70 requests for production were too many to review at once, so they were grouped into 10 composite categories. Each was reviewed with CAL on two platforms, followed by a sub-review that assigned each responsive document to its specific request. Reviewer disagreement made recall estimates unreliable, and elusion testing was highly unreliable. The authors also report that sorting documents into categories was of very limited value; that finding is in their ICIM 2024 paper, which I did not open.",
+     "bearing": "Takes the idea that many-category review with the reader assigning the category is new in practice. Its design is grouping plus a separate CAL per group, not one pooled frozen ranking. Prevalence per category is not reported. Our pooled 0.08% queue with code naming is still not covered, but we should cite it, along with the warning about reader disagreement on category assignment.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Priye P, Wang Y, Ling H, Chaykowsky M. Available Guardrails: Certifying Selective Prediction across ML Systems. arXiv 2609.22048 (Sep 2026)",
+     "url": "https://arxiv.org/abs/2609.22048",
+     "what_they_did": "Certifies the precision of a selective predictor per reporting unit by exact-binomial inversion. Worked costs: at target precision 0.90, failure probability 0.05 and true selective error 0.05, one group needs 179 served calibration examples for 80% availability, and fifty groups need 450 each. In an appendix example, certification needs at least 29 selected examples.",
+     "bearing": "Takes 'automatic acceptance per rare code with a precision guarantee is impossible' as a general result. Our codes with 1-5 reports cannot reach these counts, so our negative result follows from known arithmetic. We should cite it rather than present the result as a discovery.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Nguyen Q, Garnett R. Nonmyopic Multiclass Active Search with Diminishing Returns for Diverse Discovery. arXiv 2202.03593 (preprint)",
+     "url": "https://arxiv.org/pdf/2202.03593",
+     "what_they_did": "Active search over several rare target classes, with a diminishing-returns utility that rewards finding members of many different classes. Tested on Fashion-MNIST (about 2% target rate), Photoswitch, CiteSeerX (about 14% hit rate) and drug discovery.",
+     "bearing": "Already states our objective (finds per read across many rare classes, with diversity). It uses Bayesian models updated during the search, no text LLMs, and prevalences far above 0.08%. A reviewer may ask for a per-code diversity measure, such as how many distinct codes are found within k reads.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Hartford J, Leyton-Brown K, Raviv H, Padnos D, Lev S, Lenz B. Exemplar Guided Active Learning. NeurIPS 2020. arXiv 2011.01285",
+     "url": "https://arxiv.org/abs/2011.01285",
+     "what_they_did": "Searches language-model embedding space for rare classes (word senses) under a labelling budget. A stopping rule drops a class once it is shown, with high probability, to fall below a frequency threshold. Cost is proven to be within a log factor of an oracle.",
+     "bearing": "Already does multi-class rare discovery with LM embeddings and a stopping rule per class. Its goal is a classifier above a frequency threshold, not recall of every rare item in a stream, and it has no LLM proposals and no time split.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Huang H, Liao W, Xi H, Zeng H, Zhao M, Wei H. Provable Selective Auto-labeling with Reliability Guarantees (Conformal Labeling). NeurIPS 2026 poster",
+     "url": "https://neurips.cc/virtual/2026/poster/154352",
+     "what_they_did": "Selects which auto-generated labels (including LLM outputs) to accept, with finite-sample control of the false-labelling rate, using conformal p-values and Benjamini-Hochberg. The remaining labels go to people.",
+     "bearing": "A published, tested route for automatic acceptance of LLM labels. Its guarantee is an average over all labels, which frequent codes dominate. It says nothing per rare code, and the poster page does not mention rare classes. Not shown to work at 1 in 1,000. A reviewer could ask us to run it, pooled over rare-code proposals.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Jin Y, Candès EJ. Selection by Prediction with Conformal p-values. JMLR 2023. arXiv 2210.01408",
+     "url": "https://arxiv.org/abs/2210.01408",
+     "what_they_did": "Wraps any predictor to shortlist candidates whose unobserved outcome is likely positive, with false-discovery-rate control, using conformal p-values and BH. Applied to hiring and drug discovery.",
+     "bearing": "The likeliest untried automation baseline: an FDR-controlled shortlist of pooled rare-code proposals. The abstract gives no class balance, and I found no application at about 0.08%. Still open whether it has any power there.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Ding T, Fermanian J-B, Salmon J. Conformal Prediction for Long-Tailed Classification. arXiv 2507.06867 (v3 Feb 2026)",
+     "url": "https://arxiv.org/abs/2507.06867",
+     "what_they_did": "A prevalence-adjusted softmax score, plus interpolation between marginal and class-conditional thresholds, to trade prediction-set size against class-conditional coverage on Pl@ntNet-300K (1,081 classes) and iNaturalist-2018 (8,142 classes).",
+     "bearing": "Narrows: this is long-tail conformal work over thousands of classes, but about coverage of prediction sets, not the precision of a single accepted label. It does not answer automatic acceptance.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Liao C, Lai X, Chen W, He J, Yu X. Trigger-first large language model-assisted adverse drug reaction surveillance: a pharmacist-supervised retrospective cohort study. Explor Res Clin Soc Pharm 2026, doi 10.1016/j.rcsop.2026.100866",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC13718469&format=json&resultType=core",
+     "what_they_did": "7,950 inpatient episodes, 28 ADR-positive (about 0.35%). A rule trigger selected 167 candidates (2.10%) with 100% sensitivity. Qwen3-4B base versus LoRA-tuned then reviewed them: PPV 58.97% versus 78.79%, sensitivity 82.14% versus 92.86%. The authors conclude the LLM should support pharmacist review and not serve as an autonomous exclusion rule.",
+     "bearing": "Takes 'a cheap first stage then LLM review at low prevalence keeps the human' for a single binary event. It does not cover many codes or 0.08%.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Li H, He X, Subbaswamy A, Vossler P, Gossmann A, Singh K, Feng J. Scaling medical device regulatory science using large language models. NPJ Digit Med 2026, doi 10.1038/s41746-026-02353-7",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12992660/fullTextXML",
+     "what_they_did": "Validates LLM extraction from FDA documents. One application codes medical device reports (1,841 MDRs for AI/ML-enabled devices) with the lowest-level codes from 487 IMDRF device problem codes. It notes that assigned codes vary with the coder's view and are poorly standardised.",
+     "bearing": "Not about ranking. It is close to the project as a whole (LLM coding of MAUDE device problem codes, with FDA-affiliated authors) and should be cited. It produces no read-first list and no rare-code analysis at natural proportions.",
+     "read": "full_text"
+    },
+    {
+     "citation": "Ball R, Talal AH, Dang O, Muñoz M, Markatou M. Trust but Verify: Lessons Learned for the Application of AI to Case-Based Clinical Decision-Making From Postmarketing Drug Safety Assessment at the US FDA. J Med Internet Res 2024, doi 10.2196/50274",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.2196/50274%22&format=json&resultType=core",
+     "what_they_did": "An FDA viewpoint on why some AI tools for case-report assessment were accepted by safety reviewers and others were not. Trust was the deciding factor, and the reviewers' decision process is poorly defined.",
+     "bearing": "Leaves our claims alone. It supports framing the list as an aid that keeps the human, and confirms that regulators have worked on rare-event identification in case reports.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Lewis DD, Emory T, Gray L, Noel M, Pickens J, Yang E. The Delayed Countdown Method for Validating Review-Oriented AI Workflows in eDiscovery. arXiv 2610.31311 (Oct 2026)",
+     "url": "https://arxiv.org/abs/2610.31311",
+     "what_they_did": "A validation method that can be added to existing review workflows, works with any stopping rule, and gives frequentist confidence intervals on effectiveness.",
+     "bearing": "The current baseline for 'when can people stop reading'. The abstract does not mention low prevalence or multiple categories, so how it behaves at 0.08% pooled is open and measurable.",
+     "read": "abstract"
+    },
+    {
+     "citation": "Fletcher A, Stevenson M. Confidence-Based Stopping Methods for Systematic Reviews. arXiv 2606.15380 (Jun 2026)",
+     "url": "https://arxiv.org/abs/2606.15380",
+     "what_they_did": "Two heuristic stopping methods that check whether the documents screened so far support the review's conclusion rather than a recall target. Tested on a Diagnostic Test Accuracy collection.",
+     "bearing": "Leaves our claims alone. It is a 2026 stopping-rule alternative a reviewer might name; there is no low-prevalence or multi-category test.",
+     "read": "abstract"
+    }
+   ],
+   "now_taken": [
+    "Two-phase TAR (rank once, freeze, read in order) and its stopping rules as the framework for our list. The list itself is not a method contribution.",
+    "TAR on single categories down to about 0.2% prevalence (RCV1 'Rare' bin, e.g. I24000 at 0.002133), with the lowest prevalence bin deliberately excluded. Only the band below this is unstudied.",
+    "Many-category e-discovery where the reader also assigns the category (70 requests grouped into 10 categories, separate CAL per group, then sub-review to the specific request; Harbison et al., CEUR 2024). This exists in practice, but not as one pooled frozen ranking and with no prevalence reported.",
+    "The objective of finding as many rare-class items per read across several classes, with diversity (multiclass active search), and LM-embedding search for many rare classes with a per-class stopping rule (Exemplar Guided Active Learning, NeurIPS 2020).",
+    "Certifying precision per rare unit needs tens to hundreds of calibration examples per unit (Available Guardrails: 179 for one group, 450 each for fifty, at least 29). Our 'no rule can auto-accept rare codes' is a known consequence and should be cited as one.",
+    "Overall-average guarantees for automatic acceptance of LLM labels (Conformal Labeling, NeurIPS 2026; conformal selection, Jin & Candès). These are published but do not give per-code precision.",
+    "LLM review behind a cheap first stage at 0.35% prevalence for one binary event, with authors rejecting autonomous use (Liao 2026).",
+    "LLM coding of MAUDE device-problem codes from the 487 IMDRF codes by an FDA-affiliated group (Li H et al., npj Digit Med 2026). This is relevant to the whole paper, not just the list."
+   ],
+   "still_open": [
+    "Recall against reads for one pooled ranking over hundreds of rare codes at about 0.08% combined prevalence, where the reader must also name the code. Not found after about 50 queries across WebSearch (10), Crossref, Europe PMC, arXiv API and arxiv.org search. Every TAR study I opened is single-category or grouped-category, at 0.2% or above.",
+    "A ranker frozen on one calendar year and tested on later years of a safety or failure report stream, measured in TAR terms (gain curve, reads to recall r, WSS). I found frozen deployment for binary screening (Cochrane, round 1) but nothing multi-code. Medium-hard look.",
+    "LLM code proposals plus the encoder's score for the proposed code as ranking features. Not found under any name. A small design difference, not a contribution by itself.",
+    "A published case of automatic acceptance (conformal, selective or FDR-controlled) working at about 1 in 1,000 across many rare classes. None found. The certification arithmetic in Available Guardrails suggests it cannot work per code. Pooled conformal selection has not been tested at this prevalence anywhere I could find, and it is the experiment a reviewer would ask for.",
+    "How much reading a certified stopping rule (QuantCI, Chao's estimator, Delayed Countdown) needs at 0.08% pooled. Not found. TAR studies drop that band. Measurable on our data.",
+    "Per-category prevalences in TREC Total Recall topics, which might include some near 0.1%. I did not find them; the per-topic appendices were not opened."
+   ],
+   "channels": "Two channels failed outright and one partly; together they cost about a third of the planned API queries.\n- OpenAlex: failed completely (HTTP 429, the shared free daily budget for this IP was exhausted until midnight UTC). All 7 queries lost; I did not create an API key, because that would need an email address.\n- Semantic Scholar: HTTP 429 on all 6 queries, with retries.\n- arXiv export API: 5 queries worked, then HTTP 429/503 on about 12 more. I stopped it and used the arxiv.org/search web pages through WebFetch instead (6 pages, which worked).\n- Crossref: worked (11 queries), but relevance ranking was poor. It gave no abstract for the ICIM 2024 categorisation paper.\n- Europe PMC REST: worked (11 queries, plus full-text XML for Li H et al.).\n- WebSearch: all 10 allowed calls used. They were useful for finding the CEUR e-discovery paper, Conformal Labeling and Exemplar Guided Active Learning.\n- Full texts were read by downloading PDFs and extracting them locally (Yang heuristic stopping, Goldilocks, Harbison CEUR, Available Guardrails, Nguyen & Garnett) after WebFetch could not parse the PDFs.\n- Failed: Springer chapter (login redirect), arxiv.org/html for 2609.22048 (404).\nScratch files (queries, extracted texts) are in C:/Users/jkchoi/AppData/Local/Temp/claude/ab7d3125465e1174/dd43bad0-8164-46fa-8063-19d00226505e/scratchpad/wf5/follow_ranking.",
+   "queries": [
+    "WebSearch: technology-assisted review multiple issues multi-label categories simultaneously low prevalence e-discovery",
+    "WebSearch: LLM rare class discovery needle in a haystack annotation classifier rare categories under 0.1% prevalence text",
+    "WebSearch: technology-assisted review stopping rule very low prevalence few relevant documents recall target cost 0.1% prevalence",
+    "WebSearch: eDiscovery issue coding large language model multiple issues per document classification recall GPT-4 review 2025",
+    "WebSearch: auto-labeling with precision guarantee conformal threshold rare classes long tail LLM human review fraction",
+    "WebSearch: multiclass active search many rare classes text documents language model find all positives budget",
+    "WebSearch: multi-label / multiple topics continuous active learning single review queue several systematic reviews rare",
+    "WebSearch: TREC Total Recall track topics prevalence lowest few relevant documents BMI baseline",
+    "WebSearch: LLM and fine-tuned classifier ensemble screening prioritisation WSS@95 prevalence below 1% 2025 2026",
+    "WebSearch: vaccine or device adverse event reports rare event detection ranked review list NLP number needed to review",
+    "arXiv API: all:\"technology assisted review\" AND all:prevalence; all:\"multi-label\" AND all:\"technology-assisted review\"; all:\"rare category\" AND all:\"language model\"; all:\"active search\" AND all:multiclass; stopping AND low prevalence AND review; all:\"rare category detection\"; abs:conformal AND abs:auto-labeling (later ones rate-limited: TAR+LLM, stopping+TAR, pharmacovigilance+triage, active search+rare, selective prediction+precision guarantee)",
+    "arxiv.org/search: technology-assisted review large language model; \"technology-assisted review\" (abstracts, newest first); \"active search\" rare; \"rare category\" OR \"rare classes\" LLM annotation discovery; conformal screening recall guarantee systematic review; \"conformal selection\"",
+    "Crossref: multi-issue TAR e-discovery multiple categories; TAR low prevalence stopping rare topics; rare category detection LLM; conformal risk control automatic acceptance precision guarantee; selective classification rare classes precision guarantee; adverse event report triage LLM ranking; multi-label active learning systematic review screening; high-recall retrieval extremely low prevalence; rare category detection active learning text; selective prediction class imbalance minority precision certification; Limitations of the Utility of Categorization in eDiscovery Review",
+    "Europe PMC: LLM AND pharmacovigilance/adverse event AND triage/prioritization 2024-26; screening prioritization AND LLM AND ensemble; stopping rule/criteria AND screening AND prevalence 2023-26; MAUDE AND LLM 2025-26; living review/surveillance screening ML low prevalence/workload; VAERS/FAERS NLP triage/case finding; rare disease case finding LLM ranking; work saved over sampling AND LLM 2025-26; DOI 10.2196/50274; living/surveillance multiple reviews classifier Cochrane/EPPI; incident/safety reports rare LLM ranking 2025-26",
+    "OpenAlex (all failed, 429): multi-issue TAR; TAR low prevalence rare topics stopping; rare category detection LLM text; multiclass active search; needle-in-haystack rare class retrieval classifier LLM; conformal risk control precision auto-accept; selective classification rare classes",
+    "Semantic Scholar (all failed, 429): multi-label TAR; TAR rare topics low prevalence; rare category detection language model; LLM screening classifier ensemble ranking; multiclass active search; conformal auto-labeling precision rare classes"
+   ],
+   "unverified": [
+    "McManus et al. 2024 (ICIM, CCIS vol 2102, doi 10.1007/978-3-031-64359-0_24), 'Limitations of the Utility of Categorization in eDiscovery Review Efforts': only the title (Crossref) and the one-sentence summary in Harbison et al. Abstract not seen.",
+    "Per-topic prevalence of TREC Total Recall 2015/2016 topics, and whether any are near 0.1%: not found.",
+    "Exact RCV1 prevalence bin limits used by Yang/Lewis/Frieder (from their reference [36]/[54]). Only the I24000 example (0.002133) and the exclusion of the lowest bin were seen.",
+    "Whether Conformal Labeling or conformal selection has been tested on any class at about 0.1% prevalence: the poster page and abstract name no datasets or class balance.",
+    "Everlaw and Relativity aiR vendor recall and precision figures, and the Syllo white paper claim that managed reviews limit the number of issue codes: search snippets only, vendor sources.",
+    "Kataoka et al. TiAb plugin (arXiv 2604.08602) 0.5-2.0% prevalence figures: from the round-1 abstract check and a WebSearch snippet, not re-opened this round.",
+    "The 'roughly 480,000 reads' needed for sample-based certification at 0.08% is my own extrapolation of Yang et al.'s 385-positive figure, not a published number."
+   ]
+  }
+ ],
+ "map": {
+  "taken": [
+   "Claim 2 (LLMs win on rare codes, the encoder wins on frequent ones), on our own data source. MADE (Agarwal et al., ACL 2026, arXiv 2604.15203) uses openFDA device reports, 1,154 IMDRF labels, a strict temporal split (train 2015-2023, test Jul 2024-Jun 2025), macro-F1 by training-frequency bin, and a GPT-5 prompted with 10 kNN-retrieved examples (our retrieval coder). GPT-5 is about 0.34 on the extreme tail against about 0.16 for the best fine-tuned model, ties on the tail and loses on the head. Fine-tuned Llama up to 70B (LoRA and full) does not close the gap. I re-opened the html. Also shown in other domains: Motzfeldt 2025, Yock/Eng 2026, Martin/Feng/Peng ICHI 2026, Emer 2026, Zhou JMIR MH 2023, Kaehler 2026 (XMLC). Claim 2 is a replication, except for the per-bin training-size sweep.",
+   "An encoder, a kNN/retrieval tier and an LLM routed over about 300 imbalanced classes, reported by head/mid/tail group, with a later-year test, beating the encoder (+0.04 macro-F1) and a FrugalGPT confidence cascade: EnergyRoute (Jang et al., Sci Rep 2026). I re-opened the full text. Train 2018-2020; test 500 stratified items from 2021; thresholds are percentiles of the energy of the incoming test batch.",
+   "Using how rare the proposed code is as a routing trigger, after the classifier answers: Li Z et al. arXiv 2512.21041 (LAK26). I re-opened the html. MacBERT's answer goes to an expert, with GPT-4o adjudication, when confidence is below 0.6 or the predicted code occurs in under 5% of samples; this flagged 44 of 500 items and kappa went from 0.62 to 0.66. STREAQ (EMNLP Industry 2025) sends the small model's rare 'answer of interest' to a large LLM, in a binary setting. Judging a classifier by the class it outputs: Local Class Accuracy / BKS. So claim 1 cannot say the support of the proposed code is an unused signal.",
+   "A learned per-item deferral between an encoder and an LLM (logistic model over confidence features), and stacking or deferral over several experts plus an LLM: L2D-Clinical arXiv 2604.13285, AspectBench Front AI 2026, Arora et al. EMNLP Industry 2024, CMBS, Emer 2026. Confidence cascades are a published method and run in production (BLS autocoder; Marucci-Wellman 2017 routes by prediction strength or by classifier agreement and sends rare narratives to people).",
+   "Balanced or held-out tests overstate rare-class precision over hundreds of classes. Stated with the base-rate formula and the advice to report the false positive rate: Caswell et al. COLING 2020 (language ID). For LLMs, by simulation: Chen 2026 commentary; also Noren Drug Saf 2026. Only the empirical same-system comparison is left. MADE itself evaluates on a 'truncated test set' made by stratified sampling, after HDBSCAN downsampling that keeps a high share of rare labels (verified in the html). It is a ready example.",
+   "LLMs over-label in general: CatLLM (Soria 2026, abstract) reports this for 21 LLMs, with precision 40-50 points below sensitivity, and names definitions, unanimous ensembles and an 'Other' category as fixes. LLM-codex 2023 shows the same for ICD. Per-class fixes can work at web scale (Caswell: median precision 5.5% to 71.2% with tunable wordlists), and LoRA cut false positives at 0.35% prevalence (Liao 2026). 'No fix works' must be scoped.",
+   "Certifying per-unit precision needs tens to hundreds of calibration examples per unit (Available Guardrails arXiv 2609.22048: 179 for one group, 450 each for fifty, floor 29). 'No rule can auto-accept codes with 1-5 reports' follows from known arithmetic and should be cited as such.",
+   "Ranked read-first lists are two-phase TAR (Yang, Lewis & Frieder 2021; Cochrane RCT classifier; Bron 2024). TAR has been run on single categories down to about 0.2% prevalence (RCV1 I24000 at 0.002133). Many-category e-discovery where the reader also assigns the category exists (Harbison et al. CEUR 2024: 70 requests grouped into 10 CAL reviews). So does multiclass rare-item search (Nguyen & Garnett; Hartford et al. NeurIPS 2020). The list is not a method contribution.",
+   "LLM coding of MAUDE device-problem codes: Li H et al. npj Digit Med 2026 (487 IMDRF codes; judges preferred the LLM's code in 60.8 of 90 reports, the filer's in 21.7). Muaz et al. IFIP AIAI 2026 (snippet only). An LLM assigning NEISS product codes: Circo blog, May 2025 (gpt-4o-mini plus a retriever, 500 cases from 2024, 66.40%, scored as a match to any of Product_1-3). I re-opened the blog. The first-round critic was wrong on this.",
+   "Temporal split plus natural-frequency test over thousands of codes with a fine-tuned generative coder: Coutinho et al. PLOS Digit Health 2026. Macro precision is about 21% at about 80% accuracy; they also test a later period. There is no rare-code false-positive count and no zero-shot LLM."
+  ],
+  "open": [
+   {
+    "item": "A learned selector (one logistic model per coder) that picks one of three coders' final answers per report, after all have answered, using the training support of each proposed code, frozen on the training year and tested on whole later years at natural proportions, on two datasets with three LLMs.",
+    "closest_work": "EnergyRoute (energy gating before the LLM answers, fusion, thresholds from the test batch, 500-item stratified test); Li Z 2512.21041 (fixed rare-code plus confidence rule, one classifier, routes to humans, 12 codes); STREAQ (binary rarity trigger); L2D-Clinical (logistic deferral, 2-3 classes); LCA/BKS.",
+    "how_sure": "partly_searched",
+    "what_would_make_it_a_contribution": "Head-to-head on the frozen 2026 year against: EnergyRoute-style energy gating, an LCA/BKS per-code precision table, the Li Z rarity-plus-confidence rule, L2D logistic deferral on confidence, the confidence cascade and majority vote, plus an ablation that removes the support feature. It is a contribution only if support adds macro-F1 beyond the per-code precision table and energy routing."
+   },
+   {
+    "item": "A measured per-code and pooled false-naming rate of zero-shot and retrieval LLM coders across hundreds of codes in a natural stream at about 1 in 1,000 (1 in 45 to 1 in 100 ordinary reports; 97% of rare answers false), with named fixes failing on a held-out year.",
+    "closest_work": "Coutinho 2026 (fine-tuned, no rare false-positive count); Rossow 2025 (n=1,000, says it cannot characterise rare codes); CatLLM 2026 (general over-labelling, higher prevalence, fixes reported to help); Liao 2026 (binary, 0.35%, fix worked); Caswell 2020 (non-LLM, fixes worked).",
+    "how_sure": "partly_searched",
+    "what_would_make_it_a_contribution": "Report it narrowly (zero-shot and retrieval-prompted LLM coders, hundreds of codes, about 0.08%) and add the fixes reviewers will name: per-code keyword or wordlist filters with a precision knob (Caswell), CatLLM-style definitions with include/exclude rules and unanimity, and candidate restriction. Add a label-noise audit of a sample of the 'false' rare answers, since Li H shows filer codes are often judged worse."
+   },
+   {
+    "item": "An empirical same-system comparison of natural, stratified and balanced test protocols on one coding task, showing how far the last two overstate rare-code precision.",
+    "closest_work": "Caswell 2020 (argument plus web-crawl audit, language ID); Chen 2026 (simulation); MADE (uses a stratified truncated test, so it is an example, not a comparison).",
+    "how_sure": "partly_searched",
+    "what_would_make_it_a_contribution": "Score the same coders on our 2026 year under three protocols (natural, MADE/Yock-style stratified, balanced 100/100) and report rare-code precision under each. Cheap, and it needs no new runs."
+   },
+   {
+    "item": "Recall against reads for one pooled frozen ranking over hundreds of rare codes at about 0.08% combined prevalence, where the reader must also name the code, using LLM proposals and encoder scores as features.",
+    "closest_work": "Yang, Lewis & Frieder 2021 (single category, at or above about 0.2%, lowest bin dropped); Harbison CEUR 2024 (grouped CAL, prevalence not reported); Nguyen & Garnett (multiclass active search, hit rates 2-36%).",
+    "how_sure": "partly_searched",
+    "what_would_make_it_a_contribution": "State it as an operating-point result, not a method. Add baselines: random, encoder-only, LLM-only, per-code TF-IDF two-phase TAR, simulated CAL/AutoTAR, conformal selection (Jin & Candes) over pooled rare proposals. Add measures: gain curve, reads to recall r, WSS@r, distinct codes found per k reads. Either test a stopping rule (QuantCI, Delayed Countdown) or show that sample-based certification is infeasible (about 385 positives needed)."
+   },
+   {
+    "item": "A training-size sweep of the fine-tuned coder against a fixed LLM, reported by code-frequency bin, including codes with 1-5 training reports.",
+    "closest_work": "MADE (no sweep, labels with fewer than 5 occurrences removed); Bucher & Martini 2024 (sweep in aggregate only, 2-3 classes).",
+    "how_sure": "partly_searched",
+    "what_would_make_it_a_contribution": "Already run in the project. Present it as the one non-replicated part of claim 2."
+   },
+   {
+    "item": "The coverage ceiling: the share of rare-code reports any of several coders reaches (219 of 552).",
+    "closest_work": "Nothing comparable found; not searched specifically.",
+    "how_sure": "thinly_searched",
+    "what_would_make_it_a_contribution": "Report it as a measured limit beside the ranked list; it bounds what any selector can do."
+   },
+   {
+    "item": "Whether Hou et al. EAAI 2026 (114403, selective ensemble on imbalanced civil-aviation maintenance hazard text), Ding et al. EAAI 115750 and Chhetri & Das AEI 105391 hold a dynamic-selection precedent in our own venue and domain.",
+    "closest_work": "Titles only (ScienceDirect 403). Ding is inferred from the author's thesis to use the LLM as a data augmenter.",
+    "how_sure": "thinly_searched",
+    "what_would_make_it_a_contribution": "The owner should read the three articles through library access before submission to EAAI/RESS."
+   }
+  ],
+  "datasets": [
+   {
+    "name": "FDA MAUDE device-problem codes (existing, 471 leaf codes, single-label)",
+    "who_labels": "The filer, mostly manufacturers. The 'about 96%' share is from Kavanagh 2019 on 1997-2018 data, not current. Li H 2026 judges preferred an LLM's code over the filer's in 60.8 of 90 reports.",
+    "verdict": "Keep as the main dataset",
+    "why": "All results exist, and the base rate is the lowest (rare-code reports are 1 in 1,198). MADE now makes it a known benchmark source, so reviewers will ask how our label set and split differ (single-label leaf codes vs MADE's multi-label IMDRF codes with ancestors; whole natural year vs stratified truncated test).",
+    "next_check": "Map our 471 codes against MADE's labels. Consider reporting one coder on MADE's public CC0 split (Hugging Face) as a bridge. Check that the download is under the size limits before trying."
+   },
+   {
+    "name": "FAA SDR PartCondition (existing, about 290 terms)",
+    "who_labels": "The filer (operator or repair station) picks the condition term.",
+    "verdict": "Keep as the second dataset",
+    "why": "Nothing new on SDR PartCondition turned up in this round. The selector holds there. The first round found Dela Pena 2026 and Verhagen & Scott 2025 on JASC codes, a different field.",
+    "next_check": "Compute the SDR natural-proportion rare-code base rate (missing per the first-round critic)."
+   },
+   {
+    "name": "CPSC NEISS Product_1 (single-product cases)",
+    "who_labels": "A CPSC-trained hospital or contract coder who also writes the narrative. CPSC QC edits at entry; no agreement figure is published.",
+    "verdict": "Still the best new candidate, medium",
+    "why": "The NEISS query page lists archived annual data for 2025, so a 2023/2024/2025 split is possible (follow-up agent, WebFetch; I did not re-open it). LLM product-code assignment is no longer untouched: the Circo 2025 blog did it informally (500 cases, 66.40%, verified). Weak points: the coder writes the product into the narrative (keyword-lookup risk), the code count is unclear (805 to 1,114), the tail is unverified, and there are no terms of use.",
+    "next_check": "Count single-product cases per code across 2023-2025 from CPSC files (browser download, owner's approval; curl gets 403). Run a BM25/keyword-against-code-name baseline on a small sample. Run the same-text/different-code consistency check."
+   },
+   {
+    "name": "MADE benchmark (openFDA, Fraunhofer HHI)",
+    "who_labels": "Filer FDA problem terms mapped to IMDRF codes",
+    "verdict": "Not a new source, but a citable public benchmark of the same stream",
+    "why": "Temporal split, 1,154 multi-label codes, CC0 per the paper. Its test is stratified and truncated (n=10,288), and HDBSCAN downsampling keeps rare labels, so its rare-label scores are not at natural prevalence.",
+    "next_check": "Decide whether to report on it or only position against it."
+   },
+   {
+    "name": "VAERS MedDRA PTs",
+    "who_labels": "VAERS program staff (coder identity not stated)",
+    "verdict": "Low-medium",
+    "why": "Multi-label, alphabetical, no principal term, so one code per report would be artificial. LLM MedDRA coding of VAERS is published (He et al. 2025). Download needs a human verification code."
+   },
+   {
+    "name": "MSHA Part 50 accident/injury",
+    "who_labels": "Unverified (operators file Form 7000-1)",
+    "verdict": "Low-medium, unverified",
+    "why": "384-character narrative and several coded fields. Coder identity and per-field tail unknown; the file is 52 MB, not downloaded.",
+    "next_check": "Read MSHA coding documentation for who assigns the codes."
+   },
+   {
+    "name": "Non-US regulator streams (Korea MFDS, KCA CISS, KOSHA, KOTSA rail, Korean aviation, Japan PMDA, Australia TGA DAEN, Health Canada MDI, EUDAMED)",
+    "who_labels": "Varies: sponsor (DAEN, PMDA), regulator codes without text (Health Canada MDI, KCA CISS)",
+    "verdict": "Fail",
+    "why": "Each lacks either public narrative text, a code chosen from a list of hundreds, or public access. MHRA and Swissmedic were not checked."
+   },
+   {
+    "name": "NIOSH OIICS set, ATSB occurrences, NVD CVE-CWE, SemEval-2025 food hazard",
+    "who_labels": "Various",
+    "verdict": "Fail or low",
+    "why": "OIICS: 48 codes, no dates. ATSB: export restricted to 200 rows. CVE-CWE: crowded LLM field. Food hazard: small (6,644 reports), CC BY-NC-SA."
+   }
+  ],
+  "claim1_selector": "Claim 1 is not taken, but it is narrower than the draft says. Every published router found decides before the LLM answers, from the encoder's uncertainty or from the input. EnergyRoute: Helmholtz energy, thresholds as percentiles of the test batch's energy, verified. L2D-Clinical, Arora, CMBS and Emer do the same. Several fuse the outputs rather than pick one. Two works do use the rarity of the proposed label. Li Z et al. 2512.21041 sends MacBERT's answer to people when the predicted code is under 5% of samples or confidence is under 0.6; this is a fixed rule over 12 codes with one classifier. STREAQ is binary. LCA/BKS judge a classifier by the class it outputs.\n\nWhat remains new is the combination:\n- a learned per-coder selector over three coders' final answers (encoder, zero-shot LLM, retrieval LLM), with training support as its main input;\n- frozen on one year and scored over whole later years at natural proportions;\n- on two datasets with three LLMs.\n\nEnergyRoute is the closest work and is not in references.bib. Its test is 500 stratified 2021 items and its thresholds come from the test batch, so 'temporal test' alone is not new and 'frozen' is.\n\nThe deciding experiment uses the frozen 2026 year, scored by macro-F1 overall and by frequency bin. Compare the selector against:\n- (a) EnergyRoute-style energy gating with the encoder, kNN and retrieval-LLM tiers;\n- (b) an LCA/BKS table of per-code validation precision for each coder;\n- (c) the Li Z rule (rare-code-or-low-confidence goes to the LLM);\n- (d) an L2D-style logistic deferral on confidence only;\n- (e) the selector with the support feature removed.\n\nIf support beats (b) and (e) and the selector beats (a) on both datasets, the claim stands as an increment. If (b) matches it, the contribution shrinks to an evaluation finding. The manuscript's line that training support 'has no counterpart' must go.",
+  "claim2_split": "Claim 2 is taken as a finding and now on our own data source. MADE (ACL 2026) shows the same split on openFDA device reports, with a temporal split, frequency bins and a retrieval-prompted LLM given 10 kNN examples. Fine-tuned LLMs up to 70B do not close the extreme-tail gap. Motzfeldt, Yock/Eng, Martin/Feng/Peng, Emer, Zhou 2023 and Kaehler 2026 repeat it elsewhere. Li Z 2512.21041 (12 codes) found no LLM advantage on rare codes, and FLAN-FinXC and Al Monsur show LoRA helping the tail. So 'LoRA does not close the gap' is a finding for our data, not a rule.\n\nTwo pieces are still unreported:\n- the training-size sweep of the encoder against a fixed LLM, reported per frequency bin;\n- the 1-5-training-report bin, which MADE excludes by its 5-occurrence minimum.\n\nNothing new needs to be run: the sweep exists. In the paper, claim 2 should become supporting evidence that cites MADE first, with the sweep as its one new element. It is not a headline contribution.",
+  "claim3_natural": "Part of claim 3 is taken: the base-rate collapse in principle, the general LLM over-labelling, and the arithmetic that per-code certification is impossible. Caswell 2020 makes the balanced-test argument over up to 1,629 classes. Chen 2026 and Noren 2026 make it for LLMs. CatLLM 2026 reports over-labelling by 21 LLMs. Available Guardrails gives the certification counts. The phrase 'no fix works' is also contradicted in other settings: wordlist filters in Caswell, LoRA in Liao, definitions and unanimity in CatLLM.\n\nWhat remains new, and still unreported after about 50 queries in this round (with OpenAlex and Semantic Scholar down):\n- the measured per-code and pooled false-naming rate of zero-shot and retrieval LLM coders over hundreds of codes at about 0.08%, tested on a held-out year;\n- the failure of the specific fixes tried;\n- the coverage ceiling (219 of 552);\n- the read-first list as an operating point. TAR stops at about 0.2% single-category prevalence, so the claim is the pooled 0.08% multi-code band with code naming, not the list as a method.\n\nDeciding experiments, all cheap and CPU-only on existing outputs:\n- (1) Score the same coders under natural, stratified (MADE/Yock-style) and balanced protocols and report rare-code precision under each. This turns the general argument into a measurement.\n- (2) Add the fixes reviewers will name: per-code keyword/wordlist filters with a precision knob, CatLLM-style definitions with unanimity, and candidate restriction.\n- (3) Audit a sample of 'false' rare answers for label noise (Li H).\n- (4) Run TAR baselines on the list: per-code TF-IDF two-phase, simulated CAL, conformal selection. Also give either a stopping rule or the infeasibility arithmetic.",
+  "best_contribution": "Best: On two report streams coded by their filers, a whole later year scored at natural proportions changes the picture that stratified tests give. Rare-code reports are about 1 in 1,200. A zero-shot or retrieval-prompted LLM names a rare code on 1 in 45 to 1 in 100 ordinary reports, so nearly all its rare-code answers are false. The fixes we tried do not change this on a held-out year, and only 219 of 552 rare reports are reached by any coder. The same coders scored under stratified and balanced protocols look far better (once that comparison is run). What does work at this prevalence is a frozen ranked read-first list: it finds 200 of 552 rare reports in about 7,000 reads, against about 16,000 for the encoder alone. Second best: a per-coder selector frozen on the training year chooses among an encoder, a zero-shot LLM and a retrieval LLM after all have answered, using mainly the training support of each proposed code. It adds 0.03 to 0.06 macro-F1 over the best single coder on later years, across two datasets and three LLMs, and beats confidence cascades, majority vote and (to be shown) energy-based routing and a per-code precision table.",
+  "must_cite": [
+   "Jang G et al. EnergyRoute. Sci Rep 16:19697 (2026), doi 10.1038/s41598-026-49886-1 - main head-to-head baseline, not yet in references.bib",
+   "Agarwal R et al. MADE: a living benchmark ... medical device adverse events. ACL 2026, arXiv 2604.15203",
+   "Li Z, Tang L, Xia M et al. When LLMs fall short in deductive coding. arXiv 2512.21041 (LAK26) - rare-code routing rule",
+   "Sood P et al. STREAQ. EMNLP 2025 Industry Track",
+   "Li H, He X, ... Feng J. Scaling medical device regulatory science using LLMs. npj Digit Med 9:221 (2026)",
+   "Caswell I et al. Language ID in the Wild. COLING 2020, arXiv 2010.14571",
+   "Soria C. CatLLM (scaling open-ended survey coding). SocArXiv gjvcf_v1 (2026)",
+   "Coutinho I et al. ICD coding of death certificates with generative language models. PLOS Digit Health 2026",
+   "L2D-Clinical. arXiv 2604.13285 (2026)",
+   "Emer L et al. LLMs for patent classification and the long tail. arXiv 2601.23200",
+   "Martin G, Feng X, Peng Y. NVDRS circumstance extraction. IEEE ICHI 2026, arXiv 2605.21845",
+   "Motzfeldt 2025 (EMNLP Findings) and Yock/Eng 2026 (arXiv 2609.13806)",
+   "Woods et al. 1997 Local Class Accuracy; behaviour-knowledge-space combination",
+   "Marucci-Wellman HR et al. Accid Anal Prev 2017 (ensemble plus human review of injury narratives)",
+   "Yang E, Lewis DD, Frieder O. Heuristic stopping rules for TAR. DocEng 2021",
+   "Harbison A et al. CEUR-WS Vol-3832 (2024) multi-category e-discovery",
+   "Priye P et al. Available Guardrails. arXiv 2609.22048",
+   "Jin Y, Candes EJ. Selection by prediction with conformal p-values. JMLR 2023",
+   "Milios A et al. In-context learning for text classification with many labels. arXiv 2309.10954",
+   "Noren et al. Drug Saf 2026 (base-rate precision)",
+   "Liao C et al. Trigger-first LLM ADR surveillance. 2026, doi 10.1016/j.rcsop.2026.100866",
+   "Arora G et al. Intent detection in the age of LLMs. EMNLP 2024 Industry",
+   "Read before submission and cite if relevant: Hou et al. EAAI 2026 114403; Ding et al. EAAI 2026 115750; Muaz et al. IFIP AIAI 2026 (MAUDE to IMDRF with an LLM)"
+  ],
+  "plain_summary": "The \"LLMs win on rare codes, the trained model wins on common codes\" result has been shown before, now even on FDA device reports by a 2026 paper called MADE. Treat it as backing, not as news, and cite MADE prominently. The selector is still not published in our form, but two ideas in it are: routing between models, and using how rare the proposed code is. EnergyRoute does the routing on about 300 classes with a later-year test, and a 2025 education paper sends rare-code answers to people. So the selector is an increment, and it needs a few more baselines (energy routing, a per-code precision table, the simple rare-code rule, and the selector without its count input) to prove the count adds something. The strongest new part is the natural-proportion measurement: how often LLMs falsely name rare codes at about 1 in 1,000, that our fixes did not help, and that only 219 of 552 rare reports are reached at all. The general idea that balanced tests flatter rare-class precision is old (a 2020 language-ID paper), so we must show it with numbers on our own coders by scoring them three ways. Reviewers will ask why we did not try keyword filters per code and longer code definitions, which helped elsewhere. Some of our \"false\" rare answers may be correct, because an FDA-linked study found judges often prefer an LLM's code over the filer's. The read-first list is standard review practice; what is new is the very low rate (0.08%) pooled over hundreds of codes. NEISS is still the best extra dataset and has a 2025 file, but someone already tried an LLM on its product codes in a blog post. No other country's report data were usable. Still unsure: three closed 2026 papers in our target journal (Hou, Ding, Chhetri) could not be read, and two of the big search services were blocked this round, so \"nobody has done this\" is a medium-confidence statement."
+ },
+ "critic": {
+  "verdict": "Most of the map is supported by the follow-up reports. I opened three claims myself (MADE, Li Z, EnergyRoute) and they mostly hold. One decisive claim is wrong. The map says TAR \"stops at about 0.2%\" single-category prevalence, so only the band below is unstudied. The paper that defines those RCV1 bins (Yang, Lewis, Frieder et al., arXiv 2106.09866) sets its \"Rare\" bin at 500-2,000 positive documents out of 804,414, which is about 0.06% to 0.25%. That bin covers our 0.08%, and the map's 0.002133 figure is only one example category inside it. It is the \"extremely low\" bin below 500 positives that was left out. So the read-first list's novelty has to rest on pooling hundreds of codes, naming the code, and the frozen later year, not on the prevalence band.\n\nThe map also overstates two points from Li Z 2512.21041:\n- It says that paper found no LLM advantage on rare codes. In fact GPT-4o beat BERT on 4 rare codes where BERT scored 0.00, and lost on 4 others.\n- It describes the routed path as \"GPT-4o adjudication\" and later as \"goes to the LLM\". In fact GPT-4o only suggests codes, and human experts make the decision.\n\nClaim 1's open item leans on \"after all coders have answered\" as a point of difference. Stackers and meta-learners over finished outputs (AspectBench, LabelFusion, LAVA) already decide after the answers. LAVA's method is still unread, and the map dropped it from its unverified list.\n\nEnergyRoute checks out: thresholds are computed from the incoming test batch, the test is 500 stratified items from 2021, and macro-F1 is 0.701 for the cascade against 0.778 for EnergyRoute. The MADE numbers check out (extreme tail 0.34 for GPT-5, 0.16 for generative Llama-70B, 0.13 for the best discriminative model; 10 kNN examples in the prompt; minimum of 5 occurrences per label). The test is a \"truncated\" set made by stratified sampling, but the stratification variables are never stated.\n\nEvery \"open\" item still rests on searches done while OpenAlex and Semantic Scholar were down, so \"medium confidence\" is the right label. The map tags the coverage ceiling and the venue papers as thinly searched, and it should do the same for the SDR item. Dataset verdicts are fair. The NEISS 2025 file and its code count are still second-hand, and MSHA's labeller is unknown.\n\nHow hard I looked:\n- 1 WebSearch, 4 WebFetch calls, 2 arXiv API queries (the first returned empty over http, the second worked over https), 2 Europe PMC calls (one full-text XML, one search), and the first round's result.json.\n- Sources opened: MADE html (https://arxiv.org/html/2604.15203, first 100,000 of 152,381 characters); Li Z html (https://arxiv.org/html/2512.21041, first 100,000 of 117,677 characters); EnergyRoute full-text XML (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13315699/fullTextXML, searched for keywords); Yang et al. 2106.09866 (PDF text extracted locally; I read only the passages on the prevalence bins); LAVA abstract (https://arxiv.org/abs/2509.09602).\n- The WebSearch for CLEF TAR per-topic prevalence returned nothing useful.",
+  "errors": [
+   "Map (taken, ranking; open item 4; claim3_natural) says TAR has been run on single categories 'down to about 0.2% prevalence' and that 'TAR stops at about 0.2%'. Wrong. Yang, Lewis, Frieder et al. (arXiv 2106.09866; PDF text read) bin RCV1-v2 categories by number of positive documents: Rare is 500-2,000 of 804,414 documents, about 0.06%-0.25%. Only the 'Too rare' bin (<500) was dropped. The 0.002133 category (I24000) is one example inside the Rare bin, not its floor. The same authors' stopping-rules paper (2106.09871) describes the same 9-bin design, so its Rare categories can also sit near 0.08%. I did not confirm its bin limits directly. Single-category TAR at our pooled prevalence is therefore published.",
+   "Map claim2_split says 'Li Z 2512.21041 (12 codes) found no LLM advantage on rare codes'. The paper's pre-optimisation table (html read) gives GPT-4o above BERT on four rare codes: CK 0.25 vs 0.00, SR 0.19 vs 0.00, RT 0.13 vs 0.00, OS 0.11 vs 0.00. BERT is higher on PQ, RR, SI and FQ. The overall conclusion is that LLMs did not beat BERT, but the per-code picture is mixed and partly supports claim 2. The venue report's 'kappa near zero for both on most of them' was carried over without checking.",
+   "Map (taken, item 3) says routed items go to 'an expert, with GPT-4o adjudication', and claim1 baseline (c) says 'rare-code-or-low-confidence goes to the LLM'. In the paper, GPT-4o only proposes candidate codes and rationales. Human experts adjudicate, and GPT-4o's suggestions were 'not accepted automatically'. Baseline (c) is therefore an adaptation and should be called one.",
+   "Map (taken, MADE) says GPT-5 'roughly doubles the best fine-tuned model'. That holds only against generative Llama-70B (0.16). The best discriminative models are lower: Ettin-1B encoder 0.13 and Llama-8B 0.12 (MADE Table 2, read). Also, the MADE abstract itself says smaller discriminatively fine-tuned decoders give the strongest head-to-tail accuracy. A reviewer will quote that abstract, so the map should state MADE's own headline alongside the extreme-tail result.",
+   "Map (taken, item 5) says MADE's HDBSCAN downsampling 'keeps a high share of rare labels (verified in the html)'. The html says this, but it never measures it or names the stratification variables. The tail agent explicitly could not confirm how the stratification was done. 'Verified' should read 'stated by the authors'."
+  ],
+  "overclaims": [
+   "Claim 1's 'what remains new' leans on the decision being made 'after all three coders have answered'. Stacking and meta-learners over finished outputs already do this: AspectBench's linear and random-forest stackers and complete LLM deferral (the LLM sees the expert's label), LabelFusion, and LAVA's meta-learner ensembles of GPT-5 and classifiers (abstract read; method not described). The map's 'every published router decides before the LLM answers' is true of routers, not of stackers. The increment is the support feature, learned per coder, frozen, at natural proportions.",
+   "LAVA (arXiv 2509.09602) was listed as unverified by the selector agent and then dropped from the map entirely. Its meta-learner could be a post-answer selector between an LLM and classifiers. This is unresolved and should stay on the must-read list.",
+   "The map says 'Claim 2 is a replication, except for the per-bin training-size sweep'. The first-round critic asked for 'mostly replicated'. MADE is multi-label with ancestor labels, drops labels with fewer than 5 occurrences, and is scored on a stratified truncated test. Our 1-5-report single-label bin at natural proportions is therefore not covered. The map lists these under open items but phrases the headline flatly.",
+   "The map's statement that 'no rule can auto-accept codes with 1-5 reports follows from known arithmetic' treats Available Guardrails' certification counts (179, 450 and 29, abstract and full text read by the ranking agent, not by me) as if they explained our empirical failure. Certifying precision with a guarantee and a rule failing empirically are different claims. The paper should cite the arithmetic for the first and keep its own measurement for the second.",
+   "The map lists Zhou JMIR MH 2023 and Kähler 2026 as repeating claim 2. Zhou compares zero-shot FLAN-UL2 with an SVM on 9 labels that are all rare (1.6-5%), and has no frequent-label head. Kähler uses a balanced test. Both are weak precedents for a frequency split.",
+   "'Medium confidence' is applied unevenly. The SDR PartCondition 'nothing found' rests on one web search, two Crossref queries and two Europe PMC queries, yet it sits in the datasets section without a thin-search flag. The CatLLM fixes (definitions, unanimity) are taken from an abstract only, so we do not know whether they were tested on rare categories. The map nonetheless tells the paper to scope its own 'agreement does not fix it' claim against CatLLM.",
+   "The NEISS 2025 annual file (seen by a follow-up agent via WebFetch and not re-opened by the synthesiser), the NEISS code count (805-1,114) and the NEISS tail are all second-hand. The verdict 'best new candidate, medium' is acceptable only with these caveats attached."
+  ],
+  "still_unsearched": [
+   "Per-topic prevalence in the CLEF eHealth TAR (2017-2019) and TREC Total Recall / TREC Legal collections. Some topics may sit at or below 0.1%, which would further narrow the read-first-list claim. One WebSearch returned no figures.",
+   "Multi-category or multi-label TAR with one pooled queue: searched only through WebSearch and Crossref, because OpenAlex and Semantic Scholar were down.",
+   "LAVA (2509.09602) full text: how its meta-learner combines GPT-5 with classifiers, and whether it uses class prevalence.",
+   "Hou EAAI 114403, Ding EAAI 115750 and Chhetri AEI 105391: titles only (ScienceDirect returned 403).",
+   "Muaz et al. IFIP AIAI 2026 (MAUDE to IMDRF codes with an LLM): numbers from a search snippet only.",
+   "Citation chasing through OpenAlex and Semantic Scholar for EnergyRoute, MADE, Emer, Li Z and Caswell: not done in either round.",
+   "Classic dynamic classifier selection with class-conditional competence (LCA, BKS, META-DES): not re-opened in this round. Woods 1997 is cited from memory or the first round.",
+   "Korean-language sources, Google Scholar, and ACL Anthology / KDD industry tracks beyond WebSearch.",
+   "MHRA and Swissmedic device streams; MSHA coder identity; how the LLM's over-naming of rare codes compares with that of the per-code keyword-filter baseline that reviewers may ask for.",
+   "Muaz and other MAUDE LLM coding papers that might report rare-code precision at natural proportions."
+  ]
+ }
+}

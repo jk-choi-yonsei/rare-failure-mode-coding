@@ -1,0 +1,6944 @@
+{
+ "note": "notes/why-it-works-plan-2026-11-16.md",
+ "corpus": "maude",
+ "years": {
+  "2026": {
+   "qwen38_27b": {
+    "mechanism": {
+     "rare_reports": 552,
+     "other_reports": 660608,
+     "prior_odds": 0.00083559387715559,
+     "confirmers": {
+      "zs": {
+       "llm_right": 131,
+       "llm_right_check_natural": 131.0,
+       "llm_false_estimated": 14693.4,
+       "llm_false_ci95": [
+        11803.4,
+        18085.3
+       ],
+       "right_passing": 72,
+       "false_passing": 155,
+       "keep_right": 0.5496,
+       "keep_false": 0.01055,
+       "filter_factor": 52.1,
+       "shortlisted_candidate_right": 110,
+       "shortlisted_candidate_false": 4186,
+       "confirm_right": 0.6545,
+       "confirm_false": 0.03703,
+       "confirm_ratio": 17.7
+      },
+      "rag": {
+       "llm_right": 79,
+       "llm_right_check_natural": 79.0,
+       "llm_false_estimated": 2733.5,
+       "llm_false_ci95": [
+        1593.8,
+        4397.2
+       ],
+       "right_passing": 45,
+       "false_passing": 79,
+       "keep_right": 0.5696,
+       "keep_false": 0.0289,
+       "filter_factor": 19.7,
+       "shortlisted_candidate_right": 110,
+       "shortlisted_candidate_false": 4186,
+       "confirm_right": 0.4091,
+       "confirm_false": 0.01887,
+       "confirm_ratio": 21.7
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 32,
+       "false": 219,
+       "LR": 174.9
+      },
+      "gate": {
+       "right": 77,
+       "false": 180,
+       "LR": 511.9
+      },
+      "llm_zs_alone": {
+       "right": 131,
+       "false": 14693.4,
+       "LR": 10.7
+      },
+      "llm_rag_alone": {
+       "right": 79,
+       "false": 2733.5,
+       "LR": 34.6
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 32,
+      "false": 219,
+      "visible_modes": 9,
+      "phantom_modes": 23,
+      "precision": 0.1275
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 23,
+       "false": 26,
+       "visible_modes": 5,
+       "phantom_modes": 8,
+       "precision": 0.4694
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 19,
+       "false": 21,
+       "visible_modes": 5,
+       "phantom_modes": 9,
+       "precision": 0.475
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 25,
+       "false": 35,
+       "visible_modes": 6,
+       "phantom_modes": 13,
+       "precision": 0.4167
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 17,
+       "false": 12,
+       "visible_modes": 4,
+       "phantom_modes": 4,
+       "precision": 0.5862
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 107,
+       "visible_modes": 9,
+       "phantom_modes": 9,
+       "precision": 0.3515
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 67,
+       "false": 300,
+       "visible_modes": 13,
+       "phantom_modes": 20,
+       "precision": 0.1826
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 37,
+       "false": 64,
+       "visible_modes": 10,
+       "phantom_modes": 12,
+       "precision": 0.3663
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 262,
+       "visible_modes": 13,
+       "phantom_modes": 22,
+       "precision": 0.1603
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 61,
+       "false": 131,
+       "visible_modes": 11,
+       "phantom_modes": 15,
+       "precision": 0.3177
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 68,
+       "false": 315,
+       "visible_modes": 13,
+       "phantom_modes": 22,
+       "precision": 0.1775
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 34,
+       "false": 40,
+       "visible_modes": 8,
+       "phantom_modes": 5,
+       "precision": 0.4595
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 49,
+       "false": 247,
+       "visible_modes": 13,
+       "phantom_modes": 20,
+       "precision": 0.1655
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 72,
+       "false": 155,
+       "visible_modes": 11,
+       "phantom_modes": 10,
+       "precision": 0.3172
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 81,
+       "false": 348,
+       "visible_modes": 15,
+       "phantom_modes": 19,
+       "precision": 0.1888
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 45,
+       "false": 79,
+       "visible_modes": 12,
+       "phantom_modes": 10,
+       "precision": 0.3629
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 58,
+       "false": 277,
+       "visible_modes": 15,
+       "phantom_modes": 20,
+       "precision": 0.1731
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 77,
+       "false": 180,
+       "visible_modes": 14,
+       "phantom_modes": 15,
+       "precision": 0.2996
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 84,
+       "false": 364,
+       "visible_modes": 16,
+       "phantom_modes": 20,
+       "precision": 0.1875
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 40,
+       "false": 54,
+       "visible_modes": 9,
+       "phantom_modes": 4,
+       "precision": 0.4255
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 55,
+       "false": 261,
+       "visible_modes": 14,
+       "phantom_modes": 19,
+       "precision": 0.1741
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 79,
+       "false": 311,
+       "visible_modes": 12,
+       "phantom_modes": 9,
+       "precision": 0.2026
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 88,
+       "false": 504,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.1486
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 53,
+       "false": 150,
+       "visible_modes": 14,
+       "phantom_modes": 12,
+       "precision": 0.2611
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 66,
+       "false": 348,
+       "visible_modes": 17,
+       "phantom_modes": 18,
+       "precision": 0.1594
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 85,
+       "false": 348,
+       "visible_modes": 15,
+       "phantom_modes": 14,
+       "precision": 0.1963
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 92,
+       "false": 532,
+       "visible_modes": 17,
+       "phantom_modes": 19,
+       "precision": 0.1474
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 47,
+       "false": 113,
+       "visible_modes": 10,
+       "phantom_modes": 7,
+       "precision": 0.2938
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 62,
+       "false": 320,
+       "visible_modes": 15,
+       "phantom_modes": 18,
+       "precision": 0.1623
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 70935,
+       "encoder": [
+        5,
+        19
+       ],
+       "gate": [
+        8,
+        17
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 70345,
+       "encoder": [
+        3,
+        20
+       ],
+       "gate": [
+        5,
+        21
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 76525,
+       "encoder": [
+        8,
+        23
+       ],
+       "gate": [
+        13,
+        18
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 76634,
+       "encoder": [
+        6,
+        25
+       ],
+       "gate": [
+        8,
+        16
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 71689,
+       "encoder": [
+        2,
+        30
+       ],
+       "gate": [
+        4,
+        19
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 78003,
+       "encoder": [
+        1,
+        30
+       ],
+       "gate": [
+        8,
+        18
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 58980,
+       "encoder": [
+        3,
+        19
+       ],
+       "gate": [
+        7,
+        18
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 43888,
+       "encoder": [
+        1,
+        12
+       ],
+       "gate": [
+        6,
+        10
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 58665,
+       "encoder": [
+        1,
+        28
+       ],
+       "gate": [
+        7,
+        21
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 55496,
+       "encoder": [
+        2,
+        13
+       ],
+       "gate": [
+        11,
+        22
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 116,
+      "right_gain_total": 45,
+      "groups_gaining": 29,
+      "groups_losing": 4,
+      "top3_share_of_positive_gain": 0.314,
+      "groups_false_down": 32,
+      "groups_false_up": 57,
+      "rows": [
+       [
+        "JWH",
+        1660,
+        0,
+        0,
+        6,
+        6
+       ],
+       [
+        "LZO",
+        694,
+        5,
+        2,
+        11,
+        7
+       ],
+       [
+        "LPH",
+        1153,
+        0,
+        0,
+        4,
+        4
+       ],
+       [
+        "MBH",
+        362,
+        0,
+        0,
+        4,
+        4
+       ],
+       [
+        "CBK",
+        3395,
+        0,
+        37,
+        2,
+        14
+       ],
+       [
+        "FDE",
+        123,
+        0,
+        0,
+        2,
+        0
+       ],
+       [
+        "FET",
+        8171,
+        0,
+        1,
+        2,
+        3
+       ],
+       [
+        "FTR",
+        12906,
+        0,
+        0,
+        2,
+        0
+       ],
+       [
+        "JDI",
+        430,
+        0,
+        0,
+        2,
+        1
+       ],
+       [
+        "MJO",
+        102,
+        0,
+        1,
+        2,
+        4
+       ],
+       [
+        "BTR",
+        639,
+        0,
+        0,
+        1,
+        2
+       ],
+       [
+        "EFQ",
+        13,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "FDF",
+        17127,
+        0,
+        1,
+        1,
+        9
+       ],
+       [
+        "FDS",
+        17100,
+        0,
+        1,
+        1,
+        3
+       ],
+       [
+        "FEB",
+        230,
+        0,
+        1,
+        1,
+        6
+       ],
+       [
+        "FGB",
+        1779,
+        0,
+        0,
+        1,
+        1
+       ],
+       [
+        "GAM",
+        3003,
+        3,
+        0,
+        4,
+        1
+       ],
+       [
+        "HIF",
+        754,
+        0,
+        1,
+        1,
+        2
+       ],
+       [
+        "HSX",
+        56,
+        1,
+        0,
+        2,
+        2
+       ],
+       [
+        "KWZ",
+        54,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "LMH",
+        169,
+        0,
+        2,
+        1,
+        0
+       ],
+       [
+        "LRO",
+        2082,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "MLS",
+        15,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "NIK",
+        2664,
+        0,
+        1,
+        1,
+        2
+       ],
+       [
+        "NRA",
+        54,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "OJH",
+        253,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "OVE",
+        93,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "PSV",
+        1723,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "QFG",
+        118812,
+        0,
+        3,
+        1,
+        4
+       ],
+       [
+        "BRY",
+        29384,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "BSB",
+        54,
+        0,
+        12,
+        0,
+        6
+       ],
+       [
+        "BZD",
+        10112,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "CAW",
+        329,
+        0,
+        4,
+        0,
+        1
+       ],
+       [
+        "DRA",
+        838,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "DRF",
+        115,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DSP",
+        3101,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DTB",
+        4534,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DTX",
+        46,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "DXY",
+        225,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DYB",
+        2541,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "EOB",
+        1260,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "EOQ",
+        4565,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "FAJ",
+        2935,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "FAS",
+        179,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FCG",
+        239,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FDI",
+        81,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "FDT",
+        4041,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FMF",
+        1929,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "FMH",
+        39,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FPA",
+        36070,
+        4,
+        3,
+        4,
+        5
+       ],
+       [
+        "FPB",
+        16,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GAA",
+        58,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GAR",
+        345,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GCJ",
+        2992,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "GDY",
+        46,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "GEI",
+        2645,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "GEX",
+        1061,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "GZF",
+        373,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "HQL",
+        2319,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "HSD",
+        160,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "HSN",
+        147,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "JKA",
+        1910,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "JOH",
+        367,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "JOL",
+        130,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "JTS",
+        9,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "KDI",
+        1084,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "KRG",
+        324,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWA",
+        115,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWS",
+        573,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWT",
+        158,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWY",
+        71,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LGW",
+        9124,
+        0,
+        6,
+        0,
+        1
+       ],
+       [
+        "LHI",
+        689,
+        2,
+        1,
+        2,
+        1
+       ],
+       [
+        "LJS",
+        1527,
+        0,
+        2,
+        0,
+        3
+       ],
+       [
+        "LKK",
+        2535,
+        0,
+        3,
+        0,
+        0
+       ],
+       [
+        "LWP",
+        4300,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LWS",
+        4229,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "LZS",
+        17,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MAX",
+        340,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MCM",
+        1576,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MEA",
+        1016,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MEH",
+        100,
+        0,
+        0,
+        0,
+        5
+       ],
+       [
+        "MHX",
+        2446,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MJP",
+        669,
+        0,
+        4,
+        0,
+        0
+       ],
+       [
+        "MLR",
+        28,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MNS",
+        1425,
+        0,
+        13,
+        0,
+        0
+       ],
+       [
+        "MNT",
+        1670,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MXD",
+        1013,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NCF",
+        34,
+        0,
+        3,
+        0,
+        2
+       ],
+       [
+        "NEW",
+        822,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "NJL",
+        112,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "NKE",
+        770,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NVN",
+        4790,
+        0,
+        8,
+        0,
+        4
+       ],
+       [
+        "NVZ",
+        1411,
+        0,
+        1,
+        0,
+        4
+       ],
+       [
+        "NWB",
+        1608,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "OCX",
+        18,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OCZ",
+        12,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "ODG",
+        2764,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OEZ",
+        198,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "ONB",
+        330,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "OQG",
+        4,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OWB",
+        2156,
+        3,
+        0,
+        3,
+        0
+       ],
+       [
+        "OYC",
+        2919,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OYK",
+        2,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OZD",
+        4805,
+        0,
+        8,
+        0,
+        7
+       ],
+       [
+        "OZP",
+        33007,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PAO",
+        23,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PNJ",
+        1436,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "PNW",
+        5,
+        2,
+        0,
+        2,
+        0
+       ],
+       [
+        "PZK",
+        91,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "QBJ",
+        26723,
+        0,
+        3,
+        0,
+        1
+       ],
+       [
+        "QTN",
+        5,
+        0,
+        4,
+        0,
+        0
+       ],
+       [
+        "MKJ",
+        2445,
+        1,
+        1,
+        0,
+        1
+       ],
+       [
+        "OXC",
+        8,
+        3,
+        0,
+        2,
+        0
+       ],
+       [
+        "FRN",
+        10438,
+        4,
+        59,
+        2,
+        0
+       ],
+       [
+        "KPR",
+        19,
+        3,
+        0,
+        1,
+        0
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 10,
+      "gate_right_ge": 10,
+      "gate_false_le": 8,
+      "both": 8
+     }
+    },
+    "errors": {
+     "encoder": {
+      "sibling": 12,
+      "ancestor_or_descendant": 46,
+      "same_top_level": 9,
+      "unrelated": 152
+     },
+     "gate": {
+      "sibling": 20,
+      "ancestor_or_descendant": 47,
+      "same_top_level": 40,
+      "unrelated": 73
+     },
+     "sample": [
+      {
+       "key": 50025544,
+       "placed": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+       "filed": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+       "encoder_top1": "Infusion or Flow Problem > Priming Problem > Failure to Prime",
+       "text": "on (b)(6) 2026, it was reported that on (b)(6) 2026, the patient experienced hyperglycemia resulting in diabetic ketoacidosis and hospitalization after a contact detach infusion set was reportedly not fully primed. the caregiver reported priming only the anchor portion of the infusion set and not the cannula. the patient was admitted to an unidentified hospital on (b)(6) 2026. treatment, discharge date, and final outcome information were not obtained despite multiple follow-up attempts."
+      },
+      {
+       "key": 51176866,
+       "placed": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Intermittently",
+       "filed": "Electrical /Electronic Property Problem > Pacing Problem",
+       "encoder_top1": "Electrical /Electronic Property Problem > Pacing Problem",
+       "text": "episode where there are some dropped beats, rv historgrams and sequence of events that the most likely cause of the dropped beats in the episode on (b)(6) 2025 at 7:06am is due to intermittent twos pp.\\this report reflects information received by fda in the form of a notification per 803.22 (b)(2)."
+      },
+      {
+       "key": 24421374,
+       "placed": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+       "filed": "Infusion or Flow Problem > Priming Problem",
+       "encoder_top1": "Infusion or Flow Problem > Priming Problem > Failure to Prime",
+       "text": "during impella cp pump support, the patient experienced priming problems. clinical stated staff did not connect and prime the cp pump correctly before placing it in patient. the impella cp pump was replaced as a result of this priming problem. this is considered a non- reportable malfunction."
+      },
+      {
+       "key": 51117907,
+       "placed": "Connection Problem > Decoupling",
+       "filed": "Connection Problem > Disconnection",
+       "encoder_top1": "Connection Problem > Disconnection",
+       "text": "it was reported that during use, an endotracheal tube became dislodged, requiring reintubation. following reintubation, the hub of the new endotracheal tube repeatedly detached from the tube during ventilation. the patient was manually ventilated with a bag-valve mask while the airway was secured. the patient remained spontaneously breathing and oxygen saturation did not drop below 90% duringthe event. non serious illness injury was reported."
+      },
+      {
+       "key": 50845884,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the patient underwent a knee arthroplasty revision to address tibial subsidence approximately three (3) weeks post-operatively.\\\\attempts have been made, however, no additional information is available."
+      },
+      {
+       "key": 50276450,
+       "placed": "Connection Problem > Decoupling",
+       "filed": "Mechanical Problem > Leak/Splash > Fluid/Blood Leak",
+       "encoder_top1": "Connection Problem > Disconnection",
+       "text": "the event involved a plum set clave secondary port, backcheck valve, 2 clave y-sites, secure lock 128-inch. it was reported that the lock male adapter popped off of the end of the iv tubing, medication was then infusing into the bed because it was not connected to the patient. this has happened several times on several different patients. there is no way to reconnect the end connector back onto the iv tubing requiring a completely new iv tubing to be primed. the product was contaminated with medications. there were no reported patient involvement and unknown harm."
+      },
+      {
+       "key": 24275840,
+       "placed": "Connection Problem > Decoupling",
+       "filed": "Material Integrity Problem > Break > Loss of or Failure to Bond",
+       "encoder_top1": "Connection Problem > Disconnection",
+       "text": "subglottic suction line detached from tracheostomy cannula during treatment. the patient was dependent on sgp suction and ventilated overnight. the patient required an tracheostomy change."
+      },
+      {
+       "key": 24152575,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that a patient developed osteolysis related to a mobile (superior-posterior subsidence) mobi-c implant at c5-6 approximately 5 years post-operatively. a revision surgery was performed to remove the implant and replace it with an acdf device."
+      },
+      {
+       "key": 25630571,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "the customer reported an error message, and the device could not be disinfected during reprocessing involving an olympus colonovideoscope. there was no patient involvement."
+      },
+      {
+       "key": 51227566,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Clean Adequately",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "the customer reported disinfection of the device was not possible during reprocessing. the issue involved an olympus bronchofiberscope. there was no patient involvement."
+      },
+      {
+       "key": 51104599,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "during an on site reprocessing in-service of the cysto-nephro videoscope it was found that the customer did not have a functional leak tester and they were performing manual high-level disinfection in tubes where only the insertion tube was being submerged. olympus recommends that scopes are fully submerged during high-level disinfection. there was no patient involvement."
+      },
+      {
+       "key": 51115249,
+       "placed": "Connection Problem > Decoupling",
+       "filed": "Mechanical Problem > Leak/Splash > Fluid/Blood Leak",
+       "encoder_top1": "Connection Problem > Disconnection",
+       "text": "the event involved a plum 150 ml burette set, clave injection site, 2 clave y-sites, sl, 114in reported that the tubing detached from the cassette. there was no patient involvement. the event was noted during priming, and the normal saline was involved in the event."
+      },
+      {
+       "key": 25210881,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+       "filed": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "during a visit by a field service engineer on (b)(6) 2026, it was discovered that the facility was not disinfecting endoscopes after use following endoscopic examinations of patients with no suspected infection. this facility does not use an automated endoscope reprocessing system; instead, endoscopes are disinfected manually."
+      },
+      {
+       "key": 50784032,
+       "placed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+       "filed": "Connection Problem > Loose or Intermittent Connection",
+       "encoder_top1": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+       "text": "description of the reported event:¿in room (b)(6) at bed space (b)(6), the oxygen supply to the ventilator did not function even though the oxygen line was connected. the patient temporarily experienced severe oxygen desaturation. before manual ventilation with an ambu bag became necessary, the issue was resolved by reconnecting and manipulating the oxygen connection. according to the nursing staff, this oxygen connection also regularly produces unusual noises.the ventilator did not immediately indicate the oxygen deficiency. the indication occurred only after a certain delay and after the ins"
+      },
+      {
+       "key": 24152844,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Implant subsidence",
+       "text": "it was reported that a patient developed osteolysis related to a subsided mobi-c implant at c5-6 approximately 6 years post-operatively. a revision surgery was performed to remove the implant and replace it with an acdf device."
+      },
+      {
+       "key": 50112613,
+       "placed": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+       "filed": "Infusion or Flow Problem > Priming Problem",
+       "encoder_top1": "Infusion or Flow Problem > Priming Problem",
+       "text": "it was reported to minimed that the customer experienced hyperglycemia, and an issue during priming process. the customer reported a blood glucose value of 400 mg/dl. the event involved product(s) mmt-381a, mmt-332a, mmt-1884. troubleshooting was performed. the air bubble size was soda pop/champagne. the customer was using the auto mode/smart guard feature at the time of the event. the customer was using the insulin pump system within 48 hours of the reported event. no further patient complications were reported. no product return is required for mmt-381a, mmt-332a, mmt-1884."
+      },
+      {
+       "key": 50672373,
+       "placed": "Electrical /Electronic Property Problem > Device Sensing Problem > Loss of Threshold",
+       "filed": "Electrical /Electronic Property Problem",
+       "encoder_top1": "Electrical /Electronic Property Problem > Device Sensing Problem > Loss of Threshold",
+       "text": "a trilogy 100 ventilator, u.s.a - bt device was returned to a third-party service center for evaluation. there was no allegation of device malfunction, and the device was not reported to have been in patient use.during evaluation of the device, the service technician confirmed that error err_int_li_ion_not_present (error code 197) was found in the device error code log. the device evaluation does not identify any specific component malfunction that would need to be replaced to resolve this error code.additionally, the service technician noted that there were no visible foam particles. after th"
+      },
+      {
+       "key": 25035135,
+       "placed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+       "filed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Component Missing",
+       "encoder_top1": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+       "text": "the customer reported that upon opening the package of x-ray detectable sponges, there were 12 sponges in the package instead of 10."
+      },
+      {
+       "key": 25818232,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that stem subsided, resulting in removal and replacement of the stem implant. doi- unknown. dor- (b)(6) 2026. affected side- unknown hip."
+      },
+      {
+       "key": 25340578,
+       "placed": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+       "filed": "Contamination /Decontamination Problem > Contamination",
+       "encoder_top1": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+       "text": "the following information was provided by the initial reporter: it was reported that cro receives report from pharmaceutical manufacturer and calls the person in charge on (b)(6). when the chemical dmso was transferred using a facile, a precipitate was observed."
+      }
+     ]
+    },
+    "shown": {
+     "answers": 4296,
+     "shortlisted": 4296,
+     "coverage": 1.0,
+     "none_of_these": 1651,
+     "unparsed": 0,
+     "picks_rare_candidate": 0.0794,
+     "shown": {
+      "right": 72,
+      "false": 269,
+      "visible_modes": 12,
+      "phantom_modes": 19,
+      "precision": 0.2111
+     },
+     "gate_zs": {
+      "right": 72,
+      "false": 155,
+      "visible_modes": 11,
+      "phantom_modes": 10,
+      "precision": 0.3172
+     },
+     "gate_either": {
+      "right": 77,
+      "false": 180,
+      "visible_modes": 14,
+      "phantom_modes": 15,
+      "precision": 0.2996
+     },
+     "free_answer_equals_rare_candidate": 0.0528
+    }
+   },
+   "gemma4_31b": {
+    "mechanism": {
+     "rare_reports": 552,
+     "other_reports": 660608,
+     "prior_odds": 0.00083559387715559,
+     "confirmers": {
+      "zs": {
+       "llm_right": 158,
+       "llm_right_check_natural": 158.0,
+       "llm_false_estimated": 14476.0,
+       "llm_false_ci95": [
+        11607.2,
+        17847.0
+       ],
+       "right_passing": 70,
+       "false_passing": 136,
+       "keep_right": 0.443,
+       "keep_false": 0.00939,
+       "filter_factor": 47.2,
+       "shortlisted_candidate_right": 110,
+       "shortlisted_candidate_false": 4186,
+       "confirm_right": 0.6364,
+       "confirm_false": 0.03249,
+       "confirm_ratio": 19.6
+      },
+      "rag": {
+       "llm_right": 92,
+       "llm_right_check_natural": 92.0,
+       "llm_false_estimated": 2235.2,
+       "llm_false_ci95": [
+        1220.6,
+        3777.6
+       ],
+       "right_passing": 41,
+       "false_passing": 78,
+       "keep_right": 0.4457,
+       "keep_false": 0.0349,
+       "filter_factor": 12.8,
+       "shortlisted_candidate_right": 110,
+       "shortlisted_candidate_false": 4186,
+       "confirm_right": 0.3727,
+       "confirm_false": 0.01863,
+       "confirm_ratio": 20.0
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 32,
+       "false": 219,
+       "LR": 174.9
+      },
+      "gate": {
+       "right": 75,
+       "false": 166,
+       "LR": 540.7
+      },
+      "llm_zs_alone": {
+       "right": 158,
+       "false": 14476.0,
+       "LR": 13.1
+      },
+      "llm_rag_alone": {
+       "right": 92,
+       "false": 2235.2,
+       "LR": 49.3
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 32,
+      "false": 219,
+      "visible_modes": 9,
+      "phantom_modes": 23,
+      "precision": 0.1275
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 22,
+       "false": 23,
+       "visible_modes": 6,
+       "phantom_modes": 6,
+       "precision": 0.4889
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 17,
+       "false": 16,
+       "visible_modes": 6,
+       "phantom_modes": 8,
+       "precision": 0.5152
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 25,
+       "false": 31,
+       "visible_modes": 7,
+       "phantom_modes": 11,
+       "precision": 0.4464
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 14,
+       "false": 8,
+       "visible_modes": 5,
+       "phantom_modes": 3,
+       "precision": 0.6364
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 32,
+       "false": 219,
+       "visible_modes": 9,
+       "phantom_modes": 23,
+       "precision": 0.1275
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 57,
+       "false": 101,
+       "visible_modes": 10,
+       "phantom_modes": 10,
+       "precision": 0.3608
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 67,
+       "false": 297,
+       "visible_modes": 13,
+       "phantom_modes": 20,
+       "precision": 0.1841
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 35,
+       "false": 62,
+       "visible_modes": 11,
+       "phantom_modes": 12,
+       "precision": 0.3608
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 50,
+       "false": 265,
+       "visible_modes": 13,
+       "phantom_modes": 22,
+       "precision": 0.1587
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 62,
+       "false": 127,
+       "visible_modes": 12,
+       "phantom_modes": 15,
+       "precision": 0.328
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 69,
+       "false": 315,
+       "visible_modes": 13,
+       "phantom_modes": 22,
+       "precision": 0.1797
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 30,
+       "false": 36,
+       "visible_modes": 9,
+       "phantom_modes": 6,
+       "precision": 0.4545
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 48,
+       "false": 247,
+       "visible_modes": 13,
+       "phantom_modes": 20,
+       "precision": 0.1627
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 70,
+       "false": 136,
+       "visible_modes": 11,
+       "phantom_modes": 11,
+       "precision": 0.3398
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 80,
+       "false": 332,
+       "visible_modes": 14,
+       "phantom_modes": 20,
+       "precision": 0.1942
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 41,
+       "false": 78,
+       "visible_modes": 12,
+       "phantom_modes": 11,
+       "precision": 0.3445
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 56,
+       "false": 281,
+       "visible_modes": 14,
+       "phantom_modes": 21,
+       "precision": 0.1662
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 75,
+       "false": 166,
+       "visible_modes": 13,
+       "phantom_modes": 15,
+       "precision": 0.3112
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 82,
+       "false": 354,
+       "visible_modes": 14,
+       "phantom_modes": 22,
+       "precision": 0.1881
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 36,
+       "false": 48,
+       "visible_modes": 10,
+       "phantom_modes": 5,
+       "precision": 0.4286
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 259,
+       "visible_modes": 14,
+       "phantom_modes": 19,
+       "precision": 0.1725
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 81,
+       "false": 238,
+       "visible_modes": 13,
+       "phantom_modes": 10,
+       "precision": 0.2539
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 91,
+       "false": 434,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.1733
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 0.3381,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 0.3381,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 0.3381,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 0.3381,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 0.3381,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 0.3381,
+       "complete": false
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 70935,
+       "encoder": [
+        5,
+        19
+       ],
+       "gate": [
+        8,
+        17
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 70345,
+       "encoder": [
+        3,
+        20
+       ],
+       "gate": [
+        5,
+        23
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 76525,
+       "encoder": [
+        8,
+        23
+       ],
+       "gate": [
+        12,
+        20
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 76634,
+       "encoder": [
+        6,
+        25
+       ],
+       "gate": [
+        8,
+        12
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 71689,
+       "encoder": [
+        2,
+        30
+       ],
+       "gate": [
+        3,
+        21
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 78003,
+       "encoder": [
+        1,
+        30
+       ],
+       "gate": [
+        8,
+        18
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 58980,
+       "encoder": [
+        3,
+        19
+       ],
+       "gate": [
+        6,
+        13
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 43888,
+       "encoder": [
+        1,
+        12
+       ],
+       "gate": [
+        6,
+        7
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 58665,
+       "encoder": [
+        1,
+        28
+       ],
+       "gate": [
+        7,
+        20
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 55496,
+       "encoder": [
+        2,
+        13
+       ],
+       "gate": [
+        12,
+        15
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 116,
+      "right_gain_total": 43,
+      "groups_gaining": 27,
+      "groups_losing": 3,
+      "top3_share_of_positive_gain": 0.333,
+      "groups_false_down": 30,
+      "groups_false_up": 56,
+      "rows": [
+       [
+        "JWH",
+        1660,
+        0,
+        0,
+        6,
+        6
+       ],
+       [
+        "LZO",
+        694,
+        5,
+        2,
+        11,
+        9
+       ],
+       [
+        "LPH",
+        1153,
+        0,
+        0,
+        4,
+        4
+       ],
+       [
+        "MBH",
+        362,
+        0,
+        0,
+        3,
+        4
+       ],
+       [
+        "FDE",
+        123,
+        0,
+        0,
+        2,
+        0
+       ],
+       [
+        "FET",
+        8171,
+        0,
+        1,
+        2,
+        1
+       ],
+       [
+        "FTR",
+        12906,
+        0,
+        0,
+        2,
+        0
+       ],
+       [
+        "GAM",
+        3003,
+        3,
+        0,
+        5,
+        1
+       ],
+       [
+        "JDI",
+        430,
+        0,
+        0,
+        2,
+        1
+       ],
+       [
+        "MJO",
+        102,
+        0,
+        1,
+        2,
+        4
+       ],
+       [
+        "CBK",
+        3395,
+        0,
+        37,
+        1,
+        5
+       ],
+       [
+        "EFQ",
+        13,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "FDF",
+        17127,
+        0,
+        1,
+        1,
+        7
+       ],
+       [
+        "FDS",
+        17100,
+        0,
+        1,
+        1,
+        4
+       ],
+       [
+        "FEB",
+        230,
+        0,
+        1,
+        1,
+        3
+       ],
+       [
+        "FGB",
+        1779,
+        0,
+        0,
+        1,
+        1
+       ],
+       [
+        "HIF",
+        754,
+        0,
+        1,
+        1,
+        1
+       ],
+       [
+        "HSX",
+        56,
+        1,
+        0,
+        2,
+        2
+       ],
+       [
+        "KWZ",
+        54,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "LMH",
+        169,
+        0,
+        2,
+        1,
+        0
+       ],
+       [
+        "LRO",
+        2082,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "MLS",
+        15,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "NIK",
+        2664,
+        0,
+        1,
+        1,
+        2
+       ],
+       [
+        "NRA",
+        54,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "OJH",
+        253,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "OVE",
+        93,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "PSV",
+        1723,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "BRY",
+        29384,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "BSB",
+        54,
+        0,
+        12,
+        0,
+        3
+       ],
+       [
+        "BZD",
+        10112,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "CAW",
+        329,
+        0,
+        4,
+        0,
+        1
+       ],
+       [
+        "DRA",
+        838,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "DRF",
+        115,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DSP",
+        3101,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DTB",
+        4534,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DXY",
+        225,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DYB",
+        2541,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "EOB",
+        1260,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "EOQ",
+        4565,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "FAJ",
+        2935,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "FAS",
+        179,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FCG",
+        239,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FDI",
+        81,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "FMF",
+        1929,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "FMH",
+        39,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FPA",
+        36070,
+        4,
+        3,
+        4,
+        7
+       ],
+       [
+        "FPB",
+        16,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FRN",
+        10438,
+        4,
+        59,
+        4,
+        0
+       ],
+       [
+        "GAA",
+        58,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GAR",
+        345,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "GCJ",
+        2992,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "GDY",
+        46,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "GEI",
+        2645,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "GEX",
+        1061,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "GZF",
+        373,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "HQL",
+        2319,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "HSD",
+        160,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "HSN",
+        147,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "JJH",
+        9,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "JKA",
+        1910,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "JTS",
+        9,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "KDI",
+        1084,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "KRG",
+        324,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWA",
+        115,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWS",
+        573,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWT",
+        158,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KWY",
+        71,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LGW",
+        9124,
+        0,
+        6,
+        0,
+        0
+       ],
+       [
+        "LHI",
+        689,
+        2,
+        1,
+        2,
+        1
+       ],
+       [
+        "LJS",
+        1527,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "LKK",
+        2535,
+        0,
+        3,
+        0,
+        0
+       ],
+       [
+        "LWP",
+        4300,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LWS",
+        4229,
+        0,
+        2,
+        0,
+        3
+       ],
+       [
+        "LZG",
+        2415,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        "LZS",
+        17,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MAX",
+        340,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MCM",
+        1576,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MDS",
+        1348,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MEA",
+        1016,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MEH",
+        100,
+        0,
+        0,
+        0,
+        5
+       ],
+       [
+        "MHX",
+        2446,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MJP",
+        669,
+        0,
+        4,
+        0,
+        0
+       ],
+       [
+        "MNS",
+        1425,
+        0,
+        13,
+        0,
+        0
+       ],
+       [
+        "MNT",
+        1670,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MXD",
+        1013,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NAY",
+        15320,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NCF",
+        34,
+        0,
+        3,
+        0,
+        3
+       ],
+       [
+        "NDC",
+        324,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NEW",
+        822,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "NJL",
+        112,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "NKE",
+        770,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NVN",
+        4790,
+        0,
+        8,
+        0,
+        1
+       ],
+       [
+        "NVZ",
+        1411,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "NWB",
+        1608,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "OBJ",
+        226,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OCX",
+        18,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OCZ",
+        12,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "ONB",
+        330,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "OQG",
+        4,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OWB",
+        2156,
+        3,
+        0,
+        3,
+        0
+       ],
+       [
+        "OYC",
+        2919,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OYK",
+        2,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OZD",
+        4805,
+        0,
+        8,
+        0,
+        11
+       ],
+       [
+        "OZP",
+        33007,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "PAO",
+        23,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PHV",
+        120,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PKU",
+        106,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "PNJ",
+        1436,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "PNW",
+        5,
+        2,
+        0,
+        2,
+        0
+       ],
+       [
+        "PZK",
+        91,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "QBJ",
+        26723,
+        0,
+        3,
+        0,
+        0
+       ],
+       [
+        "QFG",
+        118812,
+        0,
+        3,
+        0,
+        3
+       ],
+       [
+        "QTN",
+        5,
+        0,
+        4,
+        0,
+        1
+       ],
+       [
+        "MKJ",
+        2445,
+        1,
+        1,
+        0,
+        3
+       ],
+       [
+        "KPR",
+        19,
+        3,
+        0,
+        1,
+        0
+       ],
+       [
+        "OXC",
+        8,
+        3,
+        0,
+        1,
+        0
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 10,
+      "gate_right_ge": 10,
+      "gate_false_le": 8,
+      "both": 8
+     }
+    },
+    "errors": {
+     "encoder": {
+      "sibling": 12,
+      "ancestor_or_descendant": 46,
+      "same_top_level": 9,
+      "unrelated": 152
+     },
+     "gate": {
+      "sibling": 19,
+      "ancestor_or_descendant": 59,
+      "same_top_level": 43,
+      "unrelated": 45
+     },
+     "sample": [
+      {
+       "key": 25804339,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that corail stem subsided a couple millimeters and they had to revise the liner and head to make up for the lost leg length. dor: (b)(6) 2026 affected side: unknown."
+      },
+      {
+       "key": 25813271,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that patient's summit stem from the primary surgery has subsided approximately 2 cm. the stem was explanted and replaced with reclaim monoblock standard length stem. the patient was revised without any issue. doi: (b)(6) 2026. dor: (b)(6) 2026. affected side: left hip."
+      },
+      {
+       "key": 24400351,
+       "placed": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+       "filed": "Infusion or Flow Problem > Priming Problem",
+       "encoder_top1": "Infusion or Flow Problem > Priming Problem > Failure to Prime",
+       "text": "(b)(6) did not prime adequately. per the circulator, the purge system primed incredibly slowly and subsequently primed the pump very slowly compared to other cases. device was subsequently removed. the reported events are priming issue, medical device removal, and hemodynamic instability. the device will be conservatively reported for serious injury due to temporary hemodynamic support interruption during the device removal; however, the removal was performed with no consequence to the patient, and support was resumed without any known adverse events."
+      },
+      {
+       "key": 51067809,
+       "placed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+       "filed": "Patient Device Interaction Problem",
+       "encoder_top1": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+       "text": "on 9-sep-2026, the patient reported that an x-ray performed on (b)(6) 2026 for an unrelated medical reason, one day after the patient's last capsule intake, incidentally, showed multiple vibrant capsules in the gastrointestinal tract. \\the patient had been using vibrant for approximately 2.5 months, with 54 capsule activations recorded. no symptoms related to vibrant use were reported.\\on 23-sep-2026, vibrant learned that, following a two-day bowel preparation, the patient underwent colonoscopy on (b)(6) 2026 for retrieval of capsules that had not passed. \\according to the patient, two capsule"
+      },
+      {
+       "key": 50805270,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the orthopedic consultant reported to me that after reviewing patient post op x-ray noticed that the uncemented attune cementless tibia as subsided. he said that after speaking with patient they will not revised it for now."
+      },
+      {
+       "key": 50005871,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Patient-Device Incompatibility > Device Appears to Trigger Rejection",
+       "encoder_top1": "Patient Device Interaction Problem > Patient-Device Incompatibility > Device Appears to Trigger Rejection",
+       "text": "the patient had a primary hip surgery on (b)(6) 2026. on (b)(6) 2026, revision surgery was due to a subsided stem and subsequent fracture below the lesser trochanter after 25 days from primary. the surgeon revised the amistem p collared stem to a m-vizion modular stem and revised the 40mm biolox delta head m to a 40mm biolox delta head l, along with implanting a proximal body. on (b)(6) 2026, the patient had signs of infection and the pathogen is unknown. the surgeon performed a washout and revised all implants (medacta stem and head and competitor cup and liner) to new implants. the surgery w"
+      },
+      {
+       "key": 24258560,
+       "placed": "Output Problem > Tactile Prompts/Feedback > Inappropriate Tactile Prompt/Feedback",
+       "filed": "Output Problem > Tactile Prompts/Feedback",
+       "encoder_top1": "Output Problem > Tactile Prompts/Feedback",
+       "text": "it was reported that during a follow up in clinic, no vibration was noted while testing the vibratory alert of the device. abbott technical support was contacted; however, no intervention has been performed at this time. the patient was in stable condition and will continue to be monitored."
+      },
+      {
+       "key": 24152575,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that a patient developed osteolysis related to a mobile (superior-posterior subsidence) mobi-c implant at c5-6 approximately 5 years post-operatively. a revision surgery was performed to remove the implant and replace it with an acdf device."
+      },
+      {
+       "key": 25451685,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported via a clinical study, that a patient who had a right rtsa, underwent a fracture reverse revision procedure. the humeral stem subsided despite being cemented causing a peri prosthetic humeral fracture. the fracture humeral stem, humeral tray, humeral liner were removed. the study indicated it was possibly related to the devices and the procedure. the outcome states continuing. no further information."
+      },
+      {
+       "key": 25230031,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Clean Adequately",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "it was reported that the colonovideoscope it's not sterilized. the issue was identified during reprocessing. there were no reports of patient harm."
+      },
+      {
+       "key": 50918872,
+       "placed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+       "filed": "Infusion or Flow Problem > Improper Flow or Infusion",
+       "encoder_top1": "Output Problem > Gas Output Problem",
+       "text": "complainant alleged that while attempting to treat a patient (age & gender unkown), the device displayed low supply o2 supply error 1020.\\\\complainant indicated that there was no adverse effect to the patient due to the reported malfunction."
+      },
+      {
+       "key": 50976147,
+       "placed": "Electrical /Electronic Property Problem > Device Sensing Problem > Loss of Threshold",
+       "filed": "Electrical /Electronic Property Problem",
+       "encoder_top1": "Electrical /Electronic Property Problem > Device Sensing Problem > Loss of Threshold",
+       "text": "a trilogy 100 ventilator, u.s.a - bt device was returned to a third-party service center for evaluation. there was no report of patient harm or injury.during the evaluation, the service technician noted error err_dsp_2500mv_ref (error code 32) in the device error code log. the device evaluation does not identify any specific component malfunction that would need to be replaced to resolve this error code.additionally, the service technician confirmed that there were no visible foam particles. after the evaluation was complete, the device was scrapped."
+      },
+      {
+       "key": 25079671,
+       "placed": "Electrical /Electronic Property Problem > Pacing Problem > Pacing Intermittently",
+       "filed": "Electrical /Electronic Property Problem > Pacing Problem",
+       "encoder_top1": "Electrical /Electronic Property Problem > Pacing Problem",
+       "text": "it was reported post implant of the leadless implantable pulse generator (ipg), there was occasional pacing failure. reprogramming was done and extension of hospitalization occurred as a result to help determine the cause. the leadless ipg remains in use. no patient complications have been reported as a result of this event."
+      },
+      {
+       "key": 50421347,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "revision surgery - due to short stem subsided and joint became unstable."
+      },
+      {
+       "key": 24152767,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that a patient developed an infection and subsided mobi-c implant at c5-6 approximately 9 years post-operatively. a revision was performed to remove the implant and replace it with an acdf device."
+      },
+      {
+       "key": 25818232,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that stem subsided, resulting in removal and replacement of the stem implant. doi- unknown. dor- (b)(6) 2026. affected side- unknown hip."
+      },
+      {
+       "key": 50327788,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that stem was subsided. affected side: right hip."
+      },
+      {
+       "key": 24963963,
+       "placed": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+       "filed": "Electrical /Electronic Property Problem > Charging Problem",
+       "encoder_top1": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem",
+       "text": "a customer contacted stryker to report that an event code is logged in the memory of their device that indicates there is charge remaining on the capacitor after a shock. in this state, the device may not be able to deliver defibrillation therapy if it was needed. there was no patient involvement reported with the event."
+      },
+      {
+       "key": 25566753,
+       "placed": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+       "filed": "Infusion or Flow Problem > Priming Problem",
+       "encoder_top1": "Infusion or Flow Problem > Priming Problem",
+       "text": "it was reported to minimed that the customer alleged pump being in a prime loop. the customer reported no adverse event. the event involved product mmt-712ews. troubleshooting was not performed. no harm requiring medical interventions were reported. the product mmt-712ews will not be returned for analysis."
+      },
+      {
+       "key": 25210881,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+       "filed": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "during a visit by a field service engineer on (b)(6) 2026, it was discovered that the facility was not disinfecting endoscopes after use following endoscopic examinations of patients with no suspected infection. this facility does not use an automated endoscope reprocessing system; instead, endoscopes are disinfected manually."
+      }
+     ]
+    },
+    "shown": {
+     "answers": 4296,
+     "shortlisted": 4296,
+     "coverage": 1.0,
+     "none_of_these": 661,
+     "unparsed": 3,
+     "picks_rare_candidate": 0.0824,
+     "shown": {
+      "right": 82,
+      "false": 272,
+      "visible_modes": 12,
+      "phantom_modes": 19,
+      "precision": 0.2316
+     },
+     "gate_zs": {
+      "right": 70,
+      "false": 136,
+      "visible_modes": 11,
+      "phantom_modes": 11,
+      "precision": 0.3398
+     },
+     "gate_either": {
+      "right": 75,
+      "false": 166,
+      "visible_modes": 13,
+      "phantom_modes": 15,
+      "precision": 0.3112
+     },
+     "free_answer_equals_rare_candidate": 0.048
+    }
+   }
+  },
+  "2025": {
+   "qwen38_27b": {
+    "mechanism": {
+     "rare_reports": 597,
+     "other_reports": 761763,
+     "prior_odds": 0.0007837083187290535,
+     "confirmers": {
+      "zs": {
+       "llm_right": 201,
+       "llm_right_check_natural": 201.0,
+       "llm_false_estimated": 14491.4,
+       "llm_false_ci95": [
+        11425.1,
+        18132.9
+       ],
+       "right_passing": 83,
+       "false_passing": 208,
+       "keep_right": 0.4129,
+       "keep_false": 0.01435,
+       "filter_factor": 28.8,
+       "shortlisted_candidate_right": 151,
+       "shortlisted_candidate_false": 4834,
+       "confirm_right": 0.5497,
+       "confirm_false": 0.04303,
+       "confirm_ratio": 12.8
+      },
+      "rag": {
+       "llm_right": 109,
+       "llm_right_check_natural": 109.0,
+       "llm_false_estimated": 1749.7,
+       "llm_false_ci95": [
+        816.2,
+        3295.8
+       ],
+       "right_passing": 60,
+       "false_passing": 99,
+       "keep_right": 0.5505,
+       "keep_false": 0.05658,
+       "filter_factor": 9.7,
+       "shortlisted_candidate_right": 151,
+       "shortlisted_candidate_false": 4834,
+       "confirm_right": 0.3974,
+       "confirm_false": 0.02048,
+       "confirm_ratio": 19.4
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 60,
+       "false": 236,
+       "LR": 324.4
+      },
+      "gate": {
+       "right": 94,
+       "false": 229,
+       "LR": 523.8
+      },
+      "llm_zs_alone": {
+       "right": 201,
+       "false": 14491.4,
+       "LR": 17.7
+      },
+      "llm_rag_alone": {
+       "right": 109,
+       "false": 1749.7,
+       "LR": 79.5
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 60,
+      "false": 236,
+      "visible_modes": 16,
+      "phantom_modes": 18,
+      "precision": 0.2027
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 35,
+       "false": 38,
+       "visible_modes": 7,
+       "phantom_modes": 2,
+       "precision": 0.4795
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 28,
+       "false": 34,
+       "visible_modes": 8,
+       "phantom_modes": 5,
+       "precision": 0.4516
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 39,
+       "false": 44,
+       "visible_modes": 9,
+       "phantom_modes": 4,
+       "precision": 0.4699
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 24,
+       "false": 28,
+       "visible_modes": 6,
+       "phantom_modes": 3,
+       "precision": 0.4615
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 63,
+       "false": 144,
+       "visible_modes": 9,
+       "phantom_modes": 8,
+       "precision": 0.3043
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 88,
+       "false": 342,
+       "visible_modes": 18,
+       "phantom_modes": 17,
+       "precision": 0.2047
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 46,
+       "false": 81,
+       "visible_modes": 11,
+       "phantom_modes": 9,
+       "precision": 0.3622
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 78,
+       "false": 283,
+       "visible_modes": 18,
+       "phantom_modes": 17,
+       "precision": 0.2161
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 70,
+       "false": 162,
+       "visible_modes": 12,
+       "phantom_modes": 10,
+       "precision": 0.3017
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 91,
+       "false": 354,
+       "visible_modes": 19,
+       "phantom_modes": 16,
+       "precision": 0.2045
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 39,
+       "false": 63,
+       "visible_modes": 8,
+       "phantom_modes": 7,
+       "precision": 0.3824
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 75,
+       "false": 271,
+       "visible_modes": 17,
+       "phantom_modes": 18,
+       "precision": 0.2168
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 83,
+       "false": 208,
+       "visible_modes": 11,
+       "phantom_modes": 8,
+       "precision": 0.2852
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 108,
+       "false": 406,
+       "visible_modes": 19,
+       "phantom_modes": 16,
+       "precision": 0.2101
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 99,
+       "visible_modes": 14,
+       "phantom_modes": 8,
+       "precision": 0.3774
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 92,
+       "false": 301,
+       "visible_modes": 20,
+       "phantom_modes": 15,
+       "precision": 0.2341
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 94,
+       "false": 229,
+       "visible_modes": 15,
+       "phantom_modes": 9,
+       "precision": 0.291
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 115,
+       "false": 421,
+       "visible_modes": 21,
+       "phantom_modes": 14,
+       "precision": 0.2146
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 49,
+       "false": 78,
+       "visible_modes": 10,
+       "phantom_modes": 6,
+       "precision": 0.3858
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 85,
+       "false": 286,
+       "visible_modes": 18,
+       "phantom_modes": 17,
+       "precision": 0.2291
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 106,
+       "false": 382,
+       "visible_modes": 11,
+       "phantom_modes": 11,
+       "precision": 0.2172
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 131,
+       "false": 580,
+       "visible_modes": 19,
+       "phantom_modes": 16,
+       "precision": 0.1842
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 76,
+       "false": 172,
+       "visible_modes": 14,
+       "phantom_modes": 10,
+       "precision": 0.3065
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 108,
+       "false": 374,
+       "visible_modes": 20,
+       "phantom_modes": 15,
+       "precision": 0.2241
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 119,
+       "false": 418,
+       "visible_modes": 15,
+       "phantom_modes": 12,
+       "precision": 0.2216
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 140,
+       "false": 610,
+       "visible_modes": 21,
+       "phantom_modes": 14,
+       "precision": 0.1867
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 63,
+       "false": 136,
+       "visible_modes": 10,
+       "phantom_modes": 8,
+       "precision": 0.3166
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 99,
+       "false": 344,
+       "visible_modes": 18,
+       "phantom_modes": 17,
+       "precision": 0.2235
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 58686,
+       "encoder": [
+        15,
+        34
+       ],
+       "gate": [
+        14,
+        21
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 51627,
+       "encoder": [
+        6,
+        20
+       ],
+       "gate": [
+        1,
+        24
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 57326,
+       "encoder": [
+        1,
+        8
+       ],
+       "gate": [
+        5,
+        9
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 61216,
+       "encoder": [
+        1,
+        15
+       ],
+       "gate": [
+        7,
+        20
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 56152,
+       "encoder": [
+        3,
+        13
+       ],
+       "gate": [
+        4,
+        13
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 58367,
+       "encoder": [
+        7,
+        32
+       ],
+       "gate": [
+        9,
+        22
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 70364,
+       "encoder": [
+        2,
+        23
+       ],
+       "gate": [
+        10,
+        19
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 62623,
+       "encoder": [
+        2,
+        21
+       ],
+       "gate": [
+        8,
+        7
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 73233,
+       "encoder": [
+        5,
+        18
+       ],
+       "gate": [
+        8,
+        24
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 72995,
+       "encoder": [
+        6,
+        16
+       ],
+       "gate": [
+        13,
+        26
+       ]
+      },
+      {
+       "month": 11,
+       "reports": 65352,
+       "encoder": [
+        7,
+        22
+       ],
+       "gate": [
+        7,
+        19
+       ]
+      },
+      {
+       "month": 12,
+       "reports": 74419,
+       "encoder": [
+        5,
+        14
+       ],
+       "gate": [
+        8,
+        25
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 122,
+      "right_gain_total": 34,
+      "groups_gaining": 23,
+      "groups_losing": 9,
+      "top3_share_of_positive_gain": 0.346,
+      "groups_false_down": 38,
+      "groups_false_up": 63,
+      "rows": [
+       [
+        "JWH",
+        2680,
+        1,
+        2,
+        10,
+        7
+       ],
+       [
+        "FDS",
+        11045,
+        0,
+        9,
+        5,
+        21
+       ],
+       [
+        "LZO",
+        982,
+        4,
+        3,
+        8,
+        12
+       ],
+       [
+        "QFG",
+        102560,
+        0,
+        0,
+        4,
+        0
+       ],
+       [
+        "FEB",
+        210,
+        0,
+        4,
+        3,
+        8
+       ],
+       [
+        "LPH",
+        1781,
+        3,
+        1,
+        6,
+        15
+       ],
+       [
+        "NRA",
+        136,
+        0,
+        0,
+        3,
+        0
+       ],
+       [
+        "DTE",
+        314,
+        0,
+        0,
+        2,
+        0
+       ],
+       [
+        "FDF",
+        9976,
+        1,
+        3,
+        3,
+        6
+       ],
+       [
+        "GAM",
+        4402,
+        1,
+        3,
+        3,
+        8
+       ],
+       [
+        "MBH",
+        488,
+        0,
+        0,
+        2,
+        8
+       ],
+       [
+        "MEH",
+        161,
+        1,
+        1,
+        3,
+        2
+       ],
+       [
+        "CBK",
+        5131,
+        0,
+        7,
+        1,
+        7
+       ],
+       [
+        "DRG",
+        33,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "EFQ",
+        35,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "FET",
+        10776,
+        4,
+        1,
+        5,
+        3
+       ],
+       [
+        "GDY",
+        65,
+        0,
+        0,
+        1,
+        2
+       ],
+       [
+        "HSN",
+        231,
+        0,
+        0,
+        1,
+        3
+       ],
+       [
+        "LMH",
+        222,
+        0,
+        8,
+        1,
+        0
+       ],
+       [
+        "MAX",
+        583,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "MJO",
+        97,
+        0,
+        0,
+        1,
+        3
+       ],
+       [
+        "NVZ",
+        1966,
+        0,
+        2,
+        1,
+        4
+       ],
+       [
+        "PNW",
+        47,
+        12,
+        13,
+        13,
+        12
+       ],
+       [
+        "BRY",
+        44938,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "BSB",
+        111,
+        0,
+        8,
+        0,
+        3
+       ],
+       [
+        "BTQ",
+        41,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "BTT",
+        711,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "BYJ",
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "BZD",
+        12837,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "DQK",
+        226,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DRA",
+        2377,
+        0,
+        8,
+        0,
+        3
+       ],
+       [
+        "DRS",
+        153,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "DSP",
+        4556,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "DTB",
+        6558,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "DWF",
+        424,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "DXY",
+        267,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "EOQ",
+        4240,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        "EZC",
+        927,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FAJ",
+        1583,
+        0,
+        1,
+        0,
+        6
+       ],
+       [
+        "FCG",
+        311,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FDA",
+        81,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FDT",
+        2462,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "FJK",
+        806,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "FLE",
+        55,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FMF",
+        2736,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FMG",
+        654,
+        0,
+        1,
+        0,
+        3
+       ],
+       [
+        "FOZ",
+        2870,
+        0,
+        4,
+        0,
+        0
+       ],
+       [
+        "FPA",
+        21276,
+        2,
+        8,
+        2,
+        2
+       ],
+       [
+        "FSM",
+        60,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "GAT",
+        1800,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "GCJ",
+        3565,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "GDW",
+        5641,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GEH",
+        75,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GEX",
+        1586,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GYE",
+        2,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "GZF",
+        276,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "HET",
+        3364,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "HQC",
+        1137,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "HSX",
+        63,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "HXX",
+        1158,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "JDI",
+        481,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "JJH",
+        22,
+        2,
+        7,
+        2,
+        1
+       ],
+       [
+        "JOH",
+        598,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "JTS",
+        25,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "KDI",
+        1813,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "KPA",
+        7,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KPR",
+        20,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "KRG",
+        411,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "KWA",
+        216,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LGW",
+        10339,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "LHI",
+        997,
+        1,
+        0,
+        1,
+        4
+       ],
+       [
+        "LPM",
+        5,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LWP",
+        4146,
+        1,
+        1,
+        1,
+        3
+       ],
+       [
+        "LWS",
+        5854,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "LZG",
+        4205,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LZS",
+        33,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "MCM",
+        2057,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MEA",
+        1527,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MEB",
+        1265,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "MEC",
+        53,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MJC",
+        2719,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "MJP",
+        795,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MKJ",
+        3933,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "MLR",
+        30,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "MNS",
+        533,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MRM",
+        150,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MXD",
+        1465,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NBH",
+        370,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NBW",
+        773,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NCF",
+        33,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NIK",
+        3532,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "NKB",
+        736,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NQO",
+        514,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NVN",
+        6323,
+        0,
+        7,
+        0,
+        3
+       ],
+       [
+        "OAE",
+        584,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OCX",
+        14,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "ODG",
+        1729,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "OFU",
+        11,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "ONB",
+        614,
+        0,
+        2,
+        0,
+        3
+       ],
+       [
+        "OSR",
+        613,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OVE",
+        90,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OVJ",
+        6,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "OWB",
+        11006,
+        2,
+        2,
+        2,
+        1
+       ],
+       [
+        "OZD",
+        2962,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "PHX",
+        892,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "PND",
+        113,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PNJ",
+        1492,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "POE",
+        203,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "PSV",
+        1024,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PTS",
+        16,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "PZK",
+        92,
+        0,
+        6,
+        0,
+        0
+       ],
+       [
+        "QBJ",
+        17334,
+        0,
+        3,
+        0,
+        0
+       ],
+       [
+        "QFV",
+        16,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "FMI",
+        1579,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        "HSB",
+        968,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        "JKA",
+        3937,
+        1,
+        2,
+        0,
+        0
+       ],
+       [
+        "LKK",
+        2943,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        "QTN",
+        2,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        "FEQ",
+        287,
+        2,
+        1,
+        0,
+        2
+       ],
+       [
+        "MHX",
+        2568,
+        3,
+        11,
+        0,
+        0
+       ],
+       [
+        "OXC",
+        13,
+        3,
+        0,
+        0,
+        0
+       ],
+       [
+        "FRN",
+        15113,
+        7,
+        66,
+        2,
+        1
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 12,
+      "gate_right_ge": 10,
+      "gate_false_le": 6,
+      "both": 5
+     }
+    },
+    "errors": {
+     "encoder": {
+      "sibling": 31,
+      "ancestor_or_descendant": 26,
+      "same_top_level": 26,
+      "unrelated": 153
+     },
+     "gate": {
+      "sibling": 32,
+      "ancestor_or_descendant": 66,
+      "same_top_level": 46,
+      "unrelated": 85
+     },
+     "sample": [
+      {
+       "key": 23235576,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the stem subsided post surgery. revision was performed. affected side: left hip."
+      },
+      {
+       "key": 23193484,
+       "placed": "Connection Problem > Decoupling",
+       "filed": "Mechanical Problem > Detachment of Device or Device Component",
+       "encoder_top1": "Connection Problem > Disconnection",
+       "text": "baxer exactamax 2400 valve set (ref (b)(4) output port connection (plastic piece at the end of the tubing that connects to the tpn (total parenteral nutrition) bag) fell out of the tubing twice while pumping a tpn. when it fell out the first time, the whole tubing set was then replaced. that lot number is officially unknown. the second valve set this happened to was lot #60650581. we had a bunch of this lot number in our stock bin, so was likely the lot number for the first valve set used as well. pt: 4582. device: 2907. reference report:mw5176805."
+      },
+      {
+       "key": 21491491,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "filed": "Manufacturing, Packaging or Shipping Problem > Packaging Problem > Unsealed Device Packaging",
+       "encoder_top1": "Manufacturing, Packaging or Shipping Problem > Packaging Problem > Unsealed Device Packaging",
+       "text": "complainant alleges \"sterilize failure\"."
+      },
+      {
+       "key": 23758397,
+       "placed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+       "filed": "Use of Device Problem > Misassembled",
+       "encoder_top1": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Component Missing",
+       "text": "it was reported a needle outside of the midline kit. fortunately, no one was poked/injured."
+      },
+      {
+       "key": 23495723,
+       "placed": "Electrical /Electronic Property Problem > Interrogation Problem > Difficult to Interrogate",
+       "filed": "Communication or Transmission Problem",
+       "encoder_top1": "Communication or Transmission Problem > Telemetry Discrepancy",
+       "text": "reportedly, on (b)(6) 2025, it is difficult to interrogate devices with the cpr4 head (even with changing usb port)."
+      },
+      {
+       "key": 23318802,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "text": "it was reported that the subject device was cleaned but not sterilized. there was no patient involvement."
+      },
+      {
+       "key": 21363203,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the patient will need to undergo a hip revision in the future due to subsidence of the femoral component. the patient has poor bone quality which may have contributed to it. there is no additional information available at the time of this report."
+      },
+      {
+       "key": 21226048,
+       "placed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+       "filed": "Environmental Compatibility Problem > Device Unsafe to Use in Environment",
+       "encoder_top1": "Environmental Compatibility Problem > Device Unsafe to Use in Environment",
+       "text": "patient was implanted with a nalu peripheral nerve stimulator system on (b)(6)2023 to treat shoulder pain. on (b)(6)2024 the firm was notified that the patient was scheduled to have the nalu system removed. per the patient, the system is being removed in order to move forward with shoulder replacement, back surgery, and related mri needs. the placement of the system was not mri conditional and thus required removal in order to move forward with the orthopedic procedures. a full system explant was performed on (b)(6)2025."
+      },
+      {
+       "key": 22998415,
+       "placed": "Connection Problem > Decoupling",
+       "filed": "Connection Problem > Disconnection",
+       "encoder_top1": "Connection Problem > Disconnection",
+       "text": "the event involved a spiros®, closed male luer w/red cap, 10 units. the reporter stated that spiros has \"popped off\" of the medication tubing, however remained attached to the patient's access (neutral or negative pressure claves). medication involved is 5 fu. there was patient involvement and unknown adverse event."
+      },
+      {
+       "key": 23839200,
+       "placed": "Electrical /Electronic Property Problem > Battery Problem > Battery Problem: High Impedance",
+       "filed": "Output Problem > Energy Output Problem",
+       "encoder_top1": "Electrical /Electronic Property Problem > Battery Problem > Premature Discharge of Battery",
+       "text": "manufacturer representative (rep) reported receiving call from healthcare provider (hcp) reporting the patient (pt) got error code 1021 - ins battery voltage is too high. rep does not know who the pt is or what device the pt has. no symptoms were reported."
+      },
+      {
+       "key": 22184128,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that patient had a fall and femoral sleeve subsided a bit. revision was performed. the tibia was not revised, and there was no allegation in relation to the stem, there was no instability attributed to the fall. affected side: right knee."
+      },
+      {
+       "key": 23729123,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Failure to Disinfect",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "it was reported the disinfection of the water supply pipeline was not performed after replacing the endoscope reprocessor water filter and reprocessing the gastrointestinal videoscope. the scope was used on an unknown number of patients after incorrect reprocessing."
+      },
+      {
+       "key": 22309219,
+       "placed": "Output Problem > Tactile Prompts/Feedback > Inappropriate Tactile Prompt/Feedback",
+       "filed": "Output Problem > Tactile Prompts/Feedback",
+       "encoder_top1": "Output Problem > Tactile Prompts/Feedback",
+       "text": "during an in clinic follow up, the physician initiated a vibration alert test, and the device did not vibrate as anticipated. no intervention has been performed. the patient was stable and will continue being monitored."
+      },
+      {
+       "key": 23424553,
+       "placed": "Environmental Compatibility Problem > Fumes or Vapors",
+       "filed": "Temperature Problem > Smoking",
+       "encoder_top1": "Temperature Problem > Smoking",
+       "text": "the user facility reported that the room where their v-pro s2 sterilizer is located was \"smoky\". no report of injury."
+      },
+      {
+       "key": 21284952,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the patient was revised and the summit with porocoat stem and biolox delta ceramic femoral head were explanted due to subsidence and subsequent fracture of the femur. the fracture was reduced and stabilized using cerclage wires and a new summit with porocoat stem and biolox delta ceramic head were implanted. affected side: unknown hip."
+      },
+      {
+       "key": 23765736,
+       "placed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+       "filed": "Patient Device Interaction Problem > Patient-Device Incompatibility > Device Appears to Trigger Rejection",
+       "encoder_top1": "Patient Device Interaction Problem > Patient-Device Incompatibility > Device Appears to Trigger Rejection",
+       "text": "urgent explantation is scheduled due to biofilm development and infection which started on (b)(6) 2025. the device is extruding through the surgical line. cultures reveal enterobacter species. as per new information received, the infection developed first. due to persistent infection, the device eventually started extruding through the skin. the surgical wound did not heal fully. recurrent infection and delayed wound healing were observed before the extrusion occurred."
+      },
+      {
+       "key": 23351406,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Flushing Problem",
+       "filed": "Infusion or Flow Problem > Suction Problem",
+       "encoder_top1": "Infusion or Flow Problem > Suction Problem",
+       "text": "it was reported that during insertion for an ablation procedure one faradrive sehath was selected for being used, however it was not able to aspirate. the device was replaced, and the procedure was completed without patient complications. it was further reported that the catheter was just inside the sheath, but the catheter was not in the body. the device is expected to return for laboratory analysis."
+      },
+      {
+       "key": 22187050,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Implant subsidence",
+       "text": "it was reported that the patient's 7 std actis stem was subsided. the stem and head were removed and replaced with a reclaim monobloc stem and 32 +1 ceramic head. there was no delay in case. affected side: unknown hip."
+      },
+      {
+       "key": 23084969,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Osseointegration Problem",
+       "encoder_top1": "Mechanical Problem > Structural Problem > Collapse",
+       "text": "a patient was implanted with a prodisc c sk device at c5-6 on (b)(6) 2025. at the 2 week follow up, the imaging showed that the implant may have slightly subsided and kyphosed. the patient is experiencing no symptoms and is doing well. there is no indication at present that any intervention will be performed."
+      },
+      {
+       "key": 22518538,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the patient had the cup subsided due to acetabular fracture. the cup had since become well fixed. the surgeon added a 30mm screw and did a head and liner exchange. affected side: unknown."
+      }
+     ]
+    },
+    "shown": {
+     "answers": 4985,
+     "shortlisted": 4985,
+     "coverage": 1.0,
+     "none_of_these": 1997,
+     "unparsed": 1,
+     "picks_rare_candidate": 0.0624,
+     "shown": {
+      "right": 84,
+      "false": 227,
+      "visible_modes": 15,
+      "phantom_modes": 12,
+      "precision": 0.2701
+     },
+     "gate_zs": {
+      "right": 83,
+      "false": 208,
+      "visible_modes": 11,
+      "phantom_modes": 8,
+      "precision": 0.2852
+     },
+     "gate_either": {
+      "right": 94,
+      "false": 229,
+      "visible_modes": 15,
+      "phantom_modes": 9,
+      "precision": 0.291
+     },
+     "free_answer_equals_rare_candidate": 0.0584
+    }
+   },
+   "gemma4_31b": {
+    "mechanism": {
+     "rare_reports": 597,
+     "other_reports": 761763,
+     "prior_odds": 0.0007837083187290535,
+     "confirmers": {
+      "zs": {
+       "llm_right": 165,
+       "llm_right_check_natural": 165.0,
+       "llm_false_estimated": 10383.9,
+       "llm_false_ci95": [
+        7819.8,
+        13527.0
+       ],
+       "right_passing": 88,
+       "false_passing": 196,
+       "keep_right": 0.5333,
+       "keep_false": 0.01888,
+       "filter_factor": 28.3,
+       "shortlisted_candidate_right": 151,
+       "shortlisted_candidate_false": 4834,
+       "confirm_right": 0.5828,
+       "confirm_false": 0.04055,
+       "confirm_ratio": 14.4
+      },
+      "rag": {
+       "llm_right": 117,
+       "llm_right_check_natural": 117.0,
+       "llm_false_estimated": 2517.8,
+       "llm_false_ci95": [
+        1353.5,
+        4285.3
+       ],
+       "right_passing": 66,
+       "false_passing": 124,
+       "keep_right": 0.5641,
+       "keep_false": 0.04925,
+       "filter_factor": 11.5,
+       "shortlisted_candidate_right": 151,
+       "shortlisted_candidate_false": 4834,
+       "confirm_right": 0.4371,
+       "confirm_false": 0.02565,
+       "confirm_ratio": 17.0
+      }
+     },
+     "likelihood_ratio": {
+      "encoder": {
+       "right": 60,
+       "false": 236,
+       "LR": 324.4
+      },
+      "gate": {
+       "right": 100,
+       "false": 233,
+       "LR": 547.6
+      },
+      "llm_zs_alone": {
+       "right": 165,
+       "false": 10383.9,
+       "LR": 20.3
+      },
+      "llm_rag_alone": {
+       "right": 117,
+       "false": 2517.8,
+       "LR": 59.3
+      }
+     }
+    },
+    "ablation": {
+     "encoder": {
+      "right": 60,
+      "false": 236,
+      "visible_modes": 16,
+      "phantom_modes": 18,
+      "precision": 0.2027
+     },
+     "rows": [
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 38,
+       "false": 35,
+       "visible_modes": 10,
+       "phantom_modes": 1,
+       "precision": 0.5205
+      },
+      {
+       "k": 1,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 30,
+       "false": 39,
+       "visible_modes": 10,
+       "phantom_modes": 6,
+       "precision": 0.4348
+      },
+      {
+       "k": 1,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 41,
+       "false": 48,
+       "visible_modes": 10,
+       "phantom_modes": 6,
+       "precision": 0.4607
+      },
+      {
+       "k": 1,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 27,
+       "false": 26,
+       "visible_modes": 10,
+       "phantom_modes": 1,
+       "precision": 0.5094
+      },
+      {
+       "k": 1,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 60,
+       "false": 236,
+       "visible_modes": 16,
+       "phantom_modes": 18,
+       "precision": 0.2027
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 67,
+       "false": 137,
+       "visible_modes": 12,
+       "phantom_modes": 8,
+       "precision": 0.3284
+      },
+      {
+       "k": 3,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 89,
+       "false": 338,
+       "visible_modes": 18,
+       "phantom_modes": 17,
+       "precision": 0.2084
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 52,
+       "false": 88,
+       "visible_modes": 14,
+       "phantom_modes": 6,
+       "precision": 0.3714
+      },
+      {
+       "k": 3,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 82,
+       "false": 285,
+       "visible_modes": 19,
+       "phantom_modes": 15,
+       "precision": 0.2234
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 75,
+       "false": 164,
+       "visible_modes": 15,
+       "phantom_modes": 8,
+       "precision": 0.3138
+      },
+      {
+       "k": 3,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 94,
+       "false": 352,
+       "visible_modes": 20,
+       "phantom_modes": 15,
+       "precision": 0.2108
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 44,
+       "false": 61,
+       "visible_modes": 11,
+       "phantom_modes": 5,
+       "precision": 0.419
+      },
+      {
+       "k": 3,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 77,
+       "false": 271,
+       "visible_modes": 17,
+       "phantom_modes": 17,
+       "precision": 0.2213
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 88,
+       "false": 196,
+       "visible_modes": 13,
+       "phantom_modes": 8,
+       "precision": 0.3099
+      },
+      {
+       "k": 5,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 110,
+       "false": 397,
+       "visible_modes": 19,
+       "phantom_modes": 16,
+       "precision": 0.217
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 66,
+       "false": 124,
+       "visible_modes": 15,
+       "phantom_modes": 7,
+       "precision": 0.3474
+      },
+      {
+       "k": 5,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 96,
+       "false": 321,
+       "visible_modes": 20,
+       "phantom_modes": 14,
+       "precision": 0.2302
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 100,
+       "false": 233,
+       "visible_modes": 16,
+       "phantom_modes": 9,
+       "precision": 0.3003
+      },
+      {
+       "k": 5,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 119,
+       "false": 421,
+       "visible_modes": 21,
+       "phantom_modes": 14,
+       "precision": 0.2204
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 54,
+       "false": 87,
+       "visible_modes": 12,
+       "phantom_modes": 6,
+       "precision": 0.383
+      },
+      {
+       "k": 5,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 1.0,
+       "complete": true,
+       "right": 87,
+       "false": 297,
+       "visible_modes": 18,
+       "phantom_modes": 16,
+       "precision": 0.2266
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": true,
+       "coverage": 0.4574,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "zs",
+       "veto": false,
+       "coverage": 0.4574,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": true,
+       "coverage": 0.3307,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "rag",
+       "veto": false,
+       "coverage": 0.3307,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": true,
+       "coverage": 0.3307,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "either",
+       "veto": false,
+       "coverage": 0.3307,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": true,
+       "coverage": 0.3307,
+       "complete": false
+      },
+      {
+       "k": 10,
+       "confirmer": "both",
+       "veto": false,
+       "coverage": 0.3307,
+       "complete": false
+      }
+     ]
+    },
+    "stability": {
+     "months": [
+      {
+       "month": 1,
+       "reports": 58686,
+       "encoder": [
+        15,
+        34
+       ],
+       "gate": [
+        15,
+        22
+       ]
+      },
+      {
+       "month": 2,
+       "reports": 51627,
+       "encoder": [
+        6,
+        20
+       ],
+       "gate": [
+        2,
+        22
+       ]
+      },
+      {
+       "month": 3,
+       "reports": 57326,
+       "encoder": [
+        1,
+        8
+       ],
+       "gate": [
+        4,
+        10
+       ]
+      },
+      {
+       "month": 4,
+       "reports": 61216,
+       "encoder": [
+        1,
+        15
+       ],
+       "gate": [
+        9,
+        18
+       ]
+      },
+      {
+       "month": 5,
+       "reports": 56152,
+       "encoder": [
+        3,
+        13
+       ],
+       "gate": [
+        7,
+        14
+       ]
+      },
+      {
+       "month": 6,
+       "reports": 58367,
+       "encoder": [
+        7,
+        32
+       ],
+       "gate": [
+        8,
+        27
+       ]
+      },
+      {
+       "month": 7,
+       "reports": 70364,
+       "encoder": [
+        2,
+        23
+       ],
+       "gate": [
+        10,
+        23
+       ]
+      },
+      {
+       "month": 8,
+       "reports": 62623,
+       "encoder": [
+        2,
+        21
+       ],
+       "gate": [
+        8,
+        11
+       ]
+      },
+      {
+       "month": 9,
+       "reports": 73233,
+       "encoder": [
+        5,
+        18
+       ],
+       "gate": [
+        8,
+        18
+       ]
+      },
+      {
+       "month": 10,
+       "reports": 72995,
+       "encoder": [
+        6,
+        16
+       ],
+       "gate": [
+        13,
+        19
+       ]
+      },
+      {
+       "month": 11,
+       "reports": 65352,
+       "encoder": [
+        7,
+        22
+       ],
+       "gate": [
+        8,
+        21
+       ]
+      },
+      {
+       "month": 12,
+       "reports": 74419,
+       "encoder": [
+        5,
+        14
+       ],
+       "gate": [
+        8,
+        28
+       ]
+      }
+     ],
+     "groups": {
+      "with_placements": 120,
+      "right_gain_total": 40,
+      "groups_gaining": 26,
+      "groups_losing": 8,
+      "top3_share_of_positive_gain": 0.316,
+      "groups_false_down": 37,
+      "groups_false_up": 63,
+      "rows": [
+       [
+        "JWH",
+        2680,
+        1,
+        2,
+        10,
+        7
+       ],
+       [
+        "FDS",
+        11045,
+        0,
+        9,
+        5,
+        21
+       ],
+       [
+        "LZO",
+        982,
+        4,
+        3,
+        8,
+        14
+       ],
+       [
+        "QFG",
+        102560,
+        0,
+        0,
+        4,
+        2
+       ],
+       [
+        "FEB",
+        210,
+        0,
+        4,
+        3,
+        9
+       ],
+       [
+        "LPH",
+        1781,
+        3,
+        1,
+        6,
+        15
+       ],
+       [
+        "MKJ",
+        3933,
+        1,
+        0,
+        4,
+        0
+       ],
+       [
+        "NRA",
+        136,
+        0,
+        0,
+        3,
+        0
+       ],
+       [
+        "CBK",
+        5131,
+        0,
+        7,
+        2,
+        4
+       ],
+       [
+        "FDF",
+        9976,
+        1,
+        3,
+        3,
+        6
+       ],
+       [
+        "GAM",
+        4402,
+        1,
+        3,
+        3,
+        10
+       ],
+       [
+        "MBH",
+        488,
+        0,
+        0,
+        2,
+        8
+       ],
+       [
+        "MEH",
+        161,
+        1,
+        1,
+        3,
+        2
+       ],
+       [
+        "BRY",
+        44938,
+        0,
+        1,
+        1,
+        2
+       ],
+       [
+        "DRA",
+        2377,
+        0,
+        8,
+        1,
+        7
+       ],
+       [
+        "DRG",
+        33,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "DTE",
+        314,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "EFQ",
+        35,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "FET",
+        10776,
+        4,
+        1,
+        5,
+        2
+       ],
+       [
+        "GDY",
+        65,
+        0,
+        0,
+        1,
+        2
+       ],
+       [
+        "HSN",
+        231,
+        0,
+        0,
+        1,
+        3
+       ],
+       [
+        "LMH",
+        222,
+        0,
+        8,
+        1,
+        1
+       ],
+       [
+        "MAX",
+        583,
+        0,
+        0,
+        1,
+        0
+       ],
+       [
+        "MJO",
+        97,
+        0,
+        0,
+        1,
+        3
+       ],
+       [
+        "NVZ",
+        1966,
+        0,
+        2,
+        1,
+        4
+       ],
+       [
+        "PNW",
+        47,
+        12,
+        13,
+        13,
+        13
+       ],
+       [
+        "BSB",
+        111,
+        0,
+        8,
+        0,
+        0
+       ],
+       [
+        "BTQ",
+        41,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "BYJ",
+        1,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "BZD",
+        12837,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "CAW",
+        372,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "DQK",
+        226,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "DSP",
+        4556,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "DTB",
+        6558,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "DTZ",
+        768,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "DWF",
+        424,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "DXY",
+        267,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "EOQ",
+        4240,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FAJ",
+        1583,
+        0,
+        1,
+        0,
+        5
+       ],
+       [
+        "FCG",
+        311,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FDT",
+        2462,
+        0,
+        0,
+        0,
+        4
+       ],
+       [
+        "FMF",
+        2736,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "FMG",
+        654,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "FOZ",
+        2870,
+        0,
+        4,
+        0,
+        0
+       ],
+       [
+        "FPA",
+        21276,
+        2,
+        8,
+        2,
+        5
+       ],
+       [
+        "FSM",
+        60,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "GAT",
+        1800,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "GCJ",
+        3565,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GDW",
+        5641,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GEH",
+        75,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GEX",
+        1586,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "GYE",
+        2,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "GZF",
+        276,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "HQC",
+        1137,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "HSB",
+        968,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "HSX",
+        63,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "HXX",
+        1158,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "JDI",
+        481,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "JJH",
+        22,
+        2,
+        7,
+        2,
+        2
+       ],
+       [
+        "JTS",
+        25,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "KDI",
+        1813,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "KDJ",
+        1403,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "KPR",
+        20,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "KRG",
+        411,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "KWA",
+        216,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LFL",
+        1689,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "LGW",
+        10339,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "LHI",
+        997,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "LWP",
+        4146,
+        1,
+        1,
+        1,
+        2
+       ],
+       [
+        "LWS",
+        5854,
+        0,
+        2,
+        0,
+        1
+       ],
+       [
+        "LZS",
+        33,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "MCM",
+        2057,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MEA",
+        1527,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MEB",
+        1265,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "MJC",
+        2719,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MJP",
+        795,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MNS",
+        533,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "MNT",
+        2254,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "MRM",
+        150,
+        0,
+        1,
+        0,
+        1
+       ],
+       [
+        "MXD",
+        1465,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NBH",
+        370,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NBW",
+        773,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "NCF",
+        33,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NIK",
+        3532,
+        0,
+        2,
+        0,
+        2
+       ],
+       [
+        "NKB",
+        736,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NKM",
+        1569,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NPS",
+        524,
+        0,
+        0,
+        0,
+        3
+       ],
+       [
+        "NQO",
+        514,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "NVN",
+        6323,
+        0,
+        7,
+        0,
+        3
+       ],
+       [
+        "OAE",
+        584,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OCX",
+        14,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "ODG",
+        1729,
+        1,
+        0,
+        1,
+        1
+       ],
+       [
+        "OFU",
+        11,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "ONB",
+        614,
+        0,
+        2,
+        0,
+        3
+       ],
+       [
+        "OSR",
+        613,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OVE",
+        90,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "OVJ",
+        6,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "OWB",
+        11006,
+        2,
+        2,
+        2,
+        0
+       ],
+       [
+        "OZD",
+        2962,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "OZP",
+        64635,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PHX",
+        892,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "PKU",
+        4149,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PNJ",
+        1492,
+        0,
+        1,
+        0,
+        0
+       ],
+       [
+        "POE",
+        203,
+        0,
+        1,
+        0,
+        2
+       ],
+       [
+        "PQF",
+        25930,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PQK",
+        4,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "PSV",
+        1024,
+        0,
+        0,
+        0,
+        2
+       ],
+       [
+        "PTS",
+        16,
+        0,
+        2,
+        0,
+        0
+       ],
+       [
+        "PZK",
+        92,
+        0,
+        6,
+        0,
+        0
+       ],
+       [
+        "QBJ",
+        17334,
+        0,
+        3,
+        0,
+        0
+       ],
+       [
+        "QFV",
+        16,
+        1,
+        0,
+        1,
+        0
+       ],
+       [
+        "QZI",
+        1552,
+        0,
+        0,
+        0,
+        1
+       ],
+       [
+        "FMI",
+        1579,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        "JKA",
+        3937,
+        1,
+        2,
+        0,
+        0
+       ],
+       [
+        "LKK",
+        2943,
+        1,
+        1,
+        0,
+        0
+       ],
+       [
+        "QTN",
+        2,
+        1,
+        0,
+        0,
+        0
+       ],
+       [
+        "FEQ",
+        287,
+        2,
+        1,
+        0,
+        2
+       ],
+       [
+        "MHX",
+        2568,
+        3,
+        11,
+        0,
+        1
+       ],
+       [
+        "OXC",
+        13,
+        3,
+        0,
+        0,
+        0
+       ],
+       [
+        "FRN",
+        15113,
+        7,
+        66,
+        2,
+        5
+       ]
+      ]
+     },
+     "month_summary": {
+      "months": 12,
+      "gate_right_ge": 11,
+      "gate_false_le": 6,
+      "both": 6
+     }
+    },
+    "errors": {
+     "encoder": {
+      "sibling": 31,
+      "ancestor_or_descendant": 26,
+      "same_top_level": 26,
+      "unrelated": 153
+     },
+     "gate": {
+      "sibling": 28,
+      "ancestor_or_descendant": 66,
+      "same_top_level": 54,
+      "unrelated": 85
+     },
+     "sample": [
+      {
+       "key": 23204067,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "filed": "Use of Device Problem > Improper or Incorrect Procedure or Method",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "it was confirmed that the facility was using the cusa excel 23khz laparoscopic tip elt (c4604elt) without sterilizing it. additional information was later received stating \"the tip was cleaned and sterilized; only the flue was used without sterilizing.\" no patient injury or surgical delay has been reported."
+      },
+      {
+       "key": 23153917,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Osseointegration Problem",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "a patient was implanted with two prodisc l implants on (b)(6) 2025. one and a half months after surgery the patient was still experiencing pain and it was found that the implants had subsided. the implanting surgeon wanted to monitor the patient but the patient made the decision to go to another surgeon to have the implants revised."
+      },
+      {
+       "key": 21521835,
+       "placed": "Electrical /Electronic Property Problem > Charging Problem > Aborted Charge",
+       "filed": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Failure to Deliver Shock/Stimulation",
+       "encoder_top1": "Electrical /Electronic Property Problem > Defibrillation/Stimulation Problem > Inappropriate/Inadequate Shock/Stimulation",
+       "text": "it was reported that the implantable cardioverter defibrillator delivered and aborted shocks a total of 60 times. 100 shocks were delivered in 3 weeks, and they were all noted to be appropriate. no intervention was performed. the patient was in stable condition."
+      },
+      {
+       "key": 23752402,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Mechanical Problem > Unintended Movement",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "tibia subsided."
+      },
+      {
+       "key": 23497180,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "filed": "Mechanical Problem > Mechanics Altered > Failure to Cycle",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "text": "it was reported the cystonephrofiberscope ran on the wrong cycle in the sterilizer. there were no reports of patient involvement."
+      },
+      {
+       "key": 23287397,
+       "placed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+       "filed": "Labelling, Instructions for Use or Training Problem > Device Markings/Labelling Problem",
+       "encoder_top1": "Manufacturing, Packaging or Shipping Problem > Packaging Problem",
+       "text": "it was reported that during an atrial fibrillation (afib) ablation case, when they opened a qdot micro¿ catheter, there was a thermocool smarttouch® sf inside the package. the catheter was replaced, and the problem was resolved. the case continued. no adverse patient consequence was reported."
+      },
+      {
+       "key": 21363819,
+       "placed": "Environmental Compatibility Problem > Medical Gas Supply Problem",
+       "filed": "Infusion or Flow Problem > No Flow > Failure to Deliver",
+       "encoder_top1": "Infusion or Flow Problem > No Flow > Failure to Deliver",
+       "text": "philips received a complaint from the biomedical engineer, reporting that there was an issue with the oxygen hose supply. it was unknown how the issue was found. no patient or user harm reported. the biomedical engineer reported that there was an issue with the oxygen hose supply. during troubleshooting, the biomed noted that the issue involved a faulty oxygen tank. the biomed noted that they would discuss the issue with the respiratory therapy department. no further details were provided. this investigation is ongoing."
+      },
+      {
+       "key": 21262146,
+       "placed": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+       "filed": "Use of Device Problem",
+       "encoder_top1": "Contamination /Decontamination Problem > Contamination > Biofilm coating in Device",
+       "text": "this case occured outside of the usa in australia. on (b)(6)2024, the australian subsidiary notified teoxane geneva of an adverse event. according to the information received, a patient was injected on (b)(6)2024 with the following products: - 1.2 ml of rha 4 in both cheeks using a 25 g cannula and retrotracing technique (current complaint). - 1.2 ml of ultra deep in both cheeks using the needle supplied in the box and the bolus technique (b)(6). approximately 5 months after the injections, on (b)(6)2024, the patient experienced a lump/nodule of 1-1.5 cm in diameter of moderate intensity in th"
+      },
+      {
+       "key": 22894256,
+       "placed": "Infusion or Flow Problem > Priming Problem > Incomplete or Inadequate Priming",
+       "filed": "Infusion or Flow Problem > No Flow",
+       "encoder_top1": "Infusion or Flow Problem > Priming Problem > Failure to Prime",
+       "text": "it was reported that a small volume folfusor did not purge. the solution did not reach the end of the tubing. this was observed during setup prior to patient use. there was no patient involvement. no additional information is available."
+      },
+      {
+       "key": 22469675,
+       "placed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+       "filed": "Manufacturing, Packaging or Shipping Problem",
+       "encoder_top1": "Use of Device Problem > Misassembled",
+       "text": "customer identified there was wrong quantity found within a kittner 5/pack. there was a count of 6 instead of 5."
+      },
+      {
+       "key": 22194002,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Implant subsidence",
+       "text": "at about 3 months after the primary, the patient came in reporting pain due to a subsided stem and the cause is unknown. the surgeon revised the stem and head with competitor components and revised the medacta liner with a medacta liner."
+      },
+      {
+       "key": 21226048,
+       "placed": "No Apparent Adverse Event > Prophylactic removal due to corrective action",
+       "filed": "Environmental Compatibility Problem > Device Unsafe to Use in Environment",
+       "encoder_top1": "Environmental Compatibility Problem > Device Unsafe to Use in Environment",
+       "text": "patient was implanted with a nalu peripheral nerve stimulator system on (b)(6)2023 to treat shoulder pain. on (b)(6)2024 the firm was notified that the patient was scheduled to have the nalu system removed. per the patient, the system is being removed in order to move forward with shoulder replacement, back surgery, and related mri needs. the placement of the system was not mri conditional and thus required removal in order to move forward with the orthopedic procedures. a full system explant was performed on (b)(6)2025."
+      },
+      {
+       "key": 22296414,
+       "placed": "Computer Software Problem > Computer System Security Problem",
+       "filed": "Computer Software Problem > Computer System Security Problem > Unauthorized Access to Computer System",
+       "encoder_top1": "Computer Software Problem > Computer System Security Problem > Unauthorized Access to Computer System",
+       "text": "it was reported to medtronic minimed that the customer experienced a possible cybersecurity issue as the customer received error message of rooted or jailbroken device. the customer reported no adverse event. the event involved product(s) mmt-6101. troubleshooting was performed and instructions were provided to resolve the issue, no escalation required. no harm requiring medical intervention was reported. no product return is required for mmt-6101."
+      },
+      {
+       "key": 23477197,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Osseointegration Problem",
+       "encoder_top1": "Patient Device Interaction Problem > Osseointegration Problem",
+       "text": "after10 years and 6 month from the primary, the patient came in reporting pain due to a potted stem and the cause is unknown. the surgeon revised the medacta stem and head with a competitor stem and head and revised the medacta liner with a new medacta liner. the surgery was completed successfully."
+      },
+      {
+       "key": 21284952,
+       "placed": "Patient Device Interaction Problem > Implant subsidence",
+       "filed": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "encoder_top1": "Patient Device Interaction Problem > Migration or Expulsion of Device > Migration",
+       "text": "it was reported that the patient was revised and the summit with porocoat stem and biolox delta ceramic femoral head were explanted due to subsidence and subsequent fracture of the femur. the fracture was reduced and stabilized using cerclage wires and a new summit with porocoat stem and biolox delta ceramic head were implanted. affected side: unknown hip."
+      },
+      {
+       "key": 23861661,
+       "placed": "Manufacturing, Packaging or Shipping Problem > Device Misassembled During Manufacturing /Shipping > Extra Components",
+       "filed": "Manufacturing, Packaging or Shipping Problem",
+       "encoder_top1": "Manufacturing, Packaging or Shipping Problem",
+       "text": "it was reported an issue with novosyn suture. the customer reported that they ordered item b0058709, batch 723402. however, two of the 24 pieces that are inside the box belong to a different item (0088714)."
+      },
+      {
+       "key": 23351406,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Flushing Problem",
+       "filed": "Infusion or Flow Problem > Suction Problem",
+       "encoder_top1": "Infusion or Flow Problem > Suction Problem",
+       "text": "it was reported that during insertion for an ablation procedure one faradrive sehath was selected for being used, however it was not able to aspirate. the device was replaced, and the procedure was completed without patient complications. it was further reported that the catheter was just inside the sheath, but the catheter was not in the body. the device is expected to return for laboratory analysis."
+      },
+      {
+       "key": 22202215,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "filed": "Contamination /Decontamination Problem > Device Reprocessing Problem",
+       "encoder_top1": "Contamination /Decontamination Problem > Device Reprocessing Problem > Problem with Sterilization",
+       "text": "it was reported that the subject device had failed the sterilization test. the event was found during reprocessing. there were no reports of patient involvement."
+      },
+      {
+       "key": 23057286,
+       "placed": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+       "filed": "Contamination /Decontamination Problem > Contamination > Device Contamination with Chemical or Other Material",
+       "encoder_top1": "Chemical Problem > Device Ingredient or Reagent Problem > Precipitate in Device or Device Ingredient",
+       "text": "it was reported that ¿white precipitate¿ was observed in the filter of a prismaflex st150 set during use for therapy. there was no report of patient injury or medical intervention associated with this event. no additional information is available."
+      },
+      {
+       "key": 22458524,
+       "placed": "Contamination /Decontamination Problem > Device Reprocessing Problem > Flushing Problem",
+       "filed": "Infusion or Flow Problem > Difficult to Flush",
+       "encoder_top1": "Infusion or Flow Problem > Difficult to Flush",
+       "text": "it was reported that during preparation, the xtw clip (50327r1003) was experiencing difficulties flushing the bubbles during the de-airing steps. bubbles were observed why advancing and retracting at a very slow rate. during the final steps of prep, while torquing and translate the dc handle, more bubbles were noted. the issue was able to be resolved and the clip was implanted. to further reduce tr, an additional clip (50416r1054) was prepared and experienced the same issue. the clip also experienced difficulties flushing the bubbles. the issue was able to be resolved and the clip was implante"
+      }
+     ]
+    },
+    "shown": {
+     "answers": 4985,
+     "shortlisted": 4985,
+     "coverage": 1.0,
+     "none_of_these": 758,
+     "unparsed": 0,
+     "picks_rare_candidate": 0.0748,
+     "shown": {
+      "right": 99,
+      "false": 274,
+      "visible_modes": 16,
+      "phantom_modes": 15,
+      "precision": 0.2654
+     },
+     "gate_zs": {
+      "right": 88,
+      "false": 196,
+      "visible_modes": 13,
+      "phantom_modes": 8,
+      "precision": 0.3099
+     },
+     "gate_either": {
+      "right": 100,
+      "false": 233,
+      "visible_modes": 16,
+      "phantom_modes": 9,
+      "precision": 0.3003
+     },
+     "free_answer_equals_rare_candidate": 0.057
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "variant": "cb",
+ "model": "Qwen/Qwen3-4B-Base",
+ "model_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+ "lora": {
+  "r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": "all-linear"
+ },
+ "size": "10k",
+ "seed": 42,
+ "lr": 0.0003,
+ "head_lr": 1e-05,
+ "lr_inherited_from": null,
+ "val_macro_f1": 0.3702,
+ "collapse_threshold": 0.117,
+ "n_train": 10000,
+ "classes_present": 307,
+ "lr_runs": {
+  "0.0001": {
+   "val_macro_f1": 0.3291,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0445,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.1166,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.1826,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.2439,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.2931,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.3122,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.3203,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.3289,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.3262,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.3291,
+     "minutes": 11.0
+    }
+   ],
+   "partial": [],
+   "collapsed": false
+  },
+  "0.0003": {
+   "val_macro_f1": 0.3702,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0327,
+     "minutes": 11.0
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.1076,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 3,
+     "val_macro_f1": 0.1837,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 4,
+     "val_macro_f1": 0.2433,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 5,
+     "val_macro_f1": 0.3079,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 6,
+     "val_macro_f1": 0.3315,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 7,
+     "val_macro_f1": 0.3511,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 8,
+     "val_macro_f1": 0.3646,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 9,
+     "val_macro_f1": 0.3702,
+     "minutes": 10.9
+    },
+    {
+     "epoch": 10,
+     "val_macro_f1": 0.3685,
+     "minutes": 10.9
+    }
+   ],
+   "partial": [],
+   "collapsed": false
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  10,
+  2
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": true,
+ "best_at_last_epoch": false,
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb-lora_10k_seed42"
+}

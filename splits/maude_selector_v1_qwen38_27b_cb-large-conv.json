@@ -1,0 +1,106 @@
+{
+ "version": "maude_selector_v1",
+ "date": "2026-11-07",
+ "git_head_at_fit": "9563604",
+ "llm": "qwen38_27b",
+ "encoder": "cb-large-conv full seed42 (rerun2024 outputs for 2024)",
+ "encoder_tag": "cb-large-conv",
+ "n_train": 3829,
+ "features": [
+  "log_count_enc",
+  "enc_msp",
+  "log_count_zs",
+  "zs_invalid",
+  "log_count_rag",
+  "rag_invalid",
+  "nb_vote_share",
+  "nb_vote_is_rag",
+  "nb_top1_cos",
+  "agree_enc_zs",
+  "agree_enc_rag",
+  "agree_zs_rag",
+  "agree_all",
+  "log_text_len"
+ ],
+ "arms": [
+  "enc",
+  "zs",
+  "rag"
+ ],
+ "cv_macro_f1": {
+  "S1": 0.6546,
+  "S2": 0.6822,
+  "S3": 0.6823
+ },
+ "cv_macro_f1_by_bin": {
+  "S1": {
+   "1-5": 0.2983,
+   "6-20": 0.444,
+   "21-89": 0.6959,
+   "90+": 0.7285
+  },
+  "S2": {
+   "1-5": 0.3488,
+   "6-20": 0.5254,
+   "21-89": 0.7038,
+   "90+": 0.7494
+  },
+  "S3": {
+   "1-5": 0.3147,
+   "6-20": 0.5329,
+   "21-89": 0.7177,
+   "90+": 0.7511
+  }
+ },
+ "cv_folds_S1": [
+  {
+   "t": 1.0,
+   "k": 0
+  },
+  {
+   "t": 1.0,
+   "k": 0
+  },
+  {
+   "t": 1.0,
+   "k": 0
+  },
+  {
+   "t": 1.0,
+   "k": 20
+  },
+  {
+   "t": 1.0,
+   "k": 0
+  }
+ ],
+ "main_family": "S3",
+ "singles_2024": {
+  "enc": 0.6606,
+  "zs": 0.2399,
+  "rag": 0.5786
+ },
+ "best_single_arm_2024": "enc",
+ "oracle_2024": 0.746,
+ "notes": "folds stratified by the gold code's training-count bin; ties and invalid answers fall to enc; the hand rule's (t, k) on all 2024 items is below",
+ "S1": {
+  "t": 1.0,
+  "k": 0
+ },
+ "S_cost": {
+  "k": 0,
+  "p": 0.9,
+  "call_rate_2024": 0.456,
+  "macro_f1_2024_oof": 0.6822
+ },
+ "llm_rare_k_star": {
+  "k": 1,
+  "macro_f1_2024": 0.6641
+ },
+ "choice_share_2024_oof": {
+  "enc": 0.5312,
+  "zs": 0.1136,
+  "rag": 0.3552
+ },
+ "joblib_sha256": "21b18fe6d6d2600edede5675058c75e27aa431bf87520e62859db82fee55b945"
+}

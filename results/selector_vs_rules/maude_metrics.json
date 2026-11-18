@@ -1,0 +1,6462 @@
+{
+ "note": "notes/selector-vs-rules-2026-11-11.md",
+ "corpus": "maude",
+ "selector_encoder": "cb-large-conv",
+ "git_head": "d955fea",
+ "freeze": "splits/redesign_v1_maude.json",
+ "llms": {
+  "opus55": {
+   "family": "S2",
+   "selector_cv_2024": 0.6905,
+   "cv_2024": {
+    "energy_gate": 0.6656,
+    "energyroute": 0.6575,
+    "energyroute_tuned": 0.6632,
+    "code_table": 0.6633,
+    "code_table_bin": 0.6735,
+    "majority_table": 0.6415,
+    "pattern_table": 0.6606,
+    "count_conf_gate": 0.6692,
+    "refit": 0.6905,
+    "no_counts": 0.6687,
+    "counts_only": 0.6792
+   },
+   "settings": {
+    "energy_gate": {
+     "arm": "rag",
+     "tau": -8.136995799999998
+    },
+    "energyroute": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.9
+    },
+    "energyroute_tuned": {
+     "q1": 0.6,
+     "q2": 0.9,
+     "lam": 0.8
+    },
+    "code_table": {
+     "m": 50,
+     "backoff": "arm"
+    },
+    "code_table_bin": {
+     "m": 50,
+     "backoff": "bin"
+    },
+    "majority_table": {
+     "m": 50,
+     "backoff": "bin"
+    },
+    "pattern_table": {
+     "assign": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "count_conf_gate": {
+     "arm": "rag",
+     "k": -1,
+     "p": 0.5
+    },
+    "refit": {
+     "inputs": [
+      "log_count_enc",
+      "enc_msp",
+      "log_count_zs",
+      "zs_invalid",
+      "log_count_rag",
+      "rag_invalid",
+      "nb_vote_share",
+      "nb_vote_is_rag",
+      "nb_top1_cos",
+      "agree_enc_zs",
+      "agree_enc_rag",
+      "agree_zs_rag",
+      "agree_all",
+      "log_text_len"
+     ]
+    },
+    "no_counts": {
+     "inputs": [
+      "enc_msp",
+      "zs_invalid",
+      "rag_invalid",
+      "nb_vote_share",
+      "nb_vote_is_rag",
+      "nb_top1_cos",
+      "agree_enc_zs",
+      "agree_enc_rag",
+      "agree_zs_rag",
+      "agree_all",
+      "log_text_len"
+     ]
+    },
+    "counts_only": {
+     "inputs": [
+      "log_count_enc",
+      "log_count_zs",
+      "log_count_rag",
+      "zs_invalid",
+      "rag_invalid"
+     ]
+    }
+   },
+   "best_rule_2024": "code_table_bin",
+   "probs_check_2024": 0.9963,
+   "years": {
+    "2026": {
+     "n": 3956,
+     "codes": 420,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5037,
+       "1-5": 0.2636,
+       "6-20": 0.3551,
+       "21-89": 0.5657,
+       "90+": 0.5474
+      },
+      "best_single": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "cascade_msp": {
+       "all": 0.4679,
+       "1-5": 0.1451,
+       "6-20": 0.3257,
+       "21-89": 0.5217,
+       "90+": 0.5246
+      },
+      "enc": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "zs": {
+       "all": 0.3027,
+       "1-5": 0.2228,
+       "6-20": 0.2708,
+       "21-89": 0.3888,
+       "90+": 0.3032
+      },
+      "rag": {
+       "all": 0.4416,
+       "1-5": 0.2038,
+       "6-20": 0.2333,
+       "21-89": 0.5015,
+       "90+": 0.4931
+      },
+      "oracle": {
+       "all": 0.5863,
+       "1-5": 0.3312,
+       "6-20": 0.4569,
+       "21-89": 0.6507,
+       "90+": 0.6293
+      },
+      "selector_natural": {
+       "all": 0.4548,
+       "1-5": 0.1628,
+       "6-20": 0.2791,
+       "21-89": 0.4883,
+       "90+": 0.5149
+      },
+      "energy_gate": {
+       "all": 0.4583,
+       "1-5": 0.1342,
+       "6-20": 0.3003,
+       "21-89": 0.5071,
+       "90+": 0.5182
+      },
+      "energyroute": {
+       "all": 0.462,
+       "1-5": 0.1486,
+       "6-20": 0.3069,
+       "21-89": 0.5117,
+       "90+": 0.5197
+      },
+      "energyroute_tuned": {
+       "all": 0.4581,
+       "1-5": 0.1317,
+       "6-20": 0.311,
+       "21-89": 0.5057,
+       "90+": 0.5172
+      },
+      "code_table": {
+       "all": 0.4546,
+       "1-5": 0.1084,
+       "6-20": 0.2906,
+       "21-89": 0.5137,
+       "90+": 0.5167
+      },
+      "code_table_bin": {
+       "all": 0.4778,
+       "1-5": 0.1914,
+       "6-20": 0.3685,
+       "21-89": 0.573,
+       "90+": 0.5175
+      },
+      "majority_table": {
+       "all": 0.4625,
+       "1-5": 0.2017,
+       "6-20": 0.2907,
+       "21-89": 0.5398,
+       "90+": 0.5096
+      },
+      "pattern_table": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "count_conf_gate": {
+       "all": 0.4679,
+       "1-5": 0.1451,
+       "6-20": 0.3257,
+       "21-89": 0.5217,
+       "90+": 0.5246
+      },
+      "refit": {
+       "all": 0.5037,
+       "1-5": 0.2636,
+       "6-20": 0.3551,
+       "21-89": 0.5657,
+       "90+": 0.5474
+      },
+      "no_counts": {
+       "all": 0.4646,
+       "1-5": 0.1266,
+       "6-20": 0.3201,
+       "21-89": 0.5215,
+       "90+": 0.5234
+      },
+      "counts_only": {
+       "all": 0.4995,
+       "1-5": 0.2734,
+       "6-20": 0.3825,
+       "21-89": 0.5589,
+       "90+": 0.5376
+      }
+     },
+     "selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0417,
+        "ci95": [
+         0.0329,
+         0.0496
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0259,
+         0.0585
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0455,
+        "ci95": [
+         0.0363,
+         0.0543
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0302,
+         0.0624
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0453,
+        "ci95": [
+         0.0365,
+         0.0539
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0307,
+         0.0621
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.049,
+        "ci95": [
+         0.039,
+         0.0558
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0333,
+         0.0651
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0258,
+        "ci95": [
+         0.0178,
+         0.0318
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0125,
+         0.0383
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0412,
+        "ci95": [
+         0.032,
+         0.0489
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.025,
+         0.0572
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0577,
+        "ci95": [
+         0.0469,
+         0.0653
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0412,
+         0.0739
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0358,
+        "ci95": [
+         0.0262,
+         0.0442
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.021,
+         0.0518
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.039,
+        "ci95": [
+         0.0289,
+         0.0466
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0232,
+         0.0543
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0041,
+        "ci95": [
+         -0.0015,
+         0.0103
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0063,
+         0.0144
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0358,
+        "ci95": [
+         0.0262,
+         0.0442
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.021,
+         0.0518
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0577,
+        "ci95": [
+         0.0469,
+         0.0653
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0412,
+         0.0739
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0489,
+        "ci95": [
+         0.0396,
+         0.0575
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0339,
+         0.0654
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      }
+     },
+     "refit_equals_frozen": 1.0,
+     "probs_check": 0.9944,
+     "llm_share": {
+      "energy_gate": 0.0819,
+      "energyroute": 0.1999,
+      "energyroute_tuned": 0.1001,
+      "count_conf_gate": 0.2503
+     },
+     "natural": {
+      "selector": {
+       "right_rare": 125.0,
+       "false_rare": 3856.1,
+       "precision": 0.0314,
+       "modes_visible": 25,
+       "accuracy_uniform": 0.636,
+       "macro_f1_uniform": 0.5311
+      },
+      "best_single": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "cascade_msp": {
+       "right_rare": 54.0,
+       "false_rare": 1021.9,
+       "precision": 0.0502,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.6498,
+       "macro_f1_uniform": 0.5229
+      },
+      "enc": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "zs": {
+       "right_rare": 154.0,
+       "false_rare": 6664.7,
+       "precision": 0.0226,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.4105,
+       "macro_f1_uniform": 0.3086
+      },
+      "rag": {
+       "right_rare": 95.0,
+       "false_rare": 3025.6,
+       "precision": 0.0304,
+       "modes_visible": 22,
+       "accuracy_uniform": 0.6442,
+       "macro_f1_uniform": 0.5176
+      },
+      "oracle": {
+       "right_rare": 172.0,
+       "false_rare": 1.0,
+       "precision": 0.9942,
+       "modes_visible": 26,
+       "accuracy_uniform": 0.753,
+       "macro_f1_uniform": 0.658
+      },
+      "selector_natural": {
+       "right_rare": 58.0,
+       "false_rare": 706.5,
+       "precision": 0.0759,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.6508,
+       "macro_f1_uniform": 0.5076
+      },
+      "energy_gate": {
+       "right_rare": 45.0,
+       "false_rare": 692.3,
+       "precision": 0.061,
+       "modes_visible": 14,
+       "accuracy_uniform": 0.6385,
+       "macro_f1_uniform": 0.4965
+      },
+      "energyroute": {
+       "right_rare": 74.0,
+       "false_rare": 1042.3,
+       "precision": 0.0663,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.655,
+       "macro_f1_uniform": 0.5299
+      },
+      "energyroute_tuned": {
+       "right_rare": 52.0,
+       "false_rare": 866.3,
+       "precision": 0.0566,
+       "modes_visible": 14,
+       "accuracy_uniform": 0.6448,
+       "macro_f1_uniform": 0.5099
+      },
+      "code_table": {
+       "right_rare": 40.0,
+       "false_rare": 527.8,
+       "precision": 0.0704,
+       "modes_visible": 10,
+       "accuracy_uniform": 0.6382,
+       "macro_f1_uniform": 0.5017
+      },
+      "code_table_bin": {
+       "right_rare": 93.0,
+       "false_rare": 2686.2,
+       "precision": 0.0335,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.6332,
+       "macro_f1_uniform": 0.509
+      },
+      "majority_table": {
+       "right_rare": 103.0,
+       "false_rare": 2529.5,
+       "precision": 0.0391,
+       "modes_visible": 22,
+       "accuracy_uniform": 0.6432,
+       "macro_f1_uniform": 0.5036
+      },
+      "pattern_table": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "count_conf_gate": {
+       "right_rare": 54.0,
+       "false_rare": 1021.9,
+       "precision": 0.0502,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.6498,
+       "macro_f1_uniform": 0.5229
+      },
+      "refit": {
+       "right_rare": 125.0,
+       "false_rare": 3856.1,
+       "precision": 0.0314,
+       "modes_visible": 25,
+       "accuracy_uniform": 0.636,
+       "macro_f1_uniform": 0.5311
+      },
+      "no_counts": {
+       "right_rare": 49.0,
+       "false_rare": 845.5,
+       "precision": 0.0548,
+       "modes_visible": 15,
+       "accuracy_uniform": 0.6438,
+       "macro_f1_uniform": 0.5044
+      },
+      "counts_only": {
+       "right_rare": 155.0,
+       "false_rare": 6667.7,
+       "precision": 0.0227,
+       "modes_visible": 25,
+       "accuracy_uniform": 0.5982,
+       "macro_f1_uniform": 0.5092
+      }
+     },
+     "natural_selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0011,
+        "ci95": [
+         -0.0109,
+         0.0169
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0197,
+         0.0289
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0212,
+        "ci95": [
+         0.002,
+         0.0319
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0095,
+         0.0471
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0346,
+        "ci95": [
+         0.0123,
+         0.0427
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0003,
+         0.0589
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0293,
+        "ci95": [
+         0.0084,
+         0.0374
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0001,
+         0.0504
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.022,
+        "ci95": [
+         0.0062,
+         0.0317
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0019,
+         0.043
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0274,
+        "ci95": [
+         0.0094,
+         0.0426
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0028,
+         0.0538
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0412,
+        "ci95": [
+         0.0166,
+         0.048
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0052,
+         0.0633
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0082,
+        "ci95": [
+         -0.0083,
+         0.0216
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0178,
+         0.0342
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0266,
+        "ci95": [
+         0.0053,
+         0.0357
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.006,
+         0.0492
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0218,
+        "ci95": [
+         0.0084,
+         0.0275
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0015,
+         0.0346
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": true
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0082,
+        "ci95": [
+         -0.0083,
+         0.0216
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0178,
+         0.0342
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0412,
+        "ci95": [
+         0.0166,
+         0.048
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0052,
+         0.0633
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0235,
+        "ci95": [
+         0.0027,
+         0.0359
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0086,
+         0.051
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "enc": {
+       "item": {
+        "point": 0.0412,
+        "ci95": [
+         0.0166,
+         0.048
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0052,
+         0.0633
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": true
+      }
+     },
+     "natural_uniform": {
+      "n": 4000,
+      "codes": 262
+     },
+     "natural_setting_minus": {
+      "accuracy": {
+       "enc": {
+        "point": 0.0143,
+        "ci95": [
+         0.009,
+         0.0198
+        ]
+       },
+       "selector": {
+        "point": 0.0147,
+        "ci95": [
+         0.008,
+         0.0227
+        ]
+       },
+       "energyroute": {
+        "point": -0.0043,
+        "ci95": [
+         -0.011,
+         0.0018
+        ]
+       },
+       "energyroute_tuned": {
+        "point": 0.006,
+        "ci95": [
+         0.0008,
+         0.0115
+        ]
+       },
+       "code_table": {
+        "point": 0.0125,
+        "ci95": [
+         0.0055,
+         0.02
+        ]
+       },
+       "code_table_bin": {
+        "point": 0.0175,
+        "ci95": [
+         0.01,
+         0.0257
+        ]
+       },
+       "count_conf_gate": {
+        "point": 0.001,
+        "ci95": [
+         -0.004,
+         0.0057
+        ]
+       }
+      },
+      "macro_f1": {
+       "enc": {
+        "item": {
+         "point": 0.0178,
+         "ci95": [
+          0.0026,
+          0.0233
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0066,
+          0.0328
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "selector": {
+        "item": {
+         "point": -0.0235,
+         "ci95": [
+          -0.0363,
+          -0.0032
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0515,
+          0.0081
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "energyroute": {
+        "item": {
+         "point": -0.0223,
+         "ci95": [
+          -0.032,
+          -0.003
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0436,
+          0.0072
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "energyroute_tuned": {
+        "item": {
+         "point": -0.0023,
+         "ci95": [
+          -0.0133,
+          0.0084
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0215,
+          0.0164
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "code_table": {
+        "item": {
+         "point": 0.0059,
+         "ci95": [
+          -0.0089,
+          0.017
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0223,
+          0.0274
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "code_table_bin": {
+        "item": {
+         "point": -0.0014,
+         "ci95": [
+          -0.0165,
+          0.0152
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0319,
+          0.0272
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "count_conf_gate": {
+        "item": {
+         "point": -0.0153,
+         "ci95": [
+          -0.0231,
+          -0.0021
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0337,
+          0.0047
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       }
+      },
+      "energyroute_minus_enc_accuracy": {
+       "point": 0.0185,
+       "ci95": [
+        0.0115,
+        0.0262
+       ]
+      }
+     },
+     "natural_llm_share": {
+      "energy_gate": 0.0377,
+      "energyroute": 0.1999,
+      "energyroute_tuned": 0.0999,
+      "count_conf_gate": 0.1442
+     }
+    },
+    "2025": {
+     "n": 4017,
+     "codes": 423,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5581,
+       "1-5": 0.2631,
+       "6-20": 0.3416,
+       "21-89": 0.5936,
+       "90+": 0.6266
+      },
+      "best_single": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "cascade_msp": {
+       "all": 0.5238,
+       "1-5": 0.1663,
+       "6-20": 0.2694,
+       "21-89": 0.5529,
+       "90+": 0.6083
+      },
+      "enc": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "zs": {
+       "all": 0.3,
+       "1-5": 0.2319,
+       "6-20": 0.2691,
+       "21-89": 0.3542,
+       "90+": 0.3051
+      },
+      "rag": {
+       "all": 0.483,
+       "1-5": 0.1773,
+       "6-20": 0.2275,
+       "21-89": 0.4859,
+       "90+": 0.5641
+      },
+      "oracle": {
+       "all": 0.6296,
+       "1-5": 0.326,
+       "6-20": 0.4393,
+       "21-89": 0.6597,
+       "90+": 0.6971
+      },
+      "selector_natural": {
+       "all": 0.5109,
+       "1-5": 0.1722,
+       "6-20": 0.2339,
+       "21-89": 0.5367,
+       "90+": 0.5959
+      },
+      "energy_gate": {
+       "all": 0.5197,
+       "1-5": 0.1632,
+       "6-20": 0.2668,
+       "21-89": 0.5637,
+       "90+": 0.6012
+      },
+      "energyroute": {
+       "all": 0.5183,
+       "1-5": 0.1503,
+       "6-20": 0.2592,
+       "21-89": 0.5461,
+       "90+": 0.6053
+      },
+      "energyroute_tuned": {
+       "all": 0.5205,
+       "1-5": 0.1655,
+       "6-20": 0.2651,
+       "21-89": 0.5617,
+       "90+": 0.6026
+      },
+      "code_table": {
+       "all": 0.5233,
+       "1-5": 0.1813,
+       "6-20": 0.2979,
+       "21-89": 0.5604,
+       "90+": 0.6002
+      },
+      "code_table_bin": {
+       "all": 0.5361,
+       "1-5": 0.2204,
+       "6-20": 0.3394,
+       "21-89": 0.5879,
+       "90+": 0.6024
+      },
+      "majority_table": {
+       "all": 0.5152,
+       "1-5": 0.2102,
+       "6-20": 0.2829,
+       "21-89": 0.5431,
+       "90+": 0.5888
+      },
+      "pattern_table": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "count_conf_gate": {
+       "all": 0.5238,
+       "1-5": 0.1663,
+       "6-20": 0.2694,
+       "21-89": 0.5529,
+       "90+": 0.6083
+      },
+      "refit": {
+       "all": 0.5581,
+       "1-5": 0.2631,
+       "6-20": 0.3416,
+       "21-89": 0.5936,
+       "90+": 0.6266
+      },
+      "no_counts": {
+       "all": 0.5239,
+       "1-5": 0.1613,
+       "6-20": 0.2904,
+       "21-89": 0.5589,
+       "90+": 0.6055
+      },
+      "counts_only": {
+       "all": 0.5594,
+       "1-5": 0.2867,
+       "6-20": 0.3795,
+       "21-89": 0.5918,
+       "90+": 0.6202
+      }
+     },
+     "selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0398,
+        "ci95": [
+         0.0313,
+         0.0471
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0233,
+         0.0541
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0376,
+        "ci95": [
+         0.0296,
+         0.0454
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.023,
+         0.0528
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0384,
+        "ci95": [
+         0.0301,
+         0.0456
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0231,
+         0.053
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0348,
+        "ci95": [
+         0.0272,
+         0.0415
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.022,
+         0.0485
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.022,
+        "ci95": [
+         0.0158,
+         0.0276
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0123,
+         0.0329
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0429,
+        "ci95": [
+         0.0343,
+         0.0514
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0283,
+         0.0595
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0446,
+        "ci95": [
+         0.0355,
+         0.052
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0291,
+         0.0613
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0343,
+        "ci95": [
+         0.0257,
+         0.0422
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0197,
+         0.0477
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0342,
+        "ci95": [
+         0.0264,
+         0.0405
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0204,
+         0.0481
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "counts_only": {
+       "item": {
+        "point": -0.0013,
+        "ci95": [
+         -0.0068,
+         0.0041
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0106,
+         0.0086
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0343,
+        "ci95": [
+         0.0257,
+         0.0422
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0197,
+         0.0477
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0446,
+        "ci95": [
+         0.0355,
+         0.052
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0291,
+         0.0613
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0472,
+        "ci95": [
+         0.0383,
+         0.0553
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0309,
+         0.0635
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      }
+     },
+     "refit_equals_frozen": 1.0,
+     "probs_check": 0.9963,
+     "llm_share": {
+      "energy_gate": 0.0702,
+      "energyroute": 0.2001,
+      "energyroute_tuned": 0.1001,
+      "count_conf_gate": 0.2029
+     },
+     "natural": {
+      "selector": {
+       "right_rare": 151.0,
+       "false_rare": 2872.1,
+       "precision": 0.0499,
+       "modes_visible": 25,
+       "accuracy_uniform": 0.738,
+       "macro_f1_uniform": 0.6119
+      },
+      "best_single": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "cascade_msp": {
+       "right_rare": 79.0,
+       "false_rare": 766.9,
+       "precision": 0.0934,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.7552,
+       "macro_f1_uniform": 0.6202
+      },
+      "enc": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "zs": {
+       "right_rare": 175.0,
+       "false_rare": 6697.9,
+       "precision": 0.0255,
+       "modes_visible": 24,
+       "accuracy_uniform": 0.4178,
+       "macro_f1_uniform": 0.286
+      },
+      "rag": {
+       "right_rare": 103.0,
+       "false_rare": 2103.4,
+       "precision": 0.0467,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7335,
+       "macro_f1_uniform": 0.577
+      },
+      "oracle": {
+       "right_rare": 206.0,
+       "false_rare": 1.0,
+       "precision": 0.9952,
+       "modes_visible": 27,
+       "accuracy_uniform": 0.8297,
+       "macro_f1_uniform": 0.7256
+      },
+      "selector_natural": {
+       "right_rare": 70.0,
+       "false_rare": 768.9,
+       "precision": 0.0834,
+       "modes_visible": 21,
+       "accuracy_uniform": 0.7568,
+       "macro_f1_uniform": 0.6152
+      },
+      "energy_gate": {
+       "right_rare": 66.0,
+       "false_rare": 574.5,
+       "precision": 0.103,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7512,
+       "macro_f1_uniform": 0.6167
+      },
+      "energyroute": {
+       "right_rare": 71.0,
+       "false_rare": 959.3,
+       "precision": 0.0689,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7558,
+       "macro_f1_uniform": 0.6228
+      },
+      "energyroute_tuned": {
+       "right_rare": 73.0,
+       "false_rare": 768.8,
+       "precision": 0.0867,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.756,
+       "macro_f1_uniform": 0.6268
+      },
+      "code_table": {
+       "right_rare": 73.0,
+       "false_rare": 384.8,
+       "precision": 0.1595,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.7392,
+       "macro_f1_uniform": 0.606
+      },
+      "code_table_bin": {
+       "right_rare": 130.0,
+       "false_rare": 2095.4,
+       "precision": 0.0584,
+       "modes_visible": 21,
+       "accuracy_uniform": 0.7348,
+       "macro_f1_uniform": 0.6019
+      },
+      "majority_table": {
+       "right_rare": 126.0,
+       "false_rare": 2103.4,
+       "precision": 0.0565,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.731,
+       "macro_f1_uniform": 0.5896
+      },
+      "pattern_table": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "count_conf_gate": {
+       "right_rare": 79.0,
+       "false_rare": 766.9,
+       "precision": 0.0934,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.7552,
+       "macro_f1_uniform": 0.6202
+      },
+      "refit": {
+       "right_rare": 151.0,
+       "false_rare": 2872.1,
+       "precision": 0.0499,
+       "modes_visible": 25,
+       "accuracy_uniform": 0.738,
+       "macro_f1_uniform": 0.6119
+      },
+      "no_counts": {
+       "right_rare": 69.0,
+       "false_rare": 574.5,
+       "precision": 0.1072,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.7515,
+       "macro_f1_uniform": 0.6176
+      },
+      "counts_only": {
+       "right_rare": 197.0,
+       "false_rare": 6878.7,
+       "precision": 0.0278,
+       "modes_visible": 27,
+       "accuracy_uniform": 0.6887,
+       "macro_f1_uniform": 0.5777
+      }
+     },
+     "natural_selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": -0.011,
+        "ci95": [
+         -0.0174,
+         0.0071
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0255,
+         0.0169
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": -0.0149,
+        "ci95": [
+         -0.0232,
+         0.0003
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.032,
+         0.011
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "energy_gate": {
+       "item": {
+        "point": -0.0048,
+        "ci95": [
+         -0.0163,
+         0.0072
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0237,
+         0.016
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0059,
+        "ci95": [
+         -0.006,
+         0.0157
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0146,
+         0.0252
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.01,
+        "ci95": [
+         -0.0026,
+         0.0178
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0083,
+         0.0258
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0222,
+        "ci95": [
+         0.008,
+         0.0351
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0004,
+         0.0461
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "pattern_table": {
+       "item": {
+        "point": -0.0057,
+        "ci95": [
+         -0.0165,
+         0.0072
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0256,
+         0.0174
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": -0.0083,
+        "ci95": [
+         -0.0188,
+         0.0054
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0273,
+         0.0166
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "no_counts": {
+       "item": {
+        "point": -0.0057,
+        "ci95": [
+         -0.0173,
+         0.0061
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.025,
+         0.0143
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0341,
+        "ci95": [
+         0.0208,
+         0.0393
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0148,
+         0.0476
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": true
+      },
+      "cascade_msp": {
+       "item": {
+        "point": -0.0083,
+        "ci95": [
+         -0.0188,
+         0.0054
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0273,
+         0.0166
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "best_single": {
+       "item": {
+        "point": -0.0057,
+        "ci95": [
+         -0.0165,
+         0.0072
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0256,
+         0.0174
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "selector_natural": {
+       "item": {
+        "point": -0.0034,
+        "ci95": [
+         -0.0181,
+         0.0094
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.028,
+         0.0203
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "enc": {
+       "item": {
+        "point": -0.0057,
+        "ci95": [
+         -0.0165,
+         0.0072
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0256,
+         0.0174
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      }
+     },
+     "natural_uniform": {
+      "n": 4000,
+      "codes": 275
+     },
+     "natural_setting_minus": {
+      "accuracy": {
+       "enc": {
+        "point": 0.0085,
+        "ci95": [
+         0.0035,
+         0.0132
+        ]
+       },
+       "selector": {
+        "point": 0.0187,
+        "ci95": [
+         0.012,
+         0.0257
+        ]
+       },
+       "energyroute": {
+        "point": 0.001,
+        "ci95": [
+         -0.005,
+         0.0067
+        ]
+       },
+       "energyroute_tuned": {
+        "point": 0.0008,
+        "ci95": [
+         -0.0037,
+         0.0053
+        ]
+       },
+       "code_table": {
+        "point": 0.0175,
+        "ci95": [
+         0.011,
+         0.0243
+        ]
+       },
+       "code_table_bin": {
+        "point": 0.022,
+        "ci95": [
+         0.0152,
+         0.029
+        ]
+       },
+       "count_conf_gate": {
+        "point": 0.0015,
+        "ci95": [
+         -0.0027,
+         0.0057
+        ]
+       }
+      },
+      "macro_f1": {
+       "enc": {
+        "item": {
+         "point": -0.0023,
+         "ci95": [
+          -0.01,
+          0.0103
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0188,
+          0.0164
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "selector": {
+        "item": {
+         "point": 0.0034,
+         "ci95": [
+          -0.0097,
+          0.018
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0206,
+          0.0279
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "energyroute": {
+        "item": {
+         "point": -0.0076,
+         "ci95": [
+          -0.013,
+          0.0108
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0221,
+          0.02
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "energyroute_tuned": {
+        "item": {
+         "point": -0.0115,
+         "ci95": [
+          -0.0169,
+          0.0028
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0242,
+          0.0094
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "code_table": {
+        "item": {
+         "point": 0.0092,
+         "ci95": [
+          -0.0017,
+          0.0208
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0108,
+          0.0276
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "code_table_bin": {
+        "item": {
+         "point": 0.0133,
+         "ci95": [
+          0.0005,
+          0.0237
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0072,
+          0.0313
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "count_conf_gate": {
+        "item": {
+         "point": -0.0049,
+         "ci95": [
+          -0.0116,
+          0.0076
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0186,
+          0.0132
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       }
+      },
+      "energyroute_minus_enc_accuracy": {
+       "point": 0.0075,
+       "ci95": [
+        0.0008,
+        0.0145
+       ]
+      }
+     },
+     "natural_llm_share": {
+      "energy_gate": 0.02,
+      "energyroute": 0.1998,
+      "energyroute_tuned": 0.1,
+      "count_conf_gate": 0.1001
+     }
+    }
+   }
+  },
+  "qwen38_27b": {
+   "family": "S3",
+   "selector_cv_2024": 0.6823,
+   "cv_2024": {
+    "energy_gate": 0.6605,
+    "energyroute": 0.6465,
+    "energyroute_tuned": 0.663,
+    "code_table": 0.6599,
+    "code_table_bin": 0.6639,
+    "majority_table": 0.6302,
+    "pattern_table": 0.6606,
+    "count_conf_gate": 0.6633,
+    "refit": 0.6823,
+    "no_counts": 0.6612,
+    "counts_only": 0.6691
+   },
+   "settings": {
+    "energy_gate": {
+     "arm": "rag",
+     "tau": -8.136995799999998
+    },
+    "energyroute": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.9
+    },
+    "energyroute_tuned": {
+     "q1": 0.6,
+     "q2": 1.0,
+     "lam": 0.9
+    },
+    "code_table": {
+     "m": 50,
+     "backoff": "arm"
+    },
+    "code_table_bin": {
+     "m": 50,
+     "backoff": "bin"
+    },
+    "majority_table": {
+     "m": 50,
+     "backoff": "bin"
+    },
+    "pattern_table": {
+     "assign": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "count_conf_gate": {
+     "arm": "rag",
+     "k": -1,
+     "p": 0.3
+    },
+    "refit": {
+     "inputs": [
+      "log_count_enc",
+      "enc_msp",
+      "log_count_zs",
+      "zs_invalid",
+      "log_count_rag",
+      "rag_invalid",
+      "nb_vote_share",
+      "nb_vote_is_rag",
+      "nb_top1_cos",
+      "agree_enc_zs",
+      "agree_enc_rag",
+      "agree_zs_rag",
+      "agree_all",
+      "log_text_len"
+     ]
+    },
+    "no_counts": {
+     "inputs": [
+      "enc_msp",
+      "zs_invalid",
+      "rag_invalid",
+      "nb_vote_share",
+      "nb_vote_is_rag",
+      "nb_top1_cos",
+      "agree_enc_zs",
+      "agree_enc_rag",
+      "agree_zs_rag",
+      "agree_all",
+      "log_text_len"
+     ]
+    },
+    "counts_only": {
+     "inputs": [
+      "log_count_enc",
+      "log_count_zs",
+      "log_count_rag",
+      "zs_invalid",
+      "rag_invalid"
+     ]
+    }
+   },
+   "best_rule_2024": "code_table_bin",
+   "probs_check_2024": 0.9963,
+   "years": {
+    "2026": {
+     "n": 3956,
+     "codes": 420,
+     "macro_f1": {
+      "selector": {
+       "all": 0.4783,
+       "1-5": 0.1625,
+       "6-20": 0.344,
+       "21-89": 0.5264,
+       "90+": 0.5341
+      },
+      "best_single": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "cascade_msp": {
+       "all": 0.4521,
+       "1-5": 0.1056,
+       "6-20": 0.3043,
+       "21-89": 0.5,
+       "90+": 0.5142
+      },
+      "enc": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "zs": {
+       "all": 0.2384,
+       "1-5": 0.1764,
+       "6-20": 0.224,
+       "21-89": 0.3167,
+       "90+": 0.2354
+      },
+      "rag": {
+       "all": 0.4042,
+       "1-5": 0.1422,
+       "6-20": 0.2093,
+       "21-89": 0.4512,
+       "90+": 0.4598
+      },
+      "oracle": {
+       "all": 0.565,
+       "1-5": 0.2777,
+       "6-20": 0.413,
+       "21-89": 0.6275,
+       "90+": 0.6161
+      },
+      "selector_natural": {
+       "all": 0.433,
+       "1-5": 0.0721,
+       "6-20": 0.2447,
+       "21-89": 0.4794,
+       "90+": 0.5027
+      },
+      "energy_gate": {
+       "all": 0.4491,
+       "1-5": 0.1064,
+       "6-20": 0.294,
+       "21-89": 0.4948,
+       "90+": 0.512
+      },
+      "energyroute": {
+       "all": 0.447,
+       "1-5": 0.1178,
+       "6-20": 0.2826,
+       "21-89": 0.4966,
+       "90+": 0.5082
+      },
+      "energyroute_tuned": {
+       "all": 0.4455,
+       "1-5": 0.0874,
+       "6-20": 0.2738,
+       "21-89": 0.4909,
+       "90+": 0.5129
+      },
+      "code_table": {
+       "all": 0.4512,
+       "1-5": 0.1009,
+       "6-20": 0.2838,
+       "21-89": 0.5027,
+       "90+": 0.5157
+      },
+      "code_table_bin": {
+       "all": 0.4561,
+       "1-5": 0.0967,
+       "6-20": 0.3427,
+       "21-89": 0.5179,
+       "90+": 0.5132
+      },
+      "majority_table": {
+       "all": 0.4397,
+       "1-5": 0.1547,
+       "6-20": 0.2842,
+       "21-89": 0.4979,
+       "90+": 0.4917
+      },
+      "pattern_table": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "count_conf_gate": {
+       "all": 0.4521,
+       "1-5": 0.1056,
+       "6-20": 0.3043,
+       "21-89": 0.5,
+       "90+": 0.5142
+      },
+      "refit": {
+       "all": 0.4783,
+       "1-5": 0.1625,
+       "6-20": 0.344,
+       "21-89": 0.5264,
+       "90+": 0.5341
+      },
+      "no_counts": {
+       "all": 0.4537,
+       "1-5": 0.1408,
+       "6-20": 0.3014,
+       "21-89": 0.5031,
+       "90+": 0.511
+      },
+      "counts_only": {
+       "all": 0.4712,
+       "1-5": 0.1419,
+       "6-20": 0.3377,
+       "21-89": 0.5239,
+       "90+": 0.528
+      }
+     },
+     "selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0314,
+        "ci95": [
+         0.0232,
+         0.0395
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0177,
+         0.0464
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0328,
+        "ci95": [
+         0.0245,
+         0.0404
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0181,
+         0.049
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0292,
+        "ci95": [
+         0.0214,
+         0.0371
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0168,
+         0.0445
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0272,
+        "ci95": [
+         0.0195,
+         0.0345
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0131,
+         0.0422
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0222,
+        "ci95": [
+         0.015,
+         0.03
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0083,
+         0.0366
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0386,
+        "ci95": [
+         0.0296,
+         0.0477
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0228,
+         0.0571
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0324,
+        "ci95": [
+         0.0242,
+         0.0403
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0188,
+         0.0479
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0262,
+        "ci95": [
+         0.0183,
+         0.0339
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0132,
+         0.0414
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0247,
+        "ci95": [
+         0.0176,
+         0.0324
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0122,
+         0.0387
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0071,
+        "ci95": [
+         -0.0001,
+         0.0138
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0045,
+         0.0195
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0262,
+        "ci95": [
+         0.0183,
+         0.0339
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0132,
+         0.0414
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0324,
+        "ci95": [
+         0.0242,
+         0.0403
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0188,
+         0.0479
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0453,
+        "ci95": [
+         0.0366,
+         0.0537
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0295,
+         0.0624
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      }
+     },
+     "refit_equals_frozen": 1.0,
+     "probs_check": 0.9944,
+     "llm_share": {
+      "energy_gate": 0.0819,
+      "energyroute": 0.1999,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.1011
+     },
+     "natural": {
+      "selector": {
+       "right_rare": 87.0,
+       "false_rare": 4899.3,
+       "precision": 0.0174,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.6315,
+       "macro_f1_uniform": 0.5022
+      },
+      "best_single": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "cascade_msp": {
+       "right_rare": 40.0,
+       "false_rare": 693.6,
+       "precision": 0.0545,
+       "modes_visible": 10,
+       "accuracy_uniform": 0.638,
+       "macro_f1_uniform": 0.4969
+      },
+      "enc": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "zs": {
+       "right_rare": 131.0,
+       "false_rare": 14693.4,
+       "precision": 0.0088,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.3145,
+       "macro_f1_uniform": 0.2349
+      },
+      "rag": {
+       "right_rare": 79.0,
+       "false_rare": 2733.5,
+       "precision": 0.0281,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.6275,
+       "macro_f1_uniform": 0.4674
+      },
+      "oracle": {
+       "right_rare": 150.0,
+       "false_rare": 1.0,
+       "precision": 0.9934,
+       "modes_visible": 24,
+       "accuracy_uniform": 0.7452,
+       "macro_f1_uniform": 0.6294
+      },
+      "selector_natural": {
+       "right_rare": 27.0,
+       "false_rare": 3.0,
+       "precision": 0.9,
+       "modes_visible": 7,
+       "accuracy_uniform": 0.643,
+       "macro_f1_uniform": 0.5092
+      },
+      "energy_gate": {
+       "right_rare": 37.0,
+       "false_rare": 704.0,
+       "precision": 0.0499,
+       "modes_visible": 13,
+       "accuracy_uniform": 0.6358,
+       "macro_f1_uniform": 0.4913
+      },
+      "energyroute": {
+       "right_rare": 64.0,
+       "false_rare": 1391.5,
+       "precision": 0.044,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.647,
+       "macro_f1_uniform": 0.5117
+      },
+      "energyroute_tuned": {
+       "right_rare": 30.0,
+       "false_rare": 166.0,
+       "precision": 0.153,
+       "modes_visible": 8,
+       "accuracy_uniform": 0.6352,
+       "macro_f1_uniform": 0.4899
+      },
+      "code_table": {
+       "right_rare": 35.0,
+       "false_rare": 346.6,
+       "precision": 0.0917,
+       "modes_visible": 10,
+       "accuracy_uniform": 0.6395,
+       "macro_f1_uniform": 0.4852
+      },
+      "code_table_bin": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6382,
+       "macro_f1_uniform": 0.4896
+      },
+      "majority_table": {
+       "right_rare": 77.0,
+       "false_rare": 1888.0,
+       "precision": 0.0392,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.6362,
+       "macro_f1_uniform": 0.4769
+      },
+      "pattern_table": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "count_conf_gate": {
+       "right_rare": 40.0,
+       "false_rare": 693.6,
+       "precision": 0.0545,
+       "modes_visible": 10,
+       "accuracy_uniform": 0.638,
+       "macro_f1_uniform": 0.4969
+      },
+      "refit": {
+       "right_rare": 87.0,
+       "false_rare": 4899.3,
+       "precision": 0.0174,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.6315,
+       "macro_f1_uniform": 0.5022
+      },
+      "no_counts": {
+       "right_rare": 50.0,
+       "false_rare": 1018.1,
+       "precision": 0.0468,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.6412,
+       "macro_f1_uniform": 0.5053
+      },
+      "counts_only": {
+       "right_rare": 74.0,
+       "false_rare": 2551.1,
+       "precision": 0.0282,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.6228,
+       "macro_f1_uniform": 0.4842
+      }
+     },
+     "natural_selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": -0.0095,
+        "ci95": [
+         -0.0154,
+         0.0092
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0237,
+         0.0171
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0123,
+        "ci95": [
+         0.0003,
+         0.025
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0086,
+         0.0339
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0109,
+        "ci95": [
+         0.0002,
+         0.0238
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0076,
+         0.032
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "code_table": {
+       "item": {
+        "point": 0.017,
+        "ci95": [
+         0.0033,
+         0.0275
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0043,
+         0.0354
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0126,
+        "ci95": [
+         0.0023,
+         0.0232
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0047,
+         0.0288
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0252,
+        "ci95": [
+         0.009,
+         0.039
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0017,
+         0.0501
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0123,
+        "ci95": [
+         -0.0004,
+         0.0241
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0089,
+         0.0334
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0053,
+        "ci95": [
+         -0.0043,
+         0.018
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0114,
+         0.0271
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "no_counts": {
+       "item": {
+        "point": -0.0031,
+        "ci95": [
+         -0.0105,
+         0.0119
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0184,
+         0.0197
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.018,
+        "ci95": [
+         0.0052,
+         0.0277
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0037,
+         0.0364
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0053,
+        "ci95": [
+         -0.0043,
+         0.018
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0114,
+         0.0271
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0123,
+        "ci95": [
+         -0.0004,
+         0.0241
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0089,
+         0.0334
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "selector_natural": {
+       "item": {
+        "point": -0.007,
+        "ci95": [
+         -0.0138,
+         0.0114
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0242,
+         0.021
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "enc": {
+       "item": {
+        "point": 0.0123,
+        "ci95": [
+         -0.0004,
+         0.0241
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0089,
+         0.0334
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      }
+     },
+     "natural_uniform": {
+      "n": 4000,
+      "codes": 262
+     },
+     "natural_setting_minus": {
+      "accuracy": {
+       "enc": {
+        "point": 0.0065,
+        "ci95": [
+         0.0013,
+         0.0115
+        ]
+       },
+       "selector": {
+        "point": 0.0115,
+        "ci95": [
+         0.0045,
+         0.0185
+        ]
+       },
+       "energyroute": {
+        "point": -0.004,
+        "ci95": [
+         -0.0105,
+         0.0025
+        ]
+       },
+       "energyroute_tuned": {
+        "point": 0.0077,
+        "ci95": [
+         0.0027,
+         0.013
+        ]
+       },
+       "code_table": {
+        "point": 0.0035,
+        "ci95": [
+         -0.004,
+         0.0107
+        ]
+       },
+       "code_table_bin": {
+        "point": 0.0047,
+        "ci95": [
+         -0.003,
+         0.0123
+        ]
+       },
+       "count_conf_gate": {
+        "point": 0.005,
+        "ci95": [
+         -0.0005,
+         0.01
+        ]
+       }
+      },
+      "macro_f1": {
+       "enc": {
+        "item": {
+         "point": 0.0193,
+         "ci95": [
+          0.0026,
+          0.0246
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0057,
+          0.0346
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "selector": {
+        "item": {
+         "point": 0.007,
+         "ci95": [
+          -0.0115,
+          0.0137
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.021,
+          0.0236
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "energyroute": {
+        "item": {
+         "point": -0.0025,
+         "ci95": [
+          -0.0139,
+          0.0107
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0254,
+          0.0186
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "energyroute_tuned": {
+        "item": {
+         "point": 0.0193,
+         "ci95": [
+          0.0034,
+          0.0254
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0054,
+          0.0352
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "code_table": {
+        "item": {
+         "point": 0.024,
+         "ci95": [
+          0.004,
+          0.0288
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0062,
+          0.0391
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "code_table_bin": {
+        "item": {
+         "point": 0.0196,
+         "ci95": [
+          -0.0001,
+          0.0267
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0112,
+          0.0378
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "count_conf_gate": {
+        "item": {
+         "point": 0.0123,
+         "ci95": [
+          -0.002,
+          0.0185
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0095,
+          0.027
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       }
+      },
+      "energyroute_minus_enc_accuracy": {
+       "point": 0.0105,
+       "ci95": [
+        0.0035,
+        0.0177
+       ]
+      }
+     },
+     "natural_llm_share": {
+      "energy_gate": 0.0377,
+      "energyroute": 0.1999,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.0529
+     }
+    },
+    "2025": {
+     "n": 4017,
+     "codes": 423,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5386,
+       "1-5": 0.2009,
+       "6-20": 0.328,
+       "21-89": 0.5685,
+       "90+": 0.6142
+      },
+      "best_single": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "cascade_msp": {
+       "all": 0.518,
+       "1-5": 0.1542,
+       "6-20": 0.2832,
+       "21-89": 0.5443,
+       "90+": 0.6015
+      },
+      "enc": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "zs": {
+       "all": 0.2319,
+       "1-5": 0.1424,
+       "6-20": 0.2361,
+       "21-89": 0.2696,
+       "90+": 0.2388
+      },
+      "rag": {
+       "all": 0.4476,
+       "1-5": 0.1595,
+       "6-20": 0.2049,
+       "21-89": 0.435,
+       "90+": 0.527
+      },
+      "oracle": {
+       "all": 0.6147,
+       "1-5": 0.2826,
+       "6-20": 0.41,
+       "21-89": 0.6543,
+       "90+": 0.6869
+      },
+      "selector_natural": {
+       "all": 0.4935,
+       "1-5": 0.1009,
+       "6-20": 0.2107,
+       "21-89": 0.4968,
+       "90+": 0.592
+      },
+      "energy_gate": {
+       "all": 0.5144,
+       "1-5": 0.1573,
+       "6-20": 0.2622,
+       "21-89": 0.5527,
+       "90+": 0.5969
+      },
+      "energyroute": {
+       "all": 0.5066,
+       "1-5": 0.139,
+       "6-20": 0.2497,
+       "21-89": 0.5234,
+       "90+": 0.5952
+      },
+      "energyroute_tuned": {
+       "all": 0.5127,
+       "1-5": 0.1379,
+       "6-20": 0.2652,
+       "21-89": 0.5422,
+       "90+": 0.599
+      },
+      "code_table": {
+       "all": 0.5171,
+       "1-5": 0.1587,
+       "6-20": 0.293,
+       "21-89": 0.552,
+       "90+": 0.5968
+      },
+      "code_table_bin": {
+       "all": 0.5185,
+       "1-5": 0.1509,
+       "6-20": 0.3085,
+       "21-89": 0.5675,
+       "90+": 0.5953
+      },
+      "majority_table": {
+       "all": 0.4942,
+       "1-5": 0.1747,
+       "6-20": 0.2839,
+       "21-89": 0.5221,
+       "90+": 0.5672
+      },
+      "pattern_table": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "count_conf_gate": {
+       "all": 0.518,
+       "1-5": 0.1542,
+       "6-20": 0.2832,
+       "21-89": 0.5443,
+       "90+": 0.6015
+      },
+      "refit": {
+       "all": 0.5386,
+       "1-5": 0.2009,
+       "6-20": 0.328,
+       "21-89": 0.5685,
+       "90+": 0.6142
+      },
+      "no_counts": {
+       "all": 0.5161,
+       "1-5": 0.1501,
+       "6-20": 0.2782,
+       "21-89": 0.5366,
+       "90+": 0.6015
+      },
+      "counts_only": {
+       "all": 0.5318,
+       "1-5": 0.1935,
+       "6-20": 0.3257,
+       "21-89": 0.5608,
+       "90+": 0.607
+      }
+     },
+     "selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.032,
+        "ci95": [
+         0.0247,
+         0.039
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0191,
+         0.0464
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0259,
+        "ci95": [
+         0.0181,
+         0.0332
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0119,
+         0.0406
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0242,
+        "ci95": [
+         0.0171,
+         0.031
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0109,
+         0.038
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0215,
+        "ci95": [
+         0.0146,
+         0.0282
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0089,
+         0.0344
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0201,
+        "ci95": [
+         0.0133,
+         0.0269
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0093,
+         0.0319
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0443,
+        "ci95": [
+         0.0356,
+         0.0534
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0299,
+         0.0605
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0251,
+        "ci95": [
+         0.0174,
+         0.0322
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0113,
+         0.0402
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0206,
+        "ci95": [
+         0.0136,
+         0.0271
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0081,
+         0.0343
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0224,
+        "ci95": [
+         0.0147,
+         0.0294
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0098,
+         0.0363
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0068,
+        "ci95": [
+         0.0007,
+         0.0136
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0028,
+         0.0184
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0206,
+        "ci95": [
+         0.0136,
+         0.0271
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0081,
+         0.0343
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0251,
+        "ci95": [
+         0.0174,
+         0.0322
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0113,
+         0.0402
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0451,
+        "ci95": [
+         0.0367,
+         0.0529
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0291,
+         0.0605
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      }
+     },
+     "refit_equals_frozen": 1.0,
+     "probs_check": 0.9963,
+     "llm_share": {
+      "energy_gate": 0.0702,
+      "energyroute": 0.2001,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.0754
+     },
+     "natural": {
+      "selector": {
+       "right_rare": 150.0,
+       "false_rare": 3140.9,
+       "precision": 0.0456,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.729,
+       "macro_f1_uniform": 0.5944
+      },
+      "best_single": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "cascade_msp": {
+       "right_rare": 68.0,
+       "false_rare": 205.3,
+       "precision": 0.2488,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.7485,
+       "macro_f1_uniform": 0.6081
+      },
+      "enc": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "zs": {
+       "right_rare": 201.0,
+       "false_rare": 14491.4,
+       "precision": 0.0137,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.296,
+       "macro_f1_uniform": 0.2133
+      },
+      "rag": {
+       "right_rare": 109.0,
+       "false_rare": 1749.7,
+       "precision": 0.0586,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.707,
+       "macro_f1_uniform": 0.52
+      },
+      "oracle": {
+       "right_rare": 240.0,
+       "false_rare": 1.0,
+       "precision": 0.9959,
+       "modes_visible": 24,
+       "accuracy_uniform": 0.8155,
+       "macro_f1_uniform": 0.7044
+      },
+      "selector_natural": {
+       "right_rare": 37.0,
+       "false_rare": 4.0,
+       "precision": 0.9024,
+       "modes_visible": 12,
+       "accuracy_uniform": 0.749,
+       "macro_f1_uniform": 0.6082
+      },
+      "energy_gate": {
+       "right_rare": 70.0,
+       "false_rare": 396.8,
+       "precision": 0.15,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7485,
+       "macro_f1_uniform": 0.6093
+      },
+      "energyroute": {
+       "right_rare": 72.0,
+       "false_rare": 1169.3,
+       "precision": 0.058,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7422,
+       "macro_f1_uniform": 0.5934
+      },
+      "energyroute_tuned": {
+       "right_rare": 58.0,
+       "false_rare": 1.0,
+       "precision": 0.9831,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.749,
+       "macro_f1_uniform": 0.6155
+      },
+      "code_table": {
+       "right_rare": 69.0,
+       "false_rare": 579.9,
+       "precision": 0.1063,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.735,
+       "macro_f1_uniform": 0.6033
+      },
+      "code_table_bin": {
+       "right_rare": 63.0,
+       "false_rare": 1.0,
+       "precision": 0.9844,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7325,
+       "macro_f1_uniform": 0.597
+      },
+      "majority_table": {
+       "right_rare": 118.0,
+       "false_rare": 1539.6,
+       "precision": 0.0712,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.7185,
+       "macro_f1_uniform": 0.5603
+      },
+      "pattern_table": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "count_conf_gate": {
+       "right_rare": 68.0,
+       "false_rare": 205.3,
+       "precision": 0.2488,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.7485,
+       "macro_f1_uniform": 0.6081
+      },
+      "refit": {
+       "right_rare": 150.0,
+       "false_rare": 3140.9,
+       "precision": 0.0456,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.729,
+       "macro_f1_uniform": 0.5944
+      },
+      "no_counts": {
+       "right_rare": 70.0,
+       "false_rare": 583.2,
+       "precision": 0.1072,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7428,
+       "macro_f1_uniform": 0.6101
+      },
+      "counts_only": {
+       "right_rare": 121.0,
+       "false_rare": 1742.2,
+       "precision": 0.0649,
+       "modes_visible": 21,
+       "accuracy_uniform": 0.7177,
+       "macro_f1_uniform": 0.5873
+      }
+     },
+     "natural_selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0009,
+        "ci95": [
+         -0.0099,
+         0.0181
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.018,
+         0.0312
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": -0.0212,
+        "ci95": [
+         -0.029,
+         -0.0033
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0396,
+         0.0074
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "energy_gate": {
+       "item": {
+        "point": -0.0149,
+        "ci95": [
+         -0.0245,
+         -0.001
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0334,
+         0.0083
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "code_table": {
+       "item": {
+        "point": -0.0089,
+        "ci95": [
+         -0.0189,
+         0.006
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0276,
+         0.0157
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "code_table_bin": {
+       "item": {
+        "point": -0.0027,
+        "ci95": [
+         -0.0151,
+         0.0125
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0226,
+         0.0215
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0341,
+        "ci95": [
+         0.0158,
+         0.0471
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0045,
+         0.0601
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": -0.0232,
+        "ci95": [
+         -0.0298,
+         -0.0048
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0418,
+         0.0062
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": -0.0137,
+        "ci95": [
+         -0.0234,
+         0.0003
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.032,
+         0.0092
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "no_counts": {
+       "item": {
+        "point": -0.0157,
+        "ci95": [
+         -0.0238,
+         0.001
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0326,
+         0.0118
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0071,
+        "ci95": [
+         -0.0034,
+         0.0183
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0119,
+         0.025
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": -0.0137,
+        "ci95": [
+         -0.0234,
+         0.0003
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.032,
+         0.0092
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "best_single": {
+       "item": {
+        "point": -0.0232,
+        "ci95": [
+         -0.0298,
+         -0.0048
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0418,
+         0.0062
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "selector_natural": {
+       "item": {
+        "point": -0.0138,
+        "ci95": [
+         -0.0229,
+         0.0025
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0328,
+         0.0133
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "enc": {
+       "item": {
+        "point": -0.0232,
+        "ci95": [
+         -0.0298,
+         -0.0048
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0418,
+         0.0062
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      }
+     },
+     "natural_uniform": {
+      "n": 4000,
+      "codes": 275
+     },
+     "natural_setting_minus": {
+      "accuracy": {
+       "enc": {
+        "point": 0.0008,
+        "ci95": [
+         -0.004,
+         0.0055
+        ]
+       },
+       "selector": {
+        "point": 0.02,
+        "ci95": [
+         0.0138,
+         0.0262
+        ]
+       },
+       "energyroute": {
+        "point": 0.0067,
+        "ci95": [
+         0.0,
+         0.0138
+        ]
+       },
+       "energyroute_tuned": {
+        "point": 0.0,
+        "ci95": [
+         -0.0047,
+         0.0047
+        ]
+       },
+       "code_table": {
+        "point": 0.014,
+        "ci95": [
+         0.0077,
+         0.021
+        ]
+       },
+       "code_table_bin": {
+        "point": 0.0165,
+        "ci95": [
+         0.0097,
+         0.0235
+        ]
+       },
+       "count_conf_gate": {
+        "point": 0.0005,
+        "ci95": [
+         -0.0037,
+         0.005
+        ]
+       }
+      },
+      "macro_f1": {
+       "enc": {
+        "item": {
+         "point": -0.0093,
+         "ci95": [
+          -0.0184,
+          0.0035
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0289,
+          0.011
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "selector": {
+        "item": {
+         "point": 0.0138,
+         "ci95": [
+          -0.0026,
+          0.0229
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0135,
+          0.0328
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "energyroute": {
+        "item": {
+         "point": 0.0147,
+         "ci95": [
+          0.0023,
+          0.0286
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0103,
+          0.0386
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "energyroute_tuned": {
+        "item": {
+         "point": -0.0073,
+         "ci95": [
+          -0.0169,
+          0.005
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0259,
+          0.013
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "code_table": {
+        "item": {
+         "point": 0.0049,
+         "ci95": [
+          -0.009,
+          0.0166
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0175,
+          0.0254
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "code_table_bin": {
+        "item": {
+         "point": 0.0111,
+         "ci95": [
+          -0.0051,
+          0.0234
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0142,
+          0.0352
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "count_conf_gate": {
+        "item": {
+         "point": 0.0001,
+         "ci95": [
+          -0.0115,
+          0.0089
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0186,
+          0.015
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       }
+      },
+      "energyroute_minus_enc_accuracy": {
+       "point": -0.006,
+       "ci95": [
+        -0.0138,
+        0.0015
+       ]
+      }
+     },
+     "natural_llm_share": {
+      "energy_gate": 0.02,
+      "energyroute": 0.1998,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.028
+     }
+    }
+   }
+  },
+  "gemma4_31b": {
+   "family": "S2",
+   "selector_cv_2024": 0.6859,
+   "cv_2024": {
+    "energy_gate": 0.6636,
+    "energyroute": 0.6504,
+    "energyroute_tuned": 0.663,
+    "code_table": 0.6612,
+    "code_table_bin": 0.6651,
+    "majority_table": 0.6222,
+    "pattern_table": 0.6606,
+    "count_conf_gate": 0.6663,
+    "refit": 0.6859,
+    "no_counts": 0.6632,
+    "counts_only": 0.6739
+   },
+   "settings": {
+    "energy_gate": {
+     "arm": "rag",
+     "tau": -8.136995799999998
+    },
+    "energyroute": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.9
+    },
+    "energyroute_tuned": {
+     "q1": 0.6,
+     "q2": 1.0,
+     "lam": 0.9
+    },
+    "code_table": {
+     "m": 50,
+     "backoff": "arm"
+    },
+    "code_table_bin": {
+     "m": 50,
+     "backoff": "bin"
+    },
+    "majority_table": {
+     "m": 50,
+     "backoff": "bin"
+    },
+    "pattern_table": {
+     "assign": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    },
+    "count_conf_gate": {
+     "arm": "rag",
+     "k": -1,
+     "p": 0.4
+    },
+    "refit": {
+     "inputs": [
+      "log_count_enc",
+      "enc_msp",
+      "log_count_zs",
+      "zs_invalid",
+      "log_count_rag",
+      "rag_invalid",
+      "nb_vote_share",
+      "nb_vote_is_rag",
+      "nb_top1_cos",
+      "agree_enc_zs",
+      "agree_enc_rag",
+      "agree_zs_rag",
+      "agree_all",
+      "log_text_len"
+     ]
+    },
+    "no_counts": {
+     "inputs": [
+      "enc_msp",
+      "zs_invalid",
+      "rag_invalid",
+      "nb_vote_share",
+      "nb_vote_is_rag",
+      "nb_top1_cos",
+      "agree_enc_zs",
+      "agree_enc_rag",
+      "agree_zs_rag",
+      "agree_all",
+      "log_text_len"
+     ]
+    },
+    "counts_only": {
+     "inputs": [
+      "log_count_enc",
+      "log_count_zs",
+      "log_count_rag",
+      "zs_invalid",
+      "rag_invalid"
+     ]
+    }
+   },
+   "best_rule_2024": "count_conf_gate",
+   "probs_check_2024": 0.9963,
+   "years": {
+    "2026": {
+     "n": 3956,
+     "codes": 420,
+     "macro_f1": {
+      "selector": {
+       "all": 0.486,
+       "1-5": 0.2227,
+       "6-20": 0.3476,
+       "21-89": 0.5308,
+       "90+": 0.535
+      },
+      "best_single": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "cascade_msp": {
+       "all": 0.4587,
+       "1-5": 0.1442,
+       "6-20": 0.3232,
+       "21-89": 0.511,
+       "90+": 0.5137
+      },
+      "enc": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "zs": {
+       "all": 0.2458,
+       "1-5": 0.1951,
+       "6-20": 0.2282,
+       "21-89": 0.295,
+       "90+": 0.2468
+      },
+      "rag": {
+       "all": 0.4064,
+       "1-5": 0.1855,
+       "6-20": 0.2157,
+       "21-89": 0.432,
+       "90+": 0.4593
+      },
+      "oracle": {
+       "all": 0.5621,
+       "1-5": 0.3221,
+       "6-20": 0.4227,
+       "21-89": 0.603,
+       "90+": 0.6085
+      },
+      "selector_natural": {
+       "all": 0.4295,
+       "1-5": 0.0747,
+       "6-20": 0.2559,
+       "21-89": 0.4622,
+       "90+": 0.4989
+      },
+      "energy_gate": {
+       "all": 0.4507,
+       "1-5": 0.1395,
+       "6-20": 0.2875,
+       "21-89": 0.4965,
+       "90+": 0.5099
+      },
+      "energyroute": {
+       "all": 0.4491,
+       "1-5": 0.1451,
+       "6-20": 0.3002,
+       "21-89": 0.492,
+       "90+": 0.5059
+      },
+      "energyroute_tuned": {
+       "all": 0.4455,
+       "1-5": 0.0874,
+       "6-20": 0.2738,
+       "21-89": 0.4909,
+       "90+": 0.5129
+      },
+      "code_table": {
+       "all": 0.4526,
+       "1-5": 0.0967,
+       "6-20": 0.2903,
+       "21-89": 0.5047,
+       "90+": 0.5172
+      },
+      "code_table_bin": {
+       "all": 0.4615,
+       "1-5": 0.0967,
+       "6-20": 0.3401,
+       "21-89": 0.5331,
+       "90+": 0.5187
+      },
+      "majority_table": {
+       "all": 0.4411,
+       "1-5": 0.1949,
+       "6-20": 0.3041,
+       "21-89": 0.4929,
+       "90+": 0.4861
+      },
+      "pattern_table": {
+       "all": 0.4459,
+       "1-5": 0.0967,
+       "6-20": 0.2731,
+       "21-89": 0.4923,
+       "90+": 0.5119
+      },
+      "count_conf_gate": {
+       "all": 0.4587,
+       "1-5": 0.1442,
+       "6-20": 0.3232,
+       "21-89": 0.511,
+       "90+": 0.5137
+      },
+      "refit": {
+       "all": 0.486,
+       "1-5": 0.2227,
+       "6-20": 0.3476,
+       "21-89": 0.5308,
+       "90+": 0.535
+      },
+      "no_counts": {
+       "all": 0.4541,
+       "1-5": 0.1293,
+       "6-20": 0.2984,
+       "21-89": 0.5021,
+       "90+": 0.5139
+      },
+      "counts_only": {
+       "all": 0.4782,
+       "1-5": 0.2281,
+       "6-20": 0.3409,
+       "21-89": 0.5189,
+       "90+": 0.5258
+      }
+     },
+     "selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0369,
+        "ci95": [
+         0.0285,
+         0.0454
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0233,
+         0.0522
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0405,
+        "ci95": [
+         0.0317,
+         0.048
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.025,
+         0.0561
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0353,
+        "ci95": [
+         0.0283,
+         0.0434
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0226,
+         0.051
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0334,
+        "ci95": [
+         0.0252,
+         0.0404
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0195,
+         0.0476
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0245,
+        "ci95": [
+         0.017,
+         0.0312
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0109,
+         0.0382
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0449,
+        "ci95": [
+         0.0366,
+         0.0552
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0291,
+         0.0628
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0401,
+        "ci95": [
+         0.0318,
+         0.0478
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.025,
+         0.0558
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0273,
+        "ci95": [
+         0.0203,
+         0.035
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0145,
+         0.0431
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0319,
+        "ci95": [
+         0.0242,
+         0.0402
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0187,
+         0.0481
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0078,
+        "ci95": [
+         0.002,
+         0.0142
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0028,
+         0.0186
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0273,
+        "ci95": [
+         0.0203,
+         0.035
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0145,
+         0.0431
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0401,
+        "ci95": [
+         0.0318,
+         0.0478
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.025,
+         0.0558
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0565,
+        "ci95": [
+         0.047,
+         0.0644
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.039,
+         0.0724
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 3956,
+       "n_codes": 420,
+       "holds": true
+      }
+     },
+     "refit_equals_frozen": 1.0,
+     "probs_check": 0.9944,
+     "llm_share": {
+      "energy_gate": 0.0819,
+      "energyroute": 0.1999,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.1684
+     },
+     "natural": {
+      "selector": {
+       "right_rare": 113.0,
+       "false_rare": 5048.1,
+       "precision": 0.0219,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.631,
+       "macro_f1_uniform": 0.5051
+      },
+      "best_single": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "cascade_msp": {
+       "right_rare": 53.0,
+       "false_rare": 1192.1,
+       "precision": 0.0426,
+       "modes_visible": 14,
+       "accuracy_uniform": 0.6408,
+       "macro_f1_uniform": 0.4988
+      },
+      "enc": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "zs": {
+       "right_rare": 158.0,
+       "false_rare": 14476.0,
+       "precision": 0.0108,
+       "modes_visible": 22,
+       "accuracy_uniform": 0.343,
+       "macro_f1_uniform": 0.2379
+      },
+      "rag": {
+       "right_rare": 92.0,
+       "false_rare": 2235.2,
+       "precision": 0.0395,
+       "modes_visible": 21,
+       "accuracy_uniform": 0.6295,
+       "macro_f1_uniform": 0.4688
+      },
+      "oracle": {
+       "right_rare": 176.0,
+       "false_rare": 1.0,
+       "precision": 0.9944,
+       "modes_visible": 26,
+       "accuracy_uniform": 0.744,
+       "macro_f1_uniform": 0.6254
+      },
+      "selector_natural": {
+       "right_rare": 26.0,
+       "false_rare": 176.0,
+       "precision": 0.1287,
+       "modes_visible": 7,
+       "accuracy_uniform": 0.6458,
+       "macro_f1_uniform": 0.4982
+      },
+      "energy_gate": {
+       "right_rare": 45.0,
+       "false_rare": 1194.1,
+       "precision": 0.0363,
+       "modes_visible": 15,
+       "accuracy_uniform": 0.6355,
+       "macro_f1_uniform": 0.4832
+      },
+      "energyroute": {
+       "right_rare": 74.0,
+       "false_rare": 1387.3,
+       "precision": 0.0506,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.6482,
+       "macro_f1_uniform": 0.5126
+      },
+      "energyroute_tuned": {
+       "right_rare": 30.0,
+       "false_rare": 166.0,
+       "precision": 0.153,
+       "modes_visible": 8,
+       "accuracy_uniform": 0.6352,
+       "macro_f1_uniform": 0.4899
+      },
+      "code_table": {
+       "right_rare": 35.0,
+       "false_rare": 199.6,
+       "precision": 0.1492,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6388,
+       "macro_f1_uniform": 0.4969
+      },
+      "code_table_bin": {
+       "right_rare": 34.0,
+       "false_rare": 166.0,
+       "precision": 0.17,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6378,
+       "macro_f1_uniform": 0.501
+      },
+      "majority_table": {
+       "right_rare": 95.0,
+       "false_rare": 1876.7,
+       "precision": 0.0482,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.638,
+       "macro_f1_uniform": 0.4807
+      },
+      "pattern_table": {
+       "right_rare": 32.0,
+       "false_rare": 166.0,
+       "precision": 0.1616,
+       "modes_visible": 9,
+       "accuracy_uniform": 0.6365,
+       "macro_f1_uniform": 0.4898
+      },
+      "count_conf_gate": {
+       "right_rare": 53.0,
+       "false_rare": 1192.1,
+       "precision": 0.0426,
+       "modes_visible": 14,
+       "accuracy_uniform": 0.6408,
+       "macro_f1_uniform": 0.4988
+      },
+      "refit": {
+       "right_rare": 113.0,
+       "false_rare": 5048.1,
+       "precision": 0.0219,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.631,
+       "macro_f1_uniform": 0.5051
+      },
+      "no_counts": {
+       "right_rare": 42.0,
+       "false_rare": 511.8,
+       "precision": 0.0758,
+       "modes_visible": 11,
+       "accuracy_uniform": 0.6398,
+       "macro_f1_uniform": 0.4927
+      },
+      "counts_only": {
+       "right_rare": 132.0,
+       "false_rare": 7673.9,
+       "precision": 0.0169,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.6138,
+       "macro_f1_uniform": 0.4986
+      }
+     },
+     "natural_selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": -0.0075,
+        "ci95": [
+         -0.0171,
+         0.011
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0272,
+         0.0218
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0152,
+        "ci95": [
+         -0.0022,
+         0.0253
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0118,
+         0.0365
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0219,
+        "ci95": [
+         0.0013,
+         0.0299
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0071,
+         0.0413
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0082,
+        "ci95": [
+         -0.0045,
+         0.0183
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0134,
+         0.0266
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0041,
+        "ci95": [
+         -0.0065,
+         0.015
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.014,
+         0.0236
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0244,
+        "ci95": [
+         0.0058,
+         0.0382
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0066,
+         0.049
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0153,
+        "ci95": [
+         -0.0029,
+         0.0246
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0124,
+         0.0361
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0063,
+        "ci95": [
+         -0.0088,
+         0.0177
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0157,
+         0.027
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0124,
+        "ci95": [
+         -0.0065,
+         0.0215
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0149,
+         0.0339
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0065,
+        "ci95": [
+         -0.0041,
+         0.0166
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0117,
+         0.0234
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0063,
+        "ci95": [
+         -0.0088,
+         0.0177
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0157,
+         0.027
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0153,
+        "ci95": [
+         -0.0029,
+         0.0246
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0124,
+         0.0361
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0069,
+        "ci95": [
+         -0.01,
+         0.0205
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0203,
+         0.0314
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      },
+      "enc": {
+       "item": {
+        "point": 0.0153,
+        "ci95": [
+         -0.0029,
+         0.0246
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0124,
+         0.0361
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 262,
+       "holds": false
+      }
+     },
+     "natural_uniform": {
+      "n": 4000,
+      "codes": 262
+     },
+     "natural_setting_minus": {
+      "accuracy": {
+       "enc": {
+        "point": 0.0092,
+        "ci95": [
+         0.0047,
+         0.014
+        ]
+       },
+       "selector": {
+        "point": 0.0147,
+        "ci95": [
+         0.008,
+         0.0217
+        ]
+       },
+       "energyroute": {
+        "point": -0.0025,
+        "ci95": [
+         -0.0092,
+         0.004
+        ]
+       },
+       "energyroute_tuned": {
+        "point": 0.0105,
+        "ci95": [
+         0.0055,
+         0.0152
+        ]
+       },
+       "code_table": {
+        "point": 0.007,
+        "ci95": [
+         -0.0005,
+         0.0143
+        ]
+       },
+       "code_table_bin": {
+        "point": 0.008,
+        "ci95": [
+         0.0003,
+         0.0155
+        ]
+       },
+       "count_conf_gate": {
+        "point": 0.005,
+        "ci95": [
+         0.0003,
+         0.0097
+        ]
+       }
+      },
+      "macro_f1": {
+       "enc": {
+        "item": {
+         "point": 0.0084,
+         "ci95": [
+          -0.0028,
+          0.0147
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0104,
+          0.0211
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "selector": {
+        "item": {
+         "point": -0.0069,
+         "ci95": [
+          -0.0206,
+          0.0098
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0326,
+          0.0203
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "energyroute": {
+        "item": {
+         "point": -0.0144,
+         "ci95": [
+          -0.0236,
+          0.0062
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0374,
+          0.0177
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "energyroute_tuned": {
+        "item": {
+         "point": 0.0083,
+         "ci95": [
+          -0.0025,
+          0.0151
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.009,
+          0.0221
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "code_table": {
+        "item": {
+         "point": 0.0013,
+         "ci95": [
+          -0.0103,
+          0.0142
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0205,
+          0.022
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "code_table_bin": {
+        "item": {
+         "point": -0.0028,
+         "ci95": [
+          -0.0145,
+          0.0131
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0259,
+          0.0225
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       },
+       "count_conf_gate": {
+        "item": {
+         "point": -0.0006,
+         "ci95": [
+          -0.0098,
+          0.0089
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0175,
+          0.0144
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 262,
+        "holds": false
+       }
+      },
+      "energyroute_minus_enc_accuracy": {
+       "point": 0.0118,
+       "ci95": [
+        0.0047,
+        0.0195
+       ]
+      }
+     },
+     "natural_llm_share": {
+      "energy_gate": 0.0377,
+      "energyroute": 0.1999,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.0936
+     }
+    },
+    "2025": {
+     "n": 4017,
+     "codes": 423,
+     "macro_f1": {
+      "selector": {
+       "all": 0.5478,
+       "1-5": 0.235,
+       "6-20": 0.3374,
+       "21-89": 0.5826,
+       "90+": 0.6185
+      },
+      "best_single": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "cascade_msp": {
+       "all": 0.5197,
+       "1-5": 0.1649,
+       "6-20": 0.297,
+       "21-89": 0.5394,
+       "90+": 0.6014
+      },
+      "enc": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "zs": {
+       "all": 0.2406,
+       "1-5": 0.1656,
+       "6-20": 0.2256,
+       "21-89": 0.2661,
+       "90+": 0.2499
+      },
+      "rag": {
+       "all": 0.4554,
+       "1-5": 0.1764,
+       "6-20": 0.241,
+       "21-89": 0.4371,
+       "90+": 0.5308
+      },
+      "oracle": {
+       "all": 0.6132,
+       "1-5": 0.2874,
+       "6-20": 0.4238,
+       "21-89": 0.6407,
+       "90+": 0.6847
+      },
+      "selector_natural": {
+       "all": 0.4997,
+       "1-5": 0.1304,
+       "6-20": 0.227,
+       "21-89": 0.5265,
+       "90+": 0.5889
+      },
+      "energy_gate": {
+       "all": 0.5162,
+       "1-5": 0.1595,
+       "6-20": 0.2725,
+       "21-89": 0.5526,
+       "90+": 0.5979
+      },
+      "energyroute": {
+       "all": 0.5101,
+       "1-5": 0.1501,
+       "6-20": 0.2765,
+       "21-89": 0.5259,
+       "90+": 0.5948
+      },
+      "energyroute_tuned": {
+       "all": 0.5127,
+       "1-5": 0.1379,
+       "6-20": 0.2652,
+       "21-89": 0.5422,
+       "90+": 0.599
+      },
+      "code_table": {
+       "all": 0.5184,
+       "1-5": 0.1566,
+       "6-20": 0.2929,
+       "21-89": 0.5482,
+       "90+": 0.5997
+      },
+      "code_table_bin": {
+       "all": 0.5264,
+       "1-5": 0.1509,
+       "6-20": 0.3333,
+       "21-89": 0.5734,
+       "90+": 0.6027
+      },
+      "majority_table": {
+       "all": 0.5009,
+       "1-5": 0.1904,
+       "6-20": 0.3134,
+       "21-89": 0.5298,
+       "90+": 0.5694
+      },
+      "pattern_table": {
+       "all": 0.5134,
+       "1-5": 0.1412,
+       "6-20": 0.2643,
+       "21-89": 0.5469,
+       "90+": 0.5989
+      },
+      "count_conf_gate": {
+       "all": 0.5197,
+       "1-5": 0.1649,
+       "6-20": 0.297,
+       "21-89": 0.5394,
+       "90+": 0.6014
+      },
+      "refit": {
+       "all": 0.5478,
+       "1-5": 0.235,
+       "6-20": 0.3374,
+       "21-89": 0.5826,
+       "90+": 0.6185
+      },
+      "no_counts": {
+       "all": 0.5175,
+       "1-5": 0.1469,
+       "6-20": 0.2781,
+       "21-89": 0.55,
+       "90+": 0.6016
+      },
+      "counts_only": {
+       "all": 0.5435,
+       "1-5": 0.2352,
+       "6-20": 0.3351,
+       "21-89": 0.5785,
+       "90+": 0.6132
+      }
+     },
+     "selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0377,
+        "ci95": [
+         0.0294,
+         0.0447
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0224,
+         0.0524
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": 0.0351,
+        "ci95": [
+         0.0277,
+         0.0419
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0207,
+         0.0499
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "energy_gate": {
+       "item": {
+        "point": 0.0316,
+        "ci95": [
+         0.0242,
+         0.0383
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0177,
+         0.0452
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "code_table": {
+       "item": {
+        "point": 0.0294,
+        "ci95": [
+         0.0224,
+         0.0355
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0163,
+         0.0424
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "code_table_bin": {
+       "item": {
+        "point": 0.0214,
+        "ci95": [
+         0.0153,
+         0.028
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0099,
+         0.0327
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0469,
+        "ci95": [
+         0.0384,
+         0.0562
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.032,
+         0.0641
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": 0.0344,
+        "ci95": [
+         0.0273,
+         0.0411
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0205,
+         0.049
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": 0.0281,
+        "ci95": [
+         0.021,
+         0.0341
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0156,
+         0.0411
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "no_counts": {
+       "item": {
+        "point": 0.0303,
+        "ci95": [
+         0.0227,
+         0.0366
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0172,
+         0.0441
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0043,
+        "ci95": [
+         -0.0006,
+         0.0099
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0038,
+         0.0129
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": false
+      },
+      "cascade_msp": {
+       "item": {
+        "point": 0.0281,
+        "ci95": [
+         0.021,
+         0.0341
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0156,
+         0.0411
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "best_single": {
+       "item": {
+        "point": 0.0344,
+        "ci95": [
+         0.0273,
+         0.0411
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0205,
+         0.049
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      },
+      "selector_natural": {
+       "item": {
+        "point": 0.0481,
+        "ci95": [
+         0.0396,
+         0.0561
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0322,
+         0.0658
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4017,
+       "n_codes": 423,
+       "holds": true
+      }
+     },
+     "refit_equals_frozen": 1.0,
+     "probs_check": 0.9963,
+     "llm_share": {
+      "energy_gate": 0.0702,
+      "energyroute": 0.2001,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.1352
+     },
+     "natural": {
+      "selector": {
+       "right_rare": 148.0,
+       "false_rare": 3649.0,
+       "precision": 0.039,
+       "modes_visible": 22,
+       "accuracy_uniform": 0.7345,
+       "macro_f1_uniform": 0.6019
+      },
+      "best_single": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "cascade_msp": {
+       "right_rare": 76.0,
+       "false_rare": 1351.7,
+       "precision": 0.0532,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.747,
+       "macro_f1_uniform": 0.6051
+      },
+      "enc": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "zs": {
+       "right_rare": 165.0,
+       "false_rare": 10383.9,
+       "precision": 0.0156,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.3412,
+       "macro_f1_uniform": 0.2363
+      },
+      "rag": {
+       "right_rare": 117.0,
+       "false_rare": 2517.8,
+       "precision": 0.0444,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.7117,
+       "macro_f1_uniform": 0.5375
+      },
+      "oracle": {
+       "right_rare": 200.0,
+       "false_rare": 1.0,
+       "precision": 0.995,
+       "modes_visible": 25,
+       "accuracy_uniform": 0.82,
+       "macro_f1_uniform": 0.7191
+      },
+      "selector_natural": {
+       "right_rare": 54.0,
+       "false_rare": 198.3,
+       "precision": 0.2141,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7528,
+       "macro_f1_uniform": 0.6173
+      },
+      "energy_gate": {
+       "right_rare": 70.0,
+       "false_rare": 964.9,
+       "precision": 0.0676,
+       "modes_visible": 18,
+       "accuracy_uniform": 0.749,
+       "macro_f1_uniform": 0.6132
+      },
+      "energyroute": {
+       "right_rare": 80.0,
+       "false_rare": 1741.1,
+       "precision": 0.0439,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7432,
+       "macro_f1_uniform": 0.5962
+      },
+      "energyroute_tuned": {
+       "right_rare": 58.0,
+       "false_rare": 1.0,
+       "precision": 0.9831,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.749,
+       "macro_f1_uniform": 0.6155
+      },
+      "code_table": {
+       "right_rare": 68.0,
+       "false_rare": 390.4,
+       "precision": 0.1483,
+       "modes_visible": 17,
+       "accuracy_uniform": 0.7365,
+       "macro_f1_uniform": 0.6086
+      },
+      "code_table_bin": {
+       "right_rare": 63.0,
+       "false_rare": 190.5,
+       "precision": 0.2485,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.735,
+       "macro_f1_uniform": 0.6071
+      },
+      "majority_table": {
+       "right_rare": 126.0,
+       "false_rare": 1929.0,
+       "precision": 0.0613,
+       "modes_visible": 20,
+       "accuracy_uniform": 0.7175,
+       "macro_f1_uniform": 0.5674
+      },
+      "pattern_table": {
+       "right_rare": 60.0,
+       "false_rare": 1.0,
+       "precision": 0.9836,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7482,
+       "macro_f1_uniform": 0.6175
+      },
+      "count_conf_gate": {
+       "right_rare": 76.0,
+       "false_rare": 1351.7,
+       "precision": 0.0532,
+       "modes_visible": 19,
+       "accuracy_uniform": 0.747,
+       "macro_f1_uniform": 0.6051
+      },
+      "refit": {
+       "right_rare": 148.0,
+       "false_rare": 3649.0,
+       "precision": 0.039,
+       "modes_visible": 22,
+       "accuracy_uniform": 0.7345,
+       "macro_f1_uniform": 0.6019
+      },
+      "no_counts": {
+       "right_rare": 64.0,
+       "false_rare": 385.9,
+       "precision": 0.1423,
+       "modes_visible": 16,
+       "accuracy_uniform": 0.7488,
+       "macro_f1_uniform": 0.6182
+      },
+      "counts_only": {
+       "right_rare": 174.0,
+       "false_rare": 6137.6,
+       "precision": 0.0276,
+       "modes_visible": 23,
+       "accuracy_uniform": 0.7023,
+       "macro_f1_uniform": 0.5784
+      }
+     },
+     "natural_selector_minus": {
+      "energyroute": {
+       "item": {
+        "point": 0.0057,
+        "ci95": [
+         -0.0089,
+         0.0219
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.017,
+         0.033
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "energyroute_tuned": {
+       "item": {
+        "point": -0.0136,
+        "ci95": [
+         -0.0227,
+         -0.0003
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0303,
+         0.0087
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "energy_gate": {
+       "item": {
+        "point": -0.0113,
+        "ci95": [
+         -0.0226,
+         0.0012
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0298,
+         0.0098
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "code_table": {
+       "item": {
+        "point": -0.0067,
+        "ci95": [
+         -0.0124,
+         0.0057
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0194,
+         0.0133
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "code_table_bin": {
+       "item": {
+        "point": -0.0052,
+        "ci95": [
+         -0.0107,
+         0.0063
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0165,
+         0.0121
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "majority_table": {
+       "item": {
+        "point": 0.0344,
+        "ci95": [
+         0.0167,
+         0.0452
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0059,
+         0.0586
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": true
+      },
+      "pattern_table": {
+       "item": {
+        "point": -0.0156,
+        "ci95": [
+         -0.0242,
+         -0.0016
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0309,
+         0.0059
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "count_conf_gate": {
+       "item": {
+        "point": -0.0032,
+        "ci95": [
+         -0.0166,
+         0.0087
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0246,
+         0.019
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "no_counts": {
+       "item": {
+        "point": -0.0163,
+        "ci95": [
+         -0.0246,
+         -0.0031
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0323,
+         0.0047
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "counts_only": {
+       "item": {
+        "point": 0.0235,
+        "ci95": [
+         0.0127,
+         0.034
+        ]
+       },
+       "code": {
+        "ci95": [
+         0.0057,
+         0.0429
+        ],
+        "excludes_zero": true
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": true
+      },
+      "cascade_msp": {
+       "item": {
+        "point": -0.0032,
+        "ci95": [
+         -0.0166,
+         0.0087
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0246,
+         0.019
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "best_single": {
+       "item": {
+        "point": -0.0156,
+        "ci95": [
+         -0.0242,
+         -0.0016
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0309,
+         0.0059
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "selector_natural": {
+       "item": {
+        "point": -0.0155,
+        "ci95": [
+         -0.026,
+         -0.0006
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0352,
+         0.0118
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      },
+      "enc": {
+       "item": {
+        "point": -0.0156,
+        "ci95": [
+         -0.0242,
+         -0.0016
+        ]
+       },
+       "code": {
+        "ci95": [
+         -0.0309,
+         0.0059
+        ],
+        "excludes_zero": false
+       },
+       "n_items": 4000,
+       "n_codes": 275,
+       "holds": false
+      }
+     },
+     "natural_uniform": {
+      "n": 4000,
+      "codes": 275
+     },
+     "natural_setting_minus": {
+      "accuracy": {
+       "enc": {
+        "point": 0.0045,
+        "ci95": [
+         0.0008,
+         0.0085
+        ]
+       },
+       "selector": {
+        "point": 0.0182,
+        "ci95": [
+         0.0123,
+         0.0243
+        ]
+       },
+       "energyroute": {
+        "point": 0.0095,
+        "ci95": [
+         0.0027,
+         0.0165
+        ]
+       },
+       "energyroute_tuned": {
+        "point": 0.0037,
+        "ci95": [
+         -0.0003,
+         0.0075
+        ]
+       },
+       "code_table": {
+        "point": 0.0163,
+        "ci95": [
+         0.01,
+         0.0227
+        ]
+       },
+       "code_table_bin": {
+        "point": 0.0177,
+        "ci95": [
+         0.0115,
+         0.0243
+        ]
+       },
+       "count_conf_gate": {
+        "point": 0.0057,
+        "ci95": [
+         0.0018,
+         0.01
+        ]
+       }
+      },
+      "macro_f1": {
+       "enc": {
+        "item": {
+         "point": -0.0002,
+         "ci95": [
+          -0.0078,
+          0.009
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0174,
+          0.0151
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "selector": {
+        "item": {
+         "point": 0.0155,
+         "ci95": [
+          0.0005,
+          0.026
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0119,
+          0.0352
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "energyroute": {
+        "item": {
+         "point": 0.0212,
+         "ci95": [
+          0.0055,
+          0.0327
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0048,
+          0.046
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "energyroute_tuned": {
+        "item": {
+         "point": 0.0018,
+         "ci95": [
+          -0.0063,
+          0.0104
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0141,
+          0.016
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "code_table": {
+        "item": {
+         "point": 0.0088,
+         "ci95": [
+          -0.001,
+          0.0207
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.011,
+          0.0284
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "code_table_bin": {
+        "item": {
+         "point": 0.0103,
+         "ci95": [
+          -0.0007,
+          0.0218
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.0107,
+          0.0315
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       },
+       "count_conf_gate": {
+        "item": {
+         "point": 0.0122,
+         "ci95": [
+          0.0008,
+          0.0183
+         ]
+        },
+        "code": {
+         "ci95": [
+          -0.006,
+          0.0235
+         ],
+         "excludes_zero": false
+        },
+        "n_items": 4000,
+        "n_codes": 275,
+        "holds": false
+       }
+      },
+      "energyroute_minus_enc_accuracy": {
+       "point": -0.005,
+       "ci95": [
+        -0.0127,
+        0.0025
+       ]
+      }
+     },
+     "natural_llm_share": {
+      "energy_gate": 0.02,
+      "energyroute": 0.1998,
+      "energyroute_tuned": 0.0,
+      "count_conf_gate": 0.0582
+     }
+    }
+   }
+  }
+ }
+}

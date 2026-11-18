@@ -1,0 +1,28 @@
+{
+ "encoder_ce": {
+  "overall_acc": 0.7097,
+  "overall_acc_sd": 0.0081,
+  "overall_macro_f1": 0.3406,
+  "overall_macro_f1_sd": 0.0071,
+  "head_macro_f1": 0.8568,
+  "head_macro_f1_sd": 0.0125,
+  "body_macro_f1": 0.6357,
+  "body_macro_f1_sd": 0.0184,
+  "tail_macro_f1": 0.0984,
+  "tail_macro_f1_sd": 0.0064,
+  "n_seeds": 3
+ },
+ "encoder_cb": {
+  "overall_acc": 0.493,
+  "overall_acc_sd": 0.0468,
+  "overall_macro_f1": 0.2635,
+  "overall_macro_f1_sd": 0.0225,
+  "head_macro_f1": 0.5814,
+  "head_macro_f1_sd": 0.0641,
+  "body_macro_f1": 0.4553,
+  "body_macro_f1_sd": 0.0525,
+  "tail_macro_f1": 0.1081,
+  "tail_macro_f1_sd": 0.0039,
+  "n_seeds": 3
+ }
+}

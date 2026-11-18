@@ -1,0 +1,29 @@
+{
+ "cb_minus_ce_tail": {
+  "description": "class-balancing gain on the tail",
+  "point": 0.0097,
+  "ci95": [
+   -0.011,
+   0.0298
+  ],
+  "excludes_zero": false
+ },
+ "cb_minus_ce_head": {
+  "description": "class-balancing cost on the head",
+  "point": -0.2754,
+  "ci95": [
+   -0.3131,
+   -0.2419
+  ],
+  "excludes_zero": true
+ },
+ "ce_head_minus_tail": {
+  "description": "head-tail gap within the fine-tuned encoder",
+  "point": 0.7583,
+  "ci95": [
+   0.7324,
+   0.8039
+  ],
+  "excludes_zero": true
+ }
+}

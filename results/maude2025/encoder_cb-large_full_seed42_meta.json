@@ -1,0 +1,37 @@
+{
+ "variant": "cb",
+ "model": "roberta-large",
+ "size": "full",
+ "seed": 42,
+ "lr": 3e-05,
+ "val_macro_f1": 0.5946,
+ "n_train": 656460,
+ "classes_present": 424,
+ "lr_runs": {
+  "3e-05": {
+   "val_macro_f1": 0.5946,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.5373,
+     "minutes": 62.5
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.5946,
+     "minutes": 62.2
+    }
+   ]
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  2,
+  1
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": false,
+ "best_at_last_epoch": true,
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb-large_full_seed42"
+}

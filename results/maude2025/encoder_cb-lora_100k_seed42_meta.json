@@ -1,0 +1,66 @@
+{
+ "variant": "cb",
+ "model": "Qwen/Qwen3-4B-Base",
+ "model_revision": "906bfd4b4dc7f14ee4320094d8b41684abff8539",
+ "lora": {
+  "r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": "all-linear"
+ },
+ "size": "100k",
+ "seed": 42,
+ "lr": 0.0001,
+ "head_lr": 1e-05,
+ "lr_inherited_from": null,
+ "val_macro_f1": 0.458,
+ "collapse_threshold": 0.216,
+ "n_train": 100000,
+ "classes_present": 382,
+ "lr_runs": {
+  "0.0001": {
+   "val_macro_f1": 0.458,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.3714,
+     "minutes": 87.0
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.458,
+     "minutes": 87.2
+    }
+   ],
+   "partial": [],
+   "collapsed": false
+  },
+  "0.0003": {
+   "val_macro_f1": 0.0477,
+   "epochs": [
+    {
+     "epoch": 1,
+     "val_macro_f1": 0.0123,
+     "minutes": 87.7
+    },
+    {
+     "epoch": 2,
+     "val_macro_f1": 0.0477,
+     "minutes": 88.0
+    }
+   ],
+   "partial": [],
+   "collapsed": true
+  }
+ },
+ "max_len": 192,
+ "batch": 64,
+ "schedule": [
+  2,
+  1
+ ],
+ "collapsed": false,
+ "lr_at_top_of_grid": false,
+ "best_at_last_epoch": true,
+ "weights": "C:\\Users\\jkchoi\\models\\maude_encoders\\cb-lora_100k_seed42"
+}

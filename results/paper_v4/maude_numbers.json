@@ -1,0 +1,1496 @@
+{
+ "note": "notes/paper-plan-v4-2026-11-16.md",
+ "corpus": "maude",
+ "git_head": "d955fea",
+ "config": {
+  "gate_top_k": 5,
+  "gate_confirmer": "zero-shot or retrieval LLM",
+  "unconfirmed_rare": "best non-rare answer",
+  "selection": "candidate_ranker wide_gbm_table, fitted on the other year's uniform draw"
+ },
+ "data": {
+  "training_reports": 656460,
+  "known_codes": 424,
+  "rare_codes": 46,
+  "balanced_test": {
+   "2025": 4017,
+   "2026": 3956
+  },
+  "natural_sample": {
+   "2025": 5814,
+   "2026": 5785
+  }
+ },
+ "llms": {
+  "opus55": {
+   "2026": {
+    "fitted_on": "2025",
+    "cascade": {
+     "arm": "rag",
+     "theta": 0.6
+    },
+    "n_uniform": 4000,
+    "methods": {
+     "enc": {
+      "accuracy": 0.6365,
+      "macro_f1_natural": 0.4898,
+      "rare_right": 32.0,
+      "rare_false": 166.0,
+      "rare_modes": 9,
+      "rare_false_ci95": [
+       6.2,
+       928.4
+      ],
+      "macro_f1_balanced": 0.4459,
+      "acc_minus_enc": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.029,
+       "ci95": [
+        0.022,
+        0.0362
+       ]
+      }
+     },
+     "zs": {
+      "accuracy": 0.4105,
+      "macro_f1_natural": 0.3086,
+      "rare_right": 154.0,
+      "rare_false": 6664.7,
+      "rare_modes": 23,
+      "rare_false_ci95": [
+       4776.8,
+       9063.0
+      ],
+      "macro_f1_balanced": 0.3027,
+      "acc_minus_enc": {
+       "point": -0.226,
+       "ci95": [
+        -0.2455,
+        -0.2072
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.255,
+       "ci95": [
+        0.2367,
+        0.273
+       ]
+      }
+     },
+     "rag": {
+      "accuracy": 0.6442,
+      "macro_f1_natural": 0.5176,
+      "rare_right": 95.0,
+      "rare_false": 3025.6,
+      "rare_modes": 22,
+      "rare_false_ci95": [
+       1814.9,
+       4758.8
+      ],
+      "macro_f1_balanced": 0.4416,
+      "acc_minus_enc": {
+       "point": 0.0077,
+       "ci95": [
+        -0.004,
+        0.0195
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0213,
+       "ci95": [
+        0.0123,
+        0.0307
+       ]
+      }
+     },
+     "cascade": {
+      "accuracy": 0.658,
+      "macro_f1_natural": 0.5389,
+      "rare_right": 61.0,
+      "rare_false": 1028.3,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       397.3,
+       2205.8
+      ],
+      "macro_f1_balanced": 0.4657,
+      "acc_minus_enc": {
+       "point": 0.0215,
+       "ci95": [
+        0.014,
+        0.0293
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0075,
+       "ci95": [
+        0.001,
+        0.0138
+       ]
+      }
+     },
+     "energyroute": {
+      "accuracy": 0.655,
+      "macro_f1_natural": 0.5299,
+      "rare_right": 74.0,
+      "rare_false": 1042.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       411.3,
+       2219.8
+      ],
+      "macro_f1_balanced": 0.462,
+      "acc_minus_enc": {
+       "point": 0.0185,
+       "ci95": [
+        0.0115,
+        0.0262
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0105,
+       "ci95": [
+        0.0032,
+        0.0177
+       ]
+      }
+     },
+     "selector_balanced": {
+      "accuracy": 0.636,
+      "macro_f1_natural": 0.5311,
+      "rare_right": 125.0,
+      "rare_false": 3856.1,
+      "rare_modes": 25,
+      "rare_false_ci95": [
+       2465.2,
+       5765.4
+      ],
+      "macro_f1_balanced": 0.5037,
+      "acc_minus_enc": {
+       "point": -0.0005,
+       "ci95": [
+        -0.0075,
+        0.0063
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0295,
+       "ci95": [
+        0.0215,
+        0.038
+       ]
+      }
+     },
+     "selector_prior": {
+      "accuracy": 0.6508,
+      "macro_f1_natural": 0.5076,
+      "rare_right": 58.0,
+      "rare_false": 706.5,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       225.9,
+       1745.7
+      ],
+      "macro_f1_balanced": 0.4548,
+      "acc_minus_enc": {
+       "point": 0.0143,
+       "ci95": [
+        0.009,
+        0.0198
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0147,
+       "ci95": [
+        0.0085,
+        0.021
+       ]
+      }
+     },
+     "ours_rule": {
+      "accuracy": 0.6362,
+      "macro_f1_natural": 0.4884,
+      "rare_right": 81.0,
+      "rare_false": 331.0,
+      "rare_modes": 14,
+      "rare_false_ci95": [
+       42.7,
+       1200.5
+      ],
+      "macro_f1_balanced": 0.4529,
+      "acc_minus_enc": {
+       "point": -0.0003,
+       "ci95": [
+        -0.0013,
+        0.0005
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0293,
+       "ci95": [
+        0.0225,
+        0.0365
+       ]
+      }
+     },
+     "ours_full": {
+      "accuracy": 0.6655,
+      "macro_f1_natural": 0.5083,
+      "rare_right": 81.0,
+      "rare_false": 331.0,
+      "rare_modes": 14,
+      "rare_false_ci95": [
+       42.7,
+       1200.5
+      ],
+      "macro_f1_balanced": 0.4493,
+      "acc_minus_enc": {
+       "point": 0.029,
+       "ci95": [
+        0.022,
+        0.0362
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   },
+   "2025": {
+    "fitted_on": "2026",
+    "cascade": {
+     "arm": "rag",
+     "theta": 0.8
+    },
+    "n_uniform": 4000,
+    "methods": {
+     "enc": {
+      "accuracy": 0.7482,
+      "macro_f1_natural": 0.6175,
+      "rare_right": 60.0,
+      "rare_false": 1.0,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       1.0,
+       707.0
+      ],
+      "macro_f1_balanced": 0.5134,
+      "acc_minus_enc": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0147,
+       "ci95": [
+        0.0057,
+        0.0248
+       ]
+      }
+     },
+     "zs": {
+      "accuracy": 0.4178,
+      "macro_f1_natural": 0.286,
+      "rare_right": 175.0,
+      "rare_false": 6697.9,
+      "rare_modes": 24,
+      "rare_false_ci95": [
+       4672.2,
+       9308.5
+      ],
+      "macro_f1_balanced": 0.3,
+      "acc_minus_enc": {
+       "point": -0.3305,
+       "ci95": [
+        -0.3475,
+        -0.314
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.3453,
+       "ci95": [
+        0.3292,
+        0.3615
+       ]
+      }
+     },
+     "rag": {
+      "accuracy": 0.7335,
+      "macro_f1_natural": 0.577,
+      "rare_right": 103.0,
+      "rare_false": 2103.4,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       1056.1,
+       3758.5
+      ],
+      "macro_f1_balanced": 0.483,
+      "acc_minus_enc": {
+       "point": -0.0147,
+       "ci95": [
+        -0.0255,
+        -0.0037
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0295,
+       "ci95": [
+        0.0215,
+        0.0382
+       ]
+      }
+     },
+     "cascade": {
+      "accuracy": 0.7542,
+      "macro_f1_natural": 0.6258,
+      "rare_right": 87.0,
+      "rare_false": 961.3,
+      "rare_modes": 18,
+      "rare_false_ci95": [
+       318.1,
+       2234.8
+      ],
+      "macro_f1_balanced": 0.517,
+      "acc_minus_enc": {
+       "point": 0.006,
+       "ci95": [
+        -0.003,
+        0.0147
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0088,
+       "ci95": [
+        0.0018,
+        0.016
+       ]
+      }
+     },
+     "energyroute": {
+      "accuracy": 0.7558,
+      "macro_f1_natural": 0.6228,
+      "rare_right": 71.0,
+      "rare_false": 959.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       316.1,
+       2232.8
+      ],
+      "macro_f1_balanced": 0.5183,
+      "acc_minus_enc": {
+       "point": 0.0075,
+       "ci95": [
+        0.0008,
+        0.0145
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0073,
+       "ci95": [
+        -0.0003,
+        0.0163
+       ]
+      }
+     },
+     "selector_balanced": {
+      "accuracy": 0.738,
+      "macro_f1_natural": 0.6119,
+      "rare_right": 151.0,
+      "rare_false": 2872.1,
+      "rare_modes": 25,
+      "rare_false_ci95": [
+       1614.1,
+       4730.5
+      ],
+      "macro_f1_balanced": 0.5581,
+      "acc_minus_enc": {
+       "point": -0.0103,
+       "ci95": [
+        -0.0168,
+        -0.004
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.025,
+       "ci95": [
+        0.0165,
+        0.035
+       ]
+      }
+     },
+     "selector_prior": {
+      "accuracy": 0.7568,
+      "macro_f1_natural": 0.6152,
+      "rare_right": 70.0,
+      "rare_false": 768.9,
+      "rare_modes": 21,
+      "rare_false_ci95": [
+       215.6,
+       1960.4
+      ],
+      "macro_f1_balanced": 0.5109,
+      "acc_minus_enc": {
+       "point": 0.0085,
+       "ci95": [
+        0.0035,
+        0.0132
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0063,
+       "ci95": [
+        -0.0015,
+        0.0155
+       ]
+      }
+     },
+     "ours_rule": {
+      "accuracy": 0.748,
+      "macro_f1_natural": 0.6166,
+      "rare_right": 97.0,
+      "rare_false": 193.4,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       6.8,
+       1068.3
+      ],
+      "macro_f1_balanced": 0.5149,
+      "acc_minus_enc": {
+       "point": -0.0003,
+       "ci95": [
+        -0.0008,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.015,
+       "ci95": [
+        0.0063,
+        0.0248
+       ]
+      }
+     },
+     "ours_full": {
+      "accuracy": 0.763,
+      "macro_f1_natural": 0.632,
+      "rare_right": 97.0,
+      "rare_false": 193.4,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       6.8,
+       1068.3
+      ],
+      "macro_f1_balanced": 0.4927,
+      "acc_minus_enc": {
+       "point": 0.0147,
+       "ci95": [
+        0.0057,
+        0.0248
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   }
+  },
+  "qwen38_27b": {
+   "2026": {
+    "fitted_on": "2025",
+    "cascade": {
+     "arm": "rag",
+     "theta": 0.15
+    },
+    "n_uniform": 4000,
+    "methods": {
+     "enc": {
+      "accuracy": 0.6365,
+      "macro_f1_natural": 0.4898,
+      "rare_right": 32.0,
+      "rare_false": 166.0,
+      "rare_modes": 9,
+      "rare_false_ci95": [
+       6.2,
+       928.4
+      ],
+      "macro_f1_balanced": 0.4459,
+      "acc_minus_enc": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.022,
+       "ci95": [
+        0.0152,
+        0.029
+       ]
+      }
+     },
+     "zs": {
+      "accuracy": 0.3145,
+      "macro_f1_natural": 0.2349,
+      "rare_right": 131.0,
+      "rare_false": 14693.4,
+      "rare_modes": 19,
+      "rare_false_ci95": [
+       11803.4,
+       18085.3
+      ],
+      "macro_f1_balanced": 0.2384,
+      "acc_minus_enc": {
+       "point": -0.322,
+       "ci95": [
+        -0.341,
+        -0.3043
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.344,
+       "ci95": [
+        0.3255,
+        0.3613
+       ]
+      }
+     },
+     "rag": {
+      "accuracy": 0.6275,
+      "macro_f1_natural": 0.4674,
+      "rare_right": 79.0,
+      "rare_false": 2733.5,
+      "rare_modes": 20,
+      "rare_false_ci95": [
+       1593.8,
+       4397.2
+      ],
+      "macro_f1_balanced": 0.4042,
+      "acc_minus_enc": {
+       "point": -0.009,
+       "ci95": [
+        -0.0215,
+        0.003
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.031,
+       "ci95": [
+        0.0205,
+        0.041
+       ]
+      }
+     },
+     "cascade": {
+      "accuracy": 0.6368,
+      "macro_f1_natural": 0.4907,
+      "rare_right": 33.0,
+      "rare_false": 178.4,
+      "rare_modes": 10,
+      "rare_false_ci95": [
+       15.2,
+       943.8
+      ],
+      "macro_f1_balanced": 0.4472,
+      "acc_minus_enc": {
+       "point": 0.0003,
+       "ci95": [
+        -0.0013,
+        0.0018
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0217,
+       "ci95": [
+        0.0147,
+        0.029
+       ]
+      }
+     },
+     "energyroute": {
+      "accuracy": 0.647,
+      "macro_f1_natural": 0.5117,
+      "rare_right": 64.0,
+      "rare_false": 1391.5,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       633.0,
+       2688.8
+      ],
+      "macro_f1_balanced": 0.447,
+      "acc_minus_enc": {
+       "point": 0.0105,
+       "ci95": [
+        0.0035,
+        0.0177
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0115,
+       "ci95": [
+        0.004,
+        0.0187
+       ]
+      }
+     },
+     "selector_balanced": {
+      "accuracy": 0.6315,
+      "macro_f1_natural": 0.5022,
+      "rare_right": 87.0,
+      "rare_false": 4899.3,
+      "rare_modes": 20,
+      "rare_false_ci95": [
+       3304.2,
+       7008.6
+      ],
+      "macro_f1_balanced": 0.4783,
+      "acc_minus_enc": {
+       "point": -0.005,
+       "ci95": [
+        -0.012,
+        0.0015
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.027,
+       "ci95": [
+        0.0182,
+        0.0352
+       ]
+      }
+     },
+     "selector_prior": {
+      "accuracy": 0.643,
+      "macro_f1_natural": 0.5092,
+      "rare_right": 27.0,
+      "rare_false": 3.0,
+      "rare_modes": 7,
+      "rare_false_ci95": [
+       3.0,
+       620.6
+      ],
+      "macro_f1_balanced": 0.433,
+      "acc_minus_enc": {
+       "point": 0.0065,
+       "ci95": [
+        0.0013,
+        0.0115
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0155,
+       "ci95": [
+        0.0088,
+        0.0225
+       ]
+      }
+     },
+     "ours_rule": {
+      "accuracy": 0.6362,
+      "macro_f1_natural": 0.4884,
+      "rare_right": 77.0,
+      "rare_false": 329.0,
+      "rare_modes": 14,
+      "rare_false_ci95": [
+       40.7,
+       1198.5
+      ],
+      "macro_f1_balanced": 0.4519,
+      "acc_minus_enc": {
+       "point": -0.0003,
+       "ci95": [
+        -0.0013,
+        0.0005
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0222,
+       "ci95": [
+        0.0152,
+        0.0293
+       ]
+      }
+     },
+     "ours_full": {
+      "accuracy": 0.6585,
+      "macro_f1_natural": 0.494,
+      "rare_right": 77.0,
+      "rare_false": 329.0,
+      "rare_modes": 14,
+      "rare_false_ci95": [
+       40.7,
+       1198.5
+      ],
+      "macro_f1_balanced": 0.4413,
+      "acc_minus_enc": {
+       "point": 0.022,
+       "ci95": [
+        0.0152,
+        0.029
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   },
+   "2025": {
+    "fitted_on": "2026",
+    "cascade": {
+     "arm": "rag",
+     "theta": 0.7
+    },
+    "n_uniform": 4000,
+    "methods": {
+     "enc": {
+      "accuracy": 0.7482,
+      "macro_f1_natural": 0.6175,
+      "rare_right": 60.0,
+      "rare_false": 1.0,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       1.0,
+       707.0
+      ],
+      "macro_f1_balanced": 0.5134,
+      "acc_minus_enc": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0092,
+       "ci95": [
+        0.0005,
+        0.018
+       ]
+      }
+     },
+     "zs": {
+      "accuracy": 0.296,
+      "macro_f1_natural": 0.2133,
+      "rare_right": 201.0,
+      "rare_false": 14491.4,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       11425.1,
+       18132.9
+      ],
+      "macro_f1_balanced": 0.2319,
+      "acc_minus_enc": {
+       "point": -0.4522,
+       "ci95": [
+        -0.47,
+        -0.4368
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.4615,
+       "ci95": [
+        0.446,
+        0.4778
+       ]
+      }
+     },
+     "rag": {
+      "accuracy": 0.707,
+      "macro_f1_natural": 0.52,
+      "rare_right": 109.0,
+      "rare_false": 1749.7,
+      "rare_modes": 18,
+      "rare_false_ci95": [
+       816.2,
+       3295.8
+      ],
+      "macro_f1_balanced": 0.4476,
+      "acc_minus_enc": {
+       "point": -0.0413,
+       "ci95": [
+        -0.0525,
+        -0.0302
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0505,
+       "ci95": [
+        0.0418,
+        0.0595
+       ]
+      }
+     },
+     "cascade": {
+      "accuracy": 0.742,
+      "macro_f1_natural": 0.5941,
+      "rare_right": 80.0,
+      "rare_false": 977.9,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       331.7,
+       2254.2
+      ],
+      "macro_f1_balanced": 0.5045,
+      "acc_minus_enc": {
+       "point": -0.0063,
+       "ci95": [
+        -0.0145,
+        0.0015
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0155,
+       "ci95": [
+        0.0085,
+        0.023
+       ]
+      }
+     },
+     "energyroute": {
+      "accuracy": 0.7422,
+      "macro_f1_natural": 0.5934,
+      "rare_right": 72.0,
+      "rare_false": 1169.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       442.4,
+       2520.4
+      ],
+      "macro_f1_balanced": 0.5066,
+      "acc_minus_enc": {
+       "point": -0.006,
+       "ci95": [
+        -0.0138,
+        0.0015
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0152,
+       "ci95": [
+        0.0073,
+        0.0245
+       ]
+      }
+     },
+     "selector_balanced": {
+      "accuracy": 0.729,
+      "macro_f1_natural": 0.5944,
+      "rare_right": 150.0,
+      "rare_false": 3140.9,
+      "rare_modes": 23,
+      "rare_false_ci95": [
+       1819.9,
+       5060.5
+      ],
+      "macro_f1_balanced": 0.5386,
+      "acc_minus_enc": {
+       "point": -0.0192,
+       "ci95": [
+        -0.026,
+        -0.0127
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0285,
+       "ci95": [
+        0.0198,
+        0.0375
+       ]
+      }
+     },
+     "selector_prior": {
+      "accuracy": 0.749,
+      "macro_f1_natural": 0.6082,
+      "rare_right": 37.0,
+      "rare_false": 4.0,
+      "rare_modes": 12,
+      "rare_false_ci95": [
+       4.0,
+       710.0
+      ],
+      "macro_f1_balanced": 0.4935,
+      "acc_minus_enc": {
+       "point": 0.0008,
+       "ci95": [
+        -0.004,
+        0.0055
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0085,
+       "ci95": [
+        0.0003,
+        0.0175
+       ]
+      }
+     },
+     "ours_rule": {
+      "accuracy": 0.748,
+      "macro_f1_natural": 0.6166,
+      "rare_right": 94.0,
+      "rare_false": 195.3,
+      "rare_modes": 15,
+      "rare_false_ci95": [
+       7.3,
+       1071.4
+      ],
+      "macro_f1_balanced": 0.5143,
+      "acc_minus_enc": {
+       "point": -0.0003,
+       "ci95": [
+        -0.0008,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0095,
+       "ci95": [
+        0.0005,
+        0.0182
+       ]
+      }
+     },
+     "ours_full": {
+      "accuracy": 0.7575,
+      "macro_f1_natural": 0.6236,
+      "rare_right": 94.0,
+      "rare_false": 195.3,
+      "rare_modes": 15,
+      "rare_false_ci95": [
+       7.3,
+       1071.4
+      ],
+      "macro_f1_balanced": 0.4933,
+      "acc_minus_enc": {
+       "point": 0.0092,
+       "ci95": [
+        0.0005,
+        0.018
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   }
+  },
+  "gemma4_31b": {
+   "2026": {
+    "fitted_on": "2025",
+    "cascade": {
+     "arm": "zs",
+     "theta": 0.15
+    },
+    "n_uniform": 4000,
+    "methods": {
+     "enc": {
+      "accuracy": 0.6365,
+      "macro_f1_natural": 0.4898,
+      "rare_right": 32.0,
+      "rare_false": 166.0,
+      "rare_modes": 9,
+      "rare_false_ci95": [
+       6.2,
+       928.4
+      ],
+      "macro_f1_balanced": 0.4459,
+      "acc_minus_enc": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0182,
+       "ci95": [
+        0.0112,
+        0.0248
+       ]
+      }
+     },
+     "zs": {
+      "accuracy": 0.343,
+      "macro_f1_natural": 0.2379,
+      "rare_right": 158.0,
+      "rare_false": 14476.0,
+      "rare_modes": 22,
+      "rare_false_ci95": [
+       11607.2,
+       17847.0
+      ],
+      "macro_f1_balanced": 0.2458,
+      "acc_minus_enc": {
+       "point": -0.2935,
+       "ci95": [
+        -0.312,
+        -0.2745
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.3118,
+       "ci95": [
+        0.2918,
+        0.3292
+       ]
+      }
+     },
+     "rag": {
+      "accuracy": 0.6295,
+      "macro_f1_natural": 0.4688,
+      "rare_right": 92.0,
+      "rare_false": 2235.2,
+      "rare_modes": 21,
+      "rare_false_ci95": [
+       1220.6,
+       3777.6
+      ],
+      "macro_f1_balanced": 0.4064,
+      "acc_minus_enc": {
+       "point": -0.007,
+       "ci95": [
+        -0.0195,
+        0.0053
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0253,
+       "ci95": [
+        0.0147,
+        0.0355
+       ]
+      }
+     },
+     "cascade": {
+      "accuracy": 0.6378,
+      "macro_f1_natural": 0.4919,
+      "rare_right": 36.0,
+      "rare_false": 181.8,
+      "rare_modes": 10,
+      "rare_false_ci95": [
+       16.0,
+       949.3
+      ],
+      "macro_f1_balanced": 0.4474,
+      "acc_minus_enc": {
+       "point": 0.0013,
+       "ci95": [
+        -0.0005,
+        0.003
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.017,
+       "ci95": [
+        0.01,
+        0.0235
+       ]
+      }
+     },
+     "energyroute": {
+      "accuracy": 0.6482,
+      "macro_f1_natural": 0.5126,
+      "rare_right": 74.0,
+      "rare_false": 1387.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       626.2,
+       2686.9
+      ],
+      "macro_f1_balanced": 0.4491,
+      "acc_minus_enc": {
+       "point": 0.0118,
+       "ci95": [
+        0.0047,
+        0.0195
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0065,
+       "ci95": [
+        -0.0008,
+        0.014
+       ]
+      }
+     },
+     "selector_balanced": {
+      "accuracy": 0.631,
+      "macro_f1_natural": 0.5051,
+      "rare_right": 113.0,
+      "rare_false": 5048.1,
+      "rare_modes": 23,
+      "rare_false_ci95": [
+       3425.9,
+       7184.2
+      ],
+      "macro_f1_balanced": 0.486,
+      "acc_minus_enc": {
+       "point": -0.0055,
+       "ci95": [
+        -0.0115,
+        0.0005
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0238,
+       "ci95": [
+        0.0158,
+        0.0318
+       ]
+      }
+     },
+     "selector_prior": {
+      "accuracy": 0.6458,
+      "macro_f1_natural": 0.4982,
+      "rare_right": 26.0,
+      "rare_false": 176.0,
+      "rare_modes": 7,
+      "rare_false_ci95": [
+       16.2,
+       938.4
+      ],
+      "macro_f1_balanced": 0.4295,
+      "acc_minus_enc": {
+       "point": 0.0092,
+       "ci95": [
+        0.0047,
+        0.014
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.009,
+       "ci95": [
+        0.0035,
+        0.0147
+       ]
+      }
+     },
+     "ours_rule": {
+      "accuracy": 0.6368,
+      "macro_f1_natural": 0.4898,
+      "rare_right": 75.0,
+      "rare_false": 7.4,
+      "rare_modes": 13,
+      "rare_false_ci95": [
+       4.1,
+       627.9
+      ],
+      "macro_f1_balanced": 0.4512,
+      "acc_minus_enc": {
+       "point": 0.0003,
+       "ci95": [
+        0.0,
+        0.001
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.018,
+       "ci95": [
+        0.011,
+        0.0245
+       ]
+      }
+     },
+     "ours_full": {
+      "accuracy": 0.6548,
+      "macro_f1_natural": 0.5044,
+      "rare_right": 75.0,
+      "rare_false": 7.4,
+      "rare_modes": 13,
+      "rare_false_ci95": [
+       4.1,
+       627.9
+      ],
+      "macro_f1_balanced": 0.4405,
+      "acc_minus_enc": {
+       "point": 0.0182,
+       "ci95": [
+        0.0112,
+        0.0248
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   },
+   "2025": {
+    "fitted_on": "2026",
+    "cascade": {
+     "arm": "rag",
+     "theta": 0.6
+    },
+    "n_uniform": 4000,
+    "methods": {
+     "enc": {
+      "accuracy": 0.7482,
+      "macro_f1_natural": 0.6175,
+      "rare_right": 60.0,
+      "rare_false": 1.0,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       1.0,
+       707.0
+      ],
+      "macro_f1_balanced": 0.5134,
+      "acc_minus_enc": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0132,
+       "ci95": [
+        0.0045,
+        0.0225
+       ]
+      }
+     },
+     "zs": {
+      "accuracy": 0.3412,
+      "macro_f1_natural": 0.2363,
+      "rare_right": 165.0,
+      "rare_false": 10383.9,
+      "rare_modes": 19,
+      "rare_false_ci95": [
+       7819.8,
+       13527.0
+      ],
+      "macro_f1_balanced": 0.2406,
+      "acc_minus_enc": {
+       "point": -0.407,
+       "ci95": [
+        -0.425,
+        -0.3905
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.4203,
+       "ci95": [
+        0.404,
+        0.4368
+       ]
+      }
+     },
+     "rag": {
+      "accuracy": 0.7117,
+      "macro_f1_natural": 0.5375,
+      "rare_right": 117.0,
+      "rare_false": 2517.8,
+      "rare_modes": 18,
+      "rare_false_ci95": [
+       1353.5,
+       4285.3
+      ],
+      "macro_f1_balanced": 0.4554,
+      "acc_minus_enc": {
+       "point": -0.0365,
+       "ci95": [
+        -0.049,
+        -0.025
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0498,
+       "ci95": [
+        0.0408,
+        0.0602
+       ]
+      }
+     },
+     "cascade": {
+      "accuracy": 0.7485,
+      "macro_f1_natural": 0.6085,
+      "rare_right": 90.0,
+      "rare_false": 1547.0,
+      "rare_modes": 19,
+      "rare_false_ci95": [
+       676.3,
+       3033.3
+      ],
+      "macro_f1_balanced": 0.5106,
+      "acc_minus_enc": {
+       "point": 0.0003,
+       "ci95": [
+        -0.0067,
+        0.0067
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.013,
+       "ci95": [
+        0.0047,
+        0.0215
+       ]
+      }
+     },
+     "energyroute": {
+      "accuracy": 0.7432,
+      "macro_f1_natural": 0.5962,
+      "rare_right": 80.0,
+      "rare_false": 1741.1,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       804.5,
+       3290.1
+      ],
+      "macro_f1_balanced": 0.5101,
+      "acc_minus_enc": {
+       "point": -0.005,
+       "ci95": [
+        -0.0127,
+        0.0025
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0182,
+       "ci95": [
+        0.01,
+        0.0272
+       ]
+      }
+     },
+     "selector_balanced": {
+      "accuracy": 0.7345,
+      "macro_f1_natural": 0.6019,
+      "rare_right": 148.0,
+      "rare_false": 3649.0,
+      "rare_modes": 22,
+      "rare_false_ci95": [
+       2204.2,
+       5689.0
+      ],
+      "macro_f1_balanced": 0.5478,
+      "acc_minus_enc": {
+       "point": -0.0138,
+       "ci95": [
+        -0.0192,
+        -0.0085
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.027,
+       "ci95": [
+        0.0185,
+        0.0362
+       ]
+      }
+     },
+     "selector_prior": {
+      "accuracy": 0.7528,
+      "macro_f1_natural": 0.6173,
+      "rare_right": 54.0,
+      "rare_false": 198.3,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       10.3,
+       1074.4
+      ],
+      "macro_f1_balanced": 0.4997,
+      "acc_minus_enc": {
+       "point": 0.0045,
+       "ci95": [
+        0.0008,
+        0.0085
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0088,
+       "ci95": [
+        0.0008,
+        0.018
+       ]
+      }
+     },
+     "ours_rule": {
+      "accuracy": 0.748,
+      "macro_f1_natural": 0.6166,
+      "rare_right": 100.0,
+      "rare_false": 199.1,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       10.0,
+       1076.3
+      ],
+      "macro_f1_balanced": 0.5156,
+      "acc_minus_enc": {
+       "point": -0.0003,
+       "ci95": [
+        -0.0008,
+        0.0
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0135,
+       "ci95": [
+        0.005,
+        0.023
+       ]
+      }
+     },
+     "ours_full": {
+      "accuracy": 0.7615,
+      "macro_f1_natural": 0.6352,
+      "rare_right": 100.0,
+      "rare_false": 199.1,
+      "rare_modes": 16,
+      "rare_false_ci95": [
+       10.0,
+       1076.3
+      ],
+      "macro_f1_balanced": 0.4952,
+      "acc_minus_enc": {
+       "point": 0.0132,
+       "ci95": [
+        0.0045,
+        0.0225
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}
