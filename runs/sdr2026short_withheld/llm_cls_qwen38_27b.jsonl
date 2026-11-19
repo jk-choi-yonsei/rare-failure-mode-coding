@@ -1,0 +1,88 @@
+{"custom_id": "c163742", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1347, "out": 4, "cached": 0, "seconds": 1.189}}
+{"custom_id": "c164003", "type": "succeeded", "text": "TIGHT", "finish_reason": "stop", "usage": {"in": 1321, "out": 3, "cached": 1127, "seconds": 0.337}}
+{"custom_id": "c164207", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1412, "out": 5, "cached": 1127, "seconds": 0.441}}
+{"custom_id": "c164751", "type": "succeeded", "text": "INTERMITTENT", "finish_reason": "stop", "usage": {"in": 1283, "out": 5, "cached": 1127, "seconds": 0.379}}
+{"custom_id": "c166849", "type": "succeeded", "text": "FAULT MESSAGE", "finish_reason": "stop", "usage": {"in": 1182, "out": 3, "cached": 1127, "seconds": 0.258}}
+{"custom_id": "c167200", "type": "succeeded", "text": "NO INDICATION", "finish_reason": "stop", "usage": {"in": 1197, "out": 4, "cached": 1127, "seconds": 0.295}}
+{"custom_id": "c167264", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1195, "out": 3, "cached": 1127, "seconds": 0.276}}
+{"custom_id": "c167768", "type": "succeeded", "text": "BIRD INGESTION", "finish_reason": "stop", "usage": {"in": 1241, "out": 6, "cached": 1127, "seconds": 0.363}}
+{"custom_id": "c167781", "type": "succeeded", "text": "UNSTABLE", "finish_reason": "stop", "usage": {"in": 1448, "out": 4, "cached": 1127, "seconds": 0.435}}
+{"custom_id": "c168308", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1401, "out": 3, "cached": 1127, "seconds": 0.385}}
+{"custom_id": "c168452", "type": "succeeded", "text": "PEELING", "finish_reason": "stop", "usage": {"in": 1185, "out": 4, "cached": 1127, "seconds": 0.277}}
+{"custom_id": "c170017", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1178, "out": 5, "cached": 1127, "seconds": 0.305}}
+{"custom_id": "c170091", "type": "succeeded", "text": "WILL NOT ARM", "finish_reason": "stop", "usage": {"in": 1222, "out": 5, "cached": 1127, "seconds": 0.313}}
+{"custom_id": "c171306", "type": "succeeded", "text": "DISCHARGED", "finish_reason": "stop", "usage": {"in": 1189, "out": 5, "cached": 1127, "seconds": 0.304}}
+{"custom_id": "c172915", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1199, "out": 5, "cached": 1127, "seconds": 0.304}}
+{"custom_id": "c173595", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1185, "out": 3, "cached": 1127, "seconds": 0.25}}
+{"custom_id": "c175151", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1166, "out": 4, "cached": 1127, "seconds": 0.287}}
+{"custom_id": "c175488", "type": "succeeded", "text": "WARPED", "finish_reason": "stop", "usage": {"in": 1198, "out": 4, "cached": 1127, "seconds": 0.303}}
+{"custom_id": "c175663", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1317, "out": 5, "cached": 1127, "seconds": 0.369}}
+{"custom_id": "c175730", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1177, "out": 3, "cached": 1127, "seconds": 0.243}}
+{"custom_id": "c175793", "type": "succeeded", "text": "CUT", "finish_reason": "stop", "usage": {"in": 1208, "out": 3, "cached": 1127, "seconds": 0.273}}
+{"custom_id": "c175920", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1180, "out": 2, "cached": 1127, "seconds": 0.235}}
+{"custom_id": "c176187", "type": "succeeded", "text": "ERRATIC", "finish_reason": "stop", "usage": {"in": 1165, "out": 3, "cached": 1127, "seconds": 0.264}}
+{"custom_id": "c176586", "type": "succeeded", "text": "NON ISSUE", "finish_reason": "stop", "usage": {"in": 1193, "out": 3, "cached": 1127, "seconds": 0.257}}
+{"custom_id": "c176681", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1167, "out": 4, "cached": 1127, "seconds": 0.266}}
+{"custom_id": "c177305", "type": "succeeded", "text": "CUT", "finish_reason": "stop", "usage": {"in": 1230, "out": 3, "cached": 1127, "seconds": 0.295}}
+{"custom_id": "c178651", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1259, "out": 3, "cached": 1127, "seconds": 0.3}}
+{"custom_id": "c180011", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1177, "out": 3, "cached": 1127, "seconds": 0.314}}
+{"custom_id": "c181086", "type": "succeeded", "text": "WORN", "finish_reason": "stop", "usage": {"in": 1165, "out": 3, "cached": 1127, "seconds": 0.241}}
+{"custom_id": "c181219", "type": "succeeded", "text": "DEFORMED", "finish_reason": "stop", "usage": {"in": 1202, "out": 4, "cached": 1127, "seconds": 0.292}}
+{"custom_id": "c181485", "type": "succeeded", "text": "LOOSE", "finish_reason": "stop", "usage": {"in": 1222, "out": 3, "cached": 1127, "seconds": 0.262}}
+{"custom_id": "c182546", "type": "succeeded", "text": "CUT", "finish_reason": "stop", "usage": {"in": 1184, "out": 3, "cached": 1127, "seconds": 0.259}}
+{"custom_id": "c182585", "type": "succeeded", "text": "MELTED", "finish_reason": "stop", "usage": {"in": 1278, "out": 4, "cached": 1127, "seconds": 0.354}}
+{"custom_id": "c184568", "type": "succeeded", "text": "FLAT", "finish_reason": "stop", "usage": {"in": 1219, "out": 3, "cached": 1127, "seconds": 0.288}}
+{"custom_id": "c184752", "type": "succeeded", "text": "MISROUTED", "finish_reason": "stop", "usage": {"in": 1188, "out": 5, "cached": 1127, "seconds": 0.321}}
+{"custom_id": "c185396", "type": "succeeded", "text": "LOCKED", "finish_reason": "stop", "usage": {"in": 1155, "out": 3, "cached": 1127, "seconds": 0.268}}
+{"custom_id": "c185961", "type": "succeeded", "text": "BURST", "finish_reason": "stop", "usage": {"in": 1273, "out": 3, "cached": 1127, "seconds": 0.313}}
+{"custom_id": "c187945", "type": "succeeded", "text": "TIGHT", "finish_reason": "stop", "usage": {"in": 1190, "out": 3, "cached": 1127, "seconds": 0.244}}
+{"custom_id": "c188207", "type": "succeeded", "text": "WORN", "finish_reason": "stop", "usage": {"in": 1185, "out": 3, "cached": 1127, "seconds": 0.261}}
+{"custom_id": "c188842", "type": "succeeded", "text": "OVERHEATED", "finish_reason": "stop", "usage": {"in": 1198, "out": 4, "cached": 1127, "seconds": 0.278}}
+{"custom_id": "c189340", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1229, "out": 2, "cached": 1127, "seconds": 0.249}}
+{"custom_id": "c189682", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1170, "out": 4, "cached": 1127, "seconds": 0.286}}
+{"custom_id": "c190052", "type": "succeeded", "text": "BINDS", "finish_reason": "stop", "usage": {"in": 1147, "out": 3, "cached": 1127, "seconds": 0.257}}
+{"custom_id": "c191059", "type": "succeeded", "text": "NOISE", "finish_reason": "stop", "usage": {"in": 1192, "out": 3, "cached": 1127, "seconds": 0.259}}
+{"custom_id": "c192391", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1182, "out": 4, "cached": 1127, "seconds": 0.273}}
+{"custom_id": "c192770", "type": "succeeded", "text": "HOT", "finish_reason": "stop", "usage": {"in": 1294, "out": 2, "cached": 1127, "seconds": 0.296}}
+{"custom_id": "c192992", "type": "succeeded", "text": "JAMMED", "finish_reason": "stop", "usage": {"in": 1182, "out": 4, "cached": 1127, "seconds": 0.27}}
+{"custom_id": "c193763", "type": "succeeded", "text": "OVERPRESSURED", "finish_reason": "stop", "usage": {"in": 1230, "out": 4, "cached": 1127, "seconds": 0.296}}
+{"custom_id": "c194128", "type": "succeeded", "text": "RATCHETING", "finish_reason": "stop", "usage": {"in": 1159, "out": 4, "cached": 1127, "seconds": 0.296}}
+{"custom_id": "c194191", "type": "succeeded", "text": "BLEW OUT", "finish_reason": "stop", "usage": {"in": 1188, "out": 4, "cached": 1127, "seconds": 0.289}}
+{"custom_id": "c194401", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1191, "out": 4, "cached": 1127, "seconds": 0.284}}
+{"custom_id": "c194742", "type": "succeeded", "text": "CUT", "finish_reason": "stop", "usage": {"in": 1189, "out": 3, "cached": 1127, "seconds": 0.244}}
+{"custom_id": "c195754", "type": "succeeded", "text": "FIRE WARNING", "finish_reason": "stop", "usage": {"in": 1196, "out": 4, "cached": 1127, "seconds": 0.295}}
+{"custom_id": "c195912", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1234, "out": 3, "cached": 1127, "seconds": 0.3}}
+{"custom_id": "c197819", "type": "succeeded", "text": "BLOWN OUT", "finish_reason": "stop", "usage": {"in": 1206, "out": 5, "cached": 1127, "seconds": 0.328}}
+{"custom_id": "c198164", "type": "succeeded", "text": "SEVERED", "finish_reason": "stop", "usage": {"in": 1192, "out": 4, "cached": 1127, "seconds": 0.294}}
+{"custom_id": "c198384", "type": "succeeded", "text": "BROKEN", "finish_reason": "stop", "usage": {"in": 1213, "out": 4, "cached": 1127, "seconds": 0.297}}
+{"custom_id": "c198565", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1181, "out": 2, "cached": 1127, "seconds": 0.234}}
+{"custom_id": "c198880", "type": "succeeded", "text": "CUT", "finish_reason": "stop", "usage": {"in": 1204, "out": 3, "cached": 1127, "seconds": 0.273}}
+{"custom_id": "c199125", "type": "succeeded", "text": "DISCONNECTED", "finish_reason": "stop", "usage": {"in": 1294, "out": 4, "cached": 1127, "seconds": 0.345}}
+{"custom_id": "c199206", "type": "succeeded", "text": "FLAT", "finish_reason": "stop", "usage": {"in": 1312, "out": 3, "cached": 1127, "seconds": 0.337}}
+{"custom_id": "c199438", "type": "succeeded", "text": "BIRD INGESTION", "finish_reason": "stop", "usage": {"in": 1219, "out": 6, "cached": 1127, "seconds": 0.353}}
+{"custom_id": "c199656", "type": "succeeded", "text": "OUT OF BALANCE", "finish_reason": "stop", "usage": {"in": 1263, "out": 5, "cached": 1127, "seconds": 0.383}}
+{"custom_id": "c200346", "type": "succeeded", "text": "DESTROYED", "finish_reason": "stop", "usage": {"in": 1221, "out": 4, "cached": 1127, "seconds": 0.304}}
+{"custom_id": "c200364", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1248, "out": 4, "cached": 1127, "seconds": 0.329}}
+{"custom_id": "c200467", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1254, "out": 5, "cached": 1127, "seconds": 0.327}}
+{"custom_id": "c200776", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1208, "out": 3, "cached": 1127, "seconds": 0.273}}
+{"custom_id": "c200777", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1208, "out": 3, "cached": 1127, "seconds": 0.276}}
+{"custom_id": "c201885", "type": "succeeded", "text": "LOOSE", "finish_reason": "stop", "usage": {"in": 1205, "out": 3, "cached": 1127, "seconds": 0.256}}
+{"custom_id": "c202159", "type": "succeeded", "text": "BURST", "finish_reason": "stop", "usage": {"in": 1185, "out": 3, "cached": 1127, "seconds": 0.257}}
+{"custom_id": "c202182", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1152, "out": 5, "cached": 1127, "seconds": 0.301}}
+{"custom_id": "c202286", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1245, "out": 5, "cached": 1127, "seconds": 0.337}}
+{"custom_id": "c202303", "type": "succeeded", "text": "MISROUTED", "finish_reason": "stop", "usage": {"in": 1207, "out": 5, "cached": 1127, "seconds": 0.327}}
+{"custom_id": "c202503", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1172, "out": 5, "cached": 1127, "seconds": 0.308}}
+{"custom_id": "c203492", "type": "succeeded", "text": "FIRE WARNING", "finish_reason": "stop", "usage": {"in": 1197, "out": 4, "cached": 1127, "seconds": 0.288}}
+{"custom_id": "c203582", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1172, "out": 5, "cached": 1127, "seconds": 0.303}}
+{"custom_id": "c203789", "type": "succeeded", "text": "ERRATIC", "finish_reason": "stop", "usage": {"in": 1322, "out": 3, "cached": 1127, "seconds": 0.328}}
+{"custom_id": "c203892", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1169, "out": 3, "cached": 1127, "seconds": 0.261}}
+{"custom_id": "c204644", "type": "succeeded", "text": "NOISE", "finish_reason": "stop", "usage": {"in": 1159, "out": 3, "cached": 1127, "seconds": 0.249}}
+{"custom_id": "c204929", "type": "succeeded", "text": "FIRE", "finish_reason": "stop", "usage": {"in": 1246, "out": 3, "cached": 1127, "seconds": 0.306}}
+{"custom_id": "c204934", "type": "succeeded", "text": "FALSE INDICATION", "finish_reason": "stop", "usage": {"in": 1199, "out": 4, "cached": 1127, "seconds": 0.293}}
+{"custom_id": "c206154", "type": "succeeded", "text": "BURST", "finish_reason": "stop", "usage": {"in": 1299, "out": 3, "cached": 1127, "seconds": 0.336}}
+{"custom_id": "c206386", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1205, "out": 4, "cached": 1127, "seconds": 0.281}}
+{"custom_id": "c206398", "type": "succeeded", "text": "BLOCKED", "finish_reason": "stop", "usage": {"in": 1278, "out": 3, "cached": 1127, "seconds": 0.327}}
+{"custom_id": "c206486", "type": "succeeded", "text": "FIRE", "finish_reason": "stop", "usage": {"in": 1169, "out": 3, "cached": 1127, "seconds": 0.27}}
+{"custom_id": "c206789", "type": "succeeded", "text": "FAULT MESSAGE", "finish_reason": "stop", "usage": {"in": 1254, "out": 3, "cached": 1127, "seconds": 0.286}}
+{"custom_id": "c207149", "type": "succeeded", "text": "SEVERED", "finish_reason": "stop", "usage": {"in": 1233, "out": 4, "cached": 1127, "seconds": 0.295}}
+{"custom_id": "c207161", "type": "succeeded", "text": "LOCKED", "finish_reason": "stop", "usage": {"in": 1214, "out": 3, "cached": 1127, "seconds": 0.265}}

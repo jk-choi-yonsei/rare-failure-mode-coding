@@ -1,0 +1,98 @@
+{"custom_id": "r103565", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1602, "out": 2, "cached": 1127, "seconds": 0.542}}
+{"custom_id": "r103863", "type": "succeeded", "text": "OVERTEMP", "finish_reason": "stop", "usage": {"in": 2052, "out": 3, "cached": 1127, "seconds": 0.929}}
+{"custom_id": "r104275", "type": "succeeded", "text": "FIRE", "finish_reason": "stop", "usage": {"in": 2226, "out": 3, "cached": 1127, "seconds": 1.076}}
+{"custom_id": "r105303", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2171, "out": 4, "cached": 1127, "seconds": 1.091}}
+{"custom_id": "r105618", "type": "succeeded", "text": "WILL NOT ARM", "finish_reason": "stop", "usage": {"in": 1622, "out": 5, "cached": 1127, "seconds": 0.63}}
+{"custom_id": "r106854", "type": "succeeded", "text": "MISCONFIGURED", "finish_reason": "stop", "usage": {"in": 1697, "out": 5, "cached": 1127, "seconds": 0.735}}
+{"custom_id": "r108500", "type": "succeeded", "text": "JAMMED", "finish_reason": "stop", "usage": {"in": 1951, "out": 4, "cached": 1127, "seconds": 0.875}}
+{"custom_id": "r109323", "type": "succeeded", "text": "FAULTED", "finish_reason": "stop", "usage": {"in": 1916, "out": 3, "cached": 1127, "seconds": 0.843}}
+{"custom_id": "r109403", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 2294, "out": 5, "cached": 1127, "seconds": 1.174}}
+{"custom_id": "r110013", "type": "succeeded", "text": "NOISE", "finish_reason": "stop", "usage": {"in": 1668, "out": 3, "cached": 1127, "seconds": 0.695}}
+{"custom_id": "r110582", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1870, "out": 3, "cached": 1127, "seconds": 0.828}}
+{"custom_id": "r111012", "type": "succeeded", "text": "DEPLETED", "finish_reason": "stop", "usage": {"in": 1857, "out": 3, "cached": 1127, "seconds": 0.77}}
+{"custom_id": "r111045", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1776, "out": 5, "cached": 1127, "seconds": 0.785}}
+{"custom_id": "r111528", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2712, "out": 4, "cached": 1127, "seconds": 1.463}}
+{"custom_id": "r111752", "type": "succeeded", "text": "INOPERATIVE", "finish_reason": "stop", "usage": {"in": 1928, "out": 4, "cached": 1127, "seconds": 1.056}}
+{"custom_id": "r113029", "type": "succeeded", "text": "LOOSE", "finish_reason": "stop", "usage": {"in": 1787, "out": 3, "cached": 1127, "seconds": 0.746}}
+{"custom_id": "r114664", "type": "succeeded", "text": "WARNING MESSAGE", "finish_reason": "stop", "usage": {"in": 2113, "out": 3, "cached": 1127, "seconds": 1.012}}
+{"custom_id": "r114752", "type": "succeeded", "text": "BURNED", "finish_reason": "stop", "usage": {"in": 1791, "out": 4, "cached": 1127, "seconds": 0.926}}
+{"custom_id": "r114888", "type": "succeeded", "text": "ODOR", "finish_reason": "stop", "usage": {"in": 1955, "out": 3, "cached": 1127, "seconds": 0.884}}
+{"custom_id": "r115213", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2352, "out": 4, "cached": 1127, "seconds": 1.257}}
+{"custom_id": "r115449", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1582, "out": 3, "cached": 1127, "seconds": 0.752}}
+{"custom_id": "r116769", "type": "succeeded", "text": "FUMES", "finish_reason": "stop", "usage": {"in": 1794, "out": 4, "cached": 1127, "seconds": 0.76}}
+{"custom_id": "r116960", "type": "succeeded", "text": "FALSE INDICATION", "finish_reason": "stop", "usage": {"in": 1830, "out": 4, "cached": 1127, "seconds": 0.771}}
+{"custom_id": "r117223", "type": "succeeded", "text": "FAULT MESSAGE", "finish_reason": "stop", "usage": {"in": 1582, "out": 3, "cached": 1127, "seconds": 0.571}}
+{"custom_id": "r118645", "type": "succeeded", "text": "FALSE INDICATION", "finish_reason": "stop", "usage": {"in": 1799, "out": 4, "cached": 1127, "seconds": 0.766}}
+{"custom_id": "r118966", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2238, "out": 4, "cached": 1127, "seconds": 1.085}}
+{"custom_id": "r120551", "type": "succeeded", "text": "JAMMED", "finish_reason": "stop", "usage": {"in": 1589, "out": 4, "cached": 1127, "seconds": 0.6}}
+{"custom_id": "r120578", "type": "succeeded", "text": "CANNING", "finish_reason": "stop", "usage": {"in": 1821, "out": 4, "cached": 1127, "seconds": 0.78}}
+{"custom_id": "r120725", "type": "succeeded", "text": "ABNORMAL", "finish_reason": "stop", "usage": {"in": 1763, "out": 3, "cached": 1127, "seconds": 0.689}}
+{"custom_id": "r121793", "type": "succeeded", "text": "BENT", "finish_reason": "stop", "usage": {"in": 1791, "out": 3, "cached": 1127, "seconds": 0.739}}
+{"custom_id": "r122032", "type": "succeeded", "text": "OUT OF POSITION", "finish_reason": "stop", "usage": {"in": 1744, "out": 4, "cached": 1127, "seconds": 0.718}}
+{"custom_id": "r122599", "type": "succeeded", "text": "BENT", "finish_reason": "stop", "usage": {"in": 2151, "out": 3, "cached": 1127, "seconds": 0.995}}
+{"custom_id": "r123016", "type": "succeeded", "text": "OUT OF POSITION", "finish_reason": "stop", "usage": {"in": 1791, "out": 4, "cached": 1127, "seconds": 0.748}}
+{"custom_id": "r124307", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1768, "out": 3, "cached": 1127, "seconds": 0.762}}
+{"custom_id": "r124531", "type": "succeeded", "text": "FLAT", "finish_reason": "stop", "usage": {"in": 1891, "out": 3, "cached": 1127, "seconds": 0.809}}
+{"custom_id": "r124855", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 1914, "out": 4, "cached": 1127, "seconds": 0.862}}
+{"custom_id": "r124976", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1893, "out": 2, "cached": 1127, "seconds": 0.765}}
+{"custom_id": "r125971", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 2046, "out": 2, "cached": 1127, "seconds": 0.92}}
+{"custom_id": "r125972", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 2025, "out": 3, "cached": 1127, "seconds": 0.897}}
+{"custom_id": "r126084", "type": "succeeded", "text": "BROKEN", "finish_reason": "stop", "usage": {"in": 1750, "out": 4, "cached": 1127, "seconds": 0.732}}
+{"custom_id": "r126627", "type": "succeeded", "text": "NOISE", "finish_reason": "stop", "usage": {"in": 1668, "out": 3, "cached": 1127, "seconds": 0.665}}
+{"custom_id": "r126657", "type": "succeeded", "text": "MISCONFIGURED", "finish_reason": "stop", "usage": {"in": 1902, "out": 5, "cached": 1127, "seconds": 0.886}}
+{"custom_id": "r126954", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 2317, "out": 5, "cached": 1127, "seconds": 1.217}}
+{"custom_id": "r127198", "type": "succeeded", "text": "BROKEN", "finish_reason": "stop", "usage": {"in": 2814, "out": 4, "cached": 1127, "seconds": 1.733}}
+{"custom_id": "r127726", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1871, "out": 5, "cached": 1127, "seconds": 1.084}}
+{"custom_id": "r127892", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1790, "out": 3, "cached": 1127, "seconds": 0.775}}
+{"custom_id": "r128048", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 2290, "out": 5, "cached": 1127, "seconds": 1.205}}
+{"custom_id": "r128150", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1745, "out": 2, "cached": 1127, "seconds": 0.698}}
+{"custom_id": "r129175", "type": "succeeded", "text": "NOISE", "finish_reason": "stop", "usage": {"in": 1994, "out": 3, "cached": 1127, "seconds": 0.91}}
+{"custom_id": "r129584", "type": "succeeded", "text": "LOW PRESSURE", "finish_reason": "stop", "usage": {"in": 1638, "out": 4, "cached": 1127, "seconds": 0.611}}
+{"custom_id": "r131854", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 1776, "out": 3, "cached": 1127, "seconds": 0.724}}
+{"custom_id": "r131930", "type": "succeeded", "text": "FALSE INDICATION", "finish_reason": "stop", "usage": {"in": 2014, "out": 4, "cached": 1127, "seconds": 0.898}}
+{"custom_id": "r133069", "type": "succeeded", "text": "MISINSTALLED", "finish_reason": "stop", "usage": {"in": 2017, "out": 5, "cached": 1127, "seconds": 0.939}}
+{"custom_id": "r133150", "type": "succeeded", "text": "OVERHEATED", "finish_reason": "stop", "usage": {"in": 1977, "out": 4, "cached": 1127, "seconds": 0.907}}
+{"custom_id": "r134314", "type": "succeeded", "text": "BROKEN", "finish_reason": "stop", "usage": {"in": 2027, "out": 4, "cached": 1127, "seconds": 0.911}}
+{"custom_id": "r134968", "type": "succeeded", "text": "STIFF", "finish_reason": "stop", "usage": {"in": 2153, "out": 3, "cached": 1127, "seconds": 0.983}}
+{"custom_id": "r135717", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2168, "out": 4, "cached": 1127, "seconds": 1.127}}
+{"custom_id": "r135776", "type": "succeeded", "text": "WARNING MESSAGE", "finish_reason": "stop", "usage": {"in": 2042, "out": 3, "cached": 1127, "seconds": 1.061}}
+{"custom_id": "r136196", "type": "succeeded", "text": "DEFORMED", "finish_reason": "stop", "usage": {"in": 1597, "out": 4, "cached": 1127, "seconds": 0.613}}
+{"custom_id": "r136197", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1534, "out": 3, "cached": 1127, "seconds": 0.545}}
+{"custom_id": "r136963", "type": "succeeded", "text": "OUT OF ADJUST", "finish_reason": "stop", "usage": {"in": 1868, "out": 5, "cached": 1127, "seconds": 0.838}}
+{"custom_id": "r137072", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1936, "out": 2, "cached": 1127, "seconds": 0.808}}
+{"custom_id": "r138525", "type": "succeeded", "text": "FALSE INDICATION", "finish_reason": "stop", "usage": {"in": 2101, "out": 4, "cached": 1127, "seconds": 1.001}}
+{"custom_id": "r141182", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1828, "out": 2, "cached": 1127, "seconds": 0.736}}
+{"custom_id": "r141657", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2713, "out": 4, "cached": 1127, "seconds": 1.488}}
+{"custom_id": "r141838", "type": "succeeded", "text": "OUT OF LIMITS", "finish_reason": "stop", "usage": {"in": 2075, "out": 5, "cached": 1127, "seconds": 1.186}}
+{"custom_id": "r142588", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1698, "out": 2, "cached": 1127, "seconds": 0.673}}
+{"custom_id": "r142924", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1891, "out": 2, "cached": 1127, "seconds": 0.845}}
+{"custom_id": "r143960", "type": "succeeded", "text": "CHAFED", "finish_reason": "stop", "usage": {"in": 2192, "out": 4, "cached": 1127, "seconds": 1.085}}
+{"custom_id": "r144193", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1684, "out": 2, "cached": 1127, "seconds": 0.642}}
+{"custom_id": "r144695", "type": "succeeded", "text": "OFF TRACK", "finish_reason": "stop", "usage": {"in": 1934, "out": 3, "cached": 1127, "seconds": 0.868}}
+{"custom_id": "r145722", "type": "succeeded", "text": "OUT OF ADJUST", "finish_reason": "stop", "usage": {"in": 1985, "out": 5, "cached": 1127, "seconds": 0.925}}
+{"custom_id": "r146304", "type": "succeeded", "text": "DISCOLORED", "finish_reason": "stop", "usage": {"in": 1939, "out": 5, "cached": 1127, "seconds": 0.924}}
+{"custom_id": "r146451", "type": "succeeded", "text": "JAMMED", "finish_reason": "stop", "usage": {"in": 1951, "out": 4, "cached": 1127, "seconds": 0.875}}
+{"custom_id": "r146952", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 2054, "out": 5, "cached": 1127, "seconds": 0.975}}
+{"custom_id": "r147463", "type": "succeeded", "text": "NOISE", "finish_reason": "stop", "usage": {"in": 2104, "out": 3, "cached": 1127, "seconds": 0.982}}
+{"custom_id": "r150069", "type": "succeeded", "text": "ILLUMINATED", "finish_reason": "stop", "usage": {"in": 2091, "out": 5, "cached": 1127, "seconds": 1.014}}
+{"custom_id": "r150666", "type": "succeeded", "text": "FAULTED", "finish_reason": "stop", "usage": {"in": 2236, "out": 3, "cached": 1127, "seconds": 1.101}}
+{"custom_id": "r150832", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2236, "out": 4, "cached": 1127, "seconds": 1.103}}
+{"custom_id": "r150847", "type": "succeeded", "text": "DAMAGED", "finish_reason": "stop", "usage": {"in": 2208, "out": 4, "cached": 1127, "seconds": 1.28}}
+{"custom_id": "r151620", "type": "succeeded", "text": "WILL NOT ARM", "finish_reason": "stop", "usage": {"in": 1748, "out": 5, "cached": 1127, "seconds": 0.753}}
+{"custom_id": "r151941", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1854, "out": 2, "cached": 1127, "seconds": 0.846}}
+{"custom_id": "r152808", "type": "succeeded", "text": "ABNORMAL", "finish_reason": "stop", "usage": {"in": 1835, "out": 3, "cached": 1127, "seconds": 0.776}}
+{"custom_id": "r154725", "type": "succeeded", "text": "UNSERVICEABLE", "finish_reason": "stop", "usage": {"in": 1650, "out": 4, "cached": 1127, "seconds": 0.672}}
+{"custom_id": "r154834", "type": "succeeded", "text": "LEAKING", "finish_reason": "stop", "usage": {"in": 2096, "out": 4, "cached": 1134, "seconds": 0.92}}
+{"custom_id": "r154877", "type": "succeeded", "text": "DEFORMED", "finish_reason": "stop", "usage": {"in": 2159, "out": 4, "cached": 1134, "seconds": 0.966}}
+{"custom_id": "r155008", "type": "succeeded", "text": "FAILED", "finish_reason": "stop", "usage": {"in": 1955, "out": 2, "cached": 1134, "seconds": 0.801}}
+{"custom_id": "r155141", "type": "succeeded", "text": "FAULTED", "finish_reason": "stop", "usage": {"in": 1810, "out": 3, "cached": 1134, "seconds": 0.682}}
+{"custom_id": "r156483", "type": "succeeded", "text": "WITHIN LIMITS", "finish_reason": "stop", "usage": {"in": 1695, "out": 5, "cached": 1134, "seconds": 0.665}}
+{"custom_id": "r158990", "type": "succeeded", "text": "STUCK", "finish_reason": "stop", "usage": {"in": 1755, "out": 3, "cached": 1134, "seconds": 0.654}}
+{"custom_id": "r159336", "type": "succeeded", "text": "VIBRATES", "finish_reason": "stop", "usage": {"in": 1770, "out": 5, "cached": 1134, "seconds": 0.712}}
+{"custom_id": "r159390", "type": "succeeded", "text": "FAULTED", "finish_reason": "stop", "usage": {"in": 1851, "out": 3, "cached": 1134, "seconds": 0.739}}
+{"custom_id": "r160735", "type": "succeeded", "text": "SEVERED", "finish_reason": "stop", "usage": {"in": 2074, "out": 4, "cached": 1134, "seconds": 0.948}}
+{"custom_id": "r162000", "type": "succeeded", "text": "ICED", "finish_reason": "stop", "usage": {"in": 1995, "out": 3, "cached": 1134, "seconds": 0.885}}
+{"custom_id": "r162757", "type": "succeeded", "text": "OVERTEMP", "finish_reason": "stop", "usage": {"in": 2118, "out": 3, "cached": 1134, "seconds": 0.955}}
+{"custom_id": "r162758", "type": "succeeded", "text": "FAULTED", "finish_reason": "stop", "usage": {"in": 2092, "out": 3, "cached": 1134, "seconds": 0.892}}
+{"custom_id": "r162920", "type": "succeeded", "text": "INOPERATIVE", "finish_reason": "stop", "usage": {"in": 1990, "out": 4, "cached": 1134, "seconds": 0.87}}
+{"custom_id": "r163389", "type": "succeeded", "text": "FALSE INDICATION", "finish_reason": "stop", "usage": {"in": 1652, "out": 4, "cached": 1134, "seconds": 0.64}}

@@ -54,9 +54,10 @@ def main():
             R = cr.fit(Dt, rows, "wide_gbm_table")
             casc = cr.fit_cascade(Dt, rows)
             R_nollm = sa.fit_nollm(Dt, rows)
+            nat = p4.fit_natural_baselines(cr, sv, ms, Dt, W[tr][0], rows, llm, frozen)
             wn, U = W[te]
             Dn = D[te + "nat"]
-            P = p4.predictions(cr, sv, rs, ms, Dn, llm, frozen, models, R, casc, wn)
+            P = p4.predictions(cr, sv, rs, ms, Dn, llm, frozen, models, R, casc, wn, nat=nat)
             fire, best, rare, enc_nonrare = p4.gate_parts(Dn)
             pn, pn_nr = sa.outputs_nollm(R_nollm, Dn, rare, enc_nonrare)
             P["ours_nollm"] = p4.gated(pn, pn_nr, fire, best, rare)

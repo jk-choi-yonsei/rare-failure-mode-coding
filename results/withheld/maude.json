@@ -1,0 +1,67 @@
+{
+ "note": "withheld_check.py: every rare code placed on these reports is false",
+ "corpus": "maude",
+ "withheld_codes": 47,
+ "years": {
+  "2026": {
+   "reports": 50943,
+   "classifier_rare_placements": 18,
+   "best_rare_code_inside_top5": 367,
+   "drawn": 367,
+   "llms": {
+    "qwen38_27b": {
+     "answered": 367,
+     "either": {
+      "placements": 14,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 13,
+      "exact": true
+     }
+    },
+    "gemma4_31b": {
+     "answered": 367,
+     "either": {
+      "placements": 12,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 11,
+      "exact": true
+     }
+    }
+   }
+  },
+  "2025": {
+   "reports": 58872,
+   "classifier_rare_placements": 39,
+   "best_rare_code_inside_top5": 486,
+   "drawn": 486,
+   "llms": {
+    "qwen38_27b": {
+     "answered": 486,
+     "either": {
+      "placements": 24,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 21,
+      "exact": true
+     }
+    },
+    "gemma4_31b": {
+     "answered": 486,
+     "either": {
+      "placements": 14,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 8,
+      "exact": true
+     }
+    }
+   }
+  }
+ }
+}

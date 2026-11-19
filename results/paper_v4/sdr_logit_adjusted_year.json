@@ -1,0 +1,21 @@
+{
+ "note": "logit_adjusted_year.py",
+ "corpus": "sdr",
+ "tau": 0.5,
+ "years": {
+  "2025": {
+   "reports": 59416,
+   "rare_right": 76,
+   "rare_false": 333,
+   "undecided": 9,
+   "undecided_rare_reports": 0
+  },
+  "2026": {
+   "reports": 42717,
+   "rare_right": 56,
+   "rare_false": 214,
+   "undecided": 5,
+   "undecided_rare_reports": 0
+  }
+ }
+}

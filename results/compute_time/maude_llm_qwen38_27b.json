@@ -1,0 +1,57 @@
+{
+ "phase": "llm",
+ "corpus": "maude",
+ "llm": "qwen38_27b",
+ "model_file": "Qwen3.8-27B-UD-Q4_K_M.gguf",
+ "llama_build": "b11435",
+ "ctx": 16384,
+ "shortlist_2026_requests": 4071,
+ "timed_reports": 200,
+ "years": {
+  "2025": {
+   "reports": 762360,
+   "shortlist": 4985
+  },
+  "2026": {
+   "reports": 661160,
+   "shortlist": 4296
+  }
+ },
+ "gpu_before": {
+  "time": "2026-11-18 18:23:28",
+  "gpu": "NVIDIA GeForce RTX 3090, 1388 MiB, 0 %, 43, 210 MHz"
+ },
+ "server_start_seconds": 8.1,
+ "zero_shot": {
+  "seconds": {
+   "n": 200,
+   "median": 0.5812,
+   "mean": 0.5692,
+   "p10": 0.3823,
+   "p90": 0.7056,
+   "total": 113.84
+  },
+  "errors": 0,
+  "mean_prompt_tokens": 5835.4,
+  "mean_cached_tokens": 5750,
+  "mean_output_tokens": 14.8
+ },
+ "retrieval": {
+  "seconds": {
+   "n": 200,
+   "median": 1.0392,
+   "mean": 1.0042,
+   "p10": 0.6958,
+   "p90": 1.2416,
+   "total": 200.85
+  },
+  "errors": 0,
+  "mean_prompt_tokens": 6460.3,
+  "mean_cached_tokens": 5770.0,
+  "mean_output_tokens": 13.4
+ },
+ "gpu_after": {
+  "time": "2026-11-18 18:29:01",
+  "gpu": "NVIDIA GeForce RTX 3090, 1471 MiB, 0 %, 66, 1965 MHz"
+ }
+}

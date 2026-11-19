@@ -1,0 +1,28 @@
+{
+ "note": "logit_adjusted_exact.py",
+ "corpus": "maude",
+ "years": {
+  "2025": {
+   "reports": 762360,
+   "tau": 0.5,
+   "classifier_answer_same_as_year_file": 760842,
+   "classifier_rare_right": 60,
+   "classifier_rare_false": 237,
+   "logit_adjusted_rare_right": 96,
+   "logit_adjusted_rare_false": 1921,
+   "logit_adjusted_rare_within_0.01": 39,
+   "minutes": 19.1
+  },
+  "2026": {
+   "reports": 661160,
+   "tau": 0.5,
+   "classifier_answer_same_as_year_file": 659664,
+   "classifier_rare_right": 32,
+   "classifier_rare_false": 218,
+   "logit_adjusted_rare_right": 75,
+   "logit_adjusted_rare_false": 1902,
+   "logit_adjusted_rare_within_0.01": 43,
+   "minutes": 17.4
+  }
+ }
+}

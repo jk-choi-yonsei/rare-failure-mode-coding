@@ -139,6 +139,36 @@
       "p": 1.0
      }
     },
+    "selector_natural": {
+     "accuracy": 79.5,
+     "vs_classifier": {
+      "diff_points": 1.82,
+      "only_first": 145,
+      "only_second": 72,
+      "p": 1e-06
+     },
+     "ours_full_vs": {
+      "diff_points": 1.12,
+      "only_first": 99,
+      "only_second": 54,
+      "p": 0.000343
+     }
+    },
+    "energyroute_natural": {
+     "accuracy": 78.47,
+     "vs_classifier": {
+      "diff_points": 0.8,
+      "only_first": 141,
+      "only_second": 109,
+      "p": 0.049707
+     },
+     "ours_full_vs": {
+      "diff_points": 2.15,
+      "only_first": 151,
+      "only_second": 65,
+      "p": 0.0
+     }
+    },
     "ours_nollm": {
      "accuracy": 79.77,
      "vs_classifier": {
@@ -304,6 +334,36 @@
       "only_first": 0,
       "only_second": 0,
       "p": 1.0
+     }
+    },
+    "selector_natural": {
+     "accuracy": 81.05,
+     "vs_classifier": {
+      "diff_points": 1.15,
+      "only_first": 143,
+      "only_second": 97,
+      "p": 0.003587
+     },
+     "ours_full_vs": {
+      "diff_points": 1.7,
+      "only_first": 122,
+      "only_second": 54,
+      "p": 0.0
+     }
+    },
+    "energyroute_natural": {
+     "accuracy": 80.65,
+     "vs_classifier": {
+      "diff_points": 0.75,
+      "only_first": 139,
+      "only_second": 109,
+      "p": 0.065331
+     },
+     "ours_full_vs": {
+      "diff_points": 2.1,
+      "only_first": 161,
+      "only_second": 77,
+      "p": 0.0
      }
     },
     "ours_nollm": {
@@ -475,6 +535,36 @@
       "p": 1.0
      }
     },
+    "selector_natural": {
+     "accuracy": 79.77,
+     "vs_classifier": {
+      "diff_points": 2.1,
+      "only_first": 144,
+      "only_second": 60,
+      "p": 0.0
+     },
+     "ours_full_vs": {
+      "diff_points": 1.23,
+      "only_first": 114,
+      "only_second": 65,
+      "p": 0.000309
+     }
+    },
+    "energyroute_natural": {
+     "accuracy": 78.8,
+     "vs_classifier": {
+      "diff_points": 1.12,
+      "only_first": 146,
+      "only_second": 101,
+      "p": 0.005013
+     },
+     "ours_full_vs": {
+      "diff_points": 2.2,
+      "only_first": 164,
+      "only_second": 76,
+      "p": 0.0
+     }
+    },
     "ours_nollm": {
      "accuracy": 79.77,
      "vs_classifier": {
@@ -640,6 +730,36 @@
       "only_first": 0,
       "only_second": 0,
       "p": 1.0
+     }
+    },
+    "selector_natural": {
+     "accuracy": 81.03,
+     "vs_classifier": {
+      "diff_points": 1.12,
+      "only_first": 131,
+      "only_second": 86,
+      "p": 0.002734
+     },
+     "ours_full_vs": {
+      "diff_points": 1.95,
+      "only_first": 133,
+      "only_second": 55,
+      "p": 0.0
+     }
+    },
+    "energyroute_natural": {
+     "accuracy": 80.53,
+     "vs_classifier": {
+      "diff_points": 0.62,
+      "only_first": 132,
+      "only_second": 107,
+      "p": 0.120377
+     },
+     "ours_full_vs": {
+      "diff_points": 2.45,
+      "only_first": 181,
+      "only_second": 83,
+      "p": 0.0
      }
     },
     "ours_nollm": {

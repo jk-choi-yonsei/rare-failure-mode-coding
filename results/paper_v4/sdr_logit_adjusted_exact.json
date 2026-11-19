@@ -1,0 +1,28 @@
+{
+ "note": "logit_adjusted_exact.py",
+ "corpus": "sdr",
+ "years": {
+  "2025": {
+   "reports": 59416,
+   "tau": 0.5,
+   "classifier_answer_same_as_year_file": 59353,
+   "classifier_rare_right": 58,
+   "classifier_rare_false": 137,
+   "logit_adjusted_rare_right": 76,
+   "logit_adjusted_rare_false": 342,
+   "logit_adjusted_rare_within_0.01": 2,
+   "minutes": 0.4
+  },
+  "2026": {
+   "reports": 42717,
+   "tau": 0.5,
+   "classifier_answer_same_as_year_file": 42677,
+   "classifier_rare_right": 38,
+   "classifier_rare_false": 83,
+   "logit_adjusted_rare_right": 56,
+   "logit_adjusted_rare_false": 219,
+   "logit_adjusted_rare_within_0.01": 8,
+   "minutes": 0.3
+  }
+ }
+}

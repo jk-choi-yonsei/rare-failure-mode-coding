@@ -29,10 +29,25 @@ import numpy as np
 
 K = 5
 LLMS_MAIN = ("qwen38_27b", "gemma4_31b")
-METHODS = ("enc", "zs", "rag", "cascade", "energyroute", "selector_balanced", "selector_prior", "ours_rule", "ours_full")
+METHODS = ("enc", "zs", "rag", "cascade", "energyroute", "selector_balanced", "selector_prior", "selector_natural",
+           "energyroute_natural", "ours_rule", "ours_full")
 NAMES = {"enc": "Encoder", "zs": "Zero-shot LLM", "rag": "Retrieval LLM", "cascade": "Confidence cascade",
          "energyroute": "EnergyRoute", "selector_balanced": "Selector (balanced fit)", "selector_prior": "Selector (prior-corrected)",
+         "selector_natural": "DCS (natural fit)", "energyroute_natural": "EnergyRoute (natural fit)",
          "ours_rule": "Ours (gate only)", "ours_full": "Ours (gate + selection)"}
+
+
+def fit_natural_baselines(cr, sv, ms, Dn, wn, U, llm, frozen):
+    """2026-11-19 (mock review, methods 1): DCS refitted, and EnergyRoute's fusion weight chosen by accuracy, on the
+    same data as the selection model, the uniform draw of the other test year's natural sample. DCS keeps the model
+    family chosen on 2024; EnergyRoute keeps its routing quantiles (q1 0.4, q2 0.8)."""
+    dcs = ms.Learned(frozen["main_family"]).fit(ms.features(Dn)[U], ms.targets(Dn)[U])
+    base = cr.er_setting(llm)
+    gold = Dn["gold"][U]
+    lams = sv.LAM_GRID if Dn.get("probs") is not None else [None]
+    acc = {lam: float((sv.energyroute(Dn, dict(base, lam=lam), wn)[U] == gold).mean()) for lam in lams}
+    lam = max(lams, key=lambda x: acc[x])  # first best in grid order
+    return dcs, dict(base, lam=lam)
 
 
 def gate_parts(D, k=K):
@@ -74,15 +89,19 @@ def ranker_outputs(cr, R, D, rare, default):
 
 
 # ---------------------------------------------------------------- one corpus
-def predictions(cr, sv, rs, ms, D, llm, frozen, models, R, casc, w=None):
+def predictions(cr, sv, rs, ms, D, llm, frozen, models, R, casc, w=None, nat=None):
     fire, best, rare, enc_nonrare = gate_parts(D)
     pick, pick_nonrare = ranker_outputs(cr, R, D, rare, enc_nonrare)
-    return {"enc": D["enc"], "zs": D["zs"], "rag": D["rag"], "cascade": rs.cascade(D, *casc),
-            "energyroute": sv.energyroute(D, cr.er_setting(llm), w),
-            "selector_balanced": ms.predict_frozen(D, frozen, models)[0],
-            "selector_prior": sv.natural_setting(D, llm, frozen, models),
-            "ours_rule": gated(D["enc"], enc_nonrare, fire, best, rare),
-            "ours_full": gated(pick, pick_nonrare, fire, best, rare)}
+    P = {"enc": D["enc"], "zs": D["zs"], "rag": D["rag"], "cascade": rs.cascade(D, *casc),
+         "energyroute": sv.energyroute(D, cr.er_setting(llm), w),
+         "selector_balanced": ms.predict_frozen(D, frozen, models)[0],
+         "selector_prior": sv.natural_setting(D, llm, frozen, models),
+         "ours_rule": gated(D["enc"], enc_nonrare, fire, best, rare),
+         "ours_full": gated(pick, pick_nonrare, fire, best, rare)}
+    if nat is not None:  # the two baselines fitted on the selection model's data (fit_natural_baselines)
+        P["selector_natural"] = ms.choose(nat[0].proba(ms.features(D)), D)[0]
+        P["energyroute_natural"] = sv.energyroute(D, nat[1], w)
+    return P
 
 
 def false_interval(Db, pb, Dn, pn, wn):
@@ -113,7 +132,7 @@ def score(sv, rs, Db, Pb, Dn, Pn, wn, U):
     labels_u = np.array(sorted(set(gold_u.tolist())))
     samples = resamples(len(U))
     out = {}
-    for k in METHODS:
+    for k in (m for m in METHODS if m in Pn):
         tp, fp, vis = year_counts({"D": Db}, {"D": Dn}, wn, Pb[k], Pn[k])
         out[k] = {"accuracy": round(float((Pn[k][U] == gold_u).mean()), 4),
                   "macro_f1_natural": rs.mf(gold_u, Pn[k][U], labels_u),
@@ -165,11 +184,13 @@ def run_corpus():
         for tr, te in (("2025", "2026"), ("2026", "2025")):
             R = cr.fit(D[tr + "nat"], W[tr][1], "wide_gbm_table")
             casc = cr.fit_cascade(D[tr + "nat"], W[tr][1])
+            nat = fit_natural_baselines(cr, sv, ms, D[tr + "nat"], W[tr][0], W[tr][1], llm, frozen)
             wn, U = W[te]
-            Pb = predictions(cr, sv, rs, ms, D[te], llm, frozen, models, R, casc)
-            Pn = predictions(cr, sv, rs, ms, D[te + "nat"], llm, frozen, models, R, casc, wn)
+            Pb = predictions(cr, sv, rs, ms, D[te], llm, frozen, models, R, casc, nat=nat)
+            Pn = predictions(cr, sv, rs, ms, D[te + "nat"], llm, frozen, models, R, casc, wn, nat=nat)
             S = score(sv, rs, D[te], Pb, D[te + "nat"], Pn, wn, U)
-            L[te] = {"fitted_on": tr, "cascade": {"arm": casc[0], "theta": casc[1]}, "n_uniform": int(len(U)), "methods": S}
+            L[te] = {"fitted_on": tr, "cascade": {"arm": casc[0], "theta": casc[1]}, "energyroute_natural": nat[1],
+                     "n_uniform": int(len(U)), "methods": S}
             print(f"[{CORPUS} {llm} {te}] accuracy " + ", ".join(f"{k} {S[k]['accuracy']}" for k in METHODS)
                   + f" | rare right/false ours {S['ours_full']['rare_right']:.0f}/{S['ours_full']['rare_false']:.0f}"
                   + f" enc {S['enc']['rare_right']:.0f}/{S['enc']['rare_false']:.0f} ({time.time() - t0:.0f}s)", flush=True)

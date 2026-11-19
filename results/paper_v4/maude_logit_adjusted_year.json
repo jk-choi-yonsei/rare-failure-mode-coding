@@ -1,0 +1,21 @@
+{
+ "note": "logit_adjusted_year.py",
+ "corpus": "maude",
+ "tau": 0.5,
+ "years": {
+  "2025": {
+   "reports": 762360,
+   "rare_right": 96,
+   "rare_false": 1715,
+   "undecided": 213,
+   "undecided_rare_reports": 0
+  },
+  "2026": {
+   "reports": 661160,
+   "rare_right": 75,
+   "rare_false": 1652,
+   "undecided": 264,
+   "undecided_rare_reports": 0
+  }
+ }
+}

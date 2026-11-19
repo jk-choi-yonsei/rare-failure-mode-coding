@@ -29,6 +29,11 @@
      "arm": "rag",
      "theta": 0.6
     },
+    "energyroute_natural": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.7
+    },
     "n_uniform": 4000,
     "methods": {
      "enc": {
@@ -213,6 +218,58 @@
        ]
       }
      },
+     "selector_natural": {
+      "accuracy": 0.6567,
+      "macro_f1_natural": 0.499,
+      "rare_right": 20.0,
+      "rare_false": 2.0,
+      "rare_modes": 8,
+      "rare_false_ci95": [
+       2.0,
+       619.6
+      ],
+      "macro_f1_balanced": 0.4129,
+      "acc_minus_enc": {
+       "point": 0.0203,
+       "ci95": [
+        0.014,
+        0.027
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0088,
+       "ci95": [
+        0.0025,
+        0.0145
+       ]
+      }
+     },
+     "energyroute_natural": {
+      "accuracy": 0.6577,
+      "macro_f1_natural": 0.5327,
+      "rare_right": 74.0,
+      "rare_false": 1042.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       411.3,
+       2219.8
+      ],
+      "macro_f1_balanced": 0.4609,
+      "acc_minus_enc": {
+       "point": 0.0213,
+       "ci95": [
+        0.0138,
+        0.0293
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0077,
+       "ci95": [
+        0.0008,
+        0.015
+       ]
+      }
+     },
      "ours_rule": {
       "accuracy": 0.6362,
       "macro_f1_natural": 0.4884,
@@ -272,6 +329,11 @@
     "cascade": {
      "arm": "rag",
      "theta": 0.8
+    },
+    "energyroute_natural": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.6
     },
     "n_uniform": 4000,
     "methods": {
@@ -457,6 +519,58 @@
        ]
       }
      },
+     "selector_natural": {
+      "accuracy": 0.753,
+      "macro_f1_natural": 0.6064,
+      "rare_right": 30.0,
+      "rare_false": 5.0,
+      "rare_modes": 12,
+      "rare_false_ci95": [
+       5.0,
+       711.0
+      ],
+      "macro_f1_balanced": 0.469,
+      "acc_minus_enc": {
+       "point": 0.0047,
+       "ci95": [
+        -0.0037,
+        0.013
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.01,
+       "ci95": [
+        0.0027,
+        0.0177
+       ]
+      }
+     },
+     "energyroute_natural": {
+      "accuracy": 0.7548,
+      "macro_f1_natural": 0.6227,
+      "rare_right": 71.0,
+      "rare_false": 959.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       316.1,
+       2232.8
+      ],
+      "macro_f1_balanced": 0.5166,
+      "acc_minus_enc": {
+       "point": 0.0065,
+       "ci95": [
+        -0.0015,
+        0.014
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0083,
+       "ci95": [
+        0.001,
+        0.0165
+       ]
+      }
+     },
      "ours_rule": {
       "accuracy": 0.748,
       "macro_f1_natural": 0.6166,
@@ -518,6 +632,11 @@
     "cascade": {
      "arm": "rag",
      "theta": 0.15
+    },
+    "energyroute_natural": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.7
     },
     "n_uniform": 4000,
     "methods": {
@@ -703,6 +822,58 @@
        ]
       }
      },
+     "selector_natural": {
+      "accuracy": 0.6515,
+      "macro_f1_natural": 0.4876,
+      "rare_right": 27.0,
+      "rare_false": 173.0,
+      "rare_modes": 9,
+      "rare_false_ci95": [
+       13.2,
+       935.4
+      ],
+      "macro_f1_balanced": 0.4281,
+      "acc_minus_enc": {
+       "point": 0.015,
+       "ci95": [
+        0.008,
+        0.022
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.007,
+       "ci95": [
+        0.0003,
+        0.0135
+       ]
+      }
+     },
+     "energyroute_natural": {
+      "accuracy": 0.6498,
+      "macro_f1_natural": 0.5146,
+      "rare_right": 64.0,
+      "rare_false": 1391.5,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       633.0,
+       2688.8
+      ],
+      "macro_f1_balanced": 0.4458,
+      "acc_minus_enc": {
+       "point": 0.0132,
+       "ci95": [
+        0.006,
+        0.021
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0088,
+       "ci95": [
+        0.0015,
+        0.0163
+       ]
+      }
+     },
      "ours_rule": {
       "accuracy": 0.6362,
       "macro_f1_natural": 0.4884,
@@ -762,6 +933,11 @@
     "cascade": {
      "arm": "rag",
      "theta": 0.7
+    },
+    "energyroute_natural": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.6
     },
     "n_uniform": 4000,
     "methods": {
@@ -947,6 +1123,58 @@
        ]
       }
      },
+     "selector_natural": {
+      "accuracy": 0.75,
+      "macro_f1_natural": 0.6003,
+      "rare_right": 41.0,
+      "rare_false": 6.9,
+      "rare_modes": 11,
+      "rare_false_ci95": [
+       5.0,
+       714.5
+      ],
+      "macro_f1_balanced": 0.4734,
+      "acc_minus_enc": {
+       "point": 0.0018,
+       "ci95": [
+        -0.0065,
+        0.0097
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0075,
+       "ci95": [
+        0.0008,
+        0.0147
+       ]
+      }
+     },
+     "energyroute_natural": {
+      "accuracy": 0.7412,
+      "macro_f1_natural": 0.5938,
+      "rare_right": 72.0,
+      "rare_false": 1169.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       442.4,
+       2520.4
+      ],
+      "macro_f1_balanced": 0.505,
+      "acc_minus_enc": {
+       "point": -0.007,
+       "ci95": [
+        -0.0155,
+        0.001
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0163,
+       "ci95": [
+        0.0088,
+        0.0248
+       ]
+      }
+     },
      "ours_rule": {
       "accuracy": 0.748,
       "macro_f1_natural": 0.6166,
@@ -1008,6 +1236,11 @@
     "cascade": {
      "arm": "zs",
      "theta": 0.15
+    },
+    "energyroute_natural": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.7
     },
     "n_uniform": 4000,
     "methods": {
@@ -1193,6 +1426,58 @@
        ]
       }
      },
+     "selector_natural": {
+      "accuracy": 0.6455,
+      "macro_f1_natural": 0.4875,
+      "rare_right": 19.0,
+      "rare_false": 1.0,
+      "rare_modes": 6,
+      "rare_false_ci95": [
+       1.0,
+       618.6
+      ],
+      "macro_f1_balanced": 0.4106,
+      "acc_minus_enc": {
+       "point": 0.009,
+       "ci95": [
+        0.0043,
+        0.0145
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0092,
+       "ci95": [
+        0.0035,
+        0.015
+       ]
+      }
+     },
+     "energyroute_natural": {
+      "accuracy": 0.651,
+      "macro_f1_natural": 0.5154,
+      "rare_right": 74.0,
+      "rare_false": 1387.3,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       626.2,
+       2686.9
+      ],
+      "macro_f1_balanced": 0.4479,
+      "acc_minus_enc": {
+       "point": 0.0145,
+       "ci95": [
+        0.0067,
+        0.023
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0037,
+       "ci95": [
+        -0.0035,
+        0.0112
+       ]
+      }
+     },
      "ours_rule": {
       "accuracy": 0.6368,
       "macro_f1_natural": 0.4898,
@@ -1252,6 +1537,11 @@
     "cascade": {
      "arm": "rag",
      "theta": 0.6
+    },
+    "energyroute_natural": {
+     "q1": 0.4,
+     "q2": 0.8,
+     "lam": 0.6
     },
     "n_uniform": 4000,
     "methods": {
@@ -1434,6 +1724,58 @@
        "ci95": [
         0.0008,
         0.018
+       ]
+      }
+     },
+     "selector_natural": {
+      "accuracy": 0.7475,
+      "macro_f1_natural": 0.5953,
+      "rare_right": 38.0,
+      "rare_false": 200.3,
+      "rare_modes": 11,
+      "rare_false_ci95": [
+       12.3,
+       1076.4
+      ],
+      "macro_f1_balanced": 0.4655,
+      "acc_minus_enc": {
+       "point": -0.0008,
+       "ci95": [
+        -0.0085,
+        0.0063
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.014,
+       "ci95": [
+        0.0063,
+        0.0225
+       ]
+      }
+     },
+     "energyroute_natural": {
+      "accuracy": 0.7422,
+      "macro_f1_natural": 0.5958,
+      "rare_right": 80.0,
+      "rare_false": 1741.1,
+      "rare_modes": 17,
+      "rare_false_ci95": [
+       804.5,
+       3290.1
+      ],
+      "macro_f1_balanced": 0.5086,
+      "acc_minus_enc": {
+       "point": -0.006,
+       "ci95": [
+        -0.0147,
+        0.002
+       ]
+      },
+      "ours_full_minus": {
+       "point": 0.0192,
+       "ci95": [
+        0.0115,
+        0.0283
        ]
       }
      },

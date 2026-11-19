@@ -1,0 +1,38 @@
+{
+ "phase": "classifier",
+ "corpus": "sdr",
+ "tag": "cb-conv_full_seed42",
+ "device": "cuda",
+ "gpu_before": {
+  "time": "2026-11-18 18:39:32",
+  "gpu": "NVIDIA GeForce RTX 3090, 1493 MiB, 0 %, 47, 210 MHz"
+ },
+ "years": {
+  "2025": {
+   "reports": 59416,
+   "shortlist": 2190
+  },
+  "2026": {
+   "reports": 42717,
+   "shortlist": 1324
+  }
+ },
+ "torch": "2.13.0+cu126",
+ "cpu": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+ "load_seconds": 0.58,
+ "tokenize_seconds_per_report": 2.0527259999653326e-05,
+ "mean_tokens": 70.1,
+ "reports_timed": 20000,
+ "pass_seconds": [
+  5.597,
+  5.664,
+  5.744
+ ],
+ "model_seconds_per_report": 0.00028321234500035643,
+ "seconds_per_report": 0.00030373960500000975,
+ "peak_memory_gb": 1.84,
+ "gpu_after": {
+  "time": "2026-11-18 18:39:51",
+  "gpu": "NVIDIA GeForce RTX 3090, 2309 MiB, 85 %, 67, 1785 MHz"
+ }
+}

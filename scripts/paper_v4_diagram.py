@@ -135,11 +135,12 @@ def method():
     cell(sl, CX + CW_ / 2 - cw / 2, (yb + r1 - CH_ / 2) / 2 - chh / 2, cw, chh, "*c*", D.TAIL, D.WIN, lw=1.3)
     # no match: the selection picks the code
     D.path(sl, [(PX1, r1), (SX, r1)], color=INK)
-    D.box(sl, SX, r1 - 0.20, SW, 0.40, [""], fill=D.SEL_F, edge=D.SEL_E, lw=1.1, radius=0.06)
+    D.box(sl, SX, r1 - 0.20, SW, 0.40, [""], fill=D.SEL_F, edge=D.SEL_E, lw=1.1, radius=0.06, dash=True)
     tree_icon(sl, SX + 0.08, r1 - 0.12, SW - 0.16, 0.24, D.WIN)
     D.path(sl, [(SX + SW, r1), (CX, r1)], color=INK)
     D.box(sl, CX, r1 - CH_ / 2, CW_, CH_, ["*ŷ*"], fill=D.WHITE, edge=D.WIN, lw=1.6, size=11, radius=0.08)
     D.label(sl, CX, r1 + CH_ / 2 + 0.02, CW_, 0.18, "code", size=8.5, color=D.GRAY)
+    D.label(sl, SX - 0.10, r1 + 0.22, SW + 0.20, 0.18, "optional", size=8.5, color=D.GRAY)
     return prs
 
 

@@ -1,0 +1,67 @@
+{
+ "note": "withheld_check.py: every rare code placed on these reports is false",
+ "corpus": "sdr",
+ "withheld_codes": 28,
+ "years": {
+  "2026": {
+   "reports": 1697,
+   "classifier_rare_placements": 17,
+   "best_rare_code_inside_top5": 88,
+   "drawn": 88,
+   "llms": {
+    "qwen38_27b": {
+     "answered": 88,
+     "either": {
+      "placements": 19,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 16,
+      "exact": true
+     }
+    },
+    "gemma4_31b": {
+     "answered": 88,
+     "either": {
+      "placements": 19,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 16,
+      "exact": true
+     }
+    }
+   }
+  },
+  "2025": {
+   "reports": 2598,
+   "classifier_rare_placements": 17,
+   "best_rare_code_inside_top5": 98,
+   "drawn": 98,
+   "llms": {
+    "qwen38_27b": {
+     "answered": 98,
+     "either": {
+      "placements": 16,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 13,
+      "exact": true
+     }
+    },
+    "gemma4_31b": {
+     "answered": 98,
+     "either": {
+      "placements": 16,
+      "exact": true
+     },
+     "zero_shot_only": {
+      "placements": 16,
+      "exact": true
+     }
+    }
+   }
+  }
+ }
+}

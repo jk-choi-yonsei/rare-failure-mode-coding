@@ -1,0 +1,57 @@
+{
+ "phase": "llm",
+ "corpus": "maude",
+ "llm": "gemma4_31b",
+ "model_file": "gemma-4-31B_q4_0-it.gguf",
+ "llama_build": "b11435",
+ "ctx": 16384,
+ "shortlist_2026_requests": 4071,
+ "timed_reports": 200,
+ "years": {
+  "2025": {
+   "reports": 762360,
+   "shortlist": 4985
+  },
+  "2026": {
+   "reports": 661160,
+   "shortlist": 4296
+  }
+ },
+ "gpu_before": {
+  "time": "2026-11-18 18:30:11",
+  "gpu": "NVIDIA GeForce RTX 3090, 1493 MiB, 0 %, 47, 210 MHz"
+ },
+ "server_start_seconds": 23.9,
+ "zero_shot": {
+  "seconds": {
+   "n": 200,
+   "median": 0.9845,
+   "mean": 0.9706,
+   "p10": 0.7711,
+   "p90": 1.1344,
+   "total": 194.12
+  },
+  "errors": 0,
+  "mean_prompt_tokens": 5352.5,
+  "mean_cached_tokens": 5272.0,
+  "mean_output_tokens": 13.2
+ },
+ "retrieval": {
+  "seconds": {
+   "n": 200,
+   "median": 1.3358,
+   "mean": 1.3143,
+   "p10": 1.0256,
+   "p90": 1.5232,
+   "total": 262.86
+  },
+  "errors": 0,
+  "mean_prompt_tokens": 5966.9,
+  "mean_cached_tokens": 5283.6,
+  "mean_output_tokens": 12.5
+ },
+ "gpu_after": {
+  "time": "2026-11-18 18:38:24",
+  "gpu": "NVIDIA GeForce RTX 3090, 1493 MiB, 0 %, 66, 1965 MHz"
+ }
+}
