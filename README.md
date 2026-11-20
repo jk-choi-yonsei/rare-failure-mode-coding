@@ -1,4 +1,4 @@
-# Coding rare failure modes in field reports by agreement between a fine-tuned classifier and a language model
+# Coding rare failure modes in field reports when a fine-tuned classifier and a large language model agree
 
 Code, outputs of the coders and result files for the paper of the same title (J. Choi, Department of Industrial
 Engineering, Yonsei University; submitted to *Reliability Engineering & System Safety*).
@@ -72,6 +72,10 @@ of the test years (several gigabytes) are not in this repository; they are avail
 - `scripts/run_withheld.ps1`: Windows driver of the test on reports filed under codes withheld from training (Section 5.7).
 - `scripts/compute_time.py`: Time per report of each part of the method on this machine (2026-11-18: a reviewer will ask how much the method adds to the classifier alone). Each phase runs in its own process, so that only one model holds the GPU at a
 - `scripts/paper_v5_figures.py`: Data figures of the RESS manuscript, second design (2026-11-18, after the user found the figures too alike).
+- `scripts/paper_v6_examples.py`: Table 4 of the RESS manuscript: six reports of 2026 with the answer of every coder.
+- `scripts/paper_v6_mechanism.py`: Table 5 of the RESS manuscript (Section 5.3, Errors of the classifier and the LLM coders): why the agreement rule works, for the eight cases (device / aircraft x 2025 / 2026 x Qwen3.8-27B / Gemma 4 31B).
+- `scripts/paper_v6_modes.py`: Fig. 4 of the RESS manuscript: correct and false placements of each rare code over a test year, the classifier against Ours, device reports above aircraft reports.
+- `scripts/paper_v6_longtail.py`: Supplementary Fig. S1 of the RESS manuscript: the long tail of the codes.
 - `scripts/paper_v4_diagram.py`: Method figure of the v4 paper (notes/paper-plan-v4-2026-11-16.md, figure 1), drawn as PowerPoint shapes with the helpers and colours of paper_diagrams.py (the author's SMART/SARC figure language): rounded boxes, thin dar
 
 ## Environment
